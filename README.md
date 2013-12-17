@@ -1,7 +1,7 @@
 esdoc-docs
 ===============
 
-ES-DOC documents
+ES-DOC documentation.
 
 
 What is ES-DOC ?
