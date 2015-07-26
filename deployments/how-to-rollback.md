@@ -1,5 +1,4 @@
-# How to rollout stack to Web Faction Servers
-
+# How to rollback stack previously deployed to Web Faction Servers
 
 ##	Step 1: Note release environment
 
@@ -42,19 +41,3 @@ source VERSION/activate.sh</pre></code>
 ##	Step 8: Run bootstrapper
 
 <pre><code>esdoc-stack-bootstrap</pre></code>
-
-**Note** you can ignore the message displayed
-
-##	Step 9: Install stack
-
-<pre><code>esdoc-stack-install</pre></code>
-
-**Note** This downloads source & builds python virtual environments.  It takes about 5 minutes to complete.
-
-##	Step 10: Uncompress document archive
-
-<pre><code>esdoc-archive-uncompress</pre></code>
-
-##	Step 11: Rollout
-
-<pre><code>esdoc-rollout ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
