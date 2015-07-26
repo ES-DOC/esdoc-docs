@@ -1,60 +1,36 @@
-# How to rollout stack to Web Faction Servers
+# How to roll out stack to Web Faction Servers
 
+##	Step 1: Note deployment variables
 
-##	Step 1: Note release environment
+See this (document here)[https://github.com/ES-DOC/esdoc-docs/blob/master/deployments/deployment-variables.md] for further explanation.
 
-i.e. test | prod
+##	Step 2: Login to target web-faction server
 
-##	Step 2: Note release version
+Please consult (web faction help page)[https://docs.webfaction.com/user-guide/access.html#connecting-with-ssh].
 
-e.g. 0_9_0_1_1
-
-**NOTE** versions is composed of 5 digits with underscores in between:
-
-0	Major identifier  
-9	Minor identifier  
-0	Revision identifier  
-1	Patch identifier  
-1	Deployment identifier  
-
-##	Step 3: Note Web Faction server
-
-e.g. Web436
-
-##	Step 4: Note Web Faction server password
-
-This is the same password used to login to WebFaction admin page.
-
-##	Step 5: Note Database password
-
-Create a strong password to be used when setting up database.  You will be prompted for this.
-
-##	Step 6: Login to target web-faction server
-
-TODO - link to web faction help page
-
-##	Step 7: Install & activate shell
+##	Step 3: Install & activate shell
 
 <pre><code>cd $HOME/shells
 git clone https://github.com/ES-DOC/esdoc-shell.git VERSION
 source VERSION/activate.sh</pre></code>
 
-##	Step 8: Run bootstrapper
+##	Step 4: Run installer
 
-<pre><code>esdoc-stack-bootstrap</pre></code>
+<pre><code>esdoc-deploy-install</pre></code>
 
-**Note** you can ignore the message displayed
+**Note** This makes directories, downloads source & builds python virtual environments.  It takes about 5 minutes to complete.
 
-##	Step 9: Install stack
-
-<pre><code>esdoc-stack-install</pre></code>
-
-**Note** This downloads source & builds python virtual environments.  It takes about 5 minutes to complete.
-
-##	Step 10: Uncompress document archive
+##	Step 5: Uncompress document archive
 
 <pre><code>esdoc-archive-uncompress</pre></code>
 
-##	Step 11: Rollout
+##	Step 6: Rollout
 
-<pre><code>esdoc-rollout ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
+<pre><code>esdoc-deploy-rollout ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
+
+##	Step 7: Test  
+
+Perform system testing.  If there are issues and you do not want to perform a new rollout you can correct the source code in your dev environment, commit changes to GitHub, and then run the following:
+
+<pre><code>source VERSION/activate.sh
+esdoc-stack-update-source</pre></code>

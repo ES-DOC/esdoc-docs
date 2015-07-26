@@ -1,43 +1,13 @@
-# How to rollback stack previously deployed to Web Faction Servers
+# How to roll back stack to Web Faction Servers
 
-##	Step 1: Note release environment
+##	Step 1: Retrieve environment variables defined when performing the rollout
 
-i.e. test | prod
+See this (document here)[https://github.com/ES-DOC/esdoc-docs/blob/master/deployments/deployment-variables.md] for further explanation.
 
-##	Step 2: Note release version
+##	Step 2: Login to target web-faction server
 
-e.g. 0_9_0_1_1
+Please consult (web faction help page)[https://docs.webfaction.com/user-guide/access.html#connecting-with-ssh].
 
-**NOTE** versions is composed of 5 digits with underscores in between:
+##	Step 3: Rollback
 
-0	Major identifier
-9	Minor identifier
-0	Revision identifier
-1	Patch identifier
-1	Deployment identifier
-
-##	Step 3: Note Web Faction server
-
-e.g. Web436
-
-##	Step 4: Note Web Faction server password
-
-This is the same password used to login to WebFaction admin page.
-
-##	Step 5: Note Database password
-
-Create a strong password to be used when setting up database.  You will be prompted for this.
-
-##	Step 6: Login to target web-faction server
-
-TODO - link to web faction help page
-
-##	Step 7: Install & activate shell
-
-<pre><code>cd $HOME/shells
-git clone https://github.com/ES-DOC/esdoc-shell.git VERSION
-source VERSION/activate.sh</pre></code>
-
-##	Step 8: Run bootstrapper
-
-<pre><code>esdoc-stack-bootstrap</pre></code>
+<pre><code>esdoc-deploy-rollback ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
