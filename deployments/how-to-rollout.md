@@ -2,11 +2,11 @@
 
 ##	Step 1: Note deployment variables
 
-See this (document here)[https://github.com/ES-DOC/esdoc-docs/blob/master/deployments/deployment-variables.md] for further explanation.
+See this [document here](https://github.com/ES-DOC/esdoc-docs/blob/master/deployments/deployment-variables.md) for further explanation.
 
 ##	Step 2: Login to target web-faction server
 
-Please consult (web faction help page)[https://docs.webfaction.com/user-guide/access.html#connecting-with-ssh].
+Please consult [web faction help page](https://docs.webfaction.com/user-guide/access.html#connecting-with-ssh).
 
 ##	Step 3: Install & activate shell
 
