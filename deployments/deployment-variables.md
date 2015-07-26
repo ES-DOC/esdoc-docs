@@ -30,4 +30,4 @@ This is the same password used to login to (WebFaction admin page)[https://my.we
 
 ##	Variable 5: API database password
 
-Create a strong password to be used when setting up the API database.  You will be prompted for this.  (This website)[https://strongpasswordgenerator.com] is of use.  
+Create a strong password to be used when setting up the API database.  You will be prompted for this.  [This website](https://strongpasswordgenerator.com) is of use.  

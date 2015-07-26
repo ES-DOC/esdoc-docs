@@ -8,6 +8,10 @@ See this (document here)[https://github.com/ES-DOC/esdoc-docs/blob/master/deploy
 
 Please consult (web faction help page)[https://docs.webfaction.com/user-guide/access.html#connecting-with-ssh].
 
-##	Step 3: Rollback
+##	Step 3: Activate shell
+
+<pre><code>source shells/ENVIRONMENT/VERSION/activate</pre></code>
+
+##	Step 4: Rollback
 
 <pre><code>esdoc-deploy-rollback ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>

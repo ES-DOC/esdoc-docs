@@ -10,23 +10,21 @@ Please consult [web faction help page](https://docs.webfaction.com/user-guide/ac
 
 ##	Step 3: Install & activate shell
 
-<pre><code>cd $HOME/shells
-git clone https://github.com/ES-DOC/esdoc-shell.git VERSION
-source VERSION/activate.sh</pre></code>
+<pre><code>
+git clone https://github.com/ES-DOC/esdoc-shell.git shells/ENVIRONMENT/VERSION
+source shells/ENVIRONMENT/VERSION/activate.sh</pre></code>
 
-##	Step 4: Run installer
+##	Step 4: Run deployment setup 
 
-<pre><code>esdoc-deploy-install</pre></code>
+<pre><code>esdoc-deploy-setup</pre></code>
 
-**Note** This makes directories, downloads source & builds python virtual environments.  It takes about 5 minutes to complete.
+**NOTE** This makes directories, downloads source, builds virtual environments & decompresses the document archive.  It takes about 5 minutes to complete.
 
-##	Step 5: Uncompress document archive
+##	Step 4: Run deployment
 
-<pre><code>esdoc-archive-uncompress</pre></code>
+<pre><code>esdoc-deploy ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
 
-##	Step 6: Rollout
-
-<pre><code>esdoc-deploy-rollout ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
+**NOTE** The deployment will take a couple of minutes.  Midway through you will be prompted for the API database password.
 
 ##	Step 7: Test  
 
