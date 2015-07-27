@@ -26,15 +26,7 @@ source shells/ENVIRONMENT/VERSION/activate.sh</pre></code>
 
 **NOTE** This invokes the [Web Faction API](https://docs.webfaction.com/xmlrpc-api/apiref.html) to create web-apps and the API database.  The deployment will take a couple of minutes.  Midway through you will be prompted for the API database password.
 
-##	Step 6: Wait a few minutes
+##	Step 5: Wait a few minutes
 
 It takes a few minutes for the Web Faction API to propogate domain name rerouting to thte newly deployed webapps.  Therefore wait a little before testing.
 
-##	Step 5: Test  
-
-Perform system testing.  If there are issues you can correct the source code in your dev environment, commit changes to GitHub, and then run the following:
-
-<pre><code>source VERSION/activate.sh
-esdoc-stack-update-source
-esdoc-deploy-rollback ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD
-esdoc-deploy ENVIRONMENT VERSION SERVER SERVER_PASSWORD DB_PASSWORD</pre></code>
