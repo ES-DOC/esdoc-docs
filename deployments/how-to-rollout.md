@@ -1,4 +1,4 @@
-# How to roll out a deployment to Web Faction server
+# How to deploy stack to a Web Faction server
 
 ##	Step 1: Note deployment variables
 

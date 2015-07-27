@@ -1,4 +1,4 @@
-# How to roll back a deployment to Web Faction server
+# How to roll back a deployment upon a Web Faction server
 
 ##	Step 1: Retrieve environment variables defined when performing the rollout
 
