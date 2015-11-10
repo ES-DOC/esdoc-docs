@@ -1,0 +1,34 @@
+Thanks to everyone who participated in the CIM metadata meeting last Thursday - particularly to Allyn and Mark for taking time out of their holidays. Given that we had pretty much the entire CIM related development activity represented I was pleased that there was so much agreement on what needed to be done (and more importantly who would be doing it!).
+
+At MOHC we intend to store metadata information created by scientists as part of the experiment planning/model configuration process and then use this stored information to generate the required CIM metadata documents. IPSL also intend to adopt local CIM generation, but are considering the possibility for dynamic CIM generation during the model run.
+
+A quick summary of what we discussed - please let me know if I have misunderstood anything.
+
+pyesdoc Development
+· the ES-DOC viewer will use pyesdoc
+· there is a means of converting CMIP5 CIM documents to pyesdoc compatible documents
+· the portal API will support validation of documents produced with pyesdoc for a specific project, redaction of entire documents, versioning, and publishing.
+· document validation will include schema validation and project specific content validation (CV and requried content - will return valid flag and links to error information
+· versioning should try and include some level of user labelling of significant updates (e.g. tagging)
+· document redaction will not delete documents - they will be hidden
+· pyesdoc will support external referencing of CIM documents (i.e. to other documents in the portal - for example experiment documents can reference a model document)
+
+Questionnaire Development
+· the current development is able to produce CIM model documents
+· support for CIM simulation documents will follow later this year
+· the intent is that the new questionnaire system will ultimately use pyesdoc serialisation to create xml CIM documents (therefore it will not be necessary to harmonise XML serialisation between pyesdoc and the questionnaire – it can be changed in one place)
+
+MOHC metadata formatter development
+· metadata to be included in CIM documents will be held in one of our metadata systems (CREM – experiment management, ROSE – model configuration, MOOSE – archiving)
+· the formatter script will include a configurable template system to enable project specific CIM structures mandated by projects to be provided
+· the local database repositories will be abstracted to allow replacement by other modelling groups
+· it is intended to have capability to produce html and xml outputs for CIM model and simulation documents by Q1 2015.
+· it is the intention as part of the IS-ENES-2 project to make this code available to other modelling groups as an example implementation of scripted CIM generation.
+
+Controlled Vocabularies
+· CIM vocabulary structuring and dissemination currently fall under the remit of ES-DOC and will be tackled during 2014 - other vocabularies will be handled by the project.
+· ESGF facets and other project specific names is being addressed by Stephen Pascoe.
+
+
+Communication
+· It is probably too early to open discussions with other groups on scripted CIM document generation, but we should try and engage with the likely groups (DKRZ, GFDL, NASA, etc) later this year. In the meantime we can make sure that we keep this issue alive in the CMIP6 WIP, IS-ENES-2 and also in the Metafor teleconferences.
