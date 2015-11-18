@@ -12,7 +12,7 @@ Please consult [web faction help page](https://docs.webfaction.com/user-guide/ac
 
 <pre><code>
 git clone https://github.com/ES-DOC/esdoc-shell.git shells/{ENVIRONMENT}/{VERSION}
-source shells/{ENVIRONMENT}/{VERSION}/activate.sh</pre></code>
+source shells/{ENVIRONMENT}/{VERSION}/activate.</pre></code>
 
 ##	Step 4: Run deployment setup 
 
