@@ -22,7 +22,7 @@ source shells/{ENVIRONMENT}/{VERSION}/activate.sh</pre></code>
 
 ##	Step 4: Run deployment
 
-<pre><code>esdoc-deploy {ENVIRONMENT} {VERSION} {SERVER} {SERVER_PASSWORD} {DB_PASSWORD}</pre></code>
+<pre><code>esdoc-deploy-rollout {ENVIRONMENT} {VERSION} {SERVER} {SERVER_PASSWORD} {DB_PASSWORD}</pre></code>
 
 **NOTE** This invokes the [Web Faction API](https://docs.webfaction.com/xmlrpc-api/apiref.html) to create web-apps and the API database.  The deployment will take a couple of minutes.  Midway through you will be prompted for the API database password.
 
