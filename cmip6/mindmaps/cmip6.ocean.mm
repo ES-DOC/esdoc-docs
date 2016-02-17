@@ -1,11 +1,11 @@
-<map><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="fork" TEXT="ocean"><font BOLD="True" NAME="courier" SIZE="14" /><richcontent TYPE="NOTE"><html>
+<map><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean" STYLE="fork" TEXT="ocean"><font BOLD="True" NAME="courier" SIZE="14" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Ocean realm.</dd><dt><b>ID</b></dt><dd>cmip6.ocean</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" POSITION="left" STYLE="bubble" TEXT="advection"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection" POSITION="left" STYLE="bubble" TEXT="advection"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -19,18 +19,18 @@
         <dt><b>Description</b></dt><dd>Properties of ocean advection processes within the ocean component.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lateral_tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/lateral_tracers.py" STYLE="bubble" TEXT="lateral_tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of lateral tracer advection in the ocean'.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.lateral-tracers</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/lateral_tracers.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/lateral_tracers.py#L9-L28" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of lateral tracer advection scheme in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.lateral-tracers.scheme</dd>
+        <dt><b>Description</b></dt><dd>Properties of lateral tracer advection scheme in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.lateral-tracers.scheme</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/lateral_tracers.py#L9-L28</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="flux-limiter"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -124,18 +124,18 @@
         <dt><b>Description</b></dt><dd>tbd</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.lateral-tracers.scheme.type.other</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of momentum advection in the ocean'.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py#L32-L44" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.props</dd>
+        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.props</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py#L32-L44</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ALE"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -152,11 +152,11 @@
         <dt><b>Description</b></dt><dd>Using ALE for vertical advection ? (if vertical coordinates are sigma)</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.props.ale</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py#L8-L29" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.scheme</dd>
+        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.scheme</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/momentum.py#L8-L29</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -201,18 +201,18 @@
         <dt><b>Description</b></dt><dd>Name of ocean momemtum advection scheme</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.momentum.scheme.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="vertical_tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/vertical_tracers.py" STYLE="bubble" TEXT="vertical_tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of vertical tracer advection in the ocean'.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.vertical-tracers</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/vertical_tracers.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/vertical_tracers.py#L21-L39" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of vertical tracer advection scheme in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.vertical-tracers.scheme</dd>
+        <dt><b>Description</b></dt><dd>Properties of vertical tracer advection scheme in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.vertical-tracers.scheme</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/advection/vertical_tracers.py#L21-L39</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="flux-limiter"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -306,7 +306,7 @@
         <dt><b>Description</b></dt><dd>tbd</dd><dt><b>ID</b></dt><dd>cmip6.ocean.advection.vertical-tracers.scheme.type.other</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" POSITION="left" STYLE="bubble" TEXT="uplow_boundaries"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries" POSITION="left" STYLE="bubble" TEXT="uplow_boundaries"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -320,18 +320,18 @@
         <dt><b>Description</b></dt><dd>Properties of upper and lower boundaries within the ocean component.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="bottom_boundary_layer"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/bottom_boundary_layer.py" STYLE="bubble" TEXT="bottom_boundary_layer"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of bottom boundary layer in the ocean'.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.bottom-boundary-layer</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/bottom_boundary_layer.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/bottom_boundary_layer.py#L8-L35" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.bottom-boundary-layer.props</dd>
+        <dt><b>Description</b></dt><dd>Properties of bottom boundary layer in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.bottom-boundary-layer.props</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/bottom_boundary_layer.py#L8-L35</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lateral-mixing-coef"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -397,18 +397,18 @@
         <dt><b>Description</b></dt><dd>Describe any specific treatment of sill overflows</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.bottom-boundary-layer.props.sill-overflow</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="free_surface"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/free_surface.py" STYLE="bubble" TEXT="free_surface"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of free surface in the ocean'.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.free-surface</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/free_surface.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/free_surface.py#L8-L34" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of free surface in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.free-surface.props</dd>
+        <dt><b>Description</b></dt><dd>Properties of free surface in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.free-surface.props</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/uplow_boundaries/free_surface.py#L8-L34</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="embedded-seaice"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -488,7 +488,7 @@
         <dt><b>Description</b></dt><dd>tbd</dd><dt><b>ID</b></dt><dd>cmip6.ocean.uplow-boundaries.free-surface.props.scheme.other</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" POSITION="right" STYLE="bubble" TEXT="vertical_physics"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics" POSITION="right" STYLE="bubble" TEXT="vertical_physics"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -502,18 +502,18 @@
         <dt><b>Description</b></dt><dd>Properties of vertical physics within the ocean component.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/attributes.py" STYLE="bubble" TEXT="attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Ocean vertical physics attributes.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.attributes</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/attributes.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/attributes.py#L8-L36" STYLE="bubble" TEXT="props"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of vertical physics in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.attributes.props</dd>
+        <dt><b>Description</b></dt><dd>Properties of vertical physics in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.attributes.props</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/attributes.py#L8-L36</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tide-induced-mixing"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -586,18 +586,18 @@
         <dt><b>Description</b></dt><dd>Is there Langmuir cells mixing in upper ocean ?</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.attributes.props.langmuir-cells-mixing</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="boundary_layer_mixing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py" STYLE="bubble" TEXT="boundary_layer_mixing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of boundary layer mixing in the ocean (aka mixed layer).</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py#L39-L81" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of boundary layer mixing on momentum in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.momentum</dd>
+        <dt><b>Description</b></dt><dd>Properties of boundary layer mixing on momentum in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.momentum</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py#L39-L81</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -719,11 +719,11 @@
         <dt><b>Description</b></dt><dd>Background BL mixing of momentum coefficient, (schema and value in m2/s - may by none)</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.momentum.background</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py#L8-L36" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of boundary layer mixing on tracers in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.tracers</dd>
+        <dt><b>Description</b></dt><dd>Properties of boundary layer mixing on tracers in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.tracers</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/boundary_layer_mixing.py#L8-L36</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -845,18 +845,18 @@
         <dt><b>Description</b></dt><dd>Background BL mixing of tracers coefficient, (schema and value in m2/s - may by none)</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.boundary-layer-mixing.tracers.background</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="interior_mixing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py" STYLE="bubble" TEXT="interior_mixing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Key properties of interior mixing in the ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py#L39-L78" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of interior mixing on momentum in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing.momentum</dd>
+        <dt><b>Description</b></dt><dd>Properties of interior mixing on momentum in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing.momentum</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py#L39-L78</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="profile"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -964,11 +964,11 @@
         <dt><b>Description</b></dt><dd>Background interior mixing of momentum, (schema and coeff. value in m2/s - may by none)</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing.momentum.background</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" LINK="https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py#L8-L36" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of interior mixing on tracers in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing.tracers</dd>
+        <dt><b>Description</b></dt><dd>Properties of interior mixing on tracers in ocean.</dd><dt><b>ID</b></dt><dd>cmip6.ocean.vertical-physics.interior-mixing.tracers</dd><dt><b>Python Definition</b></dt><dd>https://github.com/ES-DOC/esdoc-mp/blob/master/esdoc_mp/vocabs/cmip6/ocean/vertical_physics/interior_mixing.py#L8-L36</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="profile"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
