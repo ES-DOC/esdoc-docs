@@ -1,0 +1,64 @@
+{
+    "canonical_name": "ssp585-ext-bgc", 
+    "description": "Long-term extension, beyond 2100,  for the SSP5-8.5 scenario.   Emissions are eventually reduced to a level that is found to produce equilibrated radiative forcing at a relatively high level by 2300 in a simple climate model. Concentration-driven. Radiative effects of CO2 disabled - i.e. the radiation code is fed the time-invariant CO2 concentration from the control run.", 
+    "keywords": "C4MIP, Tier 2, Scenario, SSP5, RCP8.5 extension, concentration-driven, 1850 CO2 for radiation", 
+    "long_name": "extension of biogeochemically-coupled version of the updated emission-driven RCP8.5 based on SSP5", 
+    "mip_era": "cmip6", 
+    "rationale": "To assess long-term CO2-carbon cycle feedbacks and CO2 induced warming associated with a high forcing scenario.", 
+    "related_experiments": [
+        "piControl", 
+        "ssp585-ext"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2101-2300 200yrs", 
+            "description": "Future scenario, begin in 2101 and run for 200 years", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2101-2300", 
+            "label": "2101-2300 200yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1850CO2Radiation", 
+            "description": "Impose repeating 1850 carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, CO2, concentration, pre-industrial, radiation code only", 
+            "label": "1850CO2Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85extForcing", 
+            "description": "Impose RCP8.5 extension forcing. Emissions are reduced linearly starting in 2100 to less than 10 GtCO2/yr in 2250, a level that is estimated to produce equilibrated radiative forcing at a high level (around 14 W/m2) over the period 2200-2300.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 8.5 extension, future, scenario, SSP5, RCP8.5 extension", 
+            "label": "RCP85extForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation", 
+            "description": "Initialisation is from the end of the SSP5-8.5 experiment.  To provide continuity between the 21st century portion of the SSP5-8.5 experiment and it's extension to 2300.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, scenario", 
+            "label": "SSP5-85Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "3c6b7796-6d2c-475e-aafb-30bb583cf7f6", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=3c6b7796-6d2c-475e-aafb-30bb583cf7f6&version=latest&client=mohc"
+}

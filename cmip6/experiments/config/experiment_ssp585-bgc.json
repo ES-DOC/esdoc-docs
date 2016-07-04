@@ -1,0 +1,64 @@
+{
+    "canonical_name": "ssp585-bgc", 
+    "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.  Radiative effects of CO2 disabled - i.e. the radiation code is fed the time-invariant CO2 concentration from the control run.", 
+    "keywords": "C4MIP, Tier 2, Scenario, SSP5, RCP8.5, concentration-driven, 1850 CO2 for radiation", 
+    "long_name": "biogeochemically-coupled version of the updated emission-driven RCP8.5 based on SSP5", 
+    "mip_era": "cmip6", 
+    "rationale": "Assessment of CO2-carbon cycle feedbacks over the 21st century and assessment of CO2 induced warming.", 
+    "related_experiments": [
+        "piControl", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1850CO2Radiation", 
+            "description": "Impose repeating 1850 carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, CO2, concentration, pre-industrial, radiation code only", 
+            "label": "1850CO2Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "a8618c78-e5e2-44db-90fe-e28f6426e1d5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a8618c78-e5e2-44db-90fe-e28f6426e1d5&version=latest&client=mohc"
+}

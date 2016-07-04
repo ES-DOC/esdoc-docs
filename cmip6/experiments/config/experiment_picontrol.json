@@ -1,0 +1,50 @@
+{
+    "canonical_name": "piControl", 
+    "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+    "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+    "long_name": "Pre-Industrial Control", 
+    "mip_era": "cmip6", 
+    "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+    "related_experiments": [
+        "1pctCO2", 
+        "abrupt-4xCO2", 
+        "esm-piControl", 
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2349 500yrs", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "piForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=7dd72de5-c5b6-412c-9b4c-540f09538d9a&version=latest&client=mohc"
+}

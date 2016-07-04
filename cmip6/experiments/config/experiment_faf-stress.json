@@ -1,0 +1,72 @@
+{
+    "canonical_name": "faf-stress", 
+    "description": "Impose zonal and meridional wind stress anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  \nImpose pre-industrial atmospheric conditions.", 
+    "keywords": "FAFMIP, Tier 1, stressFAF, surface wind stress anomaly", 
+    "long_name": "control plus perturbative surface flux of momentum into ocean", 
+    "mip_era": "cmip6", 
+    "rationale": "Windstress change appears to have the largest effect on sea level in the CMIP5 scenario experiments.", 
+    "related_experiments": [
+        "1pctCO2", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 70yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 70 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 70 years", 
+            "label": "1850-1851 70yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2WindStressAnomalyAtDoubling", 
+            "description": "Impose zonal and meridional wind stress anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, wind stress, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2WindStressAnomalyAtDoubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "f8701e94-511b-43c3-96c4-250f854e3da9", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f8701e94-511b-43c3-96c4-250f854e3da9&version=latest&client=mohc"
+}

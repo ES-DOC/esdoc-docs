@@ -1,0 +1,73 @@
+{
+    "canonical_name": "futureSST", 
+    "description": "Impose a warming pattern anomaly to the sstPi sea surface temperatures (SSTs).  The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.\nSame as sstPi but with a seasonally varying monthly mean pattern of SST warming scaled to 4K.", 
+    "keywords": "CFMIP, Tier 2, SST pattern anomaly, +4K, 4xCO2, AMIP, piControl, SIC", 
+    "long_name": "control plus warming pattern SSTs", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "abrupt-4xCO2", 
+        "piControl", 
+        "piSST-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 50yrs91-140", 
+            "description": "Idealised temporal constraint, repeating 1850 for 50 years, to coincide with years 91 to 140 of the abrupt 4xCO2 experiment", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 50 years, years 91-140", 
+            "label": "1850-1851 50yrs91-140", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "sstPi SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "description": "Impose a +4K warming pattern anomaly to the sstPi SST.  The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.", 
+            "isConformanceRequested": true, 
+            "keywords": "patterned SST warming, sstPi,  4K, 4xCO2, seasonally varying monthly means.", 
+            "label": "sstPi SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSICMonthlyVar", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
+            "label": "PIControlSICMonthlyVar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "bd83c36e-8b04-4e60-8fa4-7c4dcc993b78", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=bd83c36e-8b04-4e60-8fa4-7c4dcc993b78&version=latest&client=mohc"
+}

@@ -1,0 +1,56 @@
+{
+    "canonical_name": "forecast", 
+    "description": "Initialisation based on observations. Atmospheric composition and/or emissions (and other conditions including volcanic aerosols) to follow prescribed SSP2-4.5 forcing scenario. Run each member for 5 years.", 
+    "keywords": "DCPP, Tier 2, real-time, forecast", 
+    "long_name": "forecast initialized from observations", 
+    "mip_era": "cmip6", 
+    "rationale": "Effects of increased ensemble size. To reduce noise and improve skill", 
+    "related_experiments": [
+        "forecast", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "5yrs", 
+            "description": "Run for at least 5 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "5 years, minimum", 
+            "label": "5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ObservedInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "realTimeAnnualxN", 
+            "description": "A multi-ensemble with N initialisations for each start date in real time and ongoing.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, real-time, annual, start date ensemble", 
+            "label": "realTimeAnnualxN", 
+            "type": "multi-ensemble"
+        }
+    ], 
+    "uid": "1c8e174c-c484-47b0-b25c-d04c50ae4462", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1c8e174c-c484-47b0-b25c-d04c50ae4462&version=latest&client=mohc"
+}

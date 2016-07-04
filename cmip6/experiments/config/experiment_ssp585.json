@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ssp585", 
+    "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.", 
+    "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP5, RCP8.5, future, High forcing, SSP-based RCP", 
+    "long_name": "update of RCP8.5 based on SSP5", 
+    "mip_era": "cmip6", 
+    "rationale": "The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "35338d2b-4664-46b1-b304-8966860702f7", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=35338d2b-4664-46b1-b304-8966860702f7&version=latest&client=mohc"
+}

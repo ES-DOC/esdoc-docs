@@ -1,0 +1,64 @@
+{
+    "canonical_name": "piClim-VOC", 
+    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations and 2014 CO/VOC emissions.", 
+    "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 VOC", 
+    "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 VOC emissions", 
+    "mip_era": "cmip6", 
+    "rationale": "To compute the ERF for 1850 and 2014.", 
+    "related_experiments": [
+        "piClim-control", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 30yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850WMGHG", 
+            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, WMGHG, concentrations", 
+            "label": "1850WMGHG", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014COVOC", 
+            "description": "Impose repeating 2014 CO/VOC concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, CO, carbon monoxide, VOC, volatile organic compounds, emissions", 
+            "label": "2014COVOC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "57fba0c5-9330-4fbc-8011-e71e32f78faf", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=57fba0c5-9330-4fbc-8011-e71e32f78faf&version=latest&client=mohc"
+}

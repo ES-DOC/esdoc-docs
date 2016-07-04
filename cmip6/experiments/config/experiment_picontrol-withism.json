@@ -1,0 +1,63 @@
+{
+    "canonical_name": "piControl-withism", 
+    "description": "The pre-industrial control in a model with interactive ice sheet model.   \nThe spin up may require the GCM and ISM to be asynchronously coupled until the system reches quasi-equilibrium.  \nOnce equilibrium is reached, run for multi-hundred years (500 years suggested).", 
+    "keywords": "ISMIP6, Tier 1, piControl,  interactive ISM, interactive ice sheets", 
+    "long_name": "Pre-industrial control with interactive ice sheets", 
+    "mip_era": "cmip6", 
+    "rationale": "To produce a realistic non-drifting coupled state, and assess systematic model bias.     \nTo capture unforced natural variability.", 
+    "related_experiments": [
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2349 500yrs", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Initialisation after spin-up", 
+            "description": "Initialisation after the system reaches quasi-equilibrium", 
+            "isConformanceRequested": false, 
+            "keywords": "spin up, initialisation, quasi-equilibrium", 
+            "label": "Initialisation after spin-up", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-ISM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-ISM, ESM-ISM, Atmosphere-Ocean-IceSheet, Earth System, Model, Configuration", 
+            "label": "AOGCM-ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "6c22d0d7-6a27-4f60-990c-6ba3e8228142", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6c22d0d7-6a27-4f60-990c-6ba3e8228142&version=latest&client=mohc"
+}

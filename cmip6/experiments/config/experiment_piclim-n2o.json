@@ -1,0 +1,64 @@
+{
+    "canonical_name": "piClim-N2O", 
+    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations (except N2O) and 2014 N2O concentrations.", 
+    "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 N2O", 
+    "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 N2O concentrations (including chemistry)", 
+    "mip_era": "cmip6", 
+    "rationale": "To compute the ERF for 1850 and 2014.", 
+    "related_experiments": [
+        "piClim-control", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 30yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850WMGHGNoN2O", 
+            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations, except N2O.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, Well Mixed, Greenhouse Gas, GHG, no N2O, no nitrous oxide", 
+            "label": "1850WMGHGNoN2O", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014N2O", 
+            "description": "Impose repeating 2014 nitrous oxide (N2O) concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Nitrous Oxide, N2O, concentrations", 
+            "label": "2014N2O", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "c628bd38-80e4-45db-8a66-edbbfbc994d5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=c628bd38-80e4-45db-8a66-edbbfbc994d5&version=latest&client=mohc"
+}

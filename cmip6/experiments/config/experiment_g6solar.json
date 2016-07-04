@@ -1,0 +1,65 @@
+{
+    "canonical_name": "G6solar", 
+    "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing (SSP5-85) to the ScenarioMIP middle forcing (SSP2-45).", 
+    "keywords": "GeoMIP, Tier 1, G6solar, SSP585 to SSP245", 
+    "long_name": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245", 
+    "mip_era": "cmip6", 
+    "rationale": "To determine the differential effects of sulfate aerosols and solar irradiance reduction, in comparison with G6sulfur.", 
+    "related_experiments": [
+        "G6sulfur", 
+        "ssp245", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2020-2100 81yrs", 
+            "description": "Scenario, from 2020 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2020-2100, future, scenario", 
+            "label": "2020-2100 81yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SolarRCP85toRCP45", 
+            "description": "Reduce solar irradiance to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, solar mitigation, SSP5-85 to SSP2-45, solar irradiance reduction", 
+            "label": "SolarRCP85toRCP45", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation2020", 
+            "description": "Initialisation is from the beginning of year 2020 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, year 2020, scenario", 
+            "label": "SSP5-85Initialisation2020", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "ca5b1747-0099-4ae1-a85e-11fed7c76c3f", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=ca5b1747-0099-4ae1-a85e-11fed7c76c3f&version=latest&client=mohc"
+}

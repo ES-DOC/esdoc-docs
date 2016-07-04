@@ -1,0 +1,65 @@
+{
+    "canonical_name": "ssp245-GHG", 
+    "description": "Extension of well-mixed GHG-only run (histGHG) under SSP2-4.5 forcing to the year 2100.\nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.", 
+    "keywords": "DAMIP, Tier 2, ssp245GHG,  ssp2-45, SSP2-4.5, well mixed GHG only", 
+    "long_name": "well-mixed GHG-only SSP2-4.5 runs", 
+    "mip_era": "cmip6", 
+    "rationale": "Combinations of histAll, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
+    "related_experiments": [
+        "hist-GHG", 
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2021-2100 80yrs", 
+            "description": "Scenario, from 2021 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2021-2100, future, scenario, RCP45", 
+            "label": "2021-2100 80yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45WellMixedGHG", 
+            "description": "Impose changing concentrations of RCP4.5 long-lived gases, including CO2, N2O and halogenated gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, Well-mixed Greenhouse Gas, CO2", 
+            "label": "RCP45WellMixedGHG", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850O3Radiation", 
+            "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
+            "label": "1850O3Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP2-45Initialisation2021", 
+            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
+            "label": "SSP2-45Initialisation2021", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "38b386f0-3fa0-47ad-97b0-994475067077", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=38b386f0-3fa0-47ad-97b0-994475067077&version=latest&client=mohc"
+}

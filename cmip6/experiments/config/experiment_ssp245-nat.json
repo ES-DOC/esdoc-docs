@@ -1,0 +1,56 @@
+{
+    "canonical_name": "ssp245-nat", 
+    "description": "An extension of at least one of the hist-nat (histNAT) simulations to the year 2100 following SSP2-45 solar and volcanic forcing. The future solar forcing data recommended for CMIP6 has a downward trend (Matthes et al., 2016).", 
+    "keywords": "DAMIP, Tier 3, ssp245, natural forcing only", 
+    "long_name": "natural-only SSP2-4.5 runs", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate effects of this declining solar forcing on future climate change projections.", 
+    "related_experiments": [
+        "hist-nat", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2021-2100 80yrs", 
+            "description": "Scenario, from 2021 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2021-2100, future, scenario, RCP45", 
+            "label": "2021-2100 80yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCPVolcanic", 
+            "description": "Impose changing volcanic forcing for RCP scenarios.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, future, 21st century, volcanic forcing", 
+            "label": "RCPVolcanic", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCPSolar", 
+            "description": "Impose changing (natural) solar forcing for RCP scenarios.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, future, 21st century, solar forcing", 
+            "label": "RCPSolar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "800e3463-4ad4-425d-8449-082c7d4bb9f5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=800e3463-4ad4-425d-8449-082c7d4bb9f5&version=latest&client=mohc"
+}

@@ -1,0 +1,68 @@
+{
+    "canonical_name": "hist-aer", 
+    "description": "Historical aerosol-only simulations resemble the histALL simulations but instead are forced by changes in aerosol forcing only. \nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone. \nReport what sets of emissions and boundary conditions are used.", 
+    "keywords": "DAMIP, Tier 1, histAER, cmip6historical, aerosol forcing,  anthropogenic", 
+    "long_name": "historical anthropogenic aerosols-only runs", 
+    "mip_era": "cmip6", 
+    "rationale": "Together with histNAT and histALL simulations, these simulations will allow the attribution of observed climate changes to contributions from natural forcings, aerosols and \"GHG+ozone+land use change\".", 
+    "related_experiments": [
+        "hist-aerchem", 
+        "hist-all", 
+        "hist-nat", 
+        "historical", 
+        "ssp245", 
+        "ssp245-aer"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2020 171yrs", 
+            "description": "Historical, pre-industrial to present and near future", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-2020, Historical, RCP45", 
+            "label": "1850-2020 171yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Aerosols", 
+            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
+            "label": "RCP45Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45AerosolPrecursors", 
+            "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
+            "label": "RCP45AerosolPrecursors", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumThree", 
+            "description": "An ensemble of at least three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 3, at least 3, ensemble, runs, simulations", 
+            "label": "MinimumThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "981093e7-cf56-444b-a29a-2d284c20dff5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=981093e7-cf56-444b-a29a-2d284c20dff5&version=latest&client=mohc"
+}

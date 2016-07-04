@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ssp434", 
+    "description": "Gap: Mitigation scenario with low radiative forcing by the end of the century.  Following approximately RCP3.7 global forcing pathway with SSP4 socioeconomic conditions. Radiative forcing reaches a level of 3.7 W/m2 in 2100. Concentration-driven.", 
+    "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP3.4, future,  Low forcing, Gap: Mitigation", 
+    "long_name": "gap-filling scenario reaching 3.4 based on SSP4", 
+    "mip_era": "cmip6", 
+    "rationale": "The scenario fills a gap at the low end of the range of plausible future forcing pathways.  Of interest to mitigation policy, since mitigation costs differ substatially between forcing levels of 4.5 W/m2 and 2.6 W/m2.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP34Forcing", 
+            "description": "Impose RCP3.4 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP4, RCP3.4", 
+            "label": "RCP34Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "8fa9ed0a-f813-452c-b96e-95d3b4a67bf5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=8fa9ed0a-f813-452c-b96e-95d3b4a67bf5&version=latest&client=mohc"
+}

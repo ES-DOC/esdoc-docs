@@ -1,0 +1,47 @@
+{
+    "canonical_name": "lfmip-pdLC", 
+    "description": "Scenario forced experiment with prescribed land surface climatology derived from \"present climate\" conditions (1980-2014).", 
+    "keywords": "LS3MIP, Tier 1, Historical Scenario, Prescribed Land 1980-2014", 
+    "long_name": "prescribed land surface climatology derived from present climate", 
+    "mip_era": "cmip6", 
+    "rationale": "Diagnose land-climate feedback including ocean response. To diagnose the role of land-atmosphere feedback at climate time scales.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1980-2100 121yrs", 
+            "description": "Historical scenario, from 1980 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1980, 2100", 
+            "label": "1980-2100 121yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LFMIP-CAForcing", 
+            "description": "Land surface forcing climatology for present climate (1980-2014).  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, present climate, land surface forcing", 
+            "label": "LFMIP-CAForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "9fc57a40-5334-4bde-ae6b-c1e9318daec8", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9fc57a40-5334-4bde-ae6b-c1e9318daec8&version=latest&client=mohc"
+}

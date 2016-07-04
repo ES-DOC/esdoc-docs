@@ -1,0 +1,57 @@
+{
+    "canonical_name": "ssp585-ext", 
+    "description": "Long-term extension, beyond 2100,  for the SSP5-8.5 scenario.   Emissions are reduced linearly starting in 2100 to less than 10 GtCO2/yr in 2250, a level that is estimated to produce equilibrated radiative forcing at a high level (around 14 W/m2) over the period 2200-2300. Concentration-driven.", 
+    "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP8.5 extension, SSP-based RCP", 
+    "long_name": "extension of RCP8.5 based on SSP5", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate long term changes associated with a high forcing scenario. To allow investigation of questions related to climate change beyond 2100. To address questions of long term feedbacks and reversibility which might not be apparent from shorter simulations.", 
+    "related_experiments": [
+        "ssp126-ext", 
+        "ssp534-over-ext", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2101-2300 200yrs", 
+            "description": "Future scenario, begin in 2101 and run for 200 years", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2101-2300", 
+            "label": "2101-2300 200yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85extForcing", 
+            "description": "Impose RCP8.5 extension forcing. Emissions are reduced linearly starting in 2100 to less than 10 GtCO2/yr in 2250, a level that is estimated to produce equilibrated radiative forcing at a high level (around 14 W/m2) over the period 2200-2300.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 8.5 extension, future, scenario, SSP5, RCP8.5 extension", 
+            "label": "RCP85extForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation", 
+            "description": "Initialisation is from the end of the SSP5-8.5 experiment.  To provide continuity between the 21st century portion of the SSP5-8.5 experiment and it's extension to 2300.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, scenario", 
+            "label": "SSP5-85Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "15dc5a43-6c88-43f2-b379-b94a25ea361b", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=15dc5a43-6c88-43f2-b379-b94a25ea361b&version=latest&client=mohc"
+}

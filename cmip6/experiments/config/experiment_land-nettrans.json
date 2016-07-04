@@ -1,0 +1,60 @@
+{
+    "canonical_name": "land-netTrans", 
+    "description": "Land surface model simulation. Land cover change with grassland crop/pasture except with net transitions instead of gross.  No land management.", 
+    "keywords": "LUMIP, Tier 2, historical, grassland, net transitions, no land management", 
+    "long_name": "historical land-only with net land-use transitions", 
+    "mip_era": "cmip6", 
+    "rationale": "Factorial set of land only experiments with increasingly realistic treatment of land management; derivatives of LMIP-hist (LS3MIP).", 
+    "related_experiments": [
+        "historical", 
+        "land-crop-grass", 
+        "land-hist", 
+        "land-hist", 
+        "land-noLu", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LMIPHistoricalForcing", 
+            "description": "Reference forcing data for offline land surface models running the L3MIP historical simulation. Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, historical, forcing", 
+            "label": "LMIPHistoricalForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "GrasslandNet", 
+            "description": "Grassland crop/pasture with net transitions instead of gross, no management.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, grassland, net transitions, no management", 
+            "label": "GrasslandNet", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "dda6cbdd-6876-444c-8699-e98623583246", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=dda6cbdd-6876-444c-8699-e98623583246&version=latest&client=mohc"
+}

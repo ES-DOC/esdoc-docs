@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ssp460", 
+    "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP6.0 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 6.0 W/m2 in 2100. Concentration-driven.", 
+    "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP6.0, future, Medium forcing, SSP-based RCP", 
+    "long_name": "update of RCP6.0 based on SSP4", 
+    "mip_era": "cmip6", 
+    "rationale": "The scenario fills in the range of medium forcing plausible future pathways. The scenario defines the low end of the forcing range for unmitigated SSP baseline scenarios.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP60Forcing", 
+            "description": "Impose RCP6.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 6.0, future, 21st century, SSP1, RCP6.0", 
+            "label": "RCP60Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "5de5fb58-d596-4345-84f7-e392f5d71541", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5de5fb58-d596-4345-84f7-e392f5d71541&version=latest&client=mohc"
+}

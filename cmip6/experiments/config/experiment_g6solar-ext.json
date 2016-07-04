@@ -1,0 +1,65 @@
+{
+    "canonical_name": "G6solar-ext", 
+    "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing overshoot extension (years 2101-2300) to the ScenarioMIP medium forcing (SSP2-45). \nGeoengineering is applied when the net forcing is greater in magnitude than the medium forcing scenario (SSP2-45) to reduce the net radiative forcing.", 
+    "keywords": "GeoMIP, Tier 2, G6solarExt", 
+    "long_name": "total solar irradiance reduction to reduce net forcing from ssp585-over-ext to ssp245", 
+    "mip_era": "cmip6", 
+    "rationale": "This scenario will illuminate the extent to which geoengineering may help in preventing irreversible changes in the climate system and avoiding tipping points. \nTo assess the climate effects and inter-model variations of a limited amount of geoengineering as part of a portfolio of responses to climate change.", 
+    "related_experiments": [
+        "ssp126-ext", 
+        "ssp245", 
+        "ssp534-over-ext"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2100-2299 200yrs", 
+            "description": "Scenario, from 2100 to 2300.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, extension, 2100-2299", 
+            "label": "2100-2299 200yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SolarRCP85extovertoRCP45", 
+            "description": "Reduce solar irradiance to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, solar mitigation, SSP5-85extover to SSP2-45, solar irradiance reduction", 
+            "label": "SolarRCP85extovertoRCP45", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP34extoverForcing", 
+            "description": "Impose RCP3.4 overshoot extension forcing. The negative CO2 emissions level reached in 2100 by SSP5-3.4 remain constant at that level to 2150 and then increase linearly to zero by 2250.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4 extension overshoot, future, scenario, SSP5, RCP3.4 extension overshoot", 
+            "label": "RCP34extoverForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation", 
+            "description": "Initialisation is from the end of the SSP5-8.5 experiment.  To provide continuity between the 21st century portion of the SSP5-8.5 experiment and it's extension to 2300.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, scenario", 
+            "label": "SSP5-85Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "c5f9219b-ae34-4837-96fb-d7a28eab8be3", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=c5f9219b-ae34-4837-96fb-d7a28eab8be3&version=latest&client=mohc"
+}

@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ism-piControl", 
+    "description": "Stand alone ice sheet model driven offline by a CMIP6 model with piControl focing.", 
+    "keywords": "ISMIP6, Tier 1, piControl, stand-alone ISM, ice sheets only", 
+    "long_name": "Ice sheet model driven with pre-industrial forcing", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2349 500yrs", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "2be95bce-25a1-4711-911e-b3dd0f0409db", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=2be95bce-25a1-4711-911e-b3dd0f0409db&version=latest&client=mohc"
+}

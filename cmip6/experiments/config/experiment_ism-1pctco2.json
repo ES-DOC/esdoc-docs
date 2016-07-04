@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ism-1pctCO2", 
+    "description": "Stand alone ice sheet model driven offline by a CMIP6 model with 1% per year atmospheric carbon dioxide increased to quadrupling then held fixed for 200 years.\nRun for a minimum of 350 years (500 years encouraged).", 
+    "keywords": "ISMIP6, Tier 1, 1% per yr CO2, quadrupled CO2, stand-alone ISM, ice sheets only", 
+    "long_name": "Ice sheet model driven with 1% per yr CO2 increase to quadrupling forcing", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "1pctCO2"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1851-2200 350yrs minimum", 
+            "description": "Begin in pre-industrial era and run for a minimum of 350 years, up to 500 years", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial start date, minimum 350 years", 
+            "label": "1851-2200 350yrs minimum", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1%yrCO2Increase", 
+            "description": "1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1%yrCO2Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "a7cd966f-1e3a-4b15-a8e0-527f312315b7", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a7cd966f-1e3a-4b15-a8e0-527f312315b7&version=latest&client=mohc"
+}

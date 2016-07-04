@@ -1,0 +1,73 @@
+{
+    "canonical_name": "forecast-Agung", 
+    "description": "Prediction experiment for 2015 with volcano forcing.  Repeat DCPP-A1 2015 forecast with Agung forcing. Background volcanic aerosol to be the same as that used in the 1963 hindcast. 10 ensemble members. Run each member for at least 5 years, preferably 10 years.", 
+    "keywords": "DCPP, Tier 3, Agung, volcano", 
+    "long_name": "2015 forecast with added Agung forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "Volcano effects on decadal prediction. To assess the impact of volcanoes on decadal prediction skill. Investigate the potential effects of volcanic eruption on forecasts of the coming decade. Investigate the sensitivity of volcanic response to the state of the climate system.", 
+    "related_experiments": [
+        "hindcast", 
+        "hindcast", 
+        "hindcast-novolc"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2024 10yrs", 
+            "description": "Scenario. Start date on or before 31st December 2014.  Start dates on or before 15th November recommended to allow for DJF seasonal forecast results. Run for 10 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, decadal, 2015, 2024, 10 years", 
+            "label": "2015-2024 10yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2015-2019 5yrs", 
+            "description": "Scenario. Start date on or before 31st December 2014.  Start dates on or before 15th November recommended to allow for DJF seasonal forecast results. Run for 5 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, decadal, 2015, 2019, 5 years", 
+            "label": "2015-2019 5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "AgungAerosol", 
+            "description": "Aerosol forcing from the 1963 Agung volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, Agung", 
+            "label": "AgungAerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "TenMember", 
+            "description": "An ensemble of at least ten simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, ensemble, runs, simulations", 
+            "label": "TenMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ObservedInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "f10db1ed-9d5e-4b42-a8d0-c83e846c1415", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f10db1ed-9d5e-4b42-a8d0-c83e846c1415&version=latest&client=mohc"
+}

@@ -1,0 +1,71 @@
+{
+    "canonical_name": "ssp370SST", 
+    "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway. SSP3 socioeconomic conditions.  Atmosphere only with SST from ScenarioMIP experiment SSP3-70.", 
+    "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
+    "long_name": "SSP3-7.0, with  SSTs prescribed from ssp370", 
+    "mip_era": "cmip6", 
+    "rationale": "Control for ERF estimates of individual NTCF.", 
+    "related_experiments": [
+        "ssp370"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2014-2054 41yrs", 
+            "description": "Scenario, from 2014 to the mid 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2014, 2054", 
+            "label": "2014-2054 41yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3-70 SST", 
+            "description": "Sea surface temperature from experiment SSP3-7.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
+            "label": "SSP3-70 SST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70Tropospheric OzonePrecursors", 
+            "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, tropospheric ozone precursors", 
+            "label": "RCP70Tropospheric OzonePrecursors", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70Forcing", 
+            "description": "Impose RCP7.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
+            "label": "RCP70Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "16abe6d4-49d2-4948-be53-a1362579e31b", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=16abe6d4-49d2-4948-be53-a1362579e31b&version=latest&client=mohc"
+}

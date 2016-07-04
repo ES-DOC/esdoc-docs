@@ -1,0 +1,123 @@
+{
+    "canonical_name": "amipFuture-4xCO2-all", 
+    "description": "Impose a warming pattern anomaly to the amip sea surface temperatures (SSTs). The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.  The 4xCO2 increase is also seen by the radiation code and vegetation code.\nSame as amip, but the SST pattern anomaly climatology from sstPiFuture is applied, scaled to have a global mean increase of 4K. CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+    "keywords": "CFMIP, Tier 2, SST pattern anomaly, +4K, 4xCO2, AMIP, piControl, SIC, 4xCO2 vegetation, 4xCO2 radiation, amip", 
+    "long_name": "AMIP plus warming pattern SSTs with 4xCO2", 
+    "mip_era": "cmip6", 
+    "rationale": "Comparison of amipTot and sstPiTot should help to illuminate the impact os SST biases on regional climate responses in each model, and how this contributes to inter-model uncertainty.", 
+    "related_experiments": [
+        "abrupt-4xCO2", 
+        "amip", 
+        "futureSST-4xCO2-all", 
+        "piControl", 
+        "piSST-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 50yrs91-140", 
+            "description": "Idealised temporal constraint, repeating 1850 for 50 years, to coincide with years 91 to 140 of the abrupt 4xCO2 experiment", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 50 years, years 91-140", 
+            "label": "1850-1851 50yrs91-140", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "amip SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "description": "Impose a +4K warming pattern anomaly to the amip SST.  The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.", 
+            "isConformanceRequested": true, 
+            "keywords": "patterned SST warming, amip,  4K, 4xCO2, seasonally varying monthly means.", 
+            "label": "amip SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AMIP SIC", 
+            "description": "AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
+            "label": "AMIP SIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2Radiation", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, radiation code only", 
+            "label": "4xCO2Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2Veg", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to vegetation code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, vegetation code only", 
+            "label": "4xCO2Veg", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "The stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical O3 and Stratospheric H2O Concentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "98c1d0ee-0c61-4d38-8d99-bd98ad56fc54", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=98c1d0ee-0c61-4d38-8d99-bd98ad56fc54&version=latest&client=mohc"
+}

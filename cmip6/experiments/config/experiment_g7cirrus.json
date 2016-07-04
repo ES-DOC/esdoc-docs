@@ -1,0 +1,63 @@
+{
+    "canonical_name": "G7cirrus", 
+    "description": "Against a background of the ScenarioMIP high forcing (SSP5-85), reduce cirrus cloud optical depth by a constant amount.", 
+    "keywords": "GeoMIP, Tier 1, G7cirrus, decrease SSP585 by 1 W m-2", 
+    "long_name": "G7cirrus \u00ad increase cirrus ice crystal fall speed to reduce net forcing in SSP585 by 1 W m-2", 
+    "mip_era": "cmip6", 
+    "rationale": "To seed cirrus by a constant amount that reduces average global mean temperature in the decade 2020-2029 to that of the decade 1970-1979 (as calculated in a historical run), offsetting a radiative forcing of approximately 1.0 W/m2. \nTo assess robust model response regarding the climate effects of cirrus cloud thinning. \nTo explore inter-model differences in the results can reveal sources of model biases.", 
+    "related_experiments": [
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2020-2100 81yrs", 
+            "description": "Scenario, from 2020 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2020-2100, future, scenario", 
+            "label": "2020-2100 81yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "IncreaseCirrusSedementationVelocity", 
+            "description": "Add a local variable that replaces (in all locations where temperature is colder than 235K) the ice mass mixing ratio in the calculation of the sedimentation velocity with a value that is eight times the original ice mass mixing ratio.\nCirrus seeding to begin in 2020 and continue through to the year 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, cirrus thinning, increase cirrus sedimentation velocity", 
+            "label": "IncreaseCirrusSedementationVelocity", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation2020", 
+            "description": "Initialisation is from the beginning of year 2020 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, year 2020, scenario", 
+            "label": "SSP5-85Initialisation2020", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "10819789-b977-47bd-8c45-2840cc712d31", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=10819789-b977-47bd-8c45-2840cc712d31&version=latest&client=mohc"
+}

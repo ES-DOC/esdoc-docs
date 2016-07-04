@@ -1,0 +1,88 @@
+{
+    "canonical_name": "esm-ssp585", 
+    "description": "Emission driven future scenario (SSP-based RCP SSP5-8.5) up to 2100. Starting conditions taken from emissions-driven Historical simulation.", 
+    "keywords": "C4MIP, Tier 1, Scenario, SSP5, RCP8.5, emission driven", 
+    "long_name": "update of emission-driven RCP8.5 based on SSP5", 
+    "mip_era": "cmip6", 
+    "rationale": "For analysis of impact of carbon cycle feedbacks on climate projections over the 21st century, and for assessment of cumulative emissions compatible with climate targets.", 
+    "related_experiments": [
+        "historical", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85WellMixedGHGEm", 
+            "description": "Impose changing emissions of RCP8.5 long-lived greenhouse gases, including CO2, N2O and halogenated gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, Well-mixed Greenhouse Gas, CO2, Emissions", 
+            "label": "RCP85WellMixedGHGEm", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85ShortLivedGasSpeciesEm", 
+            "description": "Impose changing emissions of RCP8.5 short lived gas species.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, NTCF, Short-lived Gas, Emissions", 
+            "label": "RCP85ShortLivedGasSpeciesEm", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85AersolEm", 
+            "description": "Impose changing emissions of RCP8.5 aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, NTCF, aerosol, Emissions", 
+            "label": "RCP85AersolEm", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2x1850lightningNOx", 
+            "description": "Impose repeating 1850 doubled lightning NOx emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, douled lightning NOx", 
+            "label": "2x1850lightningNOx", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85LandUse", 
+            "description": "Impose changing RCP8.5 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, Land Use", 
+            "label": "RCP85LandUse", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "a2791eb7-d3b6-4cf3-8da0-1261fabe98d1", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a2791eb7-d3b6-4cf3-8da0-1261fabe98d1&version=latest&client=mohc"
+}

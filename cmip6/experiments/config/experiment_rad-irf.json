@@ -1,0 +1,53 @@
+{
+    "canonical_name": "rad-irf", 
+    "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial carbon monoxide (CO). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+    "keywords": "RFMIP, Tier 2, PD GHG, present day greenhouse gas, PI CO, pre-industrial carbon monoxide, aerosol-free, clear sky, radiative transfer model", 
+    "long_name": "RFMIP-IRF", 
+    "mip_era": "cmip6", 
+    "rationale": "Clear sky calculations for a set of prescribed atmospehric conditions to identify the degree to which errors in radiative transfer contribute to diverstiy in estimates of instantaneous radiative forcing and how this error depends on the background state of the atmosphere and on the forcing itself.", 
+    "related_experiments": [], 
+    "requirements": [
+        {
+            "canonical_name": "PDAtmosStates", 
+            "description": "Specified atmospheric states (vertical distribution of temperature and humidity) over many profiles for present day (2015).", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, radiation model, profiles, temperature, humidity, atmospheric state", 
+            "label": "PDAtmosStates", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PDSurfaceProps", 
+            "description": "Specified surface properties for present day (2015).", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, radiation model, surface properties", 
+            "label": "PDSurfaceProps", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015GHGpiCO", 
+            "description": "Impose present day (2015) greenhouse gas concentrations with carbon monoxide (CO) set to it's pre-industrial value.", 
+            "isConformanceRequested": true, 
+            "keywords": "2015 greenhouse gas, 2015 GHG, pre-industrial CO, pi CO, pre-industrial carbon monoxide", 
+            "label": "2015GHGpiCO", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "radiativeTransfer", 
+            "description": "One dimensional radiative tranfer model, identical to the radiative transfer scheme used in the Atmosphere model.", 
+            "isConformanceRequested": false, 
+            "keywords": "radiative tranfer model", 
+            "label": "radiativeTransfer", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "db20a5e1-061d-42c0-a3b5-972304e58a1a", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=db20a5e1-061d-42c0-a3b5-972304e58a1a&version=latest&client=mohc"
+}

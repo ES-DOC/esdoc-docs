@@ -1,0 +1,57 @@
+{
+    "canonical_name": "esm-ssp585-ssp126Lu", 
+    "description": "Keep all forcings the same as C4MIP esmssp5-8.5 scenario, but replace land use with SSP1-2.6 scenario. Emission driven.", 
+    "keywords": "LUMIP, Tier 1, Scenario, SSP5-8.5 forcing and SSP1-2.6 land use", 
+    "long_name": "emissions-driven SSP5-8.5 with SSP1-2.6 land use", 
+    "mip_era": "cmip6", 
+    "rationale": "Land-use policy sensitivity simulation for high radiative forcing scenario.", 
+    "related_experiments": [
+        "ssp126", 
+        "ssp37-ssp126Lu", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP26LandUse", 
+            "description": "Impose changing RCP2.6 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6, Land Use", 
+            "label": "RCP26LandUse", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85ForcingExcludingLandUse", 
+            "description": "Impose RCP8.5 forcing excluding land use.\nEmissions driven.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, excluding land use", 
+            "label": "RCP85ForcingExcludingLandUse", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "800240dc-7a60-4d45-856c-0e7462b6b2d8", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=800240dc-7a60-4d45-856c-0e7462b6b2d8&version=latest&client=mohc"
+}

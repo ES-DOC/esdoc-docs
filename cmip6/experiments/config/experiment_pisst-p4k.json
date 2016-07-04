@@ -1,0 +1,72 @@
+{
+    "canonical_name": "piSST-p4K", 
+    "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) but with a uniform SST increase of 4K. Dynamic vegetation should be turned off.\nSame as sstPi but with SSTs uniformly increased by 4K.", 
+    "keywords": "CFMIP, Tier 2, Pre-industrial SST plus 4K, PI forcing", 
+    "long_name": "control plus 4K SSTs", 
+    "mip_era": "cmip6", 
+    "rationale": "To understand regional climate responses to CO2 forcing.", 
+    "related_experiments": [
+        "piControl", 
+        "piSST-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1960-1989 30yrs", 
+            "description": "Run for the 30 years corresponding to years 111-140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1960-1989", 
+            "label": "1960-1989 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSSTMonthlyVarPlusUniform4K", 
+            "description": "Monthly-varying sea surface temperatures from years 111 to 140 of the pre-industrial control (piControl) experiment plus uniform 4K.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying, plus uniform SST 4K, SST +4K", 
+            "label": "PIControlSSTMonthlyVarPlusUniform4K", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSICMonthlyVar", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
+            "label": "PIControlSICMonthlyVar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "14a73a4f-b84c-4625-85f3-3f74fc47a1ef", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=14a73a4f-b84c-4625-85f3-3f74fc47a1ef&version=latest&client=mohc"
+}

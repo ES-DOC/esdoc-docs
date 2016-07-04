@@ -1,0 +1,66 @@
+{
+    "canonical_name": "ssp245-aer", 
+    "description": "An extension of at least one of the hist-aer (histAER) simulations to the year 2100 following SSP2-4.5 aerosol concentrations. \nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone.", 
+    "keywords": "DAMIP, Tier 3, ssp245AER, anthropogenic aerosol forcing only", 
+    "long_name": "aerosol-only SSP2-4.5 runs", 
+    "mip_era": "cmip6", 
+    "rationale": "Combinations of histALL, histAER, histNAT, ssp245AER and SSP2-4.5 (ScenarioMIP) will allow the estimation of future temperature changes that are constrained by observed historical changes.", 
+    "related_experiments": [
+        "hist-aer", 
+        "historical", 
+        "ssp245", 
+        "ssp245-aerchem"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2021-2100 80yrs", 
+            "description": "Scenario, from 2021 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2021-2100, future, scenario, RCP45", 
+            "label": "2021-2100 80yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Aerosols", 
+            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
+            "label": "RCP45Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45AerosolPrecursors", 
+            "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
+            "label": "RCP45AerosolPrecursors", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP2-45Initialisation2021", 
+            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
+            "label": "SSP2-45Initialisation2021", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "b41c5b03-7fcd-4340-aa07-7c321ac68c12", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=b41c5b03-7fcd-4340-aa07-7c321ac68c12&version=latest&client=mohc"
+}

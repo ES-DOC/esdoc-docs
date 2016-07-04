@@ -1,0 +1,64 @@
+{
+    "canonical_name": "1pctCO2Ndep-bgc", 
+    "description": "Biogeochemically-coupled concentration driven 1% per year increasing CO2 up to 4XCO2 simulation. CO2 increase only affects carbon cycle models, radiative code sees pre-industrial CO2.  With time varying anthropogenic nitrogen deposition.  Only applicable to models whose simulation will be affected by the deposition of reactive nitrogen either due to terrestrial or marine nitrogen cycle effects on carbon fluxes and store.", 
+    "keywords": "C4MIP, Tier2, CO2, 1 percent per year, until quadrupling, until 4XCO2, time varying nitrogen deposition, biogeochemical coupling", 
+    "long_name": "biogeochemically-coupled version of 1 percent per year increasing CO2 experiment with increasing N-deposition", 
+    "mip_era": "cmip6", 
+    "rationale": "Additional feedback simulations for models with an interactive nitrogen cycle.", 
+    "related_experiments": [
+        "1pctCO2", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2149 300yrs", 
+            "description": "Begin in pre-industrial era and run for 300 years", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial start date, 300 years", 
+            "label": "1850-2149 300yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1%/yearCO2CarbonCycle", 
+            "description": "1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling seen by carbon cycle only.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, carbon cycle only", 
+            "label": "1%/yearCO2CarbonCycle", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850CO2Radiation", 
+            "description": "Impose repeating 1850 carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, CO2, concentration, pre-industrial, radiation code only", 
+            "label": "1850CO2Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AnthropNitrogenDeposition", 
+            "description": "Impose time varying anthropogenic nitrogen (N) deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, nitrogen deposition", 
+            "label": "AnthropNitrogenDeposition", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, BioGeoChemistry, AOGCM-BGM, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-BGM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "a8c66e82-edb5-41ae-9f9e-0de42795fd1b", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a8c66e82-edb5-41ae-9f9e-0de42795fd1b&version=latest&client=mohc"
+}

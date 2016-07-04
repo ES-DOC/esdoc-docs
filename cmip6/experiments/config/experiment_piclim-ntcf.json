@@ -1,0 +1,72 @@
+{
+    "canonical_name": "piClim-NTCF", 
+    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations and 2014 NTCF emissions.", 
+    "keywords": "AerChemMIP, Tier 1, piControl perturbation, 1850 WMGHG, 1850 SST, 2014 NTCF, Near Term Climate Forcers,", 
+    "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 NTCF emissions", 
+    "mip_era": "cmip6", 
+    "rationale": "To compute the ERF for 1850 and 2014", 
+    "related_experiments": [
+        "piClim-control", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 30yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControlSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850WMGHG", 
+            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, WMGHG, concentrations", 
+            "label": "1850WMGHG", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014NTCF", 
+            "description": "Impose repeating 2014 Near Term Climate Forcers (NTCF) emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Near Term Climate Forcers, NTCF, emissions", 
+            "label": "2014NTCF", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "707b899a-423d-4543-af7b-93128a24ae32", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=707b899a-423d-4543-af7b-93128a24ae32&version=latest&client=mohc"
+}

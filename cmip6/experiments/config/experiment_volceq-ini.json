@@ -1,0 +1,57 @@
+{
+    "canonical_name": "volcEq-ini", 
+    "description": "1991 Pinatubo forcing and other forcings as used in the decadal prediction experiment DCPP C3.4. Forcing input and implementation of the forcing to fully comply with the VolMIP protocol. To be initialised on 1st November 2015, or any other date in November of December for which initialised hindcasts are available (depending on the modelling centre). Run at least 5 (preferably 10) ensemble members for 5 years.", 
+    "keywords": "VolMIP, Tier 1, Pinatubo, volcano, eruption, volcanic forcing, slab ocean", 
+    "long_name": "Pinatubo experiment in decadal climate prediction setup", 
+    "mip_era": "cmip6", 
+    "rationale": "To address the impact of volcanic forcing on seasonal and decadal climate predictability.  To address the climate implications of a future Pinatubo-like eruption.", 
+    "related_experiments": [
+        "forecast-Pinatubo", 
+        "piControl", 
+        "volcEq-full"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2019 5yrs", 
+            "description": "Scenario. Start date on or before 31st December 2014.  Start dates on or before 15th November recommended to allow for DJF seasonal forecast results. Run for 5 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, decadal, 2015, 2019, 5 years", 
+            "label": "2015-2019 5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PinatuboAerosol", 
+            "description": "Aerosol forcing from the 1991 Pinatubo volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, Pinatubo", 
+            "label": "PinatuboAerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "FiveTenMember", 
+            "description": "An ensemble of at least five but preferably ten members.", 
+            "isConformanceRequested": false, 
+            "keywords": "5, five, 10, ten, ensemble, VolMIP, ini", 
+            "label": "FiveTenMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "e49cb8a5-e186-498a-ba21-75c423c7abb3", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e49cb8a5-e186-498a-ba21-75c423c7abb3&version=latest&client=mohc"
+}

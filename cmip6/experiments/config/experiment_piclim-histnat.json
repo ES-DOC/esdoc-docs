@@ -1,0 +1,80 @@
+{
+    "canonical_name": "piClim-histNat", 
+    "description": "Time-evolving effective radiative forcing experiment. A small ensemble of uncoupled (atmosphere and land) simulations from 1850-2100 in which sea surface temperature (SST) and sea ice distributions are specified and vegetation may interact. Apply natural historical forcings only (solar and volcano) to 2015. Forcing to be consistent with historical forcing used in the DAMIP experiments and RCP4.5 future scenario forcing.", 
+    "keywords": "RFMIP, Tier 2, Historical, Natural, Solar", 
+    "long_name": "RFMIP erf-hist-nat", 
+    "mip_era": "cmip6", 
+    "rationale": "Diagnose transient natural ERF. It is difficult to evaluate transitory volcanic and solar forcing using a time-slice methodology so the full 1850-2100 period is used.", 
+    "related_experiments": [
+        "hist-all", 
+        "piClim-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2100 251yrs", 
+            "description": "Historical scenario, from 1850 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1805, 2100", 
+            "label": "1850-2100 251yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControlSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Volcanic Aerosol", 
+            "description": "Historical volcanic aerosol forcing (1850-2015).", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, volcanic, forcing", 
+            "label": "Historical Volcanic Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piForcingExcludingSolarAer", 
+            "description": "Pre-Industrial forcing excluding aerosols and solar.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols, excluding solar", 
+            "label": "piForcingExcludingSolarAer", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ThreeMember", 
+            "description": "An ensemble of three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "three, 3, ensemble, runs, simulations", 
+            "label": "ThreeMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AtmosLandConfig", 
+            "description": "An uncoupled (atmosphere-land) model.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "AtmosLandConfig", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "754a137e-824d-4163-a001-90e216813154", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=754a137e-824d-4163-a001-90e216813154&version=latest&client=mohc"
+}

@@ -1,0 +1,64 @@
+{
+    "canonical_name": "ssp245-stratO3", 
+    "description": "Extension of hist-stratO3 (histSOZ) simulations to the year 2100 following the ozone concentrations specified for the SSP2-4.5 scenario.\nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone.", 
+    "keywords": "DAMIP, Tier 2, ssp245SOZ, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
+    "long_name": "stratospheric-ozone-only SSP2-4.5 runs", 
+    "mip_era": "cmip6", 
+    "rationale": "Stratospheric ozone is projected to recover following the successful implementation of the Montreal Protocol and its amendments. These simulations will facilitate a robust multi-model assessment of the climate effects of this recovery on Southern Hemisphere climate and stratospheric temperature.", 
+    "related_experiments": [
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2021-2100 80yrs", 
+            "description": "Scenario, from 2021 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2021-2100, future, scenario, RCP45", 
+            "label": "2021-2100 80yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
+            "label": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45StratosphericOzone", 
+            "description": "Impose changing stratospheric ozone concentrations consistent with RCP4.5 forcing scenario.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, RCP4.5, future, 21st century, ozone, o3", 
+            "label": "RCP45StratosphericOzone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP2-45Initialisation2021", 
+            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
+            "label": "SSP2-45Initialisation2021", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "0d7e1dc0-116d-4225-8ffa-137b39116707", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=0d7e1dc0-116d-4225-8ffa-137b39116707&version=latest&client=mohc"
+}

@@ -1,0 +1,80 @@
+{
+    "canonical_name": "ssp370SST-lowCH4", 
+    "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced  methane emissions. SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+    "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 methane, atmosphere only", 
+    "long_name": "SSP3-7.0, prescribed SSTs, with low methane concentrations", 
+    "mip_era": "cmip6", 
+    "rationale": "To estimate the ERF of methane.", 
+    "related_experiments": [
+        "ssp370", 
+        "ssp370SST"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2014-2054 41yrs", 
+            "description": "Scenario, from 2014 to the mid 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2014, 2054", 
+            "label": "2014-2054 41yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3-70 SST", 
+            "description": "Sea surface temperature from experiment SSP3-7.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
+            "label": "SSP3-70 SST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70ReducedMethane", 
+            "description": "Impose reduced RCP7.0 methane (CH4) emissions.  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 methane NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced methane", 
+            "label": "RCP70ReducedMethane", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70Tropospheric OzonePrecursorsNoMethane", 
+            "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors except methane.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, ozone precursors, without methane", 
+            "label": "RCP70Tropospheric OzonePrecursorsNoMethane", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70Forcing", 
+            "description": "Impose RCP7.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
+            "label": "RCP70Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "48780791-821a-49bc-8433-1814d70ce5bd", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=48780791-821a-49bc-8433-1814d70ce5bd&version=latest&client=mohc"
+}

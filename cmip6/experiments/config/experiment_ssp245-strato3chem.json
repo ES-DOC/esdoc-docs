@@ -1,0 +1,64 @@
+{
+    "canonical_name": "ssp245-stratO3chem", 
+    "description": "Extension of stratospheric-ozone-only run (histSOZ) under SSP2-4.5 forcing to the year 2100.\nOnly for models with interactive chemistry in which changes in GHG concentrations affect aerosols or changes in aerosol precursors affect ozone. \nThe chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the SSP2-4.5 simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with a value of 100 ppbv ozone concentration in this piControl climatology used to separate the troposphere from the stratosphere.", 
+    "keywords": "DAMIP, Tier 2, ssp245SOZchem, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
+    "long_name": "stratospheric-ozone-only SSP2-4.5 runs", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2021-2100 80yrs", 
+            "description": "Scenario, from 2021 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2021-2100, future, scenario, RCP45", 
+            "label": "2021-2100 80yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
+            "label": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ssp2-45 stratospheric Ozone", 
+            "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from coupled-chemistry simulations of Scenario-MIP SSP2-4.5 simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "DAMIP ssp2-45, ozone, concentration, O3, stratosphere", 
+            "label": "ssp2-45 stratospheric Ozone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP2-45Initialisation2021", 
+            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
+            "label": "SSP2-45Initialisation2021", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "42532016-2dda-4813-a739-84bb0a328bbd", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=42532016-2dda-4813-a739-84bb0a328bbd&version=latest&client=mohc"
+}

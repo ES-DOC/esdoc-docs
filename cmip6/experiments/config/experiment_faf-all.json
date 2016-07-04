@@ -1,0 +1,97 @@
+{
+    "canonical_name": "faf-all", 
+    "description": "Simultaneously apply anomalous fluxes of windstress, heat and freshwater using the passive-tracer method for heat as in the heatFAF experiment.", 
+    "keywords": "FAFMIP, Tier 2, surface wind stress anomaly, surface heat flux anomaly, surface freshwater anomaly", 
+    "long_name": "control plus perturbative surface fluxes of momentum, heat and water into ocean", 
+    "mip_era": "cmip6", 
+    "rationale": "For comaprison with individual surface flux anomalies.", 
+    "related_experiments": [
+        "1pctCO2", 
+        "faf-heat", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 70yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 70 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 70 years", 
+            "label": "1850-1851 70yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2WindStressAnomalyAtDoubling", 
+            "description": "Impose zonal and meridional wind stress anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, wind stress, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2WindStressAnomalyAtDoubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2HeatFluxAnomalyAtDoubling", 
+            "description": "Impose surface heat flux anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2HeatFluxAnomalyAtDoubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the heatFAF experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2PassiveTracerAtDoubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
+            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, freshwater flux, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "bb08d954-de10-4b16-8da8-680b441e2cd9", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=bb08d954-de10-4b16-8da8-680b441e2cd9&version=latest&client=mohc"
+}

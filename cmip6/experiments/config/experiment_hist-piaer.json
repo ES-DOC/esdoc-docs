@@ -1,0 +1,71 @@
+{
+    "canonical_name": "hist-piAer", 
+    "description": "Historical WMGHG and Halocarbon emissions. Aerosols (but not Nox) fixed at 1850 emission levels.", 
+    "keywords": "AerChemMIP, Tier 2, Historical perturbation, 1850 aerosol, no Nox", 
+    "long_name": "historical forcing, but with pre-industrial aerosol emissions", 
+    "mip_era": "cmip6", 
+    "rationale": "How have aerosols contributed to global ERF and affected regional climate over the historical period?", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850AerosolNoNOx", 
+            "description": "Impose repeating 1850 aerosol emissions (but not NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, aerosol, emissions without NOx", 
+            "label": "1850AerosolNoNOx", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "UptoThree", 
+            "description": "An ensemble of upto three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "upto three, upto 3, ensemble, runs, simulations", 
+            "label": "UptoThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-Chem Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Chemistry, AOGCM-Chem, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "b480afd9-31fd-400c-9260-eb6b0ace3f8c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=b480afd9-31fd-400c-9260-eb6b0ace3f8c&version=latest&client=mohc"
+}

@@ -1,0 +1,89 @@
+{
+    "canonical_name": "a4SSTice-4xCO2", 
+    "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+    "keywords": "CFMIP, Tier 2, SST pattern anomaly, sea ice anomaly, piSST, abrupt4xCO2, piControl", 
+    "long_name": "control plus warming pattern SSTs and SIC with 4xCO2", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "abrupt-4xCO2", 
+        "piControl", 
+        "piSST-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1960-1989 30yrs", 
+            "description": "Run for the 30 years corresponding to years 111-140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1960-1989", 
+            "label": "1960-1989 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "abrupt4xCO2SST", 
+            "description": "Monthly-varying sea surface temperature from years 111 to 140 of the abrupt4xCO2 simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, SST, abrupt4xCO2", 
+            "label": "abrupt4xCO2SST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "abrupt4xCO2SIC", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the abrupt4xCO2 simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, SIC, abrupt4xCO2", 
+            "label": "abrupt4xCO2SIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2Radiation", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, radiation code only", 
+            "label": "4xCO2Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2Veg", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to vegetation code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, vegetation code only", 
+            "label": "4xCO2Veg", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "f12f211a-bc68-4967-a7e4-d83ee4f93e5c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f12f211a-bc68-4967-a7e4-d83ee4f93e5c&version=latest&client=mohc"
+}

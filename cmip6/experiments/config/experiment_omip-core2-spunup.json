@@ -1,0 +1,96 @@
+{
+    "canonical_name": "omip-core2-spunup", 
+    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Rather than using observed climatologies to initialise the biogeochemistry as in OMIP-A, this simulation will be initialised with model tracer fields that have been spun up for at least 1000 years, ideally for 5000 years.  The OMIP-B simulations (and spin-ups) will include radiocarbon (abiotic DIC and DI14C). Atmospheric forcing follows CORE-II, inert chemical tracers follow OCMIP2, and biogeochemical tracers follow OCMIP3. Only for modelling groups that have biogeochemistry and are able to afford a millennial-scale spin-up.", 
+    "keywords": "OMIP, Tier 2, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+    "long_name": "OMIP experiment forced by CORE-2 atmospheric data set and initialized from at least a 1000-year spin up of the coupled physical-biogeochemical model", 
+    "mip_era": "cmip6", 
+    "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. Radiocarbon is included to evaluate the deep-ocean circulation.", 
+    "related_experiments": [
+        "historical", 
+        "omip-core2"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1948-2009 310yrs", 
+            "description": "Historical, five repetitions from 1948-2009", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1948, 2009, x5", 
+            "label": "1948-2009 310yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "O2Constant", 
+            "description": "Impose constant atmospheric concentration of oxygen, O2, (mole fraction of 0.20946).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, O2, constant", 
+            "label": "O2Constant", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "CO2Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2Historical", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RadioCTracer", 
+            "description": "Include radiocarbon tracers: abiotic DIC and DI14C, dissolved inorganic carbon and dissolved inorganic carbon-14.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, DIC, dissolved inorganic carbon, DI14C, dissolved inorganic carbon-14, tracer", 
+            "label": "RadioCTracer", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "OMIPAirSeaFluxes", 
+            "description": "Five repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
+            "label": "OMIPAirSeaFluxes", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "OMIPInertChemicalTracers", 
+            "description": "Online simulation of CFC11, CFC12 and CF6 inert chemical tracers.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, inert chemical tracers", 
+            "label": "OMIPInertChemicalTracers", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "OMIPBiogeochemicalTracers", 
+            "description": "Simulation of biogeochemical tracers DIC and ALK.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, biogeochemical tracers", 
+            "label": "OMIPBiogeochemicalTracers", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "BGCTracerMillennialSpinUp", 
+            "description": "Initialise ocean biogeochemistry with model tracer fields that have been spun up for at least 1000 years, ideally for 5000 years.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, spin-up, 1000yrs", 
+            "label": "BGCTracerMillennialSpinUp", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Ocean-SeaIce-BioGeoChemConfig", 
+            "description": "An ocean-sea ice model coupled with a biogeochemistry component", 
+            "isConformanceRequested": false, 
+            "keywords": "OMIP, ocean, sea ice, biogeochemistry,  BGC, configuration", 
+            "label": "Ocean-SeaIce-BioGeoChemConfig", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "df900c79-da16-4ab5-9f71-b98ad3e93283", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=df900c79-da16-4ab5-9f71-b98ad3e93283&version=latest&client=mohc"
+}

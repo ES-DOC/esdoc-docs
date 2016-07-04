@@ -1,0 +1,76 @@
+{
+    "canonical_name": "land-woodHarv", 
+    "description": "Land surface model simulation. Land cover change with grassland crop/pasture and human fire land management and wood harvest.", 
+    "keywords": "LUMIP, Tier 2, historical, grassland, fire land management, wood harvest", 
+    "long_name": "historical land-only  grassland with fire land management and wood harvest", 
+    "mip_era": "cmip6", 
+    "rationale": "Factorial set of land only experiments with increasingly realistic treatment of land management; derivatives of LMIP-hist (LS3MIP).", 
+    "related_experiments": [
+        "historical", 
+        "land-crop-grass", 
+        "land-hist", 
+        "land-hist", 
+        "land-noLu", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LMIPHistoricalForcing", 
+            "description": "Reference forcing data for offline land surface models running the L3MIP historical simulation. Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, historical, forcing", 
+            "label": "LMIPHistoricalForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Grassland", 
+            "description": "Grassland crop/pasture without management.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, grassland, no management", 
+            "label": "Grassland", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Fire", 
+            "description": "Human fire land management.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, fire, land management", 
+            "label": "Fire", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "WoodHarvest", 
+            "description": "Harvesting of wood.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, wood harvest, land management", 
+            "label": "WoodHarvest", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "2728afe7-0a40-4616-ab65-f07918c79e29", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=2728afe7-0a40-4616-ab65-f07918c79e29&version=latest&client=mohc"
+}

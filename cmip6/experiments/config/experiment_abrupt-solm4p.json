@@ -1,0 +1,64 @@
+{
+    "canonical_name": "abrupt-solm4p", 
+    "description": "Same as abrupt-solp4p, except the solar constant is reduced by 4% rather than increased.", 
+    "keywords": "CFMIP, Tier 2, abrupt solar decrease, -4%", 
+    "long_name": "Abrupt 4 percent decrease of the solar constant", 
+    "mip_era": "cmip6", 
+    "rationale": "In combination with the abruptSp4 experiment this will allow the examination of feedback asymmetry under climate cooling. To help with the interpretation of model responses to geo-engineering scenarios and volcanic forcing, and relate to past climates.", 
+    "related_experiments": [
+        "abrupt-solp4p", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1999 150yrs", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "abrupt-4pcSolar", 
+            "description": "Impose an abrupt 4% decrease in the solar constant", 
+            "isConformanceRequested": true, 
+            "keywords": "abrupt, solar constant decrease, -4%", 
+            "label": "abrupt-4pcSolar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2andSolar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "PIForcingExcludingCO2andSolar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "8cf588f6-7988-4ede-bed1-d41c2a7a7fa5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=8cf588f6-7988-4ede-bed1-d41c2a7a7fa5&version=latest&client=mohc"
+}

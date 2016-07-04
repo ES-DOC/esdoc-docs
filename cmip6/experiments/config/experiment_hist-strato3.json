@@ -1,0 +1,72 @@
+{
+    "canonical_name": "hist-stratO3", 
+    "description": "This experient's simulations resemble the histAll simulations but are forced with stratospheric ozone concentrations only.\nIn models with coupled chemistry, the chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the histALL simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.\nIn models without coupled chemistry the same stratospheric ozone prescribed in histALL should be prescribed.", 
+    "keywords": "DAMIP, Tier 2, histSOZ, cmip6historical, stratospheric ozone forcing, stratospheric O3 forcing", 
+    "long_name": "historical stratospheric-ozone-only runs", 
+    "mip_era": "cmip6", 
+    "rationale": "To allow an improved characterization of the response to stratospheric ozone changes, which have played an important role in driving circulation changes in the Southern Hemisphere and temperature changes in the stratosphere, as well as facilitating attribution studies of the response to stratospheric ozone change.", 
+    "related_experiments": [
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2020 171yrs", 
+            "description": "Historical, pre-industrial to present and near future", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-2020, Historical, RCP45", 
+            "label": "1850-2020 171yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
+            "label": "Pre-Industrial Tropospheric Ozone Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Ozone Concentrations", 
+            "description": "Ozone concentration database for the stratosphere.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, ozone, concentration, O3, stratosphere", 
+            "label": "Historical Stratospheric Ozone Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "histAll stratospheric Ozone", 
+            "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from the DAMIP histAll simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "DAMIP histALL, ozone, concentration, O3, stratosphere", 
+            "label": "histAll stratospheric Ozone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45StratosphericOzone", 
+            "description": "Impose changing stratospheric ozone concentrations consistent with RCP4.5 forcing scenario.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, RCP4.5, future, 21st century, ozone, o3", 
+            "label": "RCP45StratosphericOzone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumThree", 
+            "description": "An ensemble of at least three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 3, at least 3, ensemble, runs, simulations", 
+            "label": "MinimumThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "d7bc04eb-34ac-42b8-a677-c5c477283cd1", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=d7bc04eb-34ac-42b8-a677-c5c477283cd1&version=latest&client=mohc"
+}

@@ -1,0 +1,55 @@
+{
+    "canonical_name": "ssp585-withism", 
+    "description": "ScenarioMIP SSP5-85 forcing in a model with interactive ice sheets. \nThe set up follows the set up for the standard ScenarioMIP SSP5-85, which may therefore first require the CMIP6 Historical simulation to be performed too with a coupled AOGCM-ISM setting.", 
+    "keywords": "ISMIP6, Tier 2, SSP5-85 forcing, interactive ISM, interactive ice sheets", 
+    "long_name": "SSP5-85 scenario with interactive ice sheets", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2014-2099 86yrs minimum", 
+            "description": "Scenario, from 2014 to at least the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2014, 2099 minimum", 
+            "label": "2014-2099 86yrs minimum", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalISMInitialisation", 
+            "description": "Initialisation is from the end of an historical simulation with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, interactive ISM, initialisation", 
+            "label": "HistoricalISMInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-ISM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-ISM, ESM-ISM, Atmosphere-Ocean-IceSheet, Earth System, Model, Configuration", 
+            "label": "AOGCM-ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "470998d5-c134-4684-b18b-ef551fb67293", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=470998d5-c134-4684-b18b-ef551fb67293&version=latest&client=mohc"
+}

@@ -1,0 +1,95 @@
+{
+    "canonical_name": "esm-hist-ext", 
+    "description": "Extension beyond 2014 of the CMIP6 historical simulation with atmospheric CO2 concentration calculated. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+    "keywords": "CMIP6, Historical, Reference, extension, ESM, Earth System Model", 
+    "long_name": "post-2014 all-forcing simulation with an Earth system model", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        "esm-hist"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2014-present N yrs", 
+            "description": "Begin in 2014 and run to the present time", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 2014, present", 
+            "label": "2014-present N yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "The stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Emissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical O3 and Stratospheric H2O Concentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESMHistoricalInitialisation", 
+            "description": "Initialisation is from the end of the esm-hist experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "ESMHistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "86c9d1bb-4e6c-457d-9354-9e04aaa4fbfc", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=86c9d1bb-4e6c-457d-9354-9e04aaa4fbfc&version=latest&client=mohc"
+}

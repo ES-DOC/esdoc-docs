@@ -1,0 +1,47 @@
+{
+    "canonical_name": "amip-lfmip-pdLC", 
+    "description": "Scenario forced experiment with prescribed land surface climatology derived from \"present climate\" conditions (1980-2014) and prescribed SST (sea surface temperatures).", 
+    "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land, prescribed SST", 
+    "long_name": "prescribed land surface climatology and SST derived from present climate", 
+    "mip_era": "cmip6", 
+    "rationale": "Diagnose land-climate feedback over land. To diagnose the role of land-atmosphere feedback at climate time scales.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1980-2100 121yrs", 
+            "description": "Historical scenario, from 1980 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1980, 2100", 
+            "label": "1980-2100 121yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LFMIP-CAForcing", 
+            "description": "Land surface forcing climatology for present climate (1980-2014).  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, present climate, land surface forcing", 
+            "label": "LFMIP-CAForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "1cd56aff-45c6-4657-a1ae-224d0360c8d7", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1cd56aff-45c6-4657-a1ae-224d0360c8d7&version=latest&client=mohc"
+}

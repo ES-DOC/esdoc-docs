@@ -1,0 +1,63 @@
+{
+    "canonical_name": "1pctCO2", 
+    "description": "1 percent per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+    "keywords": "DECK, Tier 1,  Diagnosis Evaluation and Characterization of Klima (Climate), CO2 1 percent per year increase, 1pctCO2, quadrupling, climate sensitivity", 
+    "long_name": "1 percent per year increase in CO2", 
+    "mip_era": "cmip6", 
+    "rationale": "Serves as a consistent and useful benchmark for analysing model transient climate response (TCR). The TCR takes into account the rate of ocean heat uptake which governs the pace of all time-evolving climate change. In Earth System Models (ESMs) that include explicit representation of the carbon cycle this experiment allows the calculation of the transient climate response to cumulative carbon emissions (TCRE) to be calculated.", 
+    "related_experiments": [
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1999 150yrs", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1%yrCO2Increase", 
+            "description": "1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1%yrCO2Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "e0994d67-4449-4b18-b1e5-91a011b9969c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e0994d67-4449-4b18-b1e5-91a011b9969c&version=latest&client=mohc"
+}

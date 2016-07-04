@@ -1,0 +1,64 @@
+{
+    "canonical_name": "1pctCO2-withism", 
+    "description": "Increase atmospheric carbon dioxide by 1% per. year to quadrupling then hold fixed for 200 years in a model with interactive ice sheets.\nRun for a minimum of 350 years (500 years encouraged).", 
+    "keywords": "ISMIP6, Tier 1, 1% per yr CO2, quadrupled CO2, interactive ISM, interactive ice sheets", 
+    "long_name": "1% per yr CO2 increase to quadrupling with interactive ice sheets", 
+    "mip_era": "cmip6", 
+    "rationale": "For analysis of the coupled ice sheet-climate system.", 
+    "related_experiments": [
+        "1pctCO2", 
+        "piControl-withism"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1851-2200 350yrs minimum", 
+            "description": "Begin in pre-industrial era and run for a minimum of 350 years, up to 500 years", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial start date, minimum 350 years", 
+            "label": "1851-2200 350yrs minimum", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1%yrCO2Increase", 
+            "description": "1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1%yrCO2Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialISMInitialisation", 
+            "description": "Initialisation is from the pre-industrial control with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "piControl, interactive ISM, initialisation", 
+            "label": "PreIndustrialISMInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-ISM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-ISM, ESM-ISM, Atmosphere-Ocean-IceSheet, Earth System, Model, Configuration", 
+            "label": "AOGCM-ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "189d16b7-db68-493d-a7e5-7363c0d7bbe5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=189d16b7-db68-493d-a7e5-7363c0d7bbe5&version=latest&client=mohc"
+}

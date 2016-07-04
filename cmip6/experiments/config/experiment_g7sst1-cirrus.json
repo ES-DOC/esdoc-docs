@@ -1,0 +1,81 @@
+{
+    "canonical_name": "G7SST1-cirrus", 
+    "description": "Time slice at year 2020 of GeoMIP G7cirrus.", 
+    "keywords": "GeoMIP, Tier2, timeslice, G7cirrus, 2020", 
+    "long_name": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2020 of SSP5-8.5 + cirrus thinning", 
+    "mip_era": "cmip6", 
+    "rationale": "To assess radiative forcing of G7cirrus at the beginning of the simulation (2020).", 
+    "related_experiments": [
+        "G7SST2-cirrus", 
+        "G7cirrus", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2020-2021 10yrs1", 
+            "description": "Idealised temporal constraint, repeating 2020 for 10 years, to coincide with the first year of the ScenarioMIP SSP5-85 experiment", 
+            "isConformanceRequested": false, 
+            "keywords": "2020-2021, idealised, 10 years, year 1", 
+            "label": "2020-2021 10yrs1", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "IncreaseCirrusSedementationVelocity", 
+            "description": "Add a local variable that replaces (in all locations where temperature is colder than 235K) the ice mass mixing ratio in the calculation of the sedimentation velocity with a value that is eight times the original ice mass mixing ratio.\nCirrus seeding to begin in 2020 and continue through to the year 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, cirrus thinning, increase cirrus sedimentation velocity", 
+            "label": "IncreaseCirrusSedementationVelocity", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP5-85SST2020", 
+            "description": "2020 sea surface temperature from the SSP5-85 ScenarioMIP experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SST, sea surface temperature, 2020", 
+            "label": "SSP5-85SST2020", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP5-85SIC2020", 
+            "description": "2020 sea ice concentration from the SSP5-85 ScenarioMIP experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SIC, sea ice concentration, 2020", 
+            "label": "SSP5-85SIC2020", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation2020", 
+            "description": "Initialisation is from the beginning of year 2020 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, year 2020, scenario", 
+            "label": "SSP5-85Initialisation2020", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "f9f336e1-b817-480e-8ddf-47a2fb8bb7d7", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f9f336e1-b817-480e-8ddf-47a2fb8bb7d7&version=latest&client=mohc"
+}

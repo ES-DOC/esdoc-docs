@@ -1,0 +1,79 @@
+{
+    "canonical_name": "highresSST-future-SSP245", 
+    "description": "Medium forcing (ScenarioMIP SSP2-45) future scenario (2015-2050) atmosphere only simulations at high and standard resolution, with an option to continue to 2100.\nFor optimal comparison between models aerosol concentrations would be preferable and not emissions.\nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution.", 
+    "keywords": "HighResMIP, Tier 3, AMIP, SSP2-45", 
+    "long_name": "HighResMIP AMIP SSP2-45", 
+    "mip_era": "cmip6", 
+    "rationale": "Extension to the HighResMIP Historical AMIP simulations.", 
+    "related_experiments": [
+        "highresSST-present"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2049  35yrs", 
+            "description": "Scenario, from 2015 to the mid 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2049", 
+            "label": "2015-2049  35yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2015-2099 85yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2099", 
+            "label": "2015-2099 85yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "HadISSTextension", 
+            "description": "Extension of the HadISST SST and sea ice dataset to 2050", 
+            "isConformanceRequested": true, 
+            "keywords": "HadISST extension, 21st century, sea surface temperature, sea ice", 
+            "label": "HadISSTextension", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "HighAndStandardResolution", 
+            "description": "At least two simulations, one at high resolution (minimum 25-50 km at mid-latitudes), and one at the standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "high resolution, standard resolution, at least two members", 
+            "label": "HighAndStandardResolution", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "HighResAtmos", 
+            "description": "25-50km minimum resolution at mid-latitudes", 
+            "isConformanceRequested": false, 
+            "keywords": "High Resolution, 25-50 km,", 
+            "label": "HighResAtmos", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "standardModelResolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "standardModelResolution", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "cf6bca92-5679-4f60-8daf-ba4f58335aac", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=cf6bca92-5679-4f60-8daf-ba4f58335aac&version=latest&client=mohc"
+}

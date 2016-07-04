@@ -1,0 +1,57 @@
+{
+    "canonical_name": "ssp534-over", 
+    "description": "Gap: Mitigated overshoot scenario with medium/low radiative forcing by the end of the 21st century.  The scenario follows SSP5-8.5, an unmitigated baseline scenario, through 2040, and then substantially negative net emissions thereafter.", 
+    "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP3.4, RCP8.5, overshoot, future, SSP-based RCP", 
+    "long_name": "RCP3.4 overshoot scenario branching from SSP58.5", 
+    "mip_era": "cmip6", 
+    "rationale": "Explore the climate science and policy implications o f a peak and decline in forcing during the 21st century.  This scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
+    "related_experiments": [
+        "ssp434", 
+        "ssp534-over-ext", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2040-2099 60 yrs", 
+            "description": "Scenario, from 2040 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2040-2099", 
+            "label": "2040-2099 60 yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP34overForcing", 
+            "description": "Impose RCP3.4 overshoot forcing.  Beginning in 2040, reduce forcings from the 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP5, RCP3.4 overshoot", 
+            "label": "RCP34overForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP5-85Initialisation2040", 
+            "description": "Initialisation is from year 2040 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, scenario, 2040", 
+            "label": "SSP5-85Initialisation2040", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "4372a373-0eed-45e5-b663-dabcac9c5e49", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=4372a373-0eed-45e5-b663-dabcac9c5e49&version=latest&client=mohc"
+}

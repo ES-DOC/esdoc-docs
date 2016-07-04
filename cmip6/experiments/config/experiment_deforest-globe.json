@@ -1,0 +1,64 @@
+{
+    "canonical_name": "deforest-globe", 
+    "description": "Idealized defrestation experiment, 20 million square km forest removed linearly over a period of 50 years, with an additional 20 years of constant forest cover. Designed to be somewhat analogous/complementary to the 1% CO2 DECK experiments.", 
+    "keywords": "LUMIP, Tier 1, Historical, global deforestation", 
+    "long_name": "idealised transient global deforestation", 
+    "mip_era": "cmip6", 
+    "rationale": "To assess the biogeophysical role of land cover change on climate. To Identify what amount of deforestation is required to see a signal relative to noise.", 
+    "related_experiments": [
+        "historical", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1919 70yrs", 
+            "description": "Historical, from 1850 to 1920.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1850, 1919", 
+            "label": "1850-1919 70yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "IdealisedDeforestation", 
+            "description": "20 million square km of forest removed linearly over a period of 50 years, then held fixed for 20 years.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, idealised deforestation, 20 million square km per year.", 
+            "label": "IdealisedDeforestation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-IndustrialLandUseExcludingForest", 
+            "description": "pre-industrial land use, excluding forestation.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, pre-industrial land-use, excluding forest", 
+            "label": "Pre-IndustrialLandUseExcludingForest", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingLandUse", 
+            "description": "Pre-Industrial forcing excluding land-use.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial forcing, excluding land-use", 
+            "label": "PIForcingExcludingLandUse", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "2ea54201-0b5c-4411-a6f6-b95dcb7c0c72", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=2ea54201-0b5c-4411-a6f6-b95dcb7c0c72&version=latest&client=mohc"
+}

@@ -1,0 +1,64 @@
+{
+    "canonical_name": "piClim-CH4", 
+    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations (except methane) and 2014 methane concentrations.", 
+    "keywords": "AerChemMIP, Tier 2, piControl perturbation,  1850 SST, 1850 WMGHG, 2014 methane", 
+    "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 methane concentrations (including chemistry)", 
+    "mip_era": "cmip6", 
+    "rationale": "To compute the ERF for 1850 and 2014.", 
+    "related_experiments": [
+        "piClim-control", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 30yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850WMGHGNoMethane", 
+            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations, except methane.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, Well Mixed, Greenhouse Gas, GHG, no Methane, no CH4", 
+            "label": "1850WMGHGNoMethane", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014Methane", 
+            "description": "Impose repeating 2014 methane (CH4) concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Methane, CH4, concentrations", 
+            "label": "2014Methane", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "0aafcd81-bfa2-4392-a1b2-269c0557e227", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=0aafcd81-bfa2-4392-a1b2-269c0557e227&version=latest&client=mohc"
+}

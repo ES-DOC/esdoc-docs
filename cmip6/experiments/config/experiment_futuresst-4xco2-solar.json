@@ -1,0 +1,90 @@
+{
+    "canonical_name": "futureSST-4xCO2-solar", 
+    "description": "Time slice at year 100 of the GeoMIP G1 experiment.", 
+    "keywords": "GeoMIP, Tier2, timeslice, G1", 
+    "long_name": "year 100 SSTs from abrupt4xCO2 with quadrupled CO2 + solar reduction", 
+    "mip_era": "cmip6", 
+    "rationale": "To enamble the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
+    "related_experiments": [
+        "G1", 
+        "abrupt-4xCO2", 
+        "piControl", 
+        "piSST-4xCO2-solar"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1851 10yrs100", 
+            "description": "Idealised temporal constraint, repeating 1850 for 10 years, to coincide with year 100 of the GeoMIP G1ext experiment", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 10 years, year 100", 
+            "label": "1850-1851 10yrs100", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Abrupt4xCO2Increase", 
+            "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
+            "label": "Abrupt4xCO2Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SolarBalanceOf4xCO2", 
+            "description": "Reduce the solar constant such that the top of atmosphere radiative flux remains within \u00b10.1 W/m2 of the piControl experiment when the CO2 concentration is quadrupled. Specifically, the global mean value of top-of-atmosphere net radiative flux must lie within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, solar balance, 4xCO2, CO2 quadrupling", 
+            "label": "SolarBalanceOf4xCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControlSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2andSolar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "PIForcingExcludingCO2andSolar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "G1extInitialisation", 
+            "description": "Initialisation is made from the final year of the GeoMIP G1ext experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, g1ext", 
+            "label": "G1extInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "3f1f837d-ad38-4969-aa27-a0b8f55614a6", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=3f1f837d-ad38-4969-aa27-a0b8f55614a6&version=latest&client=mohc"
+}

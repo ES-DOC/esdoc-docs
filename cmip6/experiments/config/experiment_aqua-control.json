@@ -1,0 +1,89 @@
+{
+    "canonical_name": "aqua-control", 
+    "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7a. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents.", 
+    "keywords": "CFMIP, Tier 1, aquaplanet, control, zonal SSTs, no sea ice", 
+    "long_name": "Aquaplanet control", 
+    "mip_era": "cmip6", 
+    "rationale": "Aqua-planet control run.  Aqua-planet experiments examine model differences and responses under simplified conditions.", 
+    "related_experiments": [
+        "amip", 
+        "aqua-4xCO2", 
+        "aqua-p4K"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1979-1988 10yrs", 
+            "description": "Begin in 1979 and run for 10 years after a few months of spin up.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1979-1989", 
+            "label": "1979-1988 10yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ZonallyUniformSST", 
+            "description": "Impose non-varying and zonally-uniform distribution of SST as specified in appendix B of Webb et. al., 2016.", 
+            "isConformanceRequested": true, 
+            "keywords": "zonally uniform, SST", 
+            "label": "ZonallyUniformSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "NoSeaIce", 
+            "description": "No sea ice at high latitudes.  Sea surface temperature should be set to a spatially uniform 0\u00b0C poleward of 60\u00b0.", 
+            "isConformanceRequested": false, 
+            "keywords": "no sea ice", 
+            "label": "NoSeaIce", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AMIP II GHG", 
+            "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations: CO2: 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Green House Gas, GHG AMIPII, radiatively active trace gas", 
+            "label": "AMIP II GHG", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AMIP II Ozone", 
+            "description": "The ozone distribution is derived from the climatology used in AMIP II (Gates et al., 1999) and is constant in time and symmetric about the equator. This ozone distribution is provided as a netCDF file which is archived on the Earth System Grid and available via the DOI http://dx.doi.org/10.5065/D61834Q6", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIPII, Ozone, climatology", 
+            "label": "AMIP II Ozone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "perpetualEquinox", 
+            "description": "Apply perpetual equinoctial conditions (no seasonal forcing).", 
+            "isConformanceRequested": true, 
+            "keywords": "perpetual equinoctial conditions, perpetual equinox, no seasonal forcing.", 
+            "label": "perpetualEquinox", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Aquaplanet Configuration", 
+            "description": "Aquaplanet configuration, without continents.", 
+            "isConformanceRequested": false, 
+            "keywords": "aquaplanet, no continents", 
+            "label": "Aquaplanet Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "5547c81c-495a-48dd-b846-a836315ec0e3", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5547c81c-495a-48dd-b846-a836315ec0e3&version=latest&client=mohc"
+}

@@ -1,0 +1,47 @@
+{
+    "canonical_name": "land-hist", 
+    "description": "Land reanalysis using reference forcing data and a standard bias correction strategy.", 
+    "keywords": "LS3MIP, Tier 1, Historical, land surface", 
+    "long_name": "offline land reanalysis", 
+    "mip_era": "cmip6", 
+    "rationale": "Land reanalysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+    "related_experiments": [
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LMIPHistoricalForcing", 
+            "description": "Reference forcing data for offline land surface models running the L3MIP historical simulation. Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, historical, forcing", 
+            "label": "LMIPHistoricalForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "TwoMember", 
+            "description": "An ensemble of two simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "two, 2, ensemble, runs, simulations", 
+            "label": "TwoMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "ab949b54-d56e-48e7-9657-44262d51c2fb", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=ab949b54-d56e-48e7-9657-44262d51c2fb&version=latest&client=mohc"
+}

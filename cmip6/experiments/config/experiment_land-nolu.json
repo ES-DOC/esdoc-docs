@@ -1,0 +1,65 @@
+{
+    "canonical_name": "land-noLu", 
+    "description": "Land surface model simulation. Historical forcing with land use held constant at 1850. No human activity.", 
+    "keywords": "LUMIP, Tier 1, Historical, pre-industrial Land Use and Land Cover, 1850, no land management", 
+    "long_name": "historical land-only with no land-use change", 
+    "mip_era": "cmip6", 
+    "rationale": "Land-use change impact on land to atmosphere fluxes of water, energy and carbon.", 
+    "related_experiments": [
+        "historical", 
+        "land-hist", 
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LMIPHistoricalForcing", 
+            "description": "Reference forcing data for offline land surface models running the L3MIP historical simulation. Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, historical, forcing", 
+            "label": "LMIPHistoricalForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial land-use forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Cover", 
+            "description": "Constant pre-industrial land-cover forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Cover", 
+            "label": "Pre-Industrial Land Cover", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "21ec48bc-97be-4ccb-aa23-0f9b3685b235", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=21ec48bc-97be-4ccb-aa23-0f9b3685b235&version=latest&client=mohc"
+}

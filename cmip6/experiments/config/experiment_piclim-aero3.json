@@ -1,0 +1,87 @@
+{
+    "canonical_name": "piClim-aerO3", 
+    "description": "A single 30-year uncoupled (atmosphere and land) simulation in which sea suface temperature (SST) and sea ice distributions are specified and vegetation may interact.  Aerosols and ozone set to present day (2015) values, sea ice and other anthropogenic forcing agents are specified at pre-industrial values.", 
+    "keywords": "RFMIP, Tier 1, PD aer O3, present day aerosols and ozone, uncoupled, atmosphere-land", 
+    "long_name": "RFMIP aerosols and ozone effective radiative forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "Quantify present-day effective radiative forcing (ERF) by aerosols and ozone.", 
+    "related_experiments": [
+        "piClim-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years, timeslice experiment.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControlSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015Aerosols", 
+            "description": "Impose present day (2015) aerosol concentrations / emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "2015, aerosols", 
+            "label": "2015Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015AerPre", 
+            "description": "Impose present day (2015) aerosol precursor concentrations / emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "2015, areosol precursors", 
+            "label": "2015AerPre", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015O3", 
+            "description": "Impose present day (2015) ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "2015, ozone, O3", 
+            "label": "2015O3", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piForcingExcludngAerO3", 
+            "description": "Pre-Industrial forcing excluding aerosols and ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols, excluding ozone", 
+            "label": "piForcingExcludngAerO3", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AtmosLandConfig", 
+            "description": "An uncoupled (atmosphere-land) model.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "AtmosLandConfig", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "84607685-77a0-4d4d-b4be-3fdeb14ce874", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=84607685-77a0-4d4d-b4be-3fdeb14ce874&version=latest&client=mohc"
+}

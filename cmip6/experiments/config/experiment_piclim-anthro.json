@@ -1,0 +1,63 @@
+{
+    "canonical_name": "piClim-anthro", 
+    "description": "A single 30-year uncoupled (atmosphere and land) simulation in which sea suface temperature (SST) and sea ice distributions are specified and vegetation may interact.  Anthropogenic forcing agents are specified at present day 2015 values.", 
+    "keywords": "RFMIP, Tier 1, Present day anthropogenic forcing, uncoupled, atmosphere-land", 
+    "long_name": "RFMIP anthropogenic effective radiative forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "Quantify present-day total anthropogenic effective radiative forcing (ERF).", 
+    "related_experiments": [
+        "piClim-control"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years, timeslice experiment.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSST", 
+            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature", 
+            "label": "PIControlSST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIControlSIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControlSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015AnthropForcing", 
+            "description": "Agents of anthropogenic forcing, GHGs, Aerosols, Land Use, etc", 
+            "isConformanceRequested": true, 
+            "keywords": "anthropogenic forcing, 2015", 
+            "label": "2015AnthropForcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AtmosLandConfig", 
+            "description": "An uncoupled (atmosphere-land) model.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "AtmosLandConfig", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "e9e51e5a-a8b1-49f5-b043-ab4a1542143d", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e9e51e5a-a8b1-49f5-b043-ab4a1542143d&version=latest&client=mohc"
+}

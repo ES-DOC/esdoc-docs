@@ -1,0 +1,104 @@
+{
+    "canonical_name": "histSST-1950HC", 
+    "description": "Historical atmoshere only simulation with historical WMGHG, transient historical SSTs. Ozone depleting substances fixed at 1950 emission levels.", 
+    "keywords": "AerChemMIP, Tier 1, Historical perturbation, historical WMGHG, historical SST, 1950 HC, halocarbons, ozone depleting substances", 
+    "long_name": "historical SSTs and historical forcing, but with1950 halocarbon concentrations", 
+    "mip_era": "cmip6", 
+    "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+    "related_experiments": [
+        "hist-1950HC", 
+        "historical"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1950-2014 65yrs", 
+            "description": "Historical, Recent past, since large scale halocarbon emsissions began.", 
+            "isConformanceRequested": false, 
+            "keywords": "1950, 2014, Historical, Recent Past", 
+            "label": "1950-2014 65yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950ODSEmissions", 
+            "description": "Impose repeating 1950 Ozone Depleting Substances (ODS) emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "1950, Ozone Depleting Substances, ODS, emissions", 
+            "label": "1950ODSEmissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "HistoricalAerChemMIP SST", 
+            "description": "Historical transient sea surface temperature from experiment AerChemMIP1.1.1", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, SST, sea surface temperature", 
+            "label": "HistoricalAerChemMIP SST", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Emissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "1950HistoricalInitialisation", 
+            "description": "Initialisation is branched from the Historical AerChem Simulation in 1950.  To provide continuity between simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, 1950", 
+            "label": "1950HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use and Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "116869ca-acbe-4082-a256-dc6dfebbd409", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=116869ca-acbe-4082-a256-dc6dfebbd409&version=latest&client=mohc"
+}

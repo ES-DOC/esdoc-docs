@@ -1,0 +1,63 @@
+{
+    "canonical_name": "abrupt-4xCO2", 
+    "description": "Impose an instantaneous quadrupling of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+    "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), 4xCO2, instantaneous quadrupling, climate sensitivity", 
+    "long_name": "Abrupt quadrupling of the atmospheric concentration of carbon dioxide", 
+    "mip_era": "cmip6", 
+    "rationale": "To evaluate the equilibrium climate sensitivity of the model and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.", 
+    "related_experiments": [
+        "piControl"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1999 150yrs", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Abrupt4xCO2Increase", 
+            "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
+            "label": "Abrupt4xCO2Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PIForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "PIForcingExcludingCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "FiveMember", 
+            "description": "An ensemble of five simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "b67e8d2f-93fc-41d9-91d8-420eac7b0052", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=b67e8d2f-93fc-41d9-91d8-420eac7b0052&version=latest&client=mohc"
+}
