@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<numericalExperiment documentVersion="2" control="false" 
+    xmlns="http://www.metaforclimate.eu/cim/1.1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 C:\Users\clp73\Desktop\Metafor\subversion\CIM1\branches\dev1.3\activity.xsd" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+    xmlns:gco="http://www.isotc211.org/2005/gco">
+    
+    <rationale>Climate sensitivity experiment: examine the transient response to CO2 forcing.</rationale>    
+    <shortName>11_2xCo2</shortName>
+    <longName>Experiment11_InstantaneousCO2Doubling</longName>
+    <description>Instantaneously double CO2 in an atmosphere coupled to a nondynamic slab ocean.
+    Run to equilibrim and then for a further 20 years</description>
+    <!-- The startDate for this idealized experiment is set to the default time zero -->   
+    <CalendarType>
+        <realCalendar>
+            <range/>
+        </realCalendar>
+    </CalendarType>
+    <requiredDuration xsi:type="OpenDateRange">
+        <startDate>0000-01-01T00:00:00Z</startDate>
+        <lengthYears>Equilibrium + 20</lengthYears>
+    </requiredDuration>
+    
+    <!-- Initial Conditions -->
+    <numericalRequirement xsi:type="InitialCondition">
+        <id xsi:type="Identifier">ic.3006</id>
+        <name xsi:type="Identifier">11.ic</name>
+        <description>Initial conditions for the instantaneous CO2 doubling experiment are same as the slab ocean control, experiment 10</description>
+    </numericalRequirement>
+
+    <!-- Boundary Conditions -->
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3040</id>
+        <name xsi:type="Identifier">11.bc.2xCO2.conc</name>
+        <description>Instantaneous doubling of atmospheric carbon dioxide concentration with respect to experiment 10.</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3037</id>
+        <name xsi:type="Identifier">10.bc.WMGas.conc</name>
+        <description>Fixed concentration of atmospheric well mixed gases (excluding CO2).</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3038</id>
+        <name xsi:type="Identifier">10.bc.SLGas.conc</name>
+        <description>Fixed concentration of atmospheric short lived (reactive) gases.</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3039</id>
+        <name xsi:type="Identifier">10.bc.LandUse</name>
+        <description>Fixed land use.</description>
+    </numericalRequirement>
+
+    <author>
+        <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+                <gco:CharacterString> Charlotte Pascoe </gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+                <gco:CharacterString> BADC, CEDA, STFC </gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:contactInfo>
+                <gmd:CI_Contact>
+                    <gmd:address>
+                        <gmd:CI_Address>
+                            <gmd:electronicMailAddress>
+                                <gco:CharacterString> charlotte.pascoe@stfc.ac.uk
+                                </gco:CharacterString>
+                            </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                    </gmd:address>
+                </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+                <gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+            </gmd:role>
+        </gmd:CI_ResponsibleParty>
+    </author>
+
+    <creationDate>2009-09-22T14:31:00Z</creationDate>
+    <documentID xsi:type="Identifier">CMIP3.11.2xco2</documentID>
+
+</numericalExperiment>

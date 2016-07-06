@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+
+	Additional expt. 2.1 runs (but with different initial conditions imposed on the atmosphere, sea-ice, and ocean and possibly also the land) yielding an ensemble of size ≥3 (and if practical, much larger). The changes in climatological SSTs and sea-ice used in prescribing the SST and sea-ice in these extended time-slice runs should, when available, be taken from more than one pair of coupled atmosphere/ocean model runs.
+	
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	
+	<!-- Initial Conditions -->
+	<numericalRequirement xsi:type="InitialCondition">
+        <id xsi:type="Identifier">ic.001</id>
+        <name xsi:type="Identifier">2.1.ic</name>
+        <description>A description of initial condition for the control run </description>
+    </numericalRequirement>
+    
+	<numericalRequirement xsi:type="InitialCondition" >
+		<id xsi:type="Identifier">ic.017</id>
+		<name>2.1E.ic.atmos</name>
+		<description>Different Initial Conditions imposed on atmosphere to that of experiment 2.1</description>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="InitialCondition" >
+		<id xsi:type="Identifier">ic.018</id>
+		<name>2.1E.ic.ocean</name>
+		<description>Different Initial Conditions imposed on ocean to that of experiment 2.1</description>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="InitialCondition" >
+		<id xsi:type="Identifier">ic.019</id>
+		<name>2.1E.ic.seaice</name>
+		<description>Different Initial Conditions imposed on sea-ice to that of experiment 2.1</description>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="InitialCondition" >
+		<id xsi:type="Identifier">ic.020</id>
+		<name>2.1E.ic.land</name>
+		<description>Different Initial Conditions imposed on land surface to that of experiment 2.1</description>
+	</numericalRequirement>
+	
+	<!-- Boundary/Forcing Conditions -->
+	<numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.062</id>
+		<name>2.1.bc.sst</name>
+		<description>Prescribed SST anomolies (relative to exp 3.3)  based on either (a) climatology difference between years 2026-2035 (from expt 4.1) and years 1979-2008 (from expt 3.2), OR (b) climatology difference between years 2026-2035 (from expt 1.2) and years 1979-2008 (from expt 1.1)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.063</id>
+		<name>2.1.bc.sst</name>
+	    <description>Prescribed Sea Ice concentration anomolies (relative to exp 3.3)  based on either (a) climatology difference between years 2026-2035 (from expt 4.1) and years 1979-2008 (from expt 3.2), OR (b) climatology difference between years 2026-2035 (from expt 1.2) and years 1979-2008 (from expt 1.1)</description>
+    </numericalRequirement>
+    
+	<numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.025</id>
+        <name>1.1.bc.wmg.conc</name>
+        <description>Imposed changing concentrations of RCP4.5 well mixed gases, including CO2</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.026</id>
+        <name>1.1.bc.sls.conc</name>
+        <description>Imposed changing concentrations of RCP4.5 short lived gas species </description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.027</id>
+        <name>1.1.bc.aer.conc</name>
+        <description>Imposed changing concentrations of RCP4.5 aerosols</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.028</id>
+        <name>1.1.bc.aer_pre.conc</name>
+        <description>Imposed changing concentrations of RCP4.5 aerosol precursors </description>
+    </numericalRequirement>  
+      
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.029</id>
+        <name>1.1.bc.wmg.em</name>
+        <description>Imposed changing emissions of RCP4.5 well mixed gases, including CO2</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.030</id>
+        <name>1.1.bc.sls.em</name>
+        <description>Imposed changing emissions of RCP4.5 short lived gas species</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.031</id>
+        <name>1.1.bc.aer.em</name>
+        <description>Imposed changing emissions of RCP4.5 aerosols </description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.032</id>
+        <name>1.1.bc.aer_pre.em</name>
+        <description>Imposed changing emissions of RCP4.5 aerosol precursors</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.033</id>
+        <name>1.1.bc.LandUse</name>
+        <description>Imposed changing RCP4.5 land use</description>
+    </numericalRequirement>
+	
+	<shortName>
+		CMIP5_NumReq_2.1E
+	</shortName>
+    <longName> 
+		CMIP5 Tier 2 Time-slice experiment 2.1E - Future "time-slice" experiment ensemble
+	</longName>
+     
+    <calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+	<requiredDuration xsi:type="ClosedDateRange">
+		<startDate> 2026-01-01T00:00:00Z</startDate>
+		<endDate> 2036-01-01T00:00:00Z </endDate>
+	</requiredDuration>
+	<author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+	<documentID xsi:type="Identifier">
+	</documentID>
+	<creationDate>
+		2009-07-02T15:00:00Z
+	</creationDate>
+</numericalExperiment>

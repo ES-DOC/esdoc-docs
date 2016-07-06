@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment xmlns="http://www.metaforclimate.eu/cim/1.1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 ../../../CIM/branches/dev0p3/activity.xsd">
+    <numericalActivityName>
+        6.2a::HansenControl
+    </numericalActivityName>
+    <numericalActivityDescription>
+        Hansen Control
+    </numericalActivityDescription>
+    <Why>
+        Hansen experiments diagnose the super fast response to [CO2].
+        This is the control for experiment 6.2b::Hansen4XCO2 and 
+        6.3::GregoryAbrupt4XCO2Ensemble
+    </Why>
+    <!--* results for all months including initial transient period
+        * for at least 1 year in the first 25 years the following 
+        diagnostics must be made:
+        - estimate radiative forcing at the top and bottom of the 
+        atmosphere
+        - for 2 calls to radiation
+        - 1x[CO2]
+        - 4X[CO2]
+        - only the 1X[CO2] heating rates are applied to the model -->
+    <numericalExperiment>
+        <CalendarType>
+            <PerpetualPeriod>
+                1850
+            </PerpetualPeriod>
+        </CalendarType>
+        <control>
+            True
+        </control>
+        <requiredDuration>
+            <ClosedDateRange>
+                25  years
+            </ClosedDateRange>
+        </requiredDuration>        
+        <numericalRequirement>
+            <initialCondition>
+                <description>
+                    Initial conditions are from experiment 3.1::PreIndustrialControl
+                </description>
+                <id>6.2a.ic</id>
+            </initialCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed concentration of well mixed Gas: CO2 
+                             is the same as 3.1::PreIndustrialControl</description>
+                <id>6.2a.bc.CO2</id>
+            </boundaryCondition>
+        </numericalRequirement>  
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Sea surface temperature is the climatology SST from the
+                             3.1::PreIndustrialControl</description>
+                <id>6.2a.sst.clim</id>
+            </boundaryCondition>
+        </numericalRequirement>  
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Sea ice is the sea ice climatology from the
+                             3.1::PreIndustrialControl</description>
+                <id>6.2a.seaIce.clim</id>
+            </boundaryCondition>
+        </numericalRequirement>        
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Unperturbed Land Use
+                             Same as for the 3.1::PreIndustrialControl</description>
+                <id>6.2a.bc.LandUse</id>
+            </boundaryCondition>
+        </numericalRequirement> 
+        <numericalRequirement>
+            <spatioTemporalConstraint>
+                <outputPeriod>for one year between 0 and 25</outputPeriod>
+                <outputFrequency>monthly</outputFrequency>
+                <numericalRequirement>
+                    <boundaryCondition>
+                        <description>Instantaneous 4X CO2 concentration 
+                                     applied to radiation scheme</description>
+                        <id>6.2a.bc.4XCO2</id>
+                    </boundaryCondition>
+                    <boundaryCondition>
+                        <description>Pre-Industrial CO2 concentration</description>
+                        <id>6.2a.bc.CO2</id>
+                    </boundaryCondition>
+                </numericalRequirement>
+            </spatioTemporalConstraint>
+        </numericalRequirement>
+        
+    </numericalExperiment>
+</Experiment>

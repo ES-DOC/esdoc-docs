@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        4.4::Simulation
+    </numericalActivityName>
+    <numericalActivityDescription>
+        RCP6.X Scenario
+    </numericalActivityDescription>
+    <Why>
+        Radiative forcing peaks at ~6W/m² near 2100. Relates to 3.2::Simulation
+    </Why>
+    <numericalExperiment>
+        <CalendarType>
+            <RealCalendar>
+                2006-2100
+            </RealCalendar>
+        </CalendarType>
+        <ensemble>
+            False
+        </ensemble>
+        <requiredDuration>
+            <ClosedDateRange>
+                95 years
+            </ClosedDateRange>
+        </requiredDuration>
+        <!--  CP doesn't know whether there is a formal way of describing 
+               inital conditions other than naming the particular experiment 
+               / simulation it was spawned from. -->
+        <numericalRequirement xsi:type="InitialCondition">
+                <description> All ModelComponents restart from 3.2::Simulation 2005/12/31 to be specify.</description>
+                <id xsi:type="Identifier"> 4.4.ic</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+           <description>Prescribed atmospheric concentrations of well mixed gases including [CO2]</description>
+           <id xsi:type="Identifier">4.4.bc.wmg </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed atmospheric concentration of short lived (reactive) gas species</description>
+                <id xsi:type="Identifier">4.4.bc.sls </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of natural aerosols</description>
+                <id xsi:type="Identifier">4.4.bc.cna</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of anthropogenic aerosols</description>
+                <id xsi:type="Identifier">4.4.bc.caa</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of natural aerosol precursors</description>
+                <id xsi:type="Identifier">4.4.bc.cnap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of anthropogenic aerosol precursors</description>
+                <id xsi:type="Identifier">4.4.bc.caap</id>
+        </numericalRequirement>
+        <numericalRequirement>
+				<description>Prescribed concentrations of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">4.4.bc.csla</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed emissions of natural aerosols</description>
+                <id xsi:type="Identifier">4.4.bc.ena</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed emissions of anthropogenic aerosols</description>
+                <id xsi:type="Identifier">4.4.bc.eaa</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed emissions of natural aerosol precursors</description>
+                <id xsi:type="Identifier">4.4.bc.enap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed emissions of anthropogenic aerosol precursors</description>
+                <id xsi:type="Identifier">4.4.bc.eaap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed emissions of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">4.4.bc.esla></id>
+        </numericalRequirement>
+         <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of ozone</description>
+                <id xsi:type="Identifier">4.4.bc.co</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed solar forcing</description>
+				<id xsi:type="Identifier">4.4.bc.sf></id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed Land Use</description>
+                <id xsi:type="Identifier">4.4.bc.LandUse</id>
+        </numericalRequirement>                
+    </numericalExperiment>   
+</Experiment>

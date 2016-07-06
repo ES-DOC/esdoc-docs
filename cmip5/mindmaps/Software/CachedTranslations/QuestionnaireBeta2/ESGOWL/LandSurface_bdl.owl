@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceBasicApproximationsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Basic Approximations</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decription of the basic approximations made in the LandSurface model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceGenealogy"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceGenealogy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Genealogy</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">History of parent models.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceGenealogy"/>
+  </owl:ObjectProperty>
+  <LandSurfaceGenealogy rdf:ID="LandSurfaceGenealogy_BATS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BATS</rdfs:label>
+  </LandSurfaceGenealogy>
+  <LandSurfaceGenealogy rdf:ID="LandSurfaceGenealogy_Bucket">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bucket</rdfs:label>
+  </LandSurfaceGenealogy>
+  <LandSurfaceGenealogy rdf:ID="LandSurfaceGenealogy_Deardorff">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deardorff</rdfs:label>
+  </LandSurfaceGenealogy>
+  <LandSurfaceGenealogy rdf:ID="LandSurfaceGenealogy_SiB">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SiB</rdfs:label>
+  </LandSurfaceGenealogy>
+  <LandSurfaceGenealogy rdf:ID="LandSurfaceGenealogy_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceGenealogy>
+  <owl:Class rdf:ID="LandSurfaceCouplingWithAtmosphere"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCouplingWithAtmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Coupling With Atmosphere</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the treatment of land surface coupling with the Atmosphere model component </rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCouplingWithAtmosphere"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCouplingWithAtmosphere rdf:ID="LandSurfaceCouplingWithAtmosphere_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit</rdfs:label>
+  </LandSurfaceCouplingWithAtmosphere>
+  <LandSurfaceCouplingWithAtmosphere rdf:ID="LandSurfaceCouplingWithAtmosphere_semi-implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-implicit</rdfs:label>
+  </LandSurfaceCouplingWithAtmosphere>
+  <LandSurfaceCouplingWithAtmosphere rdf:ID="LandSurfaceCouplingWithAtmosphere_explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">explicit</rdfs:label>
+  </LandSurfaceCouplingWithAtmosphere>
+  <LandSurfaceCouplingWithAtmosphere rdf:ID="LandSurfaceCouplingWithAtmosphere_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCouplingWithAtmosphere>
+  <owl:Class rdf:ID="LandSurfaceLandCoverTypes"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLandCoverTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Land Cover Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Types of land cover defined in the land surface model.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLandCoverTypes"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_bare_soil">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bare soil</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_urban">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urban</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_lake">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lake</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_vegetated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetated</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <LandSurfaceLandCoverTypes rdf:ID="LandSurfaceLandCoverTypes_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceLandCoverTypes>
+  <owl:Class rdf:ID="LandSurfaceListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify which prognostic variables are included in the land surface scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_soil_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil temperature</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_soil_heat_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil heat content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_soil_moisture">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil moisture</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_soil_ice_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil ice content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_snow_mass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow mass</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_snow_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow albedo</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_snow_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow density</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_snow_water_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow water content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_snow_layer_thickness">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow layer thickness</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_canopy_water_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canopy water content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_canopy_heat_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canopy heat content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_canopy_snow_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canopy snow content</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_surface_skin_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface skin temperature</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_canopy_skin_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canopy skin temperature</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_river_water_storage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">river water storage</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <LandSurfaceListOfPrognosticVariables rdf:ID="LandSurfaceListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceListOfPrognosticVariables>
+  <owl:Class rdf:ID="LandSurfaceConservationOfPropertiesWaterTreatment"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceConservationOfPropertiesWaterTreatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Conservation Of Properties Water Treatment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the treatment of water to ocean</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceConservationOfPropertiesWaterTreatment"/>
+  </owl:ObjectProperty>
+  <LandSurfaceConservationOfPropertiesWaterTreatment rdf:ID="LandSurfaceConservationOfPropertiesWaterTreatment_All_water_sent_to_ocean__LPAREN_Instantly_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All water sent to ocean (Instantly)</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterTreatment>
+  <LandSurfaceConservationOfPropertiesWaterTreatment rdf:ID="LandSurfaceConservationOfPropertiesWaterTreatment_All_water_sent_to_ocean__LPAREN_with_a_lag_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All water sent to ocean (with a lag)</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterTreatment>
+  <LandSurfaceConservationOfPropertiesWaterTreatment rdf:ID="LandSurfaceConservationOfPropertiesWaterTreatment_Storage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storage</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterTreatment>
+  <LandSurfaceConservationOfPropertiesWaterTreatment rdf:ID="LandSurfaceConservationOfPropertiesWaterTreatment_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterTreatment>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceConservationOfPropertiesLagOfWaterDischargeValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Conservation Of Properties Lag Of Water Discharge</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the lag duration of the water discharge into ocean.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceConservationOfPropertiesWaterStorageMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceConservationOfPropertiesWaterStorageMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Conservation Of Properties Water Storage Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Give further details of the water storage method</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceConservationOfPropertiesWaterStorageMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceConservationOfPropertiesWaterStorageMethod rdf:ID="LandSurfaceConservationOfPropertiesWaterStorageMethod_snow_as_infinite_reservoir">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow as infinite reservoir</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterStorageMethod>
+  <LandSurfaceConservationOfPropertiesWaterStorageMethod rdf:ID="LandSurfaceConservationOfPropertiesWaterStorageMethod_endorheic_lakes_storage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endorheic lakes storage</rdfs:label>
+  </LandSurfaceConservationOfPropertiesWaterStorageMethod>
+  <owl:Class rdf:ID="LandSurfaceHorizontalTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceHorizontalTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Horizontal Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is land surface tiling common to all land surface subcomponents?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceHorizontalTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceHorizontalTiling rdf:ID="LandSurfaceHorizontalTiling_common_to_all_LS_subcomponents">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common to all LS subcomponents</rdfs:label>
+  </LandSurfaceHorizontalTiling>
+  <LandSurfaceHorizontalTiling rdf:ID="LandSurfaceHorizontalTiling_specific_to_each_LS_subomponents">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific to each LS subomponents</rdfs:label>
+  </LandSurfaceHorizontalTiling>
+  <LandSurfaceHorizontalTiling rdf:ID="LandSurfaceHorizontalTiling_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceHorizontalTiling>
+  <owl:Class rdf:ID="LandSurfaceHorizontalTilingMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceHorizontalTilingMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Horizontal Tiling Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the method of tiling used</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceHorizontalTilingMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceHorizontalTilingMethod rdf:ID="LandSurfaceHorizontalTilingMethod_dynamic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic</rdfs:label>
+  </LandSurfaceHorizontalTilingMethod>
+  <LandSurfaceHorizontalTilingMethod rdf:ID="LandSurfaceHorizontalTilingMethod_fixed_number_of_types">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed number of types</rdfs:label>
+  </LandSurfaceHorizontalTilingMethod>
+  <owl:Class rdf:ID="LandSurfaceHorizontalGridConfig"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceHorizontalGridConfig">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Horizontal Grid Config</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the grid used the same as that of the atmosphere?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceHorizontalGridConfig"/>
+  </owl:ObjectProperty>
+  <LandSurfaceHorizontalGridConfig rdf:ID="LandSurfaceHorizontalGridConfig_same_as_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Atmosphere</rdfs:label>
+  </LandSurfaceHorizontalGridConfig>
+  <LandSurfaceHorizontalGridConfig rdf:ID="LandSurfaceHorizontalGridConfig_different_from_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Atmosphere</rdfs:label>
+  </LandSurfaceHorizontalGridConfig>
+  <LandSurfaceHorizontalGridConfig rdf:ID="LandSurfaceHorizontalGridConfig_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceHorizontalGridConfig>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceHorizontalMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Horizontal Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the land surface model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceHorizontalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Horizontal Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the horizontal grid used for land surface.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceTimeSteppingFrameworkMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceTimeSteppingFrameworkMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Time Stepping Framework Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the time stepping framework used the same as that used in the atmosphere model component?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceTimeSteppingFrameworkMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceTimeSteppingFrameworkMethod rdf:ID="LandSurfaceTimeSteppingFrameworkMethod_use_Atmosphere_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use Atmosphere time step</rdfs:label>
+  </LandSurfaceTimeSteppingFrameworkMethod>
+  <LandSurfaceTimeSteppingFrameworkMethod rdf:ID="LandSurfaceTimeSteppingFrameworkMethod_specific_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time step</rdfs:label>
+  </LandSurfaceTimeSteppingFrameworkMethod>
+  <LandSurfaceTimeSteppingFrameworkMethod rdf:ID="LandSurfaceTimeSteppingFrameworkMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceTimeSteppingFrameworkMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceTimeSteppingFrameworkTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Time Stepping Framework Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the length of timestep in seconds</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilSoilMapTextureValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Soil Map Texture</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the relative clay, sand and silt proportions of the soil</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilSoilMapStructureValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Soil Map Structure</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the aggregate characteristics of the soil particles</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilSoilMapAlbedoValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Soil Map Albedo</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ratio of reflected to incoming solar radiation on a land surface</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilSoilMapWaterTableValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Soil Map Water Table</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the level of water saturation within the soil layer</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceSoilHydrologySpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHydrologySpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does the model use a tiling scheme within soil hydrology?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHydrologySpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHydrologySpecificTiling rdf:ID="LandSurfaceSoilHydrologySpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceSoilHydrologySpecificTiling>
+  <LandSurfaceSoilHydrologySpecificTiling rdf:ID="LandSurfaceSoilHydrologySpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceSoilHydrologySpecificTiling>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilHydrologyNumberOfGroundWaterLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Soil Hydrology Number Of Ground Water Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of ground water levels used in the land surface scheme/model</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHydrologyWaterStorageMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Water Storage Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the method by which water is stored in the land surface scheme/model</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHydrologyWaterStorageMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHydrologyWaterStorageMethod rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod_Bucket">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bucket</rdfs:label>
+  </LandSurfaceSoilHydrologyWaterStorageMethod>
+  <LandSurfaceSoilHydrologyWaterStorageMethod rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod_Force-Restore">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force-Restore</rdfs:label>
+  </LandSurfaceSoilHydrologyWaterStorageMethod>
+  <LandSurfaceSoilHydrologyWaterStorageMethod rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod_Choisnel">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Choisnel</rdfs:label>
+  </LandSurfaceSoilHydrologyWaterStorageMethod>
+  <LandSurfaceSoilHydrologyWaterStorageMethod rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod_Explicit_diffusion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explicit diffusion</rdfs:label>
+  </LandSurfaceSoilHydrologyWaterStorageMethod>
+  <LandSurfaceSoilHydrologyWaterStorageMethod rdf:ID="LandSurfaceSoilHydrologyWaterStorageMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSoilHydrologyWaterStorageMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilHydrologySoilMoistureFreezingNumberOfGroundIceLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Soil Hydrology Soil Moisture Freezing Number Of Ground Ice Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many ground ice layers are included in the land surface scheme</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilHydrologySoilMoistureFreezingIceStorageMethodValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Soil Moisture Freezing Ice Storage Method</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the method of ice storage</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHydrologySoilMoistureFreezingPermafrost">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Soil Moisture Freezing Permafrost</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of permafrost within the land surface scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost rdf:ID="LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost_specific_treatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific treatment</rdfs:label>
+  </LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost>
+  <LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost rdf:ID="LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost_specific_tiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific tiling</rdfs:label>
+  </LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost>
+  <LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost rdf:ID="LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSoilHydrologySoilMoistureFreezingPermafrost>
+  <owl:Class rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHydrologyRunoff-DrainageMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Runoff-Drainage Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the treatment of runoff</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHydrologyRunoff-DrainageMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHydrologyRunoff-DrainageMethod rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageMethod_bulk__LPAREN_undifferentiated_drainage_and_runoff_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulk (undifferentiated drainage and runoff)</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageMethod>
+  <LandSurfaceSoilHydrologyRunoff-DrainageMethod rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageMethod_differentiated_drainage_and_runoff">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differentiated drainage and runoff</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageMethod>
+  <LandSurfaceSoilHydrologyRunoff-DrainageMethod rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageMethod>
+  <owl:Class rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHydrologyRunoff-DrainageProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Hydrology Runoff-Drainage Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify processes treated within the runoff and drainage scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHydrologyRunoff-DrainageProcesses"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_deep_drainage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deep drainage</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_saturated_surface_runoff">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated surface runoff</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_subgrid_drainage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subgrid drainage</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_infiltration_excess_runoff">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infiltration excess runoff</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_water_table_recharge">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water table recharge</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <LandSurfaceSoilHydrologyRunoff-DrainageProcesses rdf:ID="LandSurfaceSoilHydrologyRunoff-DrainageProcesses_subgrid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subgrid</rdfs:label>
+  </LandSurfaceSoilHydrologyRunoff-DrainageProcesses>
+  <owl:Class rdf:ID="LandSurfaceSoilHeatTreatmentSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHeatTreatmentSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Heat Treatment Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is tiling used in the treatment of soil heat? </rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHeatTreatmentSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHeatTreatmentSpecificTiling rdf:ID="LandSurfaceSoilHeatTreatmentSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentSpecificTiling>
+  <LandSurfaceSoilHeatTreatmentSpecificTiling rdf:ID="LandSurfaceSoilHeatTreatmentSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentSpecificTiling>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSoilHeatTreatmentNumberOfGroundHeatLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Soil Heat Treatment Number Of Ground Heat Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many layers are used in ground heat treatment?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceSoilHeatTreatmentMethodHeatStorage"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHeatTreatmentMethodHeatStorage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Heat Treatment Method Heat Storage</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the method of heat storage</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHeatTreatmentMethodHeatStorage"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHeatTreatmentMethodHeatStorage rdf:ID="LandSurfaceSoilHeatTreatmentMethodHeatStorage_Force-Restore">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force-Restore</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentMethodHeatStorage>
+  <LandSurfaceSoilHeatTreatmentMethodHeatStorage rdf:ID="LandSurfaceSoilHeatTreatmentMethodHeatStorage_Explicit_diffusion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explicit diffusion</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentMethodHeatStorage>
+  <LandSurfaceSoilHeatTreatmentMethodHeatStorage rdf:ID="LandSurfaceSoilHeatTreatmentMethodHeatStorage_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentMethodHeatStorage>
+  <owl:Class rdf:ID="LandSurfaceSoilHeatTreatmentMethodProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSoilHeatTreatmentMethodProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Soil Heat Treatment Method Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe processes included in the treatment of soil heat</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSoilHeatTreatmentMethodProcesses"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSoilHeatTreatmentMethodProcesses rdf:ID="LandSurfaceSoilHeatTreatmentMethodProcesses_soil_moisture_freeze-thaw">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil moisture freeze-thaw</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentMethodProcesses>
+  <LandSurfaceSoilHeatTreatmentMethodProcesses rdf:ID="LandSurfaceSoilHeatTreatmentMethodProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSoilHeatTreatmentMethodProcesses>
+  <owl:Class rdf:ID="LandSurfaceSnowSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is tiling used in the land surface snow scheme?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSpecificTiling rdf:ID="LandSurfaceSnowSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceSnowSpecificTiling>
+  <LandSurfaceSnowSpecificTiling rdf:ID="LandSurfaceSnowSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceSnowSpecificTiling>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceSnowNumberOfSnowLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Snow Number Of Snow Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many snow layers are included in the model?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowAlbedo"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowAlbedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Albedo</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of biome types of the classification used.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowAlbedo"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowAlbedo rdf:ID="LandSurfaceSnowSchemeMethodSnowAlbedo_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowAlbedo>
+  <LandSurfaceSnowSchemeMethodSnowAlbedo rdf:ID="LandSurfaceSnowSchemeMethodSnowAlbedo_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowAlbedo>
+  <LandSurfaceSnowSchemeMethodSnowAlbedo rdf:ID="LandSurfaceSnowSchemeMethodSnowAlbedo_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowAlbedo>
+  <LandSurfaceSnowSchemeMethodSnowAlbedo rdf:ID="LandSurfaceSnowSchemeMethodSnowAlbedo_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowAlbedo>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowDensity"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowDensity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Density</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of snow density</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowDensity"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowDensity rdf:ID="LandSurfaceSnowSchemeMethodSnowDensity_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowDensity>
+  <LandSurfaceSnowSchemeMethodSnowDensity rdf:ID="LandSurfaceSnowSchemeMethodSnowDensity_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowDensity>
+  <LandSurfaceSnowSchemeMethodSnowDensity rdf:ID="LandSurfaceSnowSchemeMethodSnowDensity_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowDensity>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowWaterEquivalent"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowWaterEquivalent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Water Equivalent</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of the 'snow water equivalent'</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowWaterEquivalent"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowWaterEquivalent rdf:ID="LandSurfaceSnowSchemeMethodSnowWaterEquivalent_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowWaterEquivalent>
+  <LandSurfaceSnowSchemeMethodSnowWaterEquivalent rdf:ID="LandSurfaceSnowSchemeMethodSnowWaterEquivalent_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowWaterEquivalent>
+  <LandSurfaceSnowSchemeMethodSnowWaterEquivalent rdf:ID="LandSurfaceSnowSchemeMethodSnowWaterEquivalent_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowWaterEquivalent>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowHeatContent"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowHeatContent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Heat Content</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of the heat content of snow</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowHeatContent"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowHeatContent rdf:ID="LandSurfaceSnowSchemeMethodSnowHeatContent_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowHeatContent>
+  <LandSurfaceSnowSchemeMethodSnowHeatContent rdf:ID="LandSurfaceSnowSchemeMethodSnowHeatContent_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowHeatContent>
+  <LandSurfaceSnowSchemeMethodSnowHeatContent rdf:ID="LandSurfaceSnowSchemeMethodSnowHeatContent_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowHeatContent>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowTemperature"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowTemperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Temperature</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of snow temperature</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowTemperature"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowTemperature rdf:ID="LandSurfaceSnowSchemeMethodSnowTemperature_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowTemperature>
+  <LandSurfaceSnowSchemeMethodSnowTemperature rdf:ID="LandSurfaceSnowSchemeMethodSnowTemperature_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowTemperature>
+  <LandSurfaceSnowSchemeMethodSnowTemperature rdf:ID="LandSurfaceSnowSchemeMethodSnowTemperature_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowTemperature>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowLiquidWaterContent"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowLiquidWaterContent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Liquid Water Content</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of the snow liquid water treatment</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowLiquidWaterContent"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowLiquidWaterContent rdf:ID="LandSurfaceSnowSchemeMethodSnowLiquidWaterContent_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowLiquidWaterContent>
+  <LandSurfaceSnowSchemeMethodSnowLiquidWaterContent rdf:ID="LandSurfaceSnowSchemeMethodSnowLiquidWaterContent_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowLiquidWaterContent>
+  <LandSurfaceSnowSchemeMethodSnowLiquidWaterContent rdf:ID="LandSurfaceSnowSchemeMethodSnowLiquidWaterContent_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowLiquidWaterContent>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodSnowCoverFractions"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodSnowCoverFractions">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Snow Cover Fractions</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify cover fractions used in the surface snow scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodSnowCoverFractions"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodSnowCoverFractions rdf:ID="LandSurfaceSnowSchemeMethodSnowCoverFractions_ground_snow_fraction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ground snow fraction</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowCoverFractions>
+  <LandSurfaceSnowSchemeMethodSnowCoverFractions rdf:ID="LandSurfaceSnowSchemeMethodSnowCoverFractions_vegetation_snow_fraction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation snow fraction</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowCoverFractions>
+  <LandSurfaceSnowSchemeMethodSnowCoverFractions rdf:ID="LandSurfaceSnowSchemeMethodSnowCoverFractions_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodSnowCoverFractions>
+  <owl:Class rdf:ID="LandSurfaceSnowSchemeMethodProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceSnowSchemeMethodProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Snow Scheme Method Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Implemented snow-related processes</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceSnowSchemeMethodProcesses"/>
+  </owl:ObjectProperty>
+  <LandSurfaceSnowSchemeMethodProcesses rdf:ID="LandSurfaceSnowSchemeMethodProcesses_snow_interception">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow interception</rdfs:label>
+  </LandSurfaceSnowSchemeMethodProcesses>
+  <LandSurfaceSnowSchemeMethodProcesses rdf:ID="LandSurfaceSnowSchemeMethodProcesses_snow_melting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow melting</rdfs:label>
+  </LandSurfaceSnowSchemeMethodProcesses>
+  <LandSurfaceSnowSchemeMethodProcesses rdf:ID="LandSurfaceSnowSchemeMethodProcesses_snow_refreezing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow refreezing</rdfs:label>
+  </LandSurfaceSnowSchemeMethodProcesses>
+  <LandSurfaceSnowSchemeMethodProcesses rdf:ID="LandSurfaceSnowSchemeMethodProcesses_blowing_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blowing snow</rdfs:label>
+  </LandSurfaceSnowSchemeMethodProcesses>
+  <LandSurfaceSnowSchemeMethodProcesses rdf:ID="LandSurfaceSnowSchemeMethodProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceSnowSchemeMethodProcesses>
+  <owl:Class rdf:ID="LandSurfaceVegetationSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is tiling used in the surface vegetation scheme?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSpecificTiling rdf:ID="LandSurfaceVegetationSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceVegetationSpecificTiling>
+  <LandSurfaceVegetationSpecificTiling rdf:ID="LandSurfaceVegetationSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceVegetationSpecificTiling>
+  <owl:Class rdf:ID="LandSurfaceVegetationVegetationRepresentation"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationVegetationRepresentation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Vegetation Representation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetation classification used.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationVegetationRepresentation"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationVegetationRepresentation rdf:ID="LandSurfaceVegetationVegetationRepresentation_vegetation_types">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation types</rdfs:label>
+  </LandSurfaceVegetationVegetationRepresentation>
+  <LandSurfaceVegetationVegetationRepresentation rdf:ID="LandSurfaceVegetationVegetationRepresentation_biome_types">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biome types</rdfs:label>
+  </LandSurfaceVegetationVegetationRepresentation>
+  <LandSurfaceVegetationVegetationRepresentation rdf:ID="LandSurfaceVegetationVegetationRepresentation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationVegetationRepresentation>
+  <owl:Class rdf:ID="LandSurfaceVegetationBiomeTypes"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationBiomeTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Biome Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of biome types in the classification.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationBiomeTypes"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_evergreen_needleleaf_forest">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evergreen needleleaf forest</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_evergreen_broadleaf_forest">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evergreen broadleaf forest</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_deciduous_needleleaf_forest">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deciduous needleleaf forest</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_deciduous_broadleaf_forest">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deciduous broadleaf forest</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_mixed_forest">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed forest</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_woodland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woodland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_wooded_grassland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wooded grassland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_closed_shrubland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">closed shrubland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_open_shrubland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open shrubland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_grassland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grassland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_cropland">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cropland</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <LandSurfaceVegetationBiomeTypes rdf:ID="LandSurfaceVegetationBiomeTypes_wetlands">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wetlands</rdfs:label>
+  </LandSurfaceVegetationBiomeTypes>
+  <owl:Class rdf:ID="LandSurfaceVegetationVegetationTypes"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationVegetationTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Vegetation Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of vegetation types in the classification.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationVegetationTypes"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationVegetationTypes rdf:ID="LandSurfaceVegetationVegetationTypes_broadleaf_tree">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">broadleaf tree</rdfs:label>
+  </LandSurfaceVegetationVegetationTypes>
+  <LandSurfaceVegetationVegetationTypes rdf:ID="LandSurfaceVegetationVegetationTypes_needleleaf_tree">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">needleleaf tree</rdfs:label>
+  </LandSurfaceVegetationVegetationTypes>
+  <LandSurfaceVegetationVegetationTypes rdf:ID="LandSurfaceVegetationVegetationTypes_C3_grass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3 grass</rdfs:label>
+  </LandSurfaceVegetationVegetationTypes>
+  <LandSurfaceVegetationVegetationTypes rdf:ID="LandSurfaceVegetationVegetationTypes_C4_grass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C4 grass</rdfs:label>
+  </LandSurfaceVegetationVegetationTypes>
+  <LandSurfaceVegetationVegetationTypes rdf:ID="LandSurfaceVegetationVegetationTypes_vegetated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetated</rdfs:label>
+  </LandSurfaceVegetationVegetationTypes>
+  <owl:Class rdf:ID="LandSurfaceVegetationVegetationTimeVariation"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationVegetationTimeVariation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Vegetation Time Variation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the vegetation fractions in each tile are varying with time.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationVegetationTimeVariation"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationVegetationTimeVariation rdf:ID="LandSurfaceVegetationVegetationTimeVariation_fixed__LPAREN_not_varying_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed (not varying)</rdfs:label>
+  </LandSurfaceVegetationVegetationTimeVariation>
+  <LandSurfaceVegetationVegetationTimeVariation rdf:ID="LandSurfaceVegetationVegetationTimeVariation_prescribed__LPAREN_varying_from_files_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (varying from files)</rdfs:label>
+  </LandSurfaceVegetationVegetationTimeVariation>
+  <LandSurfaceVegetationVegetationTimeVariation rdf:ID="LandSurfaceVegetationVegetationTimeVariation_dynamical__LPAREN_varying_from_simulation_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamical (varying from simulation)</rdfs:label>
+  </LandSurfaceVegetationVegetationTimeVariation>
+  <LandSurfaceVegetationVegetationTimeVariation rdf:ID="LandSurfaceVegetationVegetationTimeVariation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationVegetationTimeVariation>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceVegetationVegetationMapValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Vegetation Map</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of the vegetation map used (common name and reference, if possible).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceVegetationInterception"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationInterception">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Interception</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetation interception of rainwater represented?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationInterception"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationInterception rdf:ID="LandSurfaceVegetationInterception_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceVegetationInterception>
+  <LandSurfaceVegetationInterception rdf:ID="LandSurfaceVegetationInterception_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceVegetationInterception>
+  <owl:Class rdf:ID="LandSurfaceVegetationSchemeMethodPhenology"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSchemeMethodPhenology">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Scheme Method Phenology</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the treatment of vegetation phenology</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSchemeMethodPhenology"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSchemeMethodPhenology rdf:ID="LandSurfaceVegetationSchemeMethodPhenology_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodPhenology>
+  <LandSurfaceVegetationSchemeMethodPhenology rdf:ID="LandSurfaceVegetationSchemeMethodPhenology_diagnostic__LPAREN_vegetation_map_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic (vegetation map)</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodPhenology>
+  <LandSurfaceVegetationSchemeMethodPhenology rdf:ID="LandSurfaceVegetationSchemeMethodPhenology_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodPhenology>
+  <owl:Class rdf:ID="LandSurfaceVegetationSchemeMethodLAI"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSchemeMethodLAI">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Scheme Method LAI</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of the leaf area index</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSchemeMethodLAI"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSchemeMethodLAI rdf:ID="LandSurfaceVegetationSchemeMethodLAI_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodLAI>
+  <LandSurfaceVegetationSchemeMethodLAI rdf:ID="LandSurfaceVegetationSchemeMethodLAI_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodLAI>
+  <LandSurfaceVegetationSchemeMethodLAI rdf:ID="LandSurfaceVegetationSchemeMethodLAI_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodLAI>
+  <LandSurfaceVegetationSchemeMethodLAI rdf:ID="LandSurfaceVegetationSchemeMethodLAI_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodLAI>
+  <owl:Class rdf:ID="LandSurfaceVegetationSchemeMethodBiomass"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSchemeMethodBiomass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Scheme Method Biomass</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of vegetation biomass</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSchemeMethodBiomass"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSchemeMethodBiomass rdf:ID="LandSurfaceVegetationSchemeMethodBiomass_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBiomass>
+  <LandSurfaceVegetationSchemeMethodBiomass rdf:ID="LandSurfaceVegetationSchemeMethodBiomass_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBiomass>
+  <LandSurfaceVegetationSchemeMethodBiomass rdf:ID="LandSurfaceVegetationSchemeMethodBiomass_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBiomass>
+  <owl:Class rdf:ID="LandSurfaceVegetationSchemeMethodBioGeography"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSchemeMethodBioGeography">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Scheme Method Bio Geography</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describe the treatment of vegetation biogeography</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSchemeMethodBioGeography"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSchemeMethodBioGeography rdf:ID="LandSurfaceVegetationSchemeMethodBioGeography_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBioGeography>
+  <LandSurfaceVegetationSchemeMethodBioGeography rdf:ID="LandSurfaceVegetationSchemeMethodBioGeography_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBioGeography>
+  <LandSurfaceVegetationSchemeMethodBioGeography rdf:ID="LandSurfaceVegetationSchemeMethodBioGeography_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodBioGeography>
+  <owl:Class rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Vegetation Scheme Method Stomatal Resistance Function Of</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the dependancies on vegetation stomatal resistance</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf"/>
+  </owl:ObjectProperty>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_light">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_water_availability">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water availability</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_CO2">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_O3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf rdf:ID="LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceVegetationSchemeMethodStomatalResistanceFunctionOf>
+  <owl:Class rdf:ID="LandSurfaceEnergyBalanceSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceEnergyBalanceSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Energy Balance Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is tiling used in the surface energy balance scheme?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceEnergyBalanceSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceEnergyBalanceSpecificTiling rdf:ID="LandSurfaceEnergyBalanceSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceEnergyBalanceSpecificTiling>
+  <LandSurfaceEnergyBalanceSpecificTiling rdf:ID="LandSurfaceEnergyBalanceSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceEnergyBalanceSpecificTiling>
+  <owl:Class rdf:ID="LandSurfaceEnergyBalanceSubsurfaceTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceEnergyBalanceSubsurfaceTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Energy Balance Subsurface Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is sub-surface tiling employed?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceEnergyBalanceSubsurfaceTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceEnergyBalanceSubsurfaceTiling rdf:ID="LandSurfaceEnergyBalanceSubsurfaceTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceEnergyBalanceSubsurfaceTiling>
+  <LandSurfaceEnergyBalanceSubsurfaceTiling rdf:ID="LandSurfaceEnergyBalanceSubsurfaceTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceEnergyBalanceSubsurfaceTiling>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceEnergyBalanceNumberOfSurfaceTemperaturesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Energy Balance Number Of Surface Temperatures</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of surface temperatures used</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Energy Balance Scheme Method Type Of Evaporation Formulation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the formulation method for land surface evaporation</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation"/>
+  </owl:ObjectProperty>
+  <LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation_alpha">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation>
+  <LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation_beta">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation>
+  <LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation_combined">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">combined</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation>
+  <LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation_Monteith_potential_evaporation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monteith potential evaporation</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation>
+  <LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation rdf:ID="LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodTypeOfEvaporationFormulation>
+  <owl:Class rdf:ID="LandSurfaceEnergyBalanceSchemeMethodProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceEnergyBalanceSchemeMethodProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Energy Balance Scheme Method Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe whih processes are included in the energy balance scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceEnergyBalanceSchemeMethodProcesses"/>
+  </owl:ObjectProperty>
+  <LandSurfaceEnergyBalanceSchemeMethodProcesses rdf:ID="LandSurfaceEnergyBalanceSchemeMethodProcesses_transpiration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transpiration</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodProcesses>
+  <LandSurfaceEnergyBalanceSchemeMethodProcesses rdf:ID="LandSurfaceEnergyBalanceSchemeMethodProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceEnergyBalanceSchemeMethodProcesses>
+  <owl:Class rdf:ID="LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Land Surface Albedo Attributes Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is tiling used in the surface albedo calcualtions?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling rdf:ID="LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling>
+  <LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling rdf:ID="LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceAlbedoLandSurfaceAlbedoAttributesSpecificTiling>
+  <owl:Class rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoType"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoSnowFreeAlbedoType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Snow Free Albedo Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of snow-free land albedo</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoSnowFreeAlbedoType"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoSnowFreeAlbedoType rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoType_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoType>
+  <LandSurfaceAlbedoSnowFreeAlbedoType rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoType_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoType>
+  <LandSurfaceAlbedoSnowFreeAlbedoType rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoType>
+  <owl:Class rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoFunctionOf"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoSnowFreeAlbedoFunctionOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Snow Free Albedo Function Of</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the dependancies on snow free albedo calculations</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoSnowFreeAlbedoFunctionOf"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoSnowFreeAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoFunctionOf_vegetation_type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation type</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowFreeAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoFunctionOf_soil_humidity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil humidity</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowFreeAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoFunctionOf_vegetation_state">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation state</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoFunctionOf>
+  <owl:Class rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Snow Free Albedo Direct-Diffuse</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is there a distinction between direct and diffuse albedo?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse_distinction_between_direct_and_diffuse_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distinction between direct and diffuse albedo</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse>
+  <LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse rdf:ID="LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse_no_distinction_between_direct_and_diffuse_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no distinction between direct and diffuse albedo</rdfs:label>
+  </LandSurfaceAlbedoSnowFreeAlbedoDirect-Diffuse>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceAlbedoSnowFreeAlbedoNumberOfWavelenghBandsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Albedo Snow Free Albedo Number Of Wavelengh Bands</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of wavelength bands used</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceAlbedoSnowAlbedoType"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoSnowAlbedoType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Snow Albedo Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of snow-covered land albedo</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoSnowAlbedoType"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoSnowAlbedoType rdf:ID="LandSurfaceAlbedoSnowAlbedoType_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoType>
+  <LandSurfaceAlbedoSnowAlbedoType rdf:ID="LandSurfaceAlbedoSnowAlbedoType_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoType>
+  <LandSurfaceAlbedoSnowAlbedoType rdf:ID="LandSurfaceAlbedoSnowAlbedoType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoType>
+  <owl:Class rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceAlbedoSnowAlbedoFunctionOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Albedo Snow Albedo Function Of</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe dependancies on snow albedo calculations</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceAlbedoSnowAlbedoFunctionOf"/>
+  </owl:ObjectProperty>
+  <LandSurfaceAlbedoSnowAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf_vegetation_type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation type</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf_Snow_age">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow age</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf_Snow_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow density</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf_Snow_grain_type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow grain type</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoFunctionOf>
+  <LandSurfaceAlbedoSnowAlbedoFunctionOf rdf:ID="LandSurfaceAlbedoSnowAlbedoFunctionOf_aerosol_deposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol deposition</rdfs:label>
+  </LandSurfaceAlbedoSnowAlbedoFunctionOf>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationNumberOfCarbonPoolsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Carbon Cycle Vegetation Number Of Carbon Pools</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of carbon pools used</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationListOfCarbonPoolsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation List Of Carbon Pools</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List the carbon pools used within the model carbon cycle</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationPhotosynthesisMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationPhotosynthesisMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Photosynthesis Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the method used for photosynthesis</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationPhotosynthesisMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationPhotosynthesisMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhotosynthesisMethod_biochemical_approach">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biochemical approach</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhotosynthesisMethod>
+  <LandSurfaceCarbonCycleVegetationPhotosynthesisMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhotosynthesisMethod_light_use_efficiency_approach__LPAREN_LUE_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light use efficiency approach (LUE)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhotosynthesisMethod>
+  <LandSurfaceCarbonCycleVegetationPhotosynthesisMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhotosynthesisMethod_carbon_assimilation_approach">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon assimilation approach</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhotosynthesisMethod>
+  <LandSurfaceCarbonCycleVegetationPhotosynthesisMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhotosynthesisMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhotosynthesisMethod>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Autotrophic Respiration Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of autotrophic respiration</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod_parametrized">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parametrized</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMethod>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Autotrophic Respiration Maintenance Respiration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name MaintenanceRespiration required</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration_leaves__PLUS__stems__PLUS__roots">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + stems + roots</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration_leaves__PLUS__stems_and_roots__LPAREN_leafy__PLUS__woody_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + stems and roots (leafy + woody)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration_leaves__PLUS__fine_roots__PLUS__stems_and_roots">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + fine roots + stems and roots</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration>
+  <LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration rdf:ID="LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration_whole_plant__LPAREN_no_distinction_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole plant (no distinction)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAutotrophicRespirationMaintenanceRespiration>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationAllocationAllocationBins">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Allocation Allocation Bins</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the allocation of vegetation carbon bins</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationAllocationAllocationBins"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationBins rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins_leaves__PLUS__stems__PLUS__roots">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + stems + roots</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationBins>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationBins rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins_leaves__PLUS__stems_and_roots__LPAREN_leafy__PLUS__woody_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + stems and roots (leafy + woody)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationBins>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationBins rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins_leaves__PLUS__fine_roots__PLUS__coarse_roots__PLUS__stems">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leaves + fine roots + coarse roots + stems</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationBins>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationBins rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins_whole_plant__LPAREN_no_distinction_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole plant (no distinction)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationBins>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationBins rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationBins_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationBins>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationAllocationAllocationFractions">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Allocation Allocation Fractions</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe how the fractions of allocation are calculated</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationAllocationAllocationFractions"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationFractions rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationFractions>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationFractions rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions_function_of_vegetation_type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function of vegetation type</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationFractions>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationFractions rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions_function_of_plant_allometry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function of plant allometry</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationFractions>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationFractions rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions_explicitly_calculated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">explicitly calculated</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationFractions>
+  <LandSurfaceCarbonCycleVegetationAllocationAllocationFractions rdf:ID="LandSurfaceCarbonCycleVegetationAllocationAllocationFractions_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationAllocationAllocationFractions>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleVegetationPhenologyMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleVegetationPhenologyMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Vegetation Phenology Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of vegetation carbon cycle phenology</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleVegetationPhenologyMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleVegetationPhenologyMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhenologyMethod_implicit__LPAREN_seasonal_evolution_of_LAI_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit (seasonal evolution of LAI)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhenologyMethod>
+  <LandSurfaceCarbonCycleVegetationPhenologyMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhenologyMethod_implicit__LPAREN_spectral_vegetation_indices_NDVI_or_SR_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit (spectral vegetation indices NDVI or SR)</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhenologyMethod>
+  <LandSurfaceCarbonCycleVegetationPhenologyMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhenologyMethod_parametrized">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parametrized</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhenologyMethod>
+  <LandSurfaceCarbonCycleVegetationPhenologyMethod rdf:ID="LandSurfaceCarbonCycleVegetationPhenologyMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleVegetationPhenologyMethod>
+  <owl:Class rdf:ID="LandSurfaceCarbonCycleSoilMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceCarbonCycleSoilMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Soil Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the methods used within the soil carbon cycle scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceCarbonCycleSoilMethod"/>
+  </owl:ObjectProperty>
+  <LandSurfaceCarbonCycleSoilMethod rdf:ID="LandSurfaceCarbonCycleSoilMethod_heterotrophic_respiration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heterotrophic respiration</rdfs:label>
+  </LandSurfaceCarbonCycleSoilMethod>
+  <LandSurfaceCarbonCycleSoilMethod rdf:ID="LandSurfaceCarbonCycleSoilMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceCarbonCycleSoilMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceCarbonCycleSoilNumberOfCarbonPoolsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface Carbon Cycle Soil Number Of Carbon Pools</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many soil carbon cycle pools are used?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceCarbonCycleSoilListOfCarbonPoolsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Soil List Of Carbon Pools</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List the names of the soil carbon pools used</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceCarbonCyclePermafrostListOfGasesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Carbon Cycle Permafrost List Of Gases</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which gases are included in permafrost?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingSpecificTiling"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingSpecificTiling">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Specific Tiling</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiling of basins.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingSpecificTiling"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingSpecificTiling rdf:ID="LandSurfaceRiverRoutingSpecificTiling_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceRiverRoutingSpecificTiling>
+  <LandSurfaceRiverRoutingSpecificTiling rdf:ID="LandSurfaceRiverRoutingSpecificTiling_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceRiverRoutingSpecificTiling>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingResolution"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingResolution">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Resolution</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the resolution independant of the land surface resolution?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingResolution"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingResolution rdf:ID="LandSurfaceRiverRoutingResolution_inherited_from_Land_Surface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited from Land Surface</rdfs:label>
+  </LandSurfaceRiverRoutingResolution>
+  <LandSurfaceRiverRoutingResolution rdf:ID="LandSurfaceRiverRoutingResolution_independent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent</rdfs:label>
+  </LandSurfaceRiverRoutingResolution>
+  <LandSurfaceRiverRoutingResolution rdf:ID="LandSurfaceRiverRoutingResolution_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingResolution>
+  <owl:DatatypeProperty rdf:ID="hasLandSurfaceRiverRoutingNumberOfReservoirsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Surface River Routing Number Of Reservoirs</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of reservoirs</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the prognostic variables within the river routing scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingListOfPrognosticVariables rdf:ID="LandSurfaceRiverRoutingListOfPrognosticVariables_heat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat</rdfs:label>
+  </LandSurfaceRiverRoutingListOfPrognosticVariables>
+  <LandSurfaceRiverRoutingListOfPrognosticVariables rdf:ID="LandSurfaceRiverRoutingListOfPrognosticVariables_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+  </LandSurfaceRiverRoutingListOfPrognosticVariables>
+  <LandSurfaceRiverRoutingListOfPrognosticVariables rdf:ID="LandSurfaceRiverRoutingListOfPrognosticVariables_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracers</rdfs:label>
+  </LandSurfaceRiverRoutingListOfPrognosticVariables>
+  <LandSurfaceRiverRoutingListOfPrognosticVariables rdf:ID="LandSurfaceRiverRoutingListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingListOfPrognosticVariables>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingWaterRe-evaporation"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingWaterRe-evaporation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Water Re-evaporation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name WaterRe-evaporation required</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingWaterRe-evaporation"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingWaterRe-evaporation rdf:ID="LandSurfaceRiverRoutingWaterRe-evaporation_flood_plains">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flood plains</rdfs:label>
+  </LandSurfaceRiverRoutingWaterRe-evaporation>
+  <LandSurfaceRiverRoutingWaterRe-evaporation rdf:ID="LandSurfaceRiverRoutingWaterRe-evaporation_irrigation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irrigation</rdfs:label>
+  </LandSurfaceRiverRoutingWaterRe-evaporation>
+  <LandSurfaceRiverRoutingWaterRe-evaporation rdf:ID="LandSurfaceRiverRoutingWaterRe-evaporation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingWaterRe-evaporation>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingCouplingWithAtmosphere"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingCouplingWithAtmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Coupling With Atmosphere</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is river routing coupled to the atmosphere model component?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingCouplingWithAtmosphere"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingCouplingWithAtmosphere rdf:ID="LandSurfaceRiverRoutingCouplingWithAtmosphere_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceRiverRoutingCouplingWithAtmosphere>
+  <LandSurfaceRiverRoutingCouplingWithAtmosphere rdf:ID="LandSurfaceRiverRoutingCouplingWithAtmosphere_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceRiverRoutingCouplingWithAtmosphere>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingDrainageMap"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingDrainageMap">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Drainage Map</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What type of drainage map is being used?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingDrainageMap"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingDrainageMap rdf:ID="LandSurfaceRiverRoutingDrainageMap_present-day">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">present-day</rdfs:label>
+  </LandSurfaceRiverRoutingDrainageMap>
+  <LandSurfaceRiverRoutingDrainageMap rdf:ID="LandSurfaceRiverRoutingDrainageMap_adapted_for_other_periods">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adapted for other periods</rdfs:label>
+  </LandSurfaceRiverRoutingDrainageMap>
+  <LandSurfaceRiverRoutingDrainageMap rdf:ID="LandSurfaceRiverRoutingDrainageMap_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingDrainageMap>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Quantities Exchanged With Atmosphere</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which quantities are exchanged between river routing and the atmosphere model components?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere rdf:ID="LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere_heat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat</rdfs:label>
+  </LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere>
+  <LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere rdf:ID="LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+  </LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere>
+  <LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere rdf:ID="LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracers</rdfs:label>
+  </LandSurfaceRiverRoutingQuantitiesExchangedWithAtmosphere>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingOceanicDischargeType"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingOceanicDischargeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Oceanic Discharge Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify how rivers are discharged to the ocean</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingOceanicDischargeType"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingOceanicDischargeType rdf:ID="LandSurfaceRiverRoutingOceanicDischargeType_direct__LPAREN_large_rivers_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct (large rivers)</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeType>
+  <LandSurfaceRiverRoutingOceanicDischargeType rdf:ID="LandSurfaceRiverRoutingOceanicDischargeType_diffuse">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffuse</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeType>
+  <LandSurfaceRiverRoutingOceanicDischargeType rdf:ID="LandSurfaceRiverRoutingOceanicDischargeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeType>
+  <owl:Class rdf:ID="LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface River Routing Oceanic Discharge Quantities Transported</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which quantities are exchanged from river-routing to the ocean model component?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported"/>
+  </owl:ObjectProperty>
+  <LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported rdf:ID="LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported_heat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported>
+  <LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported rdf:ID="LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported>
+  <LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported rdf:ID="LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracers</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported>
+  <LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported rdf:ID="LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceRiverRoutingOceanicDischargeQuantitiesTransported>
+  <owl:Class rdf:ID="LandSurfaceLakesCouplingWithRivers"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesCouplingWithRivers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Coupling With Rivers</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are lakes coupled to the river routing model component?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesCouplingWithRivers"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesCouplingWithRivers rdf:ID="LandSurfaceLakesCouplingWithRivers_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceLakesCouplingWithRivers>
+  <LandSurfaceLakesCouplingWithRivers rdf:ID="LandSurfaceLakesCouplingWithRivers_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceLakesCouplingWithRivers>
+  <owl:Class rdf:ID="LandSurfaceLakesQuantitiesExchangedWithRivers"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesQuantitiesExchangedWithRivers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Quantities Exchanged With Rivers</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which quantities are exchanged between the lakes and rivers</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesQuantitiesExchangedWithRivers"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesQuantitiesExchangedWithRivers rdf:ID="LandSurfaceLakesQuantitiesExchangedWithRivers_heat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat</rdfs:label>
+  </LandSurfaceLakesQuantitiesExchangedWithRivers>
+  <LandSurfaceLakesQuantitiesExchangedWithRivers rdf:ID="LandSurfaceLakesQuantitiesExchangedWithRivers_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+  </LandSurfaceLakesQuantitiesExchangedWithRivers>
+  <LandSurfaceLakesQuantitiesExchangedWithRivers rdf:ID="LandSurfaceLakesQuantitiesExchangedWithRivers_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracers</rdfs:label>
+  </LandSurfaceLakesQuantitiesExchangedWithRivers>
+  <owl:Class rdf:ID="LandSurfaceLakesSchemeMethodIceTreatment"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesSchemeMethodIceTreatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Scheme Method Ice Treatment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is lake ice included?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesSchemeMethodIceTreatment"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesSchemeMethodIceTreatment rdf:ID="LandSurfaceLakesSchemeMethodIceTreatment_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceLakesSchemeMethodIceTreatment>
+  <LandSurfaceLakesSchemeMethodIceTreatment rdf:ID="LandSurfaceLakesSchemeMethodIceTreatment_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceLakesSchemeMethodIceTreatment>
+  <owl:Class rdf:ID="LandSurfaceLakesSchemeMethodLakesAlbedo"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesSchemeMethodLakesAlbedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Scheme Method Lakes Albedo</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the treatment of lake albedo</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesSchemeMethodLakesAlbedo"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesSchemeMethodLakesAlbedo rdf:ID="LandSurfaceLakesSchemeMethodLakesAlbedo_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesAlbedo>
+  <LandSurfaceLakesSchemeMethodLakesAlbedo rdf:ID="LandSurfaceLakesSchemeMethodLakesAlbedo_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesAlbedo>
+  <LandSurfaceLakesSchemeMethodLakesAlbedo rdf:ID="LandSurfaceLakesSchemeMethodLakesAlbedo_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesAlbedo>
+  <owl:Class rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesSchemeMethodLakesDynamics">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Scheme Method Lakes Dynamics</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which dynamics of lakes are treated? horizontal, vertical, etc. </rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesSchemeMethodLakesDynamics"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesSchemeMethodLakesDynamics rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics_vertical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesDynamics>
+  <LandSurfaceLakesSchemeMethodLakesDynamics rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics_horizontal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesDynamics>
+  <LandSurfaceLakesSchemeMethodLakesDynamics rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics_vertical__PLUS__horizontal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical + horizontal</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesDynamics>
+  <LandSurfaceLakesSchemeMethodLakesDynamics rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesDynamics>
+  <LandSurfaceLakesSchemeMethodLakesDynamics rdf:ID="LandSurfaceLakesSchemeMethodLakesDynamics_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandSurfaceLakesSchemeMethodLakesDynamics>
+  <owl:Class rdf:ID="LandSurfaceLakesSchemeMethodDynamicLakesExtent"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesSchemeMethodDynamicLakesExtent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Scheme Method Dynamic Lakes Extent</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">|Is a dynamic lake extent scheme included?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesSchemeMethodDynamicLakesExtent"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesSchemeMethodDynamicLakesExtent rdf:ID="LandSurfaceLakesSchemeMethodDynamicLakesExtent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceLakesSchemeMethodDynamicLakesExtent>
+  <LandSurfaceLakesSchemeMethodDynamicLakesExtent rdf:ID="LandSurfaceLakesSchemeMethodDynamicLakesExtent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceLakesSchemeMethodDynamicLakesExtent>
+  <owl:Class rdf:ID="LandSurfaceLakesSchemeMethodEndorheicBasins"/>
+  <owl:ObjectProperty rdf:ID="hasLandSurfaceLakesSchemeMethodEndorheicBasins">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface Lakes Scheme Method Endorheic Basins</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> basins not flowing to ocean.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandSurfaceLakesSchemeMethodEndorheicBasins"/>
+  </owl:ObjectProperty>
+  <LandSurfaceLakesSchemeMethodEndorheicBasins rdf:ID="LandSurfaceLakesSchemeMethodEndorheicBasins_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandSurfaceLakesSchemeMethodEndorheicBasins>
+  <LandSurfaceLakesSchemeMethodEndorheicBasins rdf:ID="LandSurfaceLakesSchemeMethodEndorheicBasins_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandSurfaceLakesSchemeMethodEndorheicBasins>
+</rdf:RDF>

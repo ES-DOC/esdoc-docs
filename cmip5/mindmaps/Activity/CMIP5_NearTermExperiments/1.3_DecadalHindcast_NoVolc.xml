@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco"> 
+
+    <!-- Notes from document: 
+	Additional runs from 1960, 1975, 1980, 1985 and 1990 without including the Agung, El Chichon and Pinatubo eruptions will enable an assessment of the impact of volcanic eruptions 
+	on decadal predictions. It also enables an estimate of “overall skill” of decadal prediction to be made, complementing a dual analysis of “expected skill conditional on no big volcano” and 
+	“possible impact of volcano”. These runs could either all be 10 years long, or the 1960 and 1980 runs could be 30 years to assess the longer term impact of the volcanoes.
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	<!-- Initial Conditions -->
+	<numericalRequirement xsi:type="InitialCondition">
+		<id xsi:type="Identifier">ic.007</id>
+		<name>1.3.ic.oc</name>
+		<description>Ocean Initial Conditions must represent in some measure the observed anomolies for the start date used</description>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="InitialCondition">
+		<id xsi:type="Identifier">ic.011</id>
+		<name>1.3.ic.years</name>
+		<description>Simulations should be initialised towards the end of 1960, 1975, 1980, 1985 and 1990</description>
+	</numericalRequirement>
+	
+	<!-- Boundary/Forcing Conditions -->
+	<numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.011</id>
+		<name>1.3.bc.wmg_anth</name>
+		<description>Imposed changing concentrations of well mixed gases (anthropogenic)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.012</id>
+		<name>1.3.bc.wmg_volc</name>
+		<description>Imposed changing concentrations of well mixed gases (volcanic)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.013</id>
+		<name>1.3.bc.sls_conc</name>
+		<description>Imposed changing concentrations of short lived gas species</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.018</id>
+		<name>1.3.bc.sls_em</name>
+		<description>Imposed changing emissions of short lived gas species</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.014</id>
+		<name>1.3.bc.nat_aer_conc</name>
+		<description>Imposed changing concentrations of aerosols (natural)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.015</id>
+		<name>1.3.bc.anthr_aer_conc</name>
+		<description>Imposed changing concentrations of aerosols (anthropogenic)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.019</id>
+		<name>1.3.bc.nat_aer_em</name>
+		<description>Imposed changing emissions of aerosols (natural)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.020</id>
+		<name>1.3.bc.anthr_aer_em</name>
+		<description>Imposed changing emissions of aerosols (anthropogenic)</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.016</id>
+		<name>1.3.bc.nat_aer_prec</name>
+		<description>Imposed changing concentrations of aerosol (natural) precursors</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.017</id>
+		<name>1.3.bc.anthro_aer_prec</name>
+		<description>Imposed changing concentrations of aerosol (anthropogenic) precursors</description>
+    </numericalRequirement>
+    
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.021</id>
+		<name>1.3.bc.solar</name>
+		<description>Imposed changing solar forcing</description>
+    </numericalRequirement>
+               
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.022</id>
+		<name>1.3.bc.land</name>
+		<description>Imposed changing land use</description>
+    </numericalRequirement>
+	
+	<numericalRequirement xsi:type="BoundaryCondition">
+		<id xsi:type="Identifier">bc.058</id>
+		<name>1.3.bc.seaice</name>
+		<description>Sea ice observations forcing (unless modelled) must precede start date of simulation </description>
+	</numericalRequirement>
+	    
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.060</id>
+        <name>1.3.bc.no_volc.conc</name>
+        <description>Imposed constant background volcanic aerosol may (or may not) be specified</description>
+    </numericalRequirement>
+    
+    
+    <shortName>
+		CMIP5_NumReq_1.3
+	</shortName>
+    <longName> 
+		CMIP5 Tier 1 near-term decadal experiment 1.3 - Without Volcanoes
+	</longName>
+         
+	<calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+	<requiredDuration xsi:type="ClosedDateRange">
+		<startDate> 1960-09-01T00:00:00Z</startDate>
+		<endDate> 2000-01-01T00:00:00Z </endDate>
+	</requiredDuration>
+	<author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+	<documentID xsi:type="Identifier">
+	</documentID>
+	<creationDate>
+		2009-06-23T15:00:00Z
+	</creationDate>
+</numericalExperiment>

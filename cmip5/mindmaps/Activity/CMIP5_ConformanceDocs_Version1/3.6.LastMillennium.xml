@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+	
+	Last Millennium (850-1850)
+
+	Consistent with PMIP requirements, impose evolving conditions, including:
+	• solar variations
+	• volcanic aerosols
+
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	<!-- Initial Conditions -->
+	<numericalRequirement xsi:type="InitialCondition" >
+		<description>Initial Conditions are supplied from the PreIndustrial Control run 3.1</description>
+		<id>3.6.ic</id>
+	</numericalRequirement>
+	
+	<!-- Boundary/Forcing Conditions -->
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving atmospheric concentrations of well mixed gases: excluding CO2</description>
+        <id xsi:type="Identifier">3.6.bc.wmg.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving atmospheric concentrations of well mixed gas: Carbon Dioxide</description>
+        <id xsi:type="Identifier">3.6.bc.CO2.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving atmospheric concentration of short lived (reactive) gas
+            species</description>
+        <id xsi:type="Identifier">3.6.bc.sls.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving concentrations of natural aerosols</description>
+        <id xsi:type="Identifier">3.6.bc.nat_aer.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving concentrations of natural aerosol precursors</description>
+        <id xsi:type="Identifier">3.6.bc.nat_aer_precur.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving concentrations of short lived (reactive) aerosol
+            species</description>
+        <id xsi:type="Identifier">3.6.bc.sl_aer.conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving emissions of natural aerosols</description>
+        <id xsi:type="Identifier">3.6.bc.nat_aer.em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving emissions of natural aerosol precursors</description>
+        <id xsi:type="Identifier">3.6.bc.nat_aer_precur.em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed non-evolving emissions of short lived (reactive) aerosol species</description>
+        <id xsi:type="Identifier">3.6.bc.sl_aer.em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Unperturbed Land Use</description>
+        <id xsi:type="Identifier">3.6.bc.LandUse</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<description>Imposed evolving solar variations</description>
+		<id xsi:type="Identifier">3.6.bc.EvoSolar</id>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="BoundaryCondition">
+		<description>Imposed evolving volcanic aerosols</description>		
+		<id xsi:type="Identifier">3.6.bc.EvoVolcAero</id>
+	</numericalRequirement>
+	
+	<shortName>
+		CMIP5_NumReq_3.6
+	</shortName>
+    <longName> 
+		CMIP5 Tier 2 last millennium experiment 3.6 (850-1850)
+	</longName>
+     
+   <calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+	<requiredDuration xsi:type="ClosedDateRange">
+		<startDate> 0850-01-01T00:00:00Z</startDate>
+		<endDate> 1851-01-01T00:00:00Z </endDate>
+	</requiredDuration>
+	<author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+	<documentID xsi:type="Identifier">
+	</documentID>
+	<creationDate>
+		2009-06-23T15:00:00Z
+	</creationDate>
+</numericalExperiment>

@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="OceanModelFamily"/>
+  <owl:ObjectProperty rdf:ID="hasOceanModelFamily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Model Family</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of oceanic model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanModelFamily"/>
+  </owl:ObjectProperty>
+  <OceanModelFamily rdf:ID="OceanModelFamily_OGCM">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGCM</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_1D__LPAREN_SCM_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1D (SCM)</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_1D__LPAREN_ocean_mixed_layer_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1D (ocean mixed layer)</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_shallow-water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shallow-water</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_1_layer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 layer</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_slab">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slab</rdfs:label>
+  </OceanModelFamily>
+  <OceanModelFamily rdf:ID="OceanModelFamily_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanModelFamily>
+  <owl:Class rdf:ID="OceanBasicApproximations"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBasicApproximations">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Basic Approximations</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic fluid dynamics approximations made in the atmospheric model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBasicApproximations"/>
+  </owl:ObjectProperty>
+  <OceanBasicApproximations rdf:ID="OceanBasicApproximations_primitive_equations">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primitive equations</rdfs:label>
+  </OceanBasicApproximations>
+  <OceanBasicApproximations rdf:ID="OceanBasicApproximations_non-hydrostatic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-hydrostatic</rdfs:label>
+  </OceanBasicApproximations>
+  <OceanBasicApproximations rdf:ID="OceanBasicApproximations_Boussinesq">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boussinesq</rdfs:label>
+  </OceanBasicApproximations>
+  <OceanBasicApproximations rdf:ID="OceanBasicApproximations_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBasicApproximations>
+  <owl:Class rdf:ID="OceanListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasOceanListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of the prognostic variables of the model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_potential_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential temperature</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_conservative_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conservative temperature</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_salinity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salinity</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_U-velocity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U-velocity</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_V-velocity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V-velocity</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_W-Velocity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W-Velocity</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_SSH">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SSH</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <OceanListOfPrognosticVariables rdf:ID="OceanListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanListOfPrognosticVariables>
+  <owl:Class rdf:ID="OceanSeaWaterEquationOfState"/>
+  <owl:ObjectProperty rdf:ID="hasOceanSeaWaterEquationOfState">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Sea Water Equation Of State</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formulation for equation of state of sea water.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanSeaWaterEquationOfState"/>
+  </owl:ObjectProperty>
+  <OceanSeaWaterEquationOfState rdf:ID="OceanSeaWaterEquationOfState_linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear</rdfs:label>
+  </OceanSeaWaterEquationOfState>
+  <OceanSeaWaterEquationOfState rdf:ID="OceanSeaWaterEquationOfState_McDougall_et_al.">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McDougall et al.</rdfs:label>
+  </OceanSeaWaterEquationOfState>
+  <OceanSeaWaterEquationOfState rdf:ID="OceanSeaWaterEquationOfState_Jackett_et_al._2006">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jackett et al. 2006</rdfs:label>
+  </OceanSeaWaterEquationOfState>
+  <OceanSeaWaterEquationOfState rdf:ID="OceanSeaWaterEquationOfState_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanSeaWaterEquationOfState>
+  <owl:Class rdf:ID="OceanSeaWaterFreezingPoint"/>
+  <owl:ObjectProperty rdf:ID="hasOceanSeaWaterFreezingPoint">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Sea Water Freezing Point</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypothesis on sea water freezing point.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanSeaWaterFreezingPoint"/>
+  </owl:ObjectProperty>
+  <OceanSeaWaterFreezingPoint rdf:ID="OceanSeaWaterFreezingPoint_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </OceanSeaWaterFreezingPoint>
+  <OceanSeaWaterFreezingPoint rdf:ID="OceanSeaWaterFreezingPoint_varying">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">varying</rdfs:label>
+  </OceanSeaWaterFreezingPoint>
+  <OceanSeaWaterFreezingPoint rdf:ID="OceanSeaWaterFreezingPoint_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanSeaWaterFreezingPoint>
+  <owl:DatatypeProperty rdf:ID="hasOceanSeaWaterFreezingPointValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Sea Water Freezing Point Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Sea water freezing temperature.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanSeaWaterFreezingPointComputationValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Sea Water Freezing Point Computation</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to compute the sea water freezing temperature.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanSeaWaterSpecificHeat"/>
+  <owl:ObjectProperty rdf:ID="hasOceanSeaWaterSpecificHeat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Sea Water Specific Heat</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypothesis on sea water specific heat.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanSeaWaterSpecificHeat"/>
+  </owl:ObjectProperty>
+  <OceanSeaWaterSpecificHeat rdf:ID="OceanSeaWaterSpecificHeat_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </OceanSeaWaterSpecificHeat>
+  <OceanSeaWaterSpecificHeat rdf:ID="OceanSeaWaterSpecificHeat_varying">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">varying</rdfs:label>
+  </OceanSeaWaterSpecificHeat>
+  <OceanSeaWaterSpecificHeat rdf:ID="OceanSeaWaterSpecificHeat_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanSeaWaterSpecificHeat>
+  <owl:DatatypeProperty rdf:ID="hasOceanSeaWaterSpecificHeatValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Sea Water Specific Heat Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the sea water specific heat.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanSeaWaterSpecificHeatComputationValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Sea Water Specific Heat Computation</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to compute the sea water specific heat.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanNon-OceanicWaterRiverMouthMixingValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Non-Oceanic Water River Mouth Mixing</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distribution of freshwater fluxes from rivers into ocean.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanNon-OceanicWaterIsolatedSeasMixing"/>
+  <owl:ObjectProperty rdf:ID="hasOceanNon-OceanicWaterIsolatedSeasMixing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Non-Oceanic Water Isolated Seas Mixing</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixing of isolated sea water with ocean.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanNon-OceanicWaterIsolatedSeasMixing"/>
+  </owl:ObjectProperty>
+  <OceanNon-OceanicWaterIsolatedSeasMixing rdf:ID="OceanNon-OceanicWaterIsolatedSeasMixing_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanNon-OceanicWaterIsolatedSeasMixing>
+  <OceanNon-OceanicWaterIsolatedSeasMixing rdf:ID="OceanNon-OceanicWaterIsolatedSeasMixing_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanNon-OceanicWaterIsolatedSeasMixing>
+  <owl:Class rdf:ID="OceanBathymetryType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBathymetryType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time evolution of the bathymetry - either fixed to reference date below or evolving at paleo timescales.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBathymetryType"/>
+  </owl:ObjectProperty>
+  <OceanBathymetryType rdf:ID="OceanBathymetryType_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </OceanBathymetryType>
+  <OceanBathymetryType rdf:ID="OceanBathymetryType_transient">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transient</rdfs:label>
+  </OceanBathymetryType>
+  <OceanBathymetryType rdf:ID="OceanBathymetryType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBathymetryType>
+  <owl:Class rdf:ID="OceanBathymetryReferenceDate"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBathymetryReferenceDate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Reference Date</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time period for which fixed bathymetry is defined.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBathymetryReferenceDate"/>
+  </owl:ObjectProperty>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_present-day">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">present-day</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_21000_years_BP">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21000 years BP</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_6000_years_BP">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6000 years BP</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_Pliocene">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pliocene</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_LGM">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LGM</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <OceanBathymetryReferenceDate rdf:ID="OceanBathymetryReferenceDate_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBathymetryReferenceDate>
+  <owl:Class rdf:ID="OceanBathymetryAdjustment"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBathymetryAdjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Adjustment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bathymetry adjustment performed relatively to present-day.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBathymetryAdjustment"/>
+  </owl:ObjectProperty>
+  <OceanBathymetryAdjustment rdf:ID="OceanBathymetryAdjustment_coastal_only__LPAREN_none_at_depth_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coastal only (none at depth)</rdfs:label>
+  </OceanBathymetryAdjustment>
+  <OceanBathymetryAdjustment rdf:ID="OceanBathymetryAdjustment_full_adjustment_of_bathymetry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full adjustment of bathymetry</rdfs:label>
+  </OceanBathymetryAdjustment>
+  <owl:DatatypeProperty rdf:ID="hasOceanBathymetryCoastalAdjustmentValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Coastal Adjustment</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteritics of the coastal adjustment.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBathymetryStraitsClosed"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBathymetryStraitsClosed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Straits Closed</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of closed straits.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBathymetryStraitsClosed"/>
+  </owl:ObjectProperty>
+  <OceanBathymetryStraitsClosed rdf:ID="OceanBathymetryStraitsClosed_Bering">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bering</rdfs:label>
+  </OceanBathymetryStraitsClosed>
+  <OceanBathymetryStraitsClosed rdf:ID="OceanBathymetryStraitsClosed_Panama">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panama</rdfs:label>
+  </OceanBathymetryStraitsClosed>
+  <OceanBathymetryStraitsClosed rdf:ID="OceanBathymetryStraitsClosed_Indonesia_throughflow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indonesia throughflow</rdfs:label>
+  </OceanBathymetryStraitsClosed>
+  <OceanBathymetryStraitsClosed rdf:ID="OceanBathymetryStraitsClosed_Barents_sea">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barents sea</rdfs:label>
+  </OceanBathymetryStraitsClosed>
+  <owl:Class rdf:ID="OceanBathymetryInlandSeasChanges"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBathymetryInlandSeasChanges">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Inland Seas Changes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographical changes for inland seas when compared to present-day.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBathymetryInlandSeasChanges"/>
+  </owl:ObjectProperty>
+  <OceanBathymetryInlandSeasChanges rdf:ID="OceanBathymetryInlandSeasChanges_Hudson_bay">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hudson bay</rdfs:label>
+  </OceanBathymetryInlandSeasChanges>
+  <OceanBathymetryInlandSeasChanges rdf:ID="OceanBathymetryInlandSeasChanges_Caspian_sea">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caspian sea</rdfs:label>
+  </OceanBathymetryInlandSeasChanges>
+  <owl:DatatypeProperty rdf:ID="hasOceanBathymetryTransientChangesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bathymetry Transient Changes</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteritics of transient changes in bathymetry.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanHorizontalGridType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanHorizontalGridType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Horizontal Grid Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry type of the horizontal grid.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanHorizontalGridType"/>
+  </owl:ObjectProperty>
+  <OceanHorizontalGridType rdf:ID="OceanHorizontalGridType_latitude-longitude_rectangular">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">latitude-longitude rectangular</rdfs:label>
+  </OceanHorizontalGridType>
+  <OceanHorizontalGridType rdf:ID="OceanHorizontalGridType_tripolar_curvilinear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tripolar curvilinear</rdfs:label>
+  </OceanHorizontalGridType>
+  <OceanHorizontalGridType rdf:ID="OceanHorizontalGridType_cube_sphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube sphere</rdfs:label>
+  </OceanHorizontalGridType>
+  <OceanHorizontalGridType rdf:ID="OceanHorizontalGridType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanHorizontalGridType>
+  <owl:Class rdf:ID="OceanHorizontalDiscretization"/>
+  <owl:ObjectProperty rdf:ID="hasOceanHorizontalDiscretization">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Horizontal Discretization</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical method used by the horizontal discretization scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanHorizontalDiscretization"/>
+  </owl:ObjectProperty>
+  <OceanHorizontalDiscretization rdf:ID="OceanHorizontalDiscretization_finite_differences">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite differences</rdfs:label>
+  </OceanHorizontalDiscretization>
+  <OceanHorizontalDiscretization rdf:ID="OceanHorizontalDiscretization_finite_volumes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite volumes</rdfs:label>
+  </OceanHorizontalDiscretization>
+  <OceanHorizontalDiscretization rdf:ID="OceanHorizontalDiscretization_finite_elements">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite elements</rdfs:label>
+  </OceanHorizontalDiscretization>
+  <OceanHorizontalDiscretization rdf:ID="OceanHorizontalDiscretization_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanHorizontalDiscretization>
+  <owl:Class rdf:ID="OceanHorizontalGridName"/>
+  <owl:ObjectProperty rdf:ID="hasOceanHorizontalGridName">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Horizontal Grid Name</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grid configuration name.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanHorizontalGridName"/>
+  </owl:ObjectProperty>
+  <OceanHorizontalGridName rdf:ID="OceanHorizontalGridName_Arakawa_B-grid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arakawa B-grid</rdfs:label>
+  </OceanHorizontalGridName>
+  <OceanHorizontalGridName rdf:ID="OceanHorizontalGridName_Arakawa_C-grid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arakawa C-grid</rdfs:label>
+  </OceanHorizontalGridName>
+  <OceanHorizontalGridName rdf:ID="OceanHorizontalGridName_Arakawa_E-grid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arakawa E-grid</rdfs:label>
+  </OceanHorizontalGridName>
+  <owl:Class rdf:ID="OceanHorizontalNorthPoleSingularityTreatment"/>
+  <owl:ObjectProperty rdf:ID="hasOceanHorizontalNorthPoleSingularityTreatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Horizontal North Pole Singularity Treatment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to deal with north pole singularities.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanHorizontalNorthPoleSingularityTreatment"/>
+  </owl:ObjectProperty>
+  <OceanHorizontalNorthPoleSingularityTreatment rdf:ID="OceanHorizontalNorthPoleSingularityTreatment_filter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filter</rdfs:label>
+  </OceanHorizontalNorthPoleSingularityTreatment>
+  <OceanHorizontalNorthPoleSingularityTreatment rdf:ID="OceanHorizontalNorthPoleSingularityTreatment_pole_rotation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pole rotation</rdfs:label>
+  </OceanHorizontalNorthPoleSingularityTreatment>
+  <OceanHorizontalNorthPoleSingularityTreatment rdf:ID="OceanHorizontalNorthPoleSingularityTreatment_artificial_island">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artificial island</rdfs:label>
+  </OceanHorizontalNorthPoleSingularityTreatment>
+  <OceanHorizontalNorthPoleSingularityTreatment rdf:ID="OceanHorizontalNorthPoleSingularityTreatment_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanHorizontalNorthPoleSingularityTreatment>
+  <OceanHorizontalNorthPoleSingularityTreatment rdf:ID="OceanHorizontalNorthPoleSingularityTreatment_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanHorizontalNorthPoleSingularityTreatment>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalMeanZonalResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Mean Zonal Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean zonal resolution.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalMeanMeridionalResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Mean Meridional Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean meridional resolution.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalEquatorMeridionalRefinementValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Equator Meridional Refinement</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Meridional resolution near equator.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalSpecialRefinementValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Horizontal Special Refinement</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of any other special gid refinement (location, resolution).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalExtentLatMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Extent Lat Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Southern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalExtentLatMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Extent Lat Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Northern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalExtentLonMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Extent Lon Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Western boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanHorizontalExtentLonMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Horizontal Extent Lon Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Eastern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalCoordinateSystem"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalCoordinateSystem">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Coordinate System</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical coordinate system.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalCoordinateSystem"/>
+  </owl:ObjectProperty>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Z-coordinate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Z-coordinate</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Z_STAR_-coordinate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Z*-coordinate</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_S-coordinate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-coordinate</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_isopycnic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isopycnic</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Hybrid__LPAREN_Z_PLUS_S_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybrid (Z+S)</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Hybrid__LPAREN_Z_PLUS_isopycnic_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybrid (Z+isopycnic)</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Pressure_reference__LPAREN_P_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pressure reference (P)</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_P_STAR_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P*</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_Z_STAR__STAR_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Z**</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <OceanVerticalCoordinateSystem rdf:ID="OceanVerticalCoordinateSystem_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalCoordinateSystem>
+  <owl:Class rdf:ID="OceanVerticalPartialSteps"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPartialSteps">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Partial Steps</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does the model use partial steps at bottom or not.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPartialSteps"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPartialSteps rdf:ID="OceanVerticalPartialSteps_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanVerticalPartialSteps>
+  <OceanVerticalPartialSteps rdf:ID="OceanVerticalPartialSteps_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanVerticalPartialSteps>
+  <owl:Class rdf:ID="OceanVerticalReferencePressure"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalReferencePressure">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Reference Pressure</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference pression for S-coordinate.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalReferencePressure"/>
+  </owl:ObjectProperty>
+  <OceanVerticalReferencePressure rdf:ID="OceanVerticalReferencePressure_Sigma0">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigma0</rdfs:label>
+  </OceanVerticalReferencePressure>
+  <OceanVerticalReferencePressure rdf:ID="OceanVerticalReferencePressure_Sigma2">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigma2</rdfs:label>
+  </OceanVerticalReferencePressure>
+  <OceanVerticalReferencePressure rdf:ID="OceanVerticalReferencePressure_Sigma4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigma4</rdfs:label>
+  </OceanVerticalReferencePressure>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Total number of vertical levels.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalNumberOfLevelsInUpper100mValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Number Of Levels In Upper 100m</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of vertical levels in the upper 100 meters.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalUpperLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Upper Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Upper level.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalLowerLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Lower Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Lower level.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanTracersDampingAppliedTo"/>
+  <owl:ObjectProperty rdf:ID="hasOceanTracersDampingAppliedTo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Tracers Damping Applied To</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of tracers to which the damping apply.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanTracersDampingAppliedTo"/>
+  </owl:ObjectProperty>
+  <OceanTracersDampingAppliedTo rdf:ID="OceanTracersDampingAppliedTo_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+  </OceanTracersDampingAppliedTo>
+  <OceanTracersDampingAppliedTo rdf:ID="OceanTracersDampingAppliedTo_salinity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salinity</rdfs:label>
+  </OceanTracersDampingAppliedTo>
+  <OceanTracersDampingAppliedTo rdf:ID="OceanTracersDampingAppliedTo_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanTracersDampingAppliedTo>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingLatMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Lat Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Southern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingLatMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Lat Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Northern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingLonMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Lon Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Western boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingLonMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Lon Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Eastern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingUpperLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Upper Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Upper level of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanTracersDampingLowerLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Tracers Damping Lower Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Lower level of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingLatMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Lat Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Southern boundary of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingLatMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Lat Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Northern boundary of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingLonMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Lon Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Western boundary of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingLonMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Lon Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Eastern boundary of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingUpperLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Upper Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Upper level of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumDampingLowerLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Momentum Damping Lower Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Lower level of the momentum damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanTimeSteppingFrameworkTracers"/>
+  <owl:ObjectProperty rdf:ID="hasOceanTimeSteppingFrameworkTracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Time Stepping Framework Tracers</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping scheme for tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanTimeSteppingFrameworkTracers"/>
+  </owl:ObjectProperty>
+  <OceanTimeSteppingFrameworkTracers rdf:ID="OceanTimeSteppingFrameworkTracers_Leap-frog__PLUS__Asselin_filter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Asselin filter</rdfs:label>
+  </OceanTimeSteppingFrameworkTracers>
+  <OceanTimeSteppingFrameworkTracers rdf:ID="OceanTimeSteppingFrameworkTracers_Leap-frog__PLUS__Periodic_Euler_backward_solver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Periodic Euler backward solver</rdfs:label>
+  </OceanTimeSteppingFrameworkTracers>
+  <OceanTimeSteppingFrameworkTracers rdf:ID="OceanTimeSteppingFrameworkTracers_Predictor-corrector">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictor-corrector</rdfs:label>
+  </OceanTimeSteppingFrameworkTracers>
+  <OceanTimeSteppingFrameworkTracers rdf:ID="OceanTimeSteppingFrameworkTracers_Forward-backward">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward-backward</rdfs:label>
+  </OceanTimeSteppingFrameworkTracers>
+  <OceanTimeSteppingFrameworkTracers rdf:ID="OceanTimeSteppingFrameworkTracers_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanTimeSteppingFrameworkTracers>
+  <owl:Class rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver"/>
+  <owl:ObjectProperty rdf:ID="hasOceanTimeSteppingFrameworkBarotropicSolver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Time Stepping Framework Barotropic Solver</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping scheme for barotropic solver.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanTimeSteppingFrameworkBarotropicSolver"/>
+  </owl:ObjectProperty>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_Leap-frog__PLUS__Asselin_filter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Asselin filter</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_Leap-frog__PLUS__Periodic_Euler_backward_solver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Periodic Euler backward solver</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_Predictor-corrector">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictor-corrector</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_AM3-LF__LPAREN_ROMS_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AM3-LF (ROMS)</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_Forward-backward">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward-backward</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <OceanTimeSteppingFrameworkBarotropicSolver rdf:ID="OceanTimeSteppingFrameworkBarotropicSolver_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanTimeSteppingFrameworkBarotropicSolver>
+  <owl:Class rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum"/>
+  <owl:ObjectProperty rdf:ID="hasOceanTimeSteppingFrameworkBaroclinicMomentum">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Time Stepping Framework Baroclinic Momentum</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping scheme for baroclinic momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanTimeSteppingFrameworkBaroclinicMomentum"/>
+  </owl:ObjectProperty>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_Leap-frog__PLUS__Asselin_filter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Asselin filter</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_Leap-frog__PLUS__Periodic_Euler_backward_solver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leap-frog + Periodic Euler backward solver</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_Predictor-corrector">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictor-corrector</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_AM3-LF__LPAREN_ROMS_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AM3-LF (ROMS)</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_Forward-backward">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward-backward</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <OceanTimeSteppingFrameworkBaroclinicMomentum rdf:ID="OceanTimeSteppingFrameworkBaroclinicMomentum_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanTimeSteppingFrameworkBaroclinicMomentum>
+  <owl:DatatypeProperty rdf:ID="hasOceanTimeSteppingFrameworkTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Time Stepping Framework Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step of the model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanMomentumSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Momentum Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for momentum advection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanMomentumSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanMomentumSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Momentum Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of numerical scheme used for advection of momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanMomentumSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanMomentumSchemeType rdf:ID="OceanMomentumSchemeType_Flux_form">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flux form</rdfs:label>
+  </OceanMomentumSchemeType>
+  <OceanMomentumSchemeType rdf:ID="OceanMomentumSchemeType_Vector_form">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector form</rdfs:label>
+  </OceanMomentumSchemeType>
+  <OceanMomentumSchemeType rdf:ID="OceanMomentumSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanMomentumSchemeType>
+  <owl:Class rdf:ID="OceanLateralTracersSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralTracersSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Tracers Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of numerical scheme used for lateral advection of tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralTracersSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Centred_2nd_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centred 2nd order</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Centred_4th_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centred 4th order</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Total_Variance_Dissipation__LPAREN_TVD_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Variance Dissipation (TVD)</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_MUSCL">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUSCL</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_QUICKEST">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QUICKEST</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Piecewise_Parabolic_method">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piecewise Parabolic method</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Sweby">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweby</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_Prather_2nd_moment__LPAREN_PSOM_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prather 2nd moment (PSOM)</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <OceanLateralTracersSchemeType rdf:ID="OceanLateralTracersSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralTracersSchemeType>
+  <owl:Class rdf:ID="OceanLateralTracersMonotonicFluxLimiter"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralTracersMonotonicFluxLimiter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Tracers Monotonic Flux Limiter</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of monotonic flux limiter for numerical stability in the lateral tracers scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralTracersMonotonicFluxLimiter"/>
+  </owl:ObjectProperty>
+  <OceanLateralTracersMonotonicFluxLimiter rdf:ID="OceanLateralTracersMonotonicFluxLimiter_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanLateralTracersMonotonicFluxLimiter>
+  <OceanLateralTracersMonotonicFluxLimiter rdf:ID="OceanLateralTracersMonotonicFluxLimiter_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanLateralTracersMonotonicFluxLimiter>
+  <owl:Class rdf:ID="OceanVerticalTracersSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalTracersSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Tracers Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of numerical scheme used for vertical advection of tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalTracersSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_Centred_2nd_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centred 2nd order</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_Centred_4th_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centred 4th order</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_TVD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TVD</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_Sweby">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweby</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_Prather_2nd_moment__LPAREN_PSOM_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prather 2nd moment (PSOM)</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <OceanVerticalTracersSchemeType rdf:ID="OceanVerticalTracersSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalTracersSchemeType>
+  <owl:Class rdf:ID="OceanVerticalTracersMonotonicFluxLimiter"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalTracersMonotonicFluxLimiter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Tracers Monotonic Flux Limiter</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of monotonic flux limiter for numerical stability in the vertical tracers scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalTracersMonotonicFluxLimiter"/>
+  </owl:ObjectProperty>
+  <OceanVerticalTracersMonotonicFluxLimiter rdf:ID="OceanVerticalTracersMonotonicFluxLimiter_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanVerticalTracersMonotonicFluxLimiter>
+  <OceanVerticalTracersMonotonicFluxLimiter rdf:ID="OceanVerticalTracersMonotonicFluxLimiter_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanVerticalTracersMonotonicFluxLimiter>
+  <owl:Class rdf:ID="OceanLateralPhysicsMomentumOperatorDirection"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsMomentumOperatorDirection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Momentum Operator Direction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of iso-surface on which lateral diffusion of momentum is formulated.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsMomentumOperatorDirection"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_horizontal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_isopycnal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isopycnal</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_isoneutral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoneutral</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_geopotential">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geopotential</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_iso-level">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iso-level</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <OceanLateralPhysicsMomentumOperatorDirection rdf:ID="OceanLateralPhysicsMomentumOperatorDirection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDirection>
+  <owl:Class rdf:ID="OceanLateralPhysicsMomentumOperatorOrder"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsMomentumOperatorOrder">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Momentum Operator Order</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Order of the diffusion operator used to model the lateral diffusion of momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsMomentumOperatorOrder"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsMomentumOperatorOrder rdf:ID="OceanLateralPhysicsMomentumOperatorOrder_harmonic__LPAREN_second_order_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmonic (second order)</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorOrder>
+  <OceanLateralPhysicsMomentumOperatorOrder rdf:ID="OceanLateralPhysicsMomentumOperatorOrder_bi-harmonic__LPAREN_fourth_order_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bi-harmonic (fourth order)</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorOrder>
+  <OceanLateralPhysicsMomentumOperatorOrder rdf:ID="OceanLateralPhysicsMomentumOperatorOrder_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorOrder>
+  <owl:Class rdf:ID="OceanLateralPhysicsMomentumOperatorDiscretization"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsMomentumOperatorDiscretization">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Momentum Operator Discretization</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discretization method applied for the lateral diffusion operator of momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsMomentumOperatorDiscretization"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsMomentumOperatorDiscretization rdf:ID="OceanLateralPhysicsMomentumOperatorDiscretization_second_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second order</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDiscretization>
+  <OceanLateralPhysicsMomentumOperatorDiscretization rdf:ID="OceanLateralPhysicsMomentumOperatorDiscretization_higher_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higher order</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDiscretization>
+  <OceanLateralPhysicsMomentumOperatorDiscretization rdf:ID="OceanLateralPhysicsMomentumOperatorDiscretization_flux_limited">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flux limited</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDiscretization>
+  <OceanLateralPhysicsMomentumOperatorDiscretization rdf:ID="OceanLateralPhysicsMomentumOperatorDiscretization_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsMomentumOperatorDiscretization>
+  <owl:Class rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsMomentumEddyViscosityCoefficientType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Momentum Eddy Viscosity Coefficient Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property of the eddy viscosity coefficient for momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsMomentumEddyViscosityCoefficientType"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientType>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientType_space_varying">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space varying</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientType>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientType_time__PLUS__space_varying__LPAREN_Smagorinski_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time + space varying (Smagorinski)</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientType>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientType>
+  <owl:DatatypeProperty rdf:ID="hasOceanLateralPhysicsMomentumEddyViscosityCoefficientValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Lateral Physics Momentum Eddy Viscosity Coefficient Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Constant value of the eddy viscosity coefficient for momentum.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Momentum Eddy Viscosity Coefficient Spatial Variation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directions along which the eddy viscosity coefficient for momentum is varying.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation_depth">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depth</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation_latitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">latitude</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation>
+  <OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation_longitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">longitude</rdfs:label>
+  </OceanLateralPhysicsMomentumEddyViscosityCoefficientSpatialVariation>
+  <owl:DatatypeProperty rdf:ID="hasOceanLateralPhysicsMomentumEddyViscosityCoefficientMinimalBackgroundValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Lateral Physics Momentum Eddy Viscosity Coefficient Minimal Background Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Minimal background value of eddy viscosity coefficient for momentum.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersMesoscaleClosure"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersMesoscaleClosure">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Mesoscale Closure</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracers lateral scheme has a mesoscale closure implemented.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersMesoscaleClosure"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersMesoscaleClosure rdf:ID="OceanLateralPhysicsTracersMesoscaleClosure_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanLateralPhysicsTracersMesoscaleClosure>
+  <OceanLateralPhysicsTracersMesoscaleClosure rdf:ID="OceanLateralPhysicsTracersMesoscaleClosure_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanLateralPhysicsTracersMesoscaleClosure>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersOperatorDirection"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersOperatorDirection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Operator Direction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of iso-surface on which lateral diffusion of tracers is formulated.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersOperatorDirection"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_horizontal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_isopycnal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isopycnal</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_isoneutral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoneutral</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_geopotential">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geopotential</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_iso-level">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iso-level</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <OceanLateralPhysicsTracersOperatorDirection rdf:ID="OceanLateralPhysicsTracersOperatorDirection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDirection>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersOperatorOrder"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersOperatorOrder">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Operator Order</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Order of the diffusion operator used to model the lateral diffusion of tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersOperatorOrder"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersOperatorOrder rdf:ID="OceanLateralPhysicsTracersOperatorOrder_harmonic__LPAREN_second_order_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmonic (second order)</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorOrder>
+  <OceanLateralPhysicsTracersOperatorOrder rdf:ID="OceanLateralPhysicsTracersOperatorOrder_bi-harmonic__LPAREN_fourth_order_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bi-harmonic (fourth order)</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorOrder>
+  <OceanLateralPhysicsTracersOperatorOrder rdf:ID="OceanLateralPhysicsTracersOperatorOrder_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorOrder>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersOperatorDiscretization"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersOperatorDiscretization">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Operator Discretization</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discretization method applied for the lateral diffusion operator of tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersOperatorDiscretization"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersOperatorDiscretization rdf:ID="OceanLateralPhysicsTracersOperatorDiscretization_second_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second order</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDiscretization>
+  <OceanLateralPhysicsTracersOperatorDiscretization rdf:ID="OceanLateralPhysicsTracersOperatorDiscretization_higher_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higher order</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDiscretization>
+  <OceanLateralPhysicsTracersOperatorDiscretization rdf:ID="OceanLateralPhysicsTracersOperatorDiscretization_flux_limited">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flux limited</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDiscretization>
+  <OceanLateralPhysicsTracersOperatorDiscretization rdf:ID="OceanLateralPhysicsTracersOperatorDiscretization_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersOperatorDiscretization>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddyViscosityCoefficientType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy Viscosity Coefficient Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property of the eddy viscosity coefficient for tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddyViscosityCoefficientType"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientType>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientType_space_varying">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">space varying</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientType>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientType rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientType>
+  <owl:DatatypeProperty rdf:ID="hasOceanLateralPhysicsTracersEddyViscosityCoefficientValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Lateral Physics Tracers Eddy Viscosity Coefficient Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the eddy viscosity coefficient for tracers.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy Viscosity Coefficient Spatial Variation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directions along which the eddy viscosity coefficient for tracers is varying.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation_depth">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depth</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation_latitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">latitude</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation>
+  <OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation rdf:ID="OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation_longitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">longitude</rdfs:label>
+  </OceanLateralPhysicsTracersEddyViscosityCoefficientSpatialVariation>
+  <owl:DatatypeProperty rdf:ID="hasOceanLateralPhysicsTracersEddyViscosityCoefficientBackgroundValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Lateral Physics Tracers Eddy Viscosity Coefficient Background Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Background value of eddy viscosity coefficient for tracers.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddy-inducedVelocitySchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy-induced Velocity Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used to parametrise eddy fluxes as eddy-induced velocity (adiabatic).</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType_GM_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GM scheme</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType>
+  <OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocitySchemeType>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy-induced Velocity Coefficient Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property of the coefficient for eddy-induced velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityCoefficientType>
+  <owl:DatatypeProperty rdf:ID="hasOceanLateralPhysicsTracersEddy-inducedVelocityCoefficientValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Lateral Physics Tracers Eddy-induced Velocity Coefficient Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the oefficient for eddy-induced velocity.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityFluxType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddy-inducedVelocityFluxType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy-induced Velocity Flux Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formulation used for eddy-induced fluxes (???).</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddy-inducedVelocityFluxType"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityFluxType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityFluxType_advective_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advective flux</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityFluxType>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityFluxType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityFluxType_skew_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skew flux</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityFluxType>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityFluxType rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityFluxType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityFluxType>
+  <owl:Class rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity"/>
+  <owl:ObjectProperty rdf:ID="hasOceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Lateral Physics Tracers Eddy-induced Velocity Added Diffusivity</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background added diffusivity for EIV scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity"/>
+  </owl:ObjectProperty>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity_flow_dependent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow dependent</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity>
+  <OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity rdf:ID="OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanLateralPhysicsTracersEddy-inducedVelocityAddedDiffusivity>
+  <owl:Class rdf:ID="OceanVerticalPhysicsConvection"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsConvection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Convection</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Properties of ocean convection scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsConvection"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsConvection rdf:ID="OceanVerticalPhysicsConvection_non-penetrative_convective_adjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-penetrative convective adjustment</rdfs:label>
+  </OceanVerticalPhysicsConvection>
+  <OceanVerticalPhysicsConvection rdf:ID="OceanVerticalPhysicsConvection_enhanced_vertical_diffusion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enhanced vertical diffusion</rdfs:label>
+  </OceanVerticalPhysicsConvection>
+  <OceanVerticalPhysicsConvection rdf:ID="OceanVerticalPhysicsConvection_included_in_the_turbulence_closure_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">included in the turbulence closure scheme</rdfs:label>
+  </OceanVerticalPhysicsConvection>
+  <OceanVerticalPhysicsConvection rdf:ID="OceanVerticalPhysicsConvection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsConvection>
+  <owl:Class rdf:ID="OceanVerticalPhysicsTide-inducedMixing"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsTide-inducedMixing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Tide-induced Mixing</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impact of tides on the ocean vertical mixing.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsTide-inducedMixing"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsTide-inducedMixing rdf:ID="OceanVerticalPhysicsTide-inducedMixing_baroclinic_tides">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baroclinic tides</rdfs:label>
+  </OceanVerticalPhysicsTide-inducedMixing>
+  <OceanVerticalPhysicsTide-inducedMixing rdf:ID="OceanVerticalPhysicsTide-inducedMixing_barotropic_tides">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barotropic tides</rdfs:label>
+  </OceanVerticalPhysicsTide-inducedMixing>
+  <OceanVerticalPhysicsTide-inducedMixing rdf:ID="OceanVerticalPhysicsTide-inducedMixing_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsTide-inducedMixing>
+  <owl:Class rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerTracersSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Mixed Layer Tracers Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of tracers vertical mixing in the ocean mixed layer.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsMixedLayerTracersSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_constant_values">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant values</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_turbulent_closure__LPAREN_TKE_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (TKE)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_turbulent_closure__LPAREN_KPP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (KPP)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_turbulent_closure__LPAREN_Mellor-Yamada_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (Mellor-Yamada)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_turbulent_closure__LPAREN_Bulk_Mixed_Layer_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (Bulk Mixed Layer)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_Richardson_number_dependent__LPAREN_PP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (PP)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_Richardson_number_dependent__LPAREN_KT_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (KT)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <OceanVerticalPhysicsMixedLayerTracersSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerTracersSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersSchemeType>
+  <owl:Class rdf:ID="OceanVerticalPhysicsMixedLayerTracersClosureOrder"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerTracersClosureOrder">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Mixed Layer Tracers Closure Order</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closure order of the turbulent closure scheme used for tracers vertical mixing.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsMixedLayerTracersClosureOrder"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsMixedLayerTracersClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerTracersClosureOrder_0">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersClosureOrder>
+  <OceanVerticalPhysicsMixedLayerTracersClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerTracersClosureOrder_1">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersClosureOrder>
+  <OceanVerticalPhysicsMixedLayerTracersClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerTracersClosureOrder_2.5">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.5</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersClosureOrder>
+  <OceanVerticalPhysicsMixedLayerTracersClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerTracersClosureOrder_3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerTracersClosureOrder>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerTracersMixingCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Mixed Layer Tracers Mixing Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the vertical mixing coefficient for tracers in the mixed layer.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerTracersBackgroundCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Mixed Layer Tracers Background Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the background mixing coefficient for tracers in the mixed layer.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerMomentumSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Mixed Layer Momentum Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of momentum vertical mixing in the ocean mixed layer.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsMixedLayerMomentumSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_constant_values">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant values</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_turbulent_closure__LPAREN_TKE_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (TKE)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_turbulent_closure__LPAREN_KPP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (KPP)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_turbulent_closure__LPAREN_Mellor-Yamada_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (Mellor-Yamada)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_turbulent_closure__LPAREN_Bulk_Mixed_Layer_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turbulent closure (Bulk Mixed Layer)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_Richardson_number_dependent__LPAREN_PP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (PP)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_Richardson_number_dependent__LPAREN_KT_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (KT)</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <OceanVerticalPhysicsMixedLayerMomentumSchemeType rdf:ID="OceanVerticalPhysicsMixedLayerMomentumSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumSchemeType>
+  <owl:Class rdf:ID="OceanVerticalPhysicsMixedLayerMomentumClosureOrder"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerMomentumClosureOrder">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Mixed Layer Momentum Closure Order</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closure order of the turbulent closure scheme used for momentum vertical mixing.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsMixedLayerMomentumClosureOrder"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsMixedLayerMomentumClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerMomentumClosureOrder_0">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumClosureOrder>
+  <OceanVerticalPhysicsMixedLayerMomentumClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerMomentumClosureOrder_1">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumClosureOrder>
+  <OceanVerticalPhysicsMixedLayerMomentumClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerMomentumClosureOrder_2.5">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.5</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumClosureOrder>
+  <OceanVerticalPhysicsMixedLayerMomentumClosureOrder rdf:ID="OceanVerticalPhysicsMixedLayerMomentumClosureOrder_3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdfs:label>
+  </OceanVerticalPhysicsMixedLayerMomentumClosureOrder>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerMomentumMixingCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Mixed Layer Momentum Mixing Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the vertical mixing coefficient for momentum in the mixed layer.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsMixedLayerMomentumBackgroundValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Mixed Layer Momentum Background Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the background vertical mixing coefficient for momentum in the mixed layer.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalPhysicsInteriorMixingTracersSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingTracersSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Interior Mixing Tracers Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of tracers vertical mixing in the ocean interior.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsInteriorMixingTracersSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsInteriorMixingTracersSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersSchemeType_constant_values">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant values</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersSchemeType>
+  <OceanVerticalPhysicsInteriorMixingTracersSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersSchemeType_Richardson_number_dependent__LPAREN_PP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (PP)</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersSchemeType>
+  <OceanVerticalPhysicsInteriorMixingTracersSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersSchemeType_Richardson_number_dependent__LPAREN_KT_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (KT)</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersSchemeType>
+  <OceanVerticalPhysicsInteriorMixingTracersSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingTracersCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Interior Mixing Tracers Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the vertical mixing coefficient for tracers in the ocean interior.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalPhysicsInteriorMixingTracersBackgroundType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingTracersBackgroundType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Interior Mixing Tracers Background Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of tracers background mixing coefficient used in the ocean interior.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsInteriorMixingTracersBackgroundType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsInteriorMixingTracersBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersBackgroundType_vertical_profile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical profile</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersBackgroundType>
+  <OceanVerticalPhysicsInteriorMixingTracersBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersBackgroundType_constant_value">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant value</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersBackgroundType>
+  <OceanVerticalPhysicsInteriorMixingTracersBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingTracersBackgroundType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingTracersBackgroundType>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingTracersBackgroundCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Interior Mixing Tracers Background Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the background mixing coefficient for tracers in the ocean interior.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingMomentumSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Interior Mixing Momentum Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of momentum vertical mixing in the ocean interior.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsInteriorMixingMomentumSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsInteriorMixingMomentumSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumSchemeType_constant_values">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant values</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumSchemeType>
+  <OceanVerticalPhysicsInteriorMixingMomentumSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumSchemeType_Richardson_number_dependent__LPAREN_PP_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (PP)</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumSchemeType>
+  <OceanVerticalPhysicsInteriorMixingMomentumSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumSchemeType_Richardson_number_dependent__LPAREN_KT_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richardson number dependent (KT)</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumSchemeType>
+  <OceanVerticalPhysicsInteriorMixingMomentumSchemeType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingMomentumCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Interior Mixing Momentum Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the vertical mixing coefficient for momentum in the ocean interior.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumBackgroundType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingMomentumBackgroundType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Vertical Physics Interior Mixing Momentum Background Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of momentum background mixing coefficient used in the ocean interior.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanVerticalPhysicsInteriorMixingMomentumBackgroundType"/>
+  </owl:ObjectProperty>
+  <OceanVerticalPhysicsInteriorMixingMomentumBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumBackgroundType_vertical_profile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical profile</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumBackgroundType>
+  <OceanVerticalPhysicsInteriorMixingMomentumBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumBackgroundType_constant_value">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant value</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumBackgroundType>
+  <OceanVerticalPhysicsInteriorMixingMomentumBackgroundType rdf:ID="OceanVerticalPhysicsInteriorMixingMomentumBackgroundType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanVerticalPhysicsInteriorMixingMomentumBackgroundType>
+  <owl:DatatypeProperty rdf:ID="hasOceanVerticalPhysicsInteriorMixingMomentumBackgroundCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Vertical Physics Interior Mixing Momentum Background Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the background mixing coefficient for momentum in the ocean interior.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanFreeSurfaceType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanFreeSurfaceType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Free Surface Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical formulation for the ocean free surface.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanFreeSurfaceType"/>
+  </owl:ObjectProperty>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_linear_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear implicit</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_linear_filtered">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear filtered</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_linear_split-explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear split-explicit</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_non-linear_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear implicit</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_non-linear_filtered">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear filtered</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_non-linear_split-explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear split-explicit</rdfs:label>
+  </OceanFreeSurfaceType>
+  <OceanFreeSurfaceType rdf:ID="OceanFreeSurfaceType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanFreeSurfaceType>
+  <owl:Class rdf:ID="OceanBottomBoundaryLayerType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBottomBoundaryLayerType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bottom Boundary Layer Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of ocean bottom boundary layer.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBottomBoundaryLayerType"/>
+  </owl:ObjectProperty>
+  <OceanBottomBoundaryLayerType rdf:ID="OceanBottomBoundaryLayerType_diffusive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffusive</rdfs:label>
+  </OceanBottomBoundaryLayerType>
+  <OceanBottomBoundaryLayerType rdf:ID="OceanBottomBoundaryLayerType_advective">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advective</rdfs:label>
+  </OceanBottomBoundaryLayerType>
+  <OceanBottomBoundaryLayerType rdf:ID="OceanBottomBoundaryLayerType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBottomBoundaryLayerType>
+  <owl:DatatypeProperty rdf:ID="hasOceanBottomBoundaryLayerLateralMixingCoefficientValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Bottom Boundary Layer Lateral Mixing Coefficient</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the lateral mixing coefficient in the bottom boundary layer.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBottomBoundaryLayerSillOverflow"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBottomBoundaryLayerSillOverflow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Bottom Boundary Layer Sill Overflow</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parametrization of sill overflows.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBottomBoundaryLayerSillOverflow"/>
+  </owl:ObjectProperty>
+  <OceanBottomBoundaryLayerSillOverflow rdf:ID="OceanBottomBoundaryLayerSillOverflow_specific_treatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific treatment</rdfs:label>
+  </OceanBottomBoundaryLayerSillOverflow>
+  <OceanBottomBoundaryLayerSillOverflow rdf:ID="OceanBottomBoundaryLayerSillOverflow_no_specific_treatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no specific treatment</rdfs:label>
+  </OceanBottomBoundaryLayerSillOverflow>
+  <OceanBottomBoundaryLayerSillOverflow rdf:ID="OceanBottomBoundaryLayerSillOverflow_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBottomBoundaryLayerSillOverflow>
+  <owl:Class rdf:ID="OceanBoundaryForcingMomentumBottomFriction"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingMomentumBottomFriction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Momentum Bottom Friction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical scheme used to formulate the effect bottom friction on momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingMomentumBottomFriction"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_non-linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_non-linear__LPAREN_drag_function_of_speed_of_tides_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear (drag function of speed of tides)</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_constant_drag_coefficient">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant drag coefficient</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <OceanBoundaryForcingMomentumBottomFriction rdf:ID="OceanBoundaryForcingMomentumBottomFriction_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingMomentumBottomFriction>
+  <owl:Class rdf:ID="OceanBoundaryForcingMomentumLateralFriction"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingMomentumLateralFriction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Momentum Lateral Friction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical scheme used to formulate the effect of lateral friction on momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingMomentumLateralFriction"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingMomentumLateralFriction rdf:ID="OceanBoundaryForcingMomentumLateralFriction_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanBoundaryForcingMomentumLateralFriction>
+  <OceanBoundaryForcingMomentumLateralFriction rdf:ID="OceanBoundaryForcingMomentumLateralFriction_free-slip">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free-slip</rdfs:label>
+  </OceanBoundaryForcingMomentumLateralFriction>
+  <OceanBoundaryForcingMomentumLateralFriction rdf:ID="OceanBoundaryForcingMomentumLateralFriction_no-slip">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-slip</rdfs:label>
+  </OceanBoundaryForcingMomentumLateralFriction>
+  <OceanBoundaryForcingMomentumLateralFriction rdf:ID="OceanBoundaryForcingMomentumLateralFriction_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingMomentumLateralFriction>
+  <owl:Class rdf:ID="OceanBoundaryForcingMomentumSurfaceFluxCorrection"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingMomentumSurfaceFluxCorrection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Momentum Surface Flux Correction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is there any correction applied to surface fluxes of momentum?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingMomentumSurfaceFluxCorrection"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingMomentumSurfaceFluxCorrection rdf:ID="OceanBoundaryForcingMomentumSurfaceFluxCorrection_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBoundaryForcingMomentumSurfaceFluxCorrection>
+  <OceanBoundaryForcingMomentumSurfaceFluxCorrection rdf:ID="OceanBoundaryForcingMomentumSurfaceFluxCorrection_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBoundaryForcingMomentumSurfaceFluxCorrection>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersGeothermalHeating"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersGeothermalHeating">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Geothermal Heating</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of the geothermal forcing at ocean bottom.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersGeothermalHeating"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersGeothermalHeating rdf:ID="OceanBoundaryForcingTracersGeothermalHeating_spatial_varying">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial varying</rdfs:label>
+  </OceanBoundaryForcingTracersGeothermalHeating>
+  <OceanBoundaryForcingTracersGeothermalHeating rdf:ID="OceanBoundaryForcingTracersGeothermalHeating_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersGeothermalHeating>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSurfaceFluxCorrections"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSurfaceFluxCorrections">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Surface Flux Corrections</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is there any correction applied to surface fluxes of heat and/or salt?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSurfaceFluxCorrections"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSurfaceFluxCorrections rdf:ID="OceanBoundaryForcingTracersSurfaceFluxCorrections_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceFluxCorrections>
+  <OceanBoundaryForcingTracersSurfaceFluxCorrections rdf:ID="OceanBoundaryForcingTracersSurfaceFluxCorrections_salinity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salinity</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceFluxCorrections>
+  <OceanBoundaryForcingTracersSurfaceFluxCorrections rdf:ID="OceanBoundaryForcingTracersSurfaceFluxCorrections_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceFluxCorrections>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSunlightPenetrationSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Sunlight Penetration Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of physical scheme used to formulate sunlight penetration into ocean.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSunlightPenetrationSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSunlightPenetrationSchemeType rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationSchemeType_1_extinction_depth">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 extinction depth</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationSchemeType>
+  <OceanBoundaryForcingTracersSunlightPenetrationSchemeType rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationSchemeType_2_extinction_depths">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 extinction depths</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationSchemeType>
+  <OceanBoundaryForcingTracersSunlightPenetrationSchemeType rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationSchemeType_3_extinction_depths">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 extinction depths</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationSchemeType>
+  <OceanBoundaryForcingTracersSunlightPenetrationSchemeType rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasOceanBoundaryForcingTracersSunlightPenetrationFirstDepthValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Boundary Forcing Tracers Sunlight Penetration First Depth</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Fisrt extinction depth of the ocean sunlight penetration scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBoundaryForcingTracersSunlightPenetrationSecondDepthValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Boundary Forcing Tracers Sunlight Penetration Second Depth</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Second extinction depth of the ocean sunlight penetration scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBoundaryForcingTracersSunlightPenetrationThirdDepthValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Boundary Forcing Tracers Sunlight Penetration Third Depth</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Third extinction depth of the ocean sunlight penetration scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Sunlight Penetration Ocean Color Dependent</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is sunlight penetration dependant of ocean color? (i.e. Is interaction of incident light with substances particules present in ocean water taken into account?).</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent>
+  <OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent rdf:ID="OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBoundaryForcingTracersSunlightPenetrationOceanColorDependent>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Surface Salinity From Atmosphere</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Way to formulate the impact of precipitation/evaporation on sea surface salinity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere_freshwater_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">freshwater flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere_virtual_salt_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual salt flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromAtmosphere>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSurfaceSalinityFromSeaIce">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Surface Salinity From Sea Ice</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Way to formulate the impact of sea-ice formation/melting on sea surface salinity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce_freshwater_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">freshwater flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce_virtual_salt_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual salt flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromSeaIce>
+  <owl:Class rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromRiver"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBoundaryForcingTracersSurfaceSalinityFromRiver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Boundary Forcing Tracers Surface Salinity From River</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Way to formulate the impact of river discharge on sea surface salinity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBoundaryForcingTracersSurfaceSalinityFromRiver"/>
+  </owl:ObjectProperty>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromRiver rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromRiver_freshwater_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">freshwater flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromRiver>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromRiver rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromRiver_virtual_salt_flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual salt flux</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromRiver>
+  <OceanBoundaryForcingTracersSurfaceSalinityFromRiver rdf:ID="OceanBoundaryForcingTracersSurfaceSalinityFromRiver_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBoundaryForcingTracersSurfaceSalinityFromRiver>
+</rdf:RDF>

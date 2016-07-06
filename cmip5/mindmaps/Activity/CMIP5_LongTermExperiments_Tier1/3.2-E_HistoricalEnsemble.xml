@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        3.2-E::Ensemble
+    </numericalActivityName>
+    <numericalActivityDescription>
+        Historical Ensemble
+    </numericalActivityDescription>
+    <Why>
+        This is the additionnal historical runs. Relates to 3.2::Simulation
+    </Why>
+    <numericalExperiment>
+        <CalendarType>
+            <RealCalendar>
+                1850-2005
+            </RealCalendar>
+        </CalendarType>
+        <ensemble>
+            True
+        </ensemble>
+        <requiredDuration>
+            <ClosedDateRange>
+                156 years
+            </ClosedDateRange>
+        </requiredDuration>
+        <!--  CP doesn't know whether there is a formal way of describing 
+               inital conditions other than naming the particular experiment 
+               / simulation it was spawned from. -->
+        <numericalRequirement xsi:type="InitialCondition">
+                <description> All ModelComponents restart from 3.1::Control Year/Month/Day to be specify.</description>
+                <id xsi:type="Identifier"> 3.2-E.ic</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+           <description>Impose changing atmospheric concentrations of well mixed gases including [CO2]</description>
+           <id xsi:type="Identifier">3.2.bc.wmg </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing atmospheric concentrations of short lived (reactive) gas species</description>
+                <id xsi:type="Identifier">3.2.bc.sls </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of natural aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.cna</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of anthropogenic aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.caa</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of natural aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.cnap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of anthropogenic aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.caap</id>
+        </numericalRequirement>
+        <numericalRequirement>
+				<description>Impose changing concentrations of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">3.2.bc.csla</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of natural aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.ena</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of anthropogenic aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.eaa</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of natural aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.enap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of anthropogenic aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.eaap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Impose changing emissions of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">3.2.bc.esla></id>
+        </numericalRequirement>
+         <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of ozone</description>
+                <id xsi:type="Identifier">3.2.bc.co</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Impose changing solar forcing</description>
+				<id xsi:type="Identifier">3.2.bc.sf></id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing Land Use</description>
+                <id xsi:type="Identifier">3.2.bc.LandUse</id>
+        </numericalRequirement>                
+    </numericalExperiment>   
+</Experiment>

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryBasicApproximationsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Basic Approximations</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the basic approximations made in the biogeo chemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryListOfPrognosticVariablesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry List Of Prognostic Variables</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prognostic variables of the ocean biogeo chemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Time Step Framework Passive Tracers Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping method for passive tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod_use_Ocean_transport_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use Ocean transport time step</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod>
+  <OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod_specific_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time step</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod>
+  <OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkPassiveTracersMethod>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTimeStepFrameworkPassiveTracersTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Time Step Framework Passive Tracers Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for ocean passive tracers parametrization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTimeStepFrameworkBiologyMethod"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTimeStepFrameworkBiologyMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Time Step Framework Biology Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping method for ocean biology.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTimeStepFrameworkBiologyMethod"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTimeStepFrameworkBiologyMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkBiologyMethod_use_ocean_transport_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use ocean transport time step</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkBiologyMethod>
+  <OceanBiogeoChemistryTimeStepFrameworkBiologyMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkBiologyMethod_specific_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time step</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkBiologyMethod>
+  <OceanBiogeoChemistryTimeStepFrameworkBiologyMethod rdf:ID="OceanBiogeoChemistryTimeStepFrameworkBiologyMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTimeStepFrameworkBiologyMethod>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTimeStepFrameworkBiologyTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Time Step Framework Biology Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for ocean biology parametrization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryHorizontalGridConfiguration"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryHorizontalGridConfiguration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Horizontal Grid Configuration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration of the horizontal grid used for ocean biogeochemistry (same as Ocean or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryHorizontalGridConfiguration"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryHorizontalGridConfiguration rdf:ID="OceanBiogeoChemistryHorizontalGridConfiguration_same_as_Ocean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Ocean</rdfs:label>
+  </OceanBiogeoChemistryHorizontalGridConfiguration>
+  <OceanBiogeoChemistryHorizontalGridConfiguration rdf:ID="OceanBiogeoChemistryHorizontalGridConfiguration_different_from_Ocean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Ocean</rdfs:label>
+  </OceanBiogeoChemistryHorizontalGridConfiguration>
+  <OceanBiogeoChemistryHorizontalGridConfiguration rdf:ID="OceanBiogeoChemistryHorizontalGridConfiguration_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryHorizontalGridConfiguration>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryHorizontalMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Horizontal Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the ocean biogeochemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryHorizontalGridCharacteristricsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Horizontal Grid Characteristrics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the of the horizontal grid used for ocean biogeochemistry.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryVerticalGridConfiguration"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryVerticalGridConfiguration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Vertical Grid Configuration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration of the vertical grid used for ocean biogeochemistry (same as Ocean or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryVerticalGridConfiguration"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryVerticalGridConfiguration rdf:ID="OceanBiogeoChemistryVerticalGridConfiguration_same_as_Ocean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Ocean</rdfs:label>
+  </OceanBiogeoChemistryVerticalGridConfiguration>
+  <OceanBiogeoChemistryVerticalGridConfiguration rdf:ID="OceanBiogeoChemistryVerticalGridConfiguration_different_from_Ocean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Ocean</rdfs:label>
+  </OceanBiogeoChemistryVerticalGridConfiguration>
+  <OceanBiogeoChemistryVerticalGridConfiguration rdf:ID="OceanBiogeoChemistryVerticalGridConfiguration_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryVerticalGridConfiguration>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Total number of vertical levels in ocean biogeochemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryVerticalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Vertical Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the vertical grid used for ocean biogeochemistry.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingListOfTracersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Damping List Of Tracers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of tracers to which a damping is applied.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingLatMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Lat Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Southern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingLatMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Lat Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Northern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingLonMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Lon Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Western boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingLonMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Lon Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Eastern boundary of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingUpperLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Upper Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Upper level of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTracersDampingLowerLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Ocean Biogeo Chemistry Tracers Damping Lower Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Lower level of the tracers damping zone.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTransportMethod"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTransportMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Transport Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for transport for ocean biogeochemistry.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTransportMethod"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTransportMethod rdf:ID="OceanBiogeoChemistryTransportMethod_offline">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offline</rdfs:label>
+  </OceanBiogeoChemistryTransportMethod>
+  <OceanBiogeoChemistryTransportMethod rdf:ID="OceanBiogeoChemistryTransportMethod_online_COMMA__same_as_Ocean_Tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">online, same as Ocean Tracers</rdfs:label>
+  </OceanBiogeoChemistryTransportMethod>
+  <OceanBiogeoChemistryTransportMethod rdf:ID="OceanBiogeoChemistryTransportMethod_online_COMMA__different_from_Ocean_Tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">online, different from Ocean Tracers</rdfs:label>
+  </OceanBiogeoChemistryTransportMethod>
+  <OceanBiogeoChemistryTransportMethod rdf:ID="OceanBiogeoChemistryTransportMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTransportMethod>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryTransportMethodCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Transport Method Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the specificities of the ocean biogeochemistry transport method (compared to Ocean tracers one).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryBoundaryForcingAtmosphericDeposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Boundary Forcing Atmospheric Deposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How deposition of biogeochemical matter from atmosphere is provided to ocean biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition rdf:ID="OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition_from_AtmosphericChemistry_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from AtmosphericChemistry model</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition>
+  <OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition rdf:ID="OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition_from_ancilliary_data_set">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from ancilliary data set</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition>
+  <OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition rdf:ID="OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingAtmosphericDeposition>
+  <owl:Class rdf:ID="OceanBiogeoChemistryBoundaryForcingRiverInput"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryBoundaryForcingRiverInput">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Boundary Forcing River Input</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How biogeochemical substances and particules present in rivers are provided to ocean biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryBoundaryForcingRiverInput"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryBoundaryForcingRiverInput rdf:ID="OceanBiogeoChemistryBoundaryForcingRiverInput_from_LandSurface_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from LandSurface model</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingRiverInput>
+  <OceanBiogeoChemistryBoundaryForcingRiverInput rdf:ID="OceanBiogeoChemistryBoundaryForcingRiverInput_from_ancillary_data_set">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from ancillary data set</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingRiverInput>
+  <OceanBiogeoChemistryBoundaryForcingRiverInput rdf:ID="OceanBiogeoChemistryBoundaryForcingRiverInput_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingRiverInput>
+  <owl:Class rdf:ID="OceanBiogeoChemistryBoundaryForcingSedimentInteractions"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryBoundaryForcingSedimentInteractions">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Boundary Forcing Sediment Interactions</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the sediments materials are provided to ocean biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryBoundaryForcingSedimentInteractions"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryBoundaryForcingSedimentInteractions rdf:ID="OceanBiogeoChemistryBoundaryForcingSedimentInteractions_from_Sediment_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from Sediment model</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingSedimentInteractions>
+  <OceanBiogeoChemistryBoundaryForcingSedimentInteractions rdf:ID="OceanBiogeoChemistryBoundaryForcingSedimentInteractions_from_ancillary_data_set">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from ancillary data set</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingSedimentInteractions>
+  <OceanBiogeoChemistryBoundaryForcingSedimentInteractions rdf:ID="OceanBiogeoChemistryBoundaryForcingSedimentInteractions_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryBoundaryForcingSedimentInteractions>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeCO2Present"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeCO2Present">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange CO2 Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of carbon dioxide taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeCO2Present"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeCO2Present rdf:ID="OceanBiogeoChemistryGasExchangeCO2Present_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCO2Present>
+  <OceanBiogeoChemistryGasExchangeCO2Present rdf:ID="OceanBiogeoChemistryGasExchangeCO2Present_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCO2Present>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeCO2SchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeCO2SchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange CO2 Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of CO2 transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeCO2SchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeCO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCO2SchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCO2SchemeType>
+  <OceanBiogeoChemistryGasExchangeCO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCO2SchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCO2SchemeType>
+  <OceanBiogeoChemistryGasExchangeCO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCO2SchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCO2SchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeO2Present"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeO2Present">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange O2 Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of oxygen taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeO2Present"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeO2Present rdf:ID="OceanBiogeoChemistryGasExchangeO2Present_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeO2Present>
+  <OceanBiogeoChemistryGasExchangeO2Present rdf:ID="OceanBiogeoChemistryGasExchangeO2Present_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeO2Present>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeO2SchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeO2SchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange O2 Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of O2 transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeO2SchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeO2SchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeO2SchemeType>
+  <OceanBiogeoChemistryGasExchangeO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeO2SchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeO2SchemeType>
+  <OceanBiogeoChemistryGasExchangeO2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeO2SchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeO2SchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeDMSPresent"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeDMSPresent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange DMS Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of dimethyl sulfid taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeDMSPresent"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeDMSPresent rdf:ID="OceanBiogeoChemistryGasExchangeDMSPresent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeDMSPresent>
+  <OceanBiogeoChemistryGasExchangeDMSPresent rdf:ID="OceanBiogeoChemistryGasExchangeDMSPresent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeDMSPresent>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeDMSSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeDMSSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange DMS Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of DMS transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeDMSSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeDMSSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeDMSSchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeDMSSchemeType>
+  <OceanBiogeoChemistryGasExchangeDMSSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeDMSSchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeDMSSchemeType>
+  <OceanBiogeoChemistryGasExchangeDMSSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeDMSSchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeDMSSchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeN2Present"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeN2Present">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange N2 Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of nitrogen taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeN2Present"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeN2Present rdf:ID="OceanBiogeoChemistryGasExchangeN2Present_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2Present>
+  <OceanBiogeoChemistryGasExchangeN2Present rdf:ID="OceanBiogeoChemistryGasExchangeN2Present_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2Present>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeN2SchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeN2SchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange N2 Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of N2 transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeN2SchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeN2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2SchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2SchemeType>
+  <OceanBiogeoChemistryGasExchangeN2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2SchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2SchemeType>
+  <OceanBiogeoChemistryGasExchangeN2SchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2SchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2SchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeN2OPresent"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeN2OPresent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange N2O Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of nitrogen oxide taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeN2OPresent"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeN2OPresent rdf:ID="OceanBiogeoChemistryGasExchangeN2OPresent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2OPresent>
+  <OceanBiogeoChemistryGasExchangeN2OPresent rdf:ID="OceanBiogeoChemistryGasExchangeN2OPresent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2OPresent>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeN2OSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeN2OSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange N2O Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of N2O transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeN2OSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeN2OSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2OSchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2OSchemeType>
+  <OceanBiogeoChemistryGasExchangeN2OSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2OSchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2OSchemeType>
+  <OceanBiogeoChemistryGasExchangeN2OSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeN2OSchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeN2OSchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeCOPresent"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeCOPresent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange CO Present</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is exchange of carbon oxide taken into account in the air-sea interaction processes?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeCOPresent"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeCOPresent rdf:ID="OceanBiogeoChemistryGasExchangeCOPresent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCOPresent>
+  <OceanBiogeoChemistryGasExchangeCOPresent rdf:ID="OceanBiogeoChemistryGasExchangeCOPresent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCOPresent>
+  <owl:Class rdf:ID="OceanBiogeoChemistryGasExchangeCOSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryGasExchangeCOSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Gas Exchange CO Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme used for formulation of CO transfer velocity.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryGasExchangeCOSchemeType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryGasExchangeCOSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCOSchemeType_Liss__AND__Merlivat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liss &amp; Merlivat</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCOSchemeType>
+  <OceanBiogeoChemistryGasExchangeCOSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCOSchemeType_Wanninkhof">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wanninkhof</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCOSchemeType>
+  <OceanBiogeoChemistryGasExchangeCOSchemeType rdf:ID="OceanBiogeoChemistryGasExchangeCOSchemeType_Nightingale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</rdfs:label>
+  </OceanBiogeoChemistryGasExchangeCOSchemeType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersSulfurCycle"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersSulfurCycle">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Sulfur Cycle</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is sulfur cycle included in ocean biogeochemistry model?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersSulfurCycle"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersSulfurCycle rdf:ID="OceanBiogeoChemistryTracersSulfurCycle_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryTracersSulfurCycle>
+  <OceanBiogeoChemistryTracersSulfurCycle rdf:ID="OceanBiogeoChemistryTracersSulfurCycle_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryTracersSulfurCycle>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersNutrientsListOfSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Nutrients List Of Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species (gazeous, organic or mineral) that act as as nutriments.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersNutrientsListOfSpecies"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersNutrientsListOfSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies_Nitrogen__LPAREN_N_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrogen (N)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsListOfSpecies>
+  <OceanBiogeoChemistryTracersNutrientsListOfSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies_Phosphorus__LPAREN_P_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphorus (P)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsListOfSpecies>
+  <OceanBiogeoChemistryTracersNutrientsListOfSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies_Silicium__LPAREN_Si_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silicium (Si)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsListOfSpecies>
+  <OceanBiogeoChemistryTracersNutrientsListOfSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies_Iron__LPAREN_Fe_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron (Fe)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsListOfSpecies>
+  <OceanBiogeoChemistryTracersNutrientsListOfSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsListOfSpecies_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsListOfSpecies>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersNutrientsNitrousSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersNutrientsNitrousSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Nutrients Nitrous Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of nutriments derived from nitrogen.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersNutrientsNitrousSpecies"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersNutrientsNitrousSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsNitrousSpecies_Nitrates__LPAREN_NO3_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrates (NO3)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsNitrousSpecies>
+  <OceanBiogeoChemistryTracersNutrientsNitrousSpecies rdf:ID="OceanBiogeoChemistryTracersNutrientsNitrousSpecies_Amonium__LPAREN_NH4_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amonium (NH4)</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsNitrousSpecies>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersNutrientsProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersNutrientsProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Nutrients Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of chemical processes involving nitrogen.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersNutrientsProcesses"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersNutrientsProcesses rdf:ID="OceanBiogeoChemistryTracersNutrientsProcesses_denitrification">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denitrification</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsProcesses>
+  <OceanBiogeoChemistryTracersNutrientsProcesses rdf:ID="OceanBiogeoChemistryTracersNutrientsProcesses_N_fixation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N fixation</rdfs:label>
+  </OceanBiogeoChemistryTracersNutrientsProcesses>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersEcosystemUpperTrophicLevels">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Ecosystem Upper Trophic Levels</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name UpperTrophicLevels required</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels rdf:ID="OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels>
+  <OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels rdf:ID="OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemUpperTrophicLevels>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersEcosystemPhytoplanctonType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Ecosystem Phytoplancton Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach used to represent the phytoplancton in the ocean biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersEcosystemPhytoplanctonType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonType_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonType_generic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">generic</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonType_list">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">list</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Ecosystem Phytoplancton List Of Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of the different types of phytoplancton taken into account in the model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies_diatoms">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diatoms</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies_Nfixers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nfixers</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies_calcifiers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcifiers</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies>
+  <OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies_picophytoplancton">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">picophytoplancton</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemPhytoplanctonListOfSpecies>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonType"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersEcosystemZooplanctonType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Ecosystem Zooplancton Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach used to represent the zooplancton in the biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersEcosystemZooplanctonType"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonType_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonType_generic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">generic</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonType_list">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">list</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonType>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonType rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonType>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Ecosystem Zooplancton List Of Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of the different types of zooplancton taken into account in the model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies_microzooplancton">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microzooplancton</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies>
+  <OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies rdf:ID="OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies_mesozooplancton">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesozooplancton</rdfs:label>
+  </OceanBiogeoChemistryTracersEcosystemZooplanctonListOfSpecies>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterLability"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersDisolvedOrganicMatterLability">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Disolved Organic Matter Lability</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the lability of dissolved organic matter taken into account in the ocean biogeochemistry model?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersDisolvedOrganicMatterLability"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersDisolvedOrganicMatterLability rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterLability_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryTracersDisolvedOrganicMatterLability>
+  <OceanBiogeoChemistryTracersDisolvedOrganicMatterLability rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterLability_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryTracersDisolvedOrganicMatterLability>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Disolved Organic Matter Bacteria Representation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are bacteria taken into account in the ocean biogeochemistry model?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation>
+  <OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation rdf:ID="OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryTracersDisolvedOrganicMatterBacteriaRepresentation>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersParticulesMethod"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersParticulesMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Particules Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the particulate carbon are represented in oceanbiogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersParticulesMethod"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersParticulesMethod rdf:ID="OceanBiogeoChemistryTracersParticulesMethod_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesMethod>
+  <OceanBiogeoChemistryTracersParticulesMethod rdf:ID="OceanBiogeoChemistryTracersParticulesMethod_diagnostic__LPAREN_Martin_profile_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic (Martin profile)</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesMethod>
+  <OceanBiogeoChemistryTracersParticulesMethod rdf:ID="OceanBiogeoChemistryTracersParticulesMethod_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesMethod>
+  <OceanBiogeoChemistryTracersParticulesMethod rdf:ID="OceanBiogeoChemistryTracersParticulesMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesMethod>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersParticulesTypesOfParticules"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersParticulesTypesOfParticules">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Particules Types Of Particules</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of particulate matter taken into account in the ocean biogeochemistry model.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersParticulesTypesOfParticules"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersParticulesTypesOfParticules rdf:ID="OceanBiogeoChemistryTracersParticulesTypesOfParticules_POC">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesTypesOfParticules>
+  <OceanBiogeoChemistryTracersParticulesTypesOfParticules rdf:ID="OceanBiogeoChemistryTracersParticulesTypesOfParticules_PIC__LPAREN_calcite_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIC (calcite)</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesTypesOfParticules>
+  <OceanBiogeoChemistryTracersParticulesTypesOfParticules rdf:ID="OceanBiogeoChemistryTracersParticulesTypesOfParticules_PIC__LPAREN_aragonite_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIC (aragonite)</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesTypesOfParticules>
+  <OceanBiogeoChemistryTracersParticulesTypesOfParticules rdf:ID="OceanBiogeoChemistryTracersParticulesTypesOfParticules_BSi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSi</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesTypesOfParticules>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersParticulesSizeSpectrum"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersParticulesSizeSpectrum">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Particules Size Spectrum</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is a particule size spectrum used to represent distribution of particules in the water volume?</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersParticulesSizeSpectrum"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersParticulesSizeSpectrum rdf:ID="OceanBiogeoChemistryTracersParticulesSizeSpectrum_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesSizeSpectrum>
+  <OceanBiogeoChemistryTracersParticulesSizeSpectrum rdf:ID="OceanBiogeoChemistryTracersParticulesSizeSpectrum_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesSizeSpectrum>
+  <owl:Class rdf:ID="OceanBiogeoChemistryTracersParticulesSinkingSpeed"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryTracersParticulesSinkingSpeed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Tracers Particules Sinking Speed</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for calculation of particule sinking speed.</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryTracersParticulesSinkingSpeed"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryTracersParticulesSinkingSpeed rdf:ID="OceanBiogeoChemistryTracersParticulesSinkingSpeed_function_of_particule_size">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function of particule size</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesSinkingSpeed>
+  <OceanBiogeoChemistryTracersParticulesSinkingSpeed rdf:ID="OceanBiogeoChemistryTracersParticulesSinkingSpeed_function_of_particule_type__LPAREN_balast_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function of particule type (balast)</rdfs:label>
+  </OceanBiogeoChemistryTracersParticulesSinkingSpeed>
+  <owl:Class rdf:ID="OceanBiogeoChemistryCarbonChemistrypH-scale"/>
+  <owl:ObjectProperty rdf:ID="hasOceanBiogeoChemistryCarbonChemistrypH-scale">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Carbon Chemistry p H-scale</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name pH-scale required</rdfs:comment>
+    <rdfs:range rdf:resource="#OceanBiogeoChemistryCarbonChemistrypH-scale"/>
+  </owl:ObjectProperty>
+  <OceanBiogeoChemistryCarbonChemistrypH-scale rdf:ID="OceanBiogeoChemistryCarbonChemistrypH-scale_sea_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea water</rdfs:label>
+  </OceanBiogeoChemistryCarbonChemistrypH-scale>
+  <OceanBiogeoChemistryCarbonChemistrypH-scale rdf:ID="OceanBiogeoChemistryCarbonChemistrypH-scale_free">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free</rdfs:label>
+  </OceanBiogeoChemistryCarbonChemistrypH-scale>
+  <OceanBiogeoChemistryCarbonChemistrypH-scale rdf:ID="OceanBiogeoChemistryCarbonChemistrypH-scale_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </OceanBiogeoChemistryCarbonChemistrypH-scale>
+  <owl:DatatypeProperty rdf:ID="hasOceanBiogeoChemistryCarbonChemistryConstantsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ocean Biogeo Chemistry Carbon Chemistry Constants</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name CarbonChemConstants required</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>

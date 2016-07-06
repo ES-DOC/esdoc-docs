@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        5.4::Simulation
+    </numericalActivityName>
+    <numericalActivityDescription>
+        Experiment to diagnose strength of carbon/climate feedback. 2 Options.
+    </numericalActivityDescription>
+    <Why>
+        Diagnose carbon cycle only response to the CO2 increase. Relates to 3.1::Simulation
+    </Why>
+    <numericalExperiment>
+        <CalendarType>
+            <RealCalendar>
+                1850-2100
+            </RealCalendar>
+            <RealCalendar>
+                1850-1989
+            </RealCalendar>
+        </CalendarType>
+        <ensemble>
+            False
+        </ensemble>
+        <requiredDuration>
+            <ClosedDateRange>
+                251 years
+            </ClosedDateRange>
+            <ClosedDateRange>
+                140 years
+            </ClosedDateRange>
+        </requiredDuration>
+        <!--  CP doesn't know whether there is a formal way of describing 
+               inital conditions other than naming the particular experiment 
+               / simulation it was spawned from. -->
+        <numericalRequirement xsi:type="InitialCondition">
+                <description> All ModelComponents restart from 3.1::Control Year/Month/Day to be specify.</description>
+                <id xsi:type="Identifier"> 5.4.ic</id>
+        </numericalRequirement>
+        <numericalRequirement>
+			<numericalRequirement xsi:type="BoundaryCondition">
+			   <description>Impose changing atmospheric concentrations of CO2 following 3.2 and 4.1 CO2 concentrations. CarbonCycle only react to this. Radiation code 
+			   do not see that increase</description>
+			   <id xsi:type="Identifier">5.4.bc.CO2 </id>
+			</numericalRequirement>
+			<numericalRequirement xsi:type="BoundaryCondition">
+			   <description>Impose changing atmospheric concentrations of CO2 following (+1%/year) from  3.1 concentration. CarbonCycle only react to this. Radiation code 
+			   do not see that increase</description>
+			   <id xsi:type="Identifier">5.4.bc.1%CO2 </id>
+			</numericalRequirement>
+			<numericalRequirement xsi:type="BoundaryCondition">
+			   <description>Prescribed atmospheric concentrations of well mixed gases including [CO2]</description>
+			   <id xsi:type="Identifier">5.4.bc.wmg</id>
+			</numericalRequirement>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed atmospheric concentrations of short lived (reactive) gas species</description>
+                <id xsi:type="Identifier">5.4.bc.sls </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of natural aerosols</description>
+                <id xsi:type="Identifier">5.4.bc.cna</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of natural aerosol precursors</description>
+                <id xsi:type="Identifier">5.4.bc.cnap</id>
+        </numericalRequirement>
+        <numericalRequirement>
+				<description>Prescribed concentrations of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">5.4.bc.csla</id>
+        </numericalRequirement>
+         <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed concentrations of ozone</description>
+                <id xsi:type="Identifier">5.4.bc.co</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed solar forcing</description>
+				<id xsi:type="Identifier">5.4.bc.sf></id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed Land Use</description>
+                <id xsi:type="Identifier">5.4.bc.LandUse</id>
+        </numericalRequirement>                
+    </numericalExperiment>   
+</Experiment>

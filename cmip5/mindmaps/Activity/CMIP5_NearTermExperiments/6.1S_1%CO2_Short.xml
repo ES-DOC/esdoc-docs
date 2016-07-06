@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+
+	An 80 year run with a 1% per year increase in CO2 (a shortened version of expt. 6.1) , initialized at year 20 of the control run (3.1-S)..
+	
+	(notes also refer to 3.1S) For models that do not have 20th century and other standard runs, a 100 year control integration is called for along with a 80 year run with a 1% per year increase 
+	in CO2, starting 20 years into the control run. These integrations will allow an evaluation of model drift, transient climate response, and ocean heat 15 uptake, and give some idea of the 
+	natural coupled modes of variability in the model.
+
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	<!-- Initial Conditions -->
+	<numericalRequirement xsi:type="InitialCondition">
+		<id xsi:type="Identifier">ic.008</id>
+		<name>6.1S.ic</name>
+		<description> Simulation needs to be initialised from year 20 of the shortened pre-industrial control run (3.1S) </description>
+    </numericalRequirement>
+    
+	<!-- Boundary/Forcing Conditions -->
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.059</id>
+        <name>6.1S.bc.1%CO2.conc</name>
+        <description> 1% per year increase in CO2 over 80yr run</description>
+    </numericalRequirement>
+    
+    <shortName>
+		CMIP5_NumReq_6.1S
+	</shortName>
+    <longName> 
+		CMIP5 Tier 1 near-term decadal experiment 6.1S - 1%/yr CO2
+	</longName>
+	     
+	<calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+	<requiredDuration xsi:type="ClosedDateRange">
+		<startDate> 1850-01-01T00:00:00Z</startDate>
+		<endDate> 1930-01-01T00:00:00Z </endDate>
+	</requiredDuration>
+	<author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+	<documentID xsi:type="Identifier">
+	</documentID>
+	<creationDate>
+		2009-06-23T15:00:00Z
+	</creationDate>
+</numericalExperiment>

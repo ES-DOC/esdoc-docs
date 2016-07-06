@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        3.1::Control
+    </numericalActivityName>
+    <numericalActivityDescription>
+        Pre-Industrial Control
+    </numericalActivityDescription>
+    <Why>
+        This is the main CMIP5 control experiment against which perturbations are compared
+    </Why>
+    <numericalExperiment>
+        <CalendarType>
+            <PerpetualPeriod>
+                1850
+            </PerpetualPeriod>
+        </CalendarType>
+        <control>
+            True
+        </control>
+        <requiredDuration>
+            <ClosedDateRange>
+                500 years
+            </ClosedDateRange>
+        </requiredDuration>
+        <numericalRequirement>
+            <initialCondition>
+                <description>
+                    A description of initial condition for the control run.
+                    <!--  CP doesn't know whether there is a formal way of describing 
+                        inital conditions other than naming the particular experiment 
+                        / simulation it was spawned from. -->
+                </description>
+                <id>3.1.ic</id>
+            </initialCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed atmospheric concentrations of well mixed gases 
+                    - including [CO2]</description>
+                <id>3.1.bc.wmg </id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed atmospheric concentration of short lived 
+                    (reactive) gas species</description>
+                <id>3.1.bc.sls </id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed concentrations of natural aerosols</description>
+                <id>3.1.bc.cna</id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed concentrations of natural aerosol precursors</description>
+                <id>3.1.bc.cnap</id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <boundaryCondition>
+            <description>Prescribed concentrations of short lived (reactive) aerosol species</description>
+            <id>3.1.bc.csla</id>
+        </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed emissions of natural aerosols</description>
+                <id>3.1.bc.ena</id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Prescribed emissions of natural aerosol precursors</description>
+                <id>3.1.bc.enap</id>
+            </boundaryCondition>
+        </numericalRequirement>
+        <boundaryCondition>
+            <description>Prescribed emissions of short lived (reactive) aerosol species</description>
+            <id>3.1.bc.esla/id>
+        </boundaryCondition>
+        </numericalRequirement>
+        <numericalRequirement>
+            <boundaryCondition>
+                <description>Unperturbed Land Use</description>
+                <id>3.1.bc.LandUse</id>
+            </boundaryCondition>
+        </numericalRequirement>                
+    </numericalExperiment>   
+</Experiment>

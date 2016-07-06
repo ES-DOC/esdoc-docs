@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="true" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+
+	Aqua-planet : control run. Consistent with CFMIP requirements, impose zonally uniform SSTs on a planet without continents.
+
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	<!-- Initial Conditions -->
+	<numericalRequirement xsi:type="InitialCondition" >
+		<description>
+			Initial Conditions are supplied from the Pre-Industrial control run 3.1
+		</description>
+		<id xsi:type="Identifier">6.7a.ic</id>
+	</numericalRequirement>
+		
+	<!-- Boundary/Forcing Conditions -->
+	<numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of well mixed gases (anthropogenic)</description>
+      <id xsi:type="Identifier">6.7a.bc.wmg_anth</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of well mixed gases (volcanic)</description>
+      <id xsi:type="Identifier">6.7a.bc.wmg_volc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of short lived gas species</description>
+      <id xsi:type="Identifier">6.7a.bc.sls_conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing emissions of short lived gas species</description>
+      <id xsi:type="Identifier">6.7a.bc.sls_em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of aerosols (natural)</description>
+      <id xsi:type="Identifier">6.7a.nat_aer_conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of aerosols (anthropogenic)</description>
+      <id xsi:type="Identifier">6.7a.bc.anthr_aer_conc</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing emissions of aerosols (natural)</description>
+      <id xsi:type="Identifier">6.7a.bc.nat_aer_em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing emissions of aerosols (anthropogenic)</description>
+      <id xsi:type="Identifier">6.7a.bc.anthr_aer_em</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of aerosol (natural) precursors</description>
+      <id xsi:type="Identifier">6.7a.bc.nat_aer_prec</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing concentrations of aerosol (anthropogenic) precursors</description>
+      <id xsi:type="Identifier">6.7a.bc.anthro_aer_prec</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+      <description>Imposed changing solar forcing</description>
+      <id xsi:type="Identifier">6.7a.bc.solar</id>
+    </numericalRequirement>           
+    <numericalRequirement xsi:type="BoundaryCondition">
+		<description> Imposed zonally uniform SSTs on an aquaplanet</description>
+		<id xsi:type="Identifier">6.7a.bc.aquaplanet_ssts</id>
+	</numericalRequirement>
+		
+	<shortName>
+		CMIP5_NumReq_6.7a
+	</shortName>
+    <longName> 
+		CMIP5 Tier 1 Time-slice experiment 6.7a - AquaPlanet Control run
+	</longName>
+     
+   <calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+    <requiredDuration xsi:type="ClosedDateRange">
+		<!-- Idealised run so dates given here are only dummy values -->
+		<startDate> 1850-01-01T00:00:00Z</startDate>
+		<endDate> 1856-01-01T00:00:00Z</endDate>
+	</requiredDuration>
+    <author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+    <documentID xsi:type="Identifier">
+    </documentID>
+    <creationDate>
+		2009-06-26T12:34:00Z
+	</creationDate>   
+</numericalExperiment>

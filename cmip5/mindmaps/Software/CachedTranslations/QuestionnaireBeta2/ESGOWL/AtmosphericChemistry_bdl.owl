@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AtmosphericChemistryChemSchemeScope"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryChemSchemeScope">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Chem Scheme Scope</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which atmospheric domains are covered by the atmospheric chemistry model?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryChemSchemeScope"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryChemSchemeScope rdf:ID="AtmosphericChemistryChemSchemeScope_troposphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troposphere</rdfs:label>
+  </AtmosphericChemistryChemSchemeScope>
+  <AtmosphericChemistryChemSchemeScope rdf:ID="AtmosphericChemistryChemSchemeScope_stratosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratosphere</rdfs:label>
+  </AtmosphericChemistryChemSchemeScope>
+  <AtmosphericChemistryChemSchemeScope rdf:ID="AtmosphericChemistryChemSchemeScope_mesosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesosphere</rdfs:label>
+  </AtmosphericChemistryChemSchemeScope>
+  <AtmosphericChemistryChemSchemeScope rdf:ID="AtmosphericChemistryChemSchemeScope_whole_atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole atmosphere</rdfs:label>
+  </AtmosphericChemistryChemSchemeScope>
+  <AtmosphericChemistryChemSchemeScope rdf:ID="AtmosphericChemistryChemSchemeScope_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryChemSchemeScope>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryBasicApproximationsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Basic Approximations</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decribe the basic approximations made in the Atmospheric Chemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What prognostic variables are used by the atmospheric chemistry model?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryListOfPrognosticVariables rdf:ID="AtmosphericChemistryListOfPrognosticVariables_3D_mass_SLASH_mixing_ratio_for_gas">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D mass/mixing ratio for gas</rdfs:label>
+  </AtmosphericChemistryListOfPrognosticVariables>
+  <AtmosphericChemistryListOfPrognosticVariables rdf:ID="AtmosphericChemistryListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryListOfPrognosticVariables>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryNumberOfTracersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Number Of Tracers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of tracers in the atmospheric chemistry model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryFamilyApproach"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryFamilyApproach">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Family Approach</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are atmospheric chemistry calculations generalised into families of species?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryFamilyApproach"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryFamilyApproach rdf:ID="AtmosphericChemistryFamilyApproach_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryFamilyApproach>
+  <AtmosphericChemistryFamilyApproach rdf:ID="AtmosphericChemistryFamilyApproach_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryFamilyApproach>
+  <owl:Class rdf:ID="AtmosphericChemistryHorizontalGridConfig"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHorizontalGridConfig">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Horizontal Grid Config</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name GridConfig required</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHorizontalGridConfig"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHorizontalGridConfig rdf:ID="AtmosphericChemistryHorizontalGridConfig_same_as_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Atmosphere</rdfs:label>
+  </AtmosphericChemistryHorizontalGridConfig>
+  <AtmosphericChemistryHorizontalGridConfig rdf:ID="AtmosphericChemistryHorizontalGridConfig_different_from_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Atmosphere</rdfs:label>
+  </AtmosphericChemistryHorizontalGridConfig>
+  <AtmosphericChemistryHorizontalGridConfig rdf:ID="AtmosphericChemistryHorizontalGridConfig_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHorizontalGridConfig>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHorizontalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Horizontal Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the horizontal grid used for atmospheric chemistry and aerosols.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHorizontalMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Horizontal Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the atmospheric chemistry and aerosols model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryVerticalGridConfiguration"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryVerticalGridConfiguration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Grid Configuration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name GridConfiguration required</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryVerticalGridConfiguration"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryVerticalGridConfiguration rdf:ID="AtmosphericChemistryVerticalGridConfiguration_same_as_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Atmosphere</rdfs:label>
+  </AtmosphericChemistryVerticalGridConfiguration>
+  <AtmosphericChemistryVerticalGridConfiguration rdf:ID="AtmosphericChemistryVerticalGridConfiguration_different_from_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Atmosphere</rdfs:label>
+  </AtmosphericChemistryVerticalGridConfiguration>
+  <AtmosphericChemistryVerticalGridConfiguration rdf:ID="AtmosphericChemistryVerticalGridConfiguration_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryVerticalGridConfiguration>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the vertical grid used for atmospheric chemistry and aerosols.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Total number of vertical levels in atmospheric chemistry and aerosols model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Definition of property name NumberOfLevels required</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryVerticalCoordinateSystem"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryVerticalCoordinateSystem">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Coordinate System</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name VerticalCoordinateSystem required</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryVerticalCoordinateSystem"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_pressure">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_sigma">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sigma</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_potential_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential temperature</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_hybrid_sigma_pressure">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybrid sigma pressure</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_altitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altitude</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <AtmosphericChemistryVerticalCoordinateSystem rdf:ID="AtmosphericChemistryVerticalCoordinateSystem_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryVerticalCoordinateSystem>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalLevelsValuesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Levels Values</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name LevelsValues required</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalLevelsA-ValuesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Levels A-Values</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name LevelsA-Values required</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryVerticalLevelsB-ValuesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Vertical Levels B-Values</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name LevelsB-Values required</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryTimeSteppingFrameworkMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTimeSteppingFrameworkMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Time Stepping Framework Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical method deployed to solve the evolution of a given variable.
+If "operator splitting" all the processes are decoupled, the time evolution is calculated sequentially and the tendencies "cumulated". 
+If "integrated" all the processes having an impact on the time evolution are taken into account and solved simultaneously. 
+</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTimeSteppingFrameworkMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTimeSteppingFrameworkMethod rdf:ID="AtmosphericChemistryTimeSteppingFrameworkMethod_operator_splitting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">operator splitting</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkMethod>
+  <AtmosphericChemistryTimeSteppingFrameworkMethod rdf:ID="AtmosphericChemistryTimeSteppingFrameworkMethod_integrated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integrated</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkMethod>
+  <AtmosphericChemistryTimeSteppingFrameworkMethod rdf:ID="AtmosphericChemistryTimeSteppingFrameworkMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryTimeSteppingFrameworkAdvectionTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Time Stepping Framework Advection Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for chemical species advection.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryTimeSteppingFrameworkPhysicalTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Time Stepping Framework Physical Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for physics and chemistry.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryTimeSteppingFrameworkTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Time Stepping Framework Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for the chemistry model</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTimeSteppingFrameworkSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Time Stepping Framework Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the type of time step scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTimeSteppingFrameworkSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">explicit</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_semi-implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-implicit</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_semi-analytic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-analytic</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_Impact_Solver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impact Solver</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_Back_Euler">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Back Euler</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_Newton_Raphson">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newton Raphson</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <AtmosphericChemistryTimeSteppingFrameworkSchemeType rdf:ID="AtmosphericChemistryTimeSteppingFrameworkSchemeType_Rosenbrock">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosenbrock</rdfs:label>
+  </AtmosphericChemistryTimeSteppingFrameworkSchemeType>
+  <owl:Class rdf:ID="AtmosphericChemistryTransportSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTransportSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Transport Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of atmospheric chemistry transport scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTransportSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTransportSchemeType rdf:ID="AtmosphericChemistryTransportSchemeType_Eulerian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian</rdfs:label>
+  </AtmosphericChemistryTransportSchemeType>
+  <AtmosphericChemistryTransportSchemeType rdf:ID="AtmosphericChemistryTransportSchemeType_Semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Lagrangian</rdfs:label>
+  </AtmosphericChemistryTransportSchemeType>
+  <AtmosphericChemistryTransportSchemeType rdf:ID="AtmosphericChemistryTransportSchemeType_Eulerian_and_Semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian and Semi-Lagrangian</rdfs:label>
+  </AtmosphericChemistryTransportSchemeType>
+  <AtmosphericChemistryTransportSchemeType rdf:ID="AtmosphericChemistryTransportSchemeType_Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagrangian</rdfs:label>
+  </AtmosphericChemistryTransportSchemeType>
+  <AtmosphericChemistryTransportSchemeType rdf:ID="AtmosphericChemistryTransportSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryTransportSchemeType>
+  <owl:Class rdf:ID="AtmosphericChemistryTransportMassConservation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTransportMassConservation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Transport Mass Conservation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How is mass conservation maintained?
+i) "mass adjustment": Adjustment is required to conserve mass.
+ii) "concentration positivity": Negative concentrations are reset.
+iii) "gradient monotony": Sharp gradients in concentration are smoothed.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTransportMassConservation"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTransportMassConservation rdf:ID="AtmosphericChemistryTransportMassConservation_mass_adjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass adjustment</rdfs:label>
+  </AtmosphericChemistryTransportMassConservation>
+  <AtmosphericChemistryTransportMassConservation rdf:ID="AtmosphericChemistryTransportMassConservation_concentrations_positivity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concentrations positivity</rdfs:label>
+  </AtmosphericChemistryTransportMassConservation>
+  <AtmosphericChemistryTransportMassConservation rdf:ID="AtmosphericChemistryTransportMassConservation_gradients_monotony">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gradients monotony</rdfs:label>
+  </AtmosphericChemistryTransportMassConservation>
+  <AtmosphericChemistryTransportMassConservation rdf:ID="AtmosphericChemistryTransportMassConservation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryTransportMassConservation>
+  <owl:Class rdf:ID="AtmosphericChemistryTransportConvection"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTransportConvection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Transport Convection</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convective Transport:
+i) "convective fluxes connected to tracers": Do tracers "see" convection?
+ii) "vertical velocities connected to tracers": Are the mass flux vertical velocities connected with tracers in the atmos chemistry scheme?
+</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTransportConvection"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTransportConvection rdf:ID="AtmosphericChemistryTransportConvection_convective_fluxes_connected_to_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convective fluxes connected to tracers</rdfs:label>
+  </AtmosphericChemistryTransportConvection>
+  <AtmosphericChemistryTransportConvection rdf:ID="AtmosphericChemistryTransportConvection_vertical_velocities_connected_to_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical velocities connected to tracers</rdfs:label>
+  </AtmosphericChemistryTransportConvection>
+  <AtmosphericChemistryTransportConvection rdf:ID="AtmosphericChemistryTransportConvection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryTransportConvection>
+  <owl:Class rdf:ID="AtmosphericChemistryTransportTurbulenceType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTransportTurbulenceType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Transport Turbulence Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is chemistry transport scheme turbulence in 2D or 3D?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTransportTurbulenceType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTransportTurbulenceType rdf:ID="AtmosphericChemistryTransportTurbulenceType_2D">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2D</rdfs:label>
+  </AtmosphericChemistryTransportTurbulenceType>
+  <AtmosphericChemistryTransportTurbulenceType rdf:ID="AtmosphericChemistryTransportTurbulenceType_3D">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D</rdfs:label>
+  </AtmosphericChemistryTransportTurbulenceType>
+  <AtmosphericChemistryTransportTurbulenceType rdf:ID="AtmosphericChemistryTransportTurbulenceType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryTransportTurbulenceType>
+  <owl:Class rdf:ID="AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Transport Turbulence Coupling With Chemical Reactivity</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is chemistry transport scheme turbulence coupled with chemical reactivity?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity rdf:ID="AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity>
+  <AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity rdf:ID="AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryTransportTurbulenceCouplingWithChemicalReactivity>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesVegetationSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Vegetation Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of gaseous species emitted by the vegetation.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Vegetation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by vegetation.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Vegetation Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesVegetationClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesBareGroundSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Bare Ground Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of gaseous species emitted by bare ground.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Bare Ground Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by bare ground.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Bare Ground Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesBareGroundClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Sea Surface Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">list of gaseaous species emitted by sea surface.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Sea Surface Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by sea surface.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Sea Surface Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesSeaSurfaceClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Anthropogenic Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species emitted by human activities at the surface.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Anthropogenic Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by ground based human activities.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 2D-Sources Anthropogenic Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc2D-SourcesAnthropogenicClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesAircraftSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Aircraft Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species emitted by aircrafts.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Aircraft Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by aircraft.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Aircraft Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesAircraftClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Biomass Burning Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">list of 3D species emitted by biomass burning.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Biomass Burning Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by biomass burning.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Biomass Burning Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesBiomassBurningClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesLightningSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Lightning Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species emitted by lightnings.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Lightning Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by lightning.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Lightning Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType_oher">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oher</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesLightningClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesVolcanicSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Volcanic Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of 3D species emitted by volcanoes.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Volcanic Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define gaseous species emitted by volcanoes.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc 3D-Sources Volcanic Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType>
+  <AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType rdf:ID="AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AtmosphericChemistryEmissionAndConc3D-SourcesVolcanicClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConcConcentrationsPrescribedLowerBoundaryValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc Concentrations Prescribed Lower Boundary</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species prescribed at the lower boundary.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryEmissionAndConcConcentrationsPrescribedUpperBoundaryValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Emission And Conc Concentrations Prescribed Upper Boundary</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species prescribed at the upper boundary.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistrySpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Gas Phase Chemistry Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Species included in the gas phase chemistry scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryGasPhaseChemistrySpecies"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_HOx">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HOx</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_NOy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOy</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_Ox">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ox</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_Cly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cly</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_SOx">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOx</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_Bry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bry</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_VOCs">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOCs</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_isoprene">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprene</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_H2O">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H2O</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <AtmosphericChemistryGasPhaseChemistrySpecies rdf:ID="AtmosphericChemistryGasPhaseChemistrySpecies_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistrySpecies>
+  <owl:Class rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryProcessesDryDeposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Gas Phase Chemistry Processes Dry Deposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is dry deposition prescribed or interactive?  Dry deposition describes the dry processes by which gaseous species deposit themselves on solid surfaces thus decreasing their concentration in the air.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition>
+  <AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition>
+  <AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesDryDeposition>
+  <owl:Class rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryProcessesWetDeposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Gas Phase Chemistry Processes Wet Deposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is wet deposition included?  Wet deposition describes the moist processes by which gaseous species deposit themselves on solid surfaces thus decreasing their concentration in the air.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition>
+  <AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesWetDeposition>
+  <owl:Class rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesOxidation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryProcessesOxidation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Gas Phase Chemistry Processes Oxidation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is oxidation included? Oxidation describes the loss of electrons or an increase in oxidation state by a molecule. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryGasPhaseChemistryProcessesOxidation"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryGasPhaseChemistryProcessesOxidation rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesOxidation_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesOxidation>
+  <AtmosphericChemistryGasPhaseChemistryProcessesOxidation rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesOxidation_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesOxidation>
+  <owl:Class rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Gas Phase Chemistry Processes Wash Out-Rain Out</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downward transport of soluble chemistry species in clouds.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut_in-cloud_scavenging">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in-cloud scavenging</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut>
+  <AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut_below-cloud_scavenging">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">below-cloud scavenging</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut>
+  <AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryGasPhaseChemistryProcessesWashOut-RainOut>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryNumOfReactionsAndSpeciesNumberOfBimolecularReactionsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Gas Phase Chemistry Num Of Reactions And Species Number Of Bimolecular Reactions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of bi-molecular reactions in the gas phase chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryNumOfReactionsAndSpeciesNumberOfTermolecularReactionsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Gas Phase Chemistry Num Of Reactions And Species Number Of Termolecular Reactions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of ter-molecular reactions in the gas phase chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryNumOfReactionsAndSpeciesNumberOfAdvectedSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Gas Phase Chemistry Num Of Reactions And Species Number Of Advected Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of advected species in the gas phase chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryGasPhaseChemistryNumOfReactionsAndSpeciesNumberOfSteadyStateSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Gas Phase Chemistry Num Of Reactions And Species Number Of Steady State Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of steady state species in the gas phase chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Stratospheric Species Gas Phase</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas phase species included in the stratospheric heterogeneous chemistry scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase_Cly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cly</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase_Bry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bry</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase_NOy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOy</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesGasPhase>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Stratospheric Species Aerosol</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosol species included in the stratospheric heterogeneous chemistry scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericSpeciesAerosol>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Stratospheric Processes Sedimentation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is sedimentation included in the stratospheric heterogeneous chemistry scheme?  
+Sedimentation is the vertical settling of particles. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation>
+  <AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericProcessesSedimentation>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Stratospheric Processes Coagulation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is coagulation included in the stratospheric heterogeneous chemistry scheme? 
+ Coagulation is a process by which aerosol particles grow. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation>
+  <AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation rdf:ID="AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryStratosphericProcessesCoagulation>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericNumOfReactionsAndSpeciesNumberOfReactionsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Stratospheric Num Of Reactions And Species Number Of Reactions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of reactions in the stratospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericNumOfReactionsAndSpeciesNumberOfAdvectedSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Stratospheric Num Of Reactions And Species Number Of Advected Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of advected species in the stratospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryStratosphericNumOfReactionsAndSpeciesNumberOfSteadyStateSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Stratospheric Num Of Reactions And Species Number Of Steady State Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of steady state species in the stratospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericSpeciesGasPhaseValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Species Gas Phase</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of gas phase species involved in tropospheric heterogeneous chemistry processes.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Species Aerosol</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosol species included in the tropospheric heterogeneous chemistry scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericSpeciesAerosol>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Processes Dry Deposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is dry deposition prescribed or interactive?  
+Dry deposition describes the dry processes by which species deposit themselves on solid surfaces thus decreasing their concentration in the air.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition_Prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prescribed</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition_Interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interactive</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesDryDeposition>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Processes Wet Deposition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is wet deposition included?  
+Wet deposition describes the moist processes by which species deposit themselves on solid surfaces thus decreasing their concentration in the air.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesWetDeposition>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Processes Wash Out-Rain Out</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downward transport of soluble chemistry species in clouds.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut_in-cloud_scavenging">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in-cloud scavenging</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut_below-cloud_scavenging">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">below-cloud scavenging</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesWashOut-RainOut>
+  <owl:Class rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Heterogen Chemistry Tropospheric Processes Coagulation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is coagulation included in the stratospheric heterogeneous chemistry scheme?  
+Coagulation is a process by which aerosol particles grow. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation>
+  <AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation rdf:ID="AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphericChemistryHeterogenChemistryTroposphericProcessesCoagulation>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericNumOfReactionsAndSpeciesNumberOfReactionsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Tropospheric Num Of Reactions And Species Number Of Reactions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of reactions in the tropospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericNumOfReactionsAndSpeciesNumberOfAdvectedSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Tropospheric Num Of Reactions And Species Number Of Advected Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of advected species in the tropospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryHeterogenChemistryTroposphericNumOfReactionsAndSpeciesNumberOfSteadyStateSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Heterogen Chemistry Tropospheric Num Of Reactions And Species Number Of Steady State Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of steady state species in the tropospheric heterogeneous chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryPhotoChemistryPhotolysisMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Photo Chemistry Photolysis Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the photolysis scheme online or offline? 
+If it is offline, does the look up table take clouds into account with respect to effective photolysis rate for photodissociation?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryPhotoChemistryPhotolysisMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryPhotoChemistryPhotolysisMethod rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisMethod_offline__LPAREN_clearsky_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offline (clearsky)</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisMethod>
+  <AtmosphericChemistryPhotoChemistryPhotolysisMethod rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisMethod_offline__LPAREN_with_clouds_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offline (with clouds)</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisMethod>
+  <AtmosphericChemistryPhotoChemistryPhotolysisMethod rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisMethod_online">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">online</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisMethod>
+  <AtmosphericChemistryPhotoChemistryPhotolysisMethod rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisMethod>
+  <owl:Class rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryPhotoChemistryPhotolysisProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Photo Chemistry Photolysis Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes included in the photolysis scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryPhotoChemistryPhotolysisProcesses"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryPhotoChemistryPhotolysisProcesses rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisProcesses_scattering">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scattering</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisProcesses>
+  <AtmosphericChemistryPhotoChemistryPhotolysisProcesses rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisProcesses_radiative_transfer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiative transfer</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisProcesses>
+  <AtmosphericChemistryPhotoChemistryPhotolysisProcesses rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisProcesses_spectral_resolution">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral resolution</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisProcesses>
+  <AtmosphericChemistryPhotoChemistryPhotolysisProcesses rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisProcesses_impact_of_clouds">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">impact of clouds</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisProcesses>
+  <owl:Class rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisReactionData"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphericChemistryPhotoChemistryPhotolysisReactionData">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmospheric Chemistry Photo Chemistry Photolysis Reaction Data</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reaction information taken into account by the photolysis scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphericChemistryPhotoChemistryPhotolysisReactionData"/>
+  </owl:ObjectProperty>
+  <AtmosphericChemistryPhotoChemistryPhotolysisReactionData rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisReactionData_updated_reaction_absorption_cross_sections">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">updated reaction absorption cross sections</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisReactionData>
+  <AtmosphericChemistryPhotoChemistryPhotolysisReactionData rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisReactionData_updated_reaction_quantum_yields">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">updated reaction quantum yields</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisReactionData>
+  <AtmosphericChemistryPhotoChemistryPhotolysisReactionData rdf:ID="AtmosphericChemistryPhotoChemistryPhotolysisReactionData_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphericChemistryPhotoChemistryPhotolysisReactionData>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryPhotoChemistryNumOfReactionsAndSpeciesNumberOfReactionsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Photo Chemistry Num Of Reactions And Species Number Of Reactions</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of reactions in the photo-chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphericChemistryPhotoChemistryNumOfReactionsAndSpeciesNumberOfSpeciesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmospheric Chemistry Photo Chemistry Num Of Reactions And Species Number Of Species</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">The number of species in the photo-chemistry scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>

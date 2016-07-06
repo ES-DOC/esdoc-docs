@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        3.3-E::Ensemble
+    </numericalActivityName>
+    <numericalActivityDescription>
+        AMIP Ensemble
+    </numericalActivityDescription>
+    <Why>
+        This is the additionnal AMIP runs. Relate to 3.3::Simulation
+    </Why>
+    <numericalExperiment>
+        <ensemble>
+            True
+        </ensemble>
+        <CalendarType>
+            <RealCalendar>
+                1979-2008
+            </RealCalendar>
+        </CalendarType>
+        <requiredDuration>
+            <ClosedDateRange>
+                30 years
+            </ClosedDateRange>
+        </requiredDuration>
+        <numericalRequirement xsi:type="InitialCondition">
+                <description>
+                    Atmospheric ModelComponent and possibly Land Surface ModelComponent initialized with different conditions.
+                    <!--  CP doesn't know whether there is a formal way of describing 
+                        inital conditions other than naming the particular experiment 
+                        / simulation it was spawned from. -->
+                </description>
+                <id xsi:type="Identifier">3.3.ic</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing sea surface temperature from observation</description>
+                <id xsi:type="Identifier">3.3.bc.sst </id>
+        </numericalRequirement>
+         <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing sea ice concentration from observation</description>
+                <id xsi:type="Identifier">3.3.bc.sic </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing atmospheric concentrations of well mixed gases - including [CO2]</description>
+                <id xsi:type="Identifier">3.2.bc.wmg </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing atmospheric concentration of short lived (reactive) gas species</description>
+                <id xsi:type="Identifier">3.2.bc.sls </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of natural aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.cna</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing concentrations of natural aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.cnap</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Impose changing concentrations of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">3.2.bc.csla</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of natural aerosols</description>
+                <id xsi:type="Identifier">3.2.bc.ena</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing emissions of natural aerosol precursors</description>
+                <id xsi:type="Identifier">3.2.bc.enap</id>
+        </numericalRequirement>
+		<numericalRequirement xsi:type="BoundaryCondition">
+				<description>Impose changing emissions of short lived (reactive) aerosol species</description>
+				<id xsi:type="Identifier">3.2.bc.esla</id>
+        </numericalRequirement>
+         <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Impose changing solar forcing</description>
+				<id xsi:type="Identifier">3.2.bc.sf</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Impose changing Land Use</description>
+                <id xsi:type="Identifier">3.2.bc.LandUse</id>
+        </numericalRequirement>                
+    </numericalExperiment>   
+</Experiment>

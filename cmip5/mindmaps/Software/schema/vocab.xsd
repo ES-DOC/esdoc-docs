@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Rupert Ford (Manchester Informatics Ltd.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="vocab">
+		<xs:annotation>
+			<xs:documentation>Software Component Vocabulary Schema</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="component"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="component">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="componentType">
+					<xs:choice maxOccurs="unbounded">
+						<xs:element name="parameter">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="value" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:attribute name="units" type="xs:string" use="optional"/>
+											<xs:attribute name="format" use="optional">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="integer"/>
+														<xs:enumeration value="string"/>
+														<xs:enumeration value="vocab"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="name" type="xs:string" use="required"/>
+											<xs:attributeGroup ref="noteAttGrp"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attributeGroup ref="parameterAttGrp"/>
+								<xs:attributeGroup ref="noteAttGrp"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="component"/>
+					</xs:choice>
+					<xs:attributeGroup ref="componentAttGrp"/>
+					<xs:attributeGroup ref="noteAttGrp"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="componentType"/>
+	<xs:attributeGroup name="componentAttGrp">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="parameterAttGrp">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="choice" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="XOR"/>
+					<xs:enumeration value="AND"/>
+					<xs:enumeration value="OR"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="noteAttGrp">
+		<xs:attribute name="note" type="xs:string" use="optional"/>
+	</xs:attributeGroup>
+</xs:schema>

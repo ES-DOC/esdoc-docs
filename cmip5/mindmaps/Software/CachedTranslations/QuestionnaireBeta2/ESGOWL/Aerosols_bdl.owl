@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AerosolsAerosolSchemeScope"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsAerosolSchemeScope">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Aerosol Scheme Scope</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which atmospheric domains are covered by the aerosol model?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsAerosolSchemeScope"/>
+  </owl:ObjectProperty>
+  <AerosolsAerosolSchemeScope rdf:ID="AerosolsAerosolSchemeScope_troposphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troposphere</rdfs:label>
+  </AerosolsAerosolSchemeScope>
+  <AerosolsAerosolSchemeScope rdf:ID="AerosolsAerosolSchemeScope_stratosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratosphere</rdfs:label>
+  </AerosolsAerosolSchemeScope>
+  <AerosolsAerosolSchemeScope rdf:ID="AerosolsAerosolSchemeScope_mesosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesosphere</rdfs:label>
+  </AerosolsAerosolSchemeScope>
+  <AerosolsAerosolSchemeScope rdf:ID="AerosolsAerosolSchemeScope_whole_atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole atmosphere</rdfs:label>
+  </AerosolsAerosolSchemeScope>
+  <AerosolsAerosolSchemeScope rdf:ID="AerosolsAerosolSchemeScope_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsAerosolSchemeScope>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsBasicApproximationsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Basic Approximations</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decription of the basic approximations made in the Aerosol model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What prognostic variables are used by the aerosol model?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <AerosolsListOfPrognosticVariables rdf:ID="AerosolsListOfPrognosticVariables_3D_mass_SLASH_volume_mixing_ratio_for_aerosols">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D mass/volume mixing ratio for aerosols</rdfs:label>
+  </AerosolsListOfPrognosticVariables>
+  <AerosolsListOfPrognosticVariables rdf:ID="AerosolsListOfPrognosticVariables_3D_number_concentration_for_aerosols">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D number concentration for aerosols</rdfs:label>
+  </AerosolsListOfPrognosticVariables>
+  <AerosolsListOfPrognosticVariables rdf:ID="AerosolsListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsListOfPrognosticVariables>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsNumberOfTracersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Number Of Tracers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Enter the number of tracers in the aerosol model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsFamilyApproach"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsFamilyApproach">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Family Approach</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are aerosol calculations generalised into families of species?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsFamilyApproach"/>
+  </owl:ObjectProperty>
+  <AerosolsFamilyApproach rdf:ID="AerosolsFamilyApproach_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AerosolsFamilyApproach>
+  <AerosolsFamilyApproach rdf:ID="AerosolsFamilyApproach_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AerosolsFamilyApproach>
+  <owl:Class rdf:ID="AerosolsHorizontalGridConfig"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsHorizontalGridConfig">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Horizontal Grid Config</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration of the horizontal grid used for aerosols (same as that of the atmosphere or atmospheric chemistry model or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsHorizontalGridConfig"/>
+  </owl:ObjectProperty>
+  <AerosolsHorizontalGridConfig rdf:ID="AerosolsHorizontalGridConfig_same_as_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Atmosphere</rdfs:label>
+  </AerosolsHorizontalGridConfig>
+  <AerosolsHorizontalGridConfig rdf:ID="AerosolsHorizontalGridConfig_same_as_AtmosphericChemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as AtmosphericChemistry</rdfs:label>
+  </AerosolsHorizontalGridConfig>
+  <AerosolsHorizontalGridConfig rdf:ID="AerosolsHorizontalGridConfig_specific">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific</rdfs:label>
+  </AerosolsHorizontalGridConfig>
+  <AerosolsHorizontalGridConfig rdf:ID="AerosolsHorizontalGridConfig_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsHorizontalGridConfig>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsHorizontalMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Horizontal Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the aerosols model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsHorizontalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Horizontal Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the horizontal grid used for aerosols.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsVerticalGridConfiguration"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsVerticalGridConfiguration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Vertical Grid Configuration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration of the vertical grid used for aerosols (same as that of the atmosphere or atmospheric chemistry model or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsVerticalGridConfiguration"/>
+  </owl:ObjectProperty>
+  <AerosolsVerticalGridConfiguration rdf:ID="AerosolsVerticalGridConfiguration_same_as_Atmosphere">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Atmosphere</rdfs:label>
+  </AerosolsVerticalGridConfiguration>
+  <AerosolsVerticalGridConfiguration rdf:ID="AerosolsVerticalGridConfiguration_same_as_AtmosphericChemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as AtmosphericChemistry</rdfs:label>
+  </AerosolsVerticalGridConfiguration>
+  <AerosolsVerticalGridConfiguration rdf:ID="AerosolsVerticalGridConfiguration_specific">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific</rdfs:label>
+  </AerosolsVerticalGridConfiguration>
+  <AerosolsVerticalGridConfiguration rdf:ID="AerosolsVerticalGridConfiguration_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsVerticalGridConfiguration>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsVerticalGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Vertical Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the vertical grid used for aerosols.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Total number of vertical levels in the aerosols model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsAerosolTimeStepFrameworkMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsAerosolTimeStepFrameworkMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Aerosol Time Step Framework Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical method deployed to solve the evolution of a given variable.
+If "operator splitting" all the processes are decoupled, the time evolution is calculated sequentially and the tendencies "cumulated". 
+If "integrated" all the processes having an impact on the time evolution are taken into account and solved simultaneously. 
+</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsAerosolTimeStepFrameworkMethod"/>
+  </owl:ObjectProperty>
+  <AerosolsAerosolTimeStepFrameworkMethod rdf:ID="AerosolsAerosolTimeStepFrameworkMethod_uses_AtmosphericChemistry_time_stepping">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses AtmosphericChemistry time stepping</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkMethod>
+  <AerosolsAerosolTimeStepFrameworkMethod rdf:ID="AerosolsAerosolTimeStepFrameworkMethod_specific_time_stepping__LPAREN_operator_splitting_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time stepping (operator splitting)</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkMethod>
+  <AerosolsAerosolTimeStepFrameworkMethod rdf:ID="AerosolsAerosolTimeStepFrameworkMethod_specific_time_stepping__LPAREN_integrated_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time stepping (integrated)</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkMethod>
+  <AerosolsAerosolTimeStepFrameworkMethod rdf:ID="AerosolsAerosolTimeStepFrameworkMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkMethod>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsAerosolTimeStepFrameworkAdvectionTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Aerosol Time Step Framework Advection Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for aerosols advection.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsAerosolTimeStepFrameworkPhysicalTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Aerosol Time Step Framework Physical Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for aerosols physics.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsAerosolTimeStepFrameworkTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Aerosol Time Step Framework Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step for the aerosol model</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsAerosolTimeStepFrameworkSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Aerosol Time Step Framework Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the type of time step scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsAerosolTimeStepFrameworkSchemeType"/>
+  </owl:ObjectProperty>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">explicit</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implicit</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_semi-implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-implicit</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_semi-analytic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-analytic</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_Impact_Solver">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impact Solver</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_Back_Euler">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Back Euler</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_Newton_Raphson">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newton Raphson</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <AerosolsAerosolTimeStepFrameworkSchemeType rdf:ID="AerosolsAerosolTimeStepFrameworkSchemeType_Rosenbrock">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosenbrock</rdfs:label>
+  </AerosolsAerosolTimeStepFrameworkSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsMeteorologicalForcing3D-VariablesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Meteorological Forcing 3D-Variables</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-Dimensional forcing variables e.g.: U, V, W, T, Q, P, convective mass flux</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsMeteorologicalForcing2D-VariablesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Meteorological Forcing 2D-Variables</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-Dimensional forcing variables e.g. land-sea mask</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsMeteorologicalForcingFrequencyValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Aerosols Meteorological Forcing Frequency</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Frequency with which meteorological forcings are applied</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsTransportMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsTransportMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is aerosol transport the same as atmospheric chemistry transport?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsTransportMethod"/>
+  </owl:ObjectProperty>
+  <AerosolsTransportMethod rdf:ID="AerosolsTransportMethod_uses_AtmosphericChemistry_transport_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses AtmosphericChemistry transport scheme</rdfs:label>
+  </AerosolsTransportMethod>
+  <AerosolsTransportMethod rdf:ID="AerosolsTransportMethod_specific_transport_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific transport scheme</rdfs:label>
+  </AerosolsTransportMethod>
+  <AerosolsTransportMethod rdf:ID="AerosolsTransportMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsTransportMethod>
+  <owl:Class rdf:ID="AerosolsTransportSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsTransportSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of atmospheric chemistry transport scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsTransportSchemeType"/>
+  </owl:ObjectProperty>
+  <AerosolsTransportSchemeType rdf:ID="AerosolsTransportSchemeType_Eulerian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian</rdfs:label>
+  </AerosolsTransportSchemeType>
+  <AerosolsTransportSchemeType rdf:ID="AerosolsTransportSchemeType_Semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Lagrangian</rdfs:label>
+  </AerosolsTransportSchemeType>
+  <AerosolsTransportSchemeType rdf:ID="AerosolsTransportSchemeType_Eulerian_and_Semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian and Semi-Lagrangian</rdfs:label>
+  </AerosolsTransportSchemeType>
+  <AerosolsTransportSchemeType rdf:ID="AerosolsTransportSchemeType_Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagrangian</rdfs:label>
+  </AerosolsTransportSchemeType>
+  <owl:Class rdf:ID="AerosolsTransportMassConservation"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsTransportMassConservation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Mass Conservation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How is mass conservation maintained?
+i) "mass adjustment": Adjustment is required to conserve mass.
+ii) "concentration positivity": Negative concentrations are reset.
+iii) "gradient monotony": Sharp gradients in concentration are smoothed.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsTransportMassConservation"/>
+  </owl:ObjectProperty>
+  <AerosolsTransportMassConservation rdf:ID="AerosolsTransportMassConservation_mass_adjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass adjustment</rdfs:label>
+  </AerosolsTransportMassConservation>
+  <AerosolsTransportMassConservation rdf:ID="AerosolsTransportMassConservation_concentrations_positivity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concentrations positivity</rdfs:label>
+  </AerosolsTransportMassConservation>
+  <AerosolsTransportMassConservation rdf:ID="AerosolsTransportMassConservation_gradients_monotony">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gradients monotony</rdfs:label>
+  </AerosolsTransportMassConservation>
+  <owl:Class rdf:ID="AerosolsTransportConvection"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsTransportConvection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Convection</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convective Transport:
+i) "convective fluxes connected to tracers": Do tracers "see" convection?
+ii) "vertical velocities connected to tracers": Are the mass flux vertical velocities connected with tracers in the atmos chemistry scheme?
+</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsTransportConvection"/>
+  </owl:ObjectProperty>
+  <AerosolsTransportConvection rdf:ID="AerosolsTransportConvection_convective_fluxes_connected_to_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convective fluxes connected to tracers</rdfs:label>
+  </AerosolsTransportConvection>
+  <AerosolsTransportConvection rdf:ID="AerosolsTransportConvection_vertical_velocities_connected_to_tracers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical velocities connected to tracers</rdfs:label>
+  </AerosolsTransportConvection>
+  <owl:Class rdf:ID="AerosolsTransportTurbulenceMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsTransportTurbulenceMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Turbulence Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is aerosol turbulence the same as atmospheric chemistry turbulence?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsTransportTurbulenceMethod"/>
+  </owl:ObjectProperty>
+  <AerosolsTransportTurbulenceMethod rdf:ID="AerosolsTransportTurbulenceMethod_use_same_turbulence_scheme_as_AtmosphericChemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use same turbulence scheme as AtmosphericChemistry</rdfs:label>
+  </AerosolsTransportTurbulenceMethod>
+  <AerosolsTransportTurbulenceMethod rdf:ID="AerosolsTransportTurbulenceMethod_specific_turbulence_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific turbulence scheme</rdfs:label>
+  </AerosolsTransportTurbulenceMethod>
+  <AerosolsTransportTurbulenceMethod rdf:ID="AerosolsTransportTurbulenceMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsTransportTurbulenceMethod>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsTransportTurbulenceSchemeValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Transport Turbulence Scheme</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description of the scheme used for parametrization of the turbulent transport of aerosols.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc2D-EmissionsMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define aerosol species emitted at the surface (several methods allowed because the different species may not use the same method)</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc2D-EmissionsMethod"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc2D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc2D-EmissionsMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsMethod>
+  <AerosolsEmissionAndConc2D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc2D-EmissionsMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsMethod>
+  <AerosolsEmissionAndConc2D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc2D-EmissionsMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsMethod>
+  <AerosolsEmissionAndConc2D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc2D-EmissionsMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsMethod>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsSourceTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Source Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sources of aerosols emitted at the surface that are taken into account in the emissions scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc2D-EmissionsSourceTypes"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc2D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes_vegetation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetation</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc2D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes_bare_ground">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bare ground</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc2D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes_sea_surface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea surface</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc2D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes_anthropogenic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropogenic</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc2D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc2D-EmissionsSourceTypes_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsSourceTypes>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type for aerosols emissions prescribed at the surface.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc2D-EmissionsClimatologyType"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc2D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc2D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc2D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc2D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc2D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc2D-EmissionsClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AerosolsEmissionAndConc2D-EmissionsClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted at the surface and prescribed via a climatology.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted at the surface and prescribed as spatially uniform.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted at the surface and specified via an interactive method.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsMethodCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Method Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of the method used for aerosol emissions at the surface.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc2D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 2D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted at the surface and specified via the method described above.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc3D-EmissionsMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to define aerosol species emitted in the atmosphere (several methods allowed because the different species may not use the same method).</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc3D-EmissionsMethod"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc3D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc3D-EmissionsMethod_prescribed__LPAREN_climatology_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (climatology)</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsMethod>
+  <AerosolsEmissionAndConc3D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc3D-EmissionsMethod_prescribed__LPAREN_spatially_uniform_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed (spatially uniform)</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsMethod>
+  <AerosolsEmissionAndConc3D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc3D-EmissionsMethod_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interactive</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsMethod>
+  <AerosolsEmissionAndConc3D-EmissionsMethod rdf:ID="AerosolsEmissionAndConc3D-EmissionsMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsMethod>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsSourceTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Source Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sources of aerosols emitted in the atmosphere that are taken into account in the emissions scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc3D-EmissionsSourceTypes"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc3D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes_aircraft">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aircraft</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc3D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes_biomass_burning">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biomass burning</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc3D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes_lightning">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lightning</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc3D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes_volcanoes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volcanoes</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsSourceTypes>
+  <AerosolsEmissionAndConc3D-EmissionsSourceTypes rdf:ID="AerosolsEmissionAndConc3D-EmissionsSourceTypes_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsSourceTypes>
+  <owl:Class rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsClimatologyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Climatology Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the climatology type for aerosols emissions prescribed in the atmosphere.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsEmissionAndConc3D-EmissionsClimatologyType"/>
+  </owl:ObjectProperty>
+  <AerosolsEmissionAndConc3D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType_constant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc3D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType_interannual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interannual</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc3D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType_annual">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annual</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc3D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType_monthly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monthly</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsClimatologyType>
+  <AerosolsEmissionAndConc3D-EmissionsClimatologyType rdf:ID="AerosolsEmissionAndConc3D-EmissionsClimatologyType_daily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daily</rdfs:label>
+  </AerosolsEmissionAndConc3D-EmissionsClimatologyType>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted in the atmosphere and prescribed via a climatology.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted in the atmosphere and prescribed as spatially uniform.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted in the atmosphere and specified via an interactive method.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsMethodCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Method Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of the method used for aerosol emissions in the atmosphere.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConc3D-EmissionsSpeciesEmittedValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc 3D-Emissions Species Emitted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of aerosol species emitted in the atmosphere and specified via the method described above.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConcConcentrationsPrescribedLowerBoundaryValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc Concentrations Prescribed Lower Boundary</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species prescribed at the lower boundary.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsEmissionAndConcConcentrationsPrescribedUpperBoundaryValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Emission And Conc Concentrations Prescribed Upper Boundary</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species prescribed at the upper boundary.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsModelProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which processes are included in the aerosol model?</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelProcesses"/>
+  </owl:ObjectProperty>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_dry_deposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dry deposition</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_sedimentation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sedimentation</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_wet_deposition__LPAREN_impaction_scavenging_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wet deposition (impaction scavenging)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_wet_deposition__LPAREN_nucleation_scavenging_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wet deposition (nucleation scavenging)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_coagulation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coagulation</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_nucleation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleation</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_oxidation__LPAREN_gas_phase_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxidation (gas phase)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_oxidation__LPAREN_in_cloud_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxidation (in cloud)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_condensation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">condensation</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_ageing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ageing</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_advection__LPAREN_horizontal_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advection (horizontal)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_advection__LPAREN_vertical_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advection (vertical)</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_heterogeneous_chemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heterogeneous chemistry</rdfs:label>
+  </AerosolsModelProcesses>
+  <AerosolsModelProcesses rdf:ID="AerosolsModelProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsModelProcesses>
+  <owl:Class rdf:ID="AerosolsModelCouplingWith"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelCouplingWith">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Coupling With</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other model components coupled to the Aerosol model. This is covered more completely by the coupling archictecture in the questionnaire</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelCouplingWith"/>
+  </owl:ObjectProperty>
+  <AerosolsModelCouplingWith rdf:ID="AerosolsModelCouplingWith_Radiation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation</rdfs:label>
+  </AerosolsModelCouplingWith>
+  <AerosolsModelCouplingWith rdf:ID="AerosolsModelCouplingWith_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LandSurface</rdfs:label>
+  </AerosolsModelCouplingWith>
+  <AerosolsModelCouplingWith rdf:ID="AerosolsModelCouplingWith_HeterogeneousChemistry">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HeterogeneousChemistry</rdfs:label>
+  </AerosolsModelCouplingWith>
+  <AerosolsModelCouplingWith rdf:ID="AerosolsModelCouplingWith_Clouds">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clouds</rdfs:label>
+  </AerosolsModelCouplingWith>
+  <AerosolsModelCouplingWith rdf:ID="AerosolsModelCouplingWith_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsModelCouplingWith>
+  <owl:Class rdf:ID="AerosolsModelGasPhasePrecursors"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelGasPhasePrecursors">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Gas Phase Precursors</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of gas phase aerosol precursors.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelGasPhasePrecursors"/>
+  </owl:ObjectProperty>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_DMS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMS</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_SO2">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO2</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_ammonia">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ammonia</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_iodene">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iodene</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_terpene">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terpene</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_isoprene">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprene</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <AerosolsModelGasPhasePrecursors rdf:ID="AerosolsModelGasPhasePrecursors_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsModelGasPhasePrecursors>
+  <owl:Class rdf:ID="AerosolsModelSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some 
+species may be covered by one type of aerosol scheme and other species covered by another type).</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeType"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeType rdf:ID="AerosolsModelSchemeType_bulk">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulk</rdfs:label>
+  </AerosolsModelSchemeType>
+  <AerosolsModelSchemeType rdf:ID="AerosolsModelSchemeType_modal">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modal</rdfs:label>
+  </AerosolsModelSchemeType>
+  <AerosolsModelSchemeType rdf:ID="AerosolsModelSchemeType_bin">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bin</rdfs:label>
+  </AerosolsModelSchemeType>
+  <AerosolsModelSchemeType rdf:ID="AerosolsModelSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AerosolsModelSchemeType>
+  <owl:Class rdf:ID="AerosolsModelSchemeSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species covered by the bulk scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeSpecies"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <owl:Class rdf:ID="AerosolsModelSchemeFramework"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeFramework">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Framework</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification Framework:
+Single Moment classifies aerosols in terms of aerosol type e.g. biomass aerosol.
+Microphysical classifies aerosols in terms of size bins/modes.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeFramework"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_single_moment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single moment</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_microphysical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microphysical</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <owl:Class rdf:ID="AerosolsModelSchemeSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species covered by the modal scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeSpecies"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <owl:Class rdf:ID="AerosolsModelSchemeFramework"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeFramework">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Framework</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification Framework:
+Single Moment classifies aerosols in terms of aerosol type e.g. biomass aerosol.
+Microphysical classifies aerosols in terms of size bins/modes.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeFramework"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_single_moment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single moment</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_microphysical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microphysical</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <owl:Class rdf:ID="AerosolsModelSchemeSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species covered by the bin scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeSpecies"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <owl:DatatypeProperty rdf:ID="hasAerosolsModelSchemeTypeValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What type of aerosol scheme is used?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AerosolsModelSchemeFramework"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeFramework">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Framework</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification Framework:
+Single Moment classifies aerosols in terms of aerosol type e.g. biomass aerosol.
+Microphysical classifies aerosols in terms of size bins/modes.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeFramework"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_single_moment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single moment</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <AerosolsModelSchemeFramework rdf:ID="AerosolsModelSchemeFramework_microphysical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microphysical</rdfs:label>
+  </AerosolsModelSchemeFramework>
+  <owl:Class rdf:ID="AerosolsModelSchemeSpecies"/>
+  <owl:ObjectProperty rdf:ID="hasAerosolsModelSchemeSpecies">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aerosols Model Scheme Species</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of species covered by the scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AerosolsModelSchemeSpecies"/>
+  </owl:ObjectProperty>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+  <AerosolsModelSchemeSpecies rdf:ID="AerosolsModelSchemeSpecies_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AerosolsModelSchemeSpecies>
+</rdf:RDF>

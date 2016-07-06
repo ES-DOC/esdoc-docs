@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+
+	Hansen-style diagnosis of “fast” climate system responses to sulfate aerosols (ca. 2000)
+
+	As in expt. 6.2a above, but with aerosols consistent with conditions in year 2000 of the historical run (expt. 3.2)
+
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+    
+    <!-- Initial Conditions -->
+    <numericalRequirement xsi:type="InitialCondition">
+        <description> Initial conditions are from experiment 3.1_pi-control </description>
+        <id xsi:type="Identifier">6.4.ic</id>
+    </numericalRequirement>
+    
+	<!-- Boundary Conditions -->
+	
+	<numericalRequirement xsi:type="BoundaryCondition">
+        <description>Aerosols should be consistant with year 2000 of expt 3.2 (Historical run)</description>
+        <id xsi:type="Identifier">6.4.bc.Aer2000</id>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Prescribed concentration of well mixed Gas: CO2 is the same as
+            3.1_pi-control</description>
+        <id xsi:type="Identifier">6.4.bc.CO2.conc</id>
+        <!-- 3.1.bc.CO2.conc -->
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Sea surface temperature is the climatology SST from the
+            3.1_pi-control</description>
+        <id xsi:type="Identifier">6.4.sst.clim</id>
+        <!-- 6.2b.sst.clim -->
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Sea ice is the sea ice climatology from the
+            3.1_pi-control</description>
+        <id xsi:type="Identifier">6.4.SeaIce.clim</id>
+        <!-- 6.2b.SeaIce.clim -->
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <description>Unperturbed Land Use Same as for the 3.1_pi-control</description>
+        <id xsi:type="Identifier">6.4.bc.LandUse</id>
+        <!-- 3.1.bc.LandUse -->
+        <!-- 6.2b.bc.LandUse -->
+    </numericalRequirement>
+    
+    	<shortName>
+		CMIP5_NumReq_6.4
+	</shortName>
+    <longName> 
+		CMIP5 Tier 1 Time-slice experiment 6.4 - Hansen style response to aerosol
+	</longName>
+     
+   <calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+    <requiredDuration xsi:type="ClosedDateRange">
+		<!-- Idealised run so dates given here are only dummy values -->
+		<startDate> 1850-01-01T00:00:00Z</startDate>
+		<endDate> 1881-01-01T00:00:00Z</endDate>
+	</requiredDuration>
+    <author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+    <documentID xsi:type="Identifier">
+    </documentID>
+    <creationDate>
+		2009-06-26T12:34:00Z
+	</creationDate>   
+</numericalExperiment>

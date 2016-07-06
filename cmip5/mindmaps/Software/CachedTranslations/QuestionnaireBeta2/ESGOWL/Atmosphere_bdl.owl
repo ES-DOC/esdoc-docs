@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AtmosphereModelFamily"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereModelFamily">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Model Family</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of atmospheric model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereModelFamily"/>
+  </owl:ObjectProperty>
+  <AtmosphereModelFamily rdf:ID="AtmosphereModelFamily_AGCM">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGCM</rdfs:label>
+  </AtmosphereModelFamily>
+  <AtmosphereModelFamily rdf:ID="AtmosphereModelFamily_ARCM">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARCM</rdfs:label>
+  </AtmosphereModelFamily>
+  <AtmosphereModelFamily rdf:ID="AtmosphereModelFamily_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereModelFamily>
+  <owl:Class rdf:ID="AtmosphereBasicApproximations"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereBasicApproximations">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Basic Approximations</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic fluid dynamics approximations made in the atmospheric model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereBasicApproximations"/>
+  </owl:ObjectProperty>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_primitive_equations">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primitive equations</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_non-hydrostatic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-hydrostatic</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_anelastic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anelastic</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_Boussinesq">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boussinesq</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_hydrostatic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrostatic</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_quasi-hydrostatic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quasi-hydrostatic</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <AtmosphereBasicApproximations rdf:ID="AtmosphereBasicApproximations_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereBasicApproximations>
+  <owl:Class rdf:ID="AtmosphereVolcanoesImplementation"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereVolcanoesImplementation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Volcanoes Implementation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the volcanoes effect is modeled in the atmophere.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereVolcanoesImplementation"/>
+  </owl:ObjectProperty>
+  <AtmosphereVolcanoesImplementation rdf:ID="AtmosphereVolcanoesImplementation_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereVolcanoesImplementation>
+  <AtmosphereVolcanoesImplementation rdf:ID="AtmosphereVolcanoesImplementation_via_high_frequency_solar_contant_anomaly">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">via high frequency solar contant anomaly</rdfs:label>
+  </AtmosphereVolcanoesImplementation>
+  <AtmosphereVolcanoesImplementation rdf:ID="AtmosphereVolcanoesImplementation_via_stratospheric_aerosols_optical_thickness">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">via stratospheric aerosols optical thickness</rdfs:label>
+  </AtmosphereVolcanoesImplementation>
+  <AtmosphereVolcanoesImplementation rdf:ID="AtmosphereVolcanoesImplementation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereVolcanoesImplementation>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereVolcanoesImplementationMethodValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Volcanoes Implementation Method</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Details of volcanoes implementation method.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereVolcanoesForcingFields"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereVolcanoesForcingFields">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Volcanoes Forcing Fields</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference for the data used to simulate the volcanic forcing of climate.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereVolcanoesForcingFields"/>
+  </owl:ObjectProperty>
+  <AtmosphereVolcanoesForcingFields rdf:ID="AtmosphereVolcanoesForcingFields_Gao_et_al.__LPAREN_2008-9_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gao et al. (2008-9)</rdfs:label>
+  </AtmosphereVolcanoesForcingFields>
+  <owl:Class rdf:ID="AtmosphereInsolationImpactOnOzone"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereInsolationImpactOnOzone">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Impact On Ozone</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impact of TOA radiation on stratospheric ozone.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereInsolationImpactOnOzone"/>
+  </owl:ObjectProperty>
+  <AtmosphereInsolationImpactOnOzone rdf:ID="AtmosphereInsolationImpactOnOzone_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphereInsolationImpactOnOzone>
+  <AtmosphereInsolationImpactOnOzone rdf:ID="AtmosphereInsolationImpactOnOzone_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphereInsolationImpactOnOzone>
+  <owl:Class rdf:ID="AtmosphereInsolationSolarConstantType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereInsolationSolarConstantType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Solar Constant Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time adaptation of the solar constant.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereInsolationSolarConstantType"/>
+  </owl:ObjectProperty>
+  <AtmosphereInsolationSolarConstantType rdf:ID="AtmosphereInsolationSolarConstantType_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </AtmosphereInsolationSolarConstantType>
+  <AtmosphereInsolationSolarConstantType rdf:ID="AtmosphereInsolationSolarConstantType_transient">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transient</rdfs:label>
+  </AtmosphereInsolationSolarConstantType>
+  <AtmosphereInsolationSolarConstantType rdf:ID="AtmosphereInsolationSolarConstantType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereInsolationSolarConstantType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereInsolationSolarConstantValueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Insolation Solar Constant Value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Value of the solar constant.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereInsolationSolarConstantCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Solar Constant Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the solar constant.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereInsolationOrbitalParametersType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereInsolationOrbitalParametersType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Orbital Parameters Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time adaptation of the orbital parameters.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereInsolationOrbitalParametersType"/>
+  </owl:ObjectProperty>
+  <AtmosphereInsolationOrbitalParametersType rdf:ID="AtmosphereInsolationOrbitalParametersType_fixed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersType>
+  <AtmosphereInsolationOrbitalParametersType rdf:ID="AtmosphereInsolationOrbitalParametersType_transient">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transient</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersType>
+  <AtmosphereInsolationOrbitalParametersType rdf:ID="AtmosphereInsolationOrbitalParametersType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereInsolationOrbitalParametersReferenceDateValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Insolation Orbital Parameters Reference Date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Reference year for orbital parameters.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereInsolationOrbitalParametersTransientMethodValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Orbital Parameters Transient Method</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of transient orbital parameters.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereInsolationOrbitalParametersComputationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereInsolationOrbitalParametersComputationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Insolation Orbital Parameters Computation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for computing orbital parameters.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereInsolationOrbitalParametersComputationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereInsolationOrbitalParametersComputationMethod rdf:ID="AtmosphereInsolationOrbitalParametersComputationMethod_Berger_1978">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berger 1978</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersComputationMethod>
+  <AtmosphereInsolationOrbitalParametersComputationMethod rdf:ID="AtmosphereInsolationOrbitalParametersComputationMethod_Laskar_2004">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laskar 2004</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersComputationMethod>
+  <AtmosphereInsolationOrbitalParametersComputationMethod rdf:ID="AtmosphereInsolationOrbitalParametersComputationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereInsolationOrbitalParametersComputationMethod>
+  <owl:Class rdf:ID="AtmosphereOrographyType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographyType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orography Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time adaptation of the orography.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographyType"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographyType rdf:ID="AtmosphereOrographyType_present-day">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">present-day</rdfs:label>
+  </AtmosphereOrographyType>
+  <AtmosphereOrographyType rdf:ID="AtmosphereOrographyType_modified">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified</rdfs:label>
+  </AtmosphereOrographyType>
+  <AtmosphereOrographyType rdf:ID="AtmosphereOrographyType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOrographyType>
+  <owl:Class rdf:ID="AtmosphereOrographyChanges"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographyChanges">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orography Changes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in orography for its time phasing.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographyChanges"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographyChanges rdf:ID="AtmosphereOrographyChanges_related_to_ice_sheet">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related to ice sheet</rdfs:label>
+  </AtmosphereOrographyChanges>
+  <AtmosphereOrographyChanges rdf:ID="AtmosphereOrographyChanges_related_to_tectonics">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related to tectonics</rdfs:label>
+  </AtmosphereOrographyChanges>
+  <AtmosphereOrographyChanges rdf:ID="AtmosphereOrographyChanges_modified_mean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified mean</rdfs:label>
+  </AtmosphereOrographyChanges>
+  <AtmosphereOrographyChanges rdf:ID="AtmosphereOrographyChanges_modified_variance_if_taken_into_account_in_model__LPAREN_cf_gravity_waves_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified variance if taken into account in model (cf gravity waves)</rdfs:label>
+  </AtmosphereOrographyChanges>
+  <owl:Class rdf:ID="AtmosphereHorizontalGridType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereHorizontalGridType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Horizontal Grid Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry type of the horizontal grid.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereHorizontalGridType"/>
+  </owl:ObjectProperty>
+  <AtmosphereHorizontalGridType rdf:ID="AtmosphereHorizontalGridType_latitude-longitude_retangular">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">latitude-longitude retangular</rdfs:label>
+  </AtmosphereHorizontalGridType>
+  <AtmosphereHorizontalGridType rdf:ID="AtmosphereHorizontalGridType_latitude-longitude">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">latitude-longitude</rdfs:label>
+  </AtmosphereHorizontalGridType>
+  <AtmosphereHorizontalGridType rdf:ID="AtmosphereHorizontalGridType_reduced_gaussian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reduced gaussian</rdfs:label>
+  </AtmosphereHorizontalGridType>
+  <AtmosphereHorizontalGridType rdf:ID="AtmosphereHorizontalGridType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereHorizontalGridType>
+  <owl:Class rdf:ID="AtmosphereHorizontalPoleSingularityTreatment"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereHorizontalPoleSingularityTreatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Horizontal Pole Singularity Treatment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to deal with the pole singularities.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereHorizontalPoleSingularityTreatment"/>
+  </owl:ObjectProperty>
+  <AtmosphereHorizontalPoleSingularityTreatment rdf:ID="AtmosphereHorizontalPoleSingularityTreatment_filter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filter</rdfs:label>
+  </AtmosphereHorizontalPoleSingularityTreatment>
+  <AtmosphereHorizontalPoleSingularityTreatment rdf:ID="AtmosphereHorizontalPoleSingularityTreatment_pole_rotation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pole rotation</rdfs:label>
+  </AtmosphereHorizontalPoleSingularityTreatment>
+  <AtmosphereHorizontalPoleSingularityTreatment rdf:ID="AtmosphereHorizontalPoleSingularityTreatment_artificial_island">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artificial island</rdfs:label>
+  </AtmosphereHorizontalPoleSingularityTreatment>
+  <AtmosphereHorizontalPoleSingularityTreatment rdf:ID="AtmosphereHorizontalPoleSingularityTreatment_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereHorizontalPoleSingularityTreatment>
+  <AtmosphereHorizontalPoleSingularityTreatment rdf:ID="AtmosphereHorizontalPoleSingularityTreatment_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereHorizontalPoleSingularityTreatment>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalMeanZonalResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Mean Zonal Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean zonal resolution.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalMeanMeridionalResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Mean Meridional Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean meridional resolution.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalEquatorMeridionalRefinementValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Equator Meridional Refinement</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Resolution at equator.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalSpecialRefinementValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Horizontal Special Refinement</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of any other special gid refinement (location, resolution).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalExtentLatMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Extent Lat Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Southern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalExtentLatMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Extent Lat Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Northern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalExtentLonMinValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Extent Lon Min</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Western boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereHorizontalExtentLonMaxValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Horizontal Extent Lon Max</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Eastern boundary of the geographical domain.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereVerticalCoordinateSystem"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereVerticalCoordinateSystem">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Vertical Coordinate System</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical coordinate system.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereVerticalCoordinateSystem"/>
+  </owl:ObjectProperty>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_fixed_pressure_surfaces">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed pressure surfaces</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_pressure_height">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure height</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_geometric_height">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometric height</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_hybrid_sigma-pressure_layers">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybrid sigma-pressure layers</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_hybrid_floating_Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybrid floating Lagrangian</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_isentropic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isentropic</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_sigma">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sigma</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <AtmosphereVerticalCoordinateSystem rdf:ID="AtmosphereVerticalCoordinateSystem_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereVerticalCoordinateSystem>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereVerticalTopModelLevelValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Vertical Top Model Level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Level at top of the atmosphere.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereVerticalNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Vertical Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Total number of vertical levels.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereVerticalNumberOfLevelsBellow850hPaValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Vertical Number Of Levels Bellow 850h Pa</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of vertical levels bellow 850 hPa.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereVerticalNumberOfLevelsAbove200hPaValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Vertical Number Of Levels Above 200h Pa</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of vertical levels above 200 hPa.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List of the prognostic variables of the model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_surface_pressure">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface pressure</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_wind_components">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wind components</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_divergence_SLASH_curl">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">divergence/curl</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_potential_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential temperature</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_total_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total water</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_vapour_SLASH_solid_SLASH_liquid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vapour/solid/liquid</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_total_water_moments">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total water moments</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_clouds">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clouds</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_radiation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <AtmosphereDynamicalCoreListOfPrognosticVariables rdf:ID="AtmosphereDynamicalCoreListOfPrognosticVariables_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreListOfPrognosticVariables>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreTopBoundaryCondition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreTopBoundaryCondition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Top Boundary Condition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of boundary layer at top of the model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreTopBoundaryCondition"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreTopBoundaryCondition rdf:ID="AtmosphereDynamicalCoreTopBoundaryCondition_sponge_layer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge layer</rdfs:label>
+  </AtmosphereDynamicalCoreTopBoundaryCondition>
+  <AtmosphereDynamicalCoreTopBoundaryCondition rdf:ID="AtmosphereDynamicalCoreTopBoundaryCondition_radiation_boundary_condition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation boundary condition</rdfs:label>
+  </AtmosphereDynamicalCoreTopBoundaryCondition>
+  <AtmosphereDynamicalCoreTopBoundaryCondition rdf:ID="AtmosphereDynamicalCoreTopBoundaryCondition_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreTopBoundaryCondition>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHeatTreatmentAtTopValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Heat Treatment At Top</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of any specific treatment of heat at top of the model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreWindTreatmentAtTopValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Wind Treatment At Top</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of any specific treatment of wind at top of the model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreLateralBoundaryCondition"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreLateralBoundaryCondition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Lateral Boundary Condition</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of lateral boundary condition (only if the model is a RCM).</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreLateralBoundaryCondition"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreLateralBoundaryCondition rdf:ID="AtmosphereDynamicalCoreLateralBoundaryCondition_sponge_layer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge layer</rdfs:label>
+  </AtmosphereDynamicalCoreLateralBoundaryCondition>
+  <AtmosphereDynamicalCoreLateralBoundaryCondition rdf:ID="AtmosphereDynamicalCoreLateralBoundaryCondition_radiation_boundary_condition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation boundary condition</rdfs:label>
+  </AtmosphereDynamicalCoreLateralBoundaryCondition>
+  <AtmosphereDynamicalCoreLateralBoundaryCondition rdf:ID="AtmosphereDynamicalCoreLateralBoundaryCondition_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereDynamicalCoreLateralBoundaryCondition>
+  <AtmosphereDynamicalCoreLateralBoundaryCondition rdf:ID="AtmosphereDynamicalCoreLateralBoundaryCondition_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreLateralBoundaryCondition>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Time Stepping Framework Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of time stepping scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Adam_Bashford">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam Bashford</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Explicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explicit</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Implicit</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Semi-Implicit">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Implicit</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_LeapFrog">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LeapFrog</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Multi-step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-step</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Runge_Kutta_fifth_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Runge Kutta fifth order</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Runge_Kutta_second_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Runge Kutta second order</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_Runge_Kutta_third_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Runge Kutta third order</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType rdf:ID="AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreTimeSteppingFrameworkSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreTimeSteppingFrameworkTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Dynamical Core Time Stepping Framework Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step of the model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Horizontal Discretization Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of horizontal discretization scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType_spectral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType_fixed_grid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed grid</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationSpectralTruncatureNumberValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Dynamical Core Horizontal Discretization Spectral Truncature Number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Spectral truncature number of the horizontal discretization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationNumberOfZonalGridBoxesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Dynamical Core Horizontal Discretization Number Of Zonal Grid Boxes</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of zonal grid boxes  of the horizontal discretization grid.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationNumberOfMeridionalGridBoxesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Dynamical Core Horizontal Discretization Number Of Meridional Grid Boxes</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of Meridional grid boxes of the horizontal discretization grid.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Horizontal Discretization Scheme Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical method for the horizontal discretization scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod_finite_elements">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite elements</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod_finite_volumes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite volumes</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod_finite_differences">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite differences</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod>
+  <AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod_centered_finite_differences">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centered finite differences</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiscretizationSchemeMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiscretizationSchemeOrderValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Dynamical Core Horizontal Discretization Scheme Order</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Order of the (centered) finite differences method used by the horizontal dicretization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiffusionSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Horizontal Diffusion Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commonly used name of the horizontal diffusion scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Horizontal Diffusion Scheme Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical method used by horizontal diffusion scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod_iterated_Laplacian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iterated Laplacian</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod>
+  <AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod rdf:ID="AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreHorizontalDiffusionSchemeMethod>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeName"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionTracersSchemeName">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Tracers Scheme Name</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for tracers advection scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreAdvectionTracersSchemeName"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeName rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeName_Prather">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prather</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeName>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeName rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeName_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeName>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionTracersSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Tracers Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of numerical scheme used for advection of tracers.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreAdvectionTracersSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_Eulerian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagrangian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-Lagrangian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_mass-conserving">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-conserving</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_mass-conserving__SLASH__finite_volume__LPAREN_Lin-Rood_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-conserving / finite volume (Lin-Rood)</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <AtmosphereDynamicalCoreAdvectionTracersSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionTracersSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionTracersConservedQuantitiesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Tracers Conserved Quantities</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantities conserved trought tracers advection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreAdvectionTracersConservationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionTracersConservationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Tracers Conservation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to ensure conservation in tracers advection scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreAdvectionTracersConservationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreAdvectionTracersConservationMethod rdf:ID="AtmosphereDynamicalCoreAdvectionTracersConservationMethod_conservation_fixer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conservation fixer</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersConservationMethod>
+  <AtmosphereDynamicalCoreAdvectionTracersConservationMethod rdf:ID="AtmosphereDynamicalCoreAdvectionTracersConservationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionTracersConservationMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionMomentumSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Momentum Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for momentum advection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionMomentumSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Momentum Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of numerical scheme used for advection of momentum.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreAdvectionMomentumSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_Eulerian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eulerian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lagrangian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_Semi-Lagrangian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Lagrangian</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_Mass-conserving">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass-conserving</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_Mass-conserving__SLASH__Finite_volume__LPAREN_Lin-Rood_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass-conserving / Finite volume (Lin-Rood)</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <AtmosphereDynamicalCoreAdvectionMomentumSchemeType rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionMomentumConservedQuantitiesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Momentum Conserved Quantities</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantities conserved trought momentum advection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumConservationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDynamicalCoreAdvectionMomentumConservationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Dynamical Core Advection Momentum Conservation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to ensure conservation in momentum advection scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDynamicalCoreAdvectionMomentumConservationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereDynamicalCoreAdvectionMomentumConservationMethod rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumConservationMethod_conservation_fixer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conservation fixer</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumConservationMethod>
+  <AtmosphereDynamicalCoreAdvectionMomentumConservationMethod rdf:ID="AtmosphereDynamicalCoreAdvectionMomentumConservationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDynamicalCoreAdvectionMomentumConservationMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereRadiationTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Radiation Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Time step of the radiative scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereRadiationAerosolTypes"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereRadiationAerosolTypes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Aerosol Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Types of aerosols whose radiative effect is taken into account in the atmospheric model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereRadiationAerosolTypes"/>
+  </owl:ObjectProperty>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_sulphate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphate</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_nitrate">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrate</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_sea_salt">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea salt</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_dust">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dust</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_organic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_BC__LPAREN_black_carbon__SLASH__soot_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BC (black carbon / soot)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_SOA__LPAREN_secondary_organic_aerosols_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOA (secondary organic aerosols)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_POM__LPAREN_particulate_organic_matter_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POM (particulate organic matter)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_polar_stratospheric_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar stratospheric ice</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_NAT__LPAREN_nitric_acid_trihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAT (nitric acid trihydrate)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_NAD__LPAREN_nitric_acid_dihydrate_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAD (nitric acid dihydrate)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_STS__LPAREN_supercooled_ternary_solution_aerosol_particule_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS (supercooled ternary solution aerosol particule)</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <AtmosphereRadiationAerosolTypes rdf:ID="AtmosphereRadiationAerosolTypes_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereRadiationAerosolTypes>
+  <owl:Class rdf:ID="AtmosphereRadiationGHG-Types"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereRadiationGHG-Types">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation GHG-Types</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GHG whose radiative effect is taken into account in the atmospheric model.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereRadiationGHG-Types"/>
+  </owl:ObjectProperty>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_CO2">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_CH4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CH4</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_N2O">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N2O</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_CFC">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CFC</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_H2O">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H2O</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_O3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <AtmosphereRadiationGHG-Types rdf:ID="AtmosphereRadiationGHG-Types_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereRadiationGHG-Types>
+  <owl:Class rdf:ID="AtmosphereRadiationLongwaveSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereRadiationLongwaveSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Longwave Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for longwave radiation parametrisation.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereRadiationLongwaveSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereRadiationLongwaveSchemeType rdf:ID="AtmosphereRadiationLongwaveSchemeType_Wide-band_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide-band model</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeType>
+  <AtmosphereRadiationLongwaveSchemeType rdf:ID="AtmosphereRadiationLongwaveSchemeType_Wide-band__LPAREN_Morcrette_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide-band (Morcrette)</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeType>
+  <AtmosphereRadiationLongwaveSchemeType rdf:ID="AtmosphereRadiationLongwaveSchemeType_K-correlated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-correlated</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeType>
+  <AtmosphereRadiationLongwaveSchemeType rdf:ID="AtmosphereRadiationLongwaveSchemeType_K-correlated__LPAREN_RRTM_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-correlated (RRTM)</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeType>
+  <AtmosphereRadiationLongwaveSchemeType rdf:ID="AtmosphereRadiationLongwaveSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeType>
+  <owl:Class rdf:ID="AtmosphereRadiationLongwaveSchemeMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereRadiationLongwaveSchemeMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Longwave Scheme Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for the radiative transfert calculations used in the longwave scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereRadiationLongwaveSchemeMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereRadiationLongwaveSchemeMethod rdf:ID="AtmosphereRadiationLongwaveSchemeMethod_Two-stream">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-stream</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeMethod>
+  <AtmosphereRadiationLongwaveSchemeMethod rdf:ID="AtmosphereRadiationLongwaveSchemeMethod_Layer_interaction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer interaction</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeMethod>
+  <AtmosphereRadiationLongwaveSchemeMethod rdf:ID="AtmosphereRadiationLongwaveSchemeMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereRadiationLongwaveSchemeMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereRadiationLongwaveNumberOfSpectralIntervalsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Radiation Longwave Number Of Spectral Intervals</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of spectral interval of the longwave radiation scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereRadiationShortwaveSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereRadiationShortwaveSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Shortwave Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for shortwave radiation parametrization.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereRadiationShortwaveSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereRadiationShortwaveSchemeType rdf:ID="AtmosphereRadiationShortwaveSchemeType_Wide-band_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide-band model</rdfs:label>
+  </AtmosphereRadiationShortwaveSchemeType>
+  <AtmosphereRadiationShortwaveSchemeType rdf:ID="AtmosphereRadiationShortwaveSchemeType_Wide-band_model__LPAREN_Fouquart_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide-band model (Fouquart)</rdfs:label>
+  </AtmosphereRadiationShortwaveSchemeType>
+  <AtmosphereRadiationShortwaveSchemeType rdf:ID="AtmosphereRadiationShortwaveSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereRadiationShortwaveSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereRadiationShortwaveNumberOfSpectralIntervalsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Radiation Shortwave Number Of Spectral Intervals</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of spectral intervals of the short radiation scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereRadiationCloudRadiativePropertiesiceValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Cloud Radiative Properties ice</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiative properties of ice cristals in clouds.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereRadiationCloudRadiativePropertiesliquidValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Radiation Cloud Radiative Properties liquid</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiative properties of cloud droplets.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeName"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereBoundaryLayerTurbulenceSchemeName">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Boundary Layer Turbulence Scheme Name</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for boundary layer tubulence scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereBoundaryLayerTurbulenceSchemeName"/>
+  </owl:ObjectProperty>
+  <AtmosphereBoundaryLayerTurbulenceSchemeName rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeName_Mellor-Yamada">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mellor-Yamada</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeName>
+  <AtmosphereBoundaryLayerTurbulenceSchemeName rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeName_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeName>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereBoundaryLayerTurbulenceClosureOrderValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Boundary Layer Turbulence Closure Order</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Closure order of the Mellor-Yamada scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereBoundaryLayerTurbulenceSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Boundary Layer Turbulence Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of turbulence in the boundary layer.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereBoundaryLayerTurbulenceSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereBoundaryLayerTurbulenceSchemeType rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType_TKE_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TKE prognostic</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeType>
+  <AtmosphereBoundaryLayerTurbulenceSchemeType rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType_TKE_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TKE diagnostic</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeType>
+  <AtmosphereBoundaryLayerTurbulenceSchemeType rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType_TKE_coupled_with_water">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TKE coupled with water</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeType>
+  <AtmosphereBoundaryLayerTurbulenceSchemeType rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType_Vertical_profile_of_Kz">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vertical profile of Kz</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeType>
+  <AtmosphereBoundaryLayerTurbulenceSchemeType rdf:ID="AtmosphereBoundaryLayerTurbulenceSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceSchemeType>
+  <owl:Class rdf:ID="AtmosphereBoundaryLayerTurbulenceCounterGradient"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereBoundaryLayerTurbulenceCounterGradient">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Boundary Layer Turbulence Counter Gradient</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application of a counter-gradient term for calculation of the vertical turbulent heat fluxes in case of slighlty stable layer.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereBoundaryLayerTurbulenceCounterGradient"/>
+  </owl:ObjectProperty>
+  <AtmosphereBoundaryLayerTurbulenceCounterGradient rdf:ID="AtmosphereBoundaryLayerTurbulenceCounterGradient_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceCounterGradient>
+  <AtmosphereBoundaryLayerTurbulenceCounterGradient rdf:ID="AtmosphereBoundaryLayerTurbulenceCounterGradient_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphereBoundaryLayerTurbulenceCounterGradient>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereDeepConvectionSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Deep Convection Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for deep convection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereDeepConvectionSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDeepConvectionSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Deep Convection Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of deep convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDeepConvectionSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereDeepConvectionSchemeType rdf:ID="AtmosphereDeepConvectionSchemeType_Mass-flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass-flux</rdfs:label>
+  </AtmosphereDeepConvectionSchemeType>
+  <AtmosphereDeepConvectionSchemeType rdf:ID="AtmosphereDeepConvectionSchemeType_Adjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjustment</rdfs:label>
+  </AtmosphereDeepConvectionSchemeType>
+  <AtmosphereDeepConvectionSchemeType rdf:ID="AtmosphereDeepConvectionSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDeepConvectionSchemeType>
+  <owl:Class rdf:ID="AtmosphereDeepConvectionSchemeMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDeepConvectionSchemeMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Deep Convection Scheme Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for mass flux calculation in deep convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDeepConvectionSchemeMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereDeepConvectionSchemeMethod rdf:ID="AtmosphereDeepConvectionSchemeMethod_Mass_flux_determined_by_CAPE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass flux determined by CAPE</rdfs:label>
+  </AtmosphereDeepConvectionSchemeMethod>
+  <AtmosphereDeepConvectionSchemeMethod rdf:ID="AtmosphereDeepConvectionSchemeMethod_Bulk_mass_flux_scheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk mass flux scheme</rdfs:label>
+  </AtmosphereDeepConvectionSchemeMethod>
+  <owl:Class rdf:ID="AtmosphereDeepConvectionProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereDeepConvectionProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Deep Convection Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical processes taken into account in the parametrization of the deep convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereDeepConvectionProcesses"/>
+  </owl:ObjectProperty>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_vertical_momentum_transport">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical momentum transport</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_convective_momentum_transport__LPAREN_CMT_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convective momentum transport (CMT)</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_penetrative_convection_effects_included">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penetrative convection effects included</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_representation_of_updrafts_and_downdrafts">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">representation of updrafts and downdrafts</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_radiative_effects_of_anvils">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiative effects of anvils</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_entrainment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entrainment</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_detrainment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detrainment</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <AtmosphereDeepConvectionProcesses rdf:ID="AtmosphereDeepConvectionProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereDeepConvectionProcesses>
+  <owl:Class rdf:ID="AtmosphereShallowConvectionMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereShallowConvectionMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Shallow Convection Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used for parametrization of shallow convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereShallowConvectionMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereShallowConvectionMethod rdf:ID="AtmosphereShallowConvectionMethod_same_as_deep__LPAREN_unified_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as deep (unified)</rdfs:label>
+  </AtmosphereShallowConvectionMethod>
+  <AtmosphereShallowConvectionMethod rdf:ID="AtmosphereShallowConvectionMethod_included_in_Boundary_Layer_Turbulence">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">included in Boundary Layer Turbulence</rdfs:label>
+  </AtmosphereShallowConvectionMethod>
+  <AtmosphereShallowConvectionMethod rdf:ID="AtmosphereShallowConvectionMethod_separated">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">separated</rdfs:label>
+  </AtmosphereShallowConvectionMethod>
+  <AtmosphereShallowConvectionMethod rdf:ID="AtmosphereShallowConvectionMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereShallowConvectionMethod>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereShallowConvectionSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Shallow Convection Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for shallow convection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereShallowConvectionSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereShallowConvectionSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Shallow Convection Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of shallow convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereShallowConvectionSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereShallowConvectionSchemeType rdf:ID="AtmosphereShallowConvectionSchemeType_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereShallowConvectionSchemeType>
+  <AtmosphereShallowConvectionSchemeType rdf:ID="AtmosphereShallowConvectionSchemeType_mass-flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-flux</rdfs:label>
+  </AtmosphereShallowConvectionSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereOtherConvectionSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Other Convection Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name for mid-level convection scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereOtherConvectionSchemeType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOtherConvectionSchemeType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Other Convection Scheme Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used for parametrization of mid-level convection.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOtherConvectionSchemeType"/>
+  </owl:ObjectProperty>
+  <AtmosphereOtherConvectionSchemeType rdf:ID="AtmosphereOtherConvectionSchemeType_mass-flux">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-flux</rdfs:label>
+  </AtmosphereOtherConvectionSchemeType>
+  <AtmosphereOtherConvectionSchemeType rdf:ID="AtmosphereOtherConvectionSchemeType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOtherConvectionSchemeType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereLargeScalePrecipitationSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Large Scale Precipitation Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name of the large scale precipitation parametrization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereLargeScalePrecipitationPrecipitatingHydrometeors">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Large Scale Precipitation Precipitating Hydrometeors</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precipitating hydrometeors in the large scale precipitation scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors"/>
+  </owl:ObjectProperty>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_liquid_rain">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid rain</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_hail">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hail</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_graupel">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">graupel</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_cats__AND__dogs">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cats &amp; dogs</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors rdf:ID="AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereLargeScalePrecipitationPrecipitatingHydrometeors>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereMicrophysicsSchemeNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Microphysics Scheme Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name of the microphysics parametrization scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereMicrophysicsProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereMicrophysicsProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Microphysics Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the microphysics processes that are taken into account in the microphysics scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereMicrophysicsProcesses"/>
+  </owl:ObjectProperty>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_mixed_phase">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed phase</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_cloud_droplets">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud droplets</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_cloud_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloud ice</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_ice_nucleation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice nucleation</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_water_vapour_deposition">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water vapour deposition</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_effect_of_raindrops">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect of raindrops</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_effect_of_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect of snow</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_effect_of_graupel">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect of graupel</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <AtmosphereMicrophysicsProcesses rdf:ID="AtmosphereMicrophysicsProcesses_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereMicrophysicsProcesses>
+  <owl:Class rdf:ID="AtmosphereCloudSchemeSeparatedCloudTreatment"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSchemeSeparatedCloudTreatment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Separated Cloud Treatment</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Different cloud schemes for the different types of clouds (convective, stratiform and bondary layer clouds).</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSchemeSeparatedCloudTreatment"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSchemeSeparatedCloudTreatment rdf:ID="AtmosphereCloudSchemeSeparatedCloudTreatment_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphereCloudSchemeSeparatedCloudTreatment>
+  <AtmosphereCloudSchemeSeparatedCloudTreatment rdf:ID="AtmosphereCloudSchemeSeparatedCloudTreatment_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphereCloudSchemeSeparatedCloudTreatment>
+  <owl:Class rdf:ID="AtmosphereCloudSchemeCloudOverlap"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSchemeCloudOverlap">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Cloud Overlap</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method for taking into account overlapping of cloud layers.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSchemeCloudOverlap"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSchemeCloudOverlap rdf:ID="AtmosphereCloudSchemeCloudOverlap_random">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">random</rdfs:label>
+  </AtmosphereCloudSchemeCloudOverlap>
+  <AtmosphereCloudSchemeCloudOverlap rdf:ID="AtmosphereCloudSchemeCloudOverlap_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereCloudSchemeCloudOverlap>
+  <AtmosphereCloudSchemeCloudOverlap rdf:ID="AtmosphereCloudSchemeCloudOverlap_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSchemeCloudOverlap>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSchemeProcessesValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Processes</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud processes included in the cloud scheme (e.g. entrainment, detrainment, bulk cloud, etc.).</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSchemeSubGridScaleWaterDistributionType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Sub Grid Scale Water Distribution Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach used for cloud water content and fractional cloud cover.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSchemeSubGridScaleWaterDistributionType"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionType rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionType_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionType>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionType rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionType_diagnostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionType>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionType rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionType>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSchemeSubGridScaleWaterDistributionFunctionNameValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Sub Grid Scale Water Distribution Function Name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commonly used name of the probability density function (PDF) representing distribution of water vapor within a grid box.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSchemeSubGridScaleWaterDistributionFunctionOrderValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Cloud Scheme Sub Grid Scale Water Distribution Function Order</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Order of the function (PDF) used to represent subgrid scale water vapor distribution.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Scheme Sub Grid Scale Water Distribution Coupling With Convection</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud formation coupled with convection. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection_coupled_with_deep">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coupled with deep</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection_coupled_with_shallow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coupled with shallow</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection_coupled_with_deep_and_shallow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coupled with deep and shallow</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection_not_coupled_with_convection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not coupled with convection</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection>
+  <AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection rdf:ID="AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSchemeSubGridScaleWaterDistributionCouplingWithConvection>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorCOSPRunConfiguration"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorCOSPRunConfiguration">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator COSP Run Configuration</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method used to run the CFMIP Observational Simulator Package.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorCOSPRunConfiguration"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorCOSPRunConfiguration rdf:ID="AtmosphereCloudSimulatorCOSPRunConfiguration_inline">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inline</rdfs:label>
+  </AtmosphereCloudSimulatorCOSPRunConfiguration>
+  <AtmosphereCloudSimulatorCOSPRunConfiguration rdf:ID="AtmosphereCloudSimulatorCOSPRunConfiguration_offline">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">offline</rdfs:label>
+  </AtmosphereCloudSimulatorCOSPRunConfiguration>
+  <AtmosphereCloudSimulatorCOSPRunConfiguration rdf:ID="AtmosphereCloudSimulatorCOSPRunConfiguration_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereCloudSimulatorCOSPRunConfiguration>
+  <AtmosphereCloudSimulatorCOSPRunConfiguration rdf:ID="AtmosphereCloudSimulatorCOSPRunConfiguration_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorCOSPRunConfiguration>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSimulatorCOSPNumberOfGridpointsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Cloud Simulator COSP Number Of Gridpoints</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of gridpoints used. </rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSimulatorCOSPNumberOfColumnsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Cloud Simulator COSP Number Of Columns</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of subcolumns used. </rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSimulatorCOSPNumberOfLevelsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Cloud Simulator COSP Number Of Levels</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Number of model levels used. </rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAtmosphereCloudSimulatorInputsRadarRadarFrequencyValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Atmosphere Cloud Simulator Inputs Radar Radar Frequency</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">CloudSat radar frequency.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorInputsRadarRadarType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorInputsRadarRadarType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator Inputs Radar Radar Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of radar - surface or spaceborne?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorInputsRadarRadarType"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorInputsRadarRadarType rdf:ID="AtmosphereCloudSimulatorInputsRadarRadarType_surface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarRadarType>
+  <AtmosphereCloudSimulatorInputsRadarRadarType rdf:ID="AtmosphereCloudSimulatorInputsRadarRadarType_spaceborne">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spaceborne</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarRadarType>
+  <AtmosphereCloudSimulatorInputsRadarRadarType rdf:ID="AtmosphereCloudSimulatorInputsRadarRadarType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarRadarType>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorInputsRadarUseGasAbsorption"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorInputsRadarUseGasAbsorption">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator Inputs Radar Use Gas Absorption</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Include gaseous absorption?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorInputsRadarUseGasAbsorption"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorInputsRadarUseGasAbsorption rdf:ID="AtmosphereCloudSimulatorInputsRadarUseGasAbsorption_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarUseGasAbsorption>
+  <AtmosphereCloudSimulatorInputsRadarUseGasAbsorption rdf:ID="AtmosphereCloudSimulatorInputsRadarUseGasAbsorption_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarUseGasAbsorption>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorInputsRadarUseEffectiveRadius">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator Inputs Radar Use Effective Radius</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is effective radius used by the radar simulator?</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius rdf:ID="AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius>
+  <AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius rdf:ID="AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </AtmosphereCloudSimulatorInputsRadarUseEffectiveRadius>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorInputsLidarLidarIceType"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorInputsLidarLidarIceType">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator Inputs Lidar Lidar Ice Type</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ice particle shape in lidar calculations.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorInputsLidarLidarIceType"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorInputsLidarLidarIceType rdf:ID="AtmosphereCloudSimulatorInputsLidarLidarIceType_Ice_spheres">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ice spheres</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarLidarIceType>
+  <AtmosphereCloudSimulatorInputsLidarLidarIceType rdf:ID="AtmosphereCloudSimulatorInputsLidarLidarIceType_Ice_non-spherical">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ice non-spherical</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarLidarIceType>
+  <AtmosphereCloudSimulatorInputsLidarLidarIceType rdf:ID="AtmosphereCloudSimulatorInputsLidarLidarIceType_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarLidarIceType>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorInputsLidarOverlap"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorInputsLidarOverlap">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator Inputs Lidar Overlap</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overlap type.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorInputsLidarOverlap"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorInputsLidarOverlap rdf:ID="AtmosphereCloudSimulatorInputsLidarOverlap_max">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarOverlap>
+  <AtmosphereCloudSimulatorInputsLidarOverlap rdf:ID="AtmosphereCloudSimulatorInputsLidarOverlap_random">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">random</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarOverlap>
+  <AtmosphereCloudSimulatorInputsLidarOverlap rdf:ID="AtmosphereCloudSimulatorInputsLidarOverlap_max__SLASH__random">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max / random</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarOverlap>
+  <AtmosphereCloudSimulatorInputsLidarOverlap rdf:ID="AtmosphereCloudSimulatorInputsLidarOverlap_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorInputsLidarOverlap>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorISSCPTopHeight"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorISSCPTopHeight">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator ISSCP Top Height</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud top height management. e.g. adjusted using both a computed infrared brightness temperature and visible optical depth to adjust cloud top pressure. </rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorISSCPTopHeight"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorISSCPTopHeight rdf:ID="AtmosphereCloudSimulatorISSCPTopHeight_no_adjustment">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no adjustment</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeight>
+  <AtmosphereCloudSimulatorISSCPTopHeight rdf:ID="AtmosphereCloudSimulatorISSCPTopHeight_IR_brightness">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IR brightness</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeight>
+  <AtmosphereCloudSimulatorISSCPTopHeight rdf:ID="AtmosphereCloudSimulatorISSCPTopHeight_IR_brightness_and_visible_optical_depth">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IR brightness and visible optical depth</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeight>
+  <AtmosphereCloudSimulatorISSCPTopHeight rdf:ID="AtmosphereCloudSimulatorISSCPTopHeight_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeight>
+  <owl:Class rdf:ID="AtmosphereCloudSimulatorISSCPTopHeightDirection"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereCloudSimulatorISSCPTopHeightDirection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Cloud Simulator ISSCP Top Height Direction</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Direction for finding the radiance determined cloud-top pressure.  
+Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereCloudSimulatorISSCPTopHeightDirection"/>
+  </owl:ObjectProperty>
+  <AtmosphereCloudSimulatorISSCPTopHeightDirection rdf:ID="AtmosphereCloudSimulatorISSCPTopHeightDirection_lowest_altitude_level">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowest altitude level</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeightDirection>
+  <AtmosphereCloudSimulatorISSCPTopHeightDirection rdf:ID="AtmosphereCloudSimulatorISSCPTopHeightDirection_highest_altitude_level">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">highest altitude level</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeightDirection>
+  <AtmosphereCloudSimulatorISSCPTopHeightDirection rdf:ID="AtmosphereCloudSimulatorISSCPTopHeightDirection_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereCloudSimulatorISSCPTopHeightDirection>
+  <owl:Class rdf:ID="AtmosphereSpongeLayer"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereSpongeLayer">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Sponge Layer</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sponge layer in the upper layers in order to avoid gravitywaves reflection at top.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereSpongeLayer"/>
+  </owl:ObjectProperty>
+  <AtmosphereSpongeLayer rdf:ID="AtmosphereSpongeLayer_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereSpongeLayer>
+  <AtmosphereSpongeLayer rdf:ID="AtmosphereSpongeLayer_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereSpongeLayer>
+  <owl:Class rdf:ID="AtmosphereBackground"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereBackground">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Background</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background distribution of waves (???).</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereBackground"/>
+  </owl:ObjectProperty>
+  <AtmosphereBackground rdf:ID="AtmosphereBackground_none">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</rdfs:label>
+  </AtmosphereBackground>
+  <AtmosphereBackground rdf:ID="AtmosphereBackground_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereBackground>
+  <owl:Class rdf:ID="AtmosphereSubGridScaleOrography"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereSubGridScaleOrography">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Sub Grid Scale Orography</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subgrid scale orography effects taken into account.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereSubGridScaleOrography"/>
+  </owl:ObjectProperty>
+  <AtmosphereSubGridScaleOrography rdf:ID="AtmosphereSubGridScaleOrography_effect_on_drag">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect on drag</rdfs:label>
+  </AtmosphereSubGridScaleOrography>
+  <AtmosphereSubGridScaleOrography rdf:ID="AtmosphereSubGridScaleOrography_effect_on_lifting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect on lifting</rdfs:label>
+  </AtmosphereSubGridScaleOrography>
+  <AtmosphereSubGridScaleOrography rdf:ID="AtmosphereSubGridScaleOrography_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereSubGridScaleOrography>
+  <owl:Class rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographicGravityWavesSourceMechanisms">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orographic Gravity Waves Source Mechanisms</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical mechanisms generating orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographicGravityWavesSourceMechanisms"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms_linear_mountain_waves">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear mountain waves</rdfs:label>
+  </AtmosphereOrographicGravityWavesSourceMechanisms>
+  <AtmosphereOrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms_hydraulic_jump">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydraulic jump</rdfs:label>
+  </AtmosphereOrographicGravityWavesSourceMechanisms>
+  <AtmosphereOrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms_envelope_orography">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">envelope orography</rdfs:label>
+  </AtmosphereOrographicGravityWavesSourceMechanisms>
+  <AtmosphereOrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms_statistical_sub-grid_scale_variance">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical sub-grid scale variance</rdfs:label>
+  </AtmosphereOrographicGravityWavesSourceMechanisms>
+  <AtmosphereOrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereOrographicGravityWavesSourceMechanisms_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOrographicGravityWavesSourceMechanisms>
+  <owl:Class rdf:ID="AtmosphereOrographicGravityWavesCalculationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographicGravityWavesCalculationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orographic Gravity Waves Calculation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculation method for orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographicGravityWavesCalculationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographicGravityWavesCalculationMethod rdf:ID="AtmosphereOrographicGravityWavesCalculationMethod_non-linear_calculation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear calculation</rdfs:label>
+  </AtmosphereOrographicGravityWavesCalculationMethod>
+  <AtmosphereOrographicGravityWavesCalculationMethod rdf:ID="AtmosphereOrographicGravityWavesCalculationMethod_more_than_two_cardinal_directions">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more than two cardinal directions</rdfs:label>
+  </AtmosphereOrographicGravityWavesCalculationMethod>
+  <AtmosphereOrographicGravityWavesCalculationMethod rdf:ID="AtmosphereOrographicGravityWavesCalculationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOrographicGravityWavesCalculationMethod>
+  <owl:Class rdf:ID="AtmosphereOrographicGravityWavesPropagationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographicGravityWavesPropagationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orographic Gravity Waves Propagation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of propagation scheme for orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographicGravityWavesPropagationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographicGravityWavesPropagationScheme rdf:ID="AtmosphereOrographicGravityWavesPropagationScheme_linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear theory</rdfs:label>
+  </AtmosphereOrographicGravityWavesPropagationScheme>
+  <AtmosphereOrographicGravityWavesPropagationScheme rdf:ID="AtmosphereOrographicGravityWavesPropagationScheme_non-linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear theory</rdfs:label>
+  </AtmosphereOrographicGravityWavesPropagationScheme>
+  <AtmosphereOrographicGravityWavesPropagationScheme rdf:ID="AtmosphereOrographicGravityWavesPropagationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOrographicGravityWavesPropagationScheme>
+  <owl:Class rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereOrographicGravityWavesDissipationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Orographic Gravity Waves Dissipation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of dissipation scheme for orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereOrographicGravityWavesDissipationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereOrographicGravityWavesDissipationScheme rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme_total_wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total wave</rdfs:label>
+  </AtmosphereOrographicGravityWavesDissipationScheme>
+  <AtmosphereOrographicGravityWavesDissipationScheme rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme_single_wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single wave</rdfs:label>
+  </AtmosphereOrographicGravityWavesDissipationScheme>
+  <AtmosphereOrographicGravityWavesDissipationScheme rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme_spectral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral</rdfs:label>
+  </AtmosphereOrographicGravityWavesDissipationScheme>
+  <AtmosphereOrographicGravityWavesDissipationScheme rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme_linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear</rdfs:label>
+  </AtmosphereOrographicGravityWavesDissipationScheme>
+  <AtmosphereOrographicGravityWavesDissipationScheme rdf:ID="AtmosphereOrographicGravityWavesDissipationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereOrographicGravityWavesDissipationScheme>
+  <owl:Class rdf:ID="AtmosphereConvectiveGravityWavesPropagationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereConvectiveGravityWavesPropagationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Convective Gravity Waves Propagation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of propagation scheme for convective gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereConvectiveGravityWavesPropagationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereConvectiveGravityWavesPropagationScheme rdf:ID="AtmosphereConvectiveGravityWavesPropagationScheme_linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear theory</rdfs:label>
+  </AtmosphereConvectiveGravityWavesPropagationScheme>
+  <AtmosphereConvectiveGravityWavesPropagationScheme rdf:ID="AtmosphereConvectiveGravityWavesPropagationScheme_non-linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear theory</rdfs:label>
+  </AtmosphereConvectiveGravityWavesPropagationScheme>
+  <AtmosphereConvectiveGravityWavesPropagationScheme rdf:ID="AtmosphereConvectiveGravityWavesPropagationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereConvectiveGravityWavesPropagationScheme>
+  <owl:Class rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereConvectiveGravityWavesDissipationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Convective Gravity Waves Dissipation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of dissipation scheme for convective gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereConvectiveGravityWavesDissipationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereConvectiveGravityWavesDissipationScheme rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme_total_Wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total Wave</rdfs:label>
+  </AtmosphereConvectiveGravityWavesDissipationScheme>
+  <AtmosphereConvectiveGravityWavesDissipationScheme rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme_single_wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single wave</rdfs:label>
+  </AtmosphereConvectiveGravityWavesDissipationScheme>
+  <AtmosphereConvectiveGravityWavesDissipationScheme rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme_spectral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral</rdfs:label>
+  </AtmosphereConvectiveGravityWavesDissipationScheme>
+  <AtmosphereConvectiveGravityWavesDissipationScheme rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme_linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear</rdfs:label>
+  </AtmosphereConvectiveGravityWavesDissipationScheme>
+  <AtmosphereConvectiveGravityWavesDissipationScheme rdf:ID="AtmosphereConvectiveGravityWavesDissipationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereConvectiveGravityWavesDissipationScheme>
+  <owl:Class rdf:ID="AtmosphereNon-OrographicGravityWavesSourceMechanisms"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereNon-OrographicGravityWavesSourceMechanisms">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Non-Orographic Gravity Waves Source Mechanisms</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical mechanisms generating non-orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereNon-OrographicGravityWavesSourceMechanisms"/>
+  </owl:ObjectProperty>
+  <AtmosphereNon-OrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereNon-OrographicGravityWavesSourceMechanisms_convection">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convection</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesSourceMechanisms>
+  <AtmosphereNon-OrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereNon-OrographicGravityWavesSourceMechanisms_precipitation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">precipitation</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesSourceMechanisms>
+  <AtmosphereNon-OrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereNon-OrographicGravityWavesSourceMechanisms_background_spectrum">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">background spectrum</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesSourceMechanisms>
+  <AtmosphereNon-OrographicGravityWavesSourceMechanisms rdf:ID="AtmosphereNon-OrographicGravityWavesSourceMechanisms_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesSourceMechanisms>
+  <owl:Class rdf:ID="AtmosphereNon-OrographicGravityWavesCalculationMethod"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereNon-OrographicGravityWavesCalculationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Non-Orographic Gravity Waves Calculation Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculation method for non-orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereNon-OrographicGravityWavesCalculationMethod"/>
+  </owl:ObjectProperty>
+  <AtmosphereNon-OrographicGravityWavesCalculationMethod rdf:ID="AtmosphereNon-OrographicGravityWavesCalculationMethod_spatially_dependent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatially dependent</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesCalculationMethod>
+  <AtmosphereNon-OrographicGravityWavesCalculationMethod rdf:ID="AtmosphereNon-OrographicGravityWavesCalculationMethod_temporally_dependent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temporally dependent</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesCalculationMethod>
+  <AtmosphereNon-OrographicGravityWavesCalculationMethod rdf:ID="AtmosphereNon-OrographicGravityWavesCalculationMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesCalculationMethod>
+  <owl:Class rdf:ID="AtmosphereNon-OrographicGravityWavesPropagationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereNon-OrographicGravityWavesPropagationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Non-Orographic Gravity Waves Propagation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of propagation scheme for non-orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereNon-OrographicGravityWavesPropagationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereNon-OrographicGravityWavesPropagationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesPropagationScheme_linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear theory</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesPropagationScheme>
+  <AtmosphereNon-OrographicGravityWavesPropagationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesPropagationScheme_non-linear_theory">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear theory</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesPropagationScheme>
+  <AtmosphereNon-OrographicGravityWavesPropagationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesPropagationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesPropagationScheme>
+  <owl:Class rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme"/>
+  <owl:ObjectProperty rdf:ID="hasAtmosphereNon-OrographicGravityWavesDissipationScheme">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Non-Orographic Gravity Waves Dissipation Scheme</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of dissipation scheme for non-orographic gravity waves.</rdfs:comment>
+    <rdfs:range rdf:resource="#AtmosphereNon-OrographicGravityWavesDissipationScheme"/>
+  </owl:ObjectProperty>
+  <AtmosphereNon-OrographicGravityWavesDissipationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme_total_wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total wave</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesDissipationScheme>
+  <AtmosphereNon-OrographicGravityWavesDissipationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme_single_wave">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single wave</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesDissipationScheme>
+  <AtmosphereNon-OrographicGravityWavesDissipationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme_spectral">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesDissipationScheme>
+  <AtmosphereNon-OrographicGravityWavesDissipationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme_linear">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesDissipationScheme>
+  <AtmosphereNon-OrographicGravityWavesDissipationScheme rdf:ID="AtmosphereNon-OrographicGravityWavesDissipationScheme_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </AtmosphereNon-OrographicGravityWavesDissipationScheme>
+</rdf:RDF>

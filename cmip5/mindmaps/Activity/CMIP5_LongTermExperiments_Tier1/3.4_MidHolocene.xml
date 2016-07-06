@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        3.4::MidHolocene
+    </numericalActivityName>
+    <numericalActivityDescription>
+        MidHolocene
+    </numericalActivityDescription>
+    <Why>
+        This is the Mid Holocene 6 kyr ago experiment
+    </Why>
+    <numericalExperiment>
+        <control>
+            False
+        </control>
+        <CalendarType>
+            <PerpetualPeriod>
+                6 kyr ago
+            </PerpetualPeriod>
+        </CalendarType>
+        <requiredDuration>
+            <ClosedDateRange>
+                Minimum of 100 years after spin up period
+            </ClosedDateRange>
+        </requiredDuration>
+        <numericalRequirement xsi:type="InitialCondition">
+                <description>
+                    A description of initial condition for the control run.
+                    <!--  CP doesn't know whether there is a formal way of describing 
+                        inital conditions other than naming the particular experiment 
+                        / simulation it was spawned from. -->
+                </description>
+                <id xsi:type="Identifier">3.4.ic</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="InitialCondition">
+                <description>Prescribed atmospheric concentrations of well mixed gases - including [CO2]</description>
+                <id xsi:type="Identifier">3.4.bc.wmg </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="InitialCondition">
+				<description>Prescribed orbital parameters : Excentricity, Equinoxe, Inclinaison</description>
+				<id xsi:type="Identifier">3.4.bc.ob></id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="InitialCondition">
+				<description>Prescribed solar forcing</description>
+				<id xsi:type="Identifier">3.4.bc.sf></id>
+        </numericalRequirement>
+    </numericalExperiment>   
+</Experiment>

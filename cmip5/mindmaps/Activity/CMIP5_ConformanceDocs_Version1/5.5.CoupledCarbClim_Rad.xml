@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numericalExperiment documentVersion="1" control="false" xmlns="http://www.metaforclimate.eu/cim/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 Z:\CIM\XSDs\dev0p3\activity.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
+
+	<!-- Notes from document:
+
+	Experiment to further understanding of carbon/climate feedback 
+
+	This simulation is forced with prescribed atmospheric CO2 concentration. There are two options, as in expt. 5.4, but this time only the radiation code “sees” the rising atmospheric CO2 concentration (and under option 2 forcing should include any other factors active in expts. 3.2 and 4.1). Forced in this way, the carbon cycle (which “sees” the 3.1 control atmospheric CO2 concentration) responds to climate change alone.
+
+	-->
+
+	<rationale> To explore the degree to which future climate states depend on the initial climate state (from 'A Summary of the CMIP5 Experiment Design' by Karl Taylor et al. 2008)</rationale>
+	<why/>
+	
+	<!-- Initial Conditions -->
+    <numericalRequirement xsi:type="InitialCondition">
+        <description> All ModelComponents restart from 3.1::Control Year/Month/Day to be specify.</description>
+        <id xsi:type="Identifier"> 5.5.ic</id>
+    </numericalRequirement>
+    
+    <!-- Boundary Conditions -->
+	<numericalRequirement xsi:type="BoundaryCondition">
+	   <description>
+		   Impose 1%/yr increase in CO2 which only the radiation scheme should 'see'. 
+	   </description>
+		<id xsi:type="Identifier">5.5.bc.CO2_choice1</id>
+	</numericalRequirement>
+	<numericalRequirement xsi:type="BoundaryCondition">
+	   <description>
+		   (a) Impose evolving concentrations of CO2 (from observations) for years equivalent to Historical run 3.2, and (b) Impose CO2 
+		   concentrations consistant with RCP4.5, both of which should only the radiation scheme should 'see'. 
+	   </description>
+		<id xsi:type="Identifier">5.5.bc.CO2_choice2</id>
+	</numericalRequirement>
+    
+    <shortName>
+		CMIP5_NumReq_5.5
+	</shortName>
+    <longName> 
+		CMIP5 Tier 2 experiment 5.5 - Coupled carbon climate - radiation sensitive 
+	</longName>
+     
+   <calendar>
+		<daily-360>
+			<range>
+				<closedDateRange></closedDateRange>
+			</range>
+		</daily-360>
+	</calendar>
+    <requiredDuration xsi:type="ClosedDateRange">
+		<!-- Idealised run so dates given here are only dummy values -->
+		<startDate> 1850-01-01T00:00:00Z</startDate>
+		<endDate> 2006-01-01T00:00:00Z</endDate>
+	</requiredDuration>
+    <author>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>
+					Gerard Devine
+				</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>
+					NCAS-CMS, University of Reading
+				</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>
+									g.m.devine@reading.ac.uk
+								</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeList="originator"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</author>
+    <documentID xsi:type="Identifier">
+    </documentID>
+    <creationDate>
+		2009-06-26T12:34:00Z
+	</creationDate>   
+</numericalExperiment>

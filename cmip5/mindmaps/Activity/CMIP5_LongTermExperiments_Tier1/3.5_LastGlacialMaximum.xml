@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment>
+    <numericalActivityName>
+        3.5::LastGlacialMaximum
+    </numericalActivityName>
+    <numericalActivityDescription>
+        Last Glacial Maximum
+    </numericalActivityDescription>
+    <Why>
+        This is the Last Glacial Maximum 21 kyr ago experiment
+    </Why>
+    <numericalExperiment>
+        <CalendarType>
+            <PerpetualPeriod>
+                21 kyr ago
+            </PerpetualPeriod>
+        </CalendarType>
+        <control>
+            False
+        </control>
+        <requiredDuration>
+            <ClosedDateRange>
+                Minimum of 100 years after spin up period
+            </ClosedDateRange>
+        </requiredDuration>
+        <numericalRequirement  xsi:type="InitialCondition">
+                <description>
+                    A description of initial condition for the control run.
+                    <!--  CP doesn't know whether there is a formal way of describing 
+                        inital conditions other than naming the particular experiment 
+                        / simulation it was spawned from. -->
+                </description>
+                <id xsi:type="Identifier">3.5.ic</id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+                <description>Prescribed atmospheric concentrations of well mixed gases - including [CO2]</description>
+                <id xsi:type="Identifier">3.5.bc.wmg </id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed orbital parameters : Excentricity, Equinoxe, Inclinaison</description>
+				<id xsi:type="Identifier">3.5.bc.ob></id>
+        </numericalRequirement>
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed ice sheets</description>
+				<id xsi:type="Identifier">3.5.bc.is></id>
+        </numericalRequirement> 
+        <numericalRequirement xsi:type="BoundaryCondition">
+				<description>Prescribed solar forcing</description>
+				<id xsi:type="Identifier">3.5.bc.sf></id>
+        </numericalRequirement> 
+    </numericalExperiment>   
+</Experiment>

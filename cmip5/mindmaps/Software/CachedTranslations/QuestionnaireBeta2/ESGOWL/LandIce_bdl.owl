@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:esg="http://dataportal.ucar.edu/schemas/esg.owl#" xmlns="http://dataportal.ucar.edu/schemas/metafor.owl#" xml:base="http://dataportal.ucar.edu/schemas/cmip5.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/esg_data.owl"/>
+    <owl:imports rdf:resource="http://dataportal.ucar.edu/schemas/grid.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="LandIceCouplingIceSheet-IceShelves"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceCouplingIceSheet-IceShelves">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Coupling Ice Sheet-Ice Shelves</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method by which ice sheets are coupled to ice shelves</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceCouplingIceSheet-IceShelves"/>
+  </owl:ObjectProperty>
+  <LandIceCouplingIceSheet-IceShelves rdf:ID="LandIceCouplingIceSheet-IceShelves_grounding_line_interactive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grounding line interactive</rdfs:label>
+  </LandIceCouplingIceSheet-IceShelves>
+  <LandIceCouplingIceSheet-IceShelves rdf:ID="LandIceCouplingIceSheet-IceShelves_grounding_line_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grounding line prescribed</rdfs:label>
+  </LandIceCouplingIceSheet-IceShelves>
+  <LandIceCouplingIceSheet-IceShelves rdf:ID="LandIceCouplingIceSheet-IceShelves_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceCouplingIceSheet-IceShelves>
+  <owl:Class rdf:ID="LandIceGroundingLineMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceGroundingLineMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Grounding Line Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specify the technique used for modelling the grounding line </rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceGroundingLineMethod"/>
+  </owl:ObjectProperty>
+  <LandIceGroundingLineMethod rdf:ID="LandIceGroundingLineMethod_flux_prescribed__LPAREN_Schoof_RPAREN_">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flux prescribed (Schoof)</rdfs:label>
+  </LandIceGroundingLineMethod>
+  <LandIceGroundingLineMethod rdf:ID="LandIceGroundingLineMethod_fixed_grid_size">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixed grid size</rdfs:label>
+  </LandIceGroundingLineMethod>
+  <LandIceGroundingLineMethod rdf:ID="LandIceGroundingLineMethod_moving_grid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moving grid</rdfs:label>
+  </LandIceGroundingLineMethod>
+  <owl:Class rdf:ID="LandIceLandIceAlbedo"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceLandIceAlbedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Land Ice Albedo</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name LandIceAlbedo required</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceLandIceAlbedo"/>
+  </owl:ObjectProperty>
+  <LandIceLandIceAlbedo rdf:ID="LandIceLandIceAlbedo_prognostic">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic</rdfs:label>
+  </LandIceLandIceAlbedo>
+  <LandIceLandIceAlbedo rdf:ID="LandIceLandIceAlbedo_prescribed">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescribed</rdfs:label>
+  </LandIceLandIceAlbedo>
+  <LandIceLandIceAlbedo rdf:ID="LandIceLandIceAlbedo_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceLandIceAlbedo>
+  <owl:Class rdf:ID="LandIceAlbedoFunctionOf"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceAlbedoFunctionOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Albedo Function Of</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">List those values that land ice albedo is a function of</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceAlbedoFunctionOf"/>
+  </owl:ObjectProperty>
+  <LandIceAlbedoFunctionOf rdf:ID="LandIceAlbedoFunctionOf_ice_age">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice age</rdfs:label>
+  </LandIceAlbedoFunctionOf>
+  <LandIceAlbedoFunctionOf rdf:ID="LandIceAlbedoFunctionOf_ice_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice density</rdfs:label>
+  </LandIceAlbedoFunctionOf>
+  <owl:Class rdf:ID="LandIceGlaciersDynamicArealExtent"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceGlaciersDynamicArealExtent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Glaciers Dynamic Areal Extent</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does the model include a dynamic glacier extent? </rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceGlaciersDynamicArealExtent"/>
+  </owl:ObjectProperty>
+  <LandIceGlaciersDynamicArealExtent rdf:ID="LandIceGlaciersDynamicArealExtent_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandIceGlaciersDynamicArealExtent>
+  <LandIceGlaciersDynamicArealExtent rdf:ID="LandIceGlaciersDynamicArealExtent_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandIceGlaciersDynamicArealExtent>
+  <owl:Class rdf:ID="LandIceGlaciersMassBalanceAblationCalculation"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceGlaciersMassBalanceAblationCalculation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Glaciers Mass Balance Ablation Calculation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used to model glacier ablation </rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceGlaciersMassBalanceAblationCalculation"/>
+  </owl:ObjectProperty>
+  <LandIceGlaciersMassBalanceAblationCalculation rdf:ID="LandIceGlaciersMassBalanceAblationCalculation_Energy_balance_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy balance model</rdfs:label>
+  </LandIceGlaciersMassBalanceAblationCalculation>
+  <LandIceGlaciersMassBalanceAblationCalculation rdf:ID="LandIceGlaciersMassBalanceAblationCalculation_PDD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDD</rdfs:label>
+  </LandIceGlaciersMassBalanceAblationCalculation>
+  <LandIceGlaciersMassBalanceAblationCalculation rdf:ID="LandIceGlaciersMassBalanceAblationCalculation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceGlaciersMassBalanceAblationCalculation>
+  <owl:DatatypeProperty rdf:ID="hasLandIceGlaciersMassBalanceDowscalingTechniqueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Glaciers Mass Balance Dowscaling Technique</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the atmospheric variables are used in the mass balance calculations.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceGlaciersSnowTreatmentMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceGlaciersSnowTreatmentMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Glaciers Snow Treatment Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is glacier snow treated in the same way as that in the land surface scheme?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceGlaciersSnowTreatmentMethod"/>
+  </owl:ObjectProperty>
+  <LandIceGlaciersSnowTreatmentMethod rdf:ID="LandIceGlaciersSnowTreatmentMethod_same_as_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Snow in LandSurface</rdfs:label>
+  </LandIceGlaciersSnowTreatmentMethod>
+  <LandIceGlaciersSnowTreatmentMethod rdf:ID="LandIceGlaciersSnowTreatmentMethod_different_from_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Snow in LandSurface</rdfs:label>
+  </LandIceGlaciersSnowTreatmentMethod>
+  <LandIceGlaciersSnowTreatmentMethod rdf:ID="LandIceGlaciersSnowTreatmentMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceGlaciersSnowTreatmentMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandIceGlaciersSnowTreatmentNumberOfSnowLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Glaciers Snow Treatment Number Of Snow Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many glacier snow layers does the model treat?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceGlaciersSnowTreatmentProperties"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceGlaciersSnowTreatmentProperties">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Glaciers Snow Treatment Properties</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of processes affecting snow on glaciers</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceGlaciersSnowTreatmentProperties"/>
+  </owl:ObjectProperty>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow albedo</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow density</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_water_equivalent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow water equivalent</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_heat_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow heat content</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow temperature</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_prognostic_snow_liquid_water_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prognostic snow liquid water content</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_snow_melting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow melting</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_snow_refreezing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow refreezing</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <LandIceGlaciersSnowTreatmentProperties rdf:ID="LandIceGlaciersSnowTreatmentProperties_blowing_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blowing snow</rdfs:label>
+  </LandIceGlaciersSnowTreatmentProperties>
+  <owl:Class rdf:ID="LandIceIceSheetMassBalanceAblationCalculation"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetMassBalanceAblationCalculation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Mass Balance Ablation Calculation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of scheme used to calculate ablation in the ice sheet mass balance</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetMassBalanceAblationCalculation"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetMassBalanceAblationCalculation rdf:ID="LandIceIceSheetMassBalanceAblationCalculation_Energy_balance_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy balance model</rdfs:label>
+  </LandIceIceSheetMassBalanceAblationCalculation>
+  <LandIceIceSheetMassBalanceAblationCalculation rdf:ID="LandIceIceSheetMassBalanceAblationCalculation_PDD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDD</rdfs:label>
+  </LandIceIceSheetMassBalanceAblationCalculation>
+  <LandIceIceSheetMassBalanceAblationCalculation rdf:ID="LandIceIceSheetMassBalanceAblationCalculation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceSheetMassBalanceAblationCalculation>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetMassBalanceDowscalingTechniqueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Mass Balance Dowscaling Technique</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the atmospheric variables are used in the mass balance calculations.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetDynamicsCouplingWithAtmosphereValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Coupling With Atmosphere</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coupling method between land ice sheet and atmosphere.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Model-Numerics Time Stepping Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping framework for land ice sheet scheme (same as that of land surface model or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod_use_LandSurface_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use LandSurface time step</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod>
+  <LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod_specific_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time step</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod>
+  <LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsTimeSteppingMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Sheet Dynamics Model-Numerics Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Timestep of the land ice sheet scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceSheetDynamicsModel-NumericsGridConfig"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsGridConfig">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Model-Numerics Grid Config</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the grid configuration for the land ice sheet compare to that used in the land surface scheme?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetDynamicsModel-NumericsGridConfig"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceSheetDynamicsModel-NumericsGridConfig_same_as_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as LandSurface</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsGridConfig>
+  <LandIceIceSheetDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceSheetDynamicsModel-NumericsGridConfig_specific">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsGridConfig>
+  <LandIceIceSheetDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceSheetDynamicsModel-NumericsGridConfig_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsGridConfig>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Sheet Dynamics Model-Numerics Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the land ice sheet model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Model-Numerics Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the horizontal grid used for land ice sheet.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceSheetDynamicsModel-NumericsApproximation"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsApproximation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Model-Numerics Approximation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approximation type used in modelling ice sheet dynamics</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetDynamicsModel-NumericsApproximation"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetDynamicsModel-NumericsApproximation rdf:ID="LandIceIceSheetDynamicsModel-NumericsApproximation_shallow_ice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shallow ice</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsApproximation>
+  <LandIceIceSheetDynamicsModel-NumericsApproximation rdf:ID="LandIceIceSheetDynamicsModel-NumericsApproximation_higher_order">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higher order</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsApproximation>
+  <LandIceIceSheetDynamicsModel-NumericsApproximation rdf:ID="LandIceIceSheetDynamicsModel-NumericsApproximation_full_stokes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full stokes</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsApproximation>
+  <LandIceIceSheetDynamicsModel-NumericsApproximation rdf:ID="LandIceIceSheetDynamicsModel-NumericsApproximation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsApproximation>
+  <owl:Class rdf:ID="LandIceIceSheetDynamicsModel-NumericsIceStreams"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetDynamicsModel-NumericsIceStreams">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Dynamics Model-Numerics Ice Streams</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are ice streams modelled within the land ice model?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetDynamicsModel-NumericsIceStreams"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetDynamicsModel-NumericsIceStreams rdf:ID="LandIceIceSheetDynamicsModel-NumericsIceStreams_yes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yes</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsIceStreams>
+  <LandIceIceSheetDynamicsModel-NumericsIceStreams rdf:ID="LandIceIceSheetDynamicsModel-NumericsIceStreams_no">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</rdfs:label>
+  </LandIceIceSheetDynamicsModel-NumericsIceStreams>
+  <owl:Class rdf:ID="LandIceIceSheetSnowTreatmentMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetSnowTreatmentMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Snow Treatment Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the treatment of land-ice snow compare with treatment in the land-surface model?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetSnowTreatmentMethod"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetSnowTreatmentMethod rdf:ID="LandIceIceSheetSnowTreatmentMethod_same_as_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Snow in LandSurface</rdfs:label>
+  </LandIceIceSheetSnowTreatmentMethod>
+  <LandIceIceSheetSnowTreatmentMethod rdf:ID="LandIceIceSheetSnowTreatmentMethod_different_from_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Snow in LandSurface</rdfs:label>
+  </LandIceIceSheetSnowTreatmentMethod>
+  <LandIceIceSheetSnowTreatmentMethod rdf:ID="LandIceIceSheetSnowTreatmentMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceSheetSnowTreatmentMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceSheetSnowTreatmentNumberOfSnowLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Sheet Snow Treatment Number Of Snow Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many snow layers are included in modelling land ice sheets?</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetSnowTreatmentListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Snow Treatment List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prognostic snow variables of the ice sheet scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetSnowTreatmentListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow albedo</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow density</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_water_equivalent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow water equivalent</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_heat_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow heat content</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow temperature</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceSheetSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceSheetSnowTreatmentListOfPrognosticVariables_snow_liquid_water_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow liquid water content</rdfs:label>
+  </LandIceIceSheetSnowTreatmentListOfPrognosticVariables>
+  <owl:Class rdf:ID="LandIceIceSheetSnowTreatmentProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceSheetSnowTreatmentProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Sheet Snow Treatment Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the properties of snow in the model's ice sheet scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceSheetSnowTreatmentProcesses"/>
+  </owl:ObjectProperty>
+  <LandIceIceSheetSnowTreatmentProcesses rdf:ID="LandIceIceSheetSnowTreatmentProcesses_snow_melting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow melting</rdfs:label>
+  </LandIceIceSheetSnowTreatmentProcesses>
+  <LandIceIceSheetSnowTreatmentProcesses rdf:ID="LandIceIceSheetSnowTreatmentProcesses_snow_refreezing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow refreezing</rdfs:label>
+  </LandIceIceSheetSnowTreatmentProcesses>
+  <LandIceIceSheetSnowTreatmentProcesses rdf:ID="LandIceIceSheetSnowTreatmentProcesses_blowing_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blowing snow</rdfs:label>
+  </LandIceIceSheetSnowTreatmentProcesses>
+  <owl:Class rdf:ID="LandIceIceShelvesAttributesBottom"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesAttributesBottom">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Attributes Bottom</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name Bottom required</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesAttributesBottom"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesAttributesBottom rdf:ID="LandIceIceShelvesAttributesBottom_basal_melting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal melting</rdfs:label>
+  </LandIceIceShelvesAttributesBottom>
+  <LandIceIceShelvesAttributesBottom rdf:ID="LandIceIceShelvesAttributesBottom_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesAttributesBottom>
+  <owl:Class rdf:ID="LandIceIceShelvesMassBalanceAblationCalculation"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesMassBalanceAblationCalculation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Mass Balance Ablation Calculation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of scheme used to model ablation in ice shelves </rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesMassBalanceAblationCalculation"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesMassBalanceAblationCalculation rdf:ID="LandIceIceShelvesMassBalanceAblationCalculation_Energy_balance_model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy balance model</rdfs:label>
+  </LandIceIceShelvesMassBalanceAblationCalculation>
+  <LandIceIceShelvesMassBalanceAblationCalculation rdf:ID="LandIceIceShelvesMassBalanceAblationCalculation_PDD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDD</rdfs:label>
+  </LandIceIceShelvesMassBalanceAblationCalculation>
+  <LandIceIceShelvesMassBalanceAblationCalculation rdf:ID="LandIceIceShelvesMassBalanceAblationCalculation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesMassBalanceAblationCalculation>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesMassBalanceDowscalingTechniqueValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Mass Balance Dowscaling Technique</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How the atmospheric variables are used in the mass balance calculations.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesDynamicsCouplingWithOceanValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Dynamics Coupling With Ocean</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coupling method between LandIceShelves and Ocean.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Dynamics Model-Numerics Time Stepping Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time stepping framework for land ice shelves scheme (same as that of land surface or ocean model or different?).</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod_use_Ocean_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use Ocean time step</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod>
+  <LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod_use_LandSurface_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use LandSurface time step</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod>
+  <LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod_specific_time_step">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific time step</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod>
+  <LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod rdf:ID="LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsTimeSteppingMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsTimeStepValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Shelves Dynamics Model-Numerics Time Step</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Timestep of the land ice shelves scheme.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceShelvesDynamicsModel-NumericsGridConfig"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsGridConfig">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Dynamics Model-Numerics Grid Config</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition of property name GridConfig required</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesDynamicsModel-NumericsGridConfig"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceShelvesDynamicsModel-NumericsGridConfig_same_as_Ocean">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Ocean</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsGridConfig>
+  <LandIceIceShelvesDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceShelvesDynamicsModel-NumericsGridConfig_same_as_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as LandSurface</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsGridConfig>
+  <LandIceIceShelvesDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceShelvesDynamicsModel-NumericsGridConfig_specific">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsGridConfig>
+  <LandIceIceShelvesDynamicsModel-NumericsGridConfig rdf:ID="LandIceIceShelvesDynamicsModel-NumericsGridConfig_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsGridConfig>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsMeanResolutionValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Shelves Dynamics Model-Numerics Mean Resolution</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Mean horizontal resolution of the land ice shelves model.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsGridCharacteristicsValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Dynamics Model-Numerics Grid Characteristics</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of the horizontal grid used for land ice shelves.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceShelvesDynamicsModel-NumericsApproximation"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesDynamicsModel-NumericsApproximation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Dynamics Model-Numerics Approximation</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical approximation used in modelling ice shelf dynamics</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesDynamicsModel-NumericsApproximation"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesDynamicsModel-NumericsApproximation rdf:ID="LandIceIceShelvesDynamicsModel-NumericsApproximation_shallow_shelf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shallow shelf</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsApproximation>
+  <LandIceIceShelvesDynamicsModel-NumericsApproximation rdf:ID="LandIceIceShelvesDynamicsModel-NumericsApproximation_full_stokes">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full stokes</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsApproximation>
+  <LandIceIceShelvesDynamicsModel-NumericsApproximation rdf:ID="LandIceIceShelvesDynamicsModel-NumericsApproximation_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesDynamicsModel-NumericsApproximation>
+  <owl:Class rdf:ID="LandIceIceShelvesSnowTreatmentMethod"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesSnowTreatmentMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Snow Treatment Method</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the treatment of snow on ice shelves compare to treatment of snow in the land surface model?</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesSnowTreatmentMethod"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesSnowTreatmentMethod rdf:ID="LandIceIceShelvesSnowTreatmentMethod_same_as_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same as Snow in LandSurface</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentMethod>
+  <LandIceIceShelvesSnowTreatmentMethod rdf:ID="LandIceIceShelvesSnowTreatmentMethod_different_from_Snow_in_LandSurface">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different from Snow in LandSurface</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentMethod>
+  <LandIceIceShelvesSnowTreatmentMethod rdf:ID="LandIceIceShelvesSnowTreatmentMethod_N_SLASH_A">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentMethod>
+  <owl:DatatypeProperty rdf:ID="hasLandIceIceShelvesSnowTreatmentNumberOfSnowLayersValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#float">Land Ice Ice Shelves Snow Treatment Number Of Snow Layers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float">How many snow layers are modelled in the ice shelf scheme</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesSnowTreatmentListOfPrognosticVariables">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Snow Treatment List Of Prognostic Variables</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prognostic snow variables of the ice shelf scheme.</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesSnowTreatmentListOfPrognosticVariables"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_albedo">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow albedo</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_density">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow density</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_water_equivalent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow water equivalent</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_heat_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow heat content</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_temperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow temperature</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <LandIceIceShelvesSnowTreatmentListOfPrognosticVariables rdf:ID="LandIceIceShelvesSnowTreatmentListOfPrognosticVariables_snow_liquid_water_content">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow liquid water content</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentListOfPrognosticVariables>
+  <owl:Class rdf:ID="LandIceIceShelvesSnowTreatmentProcesses"/>
+  <owl:ObjectProperty rdf:ID="hasLandIceIceShelvesSnowTreatmentProcesses">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Ice Ice Shelves Snow Treatment Processes</rdfs:label>
+    <rdfs:domain rdf:resource="http://dataportal.ucar.edu/schemas/esg.owl#ModelComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describe the properties of snow in the model's ice shelf scheme</rdfs:comment>
+    <rdfs:range rdf:resource="#LandIceIceShelvesSnowTreatmentProcesses"/>
+  </owl:ObjectProperty>
+  <LandIceIceShelvesSnowTreatmentProcesses rdf:ID="LandIceIceShelvesSnowTreatmentProcesses_snow_melting">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow melting</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentProcesses>
+  <LandIceIceShelvesSnowTreatmentProcesses rdf:ID="LandIceIceShelvesSnowTreatmentProcesses_snow_refreezing">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow refreezing</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentProcesses>
+  <LandIceIceShelvesSnowTreatmentProcesses rdf:ID="LandIceIceShelvesSnowTreatmentProcesses_blowing_snow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blowing snow</rdfs:label>
+  </LandIceIceShelvesSnowTreatmentProcesses>
+</rdf:RDF>

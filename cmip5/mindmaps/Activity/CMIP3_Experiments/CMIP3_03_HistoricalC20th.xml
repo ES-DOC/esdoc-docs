@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<numericalExperiment documentVersion="2" control="false"
+    xmlns="http://www.metaforclimate.eu/cim/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.metaforclimate.eu/cim/1.1 C:\Users\clp73\Desktop\Metafor\subversion\CIM1\branches\dev1.3\activity.xsd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:gco="http://www.isotc211.org/2005/gco">
+    
+    <rationale>Enable the subtraction of any residual drift in the control from all runs that will be compared to it.</rationale>
+    <shortName>03.20C3M</shortName>
+    <longName>Experiment03.HistoricalC20th</longName>
+    <description>20C3M: Climate of the 20th century experiment.</description>
+    <CalendarType>
+        <realCalendar>
+            <range>1850-2000</range>
+        </realCalendar>
+    </CalendarType>
+    <requiredDuration xsi:type="ClosedDateRange">
+        <startDate>1850-01-01T00:00:00Z</startDate>
+        <endDate>2001-01-01T00:00:00Z</endDate>
+        <lengthYears>150</lengthYears>
+    </requiredDuration> 
+    
+    <!-- Initial Conditions -->
+    <numericalRequirement xsi:type="InitialCondition">
+        <id xsi:type="Identifier">ic.3003</id>
+        <name xsi:type="Identifier">03.ic</name>
+        <description> Initial conditions for the historical 20th Century experiment are from a the pre-industrial control experiment.
+            Must initialise from a point early enough in the pre-industrial control experiment to ensure that the end of all the 
+            perturbed experiments branching from the end of this experimment end before the end of the pre-industrial control.</description>
+    </numericalRequirement>
+    
+    <!-- Boundary Conditions -->
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3007</id>
+        <name xsi:type="Identifier">03.bc.20C3MWMGas.natural.conc</name>
+        <description>Prescribed changing atmospheric concentrations of historical 20th century natural well mixed gases</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3008</id>
+        <name xsi:type="Identifier">03.bc.20C3MSLGas.natural.conc</name>
+        <description>Prescribed changing concentrations of historical 20th century natural short lived (reactive) gases</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3009</id>
+        <name xsi:type="Identifier">03.bc.20C3MWMGas.anthrop.conc</name>
+        <description>Prescribed changing atmospheric concentrations of historical 20th century anthropogenic well mixed gases</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3010</id>
+        <name xsi:type="Identifier">03.bc.20C3MSLGas.anthrop.conc</name>
+        <description>Prescribed changing concentrations of historical 20th century anthropogenic short lived (reactive) gases</description>
+    </numericalRequirement>
+    <numericalRequirement xsi:type="BoundaryCondition">
+        <id xsi:type="Identifier">bc.3011</id>
+        <name xsi:type="Identifier">03.bc.20C3MLandUse</name>
+        <description>Prescribed changing historical 20th century land use</description>
+    </numericalRequirement>
+    
+    <author>
+        <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+                <gco:CharacterString> Charlotte Pascoe </gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+                <gco:CharacterString> BADC, CEDA, STFC </gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:contactInfo>
+                <gmd:CI_Contact>
+                    <gmd:address>
+                        <gmd:CI_Address>
+                            <gmd:electronicMailAddress>
+                                <gco:CharacterString> charlotte.pascoe@stfc.ac.uk
+                                </gco:CharacterString>
+                            </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                    </gmd:address>
+                </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+                <gmd:CI_RoleCode
+                    codeListValue="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                    codeList="originator"/>
+            </gmd:role>
+        </gmd:CI_ResponsibleParty>
+    </author>
+    
+    <creationDate>2009-09-18T12:19:00Z</creationDate>
+    <documentID xsi:type="Identifier">CMIP3.03.20C3M</documentID>
+    
+</numericalExperiment>
