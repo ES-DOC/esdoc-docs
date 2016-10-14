@@ -1,6 +1,6 @@
 {
     "canonical_name": "faf-water", 
-    "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions.", 
+    "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
     "keywords": "FAFMIP, Tier 1, waterFAF, surface freshwater flux anomaly", 
     "long_name": "control plus perturbative surface flux of water into ocean", 
     "mip_era": "cmip6", 
@@ -12,17 +12,17 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1851 70yrs", 
-            "description": "Idealised temporal constraint, repeating 1850 for 70 years", 
+            "canonical_name": "1850-1919 70yrs", 
+            "description": "Historical, from 1850 to 1920.", 
             "isConformanceRequested": false, 
-            "keywords": "1850-1851, idealised, 70 years", 
-            "label": "1850-1851 70yrs", 
+            "keywords": "historical, 1850, 1919", 
+            "label": "1850-1919 70yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
-            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
-            "isConformanceRequested": true, 
+            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), created from the CMIP5 diagnostic of water flux into sea water (wfo).  The surface freshwater flux is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": false, 
             "keywords": "FAFMIP, 1pctCO2, freshwater flux, 2xCO2, at CO2 doubling", 
             "label": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
             "type": "forcing-constraint"
@@ -60,14 +60,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "4848f4dd-92b6-4a66-951c-6a19d8b0bc97", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=4848f4dd-92b6-4a66-951c-6a19d8b0bc97&version=latest&client=mohc"
+    "uid": "09fcf58d-3420-4f47-85a2-2902839a4f83", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=09fcf58d-3420-4f47-85a2-2902839a4f83&version=latest&client=mohc"
 }

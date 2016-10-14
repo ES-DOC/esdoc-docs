@@ -1,0 +1,112 @@
+{
+    "canonical_name": "dcppA-hindcast", 
+    "description": "A coordinated set of multi-member ensembles of retrospective forecasts (hindcasts) initialised each year from 1960 to the present (otherwise every second year). Prescribed CMIP6 historical values of atmospheric composition and/or emissions (and other conditions including volcanic aerosols).  Future forcing as the SSP2-4.5 scenario. Run each member for at least 5 years, extend the duration to 10 years with Tier-2 priority.  Additional ensemble members for each start date are requested with Tier-3 priority.", 
+    "keywords": "DCPP, Tier 1, Tier 2, Tier 3, hindcasts, forecasts, 1960, yearly start dates", 
+    "long_name": "hindcasts initialized from observations with historical forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "Promotion of the science and practice of decadal prediction. The provision of information potentially useful for the IPCC assessment reports on climate prediction and evolution. To provide hindcast/forecast information.", 
+    "related_experiments": [
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "10yrs", 
+            "description": "Run for 10 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "10 years", 
+            "label": "10yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "5yrs", 
+            "description": "Run for at least 5 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "5 years, minimum", 
+            "label": "5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Emissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ObservedInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "1960Annualx10", 
+            "description": "A multi-ensemble of 600 simulations with ten initialisations for each start date occuring every year from 1960 to the present.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, 1960, annual, start date ensemble", 
+            "label": "1960Annualx10", 
+            "type": "multi-ensemble"
+        }, 
+        {
+            "canonical_name": "1960Biennialx10", 
+            "description": "A multi-ensemble of 300 simulations with ten initialisations for each start date occuring every other year from 1960 to the present.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, 1960, biennial, start date ensemble", 
+            "label": "1960Biennialx10", 
+            "type": "multi-ensemble"
+        }
+    ], 
+    "uid": "6ca05b4b-d22a-4b4a-b5fc-06fbef30e731", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6ca05b4b-d22a-4b4a-b5fc-06fbef30e731&version=latest&client=mohc"
+}

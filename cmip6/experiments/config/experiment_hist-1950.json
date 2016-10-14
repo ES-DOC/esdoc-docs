@@ -6,6 +6,7 @@
     "mip_era": "cmip6", 
     "rationale": "The period contains several phases where the surface warming rate is lower, and the multi-model multi-resolution ensemble may give some insight into this.", 
     "related_experiments": [
+        "highresSST-present", 
         "historical"
     ], 
     "requirements": [
@@ -20,7 +21,7 @@
         {
             "canonical_name": "Historical WMGHG Concentrations", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -28,9 +29,25 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "standardModelResolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "standardModelResolution", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "DailyCoupling", 
+            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
+            "isConformanceRequested": false, 
+            "keywords": "Daily coupling or more", 
+            "label": "DailyCoupling", 
             "type": "forcing-constraint"
         }, 
         {
@@ -66,11 +83,19 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "1950ControlInitialisation", 
+            "description": "Initialisation is branched from the HighResMIP control-1950 simulation after spin-up.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, control, 1950, control-1950", 
+            "label": "1950ControlInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }, 
         {
@@ -88,24 +113,8 @@
             "keywords": "High resolution ocean, 0.25 degrees", 
             "label": "HighResOcean", 
             "type": "model-configuration"
-        }, 
-        {
-            "canonical_name": "standardModelResolution", 
-            "description": "standard model resolution", 
-            "isConformanceRequested": false, 
-            "keywords": "Standard Model Resolution", 
-            "label": "standardModelResolution", 
-            "type": "model-configuration"
-        }, 
-        {
-            "canonical_name": "DailyCoupling", 
-            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
-            "isConformanceRequested": false, 
-            "keywords": "Daily coupling or more", 
-            "label": "DailyCoupling", 
-            "type": "model-configuration"
         }
     ], 
-    "uid": "8be0dc26-8837-461c-879f-67039a7f37d2", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=8be0dc26-8837-461c-879f-67039a7f37d2&version=latest&client=mohc"
+    "uid": "7399e937-1032-43ef-84be-f6c5749fb9a6", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=7399e937-1032-43ef-84be-f6c5749fb9a6&version=latest&client=mohc"
 }

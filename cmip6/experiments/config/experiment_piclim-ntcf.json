@@ -1,6 +1,6 @@
 {
     "canonical_name": "piClim-NTCF", 
-    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations and 2014 NTCF emissions.", 
+    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases) and present day (2014) emissions of NTCF (near-term climate forcers). This is a timeslice experiment of 30 years total.", 
     "keywords": "AerChemMIP, Tier 1, piControl perturbation, 1850 WMGHG, 1850 SST, 2014 NTCF, Near Term Climate Forcers,", 
     "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 NTCF emissions", 
     "mip_era": "cmip6", 
@@ -19,35 +19,75 @@
             "type": "temporal-constraint"
         }, 
         {
+            "canonical_name": "1850 Non-Reactive WMGHG Concentrations", 
+            "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "1850 Non-Reactive WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Methane Concentration", 
+            "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, methane, concentrations", 
+            "label": "1850 Methane Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 N2O Concentration", 
+            "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
+            "label": "1850 N2O Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "description": "Impose pre-industrial (1850) concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "PIControlSST", 
             "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "pre-industrial control, SST, sea surface temperature", 
             "label": "PIControlSST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControlSIC", 
+            "canonical_name": "PIControl SIC", 
             "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControlSIC", 
+            "label": "PIControl SIC", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1850WMGHG", 
-            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations.", 
-            "isConformanceRequested": true, 
-            "keywords": "pre-industrial, 1850, WMGHG, concentrations", 
-            "label": "1850WMGHG", 
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial land-use forcing.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2014NTCF", 
-            "description": "Impose repeating 2014 Near Term Climate Forcers (NTCF) emissions.", 
+            "canonical_name": "Pre-Industrial Solar Forcing", 
+            "description": "Constant pre-Industrial solar forcing.", 
+            "isConformanceRequested": false, 
+            "keywords": "solar forcing, pre-industrial, 1850", 
+            "label": "Pre-Industrial Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014 NTCF Emissions", 
+            "description": "Impose 2014 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
             "isConformanceRequested": true, 
-            "keywords": "2014, Near Term Climate Forcers, NTCF, emissions", 
-            "label": "2014NTCF", 
+            "keywords": "present-day, 2014, NTCF, near term climate forcers", 
+            "label": "2014 NTCF Emissions", 
             "type": "forcing-constraint"
         }, 
         {
@@ -60,13 +100,13 @@
         }, 
         {
             "canonical_name": "AGCM-Chem Configuration", 
-            "description": "Use and Atmosphere model with chemistry", 
+            "description": "Use an Atmosphere model with chemistry", 
             "isConformanceRequested": false, 
             "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
             "label": "AGCM-Chem Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "707b899a-423d-4543-af7b-93128a24ae32", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=707b899a-423d-4543-af7b-93128a24ae32&version=latest&client=mohc"
+    "uid": "3f706ecc-e039-48c9-ae1b-63c6e529757b", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=3f706ecc-e039-48c9-ae1b-63c6e529757b&version=latest&client=mohc"
 }

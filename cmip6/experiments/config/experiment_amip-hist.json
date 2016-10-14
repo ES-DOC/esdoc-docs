@@ -1,6 +1,6 @@
 {
     "canonical_name": "amip-hist", 
-    "description": "Extended AMIP run that covers 1870-2014. \nAll natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included.\nAGCM resolution as CMIP6 Historical Simulation.\nThe HadISST data will be used.", 
+    "description": "Extended AMIP run that covers 1870-2014. \nAll natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included.\nAGCM resolution as CMIP6 Historical Simulation.\nThe HadISST data will be used.  Minimum number of integrations is 3, more realisations are encouraged.", 
     "keywords": "GMMIP, Tier 1, AMIP20C, extended AMIP", 
     "long_name": "extended AMIP", 
     "mip_era": "cmip6", 
@@ -23,7 +23,7 @@
         {
             "canonical_name": "HadISST", 
             "description": "Impose HadISST sea ice and sea surface temperature data.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "HadISST, Sea surface temperature, Sea ice, SST, SIC prescribed", 
             "label": "HadISST", 
             "type": "forcing-constraint"
@@ -31,7 +31,7 @@
         {
             "canonical_name": "Historical WMGHG Concentrations", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -39,15 +39,15 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Historical Stratospheric Aerosol", 
-            "description": "The stratospheric aerosol data set (SADS Version 2)", 
-            "isConformanceRequested": true, 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": false, 
             "keywords": "historical, stratospheric, aerosol", 
             "label": "Historical Stratospheric Aerosol", 
             "type": "forcing-constraint"
@@ -85,11 +85,11 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "MinimumOne", 
-            "description": "An ensemble of at least one simulation", 
+            "canonical_name": "ThreeMember", 
+            "description": "An ensemble of three simulations", 
             "isConformanceRequested": false, 
-            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
-            "label": "MinimumOne", 
+            "keywords": "three, 3, ensemble, runs, simulations", 
+            "label": "ThreeMember", 
             "type": "ensemble"
         }, 
         {
@@ -109,6 +109,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "91cb1bc0-b50b-495e-a169-d7157791d4da", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=91cb1bc0-b50b-495e-a169-d7157791d4da&version=latest&client=mohc"
+    "uid": "a8759d8e-b76a-4b8e-acca-84562ab67a2d", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a8759d8e-b76a-4b8e-acca-84562ab67a2d&version=latest&client=mohc"
 }

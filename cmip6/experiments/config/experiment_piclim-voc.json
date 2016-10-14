@@ -1,6 +1,6 @@
 {
     "canonical_name": "piClim-VOC", 
-    "description": "1850 time-slice simulation with 1850 SSTs, 1850 WMGHG concentrations and 2014 CO/VOC emissions.", 
+    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors, present day (2014) emissions of CO/VOC, all other emissions of tropospheric ozone precursors set to pre-industrial levels. This is a timeslice experiment of 30 years total.", 
     "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 VOC", 
     "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 VOC emissions", 
     "mip_era": "cmip6", 
@@ -19,27 +19,91 @@
             "type": "temporal-constraint"
         }, 
         {
+            "canonical_name": "1850 Non-Reactive WMGHG Concentrations", 
+            "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "1850 Non-Reactive WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Methane Concentration", 
+            "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, methane, concentrations", 
+            "label": "1850 Methane Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 N2O Concentration", 
+            "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
+            "label": "1850 N2O Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Aerosol Emissions", 
+            "description": "Impose pre-industrial (1850) emissions of aersols.", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, aerosol emissions, NTCF", 
+            "label": "1850 Aerosol Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Aerosol Precursor Emissions", 
+            "description": "Impose pre-industrial (1850) emissions of aersol precursors.", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, aerosol precursor emissions, NTCF", 
+            "label": "1850 Aerosol Precursor Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014 CO VOC Emissions", 
+            "description": "Impose 2014 concentrations of carbon monoxide and volatile organic compounds (CO/VOC).", 
+            "isConformanceRequested": false, 
+            "keywords": "2014, CO, carbon monoxide, VOC, volatile organic compounds, emissions", 
+            "label": "2014 CO VOC Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 non-CO VOC Tropospheric Ozone Precursor Emissions", 
+            "description": "Impose pre-industrial (1850) emissions of non-CO/VOC (Carbon Monoxide / Volatile Organic Compound) tropospheric ozone precursors.", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, non-CO/VOC tropospheric ozone precursor, emissions", 
+            "label": "1850 non-CO VOC Tropospheric Ozone Precursor Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "description": "Impose pre-industrial (1850) concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "PIControlSST", 
             "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "pre-industrial control, SST, sea surface temperature", 
             "label": "PIControlSST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1850WMGHG", 
-            "description": "Impose repeating 1850 Well Mixed Green House Gas (WMGHG) concentrations.", 
-            "isConformanceRequested": true, 
-            "keywords": "pre-industrial, 1850, WMGHG, concentrations", 
-            "label": "1850WMGHG", 
+            "canonical_name": "PIControl SIC", 
+            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
+            "label": "PIControl SIC", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2014COVOC", 
-            "description": "Impose repeating 2014 CO/VOC concentrations.", 
-            "isConformanceRequested": true, 
-            "keywords": "2014, CO, carbon monoxide, VOC, volatile organic compounds, emissions", 
-            "label": "2014COVOC", 
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial land-use forcing.", 
+            "isConformanceRequested": false, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -52,13 +116,13 @@
         }, 
         {
             "canonical_name": "AGCM-Chem Configuration", 
-            "description": "Use and Atmosphere model with chemistry", 
+            "description": "Use an Atmosphere model with chemistry", 
             "isConformanceRequested": false, 
             "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
             "label": "AGCM-Chem Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "57fba0c5-9330-4fbc-8011-e71e32f78faf", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=57fba0c5-9330-4fbc-8011-e71e32f78faf&version=latest&client=mohc"
+    "uid": "9d41fd6b-641c-45c5-975b-2a3b3b6156a4", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9d41fd6b-641c-45c5-975b-2a3b3b6156a4&version=latest&client=mohc"
 }

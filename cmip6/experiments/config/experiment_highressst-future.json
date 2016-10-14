@@ -1,0 +1,80 @@
+{
+    "canonical_name": "highresSST-future", 
+    "description": "High forcing (ScenarioMIP SSP5-85) future scenario (2015-2050) atmosphere only simulations at high and standard resolution, with an option to continue to 2100.\nFor optimal comparison between models aerosol concentrations would be preferable and not emissions. \nFuture SST and SIC are determined from a blend of warming rates derived from an ensemble mean of CMIP5 RCP8.5 simulations and interannual variability derived from the historic 1960-2014 period. \nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution.", 
+    "keywords": "HighResMIP, Tier 3, AMIP, SSP5-85", 
+    "long_name": "HighResMIP AMIP SSP5-85", 
+    "mip_era": "cmip6", 
+    "rationale": "Extension to the HighResMIP Historical AMIP simulations.", 
+    "related_experiments": [
+        "highresSST-present", 
+        "ssp585"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2050 36yrs", 
+            "description": "Future scenario, begin in 2015 and run for 36 years", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2015-2050", 
+            "label": "2015-2050 36yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "FutureSSTSIC", 
+            "description": "Future SST and sea-ice forcing follows the methodology of Mizuta et al. (2008).  The rate of future warming is a blend of variability from the 0.25 degree HadISST2-based dataset (Rayner et al., 2016) and the climate change signal from CMIP5 RCP8.5 simulations.  Technical details for the implementation of future SST and SIC forcing in HighResMIP can be found in appendix 9.2 of Haarsma et al. (2016).", 
+            "isConformanceRequested": false, 
+            "keywords": "future, SIC and SST, HighResMIP", 
+            "label": "FutureSSTSIC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "HighAndStandardResolution", 
+            "description": "At least two simulations, one at high resolution (minimum 25-50 km at mid-latitudes), and one at the standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "high resolution, standard resolution, at least two members", 
+            "label": "HighAndStandardResolution", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "HighResAtmos", 
+            "description": "25-50km minimum resolution at mid-latitudes", 
+            "isConformanceRequested": false, 
+            "keywords": "High Resolution, 25-50 km,", 
+            "label": "HighResAtmos", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "standardModelResolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "standardModelResolution", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "189d16b7-db68-493d-a7e5-7363c0d7bbe5", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=189d16b7-db68-493d-a7e5-7363c0d7bbe5&version=latest&client=mohc"
+}

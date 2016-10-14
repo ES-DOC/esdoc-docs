@@ -1,0 +1,81 @@
+{
+    "canonical_name": "dcppA-hindcast-niff", 
+    "description": "A coordinated set of multi-member ensembles of retrospective forecasts (hindcasts) initialised each year from 1960 to the present (otherwise every second year). Radiative and other focing information (e.g. greenhouse gas concentrations, aerosols etc.) maintained at initial state value or projected in a simple way.  No inclusion of volcano or other short term forcing unless available at initial time.  Initialise from observations.  Run each member for at least 5 years, preferably 10 years.", 
+    "keywords": "DCPP, Tier 4, hindcasts, forecasts, 1960, yearly start dates, initial conditions maintained", 
+    "long_name": "hindcasts initialized from observations without observed forcing after initialization", 
+    "mip_era": "cmip6", 
+    "rationale": "Promotion of the science and practice of decadal prediction. The provision of information potentially useful for the IPCC assessment reports on climate prediction and evolution. To improve estimates of hindcast skill.", 
+    "related_experiments": [
+        "dcppA-hindcast", 
+        "historical", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "10yrs", 
+            "description": "Run for 10 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "10 years", 
+            "label": "10yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "5yrs", 
+            "description": "Run for at least 5 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "5 years, minimum", 
+            "label": "5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "InitialHistoricalForcingMaintained", 
+            "description": "Historical forcing information (e.g. greenhouse gas concentrations, aerosols etc.) maintained at initial state values, or projected in a simple way. No inclusion of volcano or other short term forcing unless available at initial time.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, forcing, intitial state", 
+            "label": "InitialHistoricalForcingMaintained", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "InitialRCP45ForcingMaintained", 
+            "description": "RCP4.5 forcing information (e.g. greenhouse gas concentrations, aerosols etc.) maintained at initial state values, or projected in a simple way. No inclusion of volcano or other short term forcing unless available at initial time.", 
+            "isConformanceRequested": true, 
+            "keywords": "RCP4.5, forcing, intitial state", 
+            "label": "InitialRCP45ForcingMaintained", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ObservedInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "1960Annualx10", 
+            "description": "A multi-ensemble of 600 simulations with ten initialisations for each start date occuring every year from 1960 to the present.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, 1960, annual, start date ensemble", 
+            "label": "1960Annualx10", 
+            "type": "multi-ensemble"
+        }, 
+        {
+            "canonical_name": "1960Biennialx10", 
+            "description": "A multi-ensemble of 300 simulations with ten initialisations for each start date occuring every other year from 1960 to the present.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, 1960, biennial, start date ensemble", 
+            "label": "1960Biennialx10", 
+            "type": "multi-ensemble"
+        }
+    ], 
+    "uid": "1c8e174c-c484-47b0-b25c-d04c50ae4462", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1c8e174c-c484-47b0-b25c-d04c50ae4462&version=latest&client=mohc"
+}

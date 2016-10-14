@@ -1,0 +1,71 @@
+{
+    "canonical_name": "dcppB-forecast", 
+    "description": "Ensembles of ongoing real-time 5-year forecsasts. Initialisation based on observations. Atmospheric composition and/or emissions (and other conditions including volcanic aerosols) to follow prescribed SSP2-4.5 forcing scenario. Run each member for 5 years, extend the duration to 10 years with Tier-2 priority. Additional ensemble members for each start date are requested with Tier-2 priority.", 
+    "keywords": "DCPP, Tier 1, Tier 2, real-time, forecast", 
+    "long_name": "forecast initialized from observations", 
+    "mip_era": "cmip6", 
+    "rationale": "Real-time forecasts.", 
+    "related_experiments": [
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "5yrs", 
+            "description": "Run for at least 5 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "5 years, minimum", 
+            "label": "5yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "10yrs", 
+            "description": "Run for 10 years, for use with a start date ensemble.", 
+            "isConformanceRequested": false, 
+            "keywords": "10 years", 
+            "label": "10yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ObservedInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "realTimeAnnualx10", 
+            "description": "A multi-ensemble with ten initialisations for each start date in real time and ongoing.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, real-time, annual, start date ensemble", 
+            "label": "realTimeAnnualx10", 
+            "type": "multi-ensemble"
+        }, 
+        {
+            "canonical_name": "realTimeAnnualxN", 
+            "description": "A multi-ensemble with N initialisations for each start date in real time and ongoing.", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, initialisations, real-time, annual, start date ensemble", 
+            "label": "realTimeAnnualxN", 
+            "type": "multi-ensemble"
+        }
+    ], 
+    "uid": "fb569174-6e88-4a03-a138-f6717af7f7f9", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=fb569174-6e88-4a03-a138-f6717af7f7f9&version=latest&client=mohc"
+}

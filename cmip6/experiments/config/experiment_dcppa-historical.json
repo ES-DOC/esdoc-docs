@@ -1,0 +1,105 @@
+{
+    "canonical_name": "dcppA-historical", 
+    "description": "Ensemble of historical and near-future climate simulations. Use the same model as used for hindcasts. Initial conditions from a pre-industrial control simulation. Prescribed historical and future forcing as the SSP2-4.5 scenario. Run from 1850-2030. Ten ensemble members.  Additional ensemble members for each start date are requested with Tier-3 priority.", 
+    "keywords": "DCPP, Tier 2, Tier 3, historical, near future sceario", 
+    "long_name": "simulations initialized from control with forcing prescribed from a portion of the historical period", 
+    "mip_era": "cmip6", 
+    "rationale": "To quantify the effects of initialisation.", 
+    "related_experiments": [
+        "historical", 
+        "piControl", 
+        "ssp245"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2029 180yrs", 
+            "description": "Historical scenario, from pre-industrial to near future", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1850, 2029", 
+            "label": "1850-2029 180yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Forcing", 
+            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
+            "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Forcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Emissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "TenMember", 
+            "description": "An ensemble of at least ten simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, ensemble, runs, simulations", 
+            "label": "TenMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "NMember", 
+            "description": "An unspecified number of simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "unspecified ensemble, runs, simulations", 
+            "label": "NMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM/ESM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
+            "label": "AOGCM/ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "246c5690-e3ce-4d9c-8dee-69b7e5a5d50c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=246c5690-e3ce-4d9c-8dee-69b7e5a5d50c&version=latest&client=mohc"
+}

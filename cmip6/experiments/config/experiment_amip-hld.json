@@ -1,7 +1,7 @@
 {
     "canonical_name": "amip-hld", 
-    "description": "The topography of the highlands in Africa, N. America and S. America TP is modified by setting surface elevations to 500m. \nMinimum number of integrations is 1.", 
-    "keywords": "GMMIP, Tier 3, DHLD, Non-TIP Higlands, 500m", 
+    "description": "The topography of the highlands in Africa, N. America and S. America TP is modified by setting surface elevations to 500m. \nOther settings are the same as the standard DECK AMIP simulation. \nMinimum number of integrations is 1.", 
+    "keywords": "GMMIP, Tier 3, NHLD, Non-TIP Highlands, 500m", 
     "long_name": "AMIP SSTs with highland elevations in Africa, North America and South America capped at 500m", 
     "mip_era": "cmip6", 
     "rationale": "To understand the combined thermal and mechanical forcing of other plateaus except the TIP.", 
@@ -11,33 +11,33 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1979-2013 36yrs", 
+            "canonical_name": "1979-2014 36yrs", 
             "description": "Historical, Recent past, since satellite observations have been available", 
             "isConformanceRequested": false, 
-            "keywords": "1979, 2013, recent past", 
-            "label": "1979-2013 36yrs", 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "Highlands500", 
-            "description": "Modify the topography of the highlands in Africa, N. America and S. America TP in the model by setting surface elevations to 500m, with the surface properties unchanged.", 
-            "isConformanceRequested": true, 
+            "description": "Modify the topography of the East African Highlands, Sierra Madre in N. America and Andes in S. America in the model by setting surface elevations to 500m, with the surface properties unchanged. The highland regions are outlined in figure 5 of Zhou et al 2016.", 
+            "isConformanceRequested": false, 
             "keywords": "Highlands, 500m, level orography", 
             "label": "Highlands500", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP SST", 
-            "description": "AMIP sea surface temperature boundary conditions derived from observational data.", 
-            "isConformanceRequested": true, 
+            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "isConformanceRequested": false, 
             "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
             "label": "AMIP SST", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP SIC", 
-            "description": "AMIP sea ice boundary conditions derived from observational data.", 
-            "isConformanceRequested": true, 
+            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": false, 
             "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
             "label": "AMIP SIC", 
             "type": "forcing-constraint"
@@ -45,7 +45,7 @@
         {
             "canonical_name": "Historical WMGHG Concentrations", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -53,15 +53,15 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Historical Stratospheric Aerosol", 
-            "description": "The stratospheric aerosol data set (SADS Version 2)", 
-            "isConformanceRequested": true, 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": false, 
             "keywords": "historical, stratospheric, aerosol", 
             "label": "Historical Stratospheric Aerosol", 
             "type": "forcing-constraint"
@@ -115,6 +115,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "d1de3063-c07d-456a-ae1b-7672aef13e88", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=d1de3063-c07d-456a-ae1b-7672aef13e88&version=latest&client=mohc"
+    "uid": "1a49af3c-b478-4d52-8019-10d189068902", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1a49af3c-b478-4d52-8019-10d189068902&version=latest&client=mohc"
 }

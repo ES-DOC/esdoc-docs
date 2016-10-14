@@ -1,6 +1,6 @@
 {
     "canonical_name": "G7SST2-cirrus", 
-    "description": "Time slice at year 2100 GeoMIP G7cirrus.", 
+    "description": "Time slice at year 2100 GeoMIP G7cirrus.  Run for 10 years.", 
     "keywords": "GeoMIP, Tier2, timeslice, G7cirrus, 2100", 
     "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G7cirrus", 
     "mip_era": "cmip6", 
@@ -12,35 +12,35 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "2100-2101 10yrs100", 
-            "description": "Idealised temporal constraint, repeating 2100 for 10 years, to coincide with the final year of the ScenarioMIP SSP5-85 experiment", 
+            "canonical_name": "2100-2109 10yrs", 
+            "description": "Timeslice, begin in 2100 and run for 10 years.", 
             "isConformanceRequested": false, 
-            "keywords": "2100-2101, idealised, 10 years, year 100", 
-            "label": "2100-2101 10yrs100", 
+            "keywords": "idealised, 2100-2109", 
+            "label": "2100-2109 10yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "IncreaseCirrusSedementationVelocity", 
             "description": "Add a local variable that replaces (in all locations where temperature is colder than 235K) the ice mass mixing ratio in the calculation of the sedimentation velocity with a value that is eight times the original ice mass mixing ratio.\nCirrus seeding to begin in 2020 and continue through to the year 2100.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "GeoMIP, cirrus thinning, increase cirrus sedimentation velocity", 
             "label": "IncreaseCirrusSedementationVelocity", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "G7cirrusSST2100", 
-            "description": "2100 sea surface temperature from the G7cirrus GeoMIP experiment.", 
-            "isConformanceRequested": true, 
-            "keywords": "G7cirrus, SST, sea surface temperature, 2100", 
-            "label": "G7cirrusSST2100", 
+            "canonical_name": "SSP5-85SST2100", 
+            "description": "Sea surface temperature climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
+            "isConformanceRequested": false, 
+            "keywords": "SSP5-85, SST, sea surface temperature, 2100", 
+            "label": "SSP5-85SST2100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "G7cirrusSIC2100", 
-            "description": "2100 sea ice concentration from the G7cirrus GeoMIP experiment.", 
-            "isConformanceRequested": true, 
-            "keywords": "G7cirrus, SIC, sea ice concentration, 2100", 
-            "label": "G7cirrusSIC2100", 
+            "canonical_name": "SSP5-85SIC2100", 
+            "description": "Sea ice concentration climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
+            "isConformanceRequested": false, 
+            "keywords": "SSP5-85, SIC, sea ice concentration, 2100", 
+            "label": "SSP5-85SIC2100", 
             "type": "forcing-constraint"
         }, 
         {
@@ -76,6 +76,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "8ee14180-73ff-4c64-a466-d88671d8ad83", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=8ee14180-73ff-4c64-a466-d88671d8ad83&version=latest&client=mohc"
+    "uid": "c5f9219b-ae34-4837-96fb-d7a28eab8be3", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=c5f9219b-ae34-4837-96fb-d7a28eab8be3&version=latest&client=mohc"
 }

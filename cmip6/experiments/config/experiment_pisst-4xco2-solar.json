@@ -1,10 +1,10 @@
 {
     "canonical_name": "piSST-4xCO2-solar", 
-    "description": "Time slice for the first year of the GeoMIP G1 experiment.", 
+    "description": "Time slice for the first year of the GeoMIP G1 experiment with fixed sea surface temperature climatology calculated from the piControl. Run for 10 years.", 
     "keywords": "GeoMIP, Tier2, timeslice, G1", 
     "long_name": "preindustrial control SSTs with quadrupled CO2 + solar reduction", 
     "mip_era": "cmip6", 
-    "rationale": "To enamble the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
+    "rationale": "To enable the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
     "related_experiments": [
         "G1", 
         "abrupt-4xCO2", 
@@ -13,17 +13,17 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1851 10yrs1", 
-            "description": "Idealised temporal constraint, repeating 1850 for 10 years, to coincide with the first year of the GeoMIP G1ext experiment", 
+            "canonical_name": "1850-1859 10yrs", 
+            "description": "Timeslice, begin in 1850 and run for 10 years.", 
             "isConformanceRequested": false, 
-            "keywords": "1850-1851, idealised, 10 years, year 1", 
-            "label": "1850-1851 10yrs1", 
+            "keywords": "idealised, 1850-1859", 
+            "label": "1850-1859 10yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "Abrupt4xCO2Increase", 
             "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
             "label": "Abrupt4xCO2Increase", 
             "type": "forcing-constraint"
@@ -31,7 +31,7 @@
         {
             "canonical_name": "SolarBalanceOf4xCO2", 
             "description": "Reduce the solar constant such that the top of atmosphere radiative flux remains within \u00b10.1 W/m2 of the piControl experiment when the CO2 concentration is quadrupled. Specifically, the global mean value of top-of-atmosphere net radiative flux must lie within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "GeoMIP, solar balance, 4xCO2, CO2 quadrupling", 
             "label": "SolarBalanceOf4xCO2", 
             "type": "forcing-constraint"
@@ -39,17 +39,17 @@
         {
             "canonical_name": "PIControlSST", 
             "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "pre-industrial control, SST, sea surface temperature", 
             "label": "PIControlSST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControlSIC", 
+            "canonical_name": "PIControl SIC", 
             "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": true, 
+            "isConformanceRequested": false, 
             "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControlSIC", 
+            "label": "PIControl SIC", 
             "type": "forcing-constraint"
         }, 
         {
@@ -85,6 +85,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "1c8ecd80-f1af-4d20-8dcb-e19eae335977", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1c8ecd80-f1af-4d20-8dcb-e19eae335977&version=latest&client=mohc"
+    "uid": "a9dfefb0-de84-4fa5-bff5-b14180f9f7a2", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a9dfefb0-de84-4fa5-bff5-b14180f9f7a2&version=latest&client=mohc"
 }

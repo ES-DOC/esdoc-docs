@@ -1,6 +1,6 @@
 {
     "canonical_name": "faf-all", 
-    "description": "Simultaneously apply anomalous fluxes of windstress, heat and freshwater using the passive-tracer method for heat as in the heatFAF experiment.", 
+    "description": "Simultaneously apply anomalous fluxes of windstress, heat and freshwater using the passive-tracer method for heat as in the faf-heat experiment.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
     "keywords": "FAFMIP, Tier 2, surface wind stress anomaly, surface heat flux anomaly, surface freshwater anomaly", 
     "long_name": "control plus perturbative surface fluxes of momentum, heat and water into ocean", 
     "mip_era": "cmip6", 
@@ -8,45 +8,47 @@
     "related_experiments": [
         "1pctCO2", 
         "faf-heat", 
+        "faf-stress", 
+        "faf-water", 
         "piControl"
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1851 70yrs", 
-            "description": "Idealised temporal constraint, repeating 1850 for 70 years", 
+            "canonical_name": "1850-1919 70yrs", 
+            "description": "Historical, from 1850 to 1920.", 
             "isConformanceRequested": false, 
-            "keywords": "1850-1851, idealised, 70 years", 
-            "label": "1850-1851 70yrs", 
+            "keywords": "historical, 1850, 1919", 
+            "label": "1850-1919 70yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "1pctCO2WindStressAnomalyAtDoubling", 
-            "description": "Impose zonal and meridional wind stress anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
-            "isConformanceRequested": true, 
+            "description": "Impose zonal and meridional momentum flux (wind stress) anomalies to the ocean surface, created from the CMIP5 diagnostics of surface downward fluxes of eastward (tauu) and northward (tauv) momentum. The surface flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability. The stress perturbation is added to the momentum balance of the ocean water surface, it should not directly perturb any turbulent mixing scheme that depends on the windstress and should not be applied to the sea-ice momentum balance, although presumably the sea-ice velocity will be indirectly affected.", 
+            "isConformanceRequested": false, 
             "keywords": "FAFMIP, 1pctCO2, wind stress, 2xCO2, at CO2 doubling", 
             "label": "1pctCO2WindStressAnomalyAtDoubling", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "1pctCO2HeatFluxAnomalyAtDoubling", 
-            "description": "Impose surface heat flux anomalies to the ocean, calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
-            "isConformanceRequested": true, 
+            "description": "Impose heat flux anomalies to the ocean surface, created from the CMIP5 diagnostic of surface downward heat flux in sea-water (hfds).  The surface heat-flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.  The method for implementing the heat flux anomaly should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": false, 
             "keywords": "FAFMIP, 1pctCO2, heat flux, 2xCO2, at CO2 doubling", 
             "label": "1pctCO2HeatFluxAnomalyAtDoubling", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
-            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the heatFAF experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.", 
-            "isConformanceRequested": true, 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": false, 
             "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
             "label": "1pctCO2PassiveTracerAtDoubling", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
-            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
-            "isConformanceRequested": true, 
+            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), created from the CMIP5 diagnostic of water flux into sea water (wfo).  The surface freshwater flux is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": false, 
             "keywords": "FAFMIP, 1pctCO2, freshwater flux, 2xCO2, at CO2 doubling", 
             "label": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
             "type": "forcing-constraint"
@@ -57,6 +59,14 @@
             "isConformanceRequested": false, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2PassiveTracerAtDoubling", 
             "type": "forcing-constraint"
         }, 
         {
@@ -84,14 +94,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "bb08d954-de10-4b16-8da8-680b441e2cd9", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=bb08d954-de10-4b16-8da8-680b441e2cd9&version=latest&client=mohc"
+    "uid": "ca5b1747-0099-4ae1-a85e-11fed7c76c3f", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=ca5b1747-0099-4ae1-a85e-11fed7c76c3f&version=latest&client=mohc"
 }
