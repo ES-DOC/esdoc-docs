@@ -36,50 +36,62 @@
         }, 
         {
             "canonical_name": "Zonally Uniform SST", 
+            "delivery_order": "post-simulation", 
             "description": "Impose non-varying and zonally-uniform distribution of SST as specified in appendix B of Webb et. al., 2016.", 
             "isConformanceRequested": true, 
             "keywords": "zonally uniform, SST", 
             "label": "Zonally Uniform SST", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "No Sea Ice", 
+            "delivery_order": "pre-simulation", 
             "description": "No sea ice at high latitudes.  Sea surface temperature should be set to a spatially uniform 0\u00b0C poleward of 60\u00b0.", 
             "isConformanceRequested": true, 
             "keywords": "no sea ice", 
             "label": "No Sea Ice", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP II GHG", 
+            "delivery_order": "pre-simulation", 
             "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations: CO2: 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Green House Gas, GHG AMIPII, radiatively active trace gas", 
             "label": "AMIP II GHG", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP II Ozone", 
+            "delivery_order": "pre-simulation", 
             "description": "The ozone distribution is derived from the climatology used in AMIP II (Gates et al., 1999) and is constant in time and symmetric about the equator. This ozone distribution is provided as a netCDF file which is archived on the Earth System Grid and available via the DOI http://dx.doi.org/10.5065/D61834Q6", 
             "isConformanceRequested": true, 
             "keywords": "AMIPII, Ozone, climatology", 
             "label": "AMIP II Ozone", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "perpetual Equinox", 
+            "delivery_order": "pre-simulation", 
             "description": "Apply perpetual equinoctial conditions (no seasonal forcing).", 
             "isConformanceRequested": true, 
             "keywords": "perpetual equinoctial conditions, perpetual equinox, no seasonal forcing.", 
             "label": "perpetual Equinox", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "LW Cloud Radiation Off", 
+            "delivery_order": "pre-simulation", 
             "description": "Switch off cloud-radiative effects in the long wave part of the radiation code.", 
             "isConformanceRequested": true, 
             "keywords": "cloud longwave radiation off", 
             "label": "LW Cloud Radiation Off", 
+            "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {

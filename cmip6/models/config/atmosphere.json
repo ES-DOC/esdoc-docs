@@ -5,374 +5,6 @@
     "contact": "Charlotte Pascoe", 
     "processes": [
         {
-            "label": "Cloud Scheme", 
-            "description": "Characteristics of the cloud scheme", 
-            "id": "cmip6.atmosphere.cloud_scheme", 
-            "contact": "Charlotte Pascoe", 
-            "details": [
-                {
-                    "label": "Uses Separate Treatment", 
-                    "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds", 
-                    "id": "cmip6.atmosphere.cloud_scheme.uses_separate_treatment", 
-                    "cardinality": "1.1", 
-                    "type": "bool", 
-                    "uiOrdinal": 1
-                }, 
-                {
-                    "label": "Cloud Overlap Method", 
-                    "description": "Method for taking into account overlapping of cloud layers", 
-                    "id": "cmip6.atmosphere.cloud_scheme.cloud_overlap_method", 
-                    "cardinality": "1.1", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Cloud Overlap Method", 
-                        "description": "Cloud scheme cloud overlap method", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "random", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 2
-                }, 
-                {
-                    "label": "Processes", 
-                    "description": "Processes included in the cloud scheme", 
-                    "id": "cmip6.atmosphere.cloud_scheme.processes", 
-                    "cardinality": "1.N", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Processes Attributes", 
-                        "description": "Processes included in the cloud scheme.", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "entrainment", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "detrainment", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "bulk cloud", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "other", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 3
-                }
-            ], 
-            "subProcesses": [
-                {
-                    "label": "Sub Grid Scale Water Distribution", 
-                    "description": "Sub-grid scale water distribution", 
-                    "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution", 
-                    "contact": "Charlotte Pascoe", 
-                    "details": [
-                        {
-                            "label": "Type", 
-                            "description": "Sub-grid scale water distribution type", 
-                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.type", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Sub Grid Scale Water Distribution Type", 
-                                "description": "Approach used for cloud water content and fractional cloud cover", 
-                                "isOpen": false, 
-                                "choices": [
-                                    {
-                                        "label": "prognostic", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "diagnostic", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Function Name", 
-                            "description": "Sub-grid scale water distribution function name", 
-                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.function_name", 
-                            "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Function Order", 
-                            "description": "Sub-grid scale water distribution function type", 
-                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.function_order", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Convection Coupling", 
-                            "description": "Sub-grid scale water distribution coupling with convection", 
-                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Sub Grid Scale Water Distribution Convection", 
-                                "description": "Type(s) of convection that the formation of clouds is coupled with", 
-                                "isOpen": false, 
-                                "choices": [
-                                    {
-                                        "label": "coupled with deep", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "coupled with shallow", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "not coupled with convection", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }
-            ]
-        }, 
-        {
-            "label": "Cloud Simulator", 
-            "description": "Characteristics of the cloud simulator", 
-            "id": "cmip6.atmosphere.cloud_simulator", 
-            "contact": "Charlotte Pascoe", 
-            "detailSets": [
-                {
-                    "label": "Isscp Attributes", 
-                    "description": "ISSCP Characteristics", 
-                    "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes", 
-                    "details": [
-                        {
-                            "label": "Top Height", 
-                            "description": "Cloud simulator ISSCP top height", 
-                            "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes.top_height", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Isscp Top Height", 
-                                "description": "Cloud top height management", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "no adjustment", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "IR brightness", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "visible optical depth", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Top Height Direction", 
-                            "description": "Cloud simulator ISSCP top height direction", 
-                            "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes.top_height_direction", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Isscp Top Height Direction", 
-                                "description": "Direction for finding the radiance determined cloud-top pressure. Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "lowest altitude level", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "highest altitude level", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Cosp Attributes", 
-                    "description": "CFMIP Observational Simulator Package attributes", 
-                    "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes", 
-                    "details": [
-                        {
-                            "label": "Run Configuration", 
-                            "description": "Cloud simulator COSP run configuration", 
-                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.run_configuration", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Cosp Run Configuration", 
-                                "description": "Method used to run the CFMIP Observational Simulator Package", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Inline", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Offline", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Number Of Grid Points", 
-                            "description": "Cloud simulator COSP number of grid points", 
-                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_grid_points", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Number Of Columns", 
-                            "description": "Cloud simulator COSP number of cloumns", 
-                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_columns", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Number Of Levels", 
-                            "description": "Cloud simulator COSP number of levels", 
-                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_levels", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Inputs Radar", 
-                    "description": "Characteristics of the cloud radar simulator", 
-                    "id": "cmip6.atmosphere.cloud_simulator.inputs_radar", 
-                    "details": [
-                        {
-                            "label": "Radar Frequency", 
-                            "description": "Cloud simulator radar frequency", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.radar_frequency", 
-                            "cardinality": "1.1", 
-                            "type": "float", 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Radar Type", 
-                            "description": "Cloud simulator radar type", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.radar_type", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Inputs Radar Type", 
-                                "description": "Type of radar", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "surface", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "space borne", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Gas Absorption", 
-                            "description": "Cloud simulator radar uses gas absorption", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.gas_absorption", 
-                            "cardinality": "1.1", 
-                            "type": "bool", 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Effective Radius", 
-                            "description": "Cloud simulator radar uses effective radius", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.effective_radius", 
-                            "cardinality": "1.1", 
-                            "type": "bool", 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Inputs Lidar", 
-                    "description": "Characteristics of the cloud lidar simulator", 
-                    "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar", 
-                    "details": [
-                        {
-                            "label": "Ice Type", 
-                            "description": "Cloud simulator lidar ice type", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar.ice_type", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Inputs Lidar Ice Type", 
-                                "description": "Ice particle shape in lidar calculations", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "ice spheres", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "ice non-spherical", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Lidar Overlap", 
-                            "description": "Cloud simulator lidar overlap", 
-                            "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar.lidar_overlap", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Inputs Lidar Overlap", 
-                                "description": "lidar overlap type", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "max", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "random", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }
-                    ]
-                }
-            ]
-        }, 
-        {
             "label": "Dynamical Core", 
             "description": "Characteristics of the dynamical core", 
             "id": "cmip6.atmosphere.dynamical_core", 
@@ -914,6 +546,374 @@
             ]
         }, 
         {
+            "label": "Cloud Scheme", 
+            "description": "Characteristics of the cloud scheme", 
+            "id": "cmip6.atmosphere.cloud_scheme", 
+            "contact": "Charlotte Pascoe", 
+            "details": [
+                {
+                    "label": "Uses Separate Treatment", 
+                    "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds", 
+                    "id": "cmip6.atmosphere.cloud_scheme.uses_separate_treatment", 
+                    "cardinality": "1.1", 
+                    "type": "bool", 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Cloud Overlap Method", 
+                    "description": "Method for taking into account overlapping of cloud layers", 
+                    "id": "cmip6.atmosphere.cloud_scheme.cloud_overlap_method", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Cloud Overlap Method", 
+                        "description": "Cloud scheme cloud overlap method", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "random", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Processes", 
+                    "description": "Processes included in the cloud scheme", 
+                    "id": "cmip6.atmosphere.cloud_scheme.processes", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Processes Attributes", 
+                        "description": "Processes included in the cloud scheme.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "entrainment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "detrainment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "bulk cloud", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "other", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Sub Grid Scale Water Distribution", 
+                    "description": "Sub-grid scale water distribution", 
+                    "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution", 
+                    "contact": "Charlotte Pascoe", 
+                    "details": [
+                        {
+                            "label": "Type", 
+                            "description": "Sub-grid scale water distribution type", 
+                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.type", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Sub Grid Scale Water Distribution Type", 
+                                "description": "Approach used for cloud water content and fractional cloud cover", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "prognostic", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "diagnostic", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Function Name", 
+                            "description": "Sub-grid scale water distribution function name", 
+                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.function_name", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Function Order", 
+                            "description": "Sub-grid scale water distribution function type", 
+                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.function_order", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Convection Coupling", 
+                            "description": "Sub-grid scale water distribution coupling with convection", 
+                            "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Sub Grid Scale Water Distribution Convection", 
+                                "description": "Type(s) of convection that the formation of clouds is coupled with", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "coupled with deep", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "coupled with shallow", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "not coupled with convection", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Cloud Simulator", 
+            "description": "Characteristics of the cloud simulator", 
+            "id": "cmip6.atmosphere.cloud_simulator", 
+            "contact": "Charlotte Pascoe", 
+            "detailSets": [
+                {
+                    "label": "Isscp Attributes", 
+                    "description": "ISSCP Characteristics", 
+                    "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes", 
+                    "details": [
+                        {
+                            "label": "Top Height", 
+                            "description": "Cloud simulator ISSCP top height", 
+                            "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes.top_height", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Isscp Top Height", 
+                                "description": "Cloud top height management", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "no adjustment", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "IR brightness", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "visible optical depth", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Top Height Direction", 
+                            "description": "Cloud simulator ISSCP top height direction", 
+                            "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes.top_height_direction", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Isscp Top Height Direction", 
+                                "description": "Direction for finding the radiance determined cloud-top pressure. Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "lowest altitude level", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "highest altitude level", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Cosp Attributes", 
+                    "description": "CFMIP Observational Simulator Package attributes", 
+                    "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes", 
+                    "details": [
+                        {
+                            "label": "Run Configuration", 
+                            "description": "Cloud simulator COSP run configuration", 
+                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.run_configuration", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cosp Run Configuration", 
+                                "description": "Method used to run the CFMIP Observational Simulator Package", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Inline", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Offline", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Number Of Grid Points", 
+                            "description": "Cloud simulator COSP number of grid points", 
+                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_grid_points", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Number Of Columns", 
+                            "description": "Cloud simulator COSP number of cloumns", 
+                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_columns", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Number Of Levels", 
+                            "description": "Cloud simulator COSP number of levels", 
+                            "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes.number_of_levels", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Inputs Radar", 
+                    "description": "Characteristics of the cloud radar simulator", 
+                    "id": "cmip6.atmosphere.cloud_simulator.inputs_radar", 
+                    "details": [
+                        {
+                            "label": "Radar Frequency", 
+                            "description": "Cloud simulator radar frequency", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.radar_frequency", 
+                            "cardinality": "1.1", 
+                            "type": "float", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Radar Type", 
+                            "description": "Cloud simulator radar type", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.radar_type", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Inputs Radar Type", 
+                                "description": "Type of radar", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "surface", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "space borne", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Gas Absorption", 
+                            "description": "Cloud simulator radar uses gas absorption", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.gas_absorption", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Effective Radius", 
+                            "description": "Cloud simulator radar uses effective radius", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_radar.effective_radius", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Inputs Lidar", 
+                    "description": "Characteristics of the cloud lidar simulator", 
+                    "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar", 
+                    "details": [
+                        {
+                            "label": "Ice Type", 
+                            "description": "Cloud simulator lidar ice type", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar.ice_type", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Inputs Lidar Ice Type", 
+                                "description": "Ice particle shape in lidar calculations", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "ice spheres", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "ice non-spherical", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Lidar Overlap", 
+                            "description": "Cloud simulator lidar overlap", 
+                            "id": "cmip6.atmosphere.cloud_simulator.inputs_lidar.lidar_overlap", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Inputs Lidar Overlap", 
+                                "description": "lidar overlap type", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "max", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "random", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
             "label": "Gravity Waves", 
             "description": "Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources.", 
             "id": "cmip6.atmosphere.gravity_waves", 
@@ -1331,14 +1331,14 @@
             "contact": "Charlotte Pascoe", 
             "details": [
                 {
-                    "label": "Aerosol Types", 
-                    "description": "Types of aerosols whose radiative effect is taken into account in the atmospheric model", 
-                    "id": "cmip6.atmosphere.radiation.aerosol_types", 
+                    "label": "Aerosols", 
+                    "description": "Aerosols whose radiative effect is taken into account in the atmosphere model", 
+                    "id": "cmip6.atmosphere.radiation.aerosols", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Aerosol Types Attributes", 
-                        "description": "Types of aerosols whose radiative effect is taken into account in the atmospheric model.", 
+                        "label": "Aerosol Types", 
+                        "description": "Aerosols whose radiative effect is taken into account in the atmospheric model.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -1398,16 +1398,20 @@
                     "uiOrdinal": 1
                 }, 
                 {
-                    "label": "Ghg Types", 
-                    "description": "Types of greenhouse gases whose radiative effect is taken into account in the atmospheric model", 
-                    "id": "cmip6.atmosphere.radiation.ghg_types", 
+                    "label": "Greenhouse Gases", 
+                    "description": "Greenhouse gases whose radiative effect is taken into account in the atmosphere model", 
+                    "id": "cmip6.atmosphere.radiation.greenhouse_gases", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Ghg Types Attributes", 
-                        "description": "Types of greenhouse gases whose radiative effect is taken into account in the atmospheric model", 
+                        "label": "Ghg Types", 
+                        "description": "Greenhouse gases whose radiative effect is taken into account in the atmospheric model", 
                         "isOpen": true, 
                         "choices": [
+                            {
+                                "label": "H2O", 
+                                "description": null
+                            }, 
                             {
                                 "label": "CO2", 
                                 "description": null
@@ -1421,15 +1425,27 @@
                                 "description": null
                             }, 
                             {
-                                "label": "CFC", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "H2O", 
-                                "description": null
-                            }, 
-                            {
                                 "label": "O3", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "CFCs", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "HFCs", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "PFCs", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SF6", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NF3", 
                                 "description": null
                             }
                         ]
@@ -1467,15 +1483,15 @@
             ], 
             "subProcesses": [
                 {
-                    "label": "Longwave Scheme", 
-                    "description": "Longwave radiation scheme", 
-                    "id": "cmip6.atmosphere.radiation.longwave_scheme", 
+                    "label": "Longwave Radiation", 
+                    "description": "Properties of the longwave radiation scheme", 
+                    "id": "cmip6.atmosphere.radiation.longwave_radiation", 
                     "contact": "Charlotte Pascoe", 
                     "details": [
                         {
                             "label": "Scheme Type", 
                             "description": "Longwave radiation scheme type", 
-                            "id": "cmip6.atmosphere.radiation.longwave_scheme.scheme_type", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.scheme_type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -1506,7 +1522,7 @@
                         {
                             "label": "Scheme Method", 
                             "description": "Longwave radiation scheme method", 
-                            "id": "cmip6.atmosphere.radiation.longwave_scheme.scheme_method", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.scheme_method", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -1529,7 +1545,7 @@
                         {
                             "label": "Spectral Intervals", 
                             "description": "Longwave radiation scheme spectral intervals", 
-                            "id": "cmip6.atmosphere.radiation.longwave_scheme.spectral_intervals", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 3
@@ -1537,15 +1553,15 @@
                     ]
                 }, 
                 {
-                    "label": "Shortwave Scheme", 
-                    "description": "Shortwave radiation scheme", 
-                    "id": "cmip6.atmosphere.radiation.shortwave_scheme", 
+                    "label": "Shortwave Radiation", 
+                    "description": "Properties of the shortwave radiation scheme", 
+                    "id": "cmip6.atmosphere.radiation.shortwave_radiation", 
                     "contact": "Charlotte Pascoe", 
                     "details": [
                         {
                             "label": "Scheme Type", 
                             "description": "Shortwave radiation scheme type", 
-                            "id": "cmip6.atmosphere.radiation.shortwave_scheme.scheme_type", 
+                            "id": "cmip6.atmosphere.radiation.shortwave_radiation.scheme_type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -1568,7 +1584,7 @@
                         {
                             "label": "Spectral Intervals", 
                             "description": "Shortwave radiation scheme spectral intervals", 
-                            "id": "cmip6.atmosphere.radiation.shortwave_scheme.spectral_intervals", 
+                            "id": "cmip6.atmosphere.radiation.shortwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 2

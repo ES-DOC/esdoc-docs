@@ -64,26 +64,32 @@
         }, 
         {
             "canonical_name": "O2 Constant", 
+            "delivery_order": "pre-simulation", 
             "description": "Impose constant atmospheric concentration of oxygen, O2, (mole fraction of 0.20946).", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, OCMIP3, O2, constant", 
             "label": "O2 Constant", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "CO2 Historical", 
+            "delivery_order": "pre-simulation", 
             "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, OCMIP3, CO2, historical", 
             "label": "CO2 Historical", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "salinity damping", 
+            "delivery_order": "post-simulation", 
             "description": "Damp surface ocean salinity to a monthly observational-based climatology.  OMIP does not specify a damping timescale but recommends that modellers consult Appendix C in Danabasoglu et al. (2014) to choose a salinity restoring protocol that is suitable for their model. Choosing a weak salinity restoring is generally preferred to reduce the impact on variability.", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, salinity damping, salinity restoring, restore salinity", 
             "label": "salinity damping", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {

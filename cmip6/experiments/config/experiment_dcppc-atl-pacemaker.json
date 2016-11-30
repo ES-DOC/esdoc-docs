@@ -28,42 +28,52 @@
         }, 
         {
             "canonical_name": "Restore SST running mean N Atlantic", 
+            "delivery_order": "post-simulation", 
             "description": "Sea Surface Temperatures (SSTs) are restored to model climatology plus a 12-month running mean of SST anomalies by a Newtonian cooling over the North Atlantic (10N-65N).  The restoring timescale is 10 days for a 50m deep mixed layer (or equivalent). The restoring coefficient of 40 W/m2/K should decrease to zero over an 8 degree buffer zone bounding the restored region.  No restoring if sea ice is present.  SST anomalies (1950-2014) will be provided by DCPP.", 
             "isConformanceRequested": true, 
             "keywords": "DCPP, SST, restored, running mean, north Atlantic", 
             "label": "Restore SST running mean N Atlantic", 
+            "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Minimise AMOC change", 
+            "delivery_order": "post-simulation", 
             "description": "Minimise changes to Atlantic Meridional Overturning Circulation (AMOC).  Can be achieved by appying additional salinity restoring such that the upper ocean density remains unchanged. Can also be achieved via 3D restoring of temperature and salinity below the mixed layer.", 
             "isConformanceRequested": true, 
             "keywords": "DCPP, minimise AMOC change, restore salinity", 
             "label": "Minimise AMOC change", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Impose SST running mean N Atlantic", 
+            "delivery_order": "post-simulation", 
             "description": "Alter surface fluxes to impose model climatology plus 12-month running mean anomalies of Sea Surface Temperature (SST) over the North Atlantic (10N-65N).  No SST modification if sea ice is present.  SST anomalies (1950-2014) will be provided by DCPP.  For groups that are unable to restore SSTs.", 
             "isConformanceRequested": true, 
             "keywords": "DCPP, SST, imposed, running mean, north Atlantic", 
             "label": "Impose SST running mean N Atlantic", 
+            "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Historical WMGHG Concentrations", 
+            "delivery_order": "pre-simulation", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Historical Land Use", 
+            "delivery_order": "pre-simulation", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
