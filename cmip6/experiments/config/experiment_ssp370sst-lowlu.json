@@ -1,11 +1,26 @@
 {
     "canonical_name": "ssp370SST-lowLu", 
     "description": "placeholder", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
     "long_name": "placeholder", 
     "mip_era": "cmip6", 
     "rationale": null, 
-    "related_experiments": [], 
+    "related_experiments": [
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
+    ], 
     "requirements": [
         {
             "canonical_name": "2015-2055 41yrs", 
@@ -18,7 +33,7 @@
         {
             "canonical_name": "SSP3-70 SST", 
             "description": "Sea surface temperature from experiment SSP3-7.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
             "label": "SSP3-70 SST", 
             "type": "forcing-constraint"

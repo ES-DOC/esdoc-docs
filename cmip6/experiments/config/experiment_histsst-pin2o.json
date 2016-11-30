@@ -1,12 +1,25 @@
 {
     "canonical_name": "histSST-piN2O", 
     "description": "Historical atmoshere only simulation with historical  forcings but with nitrous oxide (N2O) fixed at 1850 concentration levels.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 2, Historical perturbation, historical forcings, 1850 N2O, 1850 Nitrous Oxide", 
     "long_name": "historical SSTs and historical forcings, but with pre-industrial N2O concentrations", 
     "mip_era": "cmip6", 
     "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "histSST", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -20,7 +33,7 @@
         {
             "canonical_name": "Historical Non-Reactive WMGHG Concentrations", 
             "description": "Impose historical non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
             "label": "Historical Non-Reactive WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -28,7 +41,7 @@
         {
             "canonical_name": "Historical Methane Concentrations", 
             "description": "Impose historical concentrations of methane (CH4).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical methane concentrations, CH4", 
             "label": "Historical Methane Concentrations", 
             "type": "forcing-constraint"
@@ -36,33 +49,9 @@
         {
             "canonical_name": "1850 N2O Concentration", 
             "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
             "label": "1850 N2O Concentration", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Ozone Depleating Halocarbon Concentrations", 
-            "description": "Impose historical concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
-            "isConformanceRequested": false, 
-            "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
-            "label": "Historical Ozone Depleating Halocarbon Concentrations", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical AerChemMIP hist-piNTCF SSTs", 
-            "description": "Historical transient sea surface temperature from AerChemMIP experiment hist-piNTCF.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, SST, sea surface temperature", 
-            "label": "Historical AerChemMIP hist-piNTCF SSTs", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Land Use", 
-            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, land use", 
-            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -71,6 +60,30 @@
             "isConformanceRequested": true, 
             "keywords": "Historical, NTCF, near term climate forcers", 
             "label": "Historical NTCF Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Ozone Depleating Halocarbon Concentrations", 
+            "description": "Impose historical concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "Historical Ozone Depleating Halocarbon Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical AerChemMIP hist-piNTCF SSTs", 
+            "description": "Historical transient sea surface temperature from AerChemMIP experiment hist-piNTCF.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, SST, sea surface temperature", 
+            "label": "Historical AerChemMIP hist-piNTCF SSTs", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {

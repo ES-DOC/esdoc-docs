@@ -1,12 +1,77 @@
 {
     "canonical_name": "amip", 
     "description": "An atmosphere only climate simulation using prescribed sea surface temperature and sea ice concentrations but with other conditions as in the Historical simulation.", 
+    "governing_mips": [
+        "deck"
+    ], 
     "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), Atmosphere,  historical SST", 
     "long_name": "Atmospheric Model Intercomparison Project", 
     "mip_era": "cmip6", 
     "rationale": "AMIP baseline simulation for model evaluation and variability.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "amip-4xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-TIP", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-TIP-nosh", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-a4SST-4xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-hld", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-lfmip-pdLC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "amip-lfmip-pobs", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "amip-lwoff", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-m4K", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-p4K", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-pat4K", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-piForcing", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amipFuture-4xCO2-all", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "cfmipamip", 
+            "relationship": "is_control_for"
+        }
+    ], 
+    "related_mips": [
+        "cfmip", 
+        "deck", 
+        "gmmip", 
+        "highresmip", 
+        "ismip6"
     ], 
     "requirements": [
         {
@@ -20,7 +85,7 @@
         {
             "canonical_name": "AMIP SST", 
             "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
             "label": "AMIP SST", 
             "type": "forcing-constraint"
@@ -28,33 +93,9 @@
         {
             "canonical_name": "AMIP SIC", 
             "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
             "label": "AMIP SIC", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical WMGHG Concentrations", 
-            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
-            "label": "Historical WMGHG Concentrations", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Land Use", 
-            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, land use", 
-            "label": "Historical Land Use", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Stratospheric Aerosol", 
-            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
-            "isConformanceRequested": false, 
-            "keywords": "historical, stratospheric, aerosol", 
-            "label": "Historical Stratospheric Aerosol", 
             "type": "forcing-constraint"
         }, 
         {
@@ -63,6 +104,22 @@
             "isConformanceRequested": true, 
             "keywords": "historical, aerosol, forcing, CMIP6", 
             "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -79,6 +136,14 @@
             "isConformanceRequested": true, 
             "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
             "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
             "type": "forcing-constraint"
         }, 
         {

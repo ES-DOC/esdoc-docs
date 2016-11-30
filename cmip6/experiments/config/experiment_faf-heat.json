@@ -1,15 +1,29 @@
 {
     "canonical_name": "faf-heat", 
     "description": "Impose surface heat flux anomalies to the ocean, calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+    "governing_mips": [
+        "fafmip"
+    ], 
     "keywords": "FAFMIP, Tier 1, heatFAF, surface heat flux anomaly", 
     "long_name": "control plus perturbative surface flux of heat into ocean", 
     "mip_era": "cmip6", 
     "rationale": "Heat flux changes are thought to be the main influence on Atlantic Meridional Overturning Circulation (AMOC) change.", 
     "related_experiments": [
-        "1pctCO2", 
-        "faf-passiveheat", 
-        "faf-water", 
-        "piControl"
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "faf-passiveheat", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "fafmip"
     ], 
     "requirements": [
         {
@@ -21,43 +35,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1pctCO2HeatFluxAnomalyAtDoubling", 
+            "canonical_name": "1pctCO2 Heat Flux Anomaly At Doubling", 
             "description": "Impose heat flux anomalies to the ocean surface, created from the CMIP5 diagnostic of surface downward heat flux in sea-water (hfds).  The surface heat-flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.  The method for implementing the heat flux anomaly should follow that used by Bouttes and Gregory (2014).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "FAFMIP, 1pctCO2, heat flux, 2xCO2, at CO2 doubling", 
-            "label": "1pctCO2HeatFluxAnomalyAtDoubling", 
+            "label": "1pctCO2 Heat Flux Anomaly At Doubling", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
+            "canonical_name": "1pctCO2 Passive Tracer At Doubling", 
             "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
-            "label": "1pctCO2PassiveTracerAtDoubling", 
+            "label": "1pctCO2 Passive Tracer At Doubling", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
-            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
-            "isConformanceRequested": true, 
-            "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
-            "label": "1pctCO2PassiveTracerAtDoubling", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

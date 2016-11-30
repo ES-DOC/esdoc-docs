@@ -1,15 +1,33 @@
 {
     "canonical_name": "futureSST-4xCO2-solar", 
     "description": "Time slice at year 100 of the GeoMIP G1 experiment with fixed sea surface temperature climatology calculated from the abrupt-4xCO2 experiment after 100 years. Run for 10 years.", 
+    "governing_mips": [
+        "geomip"
+    ], 
     "keywords": "GeoMIP, Tier2, timeslice, G1", 
     "long_name": "year 100 SSTs from abrupt4xCO2 with quadrupled CO2 + solar reduction", 
     "mip_era": "cmip6", 
     "rationale": "To enable the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
     "related_experiments": [
-        "G1", 
-        "abrupt-4xCO2", 
-        "piControl", 
-        "piSST-4xCO2-solar"
+        {
+            "name": "G1", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piSST-4xCO2-solar", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "geomip"
     ], 
     "requirements": [
         {
@@ -21,43 +39,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Abrupt4xCO2Increase", 
+            "canonical_name": "Abrupt 4xCO2 Increase", 
             "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
-            "label": "Abrupt4xCO2Increase", 
+            "label": "Abrupt 4xCO2 Increase", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SolarBalanceOf4xCO2", 
+            "canonical_name": "Solar Balance of 4xCO2", 
             "description": "Reduce the solar constant such that the top of atmosphere radiative flux remains within \u00b10.1 W/m2 of the piControl experiment when the CO2 concentration is quadrupled. Specifically, the global mean value of top-of-atmosphere net radiative flux must lie within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, solar balance, 4xCO2, CO2 quadrupling", 
-            "label": "SolarBalanceOf4xCO2", 
+            "label": "Solar Balance of 4xCO2", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "abrupt-4xCO2SST100", 
+            "canonical_name": "abrupt-4xCO2 SST year 100", 
             "description": "Sea surface temperature climatology calculated from the DECK abrupt-4xCO2 experiment after 100 years.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "abrupt-4xCO2 SST, 100 years", 
-            "label": "abrupt-4xCO2SST100", 
+            "label": "abrupt-4xCO2 SST year 100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "abrupt-4xCO2SIC100", 
+            "canonical_name": "abrupt-4xCO2 SIC year 100", 
             "description": "Sea ice concentration climatology calculated from the DECK abrupt-4xCO2 experiment after 100 years.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "abrupt-4xCO2 SIC, 100 years", 
-            "label": "abrupt-4xCO2SIC100", 
+            "label": "abrupt-4xCO2 SIC year 100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2andSolar", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
-            "label": "PIForcingExcludingCO2andSolar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "type": "forcing-constraint"
         }, 
         {

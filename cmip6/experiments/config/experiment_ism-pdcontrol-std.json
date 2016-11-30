@@ -1,0 +1,60 @@
+{
+    "canonical_name": "ism-pdControl-std", 
+    "description": "Stand alone ice sheet model driven offline by ISMIP6 CMIP6 standard input for constant present day forcing.  Forcings are set to the end of the initialisation procedure, which ranges from 1990s to 2014.", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 1, present day forcing, stand-alone ISM, ice sheets only", 
+    "long_name": "offline ice sheet model forced by ISMIP6-specified AOGCM pdControl output", 
+    "mip_era": "cmip6", 
+    "rationale": "To evaluate model drift.", 
+    "related_experiments": [
+        {
+            "name": "ism-1pctCO2to4x-std", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ism-historical-std", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "500yrs", 
+            "description": "Run for 500 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "500 years", 
+            "label": "500yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ISMIP6-specified pdControl input", 
+            "description": "ISMIP6-specified input from the output of an AOGCM present day control experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, ISMIP6-specified input, present day control, pdControl", 
+            "label": "ISMIP6-specified pdControl input", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "987e6f01-77a8-4193-95c8-747afd53b621", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=987e6f01-77a8-4193-95c8-747afd53b621&version=latest&client=mohc"
+}

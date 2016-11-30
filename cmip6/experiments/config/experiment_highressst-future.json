@@ -1,13 +1,29 @@
 {
     "canonical_name": "highresSST-future", 
     "description": "High forcing (ScenarioMIP SSP5-85) future scenario (2015-2050) atmosphere only simulations at high and standard resolution, with an option to continue to 2100.\nFor optimal comparison between models aerosol concentrations would be preferable and not emissions. \nFuture SST and SIC are determined from a blend of warming rates derived from an ensemble mean of CMIP5 RCP8.5 simulations and interannual variability derived from the historic 1960-2014 period. \nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution.", 
+    "governing_mips": [
+        "highresmip"
+    ], 
     "keywords": "HighResMIP, Tier 3, AMIP, SSP5-85", 
     "long_name": "HighResMIP AMIP SSP5-85", 
     "mip_era": "cmip6", 
     "rationale": "Extension to the HighResMIP Historical AMIP simulations.", 
     "related_experiments": [
-        "highresSST-present", 
-        "ssp585"
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "highresmip"
     ], 
     "requirements": [
         {
@@ -27,19 +43,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "FutureSSTSIC", 
+            "canonical_name": "Future SST SIC", 
             "description": "Future SST and sea-ice forcing follows the methodology of Mizuta et al. (2008).  The rate of future warming is a blend of variability from the 0.25 degree HadISST2-based dataset (Rayner et al., 2016) and the climate change signal from CMIP5 RCP8.5 simulations.  Technical details for the implementation of future SST and SIC forcing in HighResMIP can be found in appendix 9.2 of Haarsma et al. (2016).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "future, SIC and SST, HighResMIP", 
-            "label": "FutureSSTSIC", 
+            "label": "Future SST SIC", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP85Forcing", 
+            "canonical_name": "RCP85 Forcing", 
             "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85Forcing", 
+            "label": "RCP85 Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -59,19 +75,19 @@
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "HighResAtmos", 
+            "canonical_name": "High Res Atmos", 
             "description": "25-50km minimum resolution at mid-latitudes", 
             "isConformanceRequested": false, 
             "keywords": "High Resolution, 25-50 km,", 
-            "label": "HighResAtmos", 
+            "label": "High Res Atmos", 
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "standardModelResolution", 
+            "canonical_name": "Standard Model Resolution", 
             "description": "standard model resolution", 
             "isConformanceRequested": false, 
             "keywords": "Standard Model Resolution", 
-            "label": "standardModelResolution", 
+            "label": "Standard Model Resolution", 
             "type": "model-configuration"
         }
     ], 

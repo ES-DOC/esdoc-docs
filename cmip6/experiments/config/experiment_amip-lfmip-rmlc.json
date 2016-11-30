@@ -1,12 +1,29 @@
 {
     "canonical_name": "amip-lfmip-rmLC", 
     "description": "Scenario forced experiment with prescribed land surface climatology derived from 30 year running mean and prescribed SST (sea surface temperatures).", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
     "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land 30yr running mean, prescribed SST", 
     "long_name": "prescribed  land surface climatology and SST derived from 30 yr running mean", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose land-climate feedback over land. For diagnosing shifts in the regions of strong land-atmosphere coupling, and shifts in potential predictability related to land surface states.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "amip", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "lfmip-rmLC", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
     ], 
     "requirements": [
         {
@@ -20,17 +37,17 @@
         {
             "canonical_name": "LFMIP-RAForcing", 
             "description": "30 year running mean land surface forcing.  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "LFMIP, 30 year running mean, land surface forcing", 
             "label": "LFMIP-RAForcing", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "MinimumOne", 
-            "description": "An ensemble of at least one simulation", 
+            "canonical_name": "FiveMember", 
+            "description": "An ensemble of five simulations", 
             "isConformanceRequested": false, 
-            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
-            "label": "MinimumOne", 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
             "type": "ensemble"
         }, 
         {
@@ -42,6 +59,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "fc7f87d1-56a2-4808-982e-e92b0ea3b39f", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=fc7f87d1-56a2-4808-982e-e92b0ea3b39f&version=latest&client=mohc"
+    "uid": "58708c3a-040e-4916-bc76-4e1a59147cd2", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=58708c3a-040e-4916-bc76-4e1a59147cd2&version=latest&client=mohc"
 }

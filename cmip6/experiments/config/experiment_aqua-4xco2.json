@@ -1,12 +1,21 @@
 {
     "canonical_name": "aqua-4xCO2", 
     "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7b. \nAquaplanet (no land) experiment with CO2 set to 4x the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 1, aquaplanet, 4xCO2, zonal SSTs, no sea ice", 
     "long_name": "aquaplanet with 4xCO2", 
     "mip_era": "cmip6", 
     "rationale": "Aquaplanet: Examine the fast adjustment of clouds and precipitation to CO2 radiative forcing. Aqua-planet experiments examine model differences and responses under simplified conditions.", 
     "related_experiments": [
-        "aqua-control"
+        {
+            "name": "aqua-control", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -18,25 +27,25 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "ZonallyUniformSST", 
+            "canonical_name": "Zonally Uniform SST", 
             "description": "Impose non-varying and zonally-uniform distribution of SST as specified in appendix B of Webb et. al., 2016.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "zonally uniform, SST", 
-            "label": "ZonallyUniformSST", 
+            "label": "Zonally Uniform SST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "NoSeaIce", 
+            "canonical_name": "No Sea Ice", 
             "description": "No sea ice at high latitudes.  Sea surface temperature should be set to a spatially uniform 0\u00b0C poleward of 60\u00b0.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "no sea ice", 
-            "label": "NoSeaIce", 
+            "label": "No Sea Ice", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP II GHG with 4xCO2", 
             "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations but with CO2 concentration quadrupled: CO2: 4 x 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Green House Gas, GHG, AMIP II, radiatively active trace gas, 4xCO2", 
             "label": "AMIP II GHG with 4xCO2", 
             "type": "forcing-constraint"
@@ -44,17 +53,17 @@
         {
             "canonical_name": "AMIP II Ozone", 
             "description": "The ozone distribution is derived from the climatology used in AMIP II (Gates et al., 1999) and is constant in time and symmetric about the equator. This ozone distribution is provided as a netCDF file which is archived on the Earth System Grid and available via the DOI http://dx.doi.org/10.5065/D61834Q6", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIPII, Ozone, climatology", 
             "label": "AMIP II Ozone", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "perpetualEquinox", 
+            "canonical_name": "perpetual Equinox", 
             "description": "Apply perpetual equinoctial conditions (no seasonal forcing).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "perpetual equinoctial conditions, perpetual equinox, no seasonal forcing.", 
-            "label": "perpetualEquinox", 
+            "label": "perpetual Equinox", 
             "type": "forcing-constraint"
         }, 
         {

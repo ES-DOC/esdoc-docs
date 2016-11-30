@@ -1,0 +1,64 @@
+{
+    "canonical_name": "control-slab", 
+    "description": "Pre-Industrial control simulation with a slab ocean. Maintain the same constant boundary forcing as the pre-industrial control integration.", 
+    "governing_mips": [
+        "volmip"
+    ], 
+    "keywords": "VolMIP, Tier 3, piControl with slab ocean", 
+    "long_name": "Control with slab ocean", 
+    "mip_era": "cmip6", 
+    "rationale": "Control experiment for VolMIP volc-pinatubo-slab", 
+    "related_experiments": [
+        {
+            "name": "piControl", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "volc-pinatubo-slab", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "volc-pinatubo-slab", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "volmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Slab Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with a slab ocean.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean, Slab ocean", 
+            "label": "AOGCM Slab Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "75488836-8d40-48bf-82ab-379749e3e1bd", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=75488836-8d40-48bf-82ab-379749e3e1bd&version=latest&client=mohc"
+}

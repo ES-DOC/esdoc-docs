@@ -1,13 +1,45 @@
 {
     "canonical_name": "piClim-histNat", 
-    "description": "Time-evolving effective radiative forcing experiment. A small ensemble of uncoupled (atmosphere and land) simulations from 1850-2100 in which sea surface temperature (SST) and sea ice distributions are specified and vegetation may interact. Apply natural historical forcings only (solar and volcano) to 2015. Forcing to be consistent with historical forcing used in the DAMIP experiments and RCP4.5 future scenario forcing.", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Transient natural forcing (solar and volcano) to be consistent with historical forcing used in the DAMIP hist-all experiment and future forcing used in the ScenarioMIP SSP2 RCP4.5 scenario.  A small ensemble of three simulations from 1850-2100.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
     "keywords": "RFMIP, Tier 2, Historical, Natural, Solar", 
-    "long_name": "RFMIP erf-hist-nat", 
+    "long_name": "transient effective radiative forcing by natural perturbations", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose transient natural ERF. It is difficult to evaluate transitory volcanic and solar forcing using a time-slice methodology so the full 1850-2100 period is used.", 
     "related_experiments": [
-        "hist-all", 
-        "piClim-control"
+        {
+            "name": "hist-all", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piClim-histAll", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histGHG", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histaerO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
     ], 
     "requirements": [
         {
@@ -19,27 +51,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Volcanic Aerosol", 
-            "description": "Historical volcanic aerosol forcing (1850-2015).", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, volcanic, forcing", 
-            "label": "Historical Volcanic Aerosol", 
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
             "type": "forcing-constraint"
         }, 
         {
@@ -51,11 +75,35 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "piForcingExcludingSolarAer", 
+            "canonical_name": "Historical Volcanic Aerosol", 
+            "description": "Historical volcanic aerosol forcing (1850-2015).", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, volcanic, forcing", 
+            "label": "Historical Volcanic Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP Solar", 
+            "description": "Impose changing (natural) solar forcing for RCP scenarios.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, future, 21st century, solar forcing", 
+            "label": "RCP Solar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP Volcanic", 
+            "description": "Impose changing volcanic forcing for RCP scenarios.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, future, 21st century, volcanic forcing", 
+            "label": "RCP Volcanic", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Solar and Aerosols", 
             "description": "Pre-Industrial forcing excluding aerosols and solar.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding aerosols, excluding solar", 
-            "label": "piForcingExcludingSolarAer", 
+            "label": "Pre-Industrial Forcing Excluding Solar and Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
@@ -67,14 +115,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AtmosLandConfig", 
-            "description": "An uncoupled (atmosphere-land) model.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
             "keywords": "atmosphere-land model configuration", 
-            "label": "AtmosLandConfig", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "2c8c71b3-f914-4f6c-b8e1-7fb5fc8b5ff7", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=2c8c71b3-f914-4f6c-b8e1-7fb5fc8b5ff7&version=latest&client=mohc"
+    "uid": "6f809aee-0198-49cc-8433-7653db20204c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6f809aee-0198-49cc-8433-7653db20204c&version=latest&client=mohc"
 }

@@ -1,15 +1,22 @@
 {
     "canonical_name": "esm-piControl", 
     "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions and atmospheric CO2 calculated. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+    "governing_mips": [
+        "deck"
+    ], 
     "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate, ESM, Earth System Model", 
     "long_name": "Pre-Industrial Control Earth System Model", 
     "mip_era": "cmip6", 
     "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.", 
     "related_experiments": [
-        "1pctCO2", 
-        "abrupt-4xCO2", 
-        "historical", 
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "c4mip", 
+        "deck"
     ], 
     "requirements": [
         {
@@ -21,11 +28,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "piForcing", 
+            "canonical_name": "Pre-Industrial Forcing", 
             "description": "Pre-Industrail forcing", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing", 
-            "label": "piForcing", 
+            "label": "Pre-Industrial Forcing", 
             "type": "forcing-constraint"
         }, 
         {

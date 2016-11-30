@@ -1,14 +1,28 @@
 {
     "canonical_name": "ssp245-stratO3chem", 
-    "description": "Extension of stratospheric-ozone-only run (histSOZ) under SSP2-4.5 forcing to the year 2100.\nOnly for models with interactive chemistry in which changes in GHG concentrations affect aerosols or changes in aerosol precursors affect ozone. \nThe chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the SSP2-4.5 simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with a value of 100 ppbv ozone concentration in this piControl climatology used to separate the troposphere from the stratosphere.", 
+    "description": "Extension of stratospheric-ozone-only run (hist-stratO3) under SSP2-4.5 forcing to the year 2100.\nOnly for models with interactive chemistry in which changes in GHG concentrations affect aerosols or changes in aerosol precursors affect ozone. \nThe chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the SSP2-4.5 simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with a value of 100 ppbv ozone concentration in this piControl climatology used to separate the troposphere from the stratosphere.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 2, ssp245SOZchem, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
     "long_name": "stratospheric-ozone-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
     "rationale": null, 
     "related_experiments": [
-        "historical", 
-        "ssp245"
+        {
+            "name": "hist-stratO3", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_constrained_by"
+        }
     ], 
+    "related_mips": [], 
     "requirements": [
         {
             "canonical_name": "2021-2100 80yrs", 
@@ -21,7 +35,7 @@
         {
             "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
             "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
             "label": "Pre-Industrial Tropospheric Ozone Concentrations", 
             "type": "forcing-constraint"
@@ -29,7 +43,7 @@
         {
             "canonical_name": "ssp2-45 stratospheric Ozone", 
             "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from coupled-chemistry simulations of Scenario-MIP SSP2-4.5 simulations.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "DAMIP ssp2-45, ozone, concentration, O3, stratosphere", 
             "label": "ssp2-45 stratospheric Ozone", 
             "type": "forcing-constraint"

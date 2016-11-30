@@ -1,14 +1,29 @@
 {
     "canonical_name": "aqua-control-lwoff", 
     "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7a. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents but with cloud-radiative effects switched off in the LW radiation code.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, aquaplanet, control, zonal SSTs, no sea ice, no longwave cloud-radiative effects", 
     "long_name": "aquaplanet with longwave cloud radiative effects off", 
     "mip_era": "cmip6", 
     "rationale": "Understand the role of cloud-radiative effects in the large-scale atmospheric circulation in current and perturbed climates.", 
     "related_experiments": [
-        "amip", 
-        "aqua-control", 
-        "cfmipamip"
+        {
+            "name": "amip", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "aqua-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "cfmipamip", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -20,25 +35,25 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "ZonallyUniformSST", 
+            "canonical_name": "Zonally Uniform SST", 
             "description": "Impose non-varying and zonally-uniform distribution of SST as specified in appendix B of Webb et. al., 2016.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "zonally uniform, SST", 
-            "label": "ZonallyUniformSST", 
+            "label": "Zonally Uniform SST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "NoSeaIce", 
+            "canonical_name": "No Sea Ice", 
             "description": "No sea ice at high latitudes.  Sea surface temperature should be set to a spatially uniform 0\u00b0C poleward of 60\u00b0.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "no sea ice", 
-            "label": "NoSeaIce", 
+            "label": "No Sea Ice", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "AMIP II GHG", 
             "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations: CO2: 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Green House Gas, GHG AMIPII, radiatively active trace gas", 
             "label": "AMIP II GHG", 
             "type": "forcing-constraint"
@@ -46,25 +61,25 @@
         {
             "canonical_name": "AMIP II Ozone", 
             "description": "The ozone distribution is derived from the climatology used in AMIP II (Gates et al., 1999) and is constant in time and symmetric about the equator. This ozone distribution is provided as a netCDF file which is archived on the Earth System Grid and available via the DOI http://dx.doi.org/10.5065/D61834Q6", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIPII, Ozone, climatology", 
             "label": "AMIP II Ozone", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "perpetualEquinox", 
+            "canonical_name": "perpetual Equinox", 
             "description": "Apply perpetual equinoctial conditions (no seasonal forcing).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "perpetual equinoctial conditions, perpetual equinox, no seasonal forcing.", 
-            "label": "perpetualEquinox", 
+            "label": "perpetual Equinox", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "LWRadiationOff", 
+            "canonical_name": "LW Cloud Radiation Off", 
             "description": "Switch off cloud-radiative effects in the long wave part of the radiation code.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "cloud longwave radiation off", 
-            "label": "LWRadiationOff", 
+            "label": "LW Cloud Radiation Off", 
             "type": "forcing-constraint"
         }, 
         {

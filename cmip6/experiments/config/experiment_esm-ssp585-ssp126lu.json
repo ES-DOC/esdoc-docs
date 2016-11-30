@@ -1,14 +1,29 @@
 {
     "canonical_name": "esm-ssp585-ssp126Lu", 
-    "description": "Keep all forcings the same as C4MIP esmssp5-8.5 scenario, but replace land use with SSP1-2.6 scenario. Emission driven.", 
+    "description": "Keep all forcings the same as C4MIP esm-ssp585 scenario, but replace land use with ScenarioMIP SSP1-2.6  (aforestation) scenario. Emission driven.", 
+    "governing_mips": [
+        "lumip"
+    ], 
     "keywords": "LUMIP, Tier 1, Scenario, SSP5-8.5 forcing and SSP1-2.6 land use", 
     "long_name": "emissions-driven SSP5-8.5 with SSP1-2.6 land use", 
     "mip_era": "cmip6", 
     "rationale": "Land-use policy sensitivity simulation for high radiative forcing scenario.", 
     "related_experiments": [
-        "ssp126", 
-        "ssp37-ssp126Lu", 
-        "ssp585"
+        {
+            "name": "ssp126", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp370-ssp126Lu", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "lumip"
     ], 
     "requirements": [
         {
@@ -20,38 +35,46 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP26LandUse", 
-            "description": "Impose changing RCP2.6 land use including crops, pasture, urban area, vegetation and forest.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6, Land Use", 
-            "label": "RCP26LandUse", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "RCP85ForcingExcludingLandUse", 
+            "canonical_name": "RCP85 Forcing Excluding Land Use", 
             "description": "Impose RCP8.5 forcing excluding land use.\nEmissions driven.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, excluding land use", 
-            "label": "RCP85ForcingExcludingLandUse", 
+            "label": "RCP85 Forcing Excluding Land Use", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "MinimumOne", 
-            "description": "An ensemble of at least one simulation", 
+            "canonical_name": "RCP26 Land Use", 
+            "description": "Impose changing RCP2.6 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6, Land Use", 
+            "label": "RCP26 Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
             "isConformanceRequested": false, 
-            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
-            "label": "MinimumOne", 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "All Land Management Active", 
+            "description": "All applicable land management active in the model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "ffd5ecf7-4a65-4140-a26a-42dfd25774a1", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=ffd5ecf7-4a65-4140-a26a-42dfd25774a1&version=latest&client=mohc"
+    "uid": "9699b7b3-b320-40fc-936d-61d32ffcf7ab", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9699b7b3-b320-40fc-936d-61d32ffcf7ab&version=latest&client=mohc"
 }

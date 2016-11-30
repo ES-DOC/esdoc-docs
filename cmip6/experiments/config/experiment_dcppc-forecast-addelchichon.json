@@ -1,14 +1,25 @@
 {
     "canonical_name": "dcppC-forecast-addElChichon", 
-    "description": "Prediction experiment for 2015 with volcano forcing.  Repeat DCPP-A1 2015 forecast with El Chichon forcing. Background volcanic aerosol to be the same as that used in the 1992 hindcast. 10 ensemble members. Run each member for at least 5 years, preferably 10 years.", 
+    "description": "Prediction experiment for 2015 with volcano forcing.  Repeat DCPP-A1 2015 forecast (from the dcppA-hindcast experiment) with El Chichon forcing. Background volcanic aerosol to be the same as that used in the 1992 hindcast. 10 ensemble members. Run each member for at least 5 years, preferably 10 years.", 
+    "governing_mips": [
+        "dcpp"
+    ], 
     "keywords": "DCPP, Tier 3, El Chichon, volcano", 
     "long_name": "2015 forecast with added El Chichon forcing", 
     "mip_era": "cmip6", 
     "rationale": "Volcano effects on decadal prediction. To assess the impact of volcanoes on decadal prediction skill. Investigate the potential effects of volcanic eruption on forecasts of the coming decade. Investigate the sensitivity of volcanic response to the state of the climate system.", 
     "related_experiments": [
-        "dcppA-hindcast", 
-        "dcppA-hindcast", 
-        "dcppC-hindcast-noElChichon"
+        {
+            "name": "dcppA-hindcast", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "dcppC-hindcast-noElChichon", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "dcpp"
     ], 
     "requirements": [
         {
@@ -28,19 +39,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "ElChichonAerosol", 
-            "description": "Aerosol forcing from the 1982 El Chichon volcanic eruption.", 
-            "isConformanceRequested": false, 
-            "keywords": "DCPP, aerosol, volcano, El Chichon", 
-            "label": "ElChichonAerosol", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "RCP45Forcing", 
+            "canonical_name": "RCP45 Forcing", 
             "description": "Impose RCP4.5 forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
-            "label": "RCP45Forcing", 
+            "label": "RCP45 Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "El Chichon Aerosol", 
+            "description": "Aerosol forcing from the 1982 El Chichon volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, El Chichon", 
+            "label": "El Chichon Aerosol", 
             "type": "forcing-constraint"
         }, 
         {
@@ -60,14 +71,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "5c35e4ef-7945-4a99-ae3c-8fcc387105ee", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5c35e4ef-7945-4a99-ae3c-8fcc387105ee&version=latest&client=mohc"
+    "uid": "9b74864c-be8d-401d-9b32-7583acfce643", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9b74864c-be8d-401d-9b32-7583acfce643&version=latest&client=mohc"
 }

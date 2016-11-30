@@ -1,13 +1,37 @@
 {
     "canonical_name": "hist-1950", 
     "description": "Historical coupled ocean atmosphere simulations of the near past (1950-2014) at high and standard resolution.\nFor optimal comparison between models aerosol concentrations would be preferable and not emissions.\nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes and ocean resolution of 0.25 degrees, and a minimum of daily coupling between ocean and atmosphere.\nAt least one ensemble member at standard model resolution.", 
+    "governing_mips": [
+        "highresmip"
+    ], 
     "keywords": "HighResMIP, Tier 2, coupled, historical", 
     "long_name": "coupled historical 1950-2014", 
     "mip_era": "cmip6", 
     "rationale": "The period contains several phases where the surface warming rate is lower, and the multi-model multi-resolution ensemble may give some insight into this.", 
     "related_experiments": [
-        "highresSST-present", 
-        "historical"
+        {
+            "name": "control-1950", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "highres-future", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "highresmip"
     ], 
     "requirements": [
         {
@@ -21,7 +45,7 @@
         {
             "canonical_name": "Historical WMGHG Concentrations", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -29,25 +53,9 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "standardModelResolution", 
-            "description": "standard model resolution", 
-            "isConformanceRequested": false, 
-            "keywords": "Standard Model Resolution", 
-            "label": "standardModelResolution", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "DailyCoupling", 
-            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
-            "isConformanceRequested": false, 
-            "keywords": "Daily coupling or more", 
-            "label": "DailyCoupling", 
             "type": "forcing-constraint"
         }, 
         {
@@ -83,11 +91,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "1950ControlInitialisation", 
+            "canonical_name": "1950 Control Initialisation", 
             "description": "Initialisation is branched from the HighResMIP control-1950 simulation after spin-up.", 
             "isConformanceRequested": true, 
             "keywords": "initial conditions, initialisation, control, 1950, control-1950", 
-            "label": "1950ControlInitialisation", 
+            "label": "1950 Control Initialisation", 
             "type": "ensemble"
         }, 
         {
@@ -99,19 +107,35 @@
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "HighResAtmos", 
+            "canonical_name": "High Res Atmos", 
             "description": "25-50km minimum resolution at mid-latitudes", 
             "isConformanceRequested": false, 
             "keywords": "High Resolution, 25-50 km,", 
-            "label": "HighResAtmos", 
+            "label": "High Res Atmos", 
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "HighResOcean", 
+            "canonical_name": "High Resolution Ocean", 
             "description": "Ocean resolution 0.25 degrees", 
             "isConformanceRequested": false, 
             "keywords": "High resolution ocean, 0.25 degrees", 
-            "label": "HighResOcean", 
+            "label": "High Resolution Ocean", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Standard Model Resolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "Standard Model Resolution", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Daily Coupling", 
+            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
+            "isConformanceRequested": false, 
+            "keywords": "Daily coupling or more", 
+            "label": "Daily Coupling", 
             "type": "model-configuration"
         }
     ], 

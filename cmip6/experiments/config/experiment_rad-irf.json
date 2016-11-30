@@ -1,53 +1,196 @@
 {
     "canonical_name": "rad-irf", 
-    "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with three times the pre-industrial carbon dioxide concentrations. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
-    "keywords": "RFMIP, Tier 2, present day, 3xCO2, aerosol-free, clear sky, radiative transfer model", 
-    "long_name": "RFMIP-IRF", 
+    "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions. Use RFMIP specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 1, radiative transfer, clear sky, offline, present day, RCP8.5, pre-industrial", 
+    "long_name": "Offline assessment of radiative transfer parmaeterizations in clear skies", 
     "mip_era": "cmip6", 
-    "rationale": "Clear sky calculations for a set of prescribed atmospehric conditions to identify the degree to which errors in radiative transfer contribute to diverstiy in estimates of instantaneous radiative forcing and how this error depends on the background state of the atmosphere and on the forcing itself.", 
-    "related_experiments": [], 
+    "rationale": "Assess radiative forcing by specific agents and probing sources of parameterisation error.  Clear sky calculations for a set of prescribed atmospehric conditions to identify the degree to which errors in radiative transfer contribute to diverstiy in estimates of instantaneous radiative forcing and how this error depends on the background state of the atmosphere and on the forcing itself.", 
+    "related_experiments": [
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
+    ], 
     "requirements": [
         {
-            "canonical_name": "PDAtmosStates", 
-            "description": "Specified atmospheric states (vertical distribution of temperature and humidity) over many profiles for present day (2015).", 
-            "isConformanceRequested": false, 
-            "keywords": "RFMIP, present day, radiation model, profiles, temperature, humidity, atmospheric state", 
-            "label": "PDAtmosStates", 
+            "canonical_name": "rad-pd", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions. Present-day (PD) greenhouse gas concentrations with PD atmosphere. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PDSurfaceProps", 
-            "description": "Specified surface properties for present day (2015).", 
-            "isConformanceRequested": false, 
-            "keywords": "RFMIP, present day, radiation model, surface properties", 
-            "label": "PDSurfaceProps", 
+            "canonical_name": "rad-pd-piall", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with pre-industrial well-mixed greenhouse gases (WMGHG). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP,  pre-industrial well-mixed greenhouse gas, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piall", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "3xPICO2", 
-            "description": "Impose 3x pre-industrial (1850) concentration of Carbon Dioxide (CO2).", 
-            "isConformanceRequested": false, 
-            "keywords": "RFMIP, 3xCO2, pre-industrial concentration x 3", 
-            "label": "3xPICO2", 
+            "canonical_name": "rad-pd-4xCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with quadrupled carbon dioxide. Present-day (PD) greenhouse gas concentrations with 4x CO2 and PD atmosphere. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, 4xCO2, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-4xCO2", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "MinimumOne", 
-            "description": "An ensemble of at least one simulation", 
-            "isConformanceRequested": false, 
-            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
-            "label": "MinimumOne", 
+            "canonical_name": "rad-pd-future", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with future well-mixed greenhouse gases (WMGHG) based on RCP8.5 at 2100. Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP,  future well-mixed greenhouse gas, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-future", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-0p5xCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with half the pre-industrial carbon dioxide concentrations. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, 0.5xCO2, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-0p5xCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-2xCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with two times the pre-industrial carbon dioxide concentrations. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, 2xCO2, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-2xCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-3xCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with three times the pre-industrial carbon dioxide concentrations. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, 3xCO2, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-3xCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-8xCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with eight times the pre-industrial carbon dioxide concentrations. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, 8xCO2, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-8xCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-piCO2", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial carbon dioxide (CO2). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, PD GHG, present day greenhouse gas, PI CO2, pre-industrial carbon dioxide, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piCO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-piCH4", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial methane (CH4). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, PD GHG, present day greenhouse gas, PI CH4, pre-industrial methane, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piCH4", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-piN2O", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial nitrous oxide (N2O). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, PD GHG, present day greenhouse gas, PI N2O, pre-industrial nitrous oxide, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piN2O", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-piO3", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial ozone (O3). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, PD GHG, present day greenhouse gas, PI O3, pre-industrial ozone, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piO3", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-piHFC", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with present day (2015) greenhouse gas concentrations and pre-industrial hydrofluorocarbons (HFCs). Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, PD GHG, present day greenhouse gas, PI HFC, pre-industrial Hydroflurocarbons, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-piHFC", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-p4K", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with plus 4K atmosphere. Present-day (PD) greenhouse gas concentrations with PD plus 4K atmosphere. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, plus 4K, +4K,  aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-p4K", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pdwv-p4K", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with plus 4K atmosphere. Present-day (PD) greenhouse gas concentrations and water vapour with PD plus 4K atmosphere. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, present day, plus 4K, +4K,  aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pdwv-p4K", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pi", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for pre-industrial (1850) clear sky (aerosol-free) conditions. Pre-Industrial (PI) greenhouse gas concentrations with PI atmosphere. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, pre-industrial, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pi", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-future", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for future clear sky (aerosol-free) conditions with future greenhouse gases. Future greenhouse gas concentrations, and future atmosphere based on RCP8.5 at 2100. Use specified atmospheric distributions of temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, future, RCP8.5 GHG at 2100, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-future", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "rad-pd-LGM", 
+            "description": "Offline radiative transfer calculations of vertically-resolved broadband-integrated longwave and shortwave fluxes for present-day (2015) clear sky (aerosol-free) conditions with last glacial maximum (LGM) greenhouse gases (GHG) based on PMIP LGM GHG specifications. Use specified atmospheric distributions of present day temperature and humidity and surface properties over many profiles.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, last glacial maximum, LGM, GHG, greenhouse gas, aerosol-free, clear sky, radiative transfer model", 
+            "label": "rad-pd-LGM", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP Rad-irf", 
+            "description": "An 18 member forcing ensemble to assess parameterisation error in clear-sky top-of-atmosphere flux changes.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, rad-irf, radiation model,", 
+            "label": "RFMIP Rad-irf", 
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "radiativeTransfer", 
+            "canonical_name": "Radiative Transfer", 
             "description": "One dimensional radiative tranfer model, identical to the radiative transfer scheme used in the Atmosphere model.", 
             "isConformanceRequested": false, 
             "keywords": "radiative tranfer model", 
-            "label": "radiativeTransfer", 
+            "label": "Radiative Transfer", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "e9e51e5a-a8b1-49f5-b043-ab4a1542143d", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e9e51e5a-a8b1-49f5-b043-ab4a1542143d&version=latest&client=mohc"
+    "uid": "0943ac13-df2a-4850-971c-3f6f4f1a0ce6", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=0943ac13-df2a-4850-971c-3f6f4f1a0ce6&version=latest&client=mohc"
 }

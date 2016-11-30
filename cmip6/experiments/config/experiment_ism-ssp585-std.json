@@ -1,0 +1,72 @@
+{
+    "canonical_name": "ism-ssp585-std", 
+    "description": "Stand alone ice sheet model driven offline by ISMIP6 CMIP6 standard input for the SSP5-85 climate forcing scenario.", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 2, SSP5-85 forcing, stand-alone ISM,  ice sheets only", 
+    "long_name": "offline ice sheet model forced by ISMIP6-specified AOGCM ssp585 output", 
+    "mip_era": "cmip6", 
+    "rationale": "For projections of 21st century sea level.", 
+    "related_experiments": [
+        {
+            "name": "ism-historical-std", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ism-pdControl-std", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ISMIP6-specified SSP585 input", 
+            "description": "ISMIP6-specified input from the output of an AOGCM SSP5 RCP8.5 climate forcing scenario.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, ISMIP6-specified input, SSP5 RCP8.5, SSP585", 
+            "label": "ISMIP6-specified SSP585 input", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Present Day ISM Initialisation", 
+            "description": "Initialisation is from the ISMIP6 ism-pdControl-std stand alone ice sheet simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "present day, ISM, initialisation", 
+            "label": "Present Day ISM Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "2ea54201-0b5c-4411-a6f6-b95dcb7c0c72", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=2ea54201-0b5c-4411-a6f6-b95dcb7c0c72&version=latest&client=mohc"
+}

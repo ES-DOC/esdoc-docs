@@ -1,13 +1,29 @@
 {
     "canonical_name": "control-1950", 
     "description": "The HighResMIP equivalent of the pre-industrial control with fixed 1950s forcing.  The forcing consists of greenhouse gases, including ozone and aerosol loading for a 1950s (~10 year mean) climatology.  For optimal comparison between models, aerosol concentrations would be preferable and not emissions.\nInitial ocean conditions are taken from the EN4 (Good et al, 2013) ocean analysis over an average period of 1950-1954.  A short spin-up with these forcings is required (~50 years) to produce initial conditions.\nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes and ocean resolution of 0.25 degrees, and a minimum of daily coupling between ocean and atmosphere.\nAt least one ensemble member at standard model resolution.  \nRun for 100 years.", 
+    "governing_mips": [
+        "highresmip"
+    ], 
     "keywords": "HighResMIP, Tier 2, coupled, 1950s", 
     "long_name": "coupled control with fixed 1950's forcing (HighResMIP equivalent of pre-industrial control)", 
     "mip_era": "cmip6", 
     "rationale": "Control simulations to allow the evaluation of model drift.", 
     "related_experiments": [
-        "highres-future", 
-        "hist-1950"
+        {
+            "name": "highres-future", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "hist-1950", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-1950", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "highresmip"
     ], 
     "requirements": [
         {
@@ -19,46 +35,6 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1950s WMGHG Concentrations", 
-            "description": "1950s (10 year) climatology of forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentrations for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations. \nDepending on the model setup and emission species (short-lived, ozone, long-lived GHG), the historical simulation is driven by emissions and/or concentrations.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, 1950s, climatology", 
-            "label": "1950s WMGHG Concentrations", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1950s Land Use", 
-            "description": "1950s (10 year) mean global gridded land-use forcing data.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, land use, 1950s", 
-            "label": "1950s Land Use", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1950s Stratospheric Aerosol", 
-            "description": "1950s (10 year) climatology of stratospheric aerosols.", 
-            "isConformanceRequested": false, 
-            "keywords": "historical, stratospheric, aerosol, 1950s, climatology", 
-            "label": "1950s Stratospheric Aerosol", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "standardModelResolution", 
-            "description": "standard model resolution", 
-            "isConformanceRequested": false, 
-            "keywords": "Standard Model Resolution", 
-            "label": "standardModelResolution", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "DailyCoupling", 
-            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
-            "isConformanceRequested": false, 
-            "keywords": "Daily coupling or more", 
-            "label": "DailyCoupling", 
-            "type": "forcing-constraint"
-        }, 
-        {
             "canonical_name": "1950s Aerosol Forcing", 
             "description": "1950s (10 year) climatology of mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
             "isConformanceRequested": true, 
@@ -67,11 +43,27 @@
             "type": "forcing-constraint"
         }, 
         {
+            "canonical_name": "1950s WMGHG Concentrations", 
+            "description": "1950s (10 year) climatology of forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentrations for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations. \nDepending on the model setup and emission species (short-lived, ozone, long-lived GHG), the historical simulation is driven by emissions and/or concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, 1950s, climatology", 
+            "label": "1950s WMGHG Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "1950s Emissions", 
             "description": "1950s (10 year) climatology of core emissions data.", 
             "isConformanceRequested": true, 
             "keywords": "1950s, emissions, climatology", 
             "label": "1950s Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s Land Use", 
+            "description": "1950s (10 year) mean global gridded land-use forcing data.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use, 1950s", 
+            "label": "1950s Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -91,6 +83,14 @@
             "type": "forcing-constraint"
         }, 
         {
+            "canonical_name": "1950s Stratospheric Aerosol", 
+            "description": "1950s (10 year) climatology of stratospheric aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol, 1950s, climatology", 
+            "label": "1950s Stratospheric Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "HighAndStandardResolution", 
             "description": "At least two simulations, one at high resolution (minimum 25-50 km at mid-latitudes), and one at the standard model resolution", 
             "isConformanceRequested": false, 
@@ -99,11 +99,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "1950sOceanInitialisation", 
+            "canonical_name": "1950s Ocean Initialisation", 
             "description": "Initial ocean conditions are taken from the EN4 (Good et al, 2013) ocean analysis over an average period of 1950-1954.", 
             "isConformanceRequested": true, 
             "keywords": "initial conditions, initialisation, ocean, EN4, 1950s", 
-            "label": "1950sOceanInitialisation", 
+            "label": "1950s Ocean Initialisation", 
             "type": "ensemble"
         }, 
         {
@@ -115,19 +115,35 @@
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "HighResAtmos", 
+            "canonical_name": "High Res Atmos", 
             "description": "25-50km minimum resolution at mid-latitudes", 
             "isConformanceRequested": false, 
             "keywords": "High Resolution, 25-50 km,", 
-            "label": "HighResAtmos", 
+            "label": "High Res Atmos", 
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "HighResOcean", 
+            "canonical_name": "High Resolution Ocean", 
             "description": "Ocean resolution 0.25 degrees", 
             "isConformanceRequested": false, 
             "keywords": "High resolution ocean, 0.25 degrees", 
-            "label": "HighResOcean", 
+            "label": "High Resolution Ocean", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Standard Model Resolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "Standard Model Resolution", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Daily Coupling", 
+            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
+            "isConformanceRequested": false, 
+            "keywords": "Daily coupling or more", 
+            "label": "Daily Coupling", 
             "type": "model-configuration"
         }
     ], 

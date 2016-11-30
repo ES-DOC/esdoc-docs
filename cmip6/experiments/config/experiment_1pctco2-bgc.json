@@ -1,14 +1,29 @@
 {
     "canonical_name": "1pctCO2-bgc", 
     "description": "Biogeochemically-coupled version of 1% per year increasing CO2 up to 4XCO2 simulation. CO2 increase only affects carbon cycle models, radiative code sees pre-industrial CO2. Nitrogen deposition held fixed at pre-industrial values.", 
+    "governing_mips": [
+        "c4mip"
+    ], 
     "keywords": "C4MIP, Tier1, CO2, 1 percent per year, until quadrupling, until 4XCO2, biogeochemical coupling", 
     "long_name": "biogeochemically-coupled version of 1 percent per year increasing CO2 experiment", 
     "mip_era": "cmip6", 
     "rationale": "Quantify the carbon cycle feedback in a model.", 
     "related_experiments": [
-        "1pctCO2", 
-        "1pctCO2-rad", 
-        "piControl"
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "1pctCO2-rad", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
     ], 
     "requirements": [
         {
@@ -20,27 +35,27 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1%/yearCO2CarbonCycle", 
+            "canonical_name": "1% per year CO2 for Carbon Cycle", 
             "description": "1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling seen by carbon cycle only.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, carbon cycle only", 
-            "label": "1%/yearCO2CarbonCycle", 
+            "label": "1% per year CO2 for Carbon Cycle", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1850CO2Radiation", 
+            "canonical_name": "1850 CO2 for Radiation", 
             "description": "Impose repeating 1850 carbon dioxide (CO2) concentrations to radiative code.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "1850, CO2, concentration, pre-industrial, radiation code only", 
-            "label": "1850CO2Radiation", 
+            "label": "1850 CO2 for Radiation", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1850NitrogenDeposition", 
+            "canonical_name": "1850 Nitrogen Deposition", 
             "description": "Nitrogen deposition held fixed at pre-industrial values.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "1850, nigrogen deposition", 
-            "label": "1850NitrogenDeposition", 
+            "label": "1850 Nitrogen Deposition", 
             "type": "forcing-constraint"
         }, 
         {

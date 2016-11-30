@@ -1,0 +1,60 @@
+{
+    "canonical_name": "ism-amip-std", 
+    "description": "Stand alone ice sheet model driven offline by ISMIP6 CMIP6 standard input for the DECK amip climate experiment.", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 3, amip, DECK amip, stand-alone ISM, ice sheets only", 
+    "long_name": "offline ice sheet model forced by ISMIP6-specified AGCM AMIP output", 
+    "mip_era": "cmip6", 
+    "rationale": "To understand the well observed record of ice sheet changes.", 
+    "related_experiments": [
+        {
+            "name": "amip", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ism-historical-std", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1979-2014 36yrs", 
+            "description": "Historical, Recent past, since satellite observations have been available", 
+            "isConformanceRequested": false, 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ISMIP6-specified AMIP input", 
+            "description": "ISMIP6-specified input from the output of an AGCM amip climate forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, ISMIP6-specified input, AMIP", 
+            "label": "ISMIP6-specified AMIP input", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "1e7ae1c3-ad00-4b13-a095-9060221f54f4", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1e7ae1c3-ad00-4b13-a095-9060221f54f4&version=latest&client=mohc"
+}

@@ -1,14 +1,25 @@
 {
     "canonical_name": "faf-water", 
     "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+    "governing_mips": [
+        "fafmip"
+    ], 
     "keywords": "FAFMIP, Tier 1, waterFAF, surface freshwater flux anomaly", 
     "long_name": "control plus perturbative surface flux of water into ocean", 
     "mip_era": "cmip6", 
     "rationale": "For comparison with the FAFMIP surface heat flux anomaly experiment.", 
     "related_experiments": [
-        "1pctCO2", 
-        "faf-heat", 
-        "piControl"
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "fafmip"
     ], 
     "requirements": [
         {
@@ -20,27 +31,27 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
+            "canonical_name": "1pctCO2 Fresh Water Flux Anomaly At Doubling", 
             "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), created from the CMIP5 diagnostic of water flux into sea water (wfo).  The surface freshwater flux is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "FAFMIP, 1pctCO2, freshwater flux, 2xCO2, at CO2 doubling", 
-            "label": "1pctCO2FreshWaterFluxAnomalyAtDoubling", 
+            "label": "1pctCO2 Fresh Water Flux Anomaly At Doubling", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

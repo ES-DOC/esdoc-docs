@@ -1,15 +1,49 @@
 {
     "canonical_name": "hist-piNTCF", 
     "description": "Impose historical WMGHG and halocarbon concentrations. Near Term Climate Forcers (NTCFs), namely tropospheric aerosols and tropospheric ozone precursors, to be  fixed at 1850 emission levels. These simulations parallel the \"CMIP6 historical\", and differ only by fixing the anthropogenic emissions or concentrations of a specified class of species.   All other forcing agents must evolve as in \"CMIP6 historical\".", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 1, Historical perturbation, 1850 NTCF, Near Term Climate Forcers, Historical WMGHG, Historical HC,  halocarbons", 
     "long_name": "historical forcing, but with pre-industrial NTCF emissions", 
     "mip_era": "cmip6", 
     "rationale": "How have NTCF contributed to global ERF and affected regional climate over the historical period?", 
     "related_experiments": [
-        "hist-1950HC", 
-        "histSST-piAer", 
-        "histSST-piO3", 
-        "historical"
+        {
+            "name": "hist-1950HC", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "histSST", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "histSST-1950HC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "histSST-piAer", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "histSST-piNTCF", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "histSST-piO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -23,7 +57,7 @@
         {
             "canonical_name": "Historical Non-Reactive WMGHG Concentrations", 
             "description": "Impose historical non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
             "label": "Historical Non-Reactive WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -31,7 +65,7 @@
         {
             "canonical_name": "Historical Methane Concentrations", 
             "description": "Impose historical concentrations of methane (CH4).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical methane concentrations, CH4", 
             "label": "Historical Methane Concentrations", 
             "type": "forcing-constraint"
@@ -39,7 +73,7 @@
         {
             "canonical_name": "Historical N2O Concentrations", 
             "description": "Impose historical concentrations of Nitrous Oxide (N2O).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical nitrous oxide, N2O", 
             "label": "Historical N2O Concentrations", 
             "type": "forcing-constraint"
@@ -47,7 +81,7 @@
         {
             "canonical_name": "1850 NTCF Emissions", 
             "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "1850, Near Term Climate Forcers, NTCF, emissions", 
             "label": "1850 NTCF Emissions", 
             "type": "forcing-constraint"
@@ -55,7 +89,7 @@
         {
             "canonical_name": "Historical Ozone Depleating Halocarbon Concentrations", 
             "description": "Impose historical concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
             "label": "Historical Ozone Depleating Halocarbon Concentrations", 
             "type": "forcing-constraint"
@@ -63,17 +97,9 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850 NTCF Emissions", 
-            "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
-            "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing, NTCF, near term climate forcers", 
-            "label": "1850 NTCF Emissions", 
             "type": "forcing-constraint"
         }, 
         {

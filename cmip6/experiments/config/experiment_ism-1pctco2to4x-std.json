@@ -1,0 +1,70 @@
+{
+    "canonical_name": "ism-1pctCO2to4x-std", 
+    "description": "Stand alone ice sheet model driven offline by ISMIP6 CMIP6 standard input for the idealised 1% per year atmospheric carbon dioxide increase to quadrupling and held fixed climate change experiment.", 
+    "governing_mips": [], 
+    "keywords": "ISMIP, Tier 1, 1% per yr CO2, quadrupled CO2, stand-alone ISM, ice sheets only", 
+    "long_name": "offline ice sheet model forced by ISMIP6-specified AOGCM 1pctCO2to4x output", 
+    "mip_era": "cmip6", 
+    "rationale": "Idealised climate change experiment.", 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ism-pdControl-std", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl-withism", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1999 150yrs", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ISMIP6-specified 1pctCO2to4x input", 
+            "description": "ISMIP6-specified input from the output of an AOGCM 1pctCO2to4x (1 percent per year increase in CO2 to quadrupling) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, ISMIP6-specified input, 1pctCO2to4x, 1 percent per year increasei n CO2 to quadrupling", 
+            "label": "ISMIP6-specified 1pctCO2to4x input", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialISMInitialisation", 
+            "description": "Initialisation is from the pre-industrial control with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "piControl, interactive ISM, initialisation", 
+            "label": "PreIndustrialISMInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "a0095fb6-e50a-45b6-8d1c-7e2863e2f6d0", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=a0095fb6-e50a-45b6-8d1c-7e2863e2f6d0&version=latest&client=mohc"
+}

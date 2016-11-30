@@ -1,0 +1,96 @@
+{
+    "canonical_name": "piClim-spAerO3-aer", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.   Aerosols and ozone set to present day (2015) values and other anthropogenic forcing agents are set at pre-industrial values.  Aerosols are specified by RFMIP. Run for 30 years.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 2, PD aer O3, present day aerosols and ozone, uncoupled, atmosphere-land, specified aerosol", 
+    "long_name": "RFMIP aerosols and ozone effective radiative forcing with specified aerosols", 
+    "mip_era": "cmip6", 
+    "rationale": "Quantify present-day effective radiative forcing (ERF) by aerosols and ozone.", 
+    "related_experiments": [
+        {
+            "name": "piClim-aerO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP Pre-Industrial Forcing Excluding Aerosols and O3", 
+            "description": "Pre-Industrial forcing excluding aerosols and ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols, excluding ozone", 
+            "label": "RFMIP Pre-Industrial Forcing Excluding Aerosols and O3", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP 2015 Aerosols", 
+            "description": "RFMIP specifed aerosol optical and cloud active properties based on the MACv2-SP prescription for the \"present day\" which averages aerosol properties for the period between 1985 and 2005.", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, specified aerosols, 2015", 
+            "label": "RFMIP 2015 Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015 O3", 
+            "description": "Impose present day (2015) ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "2015, ozone, O3", 
+            "label": "2015 O3", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "Atmosphere-Land Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "b7203bb9-bed3-49bd-8775-611c66366402", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=b7203bb9-bed3-49bd-8775-611c66366402&version=latest&client=mohc"
+}

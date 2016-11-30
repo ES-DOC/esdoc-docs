@@ -1,13 +1,29 @@
 {
     "canonical_name": "ssp245-stratO3", 
     "description": "Extension of hist-stratO3 (histSOZ) simulations to the year 2100 following the ozone concentrations specified for the SSP2-4.5 scenario.\nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 2, ssp245SOZ, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
     "long_name": "stratospheric-ozone-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
     "rationale": "Stratospheric ozone is projected to recover following the successful implementation of the Montreal Protocol and its amendments. These simulations will facilitate a robust multi-model assessment of the climate effects of this recovery on Southern Hemisphere climate and stratospheric temperature.", 
     "related_experiments": [
-        "historical", 
-        "ssp245"
+        {
+            "name": "hist-stratO3", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
     ], 
     "requirements": [
         {
@@ -21,17 +37,17 @@
         {
             "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
             "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
             "label": "Pre-Industrial Tropospheric Ozone Concentrations", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP45StratosphericOzone", 
+            "canonical_name": "RCP45 Stratospheric Ozone", 
             "description": "Impose changing stratospheric ozone concentrations consistent with RCP4.5 forcing scenario.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, RCP4.5, future, 21st century, ozone, o3", 
-            "label": "RCP45StratosphericOzone", 
+            "label": "RCP45 Stratospheric Ozone", 
             "type": "forcing-constraint"
         }, 
         {

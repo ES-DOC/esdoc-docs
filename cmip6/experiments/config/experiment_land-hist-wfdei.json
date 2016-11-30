@@ -1,0 +1,116 @@
+{
+    "canonical_name": "land-hist-wfdei", 
+    "description": "Land only simulations using WFDEI forcing data and a standard bias correction strategy. As LUMIP land-hist but with WFDEI dataset. WFDEI: WATCH Forcing Data methodology applied to ERA-Interim reanalysis data. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
+    "keywords": "LS3MIP, Tier 2, Historical, land surface, WFDEI", 
+    "long_name": "Historical land-only with WFDEI forcings", 
+    "mip_era": "cmip6", 
+    "rationale": "Land reanalysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-hist", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1901-2014 114yrs", 
+            "description": "Historical, begin in 1901 and run for 114 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1901-2014", 
+            "label": "1901-2014 114yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "TRENDY spin up for WFDEI", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the WFDEI forcing dataset (1901\u20131920). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, WFDEI", 
+            "label": "TRENDY spin up for WFDEI", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "TRENDY Interim Forcing for WFDEI", 
+            "description": "For the interim period from 1850 to the first year of the WFDEI forcing dataset, the forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1850 to first forcing year, interim forcing, WFDEI", 
+            "label": "TRENDY Interim Forcing for WFDEI", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "WFDEI historical forcing", 
+            "description": "Apply WFDEI (WATCH Forcing Data methodology applied to ERA-Interim reanalysis data) forcing to offline land surface models running the LS3MIP land-hist-wfdei historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land surface, WFDEI", 
+            "label": "WFDEI historical forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "CO2 Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2 Historical", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Nitrogen deposition", 
+            "description": "Impose time varying (transient) historical nitrogen (N) deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, Nitrogen deposition", 
+            "label": "Historical Nitrogen deposition", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Deposition", 
+            "description": "Impose time varying (transient) historical aerosol deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol deposition", 
+            "label": "Historical Aerosol Deposition", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Simplified Historical Solar Forcing", 
+            "description": "Simplified historical solar forcing requirement for models that represent solar forcing as a constant rather than with specifications for spectral irradiance, proton forcing, electron forcing and cosmic ray forcing.  e.g. land surface models.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, forcing", 
+            "label": "Simplified Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "dda6cbdd-6876-444c-8699-e98623583246", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=dda6cbdd-6876-444c-8699-e98623583246&version=latest&client=mohc"
+}

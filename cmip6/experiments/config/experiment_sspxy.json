@@ -1,12 +1,25 @@
 {
     "canonical_name": "sspXY", 
     "description": "SSP-based RCP scenario with very-low forcing by the end of the century.  Forcing will be substantially beolow RCP2.6 in 2100. SSP1-2.0 is a likely candidate for this scenario.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSPX, RCPY, low forcing, probably SSP1, RCP around or below 2.0", 
     "long_name": "RCPY based on SSPX", 
     "mip_era": "cmip6", 
     "rationale": "There is policy interest in scenarios that would inform a possible goal of limiting global mean warming to 1.5\u00b0C above pre-industrial levels based on the Paris COP21 agreement.", 
     "related_experiments": [
-        "ssp126"
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp126", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -18,11 +31,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCPYForcing", 
+            "canonical_name": "RCPY Forcing", 
             "description": "Impose RCP Y forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway Y, future, 21st century, SSPX, RCPY", 
-            "label": "RCPYForcing", 
+            "label": "RCPY Forcing", 
             "type": "forcing-constraint"
         }, 
         {

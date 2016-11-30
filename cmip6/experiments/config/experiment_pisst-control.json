@@ -1,12 +1,53 @@
 {
     "canonical_name": "piSST-control", 
     "description": "An AGCM experiment with monthly-varying SSTs, sea-ice, atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run).  Dynamic vegetation should be turned off in all the piSST set of experiments.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, Pre-industrial SST and SIC, PI forcing", 
     "long_name": "control SSTs", 
     "mip_era": "cmip6", 
     "rationale": "To understand regional climate responses to CO2 forcing.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "a4SST", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "a4SSTice", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "futureSST", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "futureSST-4xCO2-all", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piSST-4xCO2-all", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piSST-4xCO2-rad", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piSST-p4K", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piSST-pxK", 
+            "relationship": "is_control_for"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -18,35 +59,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSSTMonthlyVar", 
+            "canonical_name": "piControl SST Monthly Var", 
             "description": "Monthly-varying sea surface temperatures from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying", 
-            "label": "PIControlSSTMonthlyVar", 
+            "label": "piControl SST Monthly Var", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControlSICMonthlyVar", 
+            "canonical_name": "piControl SIC Monthly Var", 
             "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
-            "label": "PIControlSICMonthlyVar", 
+            "label": "piControl SIC Monthly Var", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

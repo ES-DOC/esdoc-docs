@@ -1,0 +1,72 @@
+{
+    "canonical_name": "volc-pinatubo-slab", 
+    "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years. Use a model configuration with a slab ocean.", 
+    "governing_mips": [
+        "volmip"
+    ], 
+    "keywords": "VolMIP, Tier 3, Pinatubo, volcano, eruption, volcanic forcing, slab ocean", 
+    "long_name": "Pinatubo experiment with full volcanic forcing and slab ocean", 
+    "mip_era": "cmip6", 
+    "rationale": "To clarify the role of coupled atmosphere-ocean processes (most prominently linked to the El Ni\u00f1o-Southern Oscillation) in determining the dynamical response.", 
+    "related_experiments": [
+        {
+            "name": "control-slab", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "volc-pinatubo-full", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "volmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "3yrs", 
+            "description": "Run for 3 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "3 years", 
+            "label": "3yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pinatubo Aerosol", 
+            "description": "Aerosol forcing from the 1991 Pinatubo volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, Pinatubo", 
+            "label": "Pinatubo Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "25 piControl Initialisations from June 1st", 
+            "description": "An ensemble of at least twenty-five predefined initialisation states which span: warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states, strong/weak/neutral  Atlantic Meridional Overturning Circulation (AMOC) states, the Quasi Biennial Oscillation (QBO), characteristics of the polar vortex and the North Atlantic Oscillation (NAO).  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from June 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "twenty-five, 25, ensemble, initialisation, VolMIP, Short", 
+            "label": "25 piControl Initialisations from June 1st", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Slab Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with a slab ocean.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean, Slab ocean", 
+            "label": "AOGCM Slab Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "7d45003e-3406-4ca4-a409-4bc3d896d914", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=7d45003e-3406-4ca4-a409-4bc3d896d914&version=latest&client=mohc"
+}

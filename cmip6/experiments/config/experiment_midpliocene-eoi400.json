@@ -1,12 +1,21 @@
 {
     "canonical_name": "midPliocene-eoi400", 
-    "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) boundary conditions for ice sheet and land-sea mask, topography (smaller ice sheets),  the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up.", 
+    "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) boundary conditions for ice sheet and land-sea mask, topography (smaller ice sheets),  the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+    "governing_mips": [
+        "pmip"
+    ], 
     "keywords": "PMIP, Tier 1, PlioExp, Pliiocene warm, 3.2 Ma", 
-    "long_name": "mid-Pliocene", 
+    "long_name": "mid-Pliocene warm period", 
     "mip_era": "cmip6", 
     "rationale": "How does the Earth System respond in the long term to CO2 forcing analogous to that of the modern?  What is the significance of CO2 induced polar amplification for the stability of the ice sheets, sea-ice and sea-level?", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
     ], 
     "requirements": [
         {
@@ -18,43 +27,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PlioIceSheet", 
-            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) ice sheets.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "Mid-Pliocene CO2", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) atmospheric concentrations of Carbon Dioxide, 400ppm.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, CO2, carbon dioxide, mid-pliocene", 
+            "label": "Mid-Pliocene CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Mid-Pliocene Astronomical Parameters", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, mid-pliocene", 
+            "label": "Mid-Pliocene Astronomical Parameters", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Mid-Plioene Ice Sheets", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) ice sheets, smaller area than in the piControl.", 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, ice sheets, mid-pliocene", 
-            "label": "PlioIceSheet", 
+            "label": "Mid-Plioene Ice Sheets", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PlioLandSeaMask", 
+            "canonical_name": "Mid-Pliocene Land Sea Mask", 
             "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) land-sea mask.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, land sea mask, mid-pliocene", 
-            "label": "PlioLandSeaMask", 
+            "label": "Mid-Pliocene Land Sea Mask", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PlioTopography", 
+            "canonical_name": "Mid-Pliocene Topography", 
             "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) topography (smaller ice sheets).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, topography, mid-pliocene", 
-            "label": "PlioTopography", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "PlioWMGHG", 
-            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) atmospheric concentrations of well-mixed greenhouse gases.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, mid-pliocene", 
-            "label": "PlioWMGHG", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "PlioOrbit", 
-            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) orbital parameters.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, orbital parameters, mid-pliocene", 
-            "label": "PlioOrbit", 
+            "label": "Mid-Pliocene Topography", 
             "type": "forcing-constraint"
         }, 
         {
@@ -66,14 +75,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "e1ef0f35-3efe-49ef-96e0-887f1093a29a", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e1ef0f35-3efe-49ef-96e0-887f1093a29a&version=latest&client=mohc"
+    "uid": "5ab9737e-a264-4378-a8b2-f0658832b583", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5ab9737e-a264-4378-a8b2-f0658832b583&version=latest&client=mohc"
 }

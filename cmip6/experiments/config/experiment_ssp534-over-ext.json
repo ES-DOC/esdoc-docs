@@ -1,15 +1,34 @@
 {
     "canonical_name": "ssp534-over-ext", 
     "description": "Long-term extension, beyond 2100,  for the SSP5-3.4 overshoot scenario.  The negative CO2 emissions level reached in 2100 remains constant at that level to 2150 and then  increases linearly to zero by 2250. Concentration-driven. \nThe scenario can be seen as an overshoot of the 3.4 W/m2 level (which it exceeds and then returns to by about 2100) and an overshoot of the 2.6 W/m2 level, which it returns to in the 23rd century.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP3.4, extension, overshoot, future, climate change, SSP-based RCP", 
     "long_name": "extension of SSP53.4-over to 2300", 
     "mip_era": "cmip6", 
     "rationale": "To consider the implications of rapid decarbonisation. To allow investigation of questions related to climate change beyond 2100. To address questions of long term feedbacks and reversibility which might not be apparent from shorter simulations.", 
     "related_experiments": [
-        "ssp126-ext", 
-        "ssp534-over", 
-        "ssp585", 
-        "ssp585-ext"
+        {
+            "name": "ssp126-ext", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp534-over", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585-ext", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "geomip", 
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -21,11 +40,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP34extoverForcing", 
+            "canonical_name": "RCP34 extension overshoot Forcing", 
             "description": "Impose RCP3.4 overshoot extension forcing. The negative CO2 emissions level reached in 2100 by SSP5-3.4 remain constant at that level to 2150 and then increase linearly to zero by 2250.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 3.4 extension overshoot, future, scenario, SSP5, RCP3.4 extension overshoot", 
-            "label": "RCP34extoverForcing", 
+            "label": "RCP34 extension overshoot Forcing", 
             "type": "forcing-constraint"
         }, 
         {

@@ -1,13 +1,29 @@
 {
     "canonical_name": "1pctCO2Ndep", 
     "description": "Fully-coupled concentration driven 1% per year increasing CO2 up to 4XCO2 simulation with time varying nitrogen deposition.  Only applicable to models whose simulation will be affected by the deposition of reactive nitrogen either due to terrestrial or marine nitrogen cycle effects on carbon fluxes and store.", 
+    "governing_mips": [
+        "c4mip"
+    ], 
     "keywords": "C4MIP, Tier2, CO2, 1 percent per year, until quadrupling, until 4XCO2, time varying nitrogen deposition, fully coupled", 
     "long_name": "1 percent per year increasing CO2 experiment with increasing N-deposition", 
     "mip_era": "cmip6", 
     "rationale": "Additional feedback simulations for models with an interactive nitrogen cycle.", 
     "related_experiments": [
-        "1pctCO2", 
-        "piControl"
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "1pctCO2Ndep-bgc", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
     ], 
     "requirements": [
         {
@@ -19,19 +35,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1%yrCO2Increase", 
+            "canonical_name": "1% per year CO2 Increase", 
             "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
-            "label": "1%yrCO2Increase", 
+            "label": "1% per year CO2 Increase", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "AnthropNitrogenDeposition", 
-            "description": "Impose time varying anthropogenic nitrogen (N) deposition.", 
-            "isConformanceRequested": false, 
-            "keywords": "historical, nitrogen deposition", 
-            "label": "AnthropNitrogenDeposition", 
+            "canonical_name": "Anthropogenic Nitrogen Deposition", 
+            "description": "Impose time varying (transient) anthropogenic nitrogen (N) deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, nitrogen deposition, anthropogenic", 
+            "label": "Anthropogenic Nitrogen Deposition", 
             "type": "forcing-constraint"
         }, 
         {

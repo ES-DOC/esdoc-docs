@@ -1,14 +1,29 @@
 {
     "canonical_name": "amip-piForcing", 
     "description": "AMIP experiment (with SSTs and Sea Ice the same as in the amip experiment in the DECK) but with constant pre-industrial forcing levels (anthropogenic & natural) and run from 1870-present.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, AMIP SST and SIC, pre-industrial forcing.", 
     "long_name": "AMIP SSTs with control forcing", 
     "mip_era": "cmip6", 
     "rationale": "To examine whether climate feedbacks during the 20th century are different to those acting on long term climate change and climate sensitivity.", 
     "related_experiments": [
-        "amip", 
-        "cfmipamip", 
-        "piControl"
+        {
+            "name": "amip", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "cfmipamip", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -22,7 +37,7 @@
         {
             "canonical_name": "AMIP SST", 
             "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
             "label": "AMIP SST", 
             "type": "forcing-constraint"
@@ -30,7 +45,7 @@
         {
             "canonical_name": "AMIP SIC", 
             "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
             "label": "AMIP SIC", 
             "type": "forcing-constraint"
@@ -38,17 +53,17 @@
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

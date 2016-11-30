@@ -1,14 +1,33 @@
 {
     "canonical_name": "G6solar", 
     "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing (SSP5-85) to the ScenarioMIP middle forcing (SSP2-45).  Geoengineering will be simulated over years 2020 to 2100.", 
+    "governing_mips": [
+        "geomip"
+    ], 
     "keywords": "GeoMIP, Tier 1, G6solar, SSP585 to SSP245", 
     "long_name": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245", 
     "mip_era": "cmip6", 
     "rationale": "To determine the differential effects of sulfate aerosols and solar irradiance reduction, in comparison with G6sulfur.", 
     "related_experiments": [
-        "G6sulfur", 
-        "ssp245", 
-        "ssp585"
+        {
+            "name": "G6SST2-solar", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G6sulfur", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "geomip"
     ], 
     "requirements": [
         {
@@ -20,19 +39,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "SolarRCP85toRCP45", 
+            "canonical_name": "Solar RCP85 to RCP45", 
             "description": "Reduce solar irradiance to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, solar mitigation, SSP5-85 to SSP2-45, solar irradiance reduction", 
-            "label": "SolarRCP85toRCP45", 
+            "label": "Solar RCP85 to RCP45", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP85Forcing", 
+            "canonical_name": "RCP85 Forcing", 
             "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85Forcing", 
+            "label": "RCP85 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

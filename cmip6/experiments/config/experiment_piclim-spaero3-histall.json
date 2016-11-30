@@ -1,13 +1,33 @@
 {
     "canonical_name": "piClim-spAerO3-histall", 
-    "description": "A small ensemble of uncoupled (atmosphere and land) simulations from 1850-2014 in which sea surface temperature (SST) and sea ice distributions are specified and vegetation may interact.  Forcings to be consistent with the historical forcing used in the DAMIP experiments. Aerosol properties to be specified by RFMIP.", 
+    "description": "A historical (1850-2014) experiment using an atmosphere-land model with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Transient forcing to be consistent with the historical forcing used in the DAMIP hist-all experiment but with RFMIP specified aerosol properties.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
     "keywords": "RFMIP, Tier 2, Historical, all forcings, specified aerosol, atmosphere-land", 
-    "long_name": "RFMIP historical all forcing with specified aerosol and control SST", 
+    "long_name": "transient effective radiative forcing with specified anthropogenic aerosol optical properties, all forcings", 
     "mip_era": "cmip6", 
     "rationale": "To be used in detection and attribution experiments", 
     "related_experiments": [
-        "piClim-histAll", 
-        "piClim-spAerO3-histaer"
+        {
+            "name": "hist-all", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piClim-histAll", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-spAerO3-histaer", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
     ], 
     "requirements": [
         {
@@ -19,43 +39,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RFMIPhistoricalAerosols", 
+            "canonical_name": "RFMIP historical Aerosols", 
             "description": "Historical aerosol optical properties including cloud-radiation interactions prescribed by RFMIP.  An analytically-described spatial pattern with time-constant spectral variation and time-varying strength (building on the Easy Aerosol experience).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "RFMIP, specified aerosols, historical", 
-            "label": "RFMIPhistoricalAerosols", 
+            "label": "RFMIP historical Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Historical WMGHG Concentrations", 
             "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Land Use", 
-            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
-            "keywords": "Historical, land use", 
-            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -64,6 +76,14 @@
             "isConformanceRequested": true, 
             "keywords": "historical, emissions", 
             "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -83,22 +103,22 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "FourMember", 
-            "description": "An ensemble of four simulations", 
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
             "isConformanceRequested": false, 
-            "keywords": "four, 4, ensemble, runs, simulations", 
-            "label": "FourMember", 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AtmosLandConfig", 
-            "description": "An uncoupled (atmosphere-land) model.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
             "keywords": "atmosphere-land model configuration", 
-            "label": "AtmosLandConfig", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "ec7bd509-777a-4fce-8e7f-98aa144e6462", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=ec7bd509-777a-4fce-8e7f-98aa144e6462&version=latest&client=mohc"
+    "uid": "06b40980-cd4e-406d-bd9f-a8c0e9301289", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=06b40980-cd4e-406d-bd9f-a8c0e9301289&version=latest&client=mohc"
 }

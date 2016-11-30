@@ -1,15 +1,33 @@
 {
     "canonical_name": "piSST-4xCO2-solar", 
     "description": "Time slice for the first year of the GeoMIP G1 experiment with fixed sea surface temperature climatology calculated from the piControl. Run for 10 years.", 
+    "governing_mips": [
+        "geomip"
+    ], 
     "keywords": "GeoMIP, Tier2, timeslice, G1", 
     "long_name": "preindustrial control SSTs with quadrupled CO2 + solar reduction", 
     "mip_era": "cmip6", 
     "rationale": "To enable the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
     "related_experiments": [
-        "G1", 
-        "abrupt-4xCO2", 
-        "futureSST-4xCO2-solar", 
-        "piControl"
+        {
+            "name": "G1", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "futureSST-4xCO2-solar", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "geomip"
     ], 
     "requirements": [
         {
@@ -21,43 +39,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Abrupt4xCO2Increase", 
+            "canonical_name": "Abrupt 4xCO2 Increase", 
             "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
-            "label": "Abrupt4xCO2Increase", 
+            "label": "Abrupt 4xCO2 Increase", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SolarBalanceOf4xCO2", 
+            "canonical_name": "Solar Balance of 4xCO2", 
             "description": "Reduce the solar constant such that the top of atmosphere radiative flux remains within \u00b10.1 W/m2 of the piControl experiment when the CO2 concentration is quadrupled. Specifically, the global mean value of top-of-atmosphere net radiative flux must lie within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, solar balance, 4xCO2, CO2 quadrupling", 
-            "label": "SolarBalanceOf4xCO2", 
+            "label": "Solar Balance of 4xCO2", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2andSolar", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
-            "label": "PIForcingExcludingCO2andSolar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "type": "forcing-constraint"
         }, 
         {

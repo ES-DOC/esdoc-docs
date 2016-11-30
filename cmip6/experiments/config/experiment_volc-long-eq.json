@@ -1,0 +1,64 @@
+{
+    "canonical_name": "volc-long-eq", 
+    "description": "Idealised equatorial eruption corresponding to an initial emission of 56.2 Tg of SO2. This eruption has a magnitued roughly corresponding to the 1815 Mt Tambora eruption in Indonesia, which was linked to the so-called \"year without a summer\" in 1816.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions.  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from year Y-1 of the control.  Run nine ensemble members for at least 20 years, but preferably longer (50 years) to cover the multi-decadal oceanic response. Initialisation date from the piControl start year is 1st April.", 
+    "governing_mips": [
+        "volmip"
+    ], 
+    "keywords": "VolMIP, Tier 1, Tambora, year without a summer, volcano, volcanic forcing, eruption", 
+    "long_name": "Idealized equatorial volcanic eruption emitting 56.2 Tg SO2", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate the uncertainty in the climate response to strong volcanic eruptions, with focus on coupled ocean-atmosphere feedbacks and interannual to decadal global as well as regional responses.  To investigate the mismatch between reconstructed and simulated climate responses to historical strong volcanic eruptions, with focus on the role of simulated background internal climate variability.", 
+    "related_experiments": [
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "volmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "20yrs", 
+            "description": "Run for 20 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "20 years", 
+            "label": "20yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Tambora SO2", 
+            "description": "Emission of 56.2 Tg of SO2 into the equatorial stratosphere roughly corresponding to the 1815 Mt. Tambora eruption in Indonesia, which was linked to the so-called \"year without a summer\" in 1816.", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Tambora, SO2, idealised, eruption", 
+            "label": "Tambora SO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "9 piControl Initialisations from April 1st", 
+            "description": "Nine initialisation states which span warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states and strong/weak/neutral Atlantic Meridional Overturning Circulation (AMOC) states. If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from April 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "nine, 9, ensemble, initialisation, VolMIP, LongS", 
+            "label": "9 piControl Initialisations from April 1st", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "f7dbecb0-0cfc-454e-95c8-0941fa242476", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f7dbecb0-0cfc-454e-95c8-0941fa242476&version=latest&client=mohc"
+}

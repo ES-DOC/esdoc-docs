@@ -1,12 +1,33 @@
 {
     "canonical_name": "ssp245", 
     "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP4.5 global forcing pathway with SSP2 socioeconomic conditions. Radiative forcing reaches a level of 4.5 W/m2 in 2100. Concentration-driven.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP2, RCP4.5, future,  Medium forcing, SSP-based RCP", 
     "long_name": "update of RCP4.5 based on SSP2", 
     "mip_era": "cmip6", 
     "rationale": "The scenario represents the medium part of the range of plausible future pathways.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp245-stratO3chem", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "volc-cluster-21C", 
+            "relationship": "is_control_for"
+        }
+    ], 
+    "related_mips": [
+        "damip", 
+        "dcpp", 
+        "geomip", 
+        "rfmip", 
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -18,11 +39,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP45Forcing", 
+            "canonical_name": "RCP45 Forcing", 
             "description": "Impose RCP4.5 forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
-            "label": "RCP45Forcing", 
+            "label": "RCP45 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

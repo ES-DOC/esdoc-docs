@@ -1,44 +1,57 @@
 {
     "canonical_name": "piClim-anthro", 
-    "description": "A single 30-year uncoupled (atmosphere and land) simulation in which sea suface temperature (SST) and sea ice distributions are specified and vegetation may interact.  Anthropogenic forcing agents are specified at present day 2015 values.", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea suface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Anthropogenic forcing agents (greenhouse gases, aerosols and land use) are specified at present day, 2015, values. Run for 30 years.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
     "keywords": "RFMIP, Tier 1, Present day anthropogenic forcing, uncoupled, atmosphere-land", 
-    "long_name": "RFMIP anthropogenic effective radiative forcing", 
+    "long_name": "effective radiative forcing by present day anthropogenic agents", 
     "mip_era": "cmip6", 
     "rationale": "Quantify present-day total anthropogenic effective radiative forcing (ERF).", 
     "related_experiments": [
-        "piClim-control"
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
     ], 
     "requirements": [
         {
             "canonical_name": "30yrs", 
-            "description": "Run for 30 years, timeslice experiment.", 
+            "description": "Run for 30 years.", 
             "isConformanceRequested": false, 
             "keywords": "30 years", 
             "label": "30yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2015AnthropForcing", 
-            "description": "Agents of anthropogenic forcing, GHGs, Aerosols, Land Use, etc", 
+            "canonical_name": "2015 Anthropogenic Forcing", 
+            "description": "Agents of anthropogenic forcing, GHGs, Aerosols, Land Use.", 
             "isConformanceRequested": true, 
             "keywords": "anthropogenic forcing, 2015", 
-            "label": "2015AnthropForcing", 
+            "label": "2015 Anthropogenic Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -50,14 +63,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AtmosLandConfig", 
-            "description": "An uncoupled (atmosphere-land) model.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
             "keywords": "atmosphere-land model configuration", 
-            "label": "AtmosLandConfig", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "5ab9737e-a264-4378-a8b2-f0658832b583", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5ab9737e-a264-4378-a8b2-f0658832b583&version=latest&client=mohc"
+    "uid": "25a71feb-68bd-464f-a06f-29ea55cde26e", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=25a71feb-68bd-464f-a06f-29ea55cde26e&version=latest&client=mohc"
 }

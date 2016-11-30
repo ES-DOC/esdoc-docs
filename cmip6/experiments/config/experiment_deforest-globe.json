@@ -1,45 +1,53 @@
 {
     "canonical_name": "deforest-globe", 
-    "description": "Idealized defrestation experiment, 20 million square km forest removed linearly over a period of 50 years, with an additional 20 years of constant forest cover. Designed to be somewhat analogous/complementary to the 1% CO2 DECK experiments.", 
+    "description": "Idealized deforestation experiment. 20 million square km forest area (covered by trees) is converted to natural unmanaged grassland over a period of 50 years with a linear rate of 400000 km2/yr followed by 30 years of constant forest cover. Run for 80 years. Simulations should be branched from an 1850 control simulation (piControl) at least 80 years prior to the end of the piControl simulation so that deforest-globe and piControl can be directly compared.  All pre-industrial forcings including CO2 concentration and land-use maps and land management should be maintained as in the piControl.  Deforestation should be restricted to the top 30% of land grid cells in terms of their area of tree cover.  Effectively this concentrates deforestation in the tropical rainforest and boreal forest regions.", 
+    "governing_mips": [
+        "lumip"
+    ], 
     "keywords": "LUMIP, Tier 1, Historical, global deforestation", 
     "long_name": "idealised transient global deforestation", 
     "mip_era": "cmip6", 
-    "rationale": "To assess the biogeophysical role of land cover change on climate. To Identify what amount of deforestation is required to see a signal relative to noise.", 
+    "rationale": "Idealised deforestation experiment designed to gain process understanding and to assess the biogeophysical role of land cover change on climate. To inter-compare modeled biogeochemical response to deforestation. To Identify what amount of deforestation is required to see a signal relative to noise.  Designed to be somewhat analogous/complementary to the 1% CO2 DECK experiments.", 
     "related_experiments": [
-        "historical", 
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "lumip"
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1919 70yrs", 
-            "description": "Historical, from 1850 to 1920.", 
+            "canonical_name": "1850-1929 80yrs", 
+            "description": "Begin in 1850 and run for 80 years.", 
             "isConformanceRequested": false, 
-            "keywords": "historical, 1850, 1919", 
-            "label": "1850-1919 70yrs", 
+            "keywords": "idealised, 1850-1929", 
+            "label": "1850-1929 80yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "IdealisedDeforestation", 
-            "description": "20 million square km of forest removed linearly over a period of 50 years, then held fixed for 20 years.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "Idealised Deforestation from Forest to Grassland", 
+            "description": "Decrease in forest area and increase in natural grassland from pre-industrial. 20 million square km forest area (covered by trees) is converted to natural unmanaged grassland over a period of 50 years with a linear rate of 400000 km2/yr followed by 30 years of constant forest cover.  Deforestation should be restricted to the top 30% of land grid cells in terms of their area of tree cover.  Effectively this concentrates deforestation in the tropical rainforest and boreal forest regions.  The replacement of forest with natural grassland should be done in such a way that carbon (and nitrogen if applicable) from the forested soil is maintained and allowed to evolve according to natural model processes.  If initial forest cover is less than 20 million square km then linearly remove all the forested area over 50 years and report the total area of forest removed.", 
+            "isConformanceRequested": true, 
             "keywords": "LUMIP, idealised deforestation, 20 million square km per year.", 
-            "label": "IdealisedDeforestation", 
+            "label": "Idealised Deforestation from Forest to Grassland", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Pre-IndustrialLandUseExcludingForest", 
-            "description": "pre-industrial land use, excluding forestation.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, pre-industrial land-use, excluding forest", 
-            "label": "Pre-IndustrialLandUseExcludingForest", 
+            "canonical_name": "Pre-Industrial Land Use Excluding Forest And Grassland", 
+            "description": "Constant pre-industrial land use, excluding forest and natural grassland.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, pre-industrial land-use, excluding forest, excluding natural grassland", 
+            "label": "Pre-Industrial Land Use Excluding Forest And Grassland", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingLandUse", 
+            "canonical_name": "Pre-Industrial Forcing Excluding Land Use", 
             "description": "Pre-Industrial forcing excluding land-use.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial forcing, excluding land-use", 
-            "label": "PIForcingExcludingLandUse", 
+            "label": "Pre-Industrial Forcing Excluding Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -51,14 +59,22 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "All Land Management Active", 
+            "description": "All applicable land management active in the model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "320fc8e2-2227-40f9-a17b-2f4ec0fd4c06", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=320fc8e2-2227-40f9-a17b-2f4ec0fd4c06&version=latest&client=mohc"
+    "uid": "90eb5274-c9d4-472f-b3da-30b2595193a0", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=90eb5274-c9d4-472f-b3da-30b2595193a0&version=latest&client=mohc"
 }

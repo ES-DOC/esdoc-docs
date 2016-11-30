@@ -1,12 +1,21 @@
 {
     "canonical_name": "lig127k", 
-    "description": "Impose Last Interglacial (127 kyr ago) boundary condtions for the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up.", 
+    "description": "Impose Last Interglacial (127 kyr ago) boundary condtions for the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+    "governing_mips": [
+        "pmip"
+    ], 
     "keywords": "PMIP, Tier 1, LIG, Last interglacial, 127k", 
-    "long_name": "last interglacial", 
+    "long_name": "last interglacial (127k)", 
     "mip_era": "cmip6", 
-    "rationale": "Evalute climate model for warm period, high sea-level stand.  Evaluate impacts of climate on sea ice and ice sheets.", 
+    "rationale": "Evalute climate model for warm period, high sea-level stand.  Evaluate impacts of climate on sea ice and ice sheets. Help to determine the interplay of warmer atmospheric and oceanic temperatures, changed precipitation, and changed surface energy balance on ice sheet thermodynamics and dynamics.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
     ], 
     "requirements": [
         {
@@ -18,19 +27,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "LIGWMGHG", 
+            "canonical_name": "Last Inter-Glacial WMGHG", 
             "description": "Impose Last Interglacial (127 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, last interglacial", 
-            "label": "LIGWMGHG", 
+            "label": "Last Inter-Glacial WMGHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "LIGOrbit", 
-            "description": "Impose Last Interglacial (127 kyr ago) orbital parameters.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, orbital parameters, last interglacial", 
-            "label": "LIGOrbit", 
+            "canonical_name": "LIG Astronomical Parameters", 
+            "description": "Impose Last Interglacial (127 kyr ago) orbital astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, last interglacial", 
+            "label": "LIG Astronomical Parameters", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ice sheets", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land-Sea mask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
             "type": "forcing-constraint"
         }, 
         {
@@ -42,14 +67,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "1fd8487e-4269-4ec8-9953-57a9db9a7d83", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=1fd8487e-4269-4ec8-9953-57a9db9a7d83&version=latest&client=mohc"
+    "uid": "c3480ce8-bfa3-4cdf-a9d4-e8cc28b5b362", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=c3480ce8-bfa3-4cdf-a9d4-e8cc28b5b362&version=latest&client=mohc"
 }

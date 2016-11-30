@@ -1,14 +1,29 @@
 {
     "canonical_name": "ssp534-over", 
     "description": "Gap: Mitigated overshoot scenario with medium/low radiative forcing by the end of the 21st century.  The scenario follows SSP5-8.5, an unmitigated baseline scenario, through 2040, and then substantially negative net emissions thereafter.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP3.4, RCP8.5, overshoot, future, SSP-based RCP", 
     "long_name": "RCP3.4 overshoot scenario branching from SSP58.5", 
     "mip_era": "cmip6", 
-    "rationale": "Explore the climate science and policy implications o f a peak and decline in forcing during the 21st century.  This scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
+    "rationale": "Explore the climate science and policy implications of a peak and decline in forcing during the 21st century.  This scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
     "related_experiments": [
-        "ssp434", 
-        "ssp534-over-ext", 
-        "ssp585"
+        {
+            "name": "ssp434", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp534-over-ext", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -20,11 +35,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP34overForcing", 
+            "canonical_name": "RCP34 overshoot Forcing", 
             "description": "Impose RCP3.4 overshoot forcing.  Beginning in 2040, reduce forcings from the 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP5, RCP3.4 overshoot", 
-            "label": "RCP34overForcing", 
+            "label": "RCP34 overshoot Forcing", 
             "type": "forcing-constraint"
         }, 
         {

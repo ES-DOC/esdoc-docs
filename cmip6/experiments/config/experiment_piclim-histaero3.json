@@ -1,13 +1,45 @@
 {
     "canonical_name": "piClim-histaerO3", 
-    "description": "Time-evolving effective radiative forcing experiment. A small ensemble of uncoupled (atmosphere and land) simulations from 1850-2100 in which sea surface temperature (SST) and sea ice distributions are specified and vegetation may interact. Apply aerosols and their indirect effects consistent with historical forcing used in the DAMIP experiments and RCP8.5 future scenario forcing.", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Apply transient aerosols and their indirect effects consistent with historical forcing used in the DAMIP hist-all experiments and future forcing in the ScenarioMIP SSP2 RCP8.5 scenario.  A small ensemble of three simulations from 1850-2100.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
     "keywords": "RFMIP, Tier2, Historical, scenario, RCP4.5, Aerosols", 
-    "long_name": "RFMIP erf-hist-aer", 
+    "long_name": "transient effective radiative forcing by aerosols", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose transient ERF from aerosols. It is difficult to evaluate transitory volcanic and solar forcing using a time-slice methodology so the full 1850-2100 period is used.", 
     "related_experiments": [
-        "hist-all", 
-        "piClim-control"
+        {
+            "name": "hist-all", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piClim-histAll", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histGHG", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histNat", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
     ], 
     "requirements": [
         {
@@ -19,35 +51,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Stratospheric Aerosol", 
-            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
-            "isConformanceRequested": false, 
-            "keywords": "historical, stratospheric, aerosol", 
-            "label": "Historical Stratospheric Aerosol", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "RCP45Aerosols", 
-            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
-            "label": "RCP45Aerosols", 
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
             "type": "forcing-constraint"
         }, 
         {
@@ -59,11 +75,27 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "piForcingExcludingAerosols", 
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Aerosols", 
             "description": "Pre-Industrial forcing excluding aerosols.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding aerosols", 
-            "label": "piForcingExcludingAerosols", 
+            "label": "Pre-Industrial Forcing Excluding Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45 Aerosols", 
+            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
+            "label": "RCP45 Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
@@ -75,14 +107,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AtmosLandConfig", 
-            "description": "An uncoupled (atmosphere-land) model.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
             "keywords": "atmosphere-land model configuration", 
-            "label": "AtmosLandConfig", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "e3178983-0fdd-4c98-93ba-fb0b7954555f", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e3178983-0fdd-4c98-93ba-fb0b7954555f&version=latest&client=mohc"
+    "uid": "03938a8f-8bfd-4acd-a0f0-4380d261419b", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=03938a8f-8bfd-4acd-a0f0-4380d261419b&version=latest&client=mohc"
 }

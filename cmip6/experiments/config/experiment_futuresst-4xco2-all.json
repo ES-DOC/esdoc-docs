@@ -1,15 +1,28 @@
 {
     "canonical_name": "futureSST-4xCO2-all", 
-    "description": "Impose a warming pattern anomaly to the sstPi sea surface temperatures (SSTs). The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.  The 4xCO2 increase is also seen by the radiation code and vegetation code.\nSame as sstPiFuture, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+    "description": "Impose a warming pattern anomaly to the piSST-control sea surface temperatures (SSTs). The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.  The 4xCO2 increase is also seen by the radiation code and vegetation code.\nSame as futureSST, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, SST pattern anomaly, +4K, 4xCO2, piControl, SIC, 4xCO2 vegetation, 4xCO2 raidation, sstPi", 
     "long_name": "control plus warming pattern SSTs with 4xCO2", 
     "mip_era": "cmip6", 
     "rationale": "To establish whether a timeslice experiment can adequately recreate the coupled abrupt4xCO2 response in each model.", 
     "related_experiments": [
-        "abrupt-4xCO2", 
-        "piControl", 
-        "piSST-control"
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piSST-control", 
+            "relationship": "is_perturbation_from"
+        }
     ], 
+    "related_mips": [], 
     "requirements": [
         {
             "canonical_name": "1850-1851 50yrs91-140", 
@@ -20,51 +33,51 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "sstPi SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
-            "description": "Impose a +4K warming pattern anomaly to the sstPi SST.  The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "piSST-control SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "description": "Impose a +4K warming pattern anomaly to the piSST-control SST.  The SST pattern anomaly is derived from years 91-140 of the model's own abrupt4xCO2 experiment, with respect to the piControl, and scaled to have a global mean increase of 4K. The SST pattern anomaly is to be expressed as seasonally varying monthly means.", 
+            "isConformanceRequested": true, 
             "keywords": "patterned SST warming, sstPi,  4K, 4xCO2, seasonally varying monthly means.", 
-            "label": "sstPi SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
+            "label": "piSST-control SST plus patterned 4K derived from 4xCO2 monthly varying SST anomalies", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIControlSICMonthlyVar", 
+            "canonical_name": "piControl SIC Monthly Var", 
             "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
-            "label": "PIControlSICMonthlyVar", 
+            "label": "piControl SIC Monthly Var", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "4xCO2Radiation", 
+            "canonical_name": "4xCO2 for Radiation", 
             "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to radiative code.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "4xCO2, concentration, pre-industrial, radiation code only", 
-            "label": "4xCO2Radiation", 
+            "label": "4xCO2 for Radiation", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "4xCO2Veg", 
+            "canonical_name": "4xCO2 for Vegetation", 
             "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to vegetation code.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "4xCO2, concentration, pre-industrial, vegetation code only", 
-            "label": "4xCO2Veg", 
+            "label": "4xCO2 for Vegetation", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

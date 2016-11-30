@@ -1,13 +1,20 @@
 {
     "canonical_name": "ssp126-over", 
     "description": "Gap: Mitigation overshoot scenario with low radiative forcing by the end of the century.  Following approximately the RCP2.6 overshoot global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing overshoots 2.6 W/m2 within the 21st Century before reducing to 2.6 W/m2 in 2100. Concentration-driven.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP1, RCP2.6 over, future, Overshoot, Gap: Mitigation", 
     "long_name": "RCP2.6 overshoot scenario based on SSP1", 
     "mip_era": "cmip6", 
     "rationale": "The scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }
     ], 
+    "related_mips": [], 
     "requirements": [
         {
             "canonical_name": "2015-2100 86yrs", 
@@ -18,11 +25,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP26overForcing", 
+            "canonical_name": "RCP26 overshoot Forcing", 
             "description": "Impose RCP2.6-overshoot forcing.\nRadiative forcing overshoots 2.6 W/m2 within the 21st Century before reducing to 2.6 W/m2 in 2100.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6 overshoot", 
-            "label": "RCP26overForcing", 
+            "label": "RCP26 overshoot Forcing", 
             "type": "forcing-constraint"
         }, 
         {

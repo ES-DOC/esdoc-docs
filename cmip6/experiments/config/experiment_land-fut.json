@@ -1,13 +1,25 @@
 {
     "canonical_name": "land-fut", 
-    "description": "Offline land surface simulations forced with ScenarioMIP SSP5-85 and SSP1-26.", 
+    "description": "Offline land surface simulations forced with ScenarioMIP SSP5-85 and SSP4-34 with 3 realisations for each forcing scenario.  A trend preserving statistical bias correction method is applied to 3-hopurly surface meteorological variables from the scenario output to generate a set of ensemble forcing data.  Gridded forcings will be provided by LS3MIP. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
     "keywords": "LS3MIP, Tier 2, Scenario, land surface", 
-    "long_name": "offline land climate trend analysis", 
+    "long_name": "Future land-only", 
     "mip_era": "cmip6", 
-    "rationale": "Climate trend analysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+    "rationale": "Climate trend analysis. Climate change impact assessment. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
     "related_experiments": [
-        "ssp126", 
-        "ssp585"
+        {
+            "name": "ssp434", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
     ], 
     "requirements": [
         {
@@ -21,17 +33,17 @@
         {
             "canonical_name": "LMIPSSP5-85Forcing", 
             "description": "SSP5-85 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
-            "isConformanceRequested": false, 
-            "keywords": "LMIP, scenario, forcing, SSP5-85", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, scenario, forcing, SSP5-85, RCP8.5", 
             "label": "LMIPSSP5-85Forcing", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "LMIPSSP1-26Forcing", 
-            "description": "SSP1-26 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
-            "isConformanceRequested": false, 
-            "keywords": "LMIP, scenario, forcing, SSP1-26", 
-            "label": "LMIPSSP1-26Forcing", 
+            "canonical_name": "LMIP SSP4-34 Forcing", 
+            "description": "SSP4-34 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, scenario, forcing, SSP4-34, RCP3.4", 
+            "label": "LMIP SSP4-34 Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -43,14 +55,14 @@
             "type": "model-configuration"
         }, 
         {
-            "canonical_name": "RCP45RCP26x2", 
-            "description": "A multi-ensemble of four simulations with two initialisations for each forcing scenario RCP4.5 and RCP2.6", 
-            "isConformanceRequested": false, 
-            "keywords": "two, 2, initialisations, scenarios, RCP4.5, RCP2.6", 
-            "label": "RCP45RCP26x2", 
+            "canonical_name": "RCP85RCP34x3", 
+            "description": "A multi-ensemble of six simulations with three realisations for each forcing scenario RCP8.5 and RCP3.4", 
+            "isConformanceRequested": true, 
+            "keywords": "three, 3, realisations, scenarios, RCP8.5, RCP3.4", 
+            "label": "RCP85RCP34x3", 
             "type": "multi-ensemble"
         }
     ], 
-    "uid": "9012519d-1116-4f20-8ef4-93154515ba39", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9012519d-1116-4f20-8ef4-93154515ba39&version=latest&client=mohc"
+    "uid": "9442d94e-1f35-42a8-9c9e-ce1b0e21745a", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9442d94e-1f35-42a8-9c9e-ce1b0e21745a&version=latest&client=mohc"
 }

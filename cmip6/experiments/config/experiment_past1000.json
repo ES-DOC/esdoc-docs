@@ -1,12 +1,26 @@
 {
     "canonical_name": "past1000", 
-    "description": "For the period from 850 to 1850 CE impose boundary conditions of solar variations, volcanic aerosols, atmospheric concentration of well-mixed greenhouse gases, land use and orbital parameters.  Run for 1000 years after spin-up period.", 
+    "description": "For the period from 850 to 1850 CE (the millennium before the start of the industrial revolution), impose boundary conditions of solar variations, volcanic aerosols, atmospheric concentration of well-mixed greenhouse gases, land use and orbital parameters.  Run for 1000 years after spin-up period. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+    "governing_mips": [
+        "pmip"
+    ], 
     "keywords": "PMIP, Tier 1, past1000, last millenium", 
     "long_name": "past 1000 years", 
     "mip_era": "cmip6", 
-    "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies.", 
+    "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to (mainly) natural forcing under climatic background conditions not too different from today.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "volc-cluster-mill", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "pmip", 
+        "volmip"
     ], 
     "requirements": [
         {
@@ -18,43 +32,59 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "past1000SolarVar", 
-            "description": "Solar variability in the last millenium 850-1850.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
-            "label": "past1000SolarVar", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "past1000LandUse", 
-            "description": "Land use in the last millenium 850-1850.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, land use, past 1000, last millenium, 850-1850", 
-            "label": "past1000LandUse", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "past1000WMGHG", 
+            "canonical_name": "past1000 WMGHG", 
             "description": "Atmospheric concentrations of well-mixed green house gas concentrations in the last millenium 850-1850.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, past 1000, last millenium, 850-1850", 
-            "label": "past1000WMGHG", 
+            "label": "past1000 WMGHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "past1000VolcAer", 
-            "description": "Volcanic aerosols in the last millenium 850-1850.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "past1000 Astronomical Parameters", 
+            "description": "Astronomical parameters for the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Astronomical Parameters", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ice sheets", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land-Sea mask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Land Use", 
+            "description": "Land use in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land use, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Solar Variability", 
+            "description": "Solar variability in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Solar Variability", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Volcanic Aerosols", 
+            "description": "Time varying radiative forcing due to volcanic stratospheric aerosols in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, volcanic aerosols, past 1000, last millenium, 850-1850", 
-            "label": "past1000VolcAer", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "past1000Orbit", 
-            "description": "Orbital parameters for the last millenium 850-1850.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, orbital parameters, past 1000, last millenium, 850-1850", 
-            "label": "past1000Orbit", 
+            "label": "past1000 Volcanic Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
@@ -66,14 +96,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "8531841c-0950-40b3-bee2-54602e005a62", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=8531841c-0950-40b3-bee2-54602e005a62&version=latest&client=mohc"
+    "uid": "6b98a9d0-d1da-499a-9f28-600c62b698ff", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6b98a9d0-d1da-499a-9f28-600c62b698ff&version=latest&client=mohc"
 }

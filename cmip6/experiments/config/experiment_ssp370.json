@@ -1,12 +1,58 @@
 {
     "canonical_name": "ssp370", 
     "description": "Gap: Baseline scenario with a medium to high radiative forcing by the end of century. Following approximately RCP7.0 global forcing pathway with SSP3 socioeconomic conditions. Radiative forcing reaches a level of 7.0 W/m2 in 2100.  Concentration-driven.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP3, RCP7.0, future, Medium-high forcing, Gap: Baseline", 
     "long_name": "gap-filling scenario reaching 7.0 based on SSP3", 
     "mip_era": "cmip6", 
     "rationale": "The scenario represents the medium to high end of plausible future pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baselines.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp370-lowNTCF", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ssp370-ssp126Lu", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowAer", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowBC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowCH4", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowLu", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowNTCF", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp370SST-lowO3", 
+            "relationship": "is_constrainer_of"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip", 
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -18,11 +64,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP70Forcing", 
+            "canonical_name": "RCP70 Forcing", 
             "description": "Impose RCP7.0 forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
-            "label": "RCP70Forcing", 
+            "label": "RCP70 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

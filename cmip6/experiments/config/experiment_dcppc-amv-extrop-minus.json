@@ -1,13 +1,25 @@
 {
     "canonical_name": "dcppC-amv-extrop-minus", 
     "description": "Restore the extra-tropical north Atlantic sea surface temperature to negative Atlantic Multidecadal Variability (AMV) perturbation. Outside the restored region the model evolves freely allowing full climate system response. No interannual changes in external forcing. Time period: 10 years. 25 ensemble members. SST signal may also be imposed by altering surface fluxes.", 
+    "governing_mips": [
+        "dcpp"
+    ], 
     "keywords": "DCPP, Tier 2, extra-tropical north Atlantic, restored SST, AMV-, negative Atlantic Multidecadal Variability", 
     "long_name": "idealised negative extratropical AMV anomaly pattern", 
     "mip_era": "cmip6", 
     "rationale": "To investigate the climate impacts of negative Atlantic Multidecadal Variability (AMV) anomalies.  To discover how models respond to imposed slowly evolving SST anomalies in the Atlantic.  To illuminate model behaviour on decadal time scales and possible mechanistic links to retarded and accelerated global surface temperature variations and regional climate anomalies.", 
     "related_experiments": [
-        "dcppC-atl-control", 
-        "piControl"
+        {
+            "name": "dcppC-amv-extrop-plus", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "dcppC-atl-control", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "dcpp"
     ], 
     "requirements": [
         {
@@ -19,43 +31,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RestoreSSTAMVnegExTropNAtlantic", 
+            "canonical_name": "Restore SST AMV neg Extra Tropical N Atlantic", 
             "description": "Sea Surface Temperatures (SSTs) are restored to model climatology plus positive AMV anomaly by Newtonian cooling over the extra-tropical north Atlantic (30N-65N). The restoring timescale is 10 days for a 50m deep mixed layer (or equivalent). The restoring coefficient of 40 W/m2/K should decrease to zero over an 8 degree buffer zone bounding the restored region.  No restoring if sea ice is present.  Idealised AMV anomalies of SST will be provided by DCPP.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "DCPP, SST, restored, AMV-, negative AMV, negative Atlantic Multidecadal Variability, extra-tropical north Atlantic", 
-            "label": "RestoreSSTAMVnegExTropNAtlantic", 
+            "label": "Restore SST AMV neg Extra Tropical N Atlantic", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "MinimiseAMOCchange", 
+            "canonical_name": "Minimise AMOC change", 
             "description": "Minimise changes to Atlantic Meridional Overturning Circulation (AMOC).  Can be achieved by appying additional salinity restoring such that the upper ocean density remains unchanged. Can also be achieved via 3D restoring of temperature and salinity below the mixed layer.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "DCPP, minimise AMOC change, restore salinity", 
-            "label": "MinimiseAMOCchange", 
+            "label": "Minimise AMOC change", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "ImposeSSTAMVnegExTropNAtlantic", 
+            "canonical_name": "Impose SST AMV neg extra tropical N Atlantic", 
             "description": "Alter surface fluxes to impose model climatology plus negative Atlantic Multidecadal Variability (AMV) anomalies of Sea Surface Temperature (SST) over the extra-tropical north Atlantic (30N-65N).  Idealised AMV anomalies of SST will be provided by DCPP.  For groups that are unable to restore SSTs.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "DCPP, SST, imposed, AMV-, negative AMV, negative Atlantic Multidecadal Variability anomaly, extra-tropical north Atlantic", 
-            "label": "ImposeSSTAMVnegExTropNAtlantic", 
+            "label": "Impose SST AMV neg extra tropical N Atlantic", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {
@@ -67,14 +79,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "f10db1ed-9d5e-4b42-a8d0-c83e846c1415", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f10db1ed-9d5e-4b42-a8d0-c83e846c1415&version=latest&client=mohc"
+    "uid": "9033f7fa-145f-4793-b2e2-8cb51014950c", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9033f7fa-145f-4793-b2e2-8cb51014950c&version=latest&client=mohc"
 }

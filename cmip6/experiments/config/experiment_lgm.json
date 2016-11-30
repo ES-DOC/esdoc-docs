@@ -1,12 +1,21 @@
 {
     "canonical_name": "lgm", 
-    "description": "Impose Last Glacial Maximum (21 kyr ago) boundary conditions for ice-sheet and land-sea mask, the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up.", 
+    "description": "Impose Last Glacial Maximum (21 kyr ago) boundary conditions for ice-sheet and land-sea mask, the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+    "governing_mips": [
+        "pmip"
+    ], 
     "keywords": "PMIP, Tier 1, LGM, last glacial macimum", 
     "long_name": "last glacial maximum", 
     "mip_era": "cmip6", 
-    "rationale": "Compare with paleodata the model response to ice-age boundary conditions.  Attempt to provide empirical constraints on global climate sensitivity.", 
+    "rationale": "Compare with paleodata the model response to ice-age boundary conditions.  Attempt to provide empirical constraints on global climate sensitivity. To examine the impact of changes in ice sheets, land-sea distribution and greenhouse gases on climate.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
     ], 
     "requirements": [
         {
@@ -18,35 +27,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "LGMiceSheet", 
-            "description": "Impose Last Glacial Maximum (21 kyr ago) ice-sheets.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, ice sheets, LGM, last glacial maximum", 
-            "label": "LGMiceSheet", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "LGMlandSeaMask", 
-            "description": "Impose Last Glacial Maximum (21 kyr ago) land-sea mask.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, land sea mask, last glacial maximum", 
-            "label": "LGMlandSeaMask", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "LGMWMGHG", 
+            "canonical_name": "Last Glacial Maximum WMGHG", 
             "description": "Impose Last Glacial Maximum (21 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, last glacial maximum", 
-            "label": "LGMWMGHG", 
+            "label": "Last Glacial Maximum WMGHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "LGMOrbit", 
-            "description": "Impose Last Glacial Maximum (21 kyr ago) orbital parameters.", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, orbital parameters, last glacial maximum", 
-            "label": "LGMOrbit", 
+            "canonical_name": "LGM Astronomical Parameters", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) orbital astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, last glacial maximum", 
+            "label": "LGM Astronomical Parameters", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LGM Ice Sheets", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) ice-sheets, larger area than in the piControl.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, ice sheets, LGM, last glacial maximum", 
+            "label": "LGM Ice Sheets", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LGM Land-Sea Mask", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land sea mask, last glacial maximum", 
+            "label": "LGM Land-Sea Mask", 
             "type": "forcing-constraint"
         }, 
         {
@@ -58,14 +67,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "71b1dc6f-50e2-4cdf-9425-ab57cc6d031e", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=71b1dc6f-50e2-4cdf-9425-ab57cc6d031e&version=latest&client=mohc"
+    "uid": "e5ae35a3-3eac-4812-8e5e-544746a41554", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e5ae35a3-3eac-4812-8e5e-544746a41554&version=latest&client=mohc"
 }

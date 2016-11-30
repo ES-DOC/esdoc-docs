@@ -1,13 +1,25 @@
 {
     "canonical_name": "ssp370SST-lowBC", 
     "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced black carbon emissions. SSP3 socioeconomic conditions. Atmosphere only with SST from ScenarioMIP experiment SSP3-70.", 
-    "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 black carbon, atmosphere only", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 reduced black carbon, atmosphere only", 
     "long_name": "SSP3-7.0, prescribed SSTs, with low black carbon emissions", 
     "mip_era": "cmip6", 
     "rationale": "To estimate the ERF of black carbon.", 
     "related_experiments": [
-        "ssp370", 
-        "ssp370SST"
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -21,65 +33,65 @@
         {
             "canonical_name": "SSP3-70 SST", 
             "description": "Sea surface temperature from experiment SSP3-7.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
             "label": "SSP3-70 SST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70ReducedBlackCarbon", 
+            "canonical_name": "RCP70 Reduced Black Carbon", 
             "description": "Impose reduced RCP7.0 black carbon emissions. Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 black carbon NTCF emissions.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, reduced black carbon", 
-            "label": "RCP70ReducedBlackCarbon", 
+            "label": "RCP70 Reduced Black Carbon", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70Tropospheric OzonePrecursors", 
+            "canonical_name": "RCP70 Tropospheric Ozone Precursors", 
             "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, tropospheric ozone precursors", 
-            "label": "RCP70Tropospheric OzonePrecursors", 
+            "label": "RCP70 Tropospheric Ozone Precursors", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70AerosolsNoBC", 
+            "canonical_name": "RCP70 Aerosols No Black Carbon", 
             "description": "Impose changing concentrations of RCP7.0 aerosols  (but no Black Carbon).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, aerosols, no black carbon", 
-            "label": "RCP70AerosolsNoBC", 
+            "label": "RCP70 Aerosols No Black Carbon", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70WellMixedGHG", 
+            "canonical_name": "RCP70 Well Mixed GHG", 
             "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, CO2", 
-            "label": "RCP70WellMixedGHG", 
+            "label": "RCP70 Well Mixed GHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70ShortLivedGasSpecies", 
-            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, Nox, VOCs and CO.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "RCP70 Short Lived Gas Species", 
+            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, NOx, VOCs and CO.", 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Short-lived Gas", 
-            "label": "RCP70ShortLivedGasSpecies", 
+            "label": "RCP70 Short Lived Gas Species", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70AerosolPrecursors", 
+            "canonical_name": "RCP70 Aerosol Precursors", 
             "description": "Impose changing emissions of RCP7.0 aerosol precursors including SO2 and NHy.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Aerosol Precursors", 
-            "label": "RCP70AerosolPrecursors", 
+            "label": "RCP70 Aerosol Precursors", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70LandUse", 
+            "canonical_name": "RCP70 Land Use", 
             "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
-            "label": "RCP70LandUse", 
+            "label": "RCP70 Land Use", 
             "type": "forcing-constraint"
         }, 
         {

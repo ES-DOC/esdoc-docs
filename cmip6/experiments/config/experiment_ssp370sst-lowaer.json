@@ -1,13 +1,25 @@
 {
     "canonical_name": "ssp370SST-lowAer", 
     "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced aerosol precursors (not NOx). SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 aerosol precursors, no NOx, atmosphere only", 
     "long_name": "SSP3-7.0, prescribed SSTs, with low aerosol emissions", 
     "mip_era": "cmip6", 
     "rationale": "To estimate the ERF of aerosol precursors (but not NOx).", 
     "related_experiments": [
-        "ssp370", 
-        "ssp370SST"
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -21,65 +33,65 @@
         {
             "canonical_name": "SSP3-70 SST", 
             "description": "Sea surface temperature from experiment SSP3-7.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
             "label": "SSP3-70 SST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70ReducedAerosolPrecursorsNotNOx", 
-            "description": "Impose reduced RCP7.0 aerosol precursor emissions (not Nox).  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 aerosol precursor NTCF emissions.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "RCP70 Reduced Aerosol Precursors Not NOx", 
+            "description": "Impose reduced RCP7.0 aerosol precursor emissions (not NOx).  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 aerosol precursor NTCF emissions.", 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced aerosol precursors, not NOx", 
-            "label": "RCP70ReducedAerosolPrecursorsNotNOx", 
+            "label": "RCP70 Reduced Aerosol Precursors Not NOx", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70Tropospheric OzonePrecursors", 
+            "canonical_name": "RCP70 Tropospheric Ozone Precursors", 
             "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, tropospheric ozone precursors", 
-            "label": "RCP70Tropospheric OzonePrecursors", 
+            "label": "RCP70 Tropospheric Ozone Precursors", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70NOx", 
-            "description": "Impose changing concentrations of RCP7.0 Nox.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, Nox", 
-            "label": "RCP70NOx", 
+            "canonical_name": "RCP70 NOx", 
+            "description": "Impose changing concentrations of RCP7.0 NOx.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, NOx", 
+            "label": "RCP70 NOx", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70WellMixedGHG", 
+            "canonical_name": "RCP70 Well Mixed GHG", 
             "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, CO2", 
-            "label": "RCP70WellMixedGHG", 
+            "label": "RCP70 Well Mixed GHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70ShortLivedGasSpecies", 
-            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, Nox, VOCs and CO.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "RCP70 Short Lived Gas Species", 
+            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, NOx, VOCs and CO.", 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Short-lived Gas", 
-            "label": "RCP70ShortLivedGasSpecies", 
+            "label": "RCP70 Short Lived Gas Species", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70Aerosols", 
+            "canonical_name": "RCP70 Aerosols", 
             "description": "Impose changing emissions of RCP7.0 aerosols including BC and OC.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, aerosol", 
-            "label": "RCP70Aerosols", 
+            "label": "RCP70 Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70LandUse", 
+            "canonical_name": "RCP70 Land Use", 
             "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
-            "label": "RCP70LandUse", 
+            "label": "RCP70 Land Use", 
             "type": "forcing-constraint"
         }, 
         {

@@ -1,14 +1,29 @@
 {
     "canonical_name": "G7SST2-cirrus", 
     "description": "Time slice at year 2100 GeoMIP G7cirrus.  Run for 10 years.", 
+    "governing_mips": [
+        "geomip"
+    ], 
     "keywords": "GeoMIP, Tier2, timeslice, G7cirrus, 2100", 
     "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G7cirrus", 
     "mip_era": "cmip6", 
     "rationale": "To assess radiative forcing of G7cirrus after 80 years of simulation.", 
     "related_experiments": [
-        "G7SST1-cirrus", 
-        "G7cirrus", 
-        "ssp585"
+        {
+            "name": "G7SST1-cirrus", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "G7cirrus", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "geomip"
     ], 
     "requirements": [
         {
@@ -20,35 +35,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "IncreaseCirrusSedementationVelocity", 
+            "canonical_name": "Increase Cirrus Sedementation Velocity", 
             "description": "Add a local variable that replaces (in all locations where temperature is colder than 235K) the ice mass mixing ratio in the calculation of the sedimentation velocity with a value that is eight times the original ice mass mixing ratio.\nCirrus seeding to begin in 2020 and continue through to the year 2100.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, cirrus thinning, increase cirrus sedimentation velocity", 
-            "label": "IncreaseCirrusSedementationVelocity", 
+            "label": "Increase Cirrus Sedementation Velocity", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SSP5-85SST2100", 
+            "canonical_name": "SSP5-85 SST 2100", 
             "description": "Sea surface temperature climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP5-85, SST, sea surface temperature, 2100", 
-            "label": "SSP5-85SST2100", 
+            "label": "SSP5-85 SST 2100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SSP5-85SIC2100", 
+            "canonical_name": "SSP5-85 SIC 2100", 
             "description": "Sea ice concentration climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP5-85, SIC, sea ice concentration, 2100", 
-            "label": "SSP5-85SIC2100", 
+            "label": "SSP5-85 SIC 2100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP85Forcing", 
+            "canonical_name": "RCP85 Forcing", 
             "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85Forcing", 
+            "label": "RCP85 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

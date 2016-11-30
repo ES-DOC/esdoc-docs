@@ -1,15 +1,37 @@
 {
     "canonical_name": "hist-sol", 
     "description": "This experiment resembles hist-nat (histNat) except that simulations are driven by solar forcing only.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 3, histSOL, natural solar forcing only", 
     "long_name": "historical solar-only runs", 
     "mip_era": "cmip6", 
     "rationale": "The importance of solar focing particular for regional climate variability is becoming increasingly evident, because of its prominent 11-year cycle, solar variability could offer a degree of predictability. This experiement will facilitate the unambiguous characterization of each model\u2019s solar signal and particularly separate clearly solar and volcanic effects. Along with hist-nat and hist-volc it will be possible to test the linear additivity of natural forcing responses.", 
     "related_experiments": [
-        "hist-nat", 
-        "hist-volc", 
-        "historical", 
-        "ssp245"
+        {
+            "name": "hist-nat", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "hist-volc", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
     ], 
     "requirements": [
         {
@@ -21,19 +43,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCPSolar", 
-            "description": "Impose changing (natural) solar forcing for RCP scenarios.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway, future, 21st century, solar forcing", 
-            "label": "RCPSolar", 
-            "type": "forcing-constraint"
-        }, 
-        {
             "canonical_name": "Historical Solar Forcing", 
             "description": "Solar forcing of the Earth system consistent with historical observations.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
             "label": "Historical Solar Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP Solar", 
+            "description": "Impose changing (natural) solar forcing for RCP scenarios.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, future, 21st century, solar forcing", 
+            "label": "RCP Solar", 
             "type": "forcing-constraint"
         }, 
         {

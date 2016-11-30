@@ -1,14 +1,33 @@
 {
     "canonical_name": "a4SSTice", 
     "description": "As piSST, but with monthly-varying SSTs and sea ice taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, SST pattern anomaly, sea ice anomaly, piSST, abrupt4xCO2, piControl", 
     "long_name": "control plus warming pattern SSTs and SIC", 
     "mip_era": "cmip6", 
     "rationale": null, 
     "related_experiments": [
-        "abrupt-4xCO2", 
-        "piControl", 
-        "piSST-control"
+        {
+            "name": "a4SSTice-4xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piSST-control", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -20,35 +39,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "abrupt4xCO2SST", 
-            "description": "Monthly-varying sea surface temperature from years 111 to 140 of the abrupt4xCO2 simulation.", 
-            "isConformanceRequested": false, 
+            "canonical_name": "abrupt-4xCO2 SST", 
+            "description": "Monthly-varying sea surface temperature from years 111 to 140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": true, 
             "keywords": "sea surface temperature, SST, abrupt4xCO2", 
-            "label": "abrupt4xCO2SST", 
+            "label": "abrupt-4xCO2 SST", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "abrupt4xCO2SIC", 
+            "canonical_name": "abrupt-4xCO2 SIC", 
             "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the abrupt4xCO2 simulation.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "sea ice concentration, SIC, abrupt4xCO2", 
-            "label": "abrupt4xCO2SIC", 
+            "label": "abrupt-4xCO2 SIC", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

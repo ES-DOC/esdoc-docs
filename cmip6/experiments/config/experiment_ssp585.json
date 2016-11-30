@@ -1,12 +1,77 @@
 {
     "canonical_name": "ssp585", 
     "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.", 
+    "governing_mips": [
+        "scenariomip"
+    ], 
     "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP5, RCP8.5, future, High forcing, SSP-based RCP", 
     "long_name": "update of RCP8.5 based on SSP5", 
     "mip_era": "cmip6", 
     "rationale": "The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "G6SST1", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G6solar", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G6sulfur", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G7SST1-cirrus", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G7cirrus", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-ssp585", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "esm-ssp585-ssp126Lu", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "highres-future", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ism-ssp585-self", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ssp534-over", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ssp585-bgc", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ssp585-ext", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ssp585-withism", 
+            "relationship": "is_control_for"
+        }
+    ], 
+    "related_mips": [
+        "c4mip", 
+        "geomip", 
+        "ismip6", 
+        "ls3mip", 
+        "scenariomip"
     ], 
     "requirements": [
         {
@@ -18,11 +83,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP85Forcing", 
+            "canonical_name": "RCP85 Forcing", 
             "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85Forcing", 
+            "label": "RCP85 Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -42,11 +107,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 

@@ -1,13 +1,25 @@
 {
     "canonical_name": "ssp370SST-lowCH4", 
     "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced  methane emissions. SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 methane, atmosphere only", 
     "long_name": "SSP3-7.0, prescribed SSTs, with low methane concentrations", 
     "mip_era": "cmip6", 
     "rationale": "To estimate the ERF of methane.", 
     "related_experiments": [
-        "ssp370", 
-        "ssp370SST"
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -21,7 +33,7 @@
         {
             "canonical_name": "SSP3-70 SST", 
             "description": "Sea surface temperature from experiment SSP3-7.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
             "label": "SSP3-70 SST", 
             "type": "forcing-constraint"
@@ -29,25 +41,25 @@
         {
             "canonical_name": "RCP70ReducedMethane", 
             "description": "Impose reduced RCP7.0 methane (CH4) emissions.  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 methane NTCF emissions.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced methane", 
             "label": "RCP70ReducedMethane", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70Tropospheric OzonePrecursorsNoMethane", 
+            "canonical_name": "RCP70 Tropospheric Ozone Precursors No Methane", 
             "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors except methane.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, ozone precursors, without methane", 
-            "label": "RCP70Tropospheric OzonePrecursorsNoMethane", 
+            "label": "RCP70 Tropospheric Ozone Precursors No Methane", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP70Forcing", 
+            "canonical_name": "RCP70 Forcing", 
             "description": "Impose RCP7.0 forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
-            "label": "RCP70Forcing", 
+            "label": "RCP70 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

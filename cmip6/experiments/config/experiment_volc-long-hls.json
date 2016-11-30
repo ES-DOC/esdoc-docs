@@ -1,0 +1,72 @@
+{
+    "canonical_name": "volc-long-hlS", 
+    "description": "Idealised high-latitude (60S) southern hemisphere eruption corresponding to an initial emission of 28.1 Tg of SO2 (equal to half the total amount injected for volc-long-eq).  The experiment is designed to span very different initial climate states to systematically assess uncertainties in post-eruption behavior that are related to background climate conditions.   If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from year Y-1 of the control.  Run nine ensemble members for at least 20 years, but preferably longer (50 years) to cover the multi-decadal oceanic response. Initialisation date from the piControl start year is 1st April.", 
+    "governing_mips": [
+        "volmip"
+    ], 
+    "keywords": "VolMIP, Tier 3, high-latitude, Southern Hemisphere, volcano, volcanic forcing, eruption, SO2", 
+    "long_name": "Idealized Southern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate the uncertainty in climatic response to strong high-latitude volcanic eruptions (focus on coupled ocean\u2013atmosphere). Outstanding questions about the magnitude of the climatic impact of highlatitude eruptions.", 
+    "related_experiments": [
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "volc-long-eq", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "volc-long-hlN", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "volmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "20yrs", 
+            "description": "Run for 20 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "20 years", 
+            "label": "20yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SH Eruption SO2", 
+            "description": "Emission of 28.1 Tg of SO2 into the southern hemisphere stratosphere (60S).", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Southern Hemisphere, SO2, volcano", 
+            "label": "SH Eruption SO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "9 piControl Initialisations from April 1st", 
+            "description": "Nine initialisation states which span warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states and strong/weak/neutral Atlantic Meridional Overturning Circulation (AMOC) states. If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from April 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "nine, 9, ensemble, initialisation, VolMIP, LongS", 
+            "label": "9 piControl Initialisations from April 1st", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "807864c6-c06d-42c7-a048-ee0ed530a154", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=807864c6-c06d-42c7-a048-ee0ed530a154&version=latest&client=mohc"
+}

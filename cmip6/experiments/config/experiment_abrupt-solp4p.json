@@ -1,14 +1,29 @@
 {
     "canonical_name": "abrupt-solp4p", 
     "description": "Conceptually similar to the abrupt 4xCO2 DECK experiment, except that the solar constant rather than CO2 is abruptly increased by 4%.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
     "keywords": "CFMIP, Tier 2, abrupt solar increase, +4%", 
     "long_name": "Abrupt 4 percent increase of the solar constant", 
     "mip_era": "cmip6", 
     "rationale": "To provide a useful complement to the DECK abrupt4xCO2 experiment. To examine responses in the climate sytem due to changes in solar forcing and how they differ from changes due to CO2.", 
     "related_experiments": [
-        "abrupt-4xCO2", 
-        "cfmipamip", 
-        "piControl"
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "abrupt-solm4p", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
     ], 
     "requirements": [
         {
@@ -20,27 +35,27 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "abrupt+4pcSolar", 
+            "canonical_name": "abrupt +4 percent Solar", 
             "description": "Impose an abrupt 4% increase in the solar constant", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "abrupt, solar constant increase, +4%", 
-            "label": "abrupt+4pcSolar", 
+            "label": "abrupt +4 percent Solar", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2andSolar", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
-            "label": "PIForcingExcludingCO2andSolar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
             "type": "forcing-constraint"
         }, 
         {

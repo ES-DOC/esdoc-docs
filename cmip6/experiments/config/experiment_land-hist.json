@@ -1,15 +1,94 @@
 {
     "canonical_name": "land-hist", 
-    "description": "Land surface model simulation. All LULCC (Land use and land cover change) and All Management (AM) features for the model turned on. Land use change starting in 1850. Forced with historical observed climate. Include transient CO2, Nitrogen deposition, aerosol deposition etc. Will be the same as the LS3MIP LMIP-Hist experiment if the GCM runs include All Management (AM) capabilities.   Start year either 1700 or 1850 depending on standard practice for particular model.", 
-    "keywords": "LUMIP, Tier 1, historical, All Management, AM, All  LULCC, 1850, 1700", 
+    "description": "Land surface model simulation.  Use the same land model configuration as used in the coupled CMIP6 historical simulations. Include representation of land cover, land use and land management. All applicable land use features should be active. Forced with historical observed climate. Include transient CO2, Nitrogen deposition, aerosol deposition etc. Start year either 1850 or 1700 depending on standard practice for particular model. This experiment is shared with the LS3MIP, note that LS3MIP expects the start year to be 1850.   \nThis experiment can and likely will be a different configuration across models due to different representations of land use for each model.", 
+    "governing_mips": [
+        "lumip"
+    ], 
+    "keywords": "LUMIP, Tier 1, LS3MIP, Tier 1, historical, All Management, AM, All  LULCC, 1850, 1700", 
     "long_name": "historical land-only", 
     "mip_era": "cmip6", 
-    "rationale": "Land cover versus land management change. To assess the relative impact of land cover and incrementally more comprehensive land management change on fluxes of water, energy, and carbon. Test impact of pre-1850 land use.", 
+    "rationale": "Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts. To assess the relative impact of land cover and incremental land management change on fluxes of water, energy, and carbon in combination with other LUMIP land experiments. Comparison with land-hist-altStartYear indicates impact of pre-1850 land use.", 
     "related_experiments": [
-        "historical", 
-        "land-hist", 
-        "land-hist-altStartYear", 
-        "piControl"
+        {
+            "name": "amip-lfmip-pobs", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-cCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-cClim", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-crop-grass", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-crop-noFert", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-crop-noIrrig", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-crop-noManage", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-hist-CruNcep", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-hist-altStartYear", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-hist-altStartYear", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-hist-princeton", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-hist-wfdei", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-netTrans", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-noFire", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-noLu", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-noPasture", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "land-noWoodHarv", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip", 
+        "lumip"
     ], 
     "requirements": [
         {
@@ -29,67 +108,99 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "LMIPHistoricalForcing", 
-            "description": "Reference forcing data for offline land surface models running the L3MIP historical simulation. Data provided by the LS3MIP.", 
-            "isConformanceRequested": false, 
-            "keywords": "LMIP, historical, forcing", 
-            "label": "LMIPHistoricalForcing", 
+            "canonical_name": "TRENDY spin up for GSWP3", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the GSWP3 forcing dataset (1831\u20131850). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, GSWP3", 
+            "label": "TRENDY spin up for GSWP3", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Grassland", 
-            "description": "Grassland crop/pasture without management.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, grassland, no management", 
-            "label": "Grassland", 
+            "canonical_name": "TRENDY Interim Forcing for GSWP3", 
+            "description": "For the interim period from 1700 to the first year of the GSWP3 forcing dataset, the forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1700 to first forcing year, interim forcing, GSWP3", 
+            "label": "TRENDY Interim Forcing for GSWP3", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Fire", 
-            "description": "Human fire land management.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, fire, land management", 
-            "label": "Fire", 
+            "canonical_name": "Historical GSWP3 Forcing", 
+            "description": "Apply Global Soil Wetness Project phase three (GSWP3) forcing data for offline land surface models running the LS3MIP historical simulation land-hist is provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, forcing, GSWP3", 
+            "label": "Historical GSWP3 Forcing", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "WoodHarvest", 
-            "description": "Harvesting of wood.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, wood harvest, land management", 
-            "label": "WoodHarvest", 
+            "canonical_name": "Historical Land Use", 
+            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Pasture", 
-            "description": "Grazing on pasture.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, pasture, land management", 
-            "label": "Pasture", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Crop", 
-            "description": "Crop area uses prognostic crop model.", 
-            "isConformanceRequested": false, 
-            "keywords": "LUMIP, crop, land management", 
-            "label": "Crop", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Irrigation", 
+            "canonical_name": "Transient Irrigation", 
             "description": "Realistic transient irrigated area.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "LUMIP, irrigation, land management", 
-            "label": "Irrigation", 
+            "label": "Transient Irrigation", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Fertilisation", 
+            "canonical_name": "Transient Fertilisation", 
             "description": "Realistic transient fertilisation.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "LUMIP, fertilisation, land management", 
-            "label": "Fertilisation", 
+            "label": "Transient Fertilisation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Transient Wood Harvest", 
+            "description": "Realistic transient wood harvest.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, wood harvest, land management", 
+            "label": "Transient Wood Harvest", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Transient Fire Management", 
+            "description": "Realistic transient anthropogenic ignition and suppression of fire.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, fire management, land management", 
+            "label": "Transient Fire Management", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "CO2 Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2 Historical", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Nitrogen deposition", 
+            "description": "Impose time varying (transient) historical nitrogen (N) deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, Nitrogen deposition", 
+            "label": "Historical Nitrogen deposition", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Deposition", 
+            "description": "Impose time varying (transient) historical aerosol deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol deposition", 
+            "label": "Historical Aerosol Deposition", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Simplified Historical Solar Forcing", 
+            "description": "Simplified historical solar forcing requirement for models that represent solar forcing as a constant rather than with specifications for spectral irradiance, proton forcing, electron forcing and cosmic ray forcing.  e.g. land surface models.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Solar, forcing", 
+            "label": "Simplified Historical Solar Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -107,8 +218,16 @@
             "keywords": "LSM, land surface model", 
             "label": "LSM Configuration", 
             "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "All Land Management Active", 
+            "description": "All applicable land management active in the model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
+            "type": "model-configuration"
         }
     ], 
-    "uid": "9442d94e-1f35-42a8-9c9e-ce1b0e21745a", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9442d94e-1f35-42a8-9c9e-ce1b0e21745a&version=latest&client=mohc"
+    "uid": "df900c79-da16-4ab5-9f71-b98ad3e93283", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=df900c79-da16-4ab5-9f71-b98ad3e93283&version=latest&client=mohc"
 }

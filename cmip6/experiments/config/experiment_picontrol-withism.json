@@ -1,12 +1,29 @@
 {
     "canonical_name": "piControl-withism", 
-    "description": "The pre-industrial control in a model with interactive ice sheet model.   \nThe spin up may require the GCM and ISM to be asynchronously coupled until the system reches quasi-equilibrium.  \nOnce equilibrium is reached, run for multi-hundred years (500 years suggested).", 
+    "description": "The pre-industrial control in a model with interactive ice sheet model.   The experiment should be identical to the corresponding standard CMIP AOGCM experiment except for the treatment of ice sheets.\nThe spin up may require the GCM and ISM to be asynchronously coupled until the system reches quasi-equilibrium.  \nOnce equilibrium is reached, run for multi-hundred years (500 years suggested).", 
+    "governing_mips": [
+        "ismip6"
+    ], 
     "keywords": "ISMIP6, Tier 1, piControl,  interactive ISM, interactive ice sheets", 
     "long_name": "Pre-industrial control with interactive ice sheets", 
     "mip_era": "cmip6", 
     "rationale": "To produce a realistic non-drifting coupled state, and assess systematic model bias.     \nTo capture unforced natural variability.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "1pctCO2to4x-withism", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "historical-withism", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
     ], 
     "requirements": [
         {
@@ -20,17 +37,17 @@
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
             "label": "Pre-Industrial CO2 Concentration", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {

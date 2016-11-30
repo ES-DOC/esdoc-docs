@@ -1,17 +1,45 @@
 {
     "canonical_name": "hist-aerchem", 
     "description": "Historical aerosol-only simulations resemble the histALL simulations but instead are  forced with aerosol and aerosol precursor emissions only (sulfate, black carbon, organic carbon, ammonia, NOx and VOCs). The radiation scheme sees piControl concentrations of well mixed GHGs and ozone.\nOnly for models with interactive chemistry in which changes in GHG concentrations affect aerosols or changes in aerosol precursors affect ozone. \nReport what sets of emissions and boundary conditions are used.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 1, histAERchem, cmip6historical, aerosol forcing,  anthropogenic", 
     "long_name": "historical anthropogenic aerosols-only runs", 
     "mip_era": "cmip6", 
     "rationale": "Together with histNAT and histALL simulations, these simulations will allow the attribution of observed climate changes to contributions from natural forcings, aerosols and \"GHG+ozone+land use change\".", 
     "related_experiments": [
-        "hist-aer", 
-        "hist-all", 
-        "hist-nat", 
-        "historical", 
-        "ssp245", 
-        "ssp245-aerchem"
+        {
+            "name": "hist-aer", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "hist-all", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "hist-nat", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245-aerchem", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ssp245-aerchem", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
     ], 
     "requirements": [
         {
@@ -23,43 +51,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP45Aerosols", 
-            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
-            "label": "RCP45Aerosols", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "RCP45AerosolPrecursors", 
-            "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
-            "label": "RCP45AerosolPrecursors", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850WMGHGRadiation", 
-            "description": "Impose repeating 1850 well mixed greenhouse gas (WMGHG) concentrations to radiative code.", 
-            "isConformanceRequested": false, 
-            "keywords": "1850, WMGHG, concentration, pre-industrial, radiation code only", 
-            "label": "1850WMGHGRadiation", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850O3Radiation", 
-            "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
-            "isConformanceRequested": false, 
-            "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
-            "label": "1850O3Radiation", 
-            "type": "forcing-constraint"
-        }, 
-        {
             "canonical_name": "Historical Emissions", 
             "description": "Core emissions datasets.", 
             "isConformanceRequested": true, 
             "keywords": "historical, emissions", 
             "label": "Historical Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45 Aerosols", 
+            "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
+            "label": "RCP45 Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP45 Aerosol Precursors", 
+            "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
+            "label": "RCP45 Aerosol Precursors", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 WMGHG for Radiation", 
+            "description": "Impose repeating 1850 well mixed greenhouse gas (WMGHG) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, WMGHG, concentration, pre-industrial, radiation code only", 
+            "label": "1850 WMGHG for Radiation", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 O3 for Radiation", 
+            "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
+            "label": "1850 O3 for Radiation", 
             "type": "forcing-constraint"
         }, 
         {

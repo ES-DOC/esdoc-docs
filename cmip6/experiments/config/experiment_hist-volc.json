@@ -1,15 +1,37 @@
 {
     "canonical_name": "hist-volc", 
     "description": "This experiment resembles hist-nat (histNat) except that simulations are driven by volcanic forcing only.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 3, histVLC, volcanic forcing only", 
     "long_name": "historical volcanic-only runs", 
     "mip_era": "cmip6", 
     "rationale": "To allow the characterisation of and attribution to volcanic influences. Careful validation of a model\u2019s volcanic response may inform its use for geoengineering simulations such as those in GeoMIP.  Along with hist-nat and hist-sol it will be possible to test the linear additivity of natural forcing responses.", 
     "related_experiments": [
-        "hist-nat", 
-        "hist-sol", 
-        "historical", 
-        "ssp245"
+        {
+            "name": "hist-nat", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "hist-sol", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
     ], 
     "requirements": [
         {
@@ -23,17 +45,17 @@
         {
             "canonical_name": "Historical Stratospheric Aerosol", 
             "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical, stratospheric, aerosol", 
             "label": "Historical Stratospheric Aerosol", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCPVolcanic", 
+            "canonical_name": "RCP Volcanic", 
             "description": "Impose changing volcanic forcing for RCP scenarios.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, future, 21st century, volcanic forcing", 
-            "label": "RCPVolcanic", 
+            "label": "RCP Volcanic", 
             "type": "forcing-constraint"
         }, 
         {

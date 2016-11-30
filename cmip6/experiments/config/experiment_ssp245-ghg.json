@@ -1,14 +1,29 @@
 {
     "canonical_name": "ssp245-GHG", 
     "description": "Extension of well-mixed GHG-only run (histGHG) under SSP2-4.5 forcing to the year 2100.\nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.", 
+    "governing_mips": [
+        "damip"
+    ], 
     "keywords": "DAMIP, Tier 2, ssp245GHG,  ssp2-45, SSP2-4.5, well mixed GHG only", 
     "long_name": "well-mixed GHG-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
     "rationale": "Combinations of histAll, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
     "related_experiments": [
-        "hist-GHG", 
-        "historical", 
-        "ssp245"
+        {
+            "name": "hist-GHG", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
     ], 
     "requirements": [
         {
@@ -20,19 +35,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP45WellMixedGHG", 
+            "canonical_name": "RCP45 Well Mixed GHG", 
             "description": "Impose changing concentrations of RCP4.5 long-lived gases, including CO2, N2O and halogenated gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, Well-mixed Greenhouse Gas, CO2", 
-            "label": "RCP45WellMixedGHG", 
+            "label": "RCP45 Well Mixed GHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1850O3Radiation", 
+            "canonical_name": "1850 O3 for Radiation", 
             "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
-            "label": "1850O3Radiation", 
+            "label": "1850 O3 for Radiation", 
             "type": "forcing-constraint"
         }, 
         {

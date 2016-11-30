@@ -1,0 +1,80 @@
+{
+    "canonical_name": "ism-1pctCO2to4x-self", 
+    "description": "Stand alone ice sheet model driven offline by a CMIP6 model with 1% per year atmospheric carbon dioxide increased to quadrupling then held fixed for 200 years.\nRun for a minimum of 350 years (500 years encouraged).  The ice sheet model should be configured with the same settings as the ice sheet model in the ipctCO2to4x-withism experiment and should use the same initial conditions.", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 1, 1% per yr CO2, quadrupled CO2, stand-alone ISM, ice sheets only", 
+    "long_name": "Ice sheet model driven with 1% per yr CO2 increase to quadrupling forcing", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "ism-piControl-self", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl-withism", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-1999 150yrs", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1% per year CO2 Increase", 
+            "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1% per year CO2 Increase", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialISMInitialisation", 
+            "description": "Initialisation is from the pre-industrial control with interactive ice sheets", 
+            "isConformanceRequested": false, 
+            "keywords": "piControl, interactive ISM, initialisation", 
+            "label": "PreIndustrialISMInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "9fc57a40-5334-4bde-ae6b-c1e9318daec8", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9fc57a40-5334-4bde-ae6b-c1e9318daec8&version=latest&client=mohc"
+}

@@ -1,0 +1,60 @@
+{
+    "canonical_name": "lfmip-pobs", 
+    "description": "\"pseudo-observed boundary condition\" experiment that uses that uses batch offline land models (in line with the GLACE2 set-up) to initialize historical runs with prescribed reconstructed land surface states, either derived from offline simulations or from various observational data sources.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
+    "keywords": "LS3MIP, Tier 1, Historical, reconstructed land surface, LFMIP-predictability", 
+    "long_name": "Initialised from historical run year 1980 but with land conditions initialised from pseudo-observations", 
+    "mip_era": "cmip6", 
+    "rationale": "Land-related seasonal predictability. Evaluation of the contribution of snow cover melting and its related feedbacks to the underestimations of recent boreal polar warming by climate models.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-hist", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1980-2014 35yrs", 
+            "description": "Historical, from 1980 to 2014.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1980, 2014", 
+            "label": "1980-2014 35yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LFMIP-HP Forcing", 
+            "description": "Reconstructed land surface states, for the period 1980-2014, derived from offline simulations or derived from observational data sources.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, reconstructed land surface, recent past", 
+            "label": "LFMIP-HP Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "TenLandInitialisations", 
+            "description": "An ensemble of ten members initialised via a batch of 10 land surface models", 
+            "isConformanceRequested": true, 
+            "keywords": "ten, 10, ensemble, historical, land surface, initialisation", 
+            "label": "TenLandInitialisations", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "21ec48bc-97be-4ccb-aa23-0f9b3685b235", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=21ec48bc-97be-4ccb-aa23-0f9b3685b235&version=latest&client=mohc"
+}

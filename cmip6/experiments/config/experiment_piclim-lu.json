@@ -1,52 +1,65 @@
 {
     "canonical_name": "piClim-lu", 
-    "description": "A single 30-year uncoupled (atmosphere and land) simulation in which sea suface temperature (SST) and sea ice distributions are specified and vegetation may interact.  Land use is set to present day (2015) values, sea ice and other anthropogenic forcing agents are specified at pre-industrial values.", 
-    "keywords": "RFMIP, Tier 1, PD LU, present day land use, uncoupled, atmosphere-land", 
-    "long_name": "RFMIP land use effective radiative forcing", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea suface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Land use is set to present day (2015) values, other forcing agents are specified at pre-industrial values.  Run for 30 years.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 1, PD LU, present day land use, 2015 land use, uncoupled, atmosphere-land", 
+    "long_name": "effective radiative forcing by present day land use", 
     "mip_era": "cmip6", 
     "rationale": "Quantify present-day effective radiative forcing (ERF) by land use changes.", 
     "related_experiments": [
-        "piClim-control"
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
     ], 
     "requirements": [
         {
             "canonical_name": "30yrs", 
-            "description": "Run for 30 years, timeslice experiment.", 
+            "description": "Run for 30 years.", 
             "isConformanceRequested": false, 
             "keywords": "30 years", 
             "label": "30yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "PIControlSST", 
-            "description": "Pre-Industrial sea surface temperature from the piControl experiment", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SST, sea surface temperature", 
-            "label": "PIControlSST", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "PIControl SIC", 
-            "description": "Pre-Industrial sea ice concentration from the piControl experiment.", 
-            "isConformanceRequested": false, 
-            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration", 
-            "label": "PIControl SIC", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "2015LU", 
-            "description": "Impose present day (2015) land use (surface albedo/roughness, transpiration).", 
-            "isConformanceRequested": false, 
-            "keywords": "2015, land use, LU", 
-            "label": "2015LU", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "PIForcingExcludingLandUse", 
-            "description": "Pre-Industrial forcing excluding land-use.", 
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
             "isConformanceRequested": true, 
-            "keywords": "pre-industrial forcing, excluding land-use", 
-            "label": "PIForcingExcludingLandUse", 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP Pre-Industrial Forcing Excluding Land Use", 
+            "description": "Pre-industrial forcing excluding land use.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding land use", 
+            "label": "RFMIP Pre-Industrial Forcing Excluding Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015 Land Use", 
+            "description": "Impose present day (2015) land use (surface albedo/roughness, transpiration).", 
+            "isConformanceRequested": true, 
+            "keywords": "2015, land use, LU", 
+            "label": "2015 Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -58,14 +71,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AtmosLandConfig", 
-            "description": "An uncoupled (atmosphere-land) model.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
             "keywords": "atmosphere-land model configuration", 
-            "label": "AtmosLandConfig", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "25a71feb-68bd-464f-a06f-29ea55cde26e", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=25a71feb-68bd-464f-a06f-29ea55cde26e&version=latest&client=mohc"
+    "uid": "9188972c-e2af-452c-875a-d88261f4ccfc", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9188972c-e2af-452c-875a-d88261f4ccfc&version=latest&client=mohc"
 }

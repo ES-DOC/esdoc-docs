@@ -1,0 +1,76 @@
+{
+    "canonical_name": "volc-pinatubo-full", 
+    "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years.", 
+    "governing_mips": [
+        "volmip"
+    ], 
+    "keywords": "VolMIP, Tier 1, Pinatubo, volcano, volcanic forcing, eruption, SO2", 
+    "long_name": "Pinatubo experiment", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate the uncertainty in the climate response to strong volcanic eruptions with focus on short-term response. To investigate the robustess of volcanic imprint on the Northern Hemisphere winter climate and of associated dynamics.  A large ensemble is required to accurately estimate simulated responses to volcanic forcing which may be comparable to the amplitude of internal interannual variability.", 
+    "related_experiments": [
+        {
+            "name": "dcppC-forecast-addPinatubo", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "volc-pinatubo-ini", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "volmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "3yrs", 
+            "description": "Run for 3 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "3 years", 
+            "label": "3yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pinatubo Aerosol", 
+            "description": "Aerosol forcing from the 1991 Pinatubo volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, Pinatubo", 
+            "label": "Pinatubo Aerosol", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "25 piControl Initialisations from June 1st", 
+            "description": "An ensemble of at least twenty-five predefined initialisation states which span: warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states, strong/weak/neutral  Atlantic Meridional Overturning Circulation (AMOC) states, the Quasi Biennial Oscillation (QBO), characteristics of the polar vortex and the North Atlantic Oscillation (NAO).  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from June 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "twenty-five, 25, ensemble, initialisation, VolMIP, Short", 
+            "label": "25 piControl Initialisations from June 1st", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "uid": "e4b84ccf-5644-46c5-b859-31a154c19802", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=e4b84ccf-5644-46c5-b859-31a154c19802&version=latest&client=mohc"
+}

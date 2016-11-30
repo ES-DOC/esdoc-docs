@@ -1,12 +1,21 @@
 {
     "canonical_name": "midHolocene", 
-    "description": "Impose Mid-Holocene (6 kyr ago) boundary conditions for orbital parameters and the atmospheric concentration of well-mixed greenhouse gases. Run for at least 100 years after spin-up.", 
+    "description": "Impose Mid-Holocene (6 kyr ago) boundary conditions for orbital parameters and the atmospheric concentration of well-mixed greenhouse gases. Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+    "governing_mips": [
+        "pmip"
+    ], 
     "keywords": "PMIP, Tier 1, MH, mid Holocene", 
     "long_name": "mid-Holocene", 
     "mip_era": "cmip6", 
     "rationale": "Compare with paleodata the model response to known orbital forcing changes and changes in greenhouse gas concentrations.  Evaluate relationships between changes in mean state and variability.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "piControl", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
     ], 
     "requirements": [
         {
@@ -18,19 +27,35 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "midHoloceneWMGHG", 
+            "canonical_name": "mid-Holocene WMGHG", 
             "description": "Impose Mid-Holocene (6 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, mid-holocene", 
-            "label": "midHoloceneWMGHG", 
+            "label": "mid-Holocene WMGHG", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "midHoloceneOrbit", 
-            "description": "Impose orbital parameters for the mid-holocene (6 kyr ago).", 
-            "isConformanceRequested": false, 
-            "keywords": "PMIP, orbital parameters, mid-holocene", 
-            "label": "midHoloceneOrbit", 
+            "canonical_name": "mid-Holocene Astronomical Parameters", 
+            "description": "Impose astronomical parameters for the mid-holocene (6 kyr ago).", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, mid-holocene", 
+            "label": "mid-Holocene Astronomical Parameters", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ice sheets", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land-Sea mask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
             "type": "forcing-constraint"
         }, 
         {
@@ -42,14 +67,14 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM/ESM Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model or an Earth System Model", 
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, ESM, Atmosphere-Ocean, Earth System, Model, Configuration", 
-            "label": "AOGCM/ESM Configuration", 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "5302ef7a-d02f-4aae-ba75-3619a1728a7c", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=5302ef7a-d02f-4aae-ba75-3619a1728a7c&version=latest&client=mohc"
+    "uid": "754a137e-824d-4163-a001-90e216813154", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=754a137e-824d-4163-a001-90e216813154&version=latest&client=mohc"
 }

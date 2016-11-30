@@ -1,15 +1,396 @@
 {
     "canonical_name": "piControl", 
     "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+    "governing_mips": [
+        "deck"
+    ], 
     "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
     "long_name": "Pre-Industrial Control", 
     "mip_era": "cmip6", 
-    "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+    "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
     "related_experiments": [
-        "1pctCO2", 
-        "abrupt-4xCO2", 
-        "esm-piControl", 
-        "historical"
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "1pctCO2-bgc", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "1pctCO2-rad", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "1pctCO2Ndep", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "1pctCO2Ndep-bgc", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "G1", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "abrupt-0p5xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "abrupt-2xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "abrupt-solm4p", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "abrupt-solp4p", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "amip-hist", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "control-slab", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "dcppA-historical", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "dcppC-atl-control", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "dcppC-pac", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "deforest-globe", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-piControl", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "faf-all", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "faf-heat", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "faf-passiveheat", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "faf-stress", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "faf-water", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-GHG", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-aer", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-all-aer2", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-all-nat2", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-all-spAerO3", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-bgc", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-co2", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-nat", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-noLu", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-piAer", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-piNTCF", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-resAMO", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-resIPO", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-sol", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-spAerO3", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-stratO3", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-volc", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ism-piControl-self", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piClim-2xDMS", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-2xNOX", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-2xVOC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-2xdust", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-2xfire", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-2xss", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-4xCO2", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-BC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-CH4", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-GHG", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-HC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-N2O", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-NOX", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-NTCF", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-O3", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-VOC", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-aer", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-aerO3", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-aerO3x0p1", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-aerO3x2", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-anthro", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histAll", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histGHG", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histNat", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histaerO3", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-lu", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-spAerO3-aer", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-spAerO3-anthro", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-spAerO3-histaer", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-spAerO3-histall", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piControl-withism", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piSST-4xCO2-all", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piSST-4xCO2-rad", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piSST-4xCO2-solar", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "piSST-control", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piSST-p4K", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piSST-pxK", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ssp245-stratO3chem", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "volc-cluster-ctrl", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-cluster-mill", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "volc-long-eq", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-long-hlN", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-long-hlS", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-pinatubo-full", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-pinatubo-ini", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "volc-pinatubo-slab", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-pinatubo-strat", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "volc-pinatubo-surf", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "c4mip", 
+        "damip", 
+        "dcpp", 
+        "deck", 
+        "fafmip", 
+        "geomip", 
+        "highresmip", 
+        "ismip6", 
+        "lumip", 
+        "pmip", 
+        "rfmip", 
+        "volmip"
     ], 
     "requirements": [
         {
@@ -21,11 +402,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "piForcing", 
+            "canonical_name": "Pre-Industrial Forcing", 
             "description": "Pre-Industrail forcing", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing", 
-            "label": "piForcing", 
+            "label": "Pre-Industrial Forcing", 
             "type": "forcing-constraint"
         }, 
         {

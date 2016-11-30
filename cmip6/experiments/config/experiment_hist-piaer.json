@@ -1,12 +1,29 @@
 {
     "canonical_name": "hist-piAer", 
     "description": "Historical WMGHG and Halocarbon concentrations.  Historical ozone precursor emissions (e.g. NOx).  Aerosols and aerosol precursors fixed at 1850 emission levels.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 2, Historical perturbation, 1850 aerosol, no Nox", 
     "long_name": "historical forcing, but with pre-industrial aerosol emissions", 
     "mip_era": "cmip6", 
     "rationale": "How have aerosols contributed to global ERF and affected regional climate over the historical period?", 
     "related_experiments": [
-        "historical"
+        {
+            "name": "histSST", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -20,7 +37,7 @@
         {
             "canonical_name": "Historical Non-Reactive WMGHG Concentrations", 
             "description": "Impose historical non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
             "label": "Historical Non-Reactive WMGHG Concentrations", 
             "type": "forcing-constraint"
@@ -28,7 +45,7 @@
         {
             "canonical_name": "Historical Methane Concentrations", 
             "description": "Impose historical concentrations of methane (CH4).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical methane concentrations, CH4", 
             "label": "Historical Methane Concentrations", 
             "type": "forcing-constraint"
@@ -36,7 +53,7 @@
         {
             "canonical_name": "Historical N2O Concentrations", 
             "description": "Impose historical concentrations of Nitrous Oxide (N2O).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical nitrous oxide, N2O", 
             "label": "Historical N2O Concentrations", 
             "type": "forcing-constraint"
@@ -44,7 +61,7 @@
         {
             "canonical_name": "1850 Aerosol Emissions", 
             "description": "Impose pre-industrial (1850) emissions of aersols.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, aerosol emissions, NTCF", 
             "label": "1850 Aerosol Emissions", 
             "type": "forcing-constraint"
@@ -52,7 +69,7 @@
         {
             "canonical_name": "1850 Aerosol Precursor Emissions", 
             "description": "Impose pre-industrial (1850) emissions of aersol precursors.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, aerosol precursor emissions, NTCF", 
             "label": "1850 Aerosol Precursor Emissions", 
             "type": "forcing-constraint"
@@ -60,7 +77,7 @@
         {
             "canonical_name": "Historical Tropospheric Ozone Precursor Emissions", 
             "description": "Impose historical emissions of tropospheric ozone precursors (e.g. NOx).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical, tropospheric ozone precursors, NTCF", 
             "label": "Historical Tropospheric Ozone Precursor Emissions", 
             "type": "forcing-constraint"
@@ -68,7 +85,7 @@
         {
             "canonical_name": "Historical Ozone Depleating Halocarbon Concentrations", 
             "description": "Impose historical concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
             "label": "Historical Ozone Depleating Halocarbon Concentrations", 
             "type": "forcing-constraint"
@@ -76,7 +93,7 @@
         {
             "canonical_name": "Historical Land Use", 
             "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
             "type": "forcing-constraint"

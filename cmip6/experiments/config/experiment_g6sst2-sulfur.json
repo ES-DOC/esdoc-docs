@@ -1,14 +1,29 @@
 {
     "canonical_name": "G6SST2-sulfur", 
     "description": "Time slice at year 2100 of GeoMIP G6sulfur. Run for 10 years.", 
+    "governing_mips": [
+        "geomip"
+    ], 
     "keywords": "GeoMIP, Tier2, timeslice, G6sulfur, 2100", 
     "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6sulfur", 
     "mip_era": "cmip6", 
     "rationale": "To assess radiative forcing of G6sulfur after 80 years of simulation.", 
     "related_experiments": [
-        "G6SST1", 
-        "G6sulfur", 
-        "ssp585"
+        {
+            "name": "G6SST1", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "G6sulfur", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "geomip"
     ], 
     "requirements": [
         {
@@ -20,43 +35,43 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "StratAerPreRCP85toRCP45Internal", 
+            "canonical_name": "Internal Stratospheric Aerosol Precursors RCP85 to RCP45", 
             "description": "Injection of stratospheric sulfate aerosol precursors to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).  \nModeling groups that have an internal sulfate aerosol treatment should calibrate the radiative response to sulfate aersols individually so that the results will be internally consistent (a procedure that will be more difficult for models that have a complex microphysical treatment of aerosols). Potential methods include a double radation call, once with and once without the stratospheric aerosols, and also the use feedback methods.\nSimulations to be conducted as if the aerosols or aerosol precursors are emitted in a line from 10\u00b0S to 10\u00b0N along a single longitude band (0\u00b0).  The injected aerosols or aerosol precursors should be evenly spread across model layers between 18 and 20 km.  Note that sedimentation processes and self-lofting due to heating are likely to result in the aerosols being distributed between 16-25 km in altitude.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, sulfate mitigation, SSP5-85 to SSP2-45, internal aerosol treatment, stratospheric aerosol precursor injection", 
-            "label": "StratAerPreRCP85toRCP45Internal", 
+            "label": "Internal Stratospheric Aerosol Precursors RCP85 to RCP45", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "StratAerPreRCP85toRCP45External", 
+            "canonical_name": "External Stratospheric Aerosol Precursors RCP85 to RCP45", 
             "description": "Injection of stratospheric sulfate aerosol precursors to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).  \nFor modeling groups that have no dynamical treatment of sulfate aerosols, GeoMIP will provide a data set of aerosol optical depth, as well as ozone fields that are consistent with this aerosol distribution.  Note that the amount of sulfate injection needed for a given model to achieve the goals of this experiment may vary, so modeling groups should scale the aerosol and ozone perturbation fields as necessary.\nSimulations to be conducted as if the aerosols or aerosol precursors are emitted in a line from 10\u00b0S to 10\u00b0N along a single longitude band (0\u00b0).  The injected aerosols or aerosol precursors should be evenly spread across model layers between 18 and 20 km.  Note that sedimentation processes and self-lofting due to heating are likely to result in the aerosols being distributed between 16-25 km in altitude.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "GeoMIP, sulfate mitigation, SSP5-85 to SSP2-45, external aerosol data input, stratospheric aerosol precursor injection", 
-            "label": "StratAerPreRCP85toRCP45External", 
+            "label": "External Stratospheric Aerosol Precursors RCP85 to RCP45", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SSP5-85SST2100", 
+            "canonical_name": "SSP5-85 SST 2100", 
             "description": "Sea surface temperature climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP5-85, SST, sea surface temperature, 2100", 
-            "label": "SSP5-85SST2100", 
+            "label": "SSP5-85 SST 2100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SSP5-85SIC2100", 
+            "canonical_name": "SSP5-85 SIC 2100", 
             "description": "Sea ice concentration climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "SSP5-85, SIC, sea ice concentration, 2100", 
-            "label": "SSP5-85SIC2100", 
+            "label": "SSP5-85 SIC 2100", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP85Forcing", 
+            "canonical_name": "RCP85 Forcing", 
             "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85Forcing", 
+            "label": "RCP85 Forcing", 
             "type": "forcing-constraint"
         }, 
         {

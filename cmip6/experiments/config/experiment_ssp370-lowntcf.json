@@ -1,12 +1,25 @@
 {
     "canonical_name": "ssp370-lowNTCF", 
     "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced NTCF emissions. SSP3 socioeconomic conditions.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
     "keywords": "AerChemMIP, Tier 1, scenario,  SSP3, RCP7.0, reduced NTCF,  Near Term Climate Forcers,", 
     "long_name": "SSP3-7.0, with low NTCF emissions", 
     "mip_era": "cmip6", 
     "rationale": null, 
     "related_experiments": [
-        "ssp370"
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp370", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
     ], 
     "requirements": [
         {
@@ -18,19 +31,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "RCP70WellMixedGHG", 
+            "canonical_name": "RCP70 Well Mixed GHG", 
             "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, CO2", 
-            "label": "RCP70WellMixedGHG", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "RCP70LandUse", 
-            "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest.", 
-            "isConformanceRequested": false, 
-            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
-            "label": "RCP70LandUse", 
+            "label": "RCP70 Well Mixed GHG", 
             "type": "forcing-constraint"
         }, 
         {
@@ -39,6 +44,14 @@
             "isConformanceRequested": true, 
             "keywords": "AerChemMIP, Reduced RCP7.0 NTCF, scenario", 
             "label": "ReducedRCP70NTCF", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Land Use", 
+            "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
+            "label": "RCP70 Land Use", 
             "type": "forcing-constraint"
         }, 
         {
@@ -58,11 +71,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AGCM-Chem Configuration", 
-            "description": "Use an Atmosphere model with chemistry", 
+            "canonical_name": "AOGCM-Chem Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with chemistry", 
             "isConformanceRequested": false, 
-            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
-            "label": "AGCM-Chem Configuration", 
+            "keywords": "AOGCM, Chemistry, AOGCM-Chem, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-Chem Configuration", 
             "type": "model-configuration"
         }
     ], 

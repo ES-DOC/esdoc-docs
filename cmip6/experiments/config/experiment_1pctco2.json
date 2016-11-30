@@ -1,12 +1,65 @@
 {
     "canonical_name": "1pctCO2", 
     "description": "1 percent per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+    "governing_mips": [
+        "deck"
+    ], 
     "keywords": "DECK, Tier 1,  Diagnosis Evaluation and Characterization of Klima (Climate), CO2 1 percent per year increase, 1pctCO2, quadrupling, climate sensitivity", 
     "long_name": "1 percent per year increase in CO2", 
     "mip_era": "cmip6", 
     "rationale": "Serves as a consistent and useful benchmark for analysing model transient climate response (TCR). The TCR takes into account the rate of ocean heat uptake which governs the pace of all time-evolving climate change. In Earth System Models (ESMs) that include explicit representation of the carbon cycle this experiment allows the calculation of the transient climate response to cumulative carbon emissions (TCRE) to be calculated.", 
     "related_experiments": [
-        "piControl"
+        {
+            "name": "1pctCO2-bgc", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "1pctCO2-rad", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "1pctCO2Ndep", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "1pctCO2to4x-withism", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "faf-all", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "faf-heat", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "faf-passiveheat", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "faf-stress", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "faf-water", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "ism-1pctCO2to4x-self", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip", 
+        "deck", 
+        "fafmip", 
+        "highresmip", 
+        "ismip6"
     ], 
     "requirements": [
         {
@@ -18,19 +71,19 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1%yrCO2Increase", 
+            "canonical_name": "1% per year CO2 Increase", 
             "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
-            "isConformanceRequested": false, 
+            "isConformanceRequested": true, 
             "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
-            "label": "1%yrCO2Increase", 
+            "label": "1% per year CO2 Increase", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "PIForcingExcludingCO2", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
             "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "PIForcingExcludingCO2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {
@@ -58,6 +111,6 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "18200dd7-c51e-4a23-9485-9a86ffc13dd5", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=18200dd7-c51e-4a23-9485-9a86ffc13dd5&version=latest&client=mohc"
+    "uid": "6210f447-0b8e-449d-8962-51addea668a8", 
+    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6210f447-0b8e-449d-8962-51addea668a8&version=latest&client=mohc"
 }
