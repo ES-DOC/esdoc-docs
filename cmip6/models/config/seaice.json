@@ -9,7 +9,7 @@
             "description": "Sea Ice Dynamics", 
             "id": "cmip6.seaice.dynamics", 
             "contact": "Ruth Petrie", 
-            "details": [
+            "properties": [
                 {
                     "label": "Horizontal Transport", 
                     "description": "What is the method of horizontal advection of sea ice?", 
@@ -162,7 +162,7 @@
                     "description": "Processes related to energy in sea ice thermodynamics", 
                     "id": "cmip6.seaice.thermodynamics.energy", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Enthalpy Formulation", 
                             "description": "What is the energy formulation?", 
@@ -294,7 +294,7 @@
                     "description": "Processes related to mass in sea ice thermodynamics", 
                     "id": "cmip6.seaice.thermodynamics.mass", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "New Ice Formation", 
                             "description": "Describe the method by which new sea ice is formed in open water.", 
@@ -357,7 +357,7 @@
                     "description": "Processes related to salt in sea ice thermodynamics.", 
                     "id": "cmip6.seaice.thermodynamics.salt", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Has Multiple Sea Ice Salinities", 
                             "description": "Does the sea ice model use two different salinities; one for thermodynamic\n         calculations and one for the salt budget?", 
@@ -375,12 +375,12 @@
                             "uiOrdinal": 2
                         }
                     ], 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Mass Transport", 
                             "description": "Mass transport of salt", 
                             "id": "cmip6.seaice.thermodynamics.salt.mass_transport", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Salinity Type", 
                                     "description": "How is salinity determined in the mass transport of salt calculation?", 
@@ -430,7 +430,7 @@
                             "label": "Thermodynamics", 
                             "description": "Salt thermodynamics", 
                             "id": "cmip6.seaice.thermodynamics.salt.thermodynamics", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Salinity", 
                                     "description": "How is salinity determined in the thermodynamic calculation?", 
@@ -483,7 +483,7 @@
                     "description": "Ice thickness distribution details.", 
                     "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Representation", 
                             "description": "How is the sea ice thickness distribution represented?", 
@@ -514,7 +514,7 @@
                     "description": "Characteristics of melt ponds.", 
                     "id": "cmip6.seaice.thermodynamics.melt_ponds", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Are Included", 
                             "description": "Are melt ponds included in the sea ice model?", 
@@ -580,7 +580,7 @@
                     "description": "Thermodynamic processes in snow on sea ice", 
                     "id": "cmip6.seaice.thermodynamics.snow_processes", 
                     "contact": "Ruth Petrie", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Has Snow Aging", 
                             "description": "Set to True if the sea ice model has a snow aging scheme.", 
@@ -653,7 +653,7 @@
             "description": "Sea Ice Radiative Processes", 
             "id": "cmip6.seaice.radiative_processes", 
             "contact": "Ruth Petrie", 
-            "details": [
+            "properties": [
                 {
                     "label": "Surface Albedo", 
                     "description": "Method used to handle surface albedo.", 
@@ -716,17 +716,17 @@
         "description": "Sea Ice grid", 
         "id": "cmip6.seaice.grid", 
         "contact": "Ruth Petrie", 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Discretisation", 
                 "description": "Sea ice discretisation", 
                 "id": "cmip6.seaice.grid.discretisation", 
-                "detailSets": [
+                "propertySets": [
                     {
                         "label": "Horizontal", 
                         "description": "Sea ice discretisation in the horizontal", 
                         "id": "cmip6.seaice.grid.discretisation.horizontal", 
-                        "details": [
+                        "properties": [
                             {
                                 "label": "Grid", 
                                 "description": "Grid on which sea ice is horizontal discretised?", 
@@ -838,7 +838,7 @@
                         "label": "Vertical", 
                         "description": "Sea ice vertical properties", 
                         "id": "cmip6.seaice.grid.discretisation.vertical", 
-                        "details": [
+                        "properties": [
                             {
                                 "label": "Layering", 
                                 "description": "What type of sea ice vertical layers are implemented for purposes of thermodynamic calculations?", 
@@ -890,7 +890,7 @@
                 "label": "Seaice Categories", 
                 "description": "What method is used to represent sea ice categories ?", 
                 "id": "cmip6.seaice.grid.seaice_categories", 
-                "details": [
+                "properties": [
                     {
                         "label": "Has Mulitple Categories", 
                         "description": "Set to true if the sea ice model has multiple sea ice categories.", 
@@ -937,7 +937,7 @@
                 "label": "Snow On Seaice", 
                 "description": "Snow on sea ice details", 
                 "id": "cmip6.seaice.grid.snow_on_seaice", 
-                "details": [
+                "properties": [
                     {
                         "label": "Has Snow On Ice", 
                         "description": "Is snow on ice represented in this model?", 
@@ -979,12 +979,12 @@
         "description": "Sea Ice key properties", 
         "id": "cmip6.seaice.key_properties", 
         "contact": "Ruth Petrie", 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Variables", 
                 "description": "List of prognostic variable in the sea ice model.", 
                 "id": "cmip6.seaice.key_properties.variables", 
-                "details": [
+                "properties": [
                     {
                         "label": "Prognostic", 
                         "description": "List of prognostic variables in the sea ice component.", 
@@ -1042,7 +1042,7 @@
                 "label": "Seawater Properties", 
                 "description": "Properties of seawater relevant to sea ice", 
                 "id": "cmip6.seaice.key_properties.seawater_properties", 
-                "details": [
+                "properties": [
                     {
                         "label": "Ocean Freezing Point", 
                         "description": "Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure", 
@@ -1080,7 +1080,7 @@
                 "label": "Resolution", 
                 "description": "Resolution in the sea ice grid", 
                 "id": "cmip6.seaice.key_properties.resolution", 
-                "details": [
+                "properties": [
                     {
                         "label": "Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of this grid\n               e.g. N512L180, T512L70, ORCA025 etc.", 
@@ -1111,7 +1111,7 @@
                 "label": "Tuning Applied", 
                 "description": "Tuning applied to sea ice model component", 
                 "id": "cmip6.seaice.key_properties.tuning_applied", 
-                "details": [
+                "properties": [
                     {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained.\n               Document the relative weight given to climate performance metrics versus process oriented metrics,\n               and on the possible conflicts with parameterization level tuning. In particular describe any struggle\n               with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
@@ -1158,7 +1158,7 @@
                 "label": "Assumptions", 
                 "description": "Assumptions made in the sea ice model", 
                 "id": "cmip6.seaice.key_properties.assumptions", 
-                "details": [
+                "properties": [
                     {
                         "label": "Description", 
                         "description": "General overview description of any *key* assumptions made in this model.", 
@@ -1189,7 +1189,7 @@
                 "label": "Conservation", 
                 "description": "Conservation in the sea ice component", 
                 "id": "cmip6.seaice.key_properties.conservation", 
-                "details": [
+                "properties": [
                     {
                         "label": "Description", 
                         "description": "Provide a general description of conservation methodology.", 

@@ -9,7 +9,7 @@
             "description": "Characteristics of the dynamical core", 
             "id": "cmip6.atmosphere.dynamical_core", 
             "contact": "Charlotte Pascoe", 
-            "details": [
+            "properties": [
                 {
                     "label": "Timestepping Type", 
                     "description": "Timestepping framework type", 
@@ -22,7 +22,7 @@
                         "isOpen": true, 
                         "choices": [
                             {
-                                "label": "Adam Bashford", 
+                                "label": "Adams-Bashforth", 
                                 "description": null
                             }, 
                             {
@@ -131,7 +131,7 @@
                     "description": "Type of boundary layer at the top of the model", 
                     "id": "cmip6.atmosphere.dynamical_core.top_boundary", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Top Boundary Condition", 
                             "description": "Top boundary condition", 
@@ -178,7 +178,7 @@
                     "description": "Type of lateral boundary condition (if the model is a regional model)", 
                     "id": "cmip6.atmosphere.dynamical_core.lateral_boundary", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Condition", 
                             "description": "Type of lateral boundary condition", 
@@ -209,19 +209,13 @@
                     "description": "Horizontal diffusion scheme", 
                     "id": "cmip6.atmosphere.dynamical_core.diffusion_horizontal", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Horizontal diffusion scheme name", 
                             "id": "cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name", 
                             "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Diffusion Horizontal Scheme Name", 
-                                "description": "Commonly used name for the horizontal diffusion scheme", 
-                                "isOpen": true, 
-                                "choices": []
-                            }, 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -238,6 +232,10 @@
                                     {
                                         "label": "iterated Laplacian", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "bi-harmonic", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -250,7 +248,7 @@
                     "description": "Tracer advection scheme", 
                     "id": "cmip6.atmosphere.dynamical_core.advection_tracers", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Tracer advection scheme name", 
@@ -359,7 +357,12 @@
                                 "label": "Advection Tracers Conserved Quantities", 
                                 "description": "Quantities conserved through the tracers advection scheme", 
                                 "isOpen": true, 
-                                "choices": []
+                                "choices": [
+                                    {
+                                        "label": "dry mass", 
+                                        "description": null
+                                    }
+                                ]
                             }, 
                             "uiOrdinal": 3
                         }, 
@@ -377,6 +380,10 @@
                                     {
                                         "label": "conservation fixer", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "Priestley algorithm", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -389,7 +396,7 @@
                     "description": "Momentum advection scheme", 
                     "id": "cmip6.atmosphere.dynamical_core.advection_momentum", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Momentum advection schemes name", 
@@ -530,7 +537,7 @@
                             "type": "enum", 
                             "enum": {
                                 "label": "Advection Momentum Conservation Method", 
-                                "description": "Method used to ensure conservation in the tracers advection scheme", 
+                                "description": "Method used to ensure conservation in the momentum advection scheme", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -550,7 +557,7 @@
             "description": "Characteristics of the atmosphere radiation process", 
             "id": "cmip6.atmosphere.radiation", 
             "contact": "Charlotte Pascoe", 
-            "details": [
+            "properties": [
                 {
                     "label": "Aerosols", 
                     "description": "Aerosols whose radiative effect is taken into account in the atmosphere model", 
@@ -683,7 +690,60 @@
                         "label": "Cloud Ice Properties", 
                         "description": "Radiative properties of ice crystals in clouds", 
                         "isOpen": true, 
-                        "choices": []
+                        "choices": [
+                            {
+                                "label": "treated as spherical particles", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "effective crystal radius", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "treated as non-spherical particles", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "mean projected area", 
+                                "description": "randomly oriented irregular ice crystals present a greater mean projected area than spheres"
+                            }, 
+                            {
+                                "label": "bi-modal size distribution", 
+                                "description": "small mode diameters: a few tens of microns, large mode diameters: typically hundreds of microns"
+                            }, 
+                            {
+                                "label": "ensemble of ice crystals", 
+                                "description": "complex shapes represented with an ensemble of symmetric shapes"
+                            }, 
+                            {
+                                "label": "ice water path", 
+                                "description": "Integrated ice water path through the cloud kg m-2"
+                            }, 
+                            {
+                                "label": "crystal asymmetry", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "crystal aspect ratio", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "emissivity", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "absorption", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "backward scattering", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "side scattering", 
+                                "description": null
+                            }
+                        ]
                     }, 
                     "uiOrdinal": 3
                 }, 
@@ -697,7 +757,44 @@
                         "label": "Cloud Liquid Properties", 
                         "description": "Radiative properties of liquid droplets in clouds", 
                         "isOpen": true, 
-                        "choices": []
+                        "choices": [
+                            {
+                                "label": "droplet scattering", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "droplet absorption", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "cloud droplet number concentration", 
+                                "description": "CDNC"
+                            }, 
+                            {
+                                "label": "effective cloud droplet radii", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "droplet size distribution", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "liquid water path", 
+                                "description": "Integrated liquid water path through the cloud kg m-2"
+                            }, 
+                            {
+                                "label": "broadband reflectivity", 
+                                "description": "albedo"
+                            }, 
+                            {
+                                "label": "broadband transmissivity", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "broadband absorbtivity", 
+                                "description": null
+                            }
+                        ]
                     }, 
                     "uiOrdinal": 4
                 }
@@ -708,7 +805,7 @@
                     "description": "Properties of the longwave radiation scheme", 
                     "id": "cmip6.atmosphere.radiation.longwave_radiation", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Type", 
                             "description": "Longwave radiation scheme type", 
@@ -758,6 +855,10 @@
                                     {
                                         "label": "layer interaction", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "adaptive", 
+                                        "description": "exploits spatial and temporal correlations in optical characteristics"
                                     }
                                 ]
                             }, 
@@ -778,7 +879,7 @@
                     "description": "Properties of the shortwave radiation scheme", 
                     "id": "cmip6.atmosphere.radiation.shortwave_radiation", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Type", 
                             "description": "Shortwave radiation scheme type", 
@@ -797,6 +898,18 @@
                                     {
                                         "label": "wide-band model (Fouquart)", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "bulk-scheme", 
+                                        "description": "highly parameterized methods that use bulk expressions"
+                                    }, 
+                                    {
+                                        "label": "two-stream", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "two-stream (delta-Eddington)", 
+                                        "description": "approximation for solar radiation calculations"
                                     }
                                 ]
                             }, 
@@ -809,6 +922,45 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Single Scattering Properties", 
+                    "description": "Single scattering properties of ice clouds", 
+                    "id": "cmip6.atmosphere.radiation.single_scattering_properties", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Single Scattering", 
+                            "description": "Methods for calculating single scattering properties of ice crystals", 
+                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.single_scattering", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Single Scattering Properties Methods", 
+                                "description": "Methods for calculating single scattering properties of ice crystals", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-Matrix", 
+                                        "description": "an exact method"
+                                    }, 
+                                    {
+                                        "label": "geometrical optics", 
+                                        "description": "for particles that are much larger than the wavelength of light"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain", 
+                                        "description": "FDTD"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": "ADA"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
                         }
                     ]
                 }
@@ -825,7 +977,7 @@
                     "description": "Properties of the boundary layer turbulence scheme", 
                     "id": "cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Boundary layer turbulence scheme name", 
@@ -840,6 +992,14 @@
                                     {
                                         "label": "Mellor-Yamada", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "Holtslag-Boville", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "EDMF", 
+                                        "description": "Combined Eddy Diffusivity Mass-Flux"
                                     }
                                 ]
                             }, 
@@ -849,7 +1009,7 @@
                             "label": "Scheme Type", 
                             "description": "Boundary layer turbulence scheme type", 
                             "id": "cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_type", 
-                            "cardinality": "1.1", 
+                            "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Boundary Layer Turbulence Scheme Type", 
@@ -871,6 +1031,30 @@
                                     {
                                         "label": "vertical profile of Kz", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "non-local diffusion", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Monin-Obukhov similarity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Coastal Buddy Scheme", 
+                                        "description": "separate components for coastal near surface winds over ocean and land"
+                                    }, 
+                                    {
+                                        "label": "Coupled with convection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Coupled with gravity waves", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Depth capped at cloud base", 
+                                        "description": "boundary layer capped at cloud base when convection is diagnosed"
                                     }
                                 ]
                             }, 
@@ -899,7 +1083,7 @@
                     "description": "Properties of the deep convection scheme", 
                     "id": "cmip6.atmosphere.turbulence_convection.deep_convection", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Deep convection scheme name", 
@@ -912,7 +1096,7 @@
                             "label": "Scheme Type", 
                             "description": "Deep convection scheme type", 
                             "id": "cmip6.atmosphere.turbulence_convection.deep_convection.scheme_type", 
-                            "cardinality": "1.1", 
+                            "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Deep Convection Scheme Type", 
@@ -926,6 +1110,10 @@
                                     {
                                         "label": "adjustment", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "plume ensemble", 
+                                        "description": "Zhang-McFarlane"
                                     }
                                 ]
                             }, 
@@ -939,7 +1127,7 @@
                             "type": "enum", 
                             "enum": {
                                 "label": "Deep Convection Scheme Method", 
-                                "description": "If deep convection uses a mass-flux scheme enter the method used.", 
+                                "description": "Method used for deep convection.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -949,6 +1137,10 @@
                                     {
                                         "label": "bulk", 
                                         "description": "A bulk mass flux scheme is used"
+                                    }, 
+                                    {
+                                        "label": "ensemble", 
+                                        "description": "Summation over an ensemble of convective clouds with differing characteristics"
                                     }
                                 ]
                             }, 
@@ -986,7 +1178,11 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "updrafts and downdrafts", 
+                                        "label": "updrafts", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "downdrafts", 
                                         "description": null
                                     }, 
                                     {
@@ -1004,7 +1200,7 @@
                     "description": "Properties of the shallow convection scheme", 
                     "id": "cmip6.atmosphere.turbulence_convection.shallow_convection", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Method", 
                             "description": "shallow convection scheme method", 
@@ -1025,8 +1221,8 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "separated", 
-                                        "description": null
+                                        "label": "separate diagnosis", 
+                                        "description": "Deep and Shallow convection schemes use different thermodynamic closure criteria"
                                     }
                                 ]
                             }, 
@@ -1036,7 +1232,7 @@
                             "label": "Scheme Type", 
                             "description": "shallow convection scheme type", 
                             "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_type", 
-                            "cardinality": "1.1", 
+                            "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Shallow Convection Scheme Type", 
@@ -1045,6 +1241,10 @@
                                 "choices": [
                                     {
                                         "label": "mass-flux", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "cumulus-capped boundary layer", 
                                         "description": null
                                     }
                                 ]
@@ -1069,7 +1269,24 @@
                                 "label": "Shallow Convection Scheme Processes", 
                                 "description": "Processes taken into account by the shallow convection scheme", 
                                 "isOpen": true, 
-                                "choices": []
+                                "choices": [
+                                    {
+                                        "label": "convective momentum transport", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "entrainment", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "detrainment", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "penetrative convection", 
+                                        "description": null
+                                    }
+                                ]
                             }, 
                             "uiOrdinal": 4
                         }
@@ -1088,7 +1305,7 @@
                     "description": "Properties of the large scale precipitation scheme", 
                     "id": "cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme", 
                             "description": "Commonly used name of the large scale precipitation parameterisation scheme", 
@@ -1135,7 +1352,7 @@
                     "description": "Properties of the cloud microphysics scheme", 
                     "id": "cmip6.atmosphere.microphysics_precipitation.cloud_microphysics", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the microphysics parameterisation scheme.", 
@@ -1200,7 +1417,7 @@
             "description": "Characteristics of the cloud scheme", 
             "id": "cmip6.atmosphere.cloud_scheme", 
             "contact": "Charlotte Pascoe", 
-            "details": [
+            "properties": [
                 {
                     "label": "Uses Separate Treatment", 
                     "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds", 
@@ -1223,6 +1440,14 @@
                             {
                                 "label": "random", 
                                 "description": null
+                            }, 
+                            {
+                                "label": "maximum", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "arbitrary", 
+                                "description": "combination of maximum and random overlap between clouds"
                             }
                         ]
                     }, 
@@ -1262,7 +1487,7 @@
                     "description": "Sub-grid scale water distribution", 
                     "id": "cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Sub-grid scale water distribution type", 
@@ -1344,7 +1569,7 @@
                     "description": "ISSCP Characteristics", 
                     "id": "cmip6.atmosphere.cloud_simulator.isscp_attributes", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Top Height", 
                             "description": "Cloud simulator ISSCP top height", 
@@ -1402,7 +1627,7 @@
                     "description": "CFMIP Observational Simulator Package attributes", 
                     "id": "cmip6.atmosphere.cloud_simulator.cosp_attributes", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Run Configuration", 
                             "description": "Cloud simulator COSP run configuration", 
@@ -1457,7 +1682,7 @@
                     "description": "Characteristics of the cloud radar simulator", 
                     "id": "cmip6.atmosphere.cloud_simulator.radar_inputs", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Frequency", 
                             "description": "Cloud simulator radar frequency (Hz)", 
@@ -1512,7 +1737,7 @@
                     "description": "Characteristics of the cloud lidar simulator", 
                     "id": "cmip6.atmosphere.cloud_simulator.lidar_inputs", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Ice Types", 
                             "description": "Cloud simulator lidar ice type", 
@@ -1568,7 +1793,7 @@
             "description": "Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources.", 
             "id": "cmip6.atmosphere.gravity_waves", 
             "contact": "Charlotte Pascoe", 
-            "details": [
+            "properties": [
                 {
                     "label": "Sponge Layer", 
                     "description": "Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.", 
@@ -1579,7 +1804,16 @@
                         "label": "Sponge Layer Attributes", 
                         "description": "Gravity waves sponge layer attributes", 
                         "isOpen": true, 
-                        "choices": []
+                        "choices": [
+                            {
+                                "label": "Rayleigh friction", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Diffusive sponge layer", 
+                                "description": null
+                            }
+                        ]
                     }, 
                     "uiOrdinal": 1
                 }, 
@@ -1593,7 +1827,16 @@
                         "label": "Background Attributes", 
                         "description": "Gravity waves background attributes", 
                         "isOpen": true, 
-                        "choices": []
+                        "choices": [
+                            {
+                                "label": "continuous spectrum", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "discrete spectrum", 
+                                "description": null
+                            }
+                        ]
                     }, 
                     "uiOrdinal": 2
                 }, 
@@ -1615,6 +1858,10 @@
                             {
                                 "label": "effect on lifting", 
                                 "description": null
+                            }, 
+                            {
+                                "label": "enhanced topography", 
+                                "description": "To enhance the generation of long waves in the atmosphere"
                             }
                         ]
                     }, 
@@ -1627,7 +1874,7 @@
                     "description": "Gravity waves generated due to the presence of orography", 
                     "id": "cmip6.atmosphere.gravity_waves.orographic_gravity_waves", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Source Mechanisms", 
                             "description": "Orographic gravity wave source mechanisms", 
@@ -1636,7 +1883,7 @@
                             "type": "enum", 
                             "enum": {
                                 "label": "Orographic Gravity Wave Source Mechanisms", 
-                                "description": "Physical mechanisms generatic orographic gravity waves.", 
+                                "description": "Physical mechanisms generating orographic gravity waves.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1649,6 +1896,10 @@
                                     }, 
                                     {
                                         "label": "envelope orography", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "low level flow blocking", 
                                         "description": null
                                     }, 
                                     {
@@ -1743,7 +1994,7 @@
                     "description": "Gravity waves generated by non-orographic processes.", 
                     "id": "cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Source Mechanisms", 
                             "description": "Non-orographic gravity wave source mechanisms", 
@@ -1859,11 +2110,46 @@
             "contact": "Charlotte Pascoe", 
             "subProcesses": [
                 {
+                    "label": "Solar Pathways", 
+                    "description": "Pathways for solar forcing of the atmosphere", 
+                    "id": "cmip6.atmosphere.solar.solar_pathways", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Pathways", 
+                            "description": "Pathways for the solar forcing of the atmosphere model domain", 
+                            "id": "cmip6.atmosphere.solar.solar_pathways.pathways", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Solar Forcing Pathways", 
+                                "description": "Pathways for solar forcing of the atmosphere", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "SW radiation", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "precipitating energetic particles", 
+                                        "description": "Precipitating energetic particles from the sun (predominantly protons) and the magnetosphere (predominantly electrons) affect the ionization levels in the polar middle and upper atmosphere, leading to significant changes of the chemical composition"
+                                    }, 
+                                    {
+                                        "label": "cosmic rays", 
+                                        "description": "Cosmic rays are the main source of ionization in the troposphere and lower stratosphere."
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }
+                    ]
+                }, 
+                {
                     "label": "Solar Constant", 
                     "description": "Solar constant and top of atmosphere insolation characteristics", 
                     "id": "cmip6.atmosphere.solar.solar_constant", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Time adaptation of the solar constant.", 
@@ -1910,7 +2196,7 @@
                     "description": "Orbital parameters and top of atmosphere insolation characteristics", 
                     "id": "cmip6.atmosphere.solar.orbital_parameters", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Time adaptation of orbital parameters", 
@@ -1980,7 +2266,7 @@
                     "description": "Impact of solar insolation on stratospheric ozone", 
                     "id": "cmip6.atmosphere.solar.insolation_ozone", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Solar Ozone Impact", 
                             "description": "Does top of atmosphere insolation impact on stratospheric ozone?", 
@@ -2004,7 +2290,7 @@
                     "description": "Treatment of volcanoes in the atmosphere", 
                     "id": "cmip6.atmosphere.volcanos.volcanoes_treatment", 
                     "contact": "Charlotte Pascoe", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Volcanoes Implementation", 
                             "description": "How volcanic effects are modeled in the atmosphere.", 
@@ -2038,17 +2324,17 @@
         "description": "Atmosphere grid", 
         "id": "cmip6.atmosphere.grid", 
         "contact": "Charlotte Pascoe", 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Discretisation", 
                 "description": "Atmosphere grid discretisation", 
                 "id": "cmip6.atmosphere.grid.discretisation", 
-                "detailSets": [
+                "propertySets": [
                     {
                         "label": "Horizontal", 
                         "description": "Atmosphere discretisation in the horizontal", 
                         "id": "cmip6.atmosphere.grid.discretisation.horizontal", 
-                        "details": [
+                        "properties": [
                             {
                                 "label": "Scheme Type", 
                                 "description": "Horizontal discretisation type", 
@@ -2149,7 +2435,7 @@
         "description": "Atmosphere key properties", 
         "id": "cmip6.atmosphere.key_properties", 
         "contact": "Charlotte Pascoe", 
-        "details": [
+        "properties": [
             {
                 "label": "Model Family", 
                 "description": "Type of atmospheric model.", 
@@ -2213,12 +2499,12 @@
                 "uiOrdinal": 2
             }
         ], 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Orography", 
                 "description": "Characteristics of the model orography", 
                 "id": "cmip6.atmosphere.key_properties.orography", 
-                "details": [
+                "properties": [
                     {
                         "label": "Type", 
                         "description": "Time adaptation of the orography.", 

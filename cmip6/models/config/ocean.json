@@ -9,12 +9,12 @@
             "description": "Ocean Timestepping Framework", 
             "id": "cmip6.ocean.timestepping_framework", 
             "contact": "Eric Guilyardi", 
-            "detailSets": [
+            "propertySets": [
                 {
                     "label": "Timestepping Attributes", 
                     "description": "Properties of time stepping in ocean", 
                     "id": "cmip6.ocean.timestepping_framework.timestepping_attributes", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Time Step", 
                             "description": "Ocean time step in seconds", 
@@ -56,7 +56,7 @@
                     "label": "Timestepping Tracers Scheme", 
                     "description": "Properties of tracers time stepping in ocean", 
                     "id": "cmip6.ocean.timestepping_framework.timestepping_tracers_scheme", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Tracers", 
                             "description": "Time stepping tracer scheme", 
@@ -102,7 +102,7 @@
                     "label": "Barotropic Solver Scheme", 
                     "description": "Barotropic solver in ocean", 
                     "id": "cmip6.ocean.timestepping_framework.barotropic_solver_scheme", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Barotropic Solver", 
                             "description": "Barotropic solver scheme", 
@@ -171,7 +171,7 @@
                     "label": "Barotropic Momentum Scheme", 
                     "description": "Barotropic momentum solver in ocean", 
                     "id": "cmip6.ocean.timestepping_framework.barotropic_momentum_scheme", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Barotropic Momentum", 
                             "description": "Barotropic momentum scheme", 
@@ -226,7 +226,7 @@
                     "description": "Properties of lateral momemtum advection scheme in ocean", 
                     "id": "cmip6.ocean.advection.momentum", 
                     "contact": "Eric Guilyardi", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Type of lateral momemtum advection scheme in ocean", 
@@ -273,7 +273,7 @@
                     "description": "Properties of lateral tracer advection scheme in ocean", 
                     "id": "cmip6.ocean.advection.lateral_tracers", 
                     "contact": "Eric Guilyardi", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Type of lateral tracer advection scheme in ocean", 
@@ -379,7 +379,7 @@
                     "description": "Properties of vertical tracer advection scheme in ocean", 
                     "id": "cmip6.ocean.advection.vertical_tracers", 
                     "contact": "Eric Guilyardi", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type", 
                             "description": "Type of vertical tracer advection scheme in ocean", 
@@ -448,7 +448,7 @@
             "description": "Ocean lateral physics", 
             "id": "cmip6.ocean.lateral_physics", 
             "contact": "Eric Guilyardi", 
-            "details": [
+            "properties": [
                 {
                     "label": "Scheme", 
                     "description": "Type of transient eddy representation in ocean", 
@@ -483,12 +483,12 @@
                     "description": "Properties of lateral physics for momentum in ocean", 
                     "id": "cmip6.ocean.lateral_physics.momentum", 
                     "contact": "Eric Guilyardi", 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Operator", 
                             "description": "Properties of lateral physics operator for momentum in ocean", 
                             "id": "cmip6.ocean.lateral_physics.momentum.operator", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Direction", 
                                     "description": "Direction of lateral physics momemtum scheme in the ocean", 
@@ -580,7 +580,7 @@
                             "label": "Eddy Viscosity Coeff", 
                             "description": "Properties of eddy viscosity coeff in lateral physics momemtum scheme in the ocean", 
                             "id": "cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Lateral physics momemtum eddy viscosity coeff type in the ocean", 
@@ -649,7 +649,7 @@
                     "description": "Properties of lateral physics for tracers in ocean", 
                     "id": "cmip6.ocean.lateral_physics.tracers", 
                     "contact": "Eric Guilyardi", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Mesoscale Closure", 
                             "description": "Is there a mesoscale closure in the lateral physics tracers scheme ?", 
@@ -667,12 +667,12 @@
                             "uiOrdinal": 2
                         }
                     ], 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Operator", 
                             "description": "Properties of lateral physics operator for tracers in ocean", 
                             "id": "cmip6.ocean.lateral_physics.tracers.operator", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Direction", 
                                     "description": "Direction of lateral physics tracers scheme in the ocean", 
@@ -764,7 +764,7 @@
                             "label": "Eddy Viscosity Coeff", 
                             "description": "Properties of eddy viscosity coeff in lateral physics tracers scheme in the ocean", 
                             "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Lateral physics tracers eddy viscosity coeff type in the ocean", 
@@ -830,7 +830,7 @@
                             "label": "Eddy Induced Velocity", 
                             "description": "Properties of eddy induced velocity (EIV) in lateral physics tracers scheme in the ocean", 
                             "id": "cmip6.ocean.lateral_physics.tracers.eddy_induced_velocity", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of EIV in lateral physics tracers in the ocean", 
@@ -891,12 +891,12 @@
                     "description": "Properties of boundary layer mixing in the ocean (aka mixed layer)", 
                     "id": "cmip6.ocean.vertical_physics.boundary_layer_mixing", 
                     "contact": "Eric Guilyardi", 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Details", 
                             "description": "Properties of vertical physics in ocean", 
                             "id": "cmip6.ocean.vertical_physics.boundary_layer_mixing.details", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Langmuir Cells Mixing", 
                                     "description": "Is there Langmuir cells mixing in upper ocean ?", 
@@ -911,7 +911,7 @@
                             "label": "Tracers", 
                             "description": "Properties of boundary layer (BL) mixing on tracers in the ocean ", 
                             "id": "cmip6.ocean.vertical_physics.boundary_layer_mixing.tracers", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of boundary layer mixing for tracers in ocean", 
@@ -989,7 +989,7 @@
                             "label": "Momentum", 
                             "description": "Properties of boundary layer (BL) mixing on momentum in the ocean ", 
                             "id": "cmip6.ocean.vertical_physics.boundary_layer_mixing.momentum", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of boundary layer mixing for momentum in ocean", 
@@ -1070,12 +1070,12 @@
                     "description": "Properties of interior vertical mixing in the ocean", 
                     "id": "cmip6.ocean.vertical_physics.interior_mixing", 
                     "contact": "Eric Guilyardi", 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Details", 
                             "description": "Properties of interior mixing in the ocean ", 
                             "id": "cmip6.ocean.vertical_physics.interior_mixing.details", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Convection Type", 
                                     "description": "Type of vertical convection in ocean", 
@@ -1133,7 +1133,7 @@
                             "label": "Tracers", 
                             "description": "Properties of interior mixing on tracers in the ocean ", 
                             "id": "cmip6.ocean.vertical_physics.interior_mixing.tracers", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of interior mixing for tracers in ocean", 
@@ -1203,7 +1203,7 @@
                             "label": "Momentum", 
                             "description": "Properties of interior mixing on momentum in the ocean ", 
                             "id": "cmip6.ocean.vertical_physics.interior_mixing.momentum", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of interior mixing for momentum in ocean", 
@@ -1278,12 +1278,12 @@
             "description": "Ocean upper / lower boundaries", 
             "id": "cmip6.ocean.uplow_boundaries", 
             "contact": "Eric Guilyardi", 
-            "detailSets": [
+            "propertySets": [
                 {
                     "label": "Free Surface", 
                     "description": "Properties of free surface in ocean", 
                     "id": "cmip6.ocean.uplow_boundaries.free_surface", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Scheme", 
                             "description": "Free surface scheme in ocean", 
@@ -1337,7 +1337,7 @@
                     "label": "Bottom Boundary Layer", 
                     "description": "Properties of bottom boundary layer in ocean", 
                     "id": "cmip6.ocean.uplow_boundaries.bottom_boundary_layer", 
-                    "details": [
+                    "properties": [
                         {
                             "label": "Type Of Bbl", 
                             "description": "Type of bottom boundary layer in ocean", 
@@ -1386,7 +1386,7 @@
             "description": "Ocean boundary forcing", 
             "id": "cmip6.ocean.boundary_forcing", 
             "contact": "Eric Guilyardi", 
-            "details": [
+            "properties": [
                 {
                     "label": "Surface Pressure", 
                     "description": "Describe how surface pressure is transmitted to ocean (via sea-ice, nothing specific,...)", 
@@ -1442,12 +1442,12 @@
                     "description": "Key properties of momentum boundary forcing in the ocean", 
                     "id": "cmip6.ocean.boundary_forcing.momentum", 
                     "contact": "Eric Guilyardi", 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Bottom Friction", 
                             "description": "Properties of momentum bottom friction in ocean", 
                             "id": "cmip6.ocean.boundary_forcing.momentum.bottom_friction", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of momentum bottom friction in ocean", 
@@ -1489,7 +1489,7 @@
                             "label": "Lateral Friction", 
                             "description": "Properties of momentum lateral friction in ocean", 
                             "id": "cmip6.ocean.boundary_forcing.momentum.lateral_friction", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Type", 
                                     "description": "Type of momentum lateral friction in ocean", 
@@ -1526,12 +1526,12 @@
                     "description": "Key properties of tracer boundary forcing in the ocean", 
                     "id": "cmip6.ocean.boundary_forcing.tracers", 
                     "contact": "Eric Guilyardi", 
-                    "detailSets": [
+                    "propertySets": [
                         {
                             "label": "Sunlight Penetration", 
                             "description": "Properties of sunlight penetration scheme in ocean", 
                             "id": "cmip6.ocean.boundary_forcing.tracers.sunlight_penetration", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "Scheme", 
                                     "description": "Type of sunlight penetration scheme in ocean", 
@@ -1581,7 +1581,7 @@
                             "label": "Fresh Water Forcing", 
                             "description": "Properties of surface fresh water forcing in ocean", 
                             "id": "cmip6.ocean.boundary_forcing.tracers.fresh_water_forcing", 
-                            "details": [
+                            "properties": [
                                 {
                                     "label": "From Atmopshere", 
                                     "description": "Type of surface fresh water forcing from atmos in ocean", 
@@ -1652,17 +1652,17 @@
         "description": "Ocean grid", 
         "id": "cmip6.ocean.grid", 
         "contact": "Eric Guilyardi", 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Discretisation", 
                 "description": "Type of discretisation scheme in ocean", 
                 "id": "cmip6.ocean.grid.discretisation", 
-                "detailSets": [
+                "propertySets": [
                     {
                         "label": "Vertical", 
                         "description": "Properties of vertical discretisation in ocean", 
                         "id": "cmip6.ocean.grid.discretisation.vertical", 
-                        "details": [
+                        "properties": [
                             {
                                 "label": "Coordinates", 
                                 "description": "Type of vertical coordinates in ocean", 
@@ -1748,7 +1748,7 @@
                         "label": "Horizontal", 
                         "description": "Type of horizontal discretisation scheme in ocean", 
                         "id": "cmip6.ocean.grid.discretisation.horizontal", 
-                        "details": [
+                        "properties": [
                             {
                                 "label": "Type", 
                                 "description": "Horizontal grid type", 
@@ -1826,7 +1826,7 @@
         "description": "Ocean key properties", 
         "id": "cmip6.ocean.key_properties", 
         "contact": "Eric Guilyardi", 
-        "details": [
+        "properties": [
             {
                 "label": "Model Family", 
                 "description": "Type of ocean model.", 
@@ -1925,12 +1925,12 @@
                 "uiOrdinal": 3
             }
         ], 
-        "detailSets": [
+        "propertySets": [
             {
                 "label": "Seawater Properties", 
                 "description": "Physical properties of seawater in ocean", 
                 "id": "cmip6.ocean.key_properties.seawater_properties", 
-                "details": [
+                "properties": [
                     {
                         "label": "Eos Type", 
                         "description": "Type of EOS for sea water", 
@@ -2072,7 +2072,7 @@
                 "label": "Bathymetry", 
                 "description": "Properties of bathymetry in ocean", 
                 "id": "cmip6.ocean.key_properties.bathymetry", 
-                "details": [
+                "properties": [
                     {
                         "label": "Reference Dates", 
                         "description": "Reference date of bathymetry", 
@@ -2138,7 +2138,7 @@
                 "label": "Nonoceanic Waters", 
                 "description": "Non oceanic waters treatement in ocean", 
                 "id": "cmip6.ocean.key_properties.nonoceanic_waters", 
-                "details": [
+                "properties": [
                     {
                         "label": "Isolated Seas", 
                         "description": "Describe if/how isolated seas is performed", 
@@ -2161,7 +2161,7 @@
                 "label": "Resolution", 
                 "description": "Resolution in the ocean grid", 
                 "id": "cmip6.ocean.key_properties.resolution", 
-                "details": [
+                "properties": [
                     {
                         "label": "Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
@@ -2216,7 +2216,7 @@
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for ocean component", 
                 "id": "cmip6.ocean.key_properties.tuning_applied", 
-                "details": [
+                "properties": [
                     {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
@@ -2255,7 +2255,7 @@
                 "label": "Conservation", 
                 "description": "Conservation in the ocean component", 
                 "id": "cmip6.ocean.key_properties.conservation", 
-                "details": [
+                "properties": [
                     {
                         "label": "Description", 
                         "description": "Brief description of conservation methodology", 
