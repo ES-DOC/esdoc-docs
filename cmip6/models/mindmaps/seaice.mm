@@ -1374,16 +1374,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have selected "Thermal properties depend on S-T (with fixed salinity),
-            supply the fixed salinity value for each sea ice layer.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
+        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have selected "Thermal properties depend on S-T (with fixed salinity),
-            supply the fixed salinity value for each sea ice layer.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
+        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="heat_content_precip"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1509,16 +1507,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities; one for thermodynamic
-         calculations and one for the salt budget?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
+        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities; one for thermodynamic
-         calculations and one for the salt budget?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
+        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sea_ice_salinity_thermal_impacts"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
