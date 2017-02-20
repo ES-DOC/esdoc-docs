@@ -102,6 +102,10 @@
             "relationship": "is_initializer_of"
         }, 
         {
+            "name": "hist-CO2", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
             "name": "hist-GHG", 
             "relationship": "is_initializer_of"
         }, 
@@ -118,15 +122,7 @@
             "relationship": "is_initializer_of"
         }, 
         {
-            "name": "hist-all-spAerO3", 
-            "relationship": "is_initializer_of"
-        }, 
-        {
             "name": "hist-bgc", 
-            "relationship": "is_initializer_of"
-        }, 
-        {
-            "name": "hist-co2", 
             "relationship": "is_initializer_of"
         }, 
         {
@@ -158,7 +154,11 @@
             "relationship": "is_initializer_of"
         }, 
         {
-            "name": "hist-spAerO3", 
+            "name": "hist-spAer-aer", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-spAer-all", 
             "relationship": "is_initializer_of"
         }, 
         {
@@ -214,10 +214,6 @@
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-GHG", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
             "name": "piClim-HC", 
             "relationship": "is_constrainer_of"
         }, 
@@ -250,14 +246,6 @@
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-aerO3x0p1", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
-            "name": "piClim-aerO3x2", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
             "name": "piClim-anthro", 
             "relationship": "is_constrainer_of"
         }, 
@@ -270,15 +258,7 @@
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-histAll", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
-            "name": "piClim-histGHG", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
-            "name": "piClim-histNat", 
+            "name": "piClim-ghg", 
             "relationship": "is_constrainer_of"
         }, 
         {
@@ -286,23 +266,35 @@
             "relationship": "is_constrainer_of"
         }, 
         {
+            "name": "piClim-histall", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histghg", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piClim-histnat", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
             "name": "piClim-lu", 
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-spAerO3-aer", 
+            "name": "piClim-spAer-aer", 
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-spAerO3-anthro", 
+            "name": "piClim-spAer-anthro", 
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-spAerO3-histaer", 
+            "name": "piClim-spAer-histaer", 
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "piClim-spAerO3-histall", 
+            "name": "piClim-spAer-histall", 
             "relationship": "is_constrainer_of"
         }, 
         {
@@ -310,7 +302,11 @@
             "relationship": "is_control_for"
         }, 
         {
-            "name": "piSST-4xCO2-all", 
+            "name": "piSST", 
+            "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piSST-4xCO2", 
             "relationship": "is_constrainer_of"
         }, 
         {
@@ -322,19 +318,11 @@
             "relationship": "is_initializer_of"
         }, 
         {
-            "name": "piSST-control", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
-            "name": "piSST-p4K", 
-            "relationship": "is_constrainer_of"
-        }, 
-        {
             "name": "piSST-pxK", 
             "relationship": "is_constrainer_of"
         }, 
         {
-            "name": "ssp245-stratO3chem", 
+            "name": "ssp245-stratO3", 
             "relationship": "is_constrainer_of"
         }, 
         {
@@ -379,6 +367,7 @@
         }
     ], 
     "related_mips": [
+        "aerchemmip", 
         "c4mip", 
         "damip", 
         "dcpp", 
@@ -426,6 +415,7 @@
             "type": "model-configuration"
         }
     ], 
+    "tier": 1, 
     "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=7dd72de5-c5b6-412c-9b4c-540f09538d9a&version=latest&client=mohc"
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=mohc"
 }

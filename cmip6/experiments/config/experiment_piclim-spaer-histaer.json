@@ -1,0 +1,100 @@
+{
+    "canonical_name": "piClim-spAer-histaer", 
+    "description": "A historical (1850-2014) experiment using an atmosphere-land model with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Transient aerosol forcing specified by RFMIP, other forcing agents are set at pre-industrial levels.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 2, Historical, Aerosol forcing, specified aerosol, atmosphere-land", 
+    "long_name": "transient effective radiative forcing with specified anthropogenic aerosol optical properties, aerosol forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "To be used in detection and attribution experiments.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piClim-histaerO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histall", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-spAer-histall", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP historical Aerosols", 
+            "description": "Historical aerosol optical properties including cloud-radiation interactions prescribed by RFMIP.  An analytically-described spatial pattern with time-constant spectral variation and time-varying strength (building on the Easy Aerosol experience).", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, specified aerosols, historical", 
+            "label": "RFMIP historical Aerosols", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Aerosols", 
+            "description": "Pre-Industrial forcing excluding aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols", 
+            "label": "Pre-Industrial Forcing Excluding Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "Atmosphere-Land Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "0943ac13-df2a-4850-971c-3f6f4f1a0ce6", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-spAer-histaer?client=mohc"
+}

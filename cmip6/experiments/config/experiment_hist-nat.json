@@ -1,37 +1,37 @@
 {
     "canonical_name": "hist-nat", 
-    "description": "Historical natural-only simulations resemble the histALL simulations but instead are forced with only solar and volcanic forcing from the historical simulations.\nReport what sets of emissions and boundary conditions are used.", 
+    "description": "Historical natural-only simulations resemble the hist-all simulations but instead are forced with only solar and volcanic forcing from the historical simulations.\nReport what sets of emissions and boundary conditions are used.", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 1, histNat, cmip6historical, natural forcing", 
     "long_name": "historical natural-only runs", 
     "mip_era": "cmip6", 
-    "rationale": "Combinations of histAll, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.\nhistALL and histNAT will be used for event attribution analyses of recent extreme weather and climate events, and can be used for analyses of impact assessments.", 
+    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.\nCMIP6 historical and histNAT will be used for event attribution analyses of recent extreme weather and climate events, and can be used for analyses of impact assessments.", 
     "related_experiments": [
         {
             "name": "hist-GHG", 
             "relationship": "is_sibling_of"
         }, 
         {
-            "name": "hist-all", 
+            "name": "hist-sol", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "hist-sol", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "hist-volc", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "hist-volc", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
             "relationship": "is_perturbation_from"
-        }, 
-        {
-            "name": "hist-sol", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "hist-sol", 
-            "relationship": "is_sibling_of"
-        }, 
-        {
-            "name": "hist-volc", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "hist-volc", 
-            "relationship": "is_sibling_of"
         }, 
         {
             "name": "historical", 
@@ -72,7 +72,6 @@
         }, 
         {
             "canonical_name": "Historical Stratospheric Aerosol", 
-            "delivery_order": "pre-simulation", 
             "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
             "isConformanceRequested": true, 
             "keywords": "historical, stratospheric, aerosol", 
@@ -86,6 +85,14 @@
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, RCP,  future, 21st century, Natural Forcing", 
             "label": "RCP Natural", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Volcanic Aerosols and Solar Forcing", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing, excluding solar forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols and Solar Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -105,6 +112,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "27772d0d-e3bf-44f0-a81c-4ef3d8ceeae8", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=27772d0d-e3bf-44f0-a81c-4ef3d8ceeae8&version=latest&client=mohc"
+    "tier": 1, 
+    "uid": "38b386f0-3fa0-47ad-97b0-994475067077", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-nat?client=mohc"
 }

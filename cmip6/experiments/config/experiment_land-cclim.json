@@ -40,8 +40,7 @@
         }, 
         {
             "canonical_name": "GSWP3 recycling of climate mean and variability", 
-            "delivery_order": "pre-simulation", 
-            "description": "Recycling of the climate mean and variability from two decades (1831\u20131850) of the GSWP3 dataset (Global Soil Wetness Project Phase 3).", 
+            "description": "Recycling of the climate mean and variability from two decades (1831\u20131850) of the GSWP3 dataset (Global Soil Wetness Project Phase 3). The recycled variables are the forcing variables needed to drive an offline land module. So these are wind speed in two directions at 10m height, atmosphere temperature and humidity at 2m height, incoming shortwave and longwave radiation, incoming rainfall and snowfall, surface pressure.", 
             "isConformanceRequested": true, 
             "keywords": "TRENDY, GSWP3, recycle climate mean, recycle climate variability", 
             "label": "GSWP3 recycling of climate mean and variability", 
@@ -50,8 +49,7 @@
         }, 
         {
             "canonical_name": "Historical Land Use", 
-            "delivery_order": "pre-simulation", 
-            "description": "Global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, land use", 
             "label": "Historical Land Use", 
@@ -59,82 +57,11 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Transient Irrigation", 
-            "delivery_order": "pre-simulation", 
-            "description": "Realistic transient irrigated area.", 
+            "canonical_name": "All historical land surface forcings", 
+            "description": "Apply all transient historical forcings that are relevant for the land surface model. Include transient CO2, Nitrogen deposition, aerosol deposition and population density etc.", 
             "isConformanceRequested": true, 
-            "keywords": "LUMIP, irrigation, land management", 
-            "label": "Transient Irrigation", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Transient Fertilisation", 
-            "delivery_order": "pre-simulation", 
-            "description": "Realistic transient fertilisation.", 
-            "isConformanceRequested": true, 
-            "keywords": "LUMIP, fertilisation, land management", 
-            "label": "Transient Fertilisation", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Transient Wood Harvest", 
-            "delivery_order": "pre-simulation", 
-            "description": "Realistic transient wood harvest.", 
-            "isConformanceRequested": true, 
-            "keywords": "LUMIP, wood harvest, land management", 
-            "label": "Transient Wood Harvest", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Transient Fire Management", 
-            "delivery_order": "pre-simulation", 
-            "description": "Realistic transient anthropogenic ignition and suppression of fire.", 
-            "isConformanceRequested": true, 
-            "keywords": "LUMIP, fire management, land management", 
-            "label": "Transient Fire Management", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "CO2 Historical", 
-            "delivery_order": "pre-simulation", 
-            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
-            "isConformanceRequested": true, 
-            "keywords": "OMIP, OCMIP3, CO2, historical", 
-            "label": "CO2 Historical", 
-            "scope": "mip-era", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Nitrogen deposition", 
-            "delivery_order": "pre-simulation", 
-            "description": "Impose time varying (transient) historical nitrogen (N) deposition.", 
-            "isConformanceRequested": true, 
-            "keywords": "historical, Nitrogen deposition", 
-            "label": "Historical Nitrogen deposition", 
-            "scope": "mip-group", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Aerosol Deposition", 
-            "delivery_order": "pre-simulation", 
-            "description": "Impose time varying (transient) historical aerosol deposition.", 
-            "isConformanceRequested": true, 
-            "keywords": "historical, aerosol deposition", 
-            "label": "Historical Aerosol Deposition", 
-            "scope": "mip-group", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Simplified Historical Solar Forcing", 
-            "delivery_order": "pre-simulation", 
-            "description": "Simplified historical solar forcing requirement for models that represent solar forcing as a constant rather than with specifications for spectral irradiance, proton forcing, electron forcing and cosmic ray forcing.  e.g. land surface models.", 
-            "isConformanceRequested": true, 
-            "keywords": "Historical, Solar, forcing", 
-            "label": "Simplified Historical Solar Forcing", 
+            "keywords": "LUMIP, historical, land surface forcing, all forcings", 
+            "label": "All historical land surface forcings", 
             "scope": "mip", 
             "type": "forcing-constraint"
         }, 
@@ -156,13 +83,14 @@
         }, 
         {
             "canonical_name": "All Land Management Active", 
-            "description": "All applicable land management active in the model configuration.", 
+            "description": "All applicable land management active in the land surface model configuration.", 
             "isConformanceRequested": true, 
             "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
             "label": "All Land Management Active", 
             "type": "model-configuration"
         }
     ], 
-    "uid": "246c5690-e3ce-4d9c-8dee-69b7e5a5d50c", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=246c5690-e3ce-4d9c-8dee-69b7e5a5d50c&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "66be373b-7bbe-4faf-a8e2-b324b4a34611", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-cClim?client=mohc"
 }

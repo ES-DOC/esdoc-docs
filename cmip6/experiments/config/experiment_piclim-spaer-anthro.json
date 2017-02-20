@@ -1,0 +1,83 @@
+{
+    "canonical_name": "piClim-spAer-anthro", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology. Anthropogenic forcing agents are specified at present day 2015 values. Aerosols are specified by RFMIP. Run for 30 years.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 2, Present day anthropogenic forcing, uncoupled, atmosphere-land, specified aerosol", 
+    "long_name": "effective radiative forcing at present day with specified anthropogenic aerosol optical properties, anthropogenic forcings", 
+    "mip_era": "cmip6", 
+    "rationale": "Quantify present-day total anthropogenic effective radiative forcing (ERF).", 
+    "related_experiments": [
+        {
+            "name": "piClim-anthro", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SST Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SIC Climatology", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2015 Anthropogenic Forcing Specified Aerosols", 
+            "description": "Agents of anthropogenic forcing, GHGs, Land Use etc with Aerosols specifed by RFMIP", 
+            "isConformanceRequested": true, 
+            "keywords": "anthropogenic forcing, 2015, specified aerosol properties", 
+            "label": "2015 Anthropogenic Forcing Specified Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "Atmosphere-Land Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "b7203bb9-bed3-49bd-8775-611c66366402", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-spAer-anthro?client=mohc"
+}

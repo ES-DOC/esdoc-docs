@@ -1,0 +1,119 @@
+{
+    "canonical_name": "piSST-4xCO2", 
+    "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) with quadrupled CO2 concentration seen by the radiation code and the vegetation code. Other atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off and the vegetation distribution that is output from the piControl simulation used.\nSame as piSST-control but CO2 is quadrupled. The increase in CO2 is seen by both the radiation scheme and vegetation.", 
+    "governing_mips": [
+        "cfmip"
+    ], 
+    "keywords": "CFMIP, Tier 2, Pre-industrial SST and SIC, PI forcing, 4xCO2 radiation, 4xCO2 vegetation", 
+    "long_name": "control SSTs with 4xCO2", 
+    "mip_era": "cmip6", 
+    "rationale": "To understand regional climate responses to CO2 forcing.", 
+    "related_experiments": [
+        {
+            "name": "abrupt-4xCO2", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piSST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "cfmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1960-1989 30yrs", 
+            "description": "Run for the 30 years corresponding to years 111-140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1960-1989", 
+            "label": "1960-1989 30yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SST Monthly Var", 
+            "description": "Monthly-varying sea surface temperatures from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying", 
+            "label": "piControl SST Monthly Var", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl SIC Monthly Var", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
+            "label": "piControl SIC Monthly Var", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2 for Radiation", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, radiation code only", 
+            "label": "4xCO2 for Radiation", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "4xCO2 for Vegetation", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to vegetation code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, vegetation code only", 
+            "label": "4xCO2 for Vegetation", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl Vegetation Distribution", 
+            "description": "Vegetation distribution prescribed from the output of the piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "vegetation, vegetation distribution, piControl, pre-industrial control", 
+            "label": "piControl Vegetation Distribution", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "eb29ff74-874a-4c6d-8e80-ec0254bf1b8f", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-4xCO2?client=mohc"
+}

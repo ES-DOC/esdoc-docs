@@ -1829,6 +1829,14 @@
         "contact": "Eric Guilyardi", 
         "properties": [
             {
+                "label": "Model Name", 
+                "description": "Name of ocean model code (NEMO 3.6, MOM 5.0,...)", 
+                "id": "cmip6.ocean.key_properties.model_name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Model Family", 
                 "description": "Type of ocean model.", 
                 "id": "cmip6.ocean.key_properties.model_family", 
@@ -1853,7 +1861,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Basic Approximations", 
@@ -1880,7 +1888,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -1923,7 +1931,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }
         ], 
         "propertySets": [
@@ -2160,6 +2168,38 @@
             }
         ], 
         "subProcesses": [
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of ocean code", 
+                "id": "cmip6.ocean.key_properties.software_properties", 
+                "contact": "Eric Guilyardi", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cmip6.ocean.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cmip6.ocean.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cmip6.ocean.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }
+                ]
+            }, 
             {
                 "label": "Resolution", 
                 "description": "Resolution in the ocean grid", 

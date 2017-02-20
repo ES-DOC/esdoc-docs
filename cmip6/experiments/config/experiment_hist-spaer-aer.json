@@ -1,0 +1,78 @@
+{
+    "canonical_name": "hist-spAer-aer", 
+    "description": "A historical (1850-2014) experiment using a coupled AOGCM in which aerosol optical properties including cloud-radiation interactions are prescribed by RFMIP.  Aerosol forcings to be consistent with the historical forcing used in the DAMIP experiments. Only to be performed by models who are also running simulations for DAMIP.", 
+    "governing_mips": [
+        "rfmip"
+    ], 
+    "keywords": "RFMIP, Tier 2, historical,  aerosol forcing, specified aerosol", 
+    "long_name": "historical simulations with specified anthropogenic aerosols, no other forcings", 
+    "mip_era": "cmip6", 
+    "rationale": "To determine which aspects of the historical record robustly emerge from ensembles in which the radiative forcing by anthropogenic aerosols is tightly constrained.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piClim-control", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histaerO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "rfmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RFMIP historical Aerosols", 
+            "description": "Historical aerosol optical properties including cloud-radiation interactions prescribed by RFMIP.  An analytically-described spatial pattern with time-constant spectral variation and time-varying strength (building on the Easy Aerosol experience).", 
+            "isConformanceRequested": true, 
+            "keywords": "RFMIP, specified aerosols, historical", 
+            "label": "RFMIP historical Aerosols", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Aerosols", 
+            "description": "Pre-Industrial forcing excluding aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols", 
+            "label": "Pre-Industrial Forcing Excluding Aerosols", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "FourMember", 
+            "description": "An ensemble of four simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "four, 4, ensemble, runs, simulations", 
+            "label": "FourMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "882a9b3b-a74f-4956-9a4f-8f8d38850814", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-spAer-aer?client=mohc"
+}

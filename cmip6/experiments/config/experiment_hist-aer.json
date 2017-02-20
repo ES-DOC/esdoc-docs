@@ -1,25 +1,21 @@
 {
     "canonical_name": "hist-aer", 
-    "description": "Historical aerosol-only simulations resemble the histALL simulations but instead are forced by changes in aerosol forcing only. \nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone. \nReport what sets of emissions and boundary conditions are used.", 
+    "description": "Historical aerosol-only simulations resemble the hist-all simulations but instead are forced by changes in anthropogenic aerosol forcing only (sulfate, black carbon, organic carbon, ammonia, NOx and VOCs). \nReport what sets of emissions and boundary conditions are used.", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 1, histAER, cmip6historical, aerosol forcing,  anthropogenic", 
     "long_name": "historical anthropogenic aerosols-only runs", 
     "mip_era": "cmip6", 
-    "rationale": "Together with histNAT and histALL simulations, these simulations will allow the attribution of observed climate changes to contributions from natural forcings, aerosols and \"GHG+ozone+land use change\".", 
+    "rationale": "Together with histNAT and CMIP6historical simulations, this will allow the attribution of observed climate changes to contributions from natural forcings, aerosols and \"GHG+ozone+land use change\".", 
     "related_experiments": [
-        {
-            "name": "hist-aerchem", 
-            "relationship": "is_sibling_of"
-        }, 
-        {
-            "name": "hist-all", 
-            "relationship": "is_perturbation_from"
-        }, 
         {
             "name": "hist-nat", 
             "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
         }, 
         {
             "name": "historical", 
@@ -55,16 +51,16 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Historical Aerosol Forcing", 
-            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "canonical_name": "Historical Emission Based Grid-Point Aerosol Forcing", 
+            "description": "Apply mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
             "isConformanceRequested": true, 
-            "keywords": "historical, aerosol, forcing, CMIP6", 
-            "label": "Historical Aerosol Forcing", 
+            "keywords": "historical, emission, aerosol, forcing", 
+            "label": "Historical Emission Based Grid-Point Aerosol Forcing", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "RCP45 Aerosols", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
@@ -74,12 +70,19 @@
         }, 
         {
             "canonical_name": "RCP45 Aerosol Precursors", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
             "label": "RCP45 Aerosol Precursors", 
             "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Anthropogenic Aerosols", 
+            "description": "Pre-Industrial forcing excluding anthropogenic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding anthropogenic aerosols", 
+            "label": "Pre-Industrial Forcing Excluding Anthropogenic Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
@@ -99,6 +102,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "d7bc04eb-34ac-42b8-a677-c5c477283cd1", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=d7bc04eb-34ac-42b8-a677-c5c477283cd1&version=latest&client=mohc"
+    "tier": 1, 
+    "uid": "0d7e1dc0-116d-4225-8ffa-137b39116707", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-aer?client=mohc"
 }

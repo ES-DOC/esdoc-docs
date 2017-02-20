@@ -1,0 +1,115 @@
+{
+    "canonical_name": "ssp370SST-ssp126Lu", 
+    "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with low land use change from exeperiment ssp126. Atmosphere only with SST from experiment SSP3-70.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
+    "long_name": "SSP3-7.0, prescribed SSTs, with SSP1-2.6 land use", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "aerchemmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2055 41yrs", 
+            "description": "Scenario, from 2015 to the mid 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2055", 
+            "label": "2015-2055 41yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3-70 SST", 
+            "description": "Sea surface temperature from experiment SSP3-7.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
+            "label": "SSP3-70 SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Well Mixed GHG", 
+            "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, CO2", 
+            "label": "RCP70 Well Mixed GHG", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Short Lived Gas Species", 
+            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, NOx, VOCs and CO.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Short-lived Gas", 
+            "label": "RCP70 Short Lived Gas Species", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Aerosols", 
+            "description": "Impose changing emissions of RCP7.0 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, aerosol", 
+            "label": "RCP70 Aerosols", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Aerosol Precursors", 
+            "description": "Impose changing emissions of RCP7.0 aerosol precursors including SO2 and NHy.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Aerosol Precursors", 
+            "label": "RCP70 Aerosol Precursors", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP26 Land Use", 
+            "description": "Impose changing RCP2.6 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6, Land Use", 
+            "label": "RCP26 Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Chem Configuration", 
+            "description": "Use an Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "e1371d89-798c-462c-acbe-ea7c3c472e86", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-ssp126Lu?client=mohc"
+}

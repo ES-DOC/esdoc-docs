@@ -46,10 +46,6 @@
             "relationship": "is_control_for"
         }, 
         {
-            "name": "piClim-GHG", 
-            "relationship": "is_control_for"
-        }, 
-        {
             "name": "piClim-HC", 
             "relationship": "is_control_for"
         }, 
@@ -82,14 +78,6 @@
             "relationship": "is_control_for"
         }, 
         {
-            "name": "piClim-aerO3x0p1", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-aerO3x2", 
-            "relationship": "is_control_for"
-        }, 
-        {
             "name": "piClim-anthro", 
             "relationship": "is_control_for"
         }, 
@@ -98,15 +86,7 @@
             "relationship": "is_sibling_of"
         }, 
         {
-            "name": "piClim-histAll", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histGHG", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histNat", 
+            "name": "piClim-ghg", 
             "relationship": "is_control_for"
         }, 
         {
@@ -114,15 +94,27 @@
             "relationship": "is_control_for"
         }, 
         {
+            "name": "piClim-histall", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piClim-histghg", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "piClim-histnat", 
+            "relationship": "is_control_for"
+        }, 
+        {
             "name": "piClim-lu", 
             "relationship": "is_control_for"
         }, 
         {
-            "name": "piClim-spAerO3-aer", 
+            "name": "piClim-spAer-aer", 
             "relationship": "is_control_for"
         }, 
         {
-            "name": "piClim-spAerO3-anthro", 
+            "name": "piClim-spAer-anthro", 
             "relationship": "is_control_for"
         }, 
         {
@@ -145,7 +137,6 @@
         }, 
         {
             "canonical_name": "1850 Non-Reactive WMGHG Concentrations", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
@@ -155,7 +146,6 @@
         }, 
         {
             "canonical_name": "1850 Methane Concentration", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, methane, concentrations", 
@@ -165,7 +155,6 @@
         }, 
         {
             "canonical_name": "1850 N2O Concentration", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
             "isConformanceRequested": true, 
             "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
@@ -175,7 +164,6 @@
         }, 
         {
             "canonical_name": "1850 NTCF Emissions", 
-            "delivery_order": "post-simulation", 
             "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
             "isConformanceRequested": true, 
             "keywords": "1850, Near Term Climate Forcers, NTCF, emissions", 
@@ -185,7 +173,6 @@
         }, 
         {
             "canonical_name": "1850 Ozone Depleting Halocarbon Concentrations", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose pre-industrial (1850) concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
@@ -195,7 +182,6 @@
         }, 
         {
             "canonical_name": "piControl SST Climatology", 
-            "delivery_order": "post-simulation", 
             "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
@@ -205,7 +191,6 @@
         }, 
         {
             "canonical_name": "piControl SIC Climatology", 
-            "delivery_order": "post-simulation", 
             "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
@@ -215,7 +200,6 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Land Use", 
-            "delivery_order": "pre-simulation", 
             "description": "Constant pre-industrial (1850) land-use forcing.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, 1850, Land Use", 
@@ -225,7 +209,6 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Solar Forcing", 
-            "delivery_order": "pre-simulation", 
             "description": "Constant pre-Industrial solar forcing.", 
             "isConformanceRequested": true, 
             "keywords": "solar forcing, pre-industrial, 1850", 
@@ -250,6 +233,7 @@
             "type": "model-configuration"
         }
     ], 
+    "tier": 1, 
     "uid": "707b899a-423d-4543-af7b-93128a24ae32", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=707b899a-423d-4543-af7b-93128a24ae32&version=latest&client=mohc"
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-control?client=mohc"
 }

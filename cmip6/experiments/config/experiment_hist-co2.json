@@ -1,5 +1,5 @@
 {
-    "canonical_name": "hist-co2", 
+    "canonical_name": "hist-CO2", 
     "description": "Historical simulations driven by changes in CO2 concentration only as used in hist-all (histAll) experiment.", 
     "governing_mips": [
         "damip"
@@ -14,7 +14,7 @@
             "relationship": "is_sibling_of"
         }, 
         {
-            "name": "hist-all", 
+            "name": "historical", 
             "relationship": "is_perturbation_from"
         }, 
         {
@@ -44,7 +44,6 @@
         }, 
         {
             "canonical_name": "CO2 Historical", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, OCMIP3, CO2, historical", 
@@ -54,12 +53,19 @@
         }, 
         {
             "canonical_name": "RCP45 CO2", 
-            "delivery_order": "pre-simulation", 
             "description": "RCP4.5 carbon dioxide concentrations.", 
             "isConformanceRequested": true, 
             "keywords": "DAMIP, CO2, RCP4.5", 
             "label": "RCP45 CO2", 
             "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {
@@ -79,6 +85,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "f8701e94-511b-43c3-96c4-250f854e3da9", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=f8701e94-511b-43c3-96c4-250f854e3da9&version=latest&client=mohc"
+    "tier": 3, 
+    "uid": "5cdb3e57-431b-45e7-8f83-f05149473e1f", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-CO2?client=mohc"
 }

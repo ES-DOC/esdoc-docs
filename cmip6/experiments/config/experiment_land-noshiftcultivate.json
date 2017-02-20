@@ -1,0 +1,96 @@
+{
+    "canonical_name": "land-noShiftcultivate", 
+    "description": "Land surface model simulation. Same as land-hist except shifting cultivation turned off. (i.e. with net transitions instead of gross).  Start year either 1850 or 1700 depending on standard practice for particular model.", 
+    "governing_mips": [
+        "lumip"
+    ], 
+    "keywords": "LUMIP, Tier 2, historical, grassland, net transitions, no land management", 
+    "long_name": "historical land-only with net land-use transitions", 
+    "mip_era": "cmip6", 
+    "rationale": "To assess the relative impact of land cover and incremental land management change on fluxes of water, energy, and carbon in combination with other LUMIP land experiments.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-crop-grass", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-hist", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "land-noLu", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "lumip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical GSWP3 Meteorological Forcing", 
+            "description": "Apply Global Soil Wetness Project phase three (GSWP3) forcing data for offline land surface models running the LS3MIP historical simulation land-hist is provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, forcing, GSWP3", 
+            "label": "Historical GSWP3 Meteorological Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical land use except no shifting cultivation", 
+            "description": "Historical land use except shifting cultivation is turned off. (i.e. crop and pasture use net transitions instead of gross).", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical land use, no shifting cultivation, net transitions", 
+            "label": "Historical land use except no shifting cultivation", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "All historical land surface forcings", 
+            "description": "Apply all transient historical forcings that are relevant for the land surface model. Include transient CO2, Nitrogen deposition, aerosol deposition and population density etc.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, land surface forcing, all forcings", 
+            "label": "All historical land surface forcings", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "All Land Management Active", 
+            "description": "All applicable land management active in the land surface model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "2ab7720e-d9a4-4069-ae6d-acc2af8fc3d9", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-noShiftcultivate?client=mohc"
+}

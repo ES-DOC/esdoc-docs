@@ -1,0 +1,69 @@
+{
+    "canonical_name": "ssp585-over-bgc", 
+    "description": "Biogeochemically-coupled version of the mitigated overshoot scenario with medium/low radiative forcing by the end of the 21st century.  The scenario follows SSP5-8.5, an unmitigated baseline scenario, through 2040, and then substantially negative net emissions thereafter.", 
+    "governing_mips": [
+        "c4mip"
+    ], 
+    "keywords": "C4MIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP3.4, RCP8.5, overshoot, future, SSP-based RCP", 
+    "long_name": "biogeochemically-coupled version of the RCP3.4 overshoot scenario branching from SSP58.5", 
+    "mip_era": "cmip6", 
+    "rationale": "Explore the climate science and policy implications of a peak and decline in forcing during the 21st century.  This scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
+    "related_experiments": [
+        {
+            "name": "ssp534-over", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "ssp585-bgc", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2040-2099 60 yrs", 
+            "description": "Scenario, from 2040 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2040-2099", 
+            "label": "2040-2099 60 yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "RCP34 overshoot Forcing", 
+            "description": "Impose RCP3.4 overshoot forcing.  Beginning in 2040, reduce forcings from the 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP5, RCP3.4 overshoot", 
+            "label": "RCP34 overshoot Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SSP585-bgc-Initialisation2040", 
+            "description": "Initialisation is from year 2040 of the ssp585-bgc experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp585-bgc, scenario, 2040", 
+            "label": "SSP585-bgc-Initialisation2040", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "f74196fa-19b0-4b29-b62f-51ce21cdb45e", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp585-over-bgc?client=mohc"
+}

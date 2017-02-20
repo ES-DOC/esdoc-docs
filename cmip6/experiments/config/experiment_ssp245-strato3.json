@@ -1,10 +1,10 @@
 {
     "canonical_name": "ssp245-stratO3", 
-    "description": "Extension of hist-stratO3 (histSOZ) simulations to the year 2100 following the ozone concentrations specified for the SSP2-4.5 scenario.\nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone.", 
+    "description": "Extension of stratospheric-ozone-only run, hist-stratO3, under SSP2-4.5 forcing to the year 2100.\nIn models with coupled chemistry, he chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the SSP2-4.5 simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with a value of 100 ppbv ozone concentration in this piControl climatology used to separate the troposphere from the stratosphere.   In models without coupled chmeistry the same stratospheric ozone prescribed in SSP2-45 should be prescribed. Stratospheric ozone concentrations will be provided by CCMI.", 
     "governing_mips": [
         "damip"
     ], 
-    "keywords": "DAMIP, Tier 2, ssp245SOZ, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
+    "keywords": "DAMIP, Tier 2, ssp245SOZchem, ssp2-45, SSP2-4.5, stratospheric ozone forcing, stratospheric O3 forcing", 
     "long_name": "stratospheric-ozone-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
     "rationale": "Stratospheric ozone is projected to recover following the successful implementation of the Montreal Protocol and its amendments. These simulations will facilitate a robust multi-model assessment of the climate effects of this recovery on Southern Hemisphere climate and stratospheric temperature.", 
@@ -15,11 +15,11 @@
         }, 
         {
             "name": "piControl", 
-            "relationship": "is_sibling_of"
+            "relationship": "is_constrained_by"
         }, 
         {
             "name": "ssp245", 
-            "relationship": "is_sibling_of"
+            "relationship": "is_constrained_by"
         }
     ], 
     "related_mips": [
@@ -36,7 +36,6 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
-            "delivery_order": "pre-simulation", 
             "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
@@ -45,13 +44,20 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP45 Stratospheric Ozone", 
-            "delivery_order": "pre-simulation", 
-            "description": "Impose changing stratospheric ozone concentrations consistent with RCP4.5 forcing scenario.", 
+            "canonical_name": "ssp2-45 stratospheric Ozone", 
+            "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from coupled-chemistry simulations of Scenario-MIP SSP2-4.5 simulations.", 
             "isConformanceRequested": true, 
-            "keywords": "Representative Concentration Pathway 4.5, RCP4.5, future, 21st century, ozone, o3", 
-            "label": "RCP45 Stratospheric Ozone", 
-            "scope": "mip", 
+            "keywords": "DAMIP ssp2-45, ozone, concentration, O3, stratosphere", 
+            "label": "ssp2-45 stratospheric Ozone", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Ozone", 
+            "description": "Pre-Industrial forcing excluding ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding ozone", 
+            "label": "Pre-Industrial Forcing Excluding Ozone", 
             "type": "forcing-constraint"
         }, 
         {
@@ -63,11 +69,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "SSP2-45Initialisation2021", 
-            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "canonical_name": "hist-stratO3 initialisation", 
+            "description": "Initialisation data is taken from the end of the hist-stratO3 simulation.", 
             "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
-            "label": "SSP2-45Initialisation2021", 
+            "keywords": "initial conditions, initialisation, hist-stratO3", 
+            "label": "hist-stratO3 initialisation", 
             "type": "ensemble"
         }, 
         {
@@ -79,6 +85,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "9777a7b2-f231-4879-b5d6-b069d65aa8d7", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=9777a7b2-f231-4879-b5d6-b069d65aa8d7&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "cd87eb8f-eba2-44cb-9252-a14f1120ad81", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245-stratO3?client=mohc"
 }

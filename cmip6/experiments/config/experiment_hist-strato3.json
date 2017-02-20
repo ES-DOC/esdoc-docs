@@ -1,6 +1,6 @@
 {
     "canonical_name": "hist-stratO3", 
-    "description": "This experient's simulations resemble the histAll simulations but are forced with stratospheric ozone concentrations only.\nIn models with coupled chemistry, the chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the histALL simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.\nIn models without coupled chemistry the same stratospheric ozone prescribed in histALL should be prescribed.", 
+    "description": "This experient's simulations resemble the hist-all simulations but are forced with stratospheric ozone concentrations only.\nIn models with coupled chemistry, the chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D stratospheric ozone concentrations from the CMIP6 historical simulations should be prescribed. Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.\nIn models without coupled chemistry the same stratospheric ozone prescribed in CMIP6 historical experiment should be prescribed.", 
     "governing_mips": [
         "damip"
     ], 
@@ -10,7 +10,7 @@
     "rationale": "To allow an improved characterization of the response to stratospheric ozone changes, which have played an important role in driving circulation changes in the Southern Hemisphere and temperature changes in the stratosphere, as well as facilitating attribution studies of the response to stratospheric ozone change.", 
     "related_experiments": [
         {
-            "name": "hist-all", 
+            "name": "historical", 
             "relationship": "is_perturbation_from"
         }, 
         {
@@ -28,10 +28,6 @@
         {
             "name": "ssp245-stratO3", 
             "relationship": "is_initializer_of"
-        }, 
-        {
-            "name": "ssp245-stratO3chem", 
-            "relationship": "is_initializer_of"
         }
     ], 
     "related_mips": [
@@ -48,7 +44,6 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Tropospheric Ozone Concentrations", 
-            "delivery_order": "pre-simulation", 
             "description": "Tropospheric ozone should be fixed at 3D long-term monthly mean piControl values, with grid cells having an ozone concentration below 100 ppbv in the piControl climatology for a given month classed as tropospheric.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial, 1850, Ozone, O3, concentrations, troposphere", 
@@ -58,8 +53,7 @@
         }, 
         {
             "canonical_name": "Historical Stratospheric Ozone Concentrations", 
-            "delivery_order": "pre-simulation", 
-            "description": "Ozone concentration database for the stratosphere.", 
+            "description": "Impose ozone concentrations from the ozone concentration database for the stratosphere.", 
             "isConformanceRequested": true, 
             "keywords": "historical, ozone, concentration, O3, stratosphere", 
             "label": "Historical Stratospheric Ozone Concentrations", 
@@ -67,23 +61,29 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "histAll stratospheric Ozone", 
-            "delivery_order": "post-simulation", 
-            "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from the DAMIP histAll simulations.", 
+            "canonical_name": "CMIP6 historical stratospheric Ozone", 
+            "description": "Impose ensemble mean monthly mean of 3D stratospheric ozone from the CMIP6 historical  simulations.", 
             "isConformanceRequested": true, 
-            "keywords": "DAMIP histALL, ozone, concentration, O3, stratosphere", 
-            "label": "histAll stratospheric Ozone", 
+            "keywords": "CMIP6 historical, ozone, concentration, O3, stratosphere", 
+            "label": "CMIP6 historical stratospheric Ozone", 
             "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "RCP45 Stratospheric Ozone", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing stratospheric ozone concentrations consistent with RCP4.5 forcing scenario.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, RCP4.5, future, 21st century, ozone, o3", 
             "label": "RCP45 Stratospheric Ozone", 
             "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Ozone", 
+            "description": "Pre-Industrial forcing excluding ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding ozone", 
+            "label": "Pre-Industrial Forcing Excluding Ozone", 
             "type": "forcing-constraint"
         }, 
         {
@@ -103,6 +103,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "d1f579f4-975b-43e0-9074-def2bd022ac1", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=d1f579f4-975b-43e0-9074-def2bd022ac1&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "9777a7b2-f231-4879-b5d6-b069d65aa8d7", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-stratO3?client=mohc"
 }

@@ -1,0 +1,114 @@
+{
+    "canonical_name": "land-crop-noIrrigFert", 
+    "description": "Land surface model simulation.  Same as land-hist except irrigated area and fertiliser area/use should be held constant at 1850 levels.  Irrigation amounts within the 1850 irrigated area are allowed to change.  Only relevant if land-hist utilises at least some form of crop management (e.g. planting and harvesting).  Start year either 1850 or 1700 depending on standard practice for particular model.", 
+    "governing_mips": [
+        "lumip"
+    ], 
+    "keywords": "LUMIP, Tier 2, historical,  1850 irrigation, 1850 fertilisation", 
+    "long_name": "historical land-only with no irrigation and no fertilisation", 
+    "mip_era": "cmip6", 
+    "rationale": "Factorial set of land only experiments with increasingly realistic treatment of land management.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "land-hist", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "lumip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1700-2014 315yrs", 
+            "description": "Historical, from 1700 to 2014.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1700, 2014", 
+            "label": "1700-2014 315yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical GSWP3 Meteorological Forcing", 
+            "description": "Apply Global Soil Wetness Project phase three (GSWP3) forcing data for offline land surface models running the LS3MIP historical simulation land-hist is provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, forcing, GSWP3", 
+            "label": "Historical GSWP3 Meteorological Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Land Use", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical land surface forcings except irrigation and fertilisation", 
+            "description": "Apply all transient historical forcings that are relevant for the land surface model except for irrigation and fertilisation.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, land surface forcing, no irrigation, no fertilisation", 
+            "label": "Historical land surface forcings except irrigation and fertilisation", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Irrigation", 
+            "description": "Maintain 1850 irrigated area.  Irrigation amounts within the irrigated area are allowed to change.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, 1850 irrigation", 
+            "label": "1850 Irrigation", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Fertilisation", 
+            "description": "Maintain 1850 fertiliser area/amount.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, 1850 fertilisation", 
+            "label": "1850 Fertilisation", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "All Land Management Active", 
+            "description": "All applicable land management active in the land surface model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "4a784209-154d-46cd-b10e-7923c9b2e026", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-crop-noIrrigFert?client=mohc"
+}

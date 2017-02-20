@@ -1,6 +1,6 @@
 {
     "canonical_name": "piSST-pxK", 
-    "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) but with a spatially and temporally uniform SST amomaly applied on top of the monthly-varying piSST-control SSTs.  The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt4xCO2 and the piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl).  Atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off.", 
+    "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) but with a spatially and temporally uniform SST amomaly applied on top of the monthly-varying piSST-control SSTs.  The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt4xCO2 and the piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl).  Atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off and the vegetation distribution that is output from the piControl simulation used.", 
     "governing_mips": [
         "cfmip"
     ], 
@@ -14,7 +14,7 @@
             "relationship": "is_constrained_by"
         }, 
         {
-            "name": "piSST-control", 
+            "name": "piSST", 
             "relationship": "is_perturbation_from"
         }
     ], 
@@ -32,7 +32,6 @@
         }, 
         {
             "canonical_name": "piControl SST Monthly Var Plus Uniform xK", 
-            "delivery_order": "post-simulation", 
             "description": "A uniform SST increase taken from each model's global, climatological annual mean SST change between abrupt4xCO2 and the piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl).", 
             "isConformanceRequested": true, 
             "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying, plus uniform SST xK, SST +xK", 
@@ -42,7 +41,6 @@
         }, 
         {
             "canonical_name": "piControl SIC Monthly Var", 
-            "delivery_order": "post-simulation", 
             "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
             "isConformanceRequested": true, 
             "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
@@ -52,7 +50,6 @@
         }, 
         {
             "canonical_name": "Pre-Industrial CO2 Concentration", 
-            "delivery_order": "pre-simulation", 
             "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
             "isConformanceRequested": true, 
             "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
@@ -66,6 +63,15 @@
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
             "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "piControl Vegetation Distribution", 
+            "description": "Vegetation distribution prescribed from the output of the piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "vegetation, vegetation distribution, piControl, pre-industrial control", 
+            "label": "piControl Vegetation Distribution", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -85,6 +91,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "bd83c36e-8b04-4e60-8fa4-7c4dcc993b78", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=bd83c36e-8b04-4e60-8fa4-7c4dcc993b78&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "cfa7f5b8-8688-47bd-ac19-9d096d90a4a3", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-pxK?client=mohc"
 }

@@ -1,13 +1,13 @@
 {
     "canonical_name": "ssp245-aer", 
-    "description": "An extension of at least one of the hist-aer (histAER) simulations to the year 2100 following SSP2-4.5 aerosol concentrations. \nFor models without interactive chemistry in which changes in GHG concentrations do not affect aerosols and changes in aersol precursors do not affect ozone.", 
+    "description": "An extension of at least one of the hist-aer (histAER) simulations to the year 2100 following SSP2-4.5 aerosol concentrations. Forced with aerosol and aerosol precursor emissions only (sulfate, black carbon, organic carbon, ammonia, NOx and VOCs).", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 3, ssp245AER, anthropogenic aerosol forcing only", 
     "long_name": "aerosol-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
-    "rationale": "Combinations of histALL, histAER, histNAT, ssp245AER and SSP2-4.5 (ScenarioMIP) will allow the estimation of future temperature changes that are constrained by observed historical changes.", 
+    "rationale": "Combinations of CMIP6 historical, histAER, histNAT, ssp245AER and SSP2-4.5 (ScenarioMIP) will allow the estimation of future temperature changes that are constrained by observed historical changes.", 
     "related_experiments": [
         {
             "name": "hist-aer", 
@@ -15,10 +15,6 @@
         }, 
         {
             "name": "ssp245", 
-            "relationship": "is_sibling_of"
-        }, 
-        {
-            "name": "ssp245-aerchem", 
             "relationship": "is_sibling_of"
         }
     ], 
@@ -36,7 +32,6 @@
         }, 
         {
             "canonical_name": "RCP45 Aerosols", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing emissions of RCP4.5 aerosols including BC and OC.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, aerosol", 
@@ -46,12 +41,19 @@
         }, 
         {
             "canonical_name": "RCP45 Aerosol Precursors", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing emissions of RCP4.5 aerosol precursors including SO2 and NHy.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, NTCF, Aerosol Precursors", 
             "label": "RCP45 Aerosol Precursors", 
             "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Anthropogenic Aerosols", 
+            "description": "Pre-Industrial forcing excluding anthropogenic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding anthropogenic aerosols", 
+            "label": "Pre-Industrial Forcing Excluding Anthropogenic Aerosols", 
             "type": "forcing-constraint"
         }, 
         {
@@ -63,11 +65,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "SSP2-45Initialisation2021", 
-            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "canonical_name": "hist-aer initialisation", 
+            "description": "Initialisation data is taken from the end of the hist-aer simulation.", 
             "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
-            "label": "SSP2-45Initialisation2021", 
+            "keywords": "initial conditions, initialisation, hist-aer", 
+            "label": "hist-aer initialisation", 
             "type": "ensemble"
         }, 
         {
@@ -79,6 +81,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "4ba59ce3-745e-4f08-85d7-af2e86f7edcd", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=4ba59ce3-745e-4f08-85d7-af2e86f7edcd&version=latest&client=mohc"
+    "tier": 3, 
+    "uid": "f906e17f-1b29-40bc-9140-fbb035a2b8d9", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245-aer?client=mohc"
 }

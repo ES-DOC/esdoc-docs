@@ -1,5 +1,5 @@
 {
-    "canonical_name": "piClim-histNat", 
+    "canonical_name": "piClim-histnat", 
     "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Transient natural forcing (solar and volcano) to be consistent with historical forcing used in the DAMIP hist-all experiment and future forcing used in the ScenarioMIP SSP2 RCP4.5 scenario.  A small ensemble of three simulations from 1850-2100.", 
     "governing_mips": [
         "rfmip"
@@ -10,7 +10,7 @@
     "rationale": "Diagnose transient natural ERF. It is difficult to evaluate transitory volcanic and solar forcing using a time-slice methodology so the full 1850-2100 period is used.", 
     "related_experiments": [
         {
-            "name": "hist-all", 
+            "name": "historical", 
             "relationship": "is_sibling_of"
         }, 
         {
@@ -18,15 +18,15 @@
             "relationship": "is_perturbation_from"
         }, 
         {
-            "name": "piClim-histAll", 
-            "relationship": "is_sibling_of"
-        }, 
-        {
-            "name": "piClim-histGHG", 
-            "relationship": "is_sibling_of"
-        }, 
-        {
             "name": "piClim-histaerO3", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histall", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piClim-histghg", 
             "relationship": "is_sibling_of"
         }, 
         {
@@ -52,7 +52,6 @@
         }, 
         {
             "canonical_name": "piControl SST Climatology", 
-            "delivery_order": "post-simulation", 
             "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
@@ -62,7 +61,6 @@
         }, 
         {
             "canonical_name": "piControl SIC Climatology", 
-            "delivery_order": "post-simulation", 
             "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
             "isConformanceRequested": true, 
             "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
@@ -80,7 +78,6 @@
         }, 
         {
             "canonical_name": "Historical Volcanic Aerosol", 
-            "delivery_order": "pre-simulation", 
             "description": "Historical volcanic aerosol forcing (1850-2015).", 
             "isConformanceRequested": true, 
             "keywords": "Historical, volcanic, forcing", 
@@ -90,7 +87,6 @@
         }, 
         {
             "canonical_name": "RCP Solar", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing (natural) solar forcing for RCP scenarios.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, future, 21st century, solar forcing", 
@@ -100,7 +96,6 @@
         }, 
         {
             "canonical_name": "RCP Volcanic", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing volcanic forcing for RCP scenarios.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway, future, 21st century, volcanic forcing", 
@@ -133,6 +128,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "6f809aee-0198-49cc-8433-7653db20204c", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=6f809aee-0198-49cc-8433-7653db20204c&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "03938a8f-8bfd-4acd-a0f0-4380d261419b", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-histnat?client=mohc"
 }

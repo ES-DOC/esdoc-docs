@@ -1,13 +1,13 @@
 {
     "canonical_name": "ssp245-GHG", 
-    "description": "Extension of well-mixed GHG-only run (histGHG) under SSP2-4.5 forcing to the year 2100.\nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.", 
+    "description": "Extension of well-mixed GHG-only run (hist-GHG) under SSP2-4.5 forcing to the year 2100.\nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 2, ssp245GHG,  ssp2-45, SSP2-4.5, well mixed GHG only", 
     "long_name": "well-mixed GHG-only SSP2-4.5 runs", 
     "mip_era": "cmip6", 
-    "rationale": "Combinations of histAll, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
+    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
     "related_experiments": [
         {
             "name": "hist-GHG", 
@@ -36,7 +36,6 @@
         }, 
         {
             "canonical_name": "RCP45 Well Mixed GHG", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose changing concentrations of RCP4.5 long-lived gases, including CO2, N2O and halogenated gases.", 
             "isConformanceRequested": true, 
             "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, Well-mixed Greenhouse Gas, CO2", 
@@ -46,12 +45,19 @@
         }, 
         {
             "canonical_name": "1850 O3 for Radiation", 
-            "delivery_order": "pre-simulation", 
             "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
             "isConformanceRequested": true, 
             "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
             "label": "1850 O3 for Radiation", 
             "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding GHG", 
+            "description": "Pre-Industrial forcing excluding greenhouse gases (GHG). See table 2 pincus et al 20016).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding greenhouse gases, excluding GHG", 
+            "label": "Pre-Industrial Forcing Excluding GHG", 
             "type": "forcing-constraint"
         }, 
         {
@@ -63,11 +69,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "SSP2-45Initialisation2021", 
-            "description": "Initialisation is from the beginning of year 2021 of the SSP2-4.5 experiment.", 
+            "canonical_name": "hist-GHG initialisation", 
+            "description": "Initialisation data is taken from the end of the hist-GHG simulation.", 
             "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, ssp2-4.5, year 2021, scenario", 
-            "label": "SSP2-45Initialisation2021", 
+            "keywords": "initial conditions, initialisation, hist-GHG", 
+            "label": "hist-GHG initialisation", 
             "type": "ensemble"
         }, 
         {
@@ -79,6 +85,7 @@
             "type": "model-configuration"
         }
     ], 
-    "uid": "42532016-2dda-4813-a739-84bb0a328bbd", 
-    "viewerURL": "http://view.es-doc.org?renderMethod=id&project=cmip6-draft&id=42532016-2dda-4813-a739-84bb0a328bbd&version=latest&client=mohc"
+    "tier": 2, 
+    "uid": "d1f579f4-975b-43e0-9074-def2bd022ac1", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245-GHG?client=mohc"
 }

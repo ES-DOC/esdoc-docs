@@ -1,0 +1,144 @@
+{
+    "canonical_name": "omip1", 
+    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Run for a minimum of five repeating cycles of the CORE-II forcing. Groups that are unable to run with biogeochemistry can participate in the physical/chemical portion.", 
+    "governing_mips": [
+        "omip"
+    ], 
+    "keywords": "OMIP, Tier 1, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+    "long_name": "OMIP experiment forced by Large & Yeager (CORE-2, NCEP) atmospheric data set and initialized with observed physical and biogeochemical ocean data", 
+    "mip_era": "cmip6", 
+    "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "omip1-spunup", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "omip1-spunup", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "omip2", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "omip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1948-2009 310yrs", 
+            "description": "Historical, five repetitions from 1948-2009", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1948-2009, x5", 
+            "label": "1948-2009 310yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "CORE2 Air-Sea Fluxes", 
+            "description": "Five repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
+            "label": "CORE2 Air-Sea Fluxes", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "OMIP Inert Chemical Tracers", 
+            "description": "Online simulation of CFC11, CFC12 and CF6 inert chemical tracers.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, inert chemical tracers", 
+            "label": "OMIP Inert Chemical Tracers", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "OMIP Biogeochemical Tracers", 
+            "description": "Simulation of biogeochemical tracers DIC and ALK.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, biogeochemical tracers", 
+            "label": "OMIP Biogeochemical Tracers", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "O2 Constant", 
+            "description": "Impose constant atmospheric concentration of oxygen, O2, (mole fraction of 0.20946).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, O2, constant", 
+            "label": "O2 Constant", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "CO2 Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2 Historical", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "salinity damping", 
+            "description": "Damp surface ocean salinity to a monthly observational-based climatology.  OMIP does not specify a damping timescale but recommends that modellers consult Appendix C in Danabasoglu et al. (2014) to choose a salinity restoring protocol that is suitable for their model. Choosing a weak salinity restoring is generally preferred to reduce the impact on variability.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, salinity damping, salinity restoring, restore salinity", 
+            "label": "salinity damping", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "BGCInitialisation", 
+            "description": "Initialisation of biochechemical fields for oxygen, dissolved inorganic nitrogen, phosphorus and silica with data from the Wold Ocean Atlas 2013.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, initialisation", 
+            "label": "BGCInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "BGCTracerInitialisation", 
+            "description": "Disolved Inorganic Carbon (DIC) and total alkalinity (ALK) initialisation from GLODAPv2 gridded data.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, tracer, initialisation, DIC, ALK", 
+            "label": "BGCTracerInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "BGCIronInitialisation", 
+            "description": "Iron initialisation based on the GEOTRACES database with data provided by OMIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, iron, initialisation", 
+            "label": "BGCIronInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "Ocean-SeaIce Configuration", 
+            "description": "A coupled ocean-sea ice model.", 
+            "isConformanceRequested": false, 
+            "keywords": "OMIP, ocean, sea ice, configuration", 
+            "label": "Ocean-SeaIce Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Ocean-SeaIce-BioGeoChem Config", 
+            "description": "An ocean-sea ice model coupled with a biogeochemistry component", 
+            "isConformanceRequested": false, 
+            "keywords": "OMIP, ocean, sea ice, biogeochemistry,  BGC, configuration", 
+            "label": "Ocean-SeaIce-BioGeoChem Config", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "997b80c8-fc01-411c-85d1-7d5155785152", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/omip1?client=mohc"
+}
