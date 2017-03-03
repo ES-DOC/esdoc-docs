@@ -1,0 +1,1597 @@
+{
+    "label": "Model", 
+    "description": "Top level model", 
+    "id": "cmip6.model", 
+    "contact": "Eric Guilyardi", 
+    "processes": [
+        {
+            "label": "Radiative Forcings", 
+            "description": "Radiative forcings of the model for historical and scenario (aka Table 12.1 IPCC AR5)", 
+            "id": "cmip6.model.radiative_forcings", 
+            "contact": "David Hassell", 
+            "subProcesses": [
+                {
+                    "label": "Greenhouse Gases", 
+                    "description": "Greenhouse gas forcing agents", 
+                    "id": "cmip6.model.radiative_forcings.greenhouse_gases", 
+                    "contact": "David Hassell", 
+                    "propertySets": [
+                        {
+                            "label": "CO2", 
+                            "description": "Carbon dioxide forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.CO2", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CO2.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CO2.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "CH4", 
+                            "description": "Methane forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.CH4", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CH4.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CH4.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "N2O", 
+                            "description": "Nitrous oxide forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.N2O", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.N2O.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.N2O.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Tropospheric O3", 
+                            "description": "Troposheric ozone forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.tropospheric_O3", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.tropospheric_O3.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.tropospheric_O3.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Stratospheric O3", 
+                            "description": "Stratospheric ozone forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.stratospheric_O3", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.stratospheric_O3.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.stratospheric_O3.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "CFC", 
+                            "description": "Ozone-depleting and non-ozone-depleting fluorinated gases forcing", 
+                            "id": "cmip6.model.radiative_forcings.greenhouse_gases.CFC", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CFC.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Equivalence Concentration", 
+                                    "description": "Details of any equivalence concentrations used", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CFC.equivalence_concentration", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Cfc Equivalence Concentration", 
+                                        "description": "", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicabale (CFCs not included or emissions and concentrations determined by the model state)"
+                                            }, 
+                                            {
+                                                "label": "Option 1", 
+                                                "description": "CFCs, including CFC-12, are provided as actual concentrations"
+                                            }, 
+                                            {
+                                                "label": "Option 2", 
+                                                "description": "CFC-12 is provided as actual concentrations and any other gases are provided as an equivalence concentration of CFC-11"
+                                            }, 
+                                            {
+                                                "label": "Option 3", 
+                                                "description": "Ozone depleting gases, including CFC-12, are provided as an equivalence concentration of CFC-12 and all other fluorinated gases are provided as an equivalence concentration of HFC-134a"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.greenhouse_gases.CFC.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Aerosols", 
+                    "description": "Aerosol forcing agents", 
+                    "id": "cmip6.model.radiative_forcings.aerosols", 
+                    "contact": "David Hassell", 
+                    "propertySets": [
+                        {
+                            "label": "SO4", 
+                            "description": "SO4 aerosol forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.SO4", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.SO4.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.SO4.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Black Carbon", 
+                            "description": "Black carbon aerosol forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.black_carbon", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.black_carbon.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.black_carbon.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Organic Carbon", 
+                            "description": "Organic carbon aerosol forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.organic_carbon", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.organic_carbon.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.organic_carbon.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Nitrate", 
+                            "description": "Nitrate forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.nitrate", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.nitrate.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.nitrate.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Cloud Albedo Effect", 
+                            "description": "Cloud albedo effect forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.cloud_albedo_effect", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_albedo_effect.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Aerosol Effect On Ice Clouds", 
+                                    "description": "Radiative effects of aerosols on ice clouds are represented?", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_albedo_effect.aerosol_effect_on_ice_clouds", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_albedo_effect.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Cloud Lifetime Effect", 
+                            "description": "Cloud lifetime effect forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.cloud_lifetime_effect", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_lifetime_effect.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Aerosol Effect On Ice Clouds", 
+                                    "description": "Radiative effects of aerosols on ice clouds are represented?", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_lifetime_effect.aerosol_effect_on_ice_clouds", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "RFaci From Sulfate Only", 
+                                    "description": "Radiative forcing from aerosol cloud interactions from sulfate aerosol only?", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_lifetime_effect.RFaci_from_sulfate_only", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.cloud_lifetime_effect.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Dust", 
+                            "description": "Dust forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.dust", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.dust.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.dust.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Tropospheric Volcanic", 
+                            "description": "Tropospheric volcanic forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.tropospheric_volcanic", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.tropospheric_volcanic.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Historical Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in historical simulations", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.tropospheric_volcanic.historical_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Future Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in future simulations", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.tropospheric_volcanic.future_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.tropospheric_volcanic.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Stratospheric Volcanic", 
+                            "description": "Stratospheric volcanic forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.stratospheric_volcanic", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.stratospheric_volcanic.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Historical Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in historical simulations", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.stratospheric_volcanic.historical_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Future Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in future simulations", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.stratospheric_volcanic.future_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.stratospheric_volcanic.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Sea Salt", 
+                            "description": "Sea salt forcing", 
+                            "id": "cmip6.model.radiative_forcings.aerosols.sea_salt", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.sea_salt.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.aerosols.sea_salt.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Other", 
+                    "description": "Miscellaneous forcing agents", 
+                    "id": "cmip6.model.radiative_forcings.other", 
+                    "contact": "David Hassell", 
+                    "propertySets": [
+                        {
+                            "label": "Land Use", 
+                            "description": "Land use forcing", 
+                            "id": "cmip6.model.radiative_forcings.other.land_use", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.other.land_use.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Crop Change Only", 
+                                    "description": "Land use change represented via crop change only?", 
+                                    "id": "cmip6.model.radiative_forcings.other.land_use.crop_change_only", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.other.land_use.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Solar", 
+                            "description": "Solar forcing", 
+                            "id": "cmip6.model.radiative_forcings.other.solar", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cmip6.model.radiative_forcings.other.solar.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Historical Orbital Parameters", 
+                                    "description": "In historical period only, use of realistic time-varying orbital parameters for solar forcing (GISS-E2)", 
+                                    "id": "cmip6.model.radiative_forcings.other.solar.historical_orbital_parameters", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cmip6.model.radiative_forcings.other.solar.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "str", 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ], 
+    "keyProperties": {
+        "label": "Key Properties", 
+        "description": "Key properties of the model", 
+        "id": "cmip6.model.key_properties", 
+        "contact": "Eric Guilyardi", 
+        "propertySets": [
+            {
+                "label": "Flux Correction", 
+                "description": "Flux correction properties of the model", 
+                "id": "cmip6.model.key_properties.flux_correction", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe if/how flux corrections are applied in the model", 
+                        "id": "cmip6.model.key_properties.flux_correction.details", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Genealogy", 
+                "description": "Genealogy and history of the model", 
+                "id": "cmip6.model.key_properties.genealogy", 
+                "properties": [
+                    {
+                        "label": "Year Released", 
+                        "description": "Year the model was released", 
+                        "id": "cmip6.model.key_properties.genealogy.year_released", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "CMIP3 Parent", 
+                        "description": "CMIP3 parent if any", 
+                        "id": "cmip6.model.key_properties.genealogy.CMIP3_parent", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "CMIP5 Parent", 
+                        "description": "CMIP5 parent if any", 
+                        "id": "cmip6.model.key_properties.genealogy.CMIP5_parent", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Previous Name", 
+                        "description": "Previously known as", 
+                        "id": "cmip6.model.key_properties.genealogy.previous_name", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }, 
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of model", 
+                "id": "cmip6.model.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cmip6.model.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cmip6.model.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cmip6.model.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Components Structure", 
+                        "description": "Describe how model realms are structured into independent software components\n               (coupled via a coupler) and internal software components.", 
+                        "id": "cmip6.model.key_properties.software_properties.components_structure", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Coupler", 
+                        "description": "Overarching coupling framework for model.", 
+                        "id": "cmip6.model.key_properties.software_properties.coupler", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Coupler Framework", 
+                            "description": "Coupling software framework.", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "OASIS", 
+                                    "description": "The OASIS coupler - prior to OASIS-MCT"
+                                }, 
+                                {
+                                    "label": "OASIS3-MCT", 
+                                    "description": "The MCT variant of the OASIS coupler"
+                                }, 
+                                {
+                                    "label": "ESMF", 
+                                    "description": "Vanilla Earth System Modelling Framework"
+                                }, 
+                                {
+                                    "label": "NUOPC", 
+                                    "description": "National Unified Operational Prediction Capability variant of ESMF"
+                                }, 
+                                {
+                                    "label": "Bespoke", 
+                                    "description": "Customised coupler developed for this model"
+                                }, 
+                                {
+                                    "label": "Unknown", 
+                                    "description": "It is not known what/if-a coupler is used"
+                                }, 
+                                {
+                                    "label": "None", 
+                                    "description": "No coupler is used"
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Tuning Applied", 
+                "description": "Tuning methodology for model", 
+                "id": "cmip6.model.key_properties.tuning_applied", 
+                "contact": "Eric Guilyardi", 
+                "properties": [
+                    {
+                        "label": "Description", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained.\n            Document the relative weight given to climate performance metrics versus process oriented metrics,\n            and on the possible conflicts with parameterization level tuning. In particular describe any struggle\n            with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "id": "cmip6.model.key_properties.tuning_applied.description", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Global Mean Metrics Used", 
+                        "description": "List set of metrics of the global mean state used in tuning model", 
+                        "id": "cmip6.model.key_properties.tuning_applied.global_mean_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Regional Metrics Used", 
+                        "description": "List of regional metrics of mean state (e.g THC, AABW, regional means etc) used in tuning model/component", 
+                        "id": "cmip6.model.key_properties.tuning_applied.regional_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Trend Metrics Used", 
+                        "description": "List observed trend metrics used in tuning model/component (such as 20th century)", 
+                        "id": "cmip6.model.key_properties.tuning_applied.trend_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Energy Balance", 
+                        "description": "Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?", 
+                        "id": "cmip6.model.key_properties.tuning_applied.energy_balance", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Fresh Water Balance", 
+                        "description": "Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?", 
+                        "id": "cmip6.model.key_properties.tuning_applied.fresh_water_balance", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }, 
+            {
+                "label": "Conservation", 
+                "description": "Global convervation properties of the model", 
+                "id": "cmip6.model.key_properties.conservation", 
+                "contact": "Eric Guilyardi", 
+                "propertySets": [
+                    {
+                        "label": "Heat", 
+                        "description": "Global heat convervation properties of the model", 
+                        "id": "cmip6.model.key_properties.conservation.heat", 
+                        "properties": [
+                            {
+                                "label": "Global", 
+                                "description": "Describe if/how heat is conserved globally", 
+                                "id": "cmip6.model.key_properties.conservation.heat.global", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Atmos Ocean Interface", 
+                                "description": "Describe if/how heat is conserved at the atmosphere/ocean coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.heat.atmos_ocean_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Atmos Land Interface", 
+                                "description": "Describe if/how heat is conserved at the atmosphere/land coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.heat.atmos_land_interface", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Atmos Sea-ice Interface", 
+                                "description": "Describe if/how heat is conserved at the atmosphere/sea-ice coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.heat.atmos_sea-ice_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Ocean Seaice Interface", 
+                                "description": "Describe if/how heat is conserved at the ocean/sea-ice coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.heat.ocean_seaice_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 5
+                            }, 
+                            {
+                                "label": "Land Ocean Interface", 
+                                "description": "Describe if/how heat is conserved at the land/ocean coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.heat.land_ocean_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 6
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Fresh Water", 
+                        "description": "Global fresh water convervation properties of the model", 
+                        "id": "cmip6.model.key_properties.conservation.fresh_water", 
+                        "properties": [
+                            {
+                                "label": "Global", 
+                                "description": "Describe if/how fresh_water is conserved globally", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.global", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Atmos Ocean Interface", 
+                                "description": "Describe if/how fresh_water is conserved at the atmosphere/ocean coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.atmos_ocean_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Atmos Land Interface", 
+                                "description": "Describe if/how fresh water is conserved at the atmosphere/land coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.atmos_land_interface", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Atmos Sea-ice Interface", 
+                                "description": "Describe if/how fresh water is conserved at the atmosphere/sea-ice coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.atmos_sea-ice_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Ocean Seaice Interface", 
+                                "description": "Describe if/how fresh water is conserved at the ocean/sea-ice coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.ocean_seaice_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 5
+                            }, 
+                            {
+                                "label": "Runoff", 
+                                "description": "Describe how runoff is distributed and conserved", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.runoff", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 6
+                            }, 
+                            {
+                                "label": "Iceberg Calving", 
+                                "description": "Describe if/how iceberg calving is modeled and conserved", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.iceberg_calving", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 7
+                            }, 
+                            {
+                                "label": "Endoreic Basins", 
+                                "description": "Describe if/how endoreic basins (no ocean access) are treated", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.endoreic_basins", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 8
+                            }, 
+                            {
+                                "label": "Snow Accumulation", 
+                                "description": "Describe how snow accumulation over land and over sea-ice is treated", 
+                                "id": "cmip6.model.key_properties.conservation.fresh_water.snow_accumulation", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 9
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Salt", 
+                        "description": "Global salt convervation properties of the model", 
+                        "id": "cmip6.model.key_properties.conservation.salt", 
+                        "properties": [
+                            {
+                                "label": "Ocean Seaice Interface", 
+                                "description": "Describe if/how salt is conserved at the ocean/sea-ice coupling interface", 
+                                "id": "cmip6.model.key_properties.conservation.salt.ocean_seaice_interface", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 1
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Momentum", 
+                        "description": "Global momentum convervation properties of the model", 
+                        "id": "cmip6.model.key_properties.conservation.momentum", 
+                        "properties": [
+                            {
+                                "label": "Momentum", 
+                                "description": "Describe if/how momentum is conserved in the model", 
+                                "id": "cmip6.model.key_properties.conservation.momentum.momentum", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "uiOrdinal": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

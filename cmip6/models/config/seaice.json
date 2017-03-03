@@ -432,9 +432,9 @@
                             "id": "cmip6.seaice.thermodynamics.salt.thermodynamics", 
                             "properties": [
                                 {
-                                    "label": "Salinity", 
+                                    "label": "Salinity Type", 
                                     "description": "How is salinity determined in the thermodynamic calculation?", 
-                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity", 
+                                    "id": "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "enum": {
@@ -688,8 +688,8 @@
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Ice Trans", 
-                        "description": "Surface albedo of sea ice component", 
+                        "label": "Ice Transmission", 
+                        "description": "Ice radiative transmission", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -856,11 +856,11 @@
                                             "description": "Simulation has no internal ice thermodynamics."
                                         }, 
                                         {
-                                            "label": "Two-levels", 
+                                            "label": "Two-layers", 
                                             "description": "Simulation uses two layers."
                                         }, 
                                         {
-                                            "label": "Multi-level", 
+                                            "label": "Multi-layers", 
                                             "description": "Simulation uses more than two layers"
                                         }
                                     ]
@@ -984,6 +984,22 @@
         "contact": "Ruth Petrie", 
         "subProcesses": [
             {
+                "label": "Model", 
+                "description": "Name of seaice model used.", 
+                "id": "cmip6.seaice.key_properties.model", 
+                "contact": "Ruth Petrie", 
+                "properties": [
+                    {
+                        "label": "Model Name", 
+                        "description": "Name of seaice model (e.g. CICE 4.2, LIM 2.1, etc.)", 
+                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
                 "label": "Variables", 
                 "description": "List of prognostic variable in the sea ice model.", 
                 "id": "cmip6.seaice.key_properties.variables", 
@@ -1010,6 +1026,10 @@
                                 }, 
                                 {
                                     "label": "Sea ice thickness", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Sea ice volume per grid cell area", 
                                     "description": null
                                 }, 
                                 {

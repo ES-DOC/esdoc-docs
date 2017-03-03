@@ -11,17 +11,17 @@
             "contact": "Eric Guilyardi", 
             "properties": [
                 {
-                    "label": "Sulfur Cycle", 
+                    "label": "Sulfur Cycle Present", 
                     "description": "Is sulfur cycle modeled ?", 
-                    "id": "cmip6.oceanbgc.tracers.sulfur_cycle", 
+                    "id": "cmip6.oceanbgc.tracers.sulfur_cycle_present", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "uiOrdinal": 1
                 }, 
                 {
-                    "label": "Nutrients", 
+                    "label": "Nutrients Present", 
                     "description": "List nutrient species present in ocean biogeochemistry model", 
-                    "id": "cmip6.oceanbgc.tracers.nutrients", 
+                    "id": "cmip6.oceanbgc.tracers.nutrients_present", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
@@ -50,9 +50,9 @@
                     "uiOrdinal": 2
                 }, 
                 {
-                    "label": "Nitrous Species", 
+                    "label": "Nitrous Species If N", 
                     "description": "If nitrogen present, list nitrous species.", 
-                    "id": "cmip6.oceanbgc.tracers.nitrous_species", 
+                    "id": "cmip6.oceanbgc.tracers.nitrous_species_if_N", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "enum": {
@@ -73,9 +73,9 @@
                     "uiOrdinal": 3
                 }, 
                 {
-                    "label": "Nitrous Processes", 
+                    "label": "Nitrous Processes If N", 
                     "description": "If nitrogen present, list nitrous processes.", 
-                    "id": "cmip6.oceanbgc.tracers.nitrous_processes", 
+                    "id": "cmip6.oceanbgc.tracers.nitrous_processes_if_N", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "enum": {
@@ -104,9 +104,9 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
-                            "label": "Upper Trophic Levels", 
+                            "label": "Upper Trophic Levels Definition", 
                             "description": "Definition of upper trophic level (e.g. based on size) ?", 
-                            "id": "cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels", 
+                            "id": "cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels_definition", 
                             "cardinality": "1.1", 
                             "type": "str", 
                             "uiOrdinal": 1
@@ -165,7 +165,7 @@
                                         "isOpen": true, 
                                         "choices": [
                                             {
-                                                "label": "diatoms", 
+                                                "label": "Diatoms", 
                                                 "description": null
                                             }, 
                                             {
@@ -173,11 +173,11 @@
                                                 "description": null
                                             }, 
                                             {
-                                                "label": "calcifiers", 
+                                                "label": "Calcifiers", 
                                                 "description": null
                                             }, 
                                             {
-                                                "label": "picophytoplancton", 
+                                                "label": "Picophytoplancton", 
                                                 "description": null
                                             }
                                         ]
@@ -230,11 +230,11 @@
                                         "isOpen": true, 
                                         "choices": [
                                             {
-                                                "label": "microzooplancton", 
+                                                "label": "Microzooplancton", 
                                                 "description": null
                                             }, 
                                             {
-                                                "label": "mesozooplancton", 
+                                                "label": "Mesozooplancton", 
                                                 "description": null
                                             }
                                         ]
@@ -252,9 +252,9 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
-                            "label": "Bacteria Representation", 
+                            "label": "Bacteria Present", 
                             "description": "Is there bacteria representation ?", 
-                            "id": "cmip6.oceanbgc.tracers.Disolved_organic_matter.bacteria_representation", 
+                            "id": "cmip6.oceanbgc.tracers.Disolved_organic_matter.bacteria_present", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "uiOrdinal": 1
@@ -271,19 +271,19 @@
                                 "isOpen": true, 
                                 "choices": [
                                     {
-                                        "label": "none", 
+                                        "label": "None", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "labile", 
+                                        "label": "Labile", 
                                         "description": "Less than a few days"
                                     }, 
                                     {
-                                        "label": "semi-labile", 
+                                        "label": "Semi-labile", 
                                         "description": "Few days to a few years"
                                     }, 
                                     {
-                                        "label": "refractory", 
+                                        "label": "Refractory", 
                                         "description": "Over a few years"
                                     }
                                 ]
@@ -330,10 +330,10 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Types", 
-                            "description": "If prognostic, types of particulate matter taken into account", 
-                            "id": "cmip6.oceanbgc.tracers.Particules.types", 
-                            "cardinality": "0.1", 
+                            "label": "Types If Prognostic", 
+                            "description": "If prognostic, type(s) of particulate matter taken into account", 
+                            "id": "cmip6.oceanbgc.tracers.Particules.types_if_prognostic", 
+                            "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Prognostic Particules Types", 
@@ -361,9 +361,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Size", 
+                            "label": "Size If Prognostic", 
                             "description": "If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume", 
-                            "id": "cmip6.oceanbgc.tracers.Particules.size", 
+                            "id": "cmip6.oceanbgc.tracers.Particules.size_if_prognostic", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
@@ -372,15 +372,15 @@
                                 "isOpen": false, 
                                 "choices": [
                                     {
+                                        "label": "No size spectrum used", 
+                                        "description": null
+                                    }, 
+                                    {
                                         "label": "Full size spectrum", 
                                         "description": null
                                     }, 
                                     {
                                         "label": "Discrete size classes (specify which below)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "No size spectrum used", 
                                         "description": null
                                     }
                                 ]
@@ -388,17 +388,17 @@
                             "uiOrdinal": 3
                         }, 
                         {
-                            "label": "Discrete Size", 
+                            "label": "Size If Discrete", 
                             "description": "If prognostic and discrete size, describe which size classes are used", 
-                            "id": "cmip6.oceanbgc.tracers.Particules.discrete_size", 
+                            "id": "cmip6.oceanbgc.tracers.Particules.size_if_discrete", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 4
                         }, 
                         {
-                            "label": "Sinking Speed", 
+                            "label": "Sinking Speed If Prognostic", 
                             "description": "If prognostic, method for calculation of sinking speed of particules", 
-                            "id": "cmip6.oceanbgc.tracers.Particules.sinking_speed", 
+                            "id": "cmip6.oceanbgc.tracers.Particules.sinking_speed_if_prognostic", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
@@ -415,7 +415,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "Function of particul type (balast)", 
+                                        "label": "Function of particule type (balast)", 
                                         "description": null
                                     }
                                 ]
@@ -477,19 +477,19 @@
         "subProcesses": [
             {
                 "label": "Time Stepping Framework", 
-                "description": "Time stepping frameowrk in ocean biogeochemistry", 
-                "id": "cmip6.oceanbgc.key_properties.time_stepping_framework", 
+                "description": "Time stepping framework for ocean biogeochemistry", 
+                "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework", 
                 "contact": "Eric Guilyardi", 
                 "propertySets": [
                     {
                         "label": "Passive Tracers Transport", 
                         "description": "Time stepping method for passive tracers transport in ocean biogeochemistry", 
-                        "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport", 
+                        "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport", 
                         "properties": [
                             {
-                                "label": "Passive Tracers Transport Method", 
+                                "label": "Method", 
                                 "description": "Time stepping framework for passive tracers", 
-                                "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.passive_tracers_transport_method", 
+                                "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.method", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "enum": {
@@ -498,7 +498,7 @@
                                     "isOpen": false, 
                                     "choices": [
                                         {
-                                            "label": "use ocesn model transport time step", 
+                                            "label": "use ocean model transport time step", 
                                             "description": null
                                         }, 
                                         {
@@ -510,9 +510,9 @@
                                 "uiOrdinal": 1
                             }, 
                             {
-                                "label": "Passive Tracers Timestep", 
+                                "label": "Timestep If Not From Ocean", 
                                 "description": "Time step for passive tracers (if different from ocean)", 
-                                "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.passive_tracers_timestep", 
+                                "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 2
@@ -522,12 +522,12 @@
                     {
                         "label": "Biology Sources Sinks", 
                         "description": "Time stepping framework for biology sources and sinks in ocean biogeochemistry", 
-                        "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks", 
+                        "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks", 
                         "properties": [
                             {
-                                "label": "Biology Sources Sinks Transport Method", 
+                                "label": "Method", 
                                 "description": "Time stepping framework for biology sources and sinks", 
-                                "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.biology_sources_sinks_transport_method", 
+                                "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.method", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "enum": {
@@ -536,7 +536,7 @@
                                     "isOpen": false, 
                                     "choices": [
                                         {
-                                            "label": "use ocesn model transport time step", 
+                                            "label": "use ocean model transport time step", 
                                             "description": null
                                         }, 
                                         {
@@ -548,9 +548,9 @@
                                 "uiOrdinal": 1
                             }, 
                             {
-                                "label": "Passive Tracers Timestep", 
+                                "label": "Timestep If Not From Ocean", 
                                 "description": "Time step for biology sources and sinks (if different from ocean)", 
-                                "id": "cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.passive_tracers_timestep", 
+                                "id": "cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 2
@@ -562,13 +562,13 @@
             {
                 "label": "Transport Scheme", 
                 "description": "Transport scheme in ocean biogeochemistry", 
-                "id": "cmip6.oceanbgc.key_properties.transport_scheme", 
+                "id": "cmip6.oceanbgc.key_properties.Transport_scheme", 
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
                         "label": "Type", 
                         "description": "Type of transport scheme", 
-                        "id": "cmip6.oceanbgc.key_properties.transport_scheme.type", 
+                        "id": "cmip6.oceanbgc.key_properties.Transport_scheme.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
@@ -590,16 +590,27 @@
                     }, 
                     {
                         "label": "Scheme", 
-                        "description": "Is transport scheme same as that of ocean model ?", 
-                        "id": "cmip6.oceanbgc.key_properties.transport_scheme.scheme", 
+                        "description": "Transport scheme used", 
+                        "id": "cmip6.oceanbgc.key_properties.Transport_scheme.scheme", 
                         "cardinality": "1.1", 
-                        "type": "bool", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Transport Scheme", 
+                            "description": "Types of transport in ocean biogeochemistry", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Use that of ocean model", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Different Scheme", 
-                        "description": "Decribe transport scheme if differen than that of ocean model", 
-                        "id": "cmip6.oceanbgc.key_properties.transport_scheme.different_scheme", 
+                        "label": "Use Different Scheme", 
+                        "description": "Decribe transport scheme if different than that of ocean model", 
+                        "id": "cmip6.oceanbgc.key_properties.Transport_scheme.use_different_scheme", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 3
@@ -609,13 +620,13 @@
             {
                 "label": "Boundary Forcing", 
                 "description": "Properties of biogeochemistry boundary forcing", 
-                "id": "cmip6.oceanbgc.key_properties.boundary_forcing", 
+                "id": "cmip6.oceanbgc.key_properties.Boundary_forcing", 
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
                         "label": "Atmospheric Deposition", 
                         "description": "Describe how atmospheric deposition is modeled", 
-                        "id": "cmip6.oceanbgc.key_properties.boundary_forcing.atmospheric_deposition", 
+                        "id": "cmip6.oceanbgc.key_properties.Boundary_forcing.atmospheric_deposition", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
@@ -638,7 +649,7 @@
                     {
                         "label": "River Input", 
                         "description": "Describe how river input is modeled", 
-                        "id": "cmip6.oceanbgc.key_properties.boundary_forcing.river_input", 
+                        "id": "cmip6.oceanbgc.key_properties.Boundary_forcing.river_input", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
@@ -659,17 +670,17 @@
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Sediment Boundary Conditions", 
+                        "label": "Sediments From Boundary Conditions", 
                         "description": "List which sediments are speficied from boundary condition", 
-                        "id": "cmip6.oceanbgc.key_properties.boundary_forcing.sediment_boundary_conditions", 
+                        "id": "cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_boundary_conditions", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 3
                     }, 
                     {
-                        "label": "Sediment From Explicit Model", 
+                        "label": "Sediments From Explicit Model", 
                         "description": "List which sediments are speficied from explicit sediment model", 
-                        "id": "cmip6.oceanbgc.key_properties.boundary_forcing.sediment_from_explicit_model", 
+                        "id": "cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_explicit_model", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 4
@@ -679,21 +690,21 @@
             {
                 "label": "Gas Exchange", 
                 "description": "Properties of gas exchange in ocean biogeochemistry ", 
-                "id": "cmip6.oceanbgc.key_properties.gas_exchange", 
+                "id": "cmip6.oceanbgc.key_properties.Gas_exchange", 
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
-                        "label": "Co2 Exchange", 
+                        "label": "CO2 Exchange Present", 
                         "description": "Is CO2 gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.co2_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Co2 Type", 
+                        "label": "CO2 Exchange Type", 
                         "description": "Describe CO2 gas exchange", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.co2_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "enum", 
                         "enum": {
@@ -710,17 +721,17 @@
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "O2 Exchange", 
+                        "label": "O2 Exchange Present", 
                         "description": "Is O2 gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.o2_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 3
                     }, 
                     {
-                        "label": "O2 Type", 
+                        "label": "O2 Exchange Type", 
                         "description": "Describe O2 gas exchange", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.o2_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "enum", 
                         "enum": {
@@ -737,65 +748,65 @@
                         "uiOrdinal": 4
                     }, 
                     {
-                        "label": "Dms Exchange", 
+                        "label": "DMS Exchange Present", 
                         "description": "Is DMS gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.dms_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 5
                     }, 
                     {
-                        "label": "Dms Type", 
+                        "label": "DMS Exchange Type", 
                         "description": "Specify DMS gas exchange scheme type", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.dms_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 6
                     }, 
                     {
-                        "label": "N2 Exchange", 
+                        "label": "N2 Exchange Present", 
                         "description": "Is N2 gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.n2_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 7
                     }, 
                     {
-                        "label": "N2 Type", 
+                        "label": "N2 Exchange Type", 
                         "description": "Specify N2 gas exchange scheme type", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.n2_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 8
                     }, 
                     {
-                        "label": "N2o Exchange", 
+                        "label": "N2O Exchange Present", 
                         "description": "Is N2O gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.n2o_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 9
                     }, 
                     {
-                        "label": "N2o Type", 
+                        "label": "N2O Exchange Type", 
                         "description": "Specify N2O gas exchange scheme type", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.n2o_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 10
                     }, 
                     {
-                        "label": "CO Exchange", 
+                        "label": "CO Exchange Present", 
                         "description": "Is CO gas exchange modeled ?", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.CO_exchange", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 11
                     }, 
                     {
-                        "label": "CO Type", 
+                        "label": "CO Exchange Type", 
                         "description": "Specify CO gas exchange scheme type", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.CO_type", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 12
@@ -803,7 +814,7 @@
                     {
                         "label": "Other Gases", 
                         "description": "Specify any other gas exchange", 
-                        "id": "cmip6.oceanbgc.key_properties.gas_exchange.other_gases", 
+                        "id": "cmip6.oceanbgc.key_properties.Gas_exchange.other_gases", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 13
@@ -813,13 +824,13 @@
             {
                 "label": "Carbon Chemistry", 
                 "description": "Properties of carbon chemistry biogeochemistry", 
-                "id": "cmip6.oceanbgc.key_properties.carbon_chemistry", 
+                "id": "cmip6.oceanbgc.key_properties.Carbon_chemistry", 
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
                         "label": "Type", 
                         "description": "Describe how carbon chemistry is modeled", 
-                        "id": "cmip6.oceanbgc.key_properties.carbon_chemistry.type", 
+                        "id": "cmip6.oceanbgc.key_properties.Carbon_chemistry.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
@@ -840,9 +851,9 @@
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Ph Scale", 
+                        "label": "PH Scale", 
                         "description": "If NOT OMIP protocol, describe pH scale.", 
-                        "id": "cmip6.oceanbgc.key_properties.carbon_chemistry.ph_scale", 
+                        "id": "cmip6.oceanbgc.key_properties.Carbon_chemistry.pH_scale", 
                         "cardinality": "0.1", 
                         "type": "enum", 
                         "enum": {
@@ -863,9 +874,9 @@
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Constants", 
+                        "label": "Constants If Not OMIP", 
                         "description": "If NOT OMIP protocol, list carbon chemistry constants.", 
-                        "id": "cmip6.oceanbgc.key_properties.carbon_chemistry.constants", 
+                        "id": "cmip6.oceanbgc.key_properties.Carbon_chemistry.constants_if_not_OMIP", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 3
