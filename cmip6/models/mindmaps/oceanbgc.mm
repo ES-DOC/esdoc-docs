@@ -12,6 +12,13 @@
         <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2017-01-31</dd><dt><b>Person</b></dt><dd>Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="0.2.0"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>0.2.0</dd><dt><b>Date</b></dt><dd>2017-03033</dd><dt><b>Person</b></dt><dd>Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Added plancton size as per specific request</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -152,7 +159,7 @@
         <dt><b>Description</b></dt><dd>Describe any tracer damping used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.damping</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Time_stepping_framework"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="time_stepping_framework"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -170,14 +177,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="use ocean model transport time step"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -198,14 +205,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="biology_sources_sinks"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -219,14 +226,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="use ocean model transport time step"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -247,17 +254,17 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Transport_scheme"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="transport_scheme"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -268,14 +275,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.type</dd>
+        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.type</dd>
+        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Offline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -296,14 +303,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.scheme</dd>
+        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.scheme</dd>
+        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Use that of ocean model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -317,17 +324,17 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.use_different_scheme</dd>
+        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.use_different_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Transport_scheme.use_different_scheme</dd>
+        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.transport_scheme.use_different_scheme</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Boundary_forcing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="boundary_forcing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -338,14 +345,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.atmospheric_deposition</dd>
+        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.atmospheric_deposition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.atmospheric_deposition</dd>
+        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.atmospheric_deposition</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="from file"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -366,14 +373,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.river_input</dd>
+        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.river_input</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.river_input</dd>
+        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.river_input</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="from file"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -394,31 +401,31 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_boundary_conditions</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_boundary_conditions</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sediments_from_explicit_model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_explicit_model</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Boundary_forcing.sediments_from_explicit_model</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Gas_exchange"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="gas_exchange"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -429,28 +436,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -464,28 +471,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.O2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.O2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="O2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.O2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.O2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.O2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -499,129 +506,129 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.DMS_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.DMS_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="DMS_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.DMS_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.DMS_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.DMS_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2O_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2O_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2O_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2O_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2O_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.N2O_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.N2O_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO gas exchange modeled ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CO gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CO gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CO gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.CO_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CO gas exchange scheme type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.CO_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="other_gases"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.other_gases</dd>
+        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.other_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Gas_exchange.other_gases</dd>
+        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.gas_exchange.other_gases</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Carbon_chemistry"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="carbon_chemistry"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -632,14 +639,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.type</dd>
+        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.type</dd>
+        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -660,14 +667,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.pH_scale</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.pH_scale</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.pH_scale</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.pH_scale</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea water"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -688,14 +695,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.constants_if_not_OMIP</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.Carbon_chemistry.constants_if_not_OMIP</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -824,7 +831,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Ecosystem"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="ecosystem"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -835,28 +842,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Definition of upper trophic level (e.g. based on size) ?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels_definition</dd>
+        <dt><b>Description</b></dt><dd>Definition of upper trophic level (e.g. based on size) ?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.upper_trophic_levels_definition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Definition of upper trophic level (e.g. based on size) ?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels_definition</dd>
+        <dt><b>Description</b></dt><dd>Definition of upper trophic level (e.g. based on size) ?</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.upper_trophic_levels_definition</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="upper_trophic_levels_treatment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Define how upper trophic level are treated</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels_treatment</dd>
+        <dt><b>Description</b></dt><dd>Define how upper trophic level are treated</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.upper_trophic_levels_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Define how upper trophic level are treated</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.upper_trophic_levels_treatment</dd>
+        <dt><b>Description</b></dt><dd>Define how upper trophic level are treated</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.upper_trophic_levels_treatment</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="phytoplancton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -870,14 +877,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of phytoplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.phytoplancton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of phytoplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of phytoplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.phytoplancton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of phytoplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -905,14 +912,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List species of phytoplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:phytoplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.phytoplancton.list</dd>
+        <dt><b>Description</b></dt><dd>List species of phytoplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:phytoplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.list</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List species of phytoplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:phytoplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.phytoplancton.list</dd>
+        <dt><b>Description</b></dt><dd>List species of phytoplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:phytoplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.list</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Diatoms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -943,7 +950,21 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="zooplancton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="size_range"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size range of phytoplancton (if applicable)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.size_range</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size range of phytoplancton (if applicable)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.phytoplancton.size_range</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="zooplancton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -954,14 +975,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of zooplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.zooplancton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of zooplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of zooplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.zooplancton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of zooplancton</dd><dt><b>Type</b></dt><dd>ENUM:plancton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -989,14 +1010,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List species of zooplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:zooplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.zooplancton.list</dd>
+        <dt><b>Description</b></dt><dd>List species of zooplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:zooplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.list</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List species of zooplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:zooplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Ecosystem.zooplancton.list</dd>
+        <dt><b>Description</b></dt><dd>List species of zooplancton if applicable</dd><dt><b>Type</b></dt><dd>ENUM:zooplancton_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.list</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Microzooplancton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1013,7 +1034,21 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Disolved_organic_matter"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="size_range"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size range of zooplancton (if applicable)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.size_range</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size range of zooplancton (if applicable)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.ecosystem.zooplancton.size_range</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="disolved_organic_matter"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1024,28 +1059,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Disolved_organic_matter.bacteria_present</dd>
+        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.disolved_organic_matter.bacteria_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Disolved_organic_matter.bacteria_present</dd>
+        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.disolved_organic_matter.bacteria_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lability"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Disolved_organic_matter.lability</dd>
+        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.disolved_organic_matter.lability</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Disolved_organic_matter.lability</dd>
+        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.disolved_organic_matter.lability</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1076,7 +1111,7 @@
         <dt><b>Description</b></dt><dd>Over a few years</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="Particules"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="particules"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1087,14 +1122,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.method</dd>
+        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.method</dd>
+        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Diagnostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1129,14 +1164,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.types_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.types_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.types_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.types_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="POC"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1171,14 +1206,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.size_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.size_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.size_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.size_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="No size spectrum used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1206,28 +1241,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.size_if_discrete</dd>
+        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.size_if_discrete</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.size_if_discrete</dd>
+        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.size_if_discrete</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sinking_speed_if_prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.sinking_speed_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.sinking_speed_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.Particules.sinking_speed_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.oceanbgc.tracers.particules.sinking_speed_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Constant"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
