@@ -18,10 +18,6 @@
             "relationship": "is_initializer_of"
         }, 
         {
-            "name": "hist-1950", 
-            "relationship": "is_initialized_by"
-        }, 
-        {
             "name": "historical", 
             "relationship": "is_sibling_of"
         }
@@ -32,7 +28,7 @@
     "requirements": [
         {
             "canonical_name": "1950-2014 65yrs", 
-            "description": "Historical, Recent past, since large scale halocarbon emsissions began.", 
+            "description": "Historical, Recent past.", 
             "isConformanceRequested": false, 
             "keywords": "1950, 2014, Historical, Recent Past", 
             "label": "1950-2014 65yrs", 
@@ -57,28 +53,30 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Land Use", 
-            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "canonical_name": "Present Day Land Surface Forcing", 
+            "description": "Land surface properties will be climatological monthly/seasonally varying conditions of leaf area index (LAI), with no dynamic vegetation and a constant land use/land cover consistent with the present-day period, centered around 2000.", 
             "isConformanceRequested": true, 
-            "keywords": "Historical, land use", 
-            "label": "Historical Land Use", 
+            "keywords": "HighresMIP, present day, land surface properties", 
+            "label": "Present Day Land Surface Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Spectral Irradiance", 
+            "description": "Apply historical solar irriadiances from the Solar Spectral Irradiance (SSI) database.  The SSI is a product of the collaboration between the European SOLID (First European  Comprehensive SOLar Irradiance Data exploitation) data analysis project and the US NRLSSI2 model team (NRL and LASP, USA).", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Spectral Irradiance", 
             "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Solar Forcing", 
-            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "canonical_name": "Historical Aerosol Plume Climatology", 
+            "description": "Apply fields of aerosol optical properties (fine and coarse mode aerosol optical depth (AOD), single scattering albedo (SSA), asymmetry parameter (ASY)) and cloud activity (anthropogenic increment in drop number, dN/N), which are easy to use and to configure (i.e., scale in amplitude for hypothesis testing).", 
             "isConformanceRequested": true, 
-            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
-            "label": "Historical Solar Forcing", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Aerosol Forcing", 
-            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
-            "isConformanceRequested": true, 
-            "keywords": "historical, aerosol, forcing, CMIP6", 
-            "label": "Historical Aerosol Forcing", 
+            "keywords": "historical, aerosol plume, climatology, CMIP6", 
+            "label": "Historical Aerosol Plume Climatology", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
@@ -131,6 +129,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "7399e937-1032-43ef-84be-f6c5749fb9a6", 
+    "uid": "866f67b7-6b96-40fb-8fd4-6f99d4d7f3bf", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/highresSST-present?client=mohc"
 }

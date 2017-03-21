@@ -19,10 +19,6 @@
         }, 
         {
             "name": "highresSST-present", 
-            "relationship": "is_initializer_of"
-        }, 
-        {
-            "name": "highresSST-present", 
             "relationship": "is_sibling_of"
         }, 
         {
@@ -36,7 +32,7 @@
     "requirements": [
         {
             "canonical_name": "1950-2014 65yrs", 
-            "description": "Historical, Recent past, since large scale halocarbon emsissions began.", 
+            "description": "Historical, Recent past.", 
             "isConformanceRequested": false, 
             "keywords": "1950, 2014, Historical, Recent Past", 
             "label": "1950-2014 65yrs", 
@@ -61,19 +57,21 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Solar Forcing", 
-            "description": "Solar forcing of the Earth system consistent with historical observations.", 
+            "canonical_name": "Historical Solar Spectral Irradiance", 
+            "description": "Apply historical solar irriadiances from the Solar Spectral Irradiance (SSI) database.  The SSI is a product of the collaboration between the European SOLID (First European  Comprehensive SOLar Irradiance Data exploitation) data analysis project and the US NRLSSI2 model team (NRL and LASP, USA).", 
             "isConformanceRequested": true, 
-            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
-            "label": "Historical Solar Forcing", 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Spectral Irradiance", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Aerosol Forcing", 
-            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "canonical_name": "Historical Aerosol Plume Climatology", 
+            "description": "Apply fields of aerosol optical properties (fine and coarse mode aerosol optical depth (AOD), single scattering albedo (SSA), asymmetry parameter (ASY)) and cloud activity (anthropogenic increment in drop number, dN/N), which are easy to use and to configure (i.e., scale in amplitude for hypothesis testing).", 
             "isConformanceRequested": true, 
-            "keywords": "historical, aerosol, forcing, CMIP6", 
-            "label": "Historical Aerosol Forcing", 
+            "keywords": "historical, aerosol plume, climatology, CMIP6", 
+            "label": "Historical Aerosol Plume Climatology", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
@@ -142,6 +140,6 @@
         }
     ], 
     "tier": 2, 
-    "uid": "866f67b7-6b96-40fb-8fd4-6f99d4d7f3bf", 
+    "uid": "cf6bca92-5679-4f60-8daf-ba4f58335aac", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-1950?client=mohc"
 }

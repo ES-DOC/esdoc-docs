@@ -1,46 +1,42 @@
 {
-    "canonical_name": "abrupt-0p5xCO2", 
-    "description": "Impose an instantaneous halvinging of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+    "canonical_name": "1pctCO2-4xext", 
+    "description": "Branched from the 1pctCO2 simulation at year 140 and run with CO2 fixed at 4x pre-industrial concentration.", 
     "governing_mips": [
-        "cfmip"
+        "ismip6"
     ], 
-    "keywords": "CFMIP, Tier 2, 0.5x, CO2, 0.5xCO2, instant, instantanaeous, halving", 
-    "long_name": "Abrupt halving of the atmospheric concentration of carbon dioxide", 
+    "keywords": "ISMIP6, Tier 1, quadrupled CO2, 4xCO2, fixed", 
+    "long_name": "extension from year 140 of 1pctCO2 with 4xCO2", 
     "mip_era": "cmip6", 
-    "rationale": "To examine how the balance of mechanisms differ for high-forcing compared to low forcing scenarios or paleoclimate simulations?", 
+    "rationale": "For comparison with ISMIP6 ism-1pctCO2to4x-std experiment.", 
     "related_experiments": [
         {
-            "name": "abrupt-2xCO2", 
-            "relationship": "is_sibling_of"
+            "name": "1pctCO2", 
+            "relationship": "is_initialized_by"
         }, 
         {
-            "name": "abrupt-4xCO2", 
+            "name": "ism-1pctCO2to4x-std", 
             "relationship": "is_sibling_of"
-        }, 
-        {
-            "name": "piControl", 
-            "relationship": "is_perturbation_from"
         }
     ], 
     "related_mips": [
-        "cfmip"
+        "ismip6"
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1999 150yrs", 
-            "description": "Begin in 1850 and run for 150 years.", 
+            "canonical_name": "210yrs", 
+            "description": "Run for 210 years", 
             "isConformanceRequested": false, 
-            "keywords": "idealised, 1850-1999", 
-            "label": "1850-1999 150yrs", 
+            "keywords": "210 years", 
+            "label": "210yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Abrupt 0.5xCO2", 
-            "description": "Impose an instantaneous halving of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "canonical_name": "Maintain 4xCO2 concentration", 
+            "description": "After a period of 1% per year increase in CO2 to 4xCO2, maintain CO2 concentrations at 4x pre-industrial concentrations until the end of the simulation.", 
             "isConformanceRequested": true, 
-            "keywords": "0.5x, CO2, 0.5xCO2, instant, instantaneous, halving, decrease CO2", 
-            "label": "Abrupt 0.5xCO2", 
-            "scope": "experiment", 
+            "keywords": "ISMIP6, ISMIP6-specified input, 4xCO2 maintained", 
+            "label": "Maintain 4xCO2 concentration", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -68,7 +64,7 @@
             "type": "model-configuration"
         }
     ], 
-    "tier": 2, 
-    "uid": "7fdfe37e-43b7-4271-8f9a-4986460d1c02", 
-    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-0p5xCO2?client=mohc"
+    "tier": 1, 
+    "uid": "55b58c1d-e28a-4535-a01e-d5440d5f39fd", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/1pctCO2-4xext?client=mohc"
 }

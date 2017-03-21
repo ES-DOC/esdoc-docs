@@ -2,9 +2,9 @@
     "canonical_name": "piControl", 
     "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
     "governing_mips": [
-        "deck"
+        "cmip"
     ], 
-    "keywords": "DECK, Tier 1, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+    "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
     "long_name": "Pre-Industrial Control", 
     "mip_era": "cmip6", 
     "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
@@ -350,10 +350,6 @@
             "relationship": "is_initializer_of"
         }, 
         {
-            "name": "volc-pinatubo-ini", 
-            "relationship": "is_control_for"
-        }, 
-        {
             "name": "volc-pinatubo-slab", 
             "relationship": "is_initializer_of"
         }, 
@@ -369,6 +365,7 @@
     "related_mips": [
         "aerchemmip", 
         "c4mip", 
+        "cmip", 
         "damip", 
         "dcpp", 
         "deck", 

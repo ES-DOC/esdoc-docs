@@ -1,8 +1,10 @@
 {
     "canonical_name": "ism-1pctCO2to4x-std", 
     "description": "Stand alone ice sheet model driven offline by ISMIP6 CMIP6 standard input for the idealised 1% per year atmospheric carbon dioxide increase to quadrupling and held fixed climate change experiment.", 
-    "governing_mips": [], 
-    "keywords": "ISMIP, Tier 1, 1% per yr CO2, quadrupled CO2, stand-alone ISM, ice sheets only", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 1, 1% per yr CO2, quadrupled CO2, stand-alone ISM, ice sheets only", 
     "long_name": "offline ice sheet model forced by ISMIP6-specified AOGCM 1pctCO2to4x output", 
     "mip_era": "cmip6", 
     "rationale": "Idealised climate change experiment.", 
@@ -12,12 +14,20 @@
             "relationship": "is_sibling_of"
         }, 
         {
-            "name": "ism-pdControl-std", 
-            "relationship": "is_initialized_by"
+            "name": "1pctCO2-4xext", 
+            "relationship": "is_sibling_of"
         }, 
         {
-            "name": "piControl-withism", 
+            "name": "1pctCO2to4x-withism", 
             "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ism-1pctCO2to4x-self", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ism-pdControl-std", 
+            "relationship": "is_initialized_by"
         }
     ], 
     "related_mips": [
@@ -34,9 +44,9 @@
         }, 
         {
             "canonical_name": "ISMIP6-specified 1pctCO2to4x input", 
-            "description": "ISMIP6-specified input from the output of an AOGCM 1pctCO2to4x (1 percent per year increase in CO2 to quadrupling) experiment.", 
+            "description": "ISMIP6-specified input from the output of an AOGCM 1pctCO2to4x (1 percent per year increase in CO2 to quadrupling CO2 and then held at quadruple levels) experiment.", 
             "isConformanceRequested": true, 
-            "keywords": "ISMIP6, ISMIP6-specified input, 1pctCO2to4x, 1 percent per year increasei n CO2 to quadrupling", 
+            "keywords": "ISMIP6, ISMIP6-specified input, 1pctCO2to4x, 1 percent per year increase in CO2 to quadrupling", 
             "label": "ISMIP6-specified 1pctCO2to4x input", 
             "scope": "experiment", 
             "type": "forcing-constraint"
@@ -67,6 +77,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "2ea54201-0b5c-4411-a6f6-b95dcb7c0c72", 
+    "uid": "fc7f87d1-56a2-4808-982e-e92b0ea3b39f", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ism-1pctCO2to4x-std?client=mohc"
 }
