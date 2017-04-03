@@ -1,0 +1,367 @@
+{
+    "mip": {
+        "canonical_name": "omip", 
+        "description": "OMIP merges the CORE-II (Coordinated Ocean-Ice Reference Experiments) and OCMIP (Ocean-Carbon Cycle Model Inter-comparison Project) projects. OMIP coordinates CMIP6 ocean diagnostics for all CMIP6 simulations that include an ocean component. OMIP provides a protocol for ocean/sea-ice simulations.", 
+        "experiments": [
+            "omip1", 
+            "omip1-spunup", 
+            "omip2", 
+            "omip2-spunup"
+        ], 
+        "keywords": "ocean, tracers, carbon cycle", 
+        "long_name": "Ocean Model Inter-comparison Project", 
+        "label": "OMIP", 
+        "rationale": "Providing a framework for evaluating, understanding, and improving ocean, sea ice, and biogeochemical, including inert tracers, components of climate and Earth system models contributing to CMIP6. Protocols are provided to perform coordinated ocean/sea ice/tracer/biogeochemistry simulations forced with common atmospheric data sets.", 
+        "uid": "2cf0d709-28b9-4dbd-a323-713e273851f7", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/omip?client=esdoc"
+    }, 
+    "experiments": {
+        "omip1-spunup": {
+            "canonical_name": "omip1-spunup", 
+            "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Rather than using observed climatologies to initialise the biogeochemistry as in omipv1, this simulation will be initialised with model tracer fields that have been spun up for at least 2000 years, ideally for 5000 years.  The omipv1-spunup simulations (and spin-ups) will include radiocarbon (abiotic DIC and DI14C). Atmospheric forcing follows CORE-II, inert chemical tracers follow OCMIP2, and biogeochemical tracers follow OCMIP3. Only for modelling groups that have biogeochemistry and are able to afford a millennial-scale spin-up.", 
+            "governing_mips": [
+                "omip"
+            ], 
+            "keywords": "OMIP, Tier 2, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+            "long_name": "OMIP experiment forced by Large & Yeager (CORE-2, NCEP) atmospheric data set and initialized from at least a 2000-year spin up of the coupled physical-biogeochemical model", 
+            "mip_era": "cmip6", 
+            "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. Radiocarbon is included to evaluate the deep-ocean circulation.", 
+            "related_experiments": [
+                {
+                    "name": "omip2-spunup", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "omip1", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "omip"
+            ], 
+            "requirements": [
+                "310yrs1948-2009", 
+                "CORE2air-seaFluxes", 
+                "OMIPinertChemicalTracers", 
+                "OMIPBGCTracers", 
+                "O2Constant", 
+                "CO2Historical", 
+                "RadioCTracer", 
+                "salinityDamping", 
+                "SingleMemberEnsemble", 
+                "BGCTracerMillennialSpinUp", 
+                "Ocean-SeaIce-BGCConfig"
+            ], 
+            "tier": 2, 
+            "uid": "f10db1ed-9d5e-4b42-a8d0-c83e846c1415", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/omip1-spunup?client=esdoc"
+        }, 
+        "omip2-spunup": {
+            "canonical_name": "omip2-spunup", 
+            "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Rather than using observed climatologies to initialise the biogeochemistry as in omipv2, this simulation will be initialised with model tracer fields that have been spun up for at least 2000 years, ideally for 5000 years.  The omipv2-spunup simulations (and spin-ups) will include radiocarbon (abiotic DIC and DI14C). Atmospheric forcing follows JRA-55, inert chemical tracers follow OCMIP2, and biogeochemical tracers follow OCMIP3. Only for modelling groups that have biogeochemistry and are able to afford a millennial-scale spin-up.", 
+            "governing_mips": [
+                "omip"
+            ], 
+            "keywords": "OMIP, Tier 3, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+            "long_name": "OMIP experiment forced by JRA-55 atmospheric data set and initialized from at least a 2000-year spin up of the coupled physical-biogeochemical model", 
+            "mip_era": "cmip6", 
+            "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. Radiocarbon is included to evaluate the deep-ocean circulation.", 
+            "related_experiments": [
+                {
+                    "name": "omip1-spunup", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "omip2", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "omip"
+            ], 
+            "requirements": [
+                "295yrs1958-2016", 
+                "JRA55air-seaFluxes", 
+                "OMIPinertChemicalTracers", 
+                "OMIPBGCTracers", 
+                "O2Constant", 
+                "CO2Historical", 
+                "RadioCTracer", 
+                "salinityDamping", 
+                "SingleMemberEnsemble", 
+                "BGCTracerMillennialSpinUp", 
+                "Ocean-SeaIce-BGCConfig"
+            ], 
+            "tier": 3, 
+            "uid": "875cabae-924b-4cab-bafe-9726d48b13bc", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/omip2-spunup?client=esdoc"
+        }, 
+        "omip1": {
+            "canonical_name": "omip1", 
+            "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Run for a minimum of five repeating cycles of the CORE-II forcing. Groups that are unable to run with biogeochemistry can participate in the physical/chemical portion.", 
+            "governing_mips": [
+                "omip"
+            ], 
+            "keywords": "OMIP, Tier 1, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+            "long_name": "OMIP experiment forced by Large & Yeager (CORE-2, NCEP) atmospheric data set and initialized with observed physical and biogeochemical ocean data", 
+            "mip_era": "cmip6", 
+            "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models.", 
+            "related_experiments": [
+                {
+                    "name": "omip1-spunup", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "omip2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "omip1-spunup", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "omip"
+            ], 
+            "requirements": [
+                "310yrs1948-2009", 
+                "CORE2air-seaFluxes", 
+                "OMIPinertChemicalTracers", 
+                "OMIPBGCTracers", 
+                "O2Constant", 
+                "CO2Historical", 
+                "salinityDamping", 
+                "SingleMemberEnsemble", 
+                "BGCInitialisation", 
+                "BGCTracerInitialisation", 
+                "BGCIronInitialisation", 
+                "Ocean-SeaIceConfiguration", 
+                "Ocean-SeaIce-BGCConfig"
+            ], 
+            "tier": 1, 
+            "uid": "5ed5b5f7-4344-4a90-9d2d-b47bbb8b6875", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/omip1?client=esdoc"
+        }, 
+        "omip2": {
+            "canonical_name": "omip2", 
+            "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  This experiment will use atmospheric state and runoff data based on the JRA-55 reanalysis inter-annually varying atmospheric and river data sets for years 1958-2016 (Kobayashi et al., 2015).   Initial ocean tracer fields are based on observations.", 
+            "governing_mips": [
+                "omip"
+            ], 
+            "keywords": "OMIP, Tier 3, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
+            "long_name": "OMIP experiment forced by JRA-55 atmospheric data set and initialized with observed physical and biogeochemical ocean data", 
+            "mip_era": "cmip6", 
+            "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. JRA-55 has a finer spatial resolution than CORE-II.", 
+            "related_experiments": [
+                {
+                    "name": "omip2-spunup", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "omip1", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "omip2-spunup", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "omip"
+            ], 
+            "requirements": [
+                "295yrs1958-2016", 
+                "JRA55air-seaFluxes", 
+                "OMIPinertChemicalTracers", 
+                "OMIPBGCTracers", 
+                "O2Constant", 
+                "CO2Historical", 
+                "salinityDamping", 
+                "SingleMemberEnsemble", 
+                "BGCInitialisation", 
+                "BGCTracerInitialisation", 
+                "BGCIronInitialisation", 
+                "Ocean-SeaIceConfiguration", 
+                "Ocean-SeaIce-BGCConfig"
+            ], 
+            "tier": 3, 
+            "uid": "aa4d57c4-ea2d-45d0-b651-01877f9b5970", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/omip2?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "OMIPinertChemicalTracers": {
+            "canonical_name": "OMIPinertChemicalTracers", 
+            "description": "Online simulation of CFC11, CFC12 and CF6 inert chemical tracers.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, inert chemical tracers", 
+            "label": "OMIP Inert Chemical Tracers", 
+            "type": "forcing-constraint", 
+            "uid": "1aac541d-6473-42f9-b06e-71dc5d41d920"
+        }, 
+        "310yrs1948-2009": {
+            "canonical_name": "310yrs1948-2009", 
+            "description": "Historical, five repetitions from 1948-2009", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1948-2009, x5", 
+            "label": "1948-2009 310yrs", 
+            "type": "temporal-constraint", 
+            "uid": "9b0c0124-97f4-4b69-ba33-811c5929be67"
+        }, 
+        "RadioCTracer": {
+            "canonical_name": "RadioCTracer", 
+            "description": "Include radiocarbon tracers: abiotic DIC and DI14C, dissolved inorganic carbon and dissolved inorganic carbon-14.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, DIC, dissolved inorganic carbon, DI14C, dissolved inorganic carbon-14, tracer", 
+            "label": "Radio Carbon Tracer", 
+            "type": "forcing-constraint", 
+            "uid": "acdfe647-e222-45e0-b61c-2fa29b851a45"
+        }, 
+        "BGCIronInitialisation": {
+            "canonical_name": "BGCIronInitialisation", 
+            "description": "Iron initialisation based on the GEOTRACES database with data provided by OMIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, iron, initialisation", 
+            "label": "BGCIronInitialisation", 
+            "type": "ensemble", 
+            "uid": "e2505c01-b4a7-4f97-a2f0-f53edb682ac6"
+        }, 
+        "BGCTracerMillennialSpinUp": {
+            "canonical_name": "BGCTracerMillennialSpinUp", 
+            "description": "Initialise ocean biogeochemistry with model tracer fields that have been spun up for at least 2000 years, ideally for 5000 years.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, spin-up, 2000yrs", 
+            "label": "BGCTracerMillennialSpinUp", 
+            "type": "ensemble", 
+            "uid": "a4e5ad7c-c275-4c64-ba08-c1f591ea5121"
+        }, 
+        "OMIPBGCTracers": {
+            "canonical_name": "OMIPBGCTracers", 
+            "description": "Simulation of biogeochemical tracers DIC and ALK.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, biogeochemical tracers", 
+            "label": "OMIP Biogeochemical Tracers", 
+            "type": "forcing-constraint", 
+            "uid": "d80137b2-a289-4fe9-9e30-f560bef44d37"
+        }, 
+        "Ocean-SeaIce-BGCConfig": {
+            "canonical_name": "Ocean-SeaIce-BGCConfig", 
+            "description": "An ocean-sea ice model coupled with a biogeochemistry component", 
+            "isConformanceRequested": false, 
+            "keywords": "OMIP, ocean, sea ice, biogeochemistry,  BGC, configuration", 
+            "label": "Ocean-SeaIce-BioGeoChem Config", 
+            "type": "model-configuration", 
+            "uid": "fbf7bb17-f814-41fb-9e69-7629b1c07aaa"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "JRA55air-seaFluxes": {
+            "canonical_name": "JRA55air-seaFluxes", 
+            "description": "Five repetitions of the JRA-55 air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 59-year period from 1958-2016.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
+            "label": "JRA-55 Air-Sea Fluxes", 
+            "type": "forcing-constraint", 
+            "uid": "f0fbe2a5-bf85-4390-b9f8-8be75b28190d"
+        }, 
+        "CO2Historical": {
+            "canonical_name": "CO2Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2 Historical", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "04912491-ad36-4b40-808a-a82c9f6ab497"
+        }, 
+        "BGCInitialisation": {
+            "canonical_name": "BGCInitialisation", 
+            "description": "Initialisation of biochechemical fields for oxygen, dissolved inorganic nitrogen, phosphorus and silica with data from the Wold Ocean Atlas 2013.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, initialisation", 
+            "label": "BGCInitialisation", 
+            "type": "ensemble", 
+            "uid": "1783bc38-ac74-4f98-86d8-b2d7fd0b47e7"
+        }, 
+        "Ocean-SeaIceConfiguration": {
+            "canonical_name": "Ocean-SeaIceConfiguration", 
+            "description": "A coupled ocean-sea ice model.", 
+            "isConformanceRequested": false, 
+            "keywords": "OMIP, ocean, sea ice, configuration", 
+            "label": "Ocean-SeaIce Configuration", 
+            "type": "model-configuration", 
+            "uid": "7111ba5a-0e65-40ea-b623-4d53d66a2e73"
+        }, 
+        "O2Constant": {
+            "canonical_name": "O2Constant", 
+            "description": "Impose constant atmospheric concentration of oxygen, O2, (mole fraction of 0.20946).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, O2, constant", 
+            "label": "O2 Constant", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "850ff96b-9802-45cc-9f45-972d74063d0a"
+        }, 
+        "salinityDamping": {
+            "canonical_name": "salinityDamping", 
+            "description": "Damp surface ocean salinity to a monthly observational-based climatology.  OMIP does not specify a damping timescale but recommends that modellers consult Appendix C in Danabasoglu et al. (2014) to choose a salinity restoring protocol that is suitable for their model. Choosing a weak salinity restoring is generally preferred to reduce the impact on variability.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, salinity damping, salinity restoring, restore salinity", 
+            "label": "salinity damping", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "e7c03992-ed5e-4b4b-bdce-1c296a127103"
+        }, 
+        "CORE2air-seaFluxes": {
+            "canonical_name": "CORE2air-seaFluxes", 
+            "description": "Five repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
+            "label": "CORE2 Air-Sea Fluxes", 
+            "type": "forcing-constraint", 
+            "uid": "7c382c54-b13b-4a19-9dbc-9ef4dc3f75f4"
+        }, 
+        "295yrs1958-2016": {
+            "canonical_name": "295yrs1958-2016", 
+            "description": "Historical, five repetitions from 1958-2016", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1958-2016, x5", 
+            "label": "1958-2016 295yrs", 
+            "type": "temporal-constraint", 
+            "uid": "41cba73e-6918-4488-a2d7-cf679dc55959"
+        }, 
+        "BGCTracerInitialisation": {
+            "canonical_name": "BGCTracerInitialisation", 
+            "description": "Disolved Inorganic Carbon (DIC) and total alkalinity (ALK) initialisation from GLODAPv2 gridded data.", 
+            "isConformanceRequested": true, 
+            "keywords": "biogeochemical, BGC, tracer, initialisation, DIC, ALK", 
+            "label": "BGCTracerInitialisation", 
+            "type": "ensemble", 
+            "uid": "6a0afb0e-e709-4ef1-bb27-688373ba7bb9"
+        }
+    }, 
+    "data_links": {}
+}

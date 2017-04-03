@@ -1,0 +1,1685 @@
+{
+    "mip": {
+        "canonical_name": "cfmip", 
+        "description": "CFMIP is a suite of experiments that investigate the response to idealised perturbations to SSTs, CO2 and Solar Irriadiance in AMIP, aquaplanet (no land) and ESM model configurations.", 
+        "experiments": [
+            "amip", 
+            "amip-p4K", 
+            "amip-4xCO2", 
+            "amip-future4K", 
+            "aqua-control", 
+            "aqua-4xCO2", 
+            "aqua-p4K", 
+            "abrupt-solp4p", 
+            "abrupt-solm4p", 
+            "abrupt-2xCO2", 
+            "abrupt-0p5xCO2", 
+            "amip-m4K", 
+            "amip-piForcing", 
+            "piSST", 
+            "piSST-pxK", 
+            "piSST-4xCO2-rad", 
+            "piSST-4xCO2", 
+            "a4SST", 
+            "a4SSTice", 
+            "a4SSTice-4xCO2", 
+            "amip-a4SST-4xCO2", 
+            "amip-lwoff", 
+            "amip-p4k-lwoff", 
+            "aqua-control-lwoff", 
+            "aqua-p4K-lwoff"
+        ], 
+        "keywords": "clouds, feedback, regional-scale precipitation, non-linear change", 
+        "long_name": "Cloud Feedback Model Intercomparison Project", 
+        "label": "CFMIP", 
+        "rationale": "Improving assessments of cloud feedback via (a) improved understanding of cloud-climate feedback mechanisms and (b) better evaluation of clouds and cloud feedback in climate models. Also improving understanding of circulation, regional-scale precipitation, and non-linear changes.", 
+        "uid": "e5dc3560-2d53-445a-857f-1b28a70ccd05", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/cfmip?client=esdoc"
+    }, 
+    "experiments": {
+        "abrupt-0p5xCO2": {
+            "canonical_name": "abrupt-0p5xCO2", 
+            "description": "Impose an instantaneous halvinging of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, 0.5x, CO2, 0.5xCO2, instant, instantanaeous, halving", 
+            "long_name": "Abrupt halving of the atmospheric concentration of carbon dioxide", 
+            "mip_era": "cmip6", 
+            "rationale": "To examine how the balance of mechanisms differ for high-forcing compared to low forcing scenarios or paleoclimate simulations?", 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "Abrupt0.5xCO2", 
+                "piForcingExcludingCO2", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "7fdfe37e-43b7-4271-8f9a-4986460d1c02", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-0p5xCO2?client=esdoc"
+        }, 
+        "abrupt-2xCO2": {
+            "canonical_name": "abrupt-2xCO2", 
+            "description": "Impose an instantaneous doubling of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, 2x, CO2, 2xCO2, instant, instantaneous, doubling", 
+            "long_name": "Abrupt doubling of the atmospheric concentration of carbon dioxide", 
+            "mip_era": "cmip6", 
+            "rationale": "To examine to what extent is regional-scale climate change per CO2 doubling state dependent (nonlinear), and why? To examine how the balance of mechanisms differ for high-forcing compared to low forcing scenarios or paleoclimate simulations?", 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "Abrupt2xCO2", 
+                "piForcingExcludingCO2", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "14a73a4f-b84c-4625-85f3-3f74fc47a1ef", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-2xCO2?client=esdoc"
+        }, 
+        "aqua-p4K": {
+            "canonical_name": "aqua-p4K", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7c. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose a uniform +4K perturbation to the zonally uniform SSTs of the aquaControl, on a planet without continents.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, aquaplanet, +4K, zonal SSTs, no sea ice", 
+            "long_name": "aquaplanet plus 4K SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "Aquaplanet: Examine the response of clouds and precipitation to global warming. Aqua-planet experiments examine model differences and responses under simplified conditions.", 
+            "related_experiments": [
+                {
+                    "name": "aqua-p4K-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "aqua-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "10yrs1979-1989", 
+                "zonalSSTp4K", 
+                "noSeaIce", 
+                "AMIPIIGHG", 
+                "AMIPIIOzone", 
+                "perpetualEquinox", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration", 
+                "aquaplanetConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "b1f4350d-4f3a-4953-8c39-9f11b70d0dfa", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/aqua-p4K?client=esdoc"
+        }, 
+        "amip-lwoff": {
+            "canonical_name": "amip-lwoff", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 3.3.   \nAMIP forcing but with cloud-radiative effects switched off in the LW radiation code.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, amip, CFMIP diagnostic, no longwave cloud-radiative effects", 
+            "long_name": "AMIP SSTs with longwave cloud-radiative effects off", 
+            "mip_era": "cmip6", 
+            "rationale": "Understand the role of cloud-radiative effects in the large-scale atmospheric circulation in current and perturbed climates.", 
+            "related_experiments": [
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip-future4K", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "CFMIPDiagnostics", 
+                "lwRadOff", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "af20c84a-35b1-4b5a-9013-3039390c286e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-lwoff?client=esdoc"
+        }, 
+        "amip-m4K": {
+            "canonical_name": "amip-m4K", 
+            "description": "AMIP experiment where SSTs are subject to a uniform cooling of 4K. This cooling should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST-4K, SST cooling by 4K, cloud response", 
+            "long_name": "AMIP minus 4K SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "To examine whether cloud feedbacks are symmetric when subject to climate cooling rather than warming.", 
+            "related_experiments": [
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "uniformSSTm4K", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "26ff4dc9-6c52-45e3-8c42-0afc828cc787", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-m4K?client=esdoc"
+        }, 
+        "abrupt-solm4p": {
+            "canonical_name": "abrupt-solm4p", 
+            "description": "Same as abrupt-solp4p, except the solar constant is reduced by 4% rather than increased.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, abrupt solar decrease, -4%", 
+            "long_name": "Abrupt 4 percent decrease of the solar constant", 
+            "mip_era": "cmip6", 
+            "rationale": "In combination with the abruptSp4 experiment this will allow the examination of feedback asymmetry under climate cooling. To help with the interpretation of model responses to geo-engineering scenarios and volcanic forcing, and relate to past climates.", 
+            "related_experiments": [
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "abruptm4pcSol", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2solar", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "47d22889-6f34-4eab-b257-bb29f5ff0572", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-solm4p?client=esdoc"
+        }, 
+        "a4SST": {
+            "canonical_name": "a4SST", 
+            "description": "As piSST, but with monthly-varying SSTs taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl. Sea-ice is unchaged from the piSST.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST pattern anomaly, piSST, abrupt4xCO2, piControl", 
+            "long_name": "control plus warming pattern SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "abrupt4xCO2SST", 
+                "piControlSICMnthlyVar", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "1095349a-9623-4f1c-a404-3440f5effdc5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/a4SST?client=esdoc"
+        }, 
+        "a4SSTice-4xCO2": {
+            "canonical_name": "a4SSTice-4xCO2", 
+            "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST pattern anomaly, sea ice anomaly, piSST, abrupt4xCO2, piControl", 
+            "long_name": "control plus warming pattern SSTs and SIC with 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "a4SSTice", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "abrupt4xCO2SST", 
+                "abrupt4xCO2SIC", 
+                "4xCO2Radiation", 
+                "4xCO2Veg", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "36c74639-f510-4654-a3d6-2ada08700d0e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/a4SSTice-4xCO2?client=esdoc"
+        }, 
+        "piSST-4xCO2": {
+            "canonical_name": "piSST-4xCO2", 
+            "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) with quadrupled CO2 concentration seen by the radiation code and the vegetation code. Other atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off and the vegetation distribution that is output from the piControl simulation used.\nSame as piSST-control but CO2 is quadrupled. The increase in CO2 is seen by both the radiation scheme and vegetation.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, Pre-industrial SST and SIC, PI forcing, 4xCO2 radiation, 4xCO2 vegetation", 
+            "long_name": "control SSTs with 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand regional climate responses to CO2 forcing.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "piControlSSTMnthlyVar", 
+                "piControlSICMnthlyVar", 
+                "4xCO2Radiation", 
+                "4xCO2Veg", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piControlVegDist", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "98c1d0ee-0c61-4d38-8d99-bd98ad56fc54", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-4xCO2?client=esdoc"
+        }, 
+        "a4SSTice": {
+            "canonical_name": "a4SSTice", 
+            "description": "As piSST, but with monthly-varying SSTs and sea ice taken from years 111-140 of each model's own abrupt4xCO2 experiment instead of from piControl.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST pattern anomaly, sea ice anomaly, piSST, abrupt4xCO2, piControl", 
+            "long_name": "control plus warming pattern SSTs and SIC", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "a4SSTice-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "abrupt4xCO2SST", 
+                "abrupt4xCO2SIC", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "4d4a5031-c185-4048-b5d7-9516dcffd94f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/a4SSTice?client=esdoc"
+        }, 
+        "amip-a4SST-4xCO2": {
+            "canonical_name": "amip-a4SST-4xCO2", 
+            "description": "Same as amip, but a patterned SST anomaly is applied on top of the monthly-varying amip SSTs. This anomaly is a monthly climatology, taken from each model's own abrupt4xCO2 run minus piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl). CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST pattern anomaly, AMIP SIC, abrupt4xCO2, piControl, 4xCO2 vegetation, 4xCO2 radiation, amip", 
+            "long_name": "AMIP plus warming pattern SSTs with 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipPatternedSST4xCO2piControlDiff", 
+                "amipSIC", 
+                "4xCO2Radiation", 
+                "4xCO2Veg", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "dff5e773-43c2-4ee0-9959-854797a45f9f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-a4SST-4xCO2?client=esdoc"
+        }, 
+        "amip-piForcing": {
+            "canonical_name": "amip-piForcing", 
+            "description": "AMIP experiment (with SSTs and Sea Ice the same as in the amip experiment in the DECK) but with constant pre-industrial forcing levels (anthropogenic & natural) and run from 1870-present.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, AMIP SST and SIC, pre-industrial forcing.", 
+            "long_name": "AMIP SSTs with control forcing", 
+            "mip_era": "cmip6", 
+            "rationale": "To examine whether climate feedbacks during the 20th century are different to those acting on long term climate change and climate sensitivity.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "145yrs1870-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "2326d4cc-58cd-4e6d-8130-08a9a2eabf9b", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-piForcing?client=esdoc"
+        }, 
+        "piSST-pxK": {
+            "canonical_name": "piSST-pxK", 
+            "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) but with a spatially and temporally uniform SST amomaly applied on top of the monthly-varying piSST-control SSTs.  The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt4xCO2 and the piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl).  Atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off and the vegetation distribution that is output from the piControl simulation used.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, Pre-industrial SST plus xK, PI forcing", 
+            "long_name": "control plus xK SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand regional climate responses to CO2 forcing.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "piControlSSTMnthlyVarPlusUniformxK", 
+                "piControlSICMnthlyVar", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piControlVegDist", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "cfd70983-7123-413f-b15f-e4e6ce5c1406", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-pxK?client=esdoc"
+        }, 
+        "piSST-4xCO2-rad": {
+            "canonical_name": "piSST-4xCO2-rad", 
+            "description": "An AGCM experiment with monthly-varying SSTs and sea-ice taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run) but with quadrupled CO2 concentration seen by the radiation code. Other atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off and the vegetation distribution that is output from the piControl simulation used.\nSame as piSST-control but CO2 as seen by the radiation scheme is quadrupled.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, Pre-industrial SST and SIC, PI forcing, 4xCO2 radiation", 
+            "long_name": "control SSTs with radiation-only seeing 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand regional climate responses to CO2 forcing.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "piControlSSTMnthlyVar", 
+                "piControlSICMnthlyVar", 
+                "4xCO2Radiation", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piControlVegDist", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "eb29ff74-874a-4c6d-8e80-ec0254bf1b8f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-4xCO2-rad?client=esdoc"
+        }, 
+        "amip-p4k-lwoff": {
+            "canonical_name": "amip-p4k-lwoff", 
+            "description": "Continuation of CFMIP-2 amip4K experiment and CMIP5 experiment 6.8.  Add a uniform +4 K to the sea surface temperatures (SSTs) of the AMIP experiment but with cloud-radiative effects switched off in the LW radiation code. The SST warming should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, SST+4K, SST warming by 4K, no longwave cloud-radiative effects", 
+            "long_name": "AMIP plus 4K SSTs with longwave cloud radiative effects off", 
+            "mip_era": "cmip6", 
+            "rationale": "Understand the role of cloud-radiative effects in the large-scale atmospheric circulation in current and perturbed climates.", 
+            "related_experiments": [
+                {
+                    "name": "amip", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "uniformSSTp4K", 
+                "amipSIC", 
+                "lwRadOff", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8ff7a328-e031-49f1-862c-68be2c5648e8", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-p4k-lwoff?client=esdoc"
+        }, 
+        "piSST": {
+            "canonical_name": "piSST", 
+            "description": "An AGCM experiment with monthly-varying SSTs, sea-ice, atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each model's own piControl simulation (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run).  Dynamic vegetation should be turned off in all the piSST set of experiments and the vegetation distribution that is output from the piControl simulation used.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, Pre-industrial SST and SIC, PI forcing", 
+            "long_name": "control SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand regional climate responses to CO2 forcing.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "a4SSTice", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "a4SST", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_control_for"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "30yrs1960-1989", 
+                "piControlSSTMnthlyVar", 
+                "piControlSICMnthlyVar", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piControlVegDist", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "bd83c36e-8b04-4e60-8fa4-7c4dcc993b78", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST?client=esdoc"
+        }, 
+        "aqua-control-lwoff": {
+            "canonical_name": "aqua-control-lwoff", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7a. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents but with cloud-radiative effects switched off in the LW radiation code.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, aquaplanet, control, zonal SSTs, no sea ice, no longwave cloud-radiative effects", 
+            "long_name": "aquaplanet with longwave cloud radiative effects off", 
+            "mip_era": "cmip6", 
+            "rationale": "Understand the role of cloud-radiative effects in the large-scale atmospheric circulation in current and perturbed climates.", 
+            "related_experiments": [
+                {
+                    "name": "amip", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "aqua-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "10yrs1979-1989", 
+                "zonalSST", 
+                "noSeaIce", 
+                "lwRadOff", 
+                "AMIPIIGHG", 
+                "AMIPIIOzone", 
+                "perpetualEquinox", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration", 
+                "aquaplanetConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "981093e7-cf56-444b-a29a-2d284c20dff5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/aqua-control-lwoff?client=esdoc"
+        }, 
+        "aqua-control": {
+            "canonical_name": "aqua-control", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7a. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, aquaplanet, control, zonal SSTs, no sea ice", 
+            "long_name": "Aquaplanet control", 
+            "mip_era": "cmip6", 
+            "rationale": "Aqua-planet control run.  Aqua-planet experiments examine model differences and responses under simplified conditions.", 
+            "related_experiments": [
+                {
+                    "name": "aqua-p4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "aqua-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "aqua-control-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "aqua-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "aqua-p4K", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "10yrs1979-1989", 
+                "zonalSST", 
+                "noSeaIce", 
+                "AMIPIIGHG", 
+                "AMIPIIOzone", 
+                "perpetualEquinox", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration", 
+                "aquaplanetConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "8cf588f6-7988-4ede-bed1-d41c2a7a7fa5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/aqua-control?client=esdoc"
+        }, 
+        "aqua-p4K-lwoff": {
+            "canonical_name": "aqua-p4K-lwoff", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7c. \nAquaplanet (no land) experiment with CO2 set to the AMIP mean concentration and no seasonal cycle.  Impose a uniform +4K perturbation to the zonally uniform SSTs of the aquaControl, on a planet without continents but with cloud-radiative effects switched off in the LW radiation code.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, aquaplanet, +4K, zonal SSTs, no sea ice, no longwave cloud-radiative effects", 
+            "long_name": "aquaplanet plus 4K SSTs with longwave cloud radiative effects off", 
+            "mip_era": "cmip6", 
+            "rationale": "Understand the role of cloud-radiative effects in the large-scale atmospheric circulation in current and perturbed climates.", 
+            "related_experiments": [
+                {
+                    "name": "aqua-control", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "aqua-p4K", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "10yrs1979-1989", 
+                "zonalSSTp4K", 
+                "noSeaIce", 
+                "lwRadOff", 
+                "AMIPIIGHG", 
+                "AMIPIIOzone", 
+                "perpetualEquinox", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration", 
+                "aquaplanetConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "27772d0d-e3bf-44f0-a81c-4ef3d8ceeae8", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/aqua-p4K-lwoff?client=esdoc"
+        }, 
+        "aqua-4xCO2": {
+            "canonical_name": "aqua-4xCO2", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.7b. \nAquaplanet (no land) experiment with CO2 set to 4x the AMIP mean concentration and no seasonal cycle.  Impose zonally uniform SSTs on a planet without continents.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, aquaplanet, 4xCO2, zonal SSTs, no sea ice", 
+            "long_name": "aquaplanet with 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": "Aquaplanet: Examine the fast adjustment of clouds and precipitation to CO2 radiative forcing. Aqua-planet experiments examine model differences and responses under simplified conditions.", 
+            "related_experiments": [
+                {
+                    "name": "aqua-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "10yrs1979-1989", 
+                "zonalSST", 
+                "noSeaIce", 
+                "AMIPIIGHG4xCO2", 
+                "AMIPIIOzone", 
+                "perpetualEquinox", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration", 
+                "aquaplanetConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "d1ad616b-a4a8-431a-b659-25eade2985c2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/aqua-4xCO2?client=esdoc"
+        }, 
+        "amip-4xCO2": {
+            "canonical_name": "amip-4xCO2", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.5. \nAMIP conditions are imposed but the radiation code sees quadrupled CO2, relative to the AMIP. If the carbon cycle remains active, it should continue to \"see\" AMIP CO2, while the radiation should see 4xCO2 with respect to the AMIP experiment.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, 4xCO2, quadrupled carbon dioxide, cloud response", 
+            "long_name": "control SSTs with 4xCO2", 
+            "mip_era": "cmip6", 
+            "rationale": "Determine the fast cloud adjustment to CO2 radiative forcing, which is known to explain part of inter-model differences in cloud response.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "amipx4CO2Radiation", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "cc02c232-55d6-4821-bdb9-32db94039f84", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-4xCO2?client=esdoc"
+        }, 
+        "amip-p4K": {
+            "canonical_name": "amip-p4K", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.8.  Add a uniform +4 K to the sea surface temperatures (SSTs) of the AMIP experiment. This warming should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, SST+4K, SST warming by 4K, cloud response", 
+            "long_name": "AMIP with uniform 4K SS increase", 
+            "mip_era": "cmip6", 
+            "rationale": "Determine the cloud feedbacks and response to an imposed uniform +4K change in SST.", 
+            "related_experiments": [
+                {
+                    "name": "amip-p4k-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "uniformSSTp4K", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "11dccbc0-5208-4407-840e-711d8dc586f1", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-p4K?client=esdoc"
+        }, 
+        "amip-future4K": {
+            "canonical_name": "amip-future4K", 
+            "description": "Continuation of CFMIP-2 AMIP experiments and CMIP5 experiment 6.6.  \nAdd a composite SST warming pattern (derived from coupled models, scaled to a global mean of 4K) to the AMIP sea surface temperatures (SSTs). This warming should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.  The patterned SST forcing dataset is available in a netcdf file called cfmip2_4k_patterned_sst_forcing.vn1.0.nc in the supplementary information for the CMIP6/CFMIP description paper (Webb et. al. 2016).", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 1, patterned SST, +4K, future, cloud response", 
+            "long_name": "AMIP plus warming pattern SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "Determine the cloud feedbacks and responses to a prescribed change in SSTs, and isolate the role of atmospheric processes in the response of clouds and precipitation to global warming.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "patternedSSTp4K", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "86074037-4eb2-4f99-bc25-04385a3520ab", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-future4K?client=esdoc"
+        }, 
+        "abrupt-solp4p": {
+            "canonical_name": "abrupt-solp4p", 
+            "description": "Conceptually similar to the abrupt 4xCO2 DECK experiment, except that the solar constant rather than CO2 is abruptly increased by 4%.", 
+            "governing_mips": [
+                "cfmip"
+            ], 
+            "keywords": "CFMIP, Tier 2, abrupt solar increase, +4%", 
+            "long_name": "Abrupt 4 percent increase of the solar constant", 
+            "mip_era": "cmip6", 
+            "rationale": "To provide a useful complement to the DECK abrupt4xCO2 experiment. To examine responses in the climate sytem due to changes in solar forcing and how they differ from changes due to CO2.", 
+            "related_experiments": [
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cfmip"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "abruptp4pcSol", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2solar", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "dba68cdb-5ba1-4200-8eab-e11054c4dece", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-solp4p?client=esdoc"
+        }, 
+        "amip": {
+            "canonical_name": "amip", 
+            "description": "An atmosphere only climate simulation using prescribed sea surface temperature and sea ice concentrations but with other conditions as in the Historical simulation.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), Atmosphere,  historical SST", 
+            "long_name": "Atmospheric Model Intercomparison Project", 
+            "mip_era": "cmip6", 
+            "rationale": "AMIP baseline simulation for model evaluation and variability.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-m4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-piForcing", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hld", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP-nosh", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-future4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lfmip-pdLC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "amip-lfmip-pObs", 
+                    "relationship": "is_constrainer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "cfmip", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "f1048bbe-5eef-4dda-88ca-d1053cf9ea18", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "lwRadOff": {
+            "canonical_name": "lwRadOff", 
+            "description": "Switch off cloud-radiative effects in the long wave part of the radiation code.", 
+            "isConformanceRequested": true, 
+            "keywords": "cloud longwave radiation off", 
+            "label": "LW Cloud Radiation Off", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "265d35fa-de54-4018-9df8-b8fad7b11be4"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "AGCMConfiguration": {
+            "canonical_name": "AGCMConfiguration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "8eb19b91-45fc-4199-911b-0e7338979cd3"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "AMIPIIGHG": {
+            "canonical_name": "AMIPIIGHG", 
+            "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations: CO2: 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Green House Gas, GHG AMIPII, radiatively active trace gas", 
+            "label": "AMIP II GHG", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "e3dd73ba-2e4e-443d-a5ad-9b1eee378976"
+        }, 
+        "patternedSSTp4K": {
+            "canonical_name": "patternedSSTp4K", 
+            "data_link": "The Cloud Feedback Model Intercomparison Project (CFMIP) contribution to CMIP6", 
+            "description": "Add a composite SST warming pattern (derived from coupled models, scaled to a global mean of 4K) to the AMIP sea surface temperatures (SSTs). This warming should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.  The patterned SST forcing dataset is available in a netcdf file called cfmip2_4k_patterned_sst_forcing.vn1.0.nc in the supplementary information for the CMIP6/CFMIP description paper (Webb et. al. 2016).", 
+            "isConformanceRequested": true, 
+            "keywords": "patterned SST warming, amip, 4K", 
+            "label": "AMIP SST plus patterned 4K", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "342dbac5-8cd8-4cca-b384-b2232e45add8"
+        }, 
+        "abruptp4pcSol": {
+            "canonical_name": "abruptp4pcSol", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "Impose an abrupt 4% increase in the solar constant", 
+            "isConformanceRequested": true, 
+            "keywords": "abrupt, solar constant increase, +4%", 
+            "label": "abrupt +4 percent Solar", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "3f0be8d1-d65f-4bcc-bda3-18d9493070a1"
+        }, 
+        "AMIPIIOzone": {
+            "canonical_name": "AMIPIIOzone", 
+            "data_link": "Aqua-Planet Experiment Project Ozone Dataset", 
+            "description": "The ozone distribution is derived from the climatology used in AMIP II (Gates et al., 1999) and is constant in time and symmetric about the equator. This ozone distribution is provided as a netCDF file which is archived on the Earth System Grid and available via the DOI http://dx.doi.org/10.5065/D61834Q6", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIPII, Ozone, climatology", 
+            "label": "AMIP II Ozone", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "3987237f-d62d-4d7c-8887-2eb3655ba16b"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "aquaplanetConfiguration": {
+            "canonical_name": "aquaplanetConfiguration", 
+            "description": "Aquaplanet configuration, without continents.", 
+            "isConformanceRequested": false, 
+            "keywords": "aquaplanet, no continents", 
+            "label": "Aquaplanet Configuration", 
+            "type": "model-configuration", 
+            "uid": "0afbdba8-e4ee-42c7-8960-c5dd01c20ba6"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "amipSST": {
+            "canonical_name": "amipSST", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
+            "label": "AMIP SST", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "d9ca34ea-7add-471e-8c8d-24d57f0a02de"
+        }, 
+        "abrupt4xCO2SIC": {
+            "canonical_name": "abrupt4xCO2SIC", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the abrupt4xCO2 simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, SIC, abrupt4xCO2", 
+            "label": "abrupt-4xCO2 SIC", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "96bf06f7-545e-4909-91ea-64ef35c6e8f4"
+        }, 
+        "CFMIPDiagnostics": {
+            "canonical_name": "CFMIPDiagnostics", 
+            "description": "CFMIP output diagnositcs.", 
+            "isConformanceRequested": false, 
+            "keywords": "CFMIP, diagnostics, output", 
+            "label": "CFMIP Diagnostics", 
+            "type": "forcing-constraint", 
+            "uid": "e7410b15-9d66-434e-b036-4c59d0f1885c"
+        }, 
+        "AMIPIIGHG4xCO2": {
+            "canonical_name": "AMIPIIGHG4xCO2", 
+            "description": "Radiatively active trace gases are well-mixed with mixing ratios following the AMIP II recommendations but with CO2 concentration quadrupled: CO2: 4 x 348 ppmv; CH4: 1650 ppbv; N2O: 306 ppbv; Halocarbon yield of approximately 0.24 W m-2 radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Green House Gas, GHG, AMIP II, radiatively active trace gas, 4xCO2", 
+            "label": "AMIP II GHG with 4xCO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a7b16e80-0d20-4c17-ba96-30633ef7f9a8"
+        }, 
+        "4xCO2Radiation": {
+            "canonical_name": "4xCO2Radiation", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to radiative code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, radiation code only", 
+            "label": "4xCO2 for Radiation", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "6789980f-4051-40b6-ae1c-58dc01bf41c0"
+        }, 
+        "10yrs1979-1989": {
+            "canonical_name": "10yrs1979-1989", 
+            "description": "Begin in 1979 and run for 10 years after a few months of spin up.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1979-1989", 
+            "label": "1979-1988 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "73ebd884-2df3-40d4-82ec-5edca0db9fe9"
+        }, 
+        "piControlSICMnthlyVar": {
+            "canonical_name": "piControlSICMnthlyVar", 
+            "description": "Monthly-varying sea ice concentrations from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea ice concentration, piControl, pre-industrial control, SIC, monthly-varying", 
+            "label": "piControl SIC Monthly Var", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "12b6aa03-f0e4-4613-8094-352312d92e3c"
+        }, 
+        "Abrupt0.5xCO2": {
+            "canonical_name": "Abrupt0.5xCO2", 
+            "description": "Impose an instantaneous halving of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "0.5x, CO2, 0.5xCO2, instant, instantaneous, halving, decrease CO2", 
+            "label": "Abrupt 0.5xCO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "554046cf-a826-4193-b78c-f871e24917e1"
+        }, 
+        "150yrs1850-1999": {
+            "canonical_name": "150yrs1850-1999", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint", 
+            "uid": "a32b5c20-1e82-4fe6-b1cf-3ebd145fd9d8"
+        }, 
+        "uniformSSTm4K": {
+            "canonical_name": "uniformSSTm4K", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "AMIP sea surface temperature boundary conditions derived from observational data, minus uniform 4K.", 
+            "isConformanceRequested": true, 
+            "keywords": "Sea surface temperature, AMIP, climate, modelling, SST, prescribed, minus 4K", 
+            "label": "AMIP SST minus uniform 4K", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "9b294866-b843-4056-9591-212da73ad9d0"
+        }, 
+        "PreIndustrialCO2": {
+            "canonical_name": "PreIndustrialCO2", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "36b8469f-b8e0-4a9a-bae6-6aadb1552d88"
+        }, 
+        "abruptm4pcSol": {
+            "canonical_name": "abruptm4pcSol", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "Impose an abrupt 4% decrease in the solar constant", 
+            "isConformanceRequested": true, 
+            "keywords": "abrupt, solar constant decrease, -4%", 
+            "label": "abrupt -4 percent Solar", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d7dde2c8-7056-4567-af84-4c0dea7234e3"
+        }, 
+        "piControlVegDist": {
+            "canonical_name": "piControlVegDist", 
+            "description": "Vegetation distribution prescribed from the output of the piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "vegetation, vegetation distribution, piControl, pre-industrial control", 
+            "label": "piControl Vegetation Distribution", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "c73fcacb-7db1-40bc-aa5e-ced9126fc2d9"
+        }, 
+        "HistoricalEmissions": {
+            "canonical_name": "HistoricalEmissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint", 
+            "uid": "9afcc46a-076c-4086-ab4f-73b9834afbb3"
+        }, 
+        "zonalSST": {
+            "canonical_name": "zonalSST", 
+            "description": "Impose non-varying and zonally-uniform distribution of SST as specified in appendix B of Webb et. al., 2016.", 
+            "isConformanceRequested": true, 
+            "keywords": "zonally uniform, SST", 
+            "label": "Zonally Uniform SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "0b63525b-b7f5-4c50-acc3-1187ce856ffd"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "abrupt4xCO2SST": {
+            "canonical_name": "abrupt4xCO2SST", 
+            "description": "Monthly-varying sea surface temperature from years 111 to 140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, SST, abrupt4xCO2", 
+            "label": "abrupt-4xCO2 SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "a6f6ba73-ce37-43a1-b52b-2918134101d8"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "amipx4CO2Radiation": {
+            "canonical_name": "amipx4CO2Radiation", 
+            "description": "Quadrupled AMIP CO2 concentration seen by radiative code only.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, concentration, amip x4 CO2, radiation code only", 
+            "label": "AMIP CO2 x4 for Radiation", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d4c65f27-7f0b-4ff5-aa9c-019721486762"
+        }, 
+        "zonalSSTp4K": {
+            "canonical_name": "zonalSSTp4K", 
+            "description": "Impose a +4K perturbation to the aquacontrol zonally-uniform distribution of SST.", 
+            "isConformanceRequested": true, 
+            "keywords": "zonally uniform, SST, +4K", 
+            "label": "Zonally Uniform SST +4K", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "b2529976-f9ac-4170-b1d7-9a8a717f5682"
+        }, 
+        "piControlSSTMnthlyVar": {
+            "canonical_name": "piControlSSTMnthlyVar", 
+            "description": "Monthly-varying sea surface temperatures from years 111 to 140 of the pre-industrial control (piControl) experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying", 
+            "label": "piControl SST Monthly Var", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "f2988980-4600-4646-a5f8-d1ca3aeaa719"
+        }, 
+        "Abrupt2xCO2": {
+            "canonical_name": "Abrupt2xCO2", 
+            "description": "Impose an instantaneous doubling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "2x, CO2, 2xCO2, instant, instantaneous, doubling, increase CO2", 
+            "label": "Abrupt 2xCO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "83bd6f4e-4310-4d12-a21c-4aa54839831b"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "4xCO2Veg": {
+            "canonical_name": "4xCO2Veg", 
+            "description": "Impose a quadrupling of pre-industrial carbon dioxide (CO2) concentrations to vegetation code.", 
+            "isConformanceRequested": true, 
+            "keywords": "4xCO2, concentration, pre-industrial, vegetation code only", 
+            "label": "4xCO2 for Vegetation", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "30fc5060-623d-46a5-b937-43b4ad3a1a7c"
+        }, 
+        "piForcingExcludingCO2solar": {
+            "canonical_name": "piForcingExcludingCO2solar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "type": "forcing-constraint", 
+            "uid": "63b7deb8-97ae-4d02-a451-b0ec1b0ec776"
+        }, 
+        "30yrs1960-1989": {
+            "canonical_name": "30yrs1960-1989", 
+            "description": "Run for the 30 years corresponding to years 111-140 of the abrupt-4xCO2 simulation.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1960-1989", 
+            "label": "1960-1989 30yrs", 
+            "type": "temporal-constraint", 
+            "uid": "b3abe55c-0802-4327-9c13-129773d94916"
+        }, 
+        "piControlSSTMnthlyVarPlusUniformxK": {
+            "canonical_name": "piControlSSTMnthlyVarPlusUniformxK", 
+            "description": "A uniform SST increase taken from each model's global, climatological annual mean SST change between abrupt4xCO2 and the piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30-year section of piControl).", 
+            "isConformanceRequested": true, 
+            "keywords": "sea surface temperature, piControl, pre-industrial control, SST, monthly-varying, plus uniform SST xK, SST +xK", 
+            "label": "piControl SST Monthly Var Plus Uniform xK", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d1d0cc4e-f5fb-470d-b849-dd62edbc3b37"
+        }, 
+        "uniformSSTp4K": {
+            "canonical_name": "uniformSSTp4K", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "AMIP sea surface temperature boundary conditions derived from observational data, plus uniform 4K.\nThis warming should be applied to the ice free ocean surface only.  Sea ice and SSTs under sea ice remain the same as in the amip DECK experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "Sea surface temperature, AMIP, climate, modelling, SST, prescribed, plus 4K", 
+            "label": "AMIP SST Plus Uniform 4K", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "f154fcac-ca5c-4799-8656-59dd97ede62e"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "amipSIC": {
+            "canonical_name": "amipSIC", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
+            "label": "AMIP SIC", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "4080ff9b-e841-48d4-9079-5b820f99156d"
+        }, 
+        "145yrs1870-2014": {
+            "canonical_name": "145yrs1870-2014", 
+            "description": "Historical temporal constraint, pre-industrial to 2014", 
+            "isConformanceRequested": false, 
+            "keywords": "1870, 2014", 
+            "label": "1870-2014 145yrs", 
+            "type": "temporal-constraint", 
+            "uid": "dbdb18c3-2fb6-4c6e-83a3-f3347a71d450"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "perpetualEquinox": {
+            "canonical_name": "perpetualEquinox", 
+            "description": "Apply perpetual equinoctial conditions (no seasonal forcing).", 
+            "isConformanceRequested": true, 
+            "keywords": "perpetual equinoctial conditions, perpetual equinox, no seasonal forcing.", 
+            "label": "perpetual Equinox", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "81575f4a-d6ea-4e93-bae1-7d0c51d3a4e6"
+        }, 
+        "36yrs1979-2014": {
+            "canonical_name": "36yrs1979-2014", 
+            "description": "Historical, Recent past, since satellite observations have been available", 
+            "isConformanceRequested": false, 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
+            "type": "temporal-constraint", 
+            "uid": "82d6be50-30e5-4a3f-b1db-6e10d55c895c"
+        }, 
+        "noSeaIce": {
+            "canonical_name": "noSeaIce", 
+            "description": "No sea ice at high latitudes.  Sea surface temperature should be set to a spatially uniform 0\u00b0C poleward of 60\u00b0.", 
+            "isConformanceRequested": true, 
+            "keywords": "no sea ice", 
+            "label": "No Sea Ice", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "1d09fb27-6c9c-45f4-bdde-d6f099a82728"
+        }, 
+        "amipPatternedSST4xCO2piControlDiff": {
+            "canonical_name": "amipPatternedSST4xCO2piControlDiff", 
+            "description": "A patterned SST anomaly is applied on top of the monthly-varying amip SSTs. This anomaly is a monthly climatology, taken from each model's own abrupt 4xCO2 run minus piControl (using the mean of years 111-140 of abrupt4xCO2, and the parallel 30 year section of piControl).", 
+            "isConformanceRequested": true, 
+            "keywords": "patterned SST warming, amip,  4xCO2-piControl, seasonally varying monthly means.", 
+            "label": "amip SST plus patterned anomaly derived from 4xCO2 - piControl SST change", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "8ac0a6c4-9033-4086-8471-2b664c269bc5"
+        }, 
+        "piForcingExcludingCO2": {
+            "canonical_name": "piForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint", 
+            "uid": "a4591beb-45c4-4e89-841a-47c9fc74703d"
+        }
+    }, 
+    "data_links": {
+        "Aqua-Planet Experiment Project Ozone Dataset": {
+            "protocol": "http", 
+            "description": "An idealized, time-invariant, zonally averaged, zonally symmetric\u200b ozone dataset designed by the Aqua-Planet Experiment\u200b \u200b\u200bP\u200b\u200br\u200b\u200bo\u200b\u200bj\u200b\u200be\u200b\u200bc\u200b\u200bt.", 
+            "linkage": "https://www.earthsystemgrid.org/dataset/ucar.cgd.ccsm4.apeozone_cam3_5_54.html", 
+            "name": "Aqua-Planet Experiment Project Ozone Dataset"
+        }, 
+        "The Cloud Feedback Model Intercomparison Project (CFMIP) contribution to CMIP6": {
+            "protocol": "http", 
+            "description": "The primary objective of CFMIP is to inform future assessments of cloud feedbacks through improved understanding of cloud-climate feedback mechanisms and better evaluation of cloud processes and cloud feedbacks in climate models.", 
+            "linkage": "http://www.geosci-model-dev.net/10/359/2017/", 
+            "name": "The Cloud Feedback Model Intercomparison Project (CFMIP) contribution to CMIP6"
+        }, 
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }, 
+        "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions": {
+            "protocol": "http", 
+            "description": "Specification of the AMIP sea surface temperature and sea ice concentration boundary conditions for CMIP6", 
+            "linkage": "http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/index.php", 
+            "name": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }
+    }
+}

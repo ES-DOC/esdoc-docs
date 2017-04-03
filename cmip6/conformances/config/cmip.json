@@ -1,0 +1,1314 @@
+{
+    "mip": {
+        "canonical_name": "cmip", 
+        "description": "Core experiments for the Climate Model Intercomparison Project.  CMIP includes the DECK (Diagnosis, Evaluation, and Characterization of Klima (Climate)) experiments:  1pctCO2, abrupt-4xCO2, amip, piControl and esm-piControl. CMIP also includes the historical experiments: historical, esm-hist, historical-ext, esm-hist-ext.", 
+        "experiments": [
+            "1pctCO2", 
+            "abrupt-4xCO2", 
+            "amip", 
+            "piControl", 
+            "esm-piControl", 
+            "historical", 
+            "esm-hist", 
+            "historical-ext", 
+            "esm-hist-ext"
+        ], 
+        "keywords": "climate sensitivity, historical reference, control simulations, unforced variability, DECK", 
+        "long_name": "Climate Model Intercomparison Project", 
+        "label": "CMIP", 
+        "rationale": "To maintain continuity and help document basic characteristics of models across different phases of CMIP.", 
+        "uid": "f83db5ce-af53-4c2e-8cf8-ff4f38e49c3d", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/cmip?client=esdoc"
+    }, 
+    "experiments": {
+        "esm-hist-ext": {
+            "canonical_name": "esm-hist-ext", 
+            "description": "Extension beyond 2014 of the CMIP6 historical simulation with atmospheric CO2 concentration calculated. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 2, CMIP6,  Historical, Reference, extension, ESM, Earth System Model", 
+            "long_name": "post-2014 all-forcing simulation with an Earth system model", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip"
+            ], 
+            "requirements": [
+                "Nyrs2014-present", 
+                "HistoricalAerosolForcing", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "ESMHistoricalInitialisation", 
+                "ESMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "86c9d1bb-4e6c-457d-9354-9e04aaa4fbfc", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-hist-ext?client=esdoc"
+        }, 
+        "abrupt-4xCO2": {
+            "canonical_name": "abrupt-4xCO2", 
+            "description": "Impose an instantaneous quadrupling of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), 4xCO2, instantaneous quadrupling, climate sensitivity", 
+            "long_name": "Abrupt quadrupling of the atmospheric concentration of carbon dioxide", 
+            "mip_era": "cmip6", 
+            "rationale": "To evaluate the equilibrium climate sensitivity of the model and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "futureSST-4xCO2-solar", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "Abrupt4XCO2", 
+                "piForcingExcludingCO2solar", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "FiveMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "b67e8d2f-93fc-41d9-91d8-420eac7b0052", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-4xCO2?client=esdoc"
+        }, 
+        "historical-ext": {
+            "canonical_name": "historical-ext", 
+            "description": "Extension beyond 2014 of the CMIP6 historical simulation.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 2, CMIP6, Historical, Reference, extension", 
+            "long_name": "post-2014 all-forcing simulation", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "esm-hist-ext", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip"
+            ], 
+            "requirements": [
+                "Nyrs2014-present", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "f2a01f61-843f-4e31-8965-b5989002a0da", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical-ext?client=esdoc"
+        }, 
+        "esm-hist": {
+            "canonical_name": "esm-hist", 
+            "description": "Simulation of recent past (1850 to 2014) with atmospheric CO2 concentration calculated.\nImpose changing conditions (consistent with observations). To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6,  Historical, Reference, ESM, Earth System Model", 
+            "long_name": "all forcing simulation of the recent past with an Earth system model", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "esm-hist-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "esm-ssp585", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "c4mip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "ESMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "713f15b6-e289-44e9-ba74-0d0e827e42ac", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-hist?client=esdoc"
+        }, 
+        "1pctCO2": {
+            "canonical_name": "1pctCO2", 
+            "description": "1 percent per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK,  Diagnosis Evaluation and Characterization of Klima (Climate), CO2 1 percent per year increase, 1pctCO2, quadrupling, climate sensitivity", 
+            "long_name": "1 percent per year increase in CO2", 
+            "mip_era": "cmip6", 
+            "rationale": "Serves as a consistent and useful benchmark for analysing model transient climate response (TCR). The TCR takes into account the rate of ocean heat uptake which governs the pace of all time-evolving climate change. In Earth System Models (ESMs) that include explicit representation of the carbon cycle this experiment allows the calculation of the transient climate response to cumulative carbon emissions (TCRE) to be calculated.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2to4x-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-1pctCO2to4x-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "1pctCO2-4xext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "c4mip", 
+                "fafmip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "1%yrCO2Increase", 
+                "piForcingExcludingCO2", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "d32e2e12-08cf-4f04-a197-e7723215e047", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/1pctCO2?client=esdoc"
+        }, 
+        "historical": {
+            "canonical_name": "historical", 
+            "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6, Historical, Reference", 
+            "long_name": "all-forcing simulation of the recent past", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-historical-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp460", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6", 
+                "ls3mip", 
+                "lumip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "479ff5ed-9c56-4d1e-98c3-f97a0864e7b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical?client=esdoc"
+        }, 
+        "amip": {
+            "canonical_name": "amip", 
+            "description": "An atmosphere only climate simulation using prescribed sea surface temperature and sea ice concentrations but with other conditions as in the Historical simulation.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), Atmosphere,  historical SST", 
+            "long_name": "Atmospheric Model Intercomparison Project", 
+            "mip_era": "cmip6", 
+            "rationale": "AMIP baseline simulation for model evaluation and variability.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-m4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-piForcing", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hld", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP-nosh", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-future4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lfmip-pdLC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "amip-lfmip-pObs", 
+                    "relationship": "is_constrainer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "cfmip", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "f1048bbe-5eef-4dda-88ca-d1053cf9ea18", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }, 
+        "esm-piControl": {
+            "canonical_name": "esm-piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions and atmospheric CO2 calculated. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate, ESM, Earth System Model", 
+            "long_name": "Pre-Industrial Control Earth System Model", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "c4mip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "ESMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "12840358-fe43-48d8-8964-dcf65f85c7cd", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-piControl?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "AGCMConfiguration": {
+            "canonical_name": "AGCMConfiguration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "8eb19b91-45fc-4199-911b-0e7338979cd3"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "piSolarIrradiance": {
+            "canonical_name": "piSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "Pre-Industrial solar forcing. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes pre-industrial solar forcing (1850-1873 mean).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, pre-industrial, pi, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Pre-Industrial Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "ad92af6c-00f4-4a51-b4e0-dac208cdda46"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "FiveMemberEnsemble": {
+            "canonical_name": "FiveMemberEnsemble", 
+            "description": "An ensemble of five simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
+            "type": "ensemble", 
+            "uid": "065cb41e-ee17-484f-b7b9-a223c6369e73"
+        }, 
+        "165yrs1850-2014": {
+            "canonical_name": "165yrs1850-2014", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint", 
+            "uid": "492d33c9-3317-4333-8890-b8f1e6aae1a9"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "amipSST": {
+            "canonical_name": "amipSST", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
+            "label": "AMIP SST", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "d9ca34ea-7add-471e-8c8d-24d57f0a02de"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "150yrs1850-1999": {
+            "canonical_name": "150yrs1850-1999", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint", 
+            "uid": "a32b5c20-1e82-4fe6-b1cf-3ebd145fd9d8"
+        }, 
+        "ESMHistoricalInitialisation": {
+            "canonical_name": "ESMHistoricalInitialisation", 
+            "description": "Initialisation is from the end of the esm-hist experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "ESMHistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "8e9c0caa-d534-4e26-86b1-98bae932c97d"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }, 
+        "HistoricalEmissions": {
+            "canonical_name": "HistoricalEmissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint", 
+            "uid": "9afcc46a-076c-4086-ab4f-73b9834afbb3"
+        }, 
+        "ESMconfiguration": {
+            "canonical_name": "ESMconfiguration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration", 
+            "uid": "d3c8ebf3-1aa5-4adf-b277-e85aacfce320"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "piForcingExcludingCO2solar": {
+            "canonical_name": "piForcingExcludingCO2solar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "type": "forcing-constraint", 
+            "uid": "63b7deb8-97ae-4d02-a451-b0ec1b0ec776"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "amipSIC": {
+            "canonical_name": "amipSIC", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
+            "label": "AMIP SIC", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "4080ff9b-e841-48d4-9079-5b820f99156d"
+        }, 
+        "Nyrs2014-present": {
+            "canonical_name": "Nyrs2014-present", 
+            "description": "Begin in 2014 and run to the present time", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 2014, present", 
+            "label": "2014-present N yrs", 
+            "type": "temporal-constraint", 
+            "uid": "2e53f4be-bc32-449d-9e32-190f3b65ba1f"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "36yrs1979-2014": {
+            "canonical_name": "36yrs1979-2014", 
+            "description": "Historical, Recent past, since satellite observations have been available", 
+            "isConformanceRequested": false, 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
+            "type": "temporal-constraint", 
+            "uid": "82d6be50-30e5-4a3f-b1db-6e10d55c895c"
+        }, 
+        "Abrupt4XCO2": {
+            "canonical_name": "Abrupt4XCO2", 
+            "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
+            "label": "Abrupt 4xCO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "106b3270-f17e-4f0c-b154-1f4868586a1b"
+        }, 
+        "1%yrCO2Increase": {
+            "canonical_name": "1%yrCO2Increase", 
+            "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1% per year CO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "51dcb9dd-4d4f-49f7-8ddc-cfc5aedb85f8"
+        }, 
+        "piForcingExcludingCO2": {
+            "canonical_name": "piForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint", 
+            "uid": "a4591beb-45c4-4e89-841a-47c9fc74703d"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }
+    }, 
+    "data_links": {
+        "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions": {
+            "protocol": "http", 
+            "description": "Specification of the AMIP sea surface temperature and sea ice concentration boundary conditions for CMIP6", 
+            "linkage": "http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/index.php", 
+            "name": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions"
+        }, 
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }
+    }
+}

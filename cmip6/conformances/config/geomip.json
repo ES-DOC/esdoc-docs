@@ -1,0 +1,1538 @@
+{
+    "mip": {
+        "canonical_name": "geomip", 
+        "description": "GeoMIP experiments apply geoengineering methods that modify stratospheric sulfate aerosol, solar irradiance and cirrus clouds to specified DECK and ScenarioMIP experiments.", 
+        "experiments": [
+            "piControl", 
+            "abrupt-4xCO2", 
+            "ssp585", 
+            "ssp460", 
+            "ssp245", 
+            "G1", 
+            "G6sulfur", 
+            "G6solar", 
+            "G7cirrus", 
+            "piSST-4xCO2-solar", 
+            "futureSST-4xCO2-solar", 
+            "G6SST1", 
+            "G6SST2-sulfur", 
+            "G6SST2-solar", 
+            "G7SST1-cirrus", 
+            "G7SST2-cirrus"
+        ], 
+        "keywords": "geoengineering, sulphur injection, solar, cirrus, albedo", 
+        "long_name": "The Geoengineering Model intercomparison Project", 
+        "label": "GeoMIP", 
+        "rationale": "Assessing the climate system response (including on extreme events) to proposed radiation modification geoengineering schemes by evaluating their efficacies, benefits, and side effects.", 
+        "uid": "e565a0ac-bb6b-4d0d-823a-380d511bd24c", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/geomip?client=esdoc"
+    }, 
+    "experiments": {
+        "G6SST2-sulfur": {
+            "canonical_name": "G6SST2-sulfur", 
+            "description": "Time slice at year 2100 of GeoMIP G6sulfur. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G6sulfur, 2100", 
+            "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6sulfur", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess radiative forcing of G6sulfur after 80 years of simulation.", 
+            "related_experiments": [
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6SST1", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6sulfur", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs2100-2109", 
+                "stratAerPreRCP85-RCP45internal", 
+                "stratAerPreRCP85-RCP45external", 
+                "SSP5-85SST2100", 
+                "SSP5-85SIC2100", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "g6sulfurInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "083aba1c-5f94-43bc-afed-39b2ee215192", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G6SST2-sulfur?client=esdoc"
+        }, 
+        "G1": {
+            "canonical_name": "G1", 
+            "description": "Extended version of GeoMIP experiment G1 (Kravitz et al., 2011).\nBeginning from a preindustrial control simulation (picontrol) the net top of atmospehere (TOA) radiative flux imbalance due to an abrupt quadruping of the CO2 concentration (abrupt4xCO2) would be balanced via a reduction in total solar irradiance. Here, \"balance\" is defined as  the global mean value of top-of-atmosphere net radiative flux being within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation. \nThe G1ext experiment should be run for 50 years, however modelling groups that are not able to extend their previous (G1) model simulation should run experiment G1ext for the full 100 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier 1, G1ext, solar irradiance reduction, abrupt 4xCO2, balance TOA, G1", 
+            "long_name": "abrupt quadrupling of CO2 plus reduction in total solar irradiance", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess extreme events and longer term climate varability in an idealized geoengineering scenario. G1ext will be highly synergistic with single-forcing experiments to be included in the Cloud Feedback MIP (CFMIP) in which total solar irradiance is abruptly increased or decreased. Through comparisons with the CFMIP experiments, G1ext will enable a better understanding of how the Earth System responds to radiative forcing.", 
+            "related_experiments": [
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "futureSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "50yrs1850-1899", 
+                "100yrs1850-1949", 
+                "Abrupt4XCO2", 
+                "solarBalance4xCO2", 
+                "piForcingExcludingCO2solar", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "3f1f837d-ad38-4969-aa27-a0b8f55614a6", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G1?client=esdoc"
+        }, 
+        "ssp245": {
+            "canonical_name": "ssp245", 
+            "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP4.5 global forcing pathway with SSP2 socioeconomic conditions. Radiative forcing reaches a level of 4.5 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP2, RCP4.5, future,  Medium forcing, SSP-based RCP", 
+            "long_name": "update of RCP4.5 based on SSP2", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the medium part of the range of plausible future pathways.", 
+            "related_experiments": [
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "damip", 
+                "dcpp", 
+                "geomip", 
+                "rfmip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp45Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "707142bb-67d6-44c0-966b-92deb1164851", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245?client=esdoc"
+        }, 
+        "G6sulfur": {
+            "canonical_name": "G6sulfur", 
+            "description": "Injection of sulfate aerosol precursors in the equatorial stratosphere to reduce the radiative forcing of the ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).   Geoengineering will be simulated over years 2020 to 2100.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier 1, G6sulfur, G6sulfate, SSP585 to SSP245", 
+            "long_name": "stratospheric sulfate aerosol injection to reduce net forcing from SSP585 to SSP245", 
+            "mip_era": "cmip6", 
+            "rationale": "To evaluate a climate in which geoengineering is used to only partially offset climate change in order to reduce the burden of adaptation. \nAssess the climate effects and inter-model variations of a limited amount of geoengineering as part of a portfolio of responses to climate change.  \nResults to be compared with G6solar to determine differences between sulfate aerosol effects and solar irradiance effects.", 
+            "related_experiments": [
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6solar", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6SST2-sulfur", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "81yrs2020-2100", 
+                "stratAerPreRCP85-RCP45internal", 
+                "stratAerPreRCP85-RCP45external", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2020", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "30db7e29-3e3e-42d7-a29b-deb4530e7b1e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G6sulfur?client=esdoc"
+        }, 
+        "abrupt-4xCO2": {
+            "canonical_name": "abrupt-4xCO2", 
+            "description": "Impose an instantaneous quadrupling of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), 4xCO2, instantaneous quadrupling, climate sensitivity", 
+            "long_name": "Abrupt quadrupling of the atmospheric concentration of carbon dioxide", 
+            "mip_era": "cmip6", 
+            "rationale": "To evaluate the equilibrium climate sensitivity of the model and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "futureSST-4xCO2-solar", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "Abrupt4XCO2", 
+                "piForcingExcludingCO2solar", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "FiveMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "b67e8d2f-93fc-41d9-91d8-420eac7b0052", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-4xCO2?client=esdoc"
+        }, 
+        "G6SST2-solar": {
+            "canonical_name": "G6SST2-solar", 
+            "description": "Time slice at year 2100 of GeoMIP G6solar. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G6solar, 2100", 
+            "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G6solar", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess radiative forcing of G6solar after 80 years of simulation.", 
+            "related_experiments": [
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6SST1", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6solar", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs2100-2109", 
+                "solarRCP85-RCP45", 
+                "SSP5-85SST2100", 
+                "SSP5-85SIC2100", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "g6solarInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "c5f9219b-ae34-4837-96fb-d7a28eab8be3", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G6SST2-solar?client=esdoc"
+        }, 
+        "G7cirrus": {
+            "canonical_name": "G7cirrus", 
+            "description": "Against a background of the ScenarioMIP high forcing (SSP5-85), reduce cirrus cloud optical depth by a constant amount. Geoengineering will be simulated over years 2020 to 2100.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier 1, G7cirrus, decrease SSP585 by 1 W m-2", 
+            "long_name": "G7cirrus \u00ad increase cirrus ice crystal fall speed to reduce net forcing in SSP585 by 1 W m-2", 
+            "mip_era": "cmip6", 
+            "rationale": "To seed cirrus by a constant amount that reduces average global mean temperature in the decade 2020-2029 to that of the decade 1970-1979 (as calculated in a historical run), offsetting a radiative forcing of approximately 1.0 W/m2. \nTo assess robust model response regarding the climate effects of cirrus cloud thinning. \nTo explore inter-model differences in the results can reveal sources of model biases.", 
+            "related_experiments": [
+                {
+                    "name": "G7SST2-cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "81yrs2020-2100", 
+                "increaseCirrusSedimentationVelocity", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2020", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "20809424-e030-400b-9570-07a4d57e48f1", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G7cirrus?client=esdoc"
+        }, 
+        "G7SST1-cirrus": {
+            "canonical_name": "G7SST1-cirrus", 
+            "description": "Time slice at year 2020 of GeoMIP G7cirrus. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G7cirrus, 2020", 
+            "long_name": "SSTs from year 2020 of SSP5-8.5; forcings and other prescribed conditions from year 2020 of SSP5-8.5 + cirrus thinning", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess radiative forcing of G7cirrus at the beginning of the simulation (2020).", 
+            "related_experiments": [
+                {
+                    "name": "G7cirrus", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G7SST2-cirrus", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs2020-2029", 
+                "increaseCirrusSedimentationVelocity", 
+                "SSP5-85SST2020", 
+                "SSP5-85SIC2020", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2020", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "91cb1bc0-b50b-495e-a169-d7157791d4da", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G7SST1-cirrus?client=esdoc"
+        }, 
+        "G6solar": {
+            "canonical_name": "G6solar", 
+            "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing (SSP5-85) to the ScenarioMIP middle forcing (SSP2-45).  Geoengineering will be simulated over years 2020 to 2100.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier 1, G6solar, SSP585 to SSP245", 
+            "long_name": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245", 
+            "mip_era": "cmip6", 
+            "rationale": "To determine the differential effects of sulfate aerosols and solar irradiance reduction, in comparison with G6sulfur.", 
+            "related_experiments": [
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6sulfur", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6SST2-solar", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "81yrs2020-2100", 
+                "solarRCP85-RCP45", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2020", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "a9dfefb0-de84-4fa5-bff5-b14180f9f7a2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G6solar?client=esdoc"
+        }, 
+        "ssp460": {
+            "canonical_name": "ssp460", 
+            "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP6.0 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 6.0 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP6.0, future, Medium forcing, SSP-based RCP", 
+            "long_name": "update of RCP6.0 based on SSP4", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario fills in the range of medium forcing plausible future pathways. The scenario defines the low end of the forcing range for unmitigated SSP baseline scenarios.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "geomip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp60Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "5de5fb58-d596-4345-84f7-e392f5d71541", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp460?client=esdoc"
+        }, 
+        "piSST-4xCO2-solar": {
+            "canonical_name": "piSST-4xCO2-solar", 
+            "description": "Time slice for the first year of the GeoMIP G1 experiment with fixed sea surface temperature climatology calculated from the piControl. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G1", 
+            "long_name": "preindustrial control SSTs with quadrupled CO2 + solar reduction", 
+            "mip_era": "cmip6", 
+            "rationale": "To enable the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
+            "related_experiments": [
+                {
+                    "name": "futureSST-4xCO2-solar", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs1850-1859", 
+                "Abrupt4XCO2", 
+                "solarBalance4xCO2", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "piForcingExcludingCO2solar", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "f9f336e1-b817-480e-8ddf-47a2fb8bb7d7", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-4xCO2-solar?client=esdoc"
+        }, 
+        "G7SST2-cirrus": {
+            "canonical_name": "G7SST2-cirrus", 
+            "description": "Time slice at year 2100 GeoMIP G7cirrus.  Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G7cirrus, 2100", 
+            "long_name": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G7cirrus", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess radiative forcing of G7cirrus after 80 years of simulation.", 
+            "related_experiments": [
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G7SST1-cirrus", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G7cirrus", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs2100-2109", 
+                "increaseCirrusSedimentationVelocity", 
+                "SSP5-85SST2100", 
+                "SSP5-85SIC2100", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "g7cirrusInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8f6012f2-c241-4254-a635-8f8dc7cdc328", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G7SST2-cirrus?client=esdoc"
+        }, 
+        "futureSST-4xCO2-solar": {
+            "canonical_name": "futureSST-4xCO2-solar", 
+            "description": "Time slice at year 100 of the GeoMIP G1 experiment with fixed sea surface temperature climatology calculated from the abrupt-4xCO2 experiment after 100 years. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, G1", 
+            "long_name": "year 100 SSTs from abrupt4xCO2 with quadrupled CO2 + solar reduction", 
+            "mip_era": "cmip6", 
+            "rationale": "To enable the separate calculation of the rapid adjustments and the (slow) feedback response of the climate system to the abrupt4xCO2 plus G1 geoengineering scenario. \nTo assess the radiative forcing of abrupt4xCO2 plus G1 geoengineering.", 
+            "related_experiments": [
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs1950-1959", 
+                "Abrupt4XCO2", 
+                "solarBalance4xCO2", 
+                "abrupt-4xCO2SST100", 
+                "abrupt-4xCO2SIC100", 
+                "piForcingExcludingCO2solar", 
+                "SingleMemberEnsemble", 
+                "g1extInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8ee14180-73ff-4c64-a466-d88671d8ad83", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/futureSST-4xCO2-solar?client=esdoc"
+        }, 
+        "ssp585": {
+            "canonical_name": "ssp585", 
+            "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP5, RCP8.5, future, High forcing, SSP-based RCP", 
+            "long_name": "update of RCP8.5 based on SSP5", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.", 
+            "related_experiments": [
+                {
+                    "name": "ism-ssp585-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "highres-future", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "G6sulfur", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7SST1-cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6solar", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6SST1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp534-over", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "c4mip", 
+                "geomip", 
+                "ismip6", 
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp85Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "35338d2b-4664-46b1-b304-8966860702f7", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp585?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }, 
+        "G6SST1": {
+            "canonical_name": "G6SST1", 
+            "description": "Time slice for the first year of the ScenarioMIP SSP5-85 (high forcing scenario) experiment. Run for 10 years.", 
+            "governing_mips": [
+                "geomip"
+            ], 
+            "keywords": "GeoMIP, Tier2, timeslice, 2020, SSP585", 
+            "long_name": "SSTs, forcings, and other prescribed conditions from year 2020 of SSP5-8.5", 
+            "mip_era": "cmip6", 
+            "rationale": "To assess radiative forcing of G6sulfur and G6solar at the beginning of the simulation (2020).", 
+            "related_experiments": [
+                {
+                    "name": "G6SST2-sulfur", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "G6SST2-solar", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "geomip"
+            ], 
+            "requirements": [
+                "10yrs2020-2029", 
+                "SSP5-85SST2020", 
+                "SSP5-85SIC2020", 
+                "rcp85Forcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2020", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "e8c2a049-623a-474b-8d5c-d129b8aca382", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/G6SST1?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "81yrs2020-2100": {
+            "canonical_name": "81yrs2020-2100", 
+            "description": "Scenario, from 2020 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "2020-2100, future, scenario", 
+            "label": "2020-2100 81yrs", 
+            "type": "temporal-constraint", 
+            "uid": "33fa29c9-9cac-4ef9-85cf-a06e1317269d"
+        }, 
+        "ssp5-85Initialisation2020": {
+            "canonical_name": "ssp5-85Initialisation2020", 
+            "description": "Initialisation is from the beginning of year 2020 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, year 2020, scenario", 
+            "label": "SSP5-85Initialisation2020", 
+            "type": "ensemble", 
+            "uid": "a594f83a-4f64-4d74-9528-07d2ab68bf1f"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "AGCMConfiguration": {
+            "canonical_name": "AGCMConfiguration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "8eb19b91-45fc-4199-911b-0e7338979cd3"
+        }, 
+        "FutureSolarParticleForcing": {
+            "canonical_name": "FutureSolarParticleForcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "e3ac7cf0-6c67-4092-b9c8-8bc4df2a5e22"
+        }, 
+        "piSolarIrradiance": {
+            "canonical_name": "piSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "Pre-Industrial solar forcing. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes pre-industrial solar forcing (1850-1873 mean).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, pre-industrial, pi, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Pre-Industrial Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "ad92af6c-00f4-4a51-b4e0-dac208cdda46"
+        }, 
+        "solarRCP85-RCP45": {
+            "canonical_name": "solarRCP85-RCP45", 
+            "description": "Reduce solar irradiance to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, solar mitigation, SSP5-85 to SSP2-45, solar irradiance reduction", 
+            "label": "Solar RCP85 to RCP45", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "dbd505f9-0e02-4b49-9041-d91d08e7551d"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "FiveMemberEnsemble": {
+            "canonical_name": "FiveMemberEnsemble", 
+            "description": "An ensemble of five simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
+            "type": "ensemble", 
+            "uid": "065cb41e-ee17-484f-b7b9-a223c6369e73"
+        }, 
+        "SSP5-85SST2020": {
+            "canonical_name": "SSP5-85SST2020", 
+            "description": "Sea surface temperature climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2020.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SST, sea surface temperature, 2020", 
+            "label": "SSP5-85 SST 2020", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "3dd07f6c-1059-4cfe-808c-b393c571a1dc"
+        }, 
+        "stratAerPreRCP85-RCP45internal": {
+            "canonical_name": "stratAerPreRCP85-RCP45internal", 
+            "description": "Injection of stratospheric sulfate aerosol precursors to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).  \nModeling groups that have an internal sulfate aerosol treatment should calibrate the radiative response to sulfate aersols individually so that the results will be internally consistent (a procedure that will be more difficult for models that have a complex microphysical treatment of aerosols). Potential methods include a double radation call, once with and once without the stratospheric aerosols, and also the use feedback methods.\nSimulations to be conducted as if the aerosols or aerosol precursors are emitted in a line from 10\u00b0S to 10\u00b0N along a single longitude band (0\u00b0).  The injected aerosols or aerosol precursors should be evenly spread across model layers between 18 and 20 km.  Note that sedimentation processes and self-lofting due to heating are likely to result in the aerosols being distributed between 16-25 km in altitude.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, sulfate mitigation, SSP5-85 to SSP2-45, internal aerosol treatment, stratospheric aerosol precursor injection", 
+            "label": "Internal Stratospheric Aerosol Precursors RCP85 to RCP45", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "65f73515-30bd-4ce1-876f-f362e67ff146"
+        }, 
+        "10yrs2100-2109": {
+            "canonical_name": "10yrs2100-2109", 
+            "description": "Timeslice, begin in 2100 and run for 10 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 2100-2109", 
+            "label": "2100-2109 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "6a30f6a6-7baf-4411-8607-f7aadc582ec9"
+        }, 
+        "100yrs1850-1949": {
+            "canonical_name": "100yrs1850-1949", 
+            "description": "Begin in 1850 and run for 100 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1949", 
+            "label": "1850-1949 100yrs", 
+            "type": "temporal-constraint", 
+            "uid": "4707c219-4b63-4518-a97e-d7119f5e970c"
+        }, 
+        "10yrs2020-2029": {
+            "canonical_name": "10yrs2020-2029", 
+            "description": "Timeslice, begin in 2020 and run for 10 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 2020-2029", 
+            "label": "2020-2029 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "cb403719-debf-4aa2-bca2-f8677adf8f0e"
+        }, 
+        "g6solarInitialisation": {
+            "canonical_name": "g6solarInitialisation", 
+            "description": "Initialisation is made from the final year of the GeoMIP G6solar experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, g6solar", 
+            "label": "G6solarInitialisation", 
+            "type": "ensemble", 
+            "uid": "67462cca-5197-4f86-a198-8806b580a009"
+        }, 
+        "rcp85Forcing": {
+            "canonical_name": "rcp85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "facc5135-2ae3-4d1c-8744-7d95c25575f4"
+        }, 
+        "g1extInitialisation": {
+            "canonical_name": "g1extInitialisation", 
+            "description": "Initialisation is made from the final year of the GeoMIP G1 (G1ext) experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, g1ext", 
+            "label": "G1extInitialisation", 
+            "type": "ensemble", 
+            "uid": "a13babcb-aef8-4b07-9394-6cd6b8677626"
+        }, 
+        "50yrs1850-1899": {
+            "canonical_name": "50yrs1850-1899", 
+            "description": "Begin in 1850 and run for 50 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1899", 
+            "label": "1850-1899 50yrs", 
+            "type": "temporal-constraint", 
+            "uid": "f2cb6751-d323-4ccb-adb1-16b3d7f2a663"
+        }, 
+        "rcp60Forcing": {
+            "canonical_name": "rcp60Forcing", 
+            "description": "Impose RCP6.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 6.0, future, 21st century, SSP1, RCP6.0", 
+            "label": "RCP60 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "b6a3819a-ae6c-45d9-99c6-1d9205dd8c40"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "stratAerPreRCP85-RCP45external": {
+            "canonical_name": "stratAerPreRCP85-RCP45external", 
+            "description": "Injection of stratospheric sulfate aerosol precursors to reduce the radiative forcing of ScenarioMIP high forcing scenario (SSP5-85) to match that of the ScenarioMIP medium forcing scenario (SSP2-45).  \nFor modeling groups that have no dynamical treatment of sulfate aerosols, GeoMIP will provide a data set of aerosol optical depth, as well as ozone fields that are consistent with this aerosol distribution.  Note that the amount of sulfate injection needed for a given model to achieve the goals of this experiment may vary, so modeling groups should scale the aerosol and ozone perturbation fields as necessary.\nSimulations to be conducted as if the aerosols or aerosol precursors are emitted in a line from 10\u00b0S to 10\u00b0N along a single longitude band (0\u00b0).  The injected aerosols or aerosol precursors should be evenly spread across model layers between 18 and 20 km.  Note that sedimentation processes and self-lofting due to heating are likely to result in the aerosols being distributed between 16-25 km in altitude.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, sulfate mitigation, SSP5-85 to SSP2-45, external aerosol data input, stratospheric aerosol precursor injection", 
+            "label": "External Stratospheric Aerosol Precursors RCP85 to RCP45", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "f591c9d6-008a-4342-b8e0-450cfc43c2fd"
+        }, 
+        "150yrs1850-1999": {
+            "canonical_name": "150yrs1850-1999", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint", 
+            "uid": "a32b5c20-1e82-4fe6-b1cf-3ebd145fd9d8"
+        }, 
+        "PIControlSSTClim": {
+            "canonical_name": "PIControlSSTClim", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "3f0df666-b345-4d92-a787-7543ad532bdd"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }, 
+        "g7cirrusInitialisation": {
+            "canonical_name": "g7cirrusInitialisation", 
+            "description": "Initialisation is made from the final year of the GeoMIP G7cirrus experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, g7cirrus", 
+            "label": "G7cirrusInitialisation", 
+            "type": "ensemble", 
+            "uid": "248839be-eff7-4f5f-9eb6-2fdfb2ac2267"
+        }, 
+        "SSP5-85SST2100": {
+            "canonical_name": "SSP5-85SST2100", 
+            "description": "Sea surface temperature climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SST, sea surface temperature, 2100", 
+            "label": "SSP5-85 SST 2100", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "6ec72eab-a504-4834-9ac4-59bf4afd343b"
+        }, 
+        "10yrs1850-1859": {
+            "canonical_name": "10yrs1850-1859", 
+            "description": "Timeslice, begin in 1850 and run for 10 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1859", 
+            "label": "1850-1859 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "ed380cf6-63b4-447f-991c-242b40da8703"
+        }, 
+        "solarBalance4xCO2": {
+            "canonical_name": "solarBalance4xCO2", 
+            "description": "Reduce the solar constant such that the top of atmosphere radiative flux remains within \u00b10.1 W/m2 of the piControl experiment when the CO2 concentration is quadrupled. Specifically, the global mean value of top-of-atmosphere net radiative flux must lie within \u00b10.1 W/m2 of the piControl experiment over an average of years 1-10 of the simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, solar balance, 4xCO2, CO2 quadrupling", 
+            "label": "Solar Balance of 4xCO2", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "bb9dea67-115f-4528-bda3-e6835ec19a65"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "10yrs1950-1959": {
+            "canonical_name": "10yrs1950-1959", 
+            "description": "Timeslice, begin in 1950 and run for 10 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1950-1959", 
+            "label": "1950-1959 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "e92cebf4-d943-4eca-a0a1-04c4f7933cf5"
+        }, 
+        "abrupt-4xCO2SST100": {
+            "canonical_name": "abrupt-4xCO2SST100", 
+            "description": "Sea surface temperature climatology calculated from the DECK abrupt-4xCO2 experiment after 100 years.", 
+            "isConformanceRequested": true, 
+            "keywords": "abrupt-4xCO2 SST, 100 years", 
+            "label": "abrupt-4xCO2 SST year 100", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "49bdbd75-3a41-40cd-b186-42db541c4eef"
+        }, 
+        "SSP5-85SIC2100": {
+            "canonical_name": "SSP5-85SIC2100", 
+            "description": "Sea ice concentration climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SIC, sea ice concentration, 2100", 
+            "label": "SSP5-85 SIC 2100", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "1d70e7eb-c726-4611-a4c1-6835b01c73d9"
+        }, 
+        "86yrs2015-2100": {
+            "canonical_name": "86yrs2015-2100", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint", 
+            "uid": "1a09bd87-123b-40bf-91cb-777f1d0b93bc"
+        }, 
+        "piForcingExcludingCO2solar": {
+            "canonical_name": "piForcingExcludingCO2solar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "type": "forcing-constraint", 
+            "uid": "63b7deb8-97ae-4d02-a451-b0ec1b0ec776"
+        }, 
+        "SSP5-85SIC2020": {
+            "canonical_name": "SSP5-85SIC2020", 
+            "description": "Sea ice concentration climatology calculated from the ScenarioMIP SSP5-85 experiment for the year 2020.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP5-85, SIC, sea ice concentration, 2020", 
+            "label": "SSP5-85 SIC 2020", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "a1577e81-9cbd-422b-8d7d-077609a96bae"
+        }, 
+        "increaseCirrusSedimentationVelocity": {
+            "canonical_name": "increaseCirrusSedimentationVelocity", 
+            "description": "Add a local variable that replaces (in all locations where temperature is colder than 235K) the ice mass mixing ratio in the calculation of the sedimentation velocity with a value that is eight times the original ice mass mixing ratio.\nCirrus seeding to begin in 2020 and continue through to the year 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "GeoMIP, cirrus thinning, increase cirrus sedimentation velocity", 
+            "label": "Increase Cirrus Sedementation Velocity", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "da30be88-7284-4794-8ddb-e29ee0dd60a3"
+        }, 
+        "abrupt-4xCO2SIC100": {
+            "canonical_name": "abrupt-4xCO2SIC100", 
+            "description": "Sea ice concentration climatology calculated from the DECK abrupt-4xCO2 experiment after 100 years.", 
+            "isConformanceRequested": true, 
+            "keywords": "abrupt-4xCO2 SIC, 100 years", 
+            "label": "abrupt-4xCO2 SIC year 100", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "c9989119-5227-470d-b03e-ed22503d098c"
+        }, 
+        "rcp45Forcing": {
+            "canonical_name": "rcp45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "a097e811-3419-4160-bc7c-76a1b7614084"
+        }, 
+        "PIControlSICClim": {
+            "canonical_name": "PIControlSICClim", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "c18f5e1c-4b19-47a7-a3c6-aa1c2efcde9e"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "Abrupt4XCO2": {
+            "canonical_name": "Abrupt4XCO2", 
+            "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
+            "label": "Abrupt 4xCO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "106b3270-f17e-4f0c-b154-1f4868586a1b"
+        }, 
+        "g6sulfurInitialisation": {
+            "canonical_name": "g6sulfurInitialisation", 
+            "description": "Initialisation is made from the final year of the GeoMIP G6sulfur experiment", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, g6sulfur", 
+            "label": "G6sulfurInitialisation", 
+            "type": "ensemble", 
+            "uid": "e6b910ff-594a-4244-860f-b0cf8a3163c6"
+        }, 
+        "FutureSolarIrradiance": {
+            "canonical_name": "FutureSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "6f08fddf-293b-4412-8dc7-4c791a514ee3"
+        }
+    }, 
+    "data_links": {
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }
+    }
+}

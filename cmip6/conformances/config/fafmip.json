@@ -1,0 +1,858 @@
+{
+    "mip": {
+        "canonical_name": "fafmip", 
+        "description": "FAFMIP is a project for comparative analysis of ocean climate change using a suite of experiments that prescribe surface flux perturbations to the ocean component of AOGCMs", 
+        "experiments": [
+            "piControl", 
+            "1pctCO2", 
+            "faf-stress", 
+            "faf-heat", 
+            "faf-water", 
+            "faf-passiveheat", 
+            "faf-all"
+        ], 
+        "keywords": "ocean flux anomalies, sea level projection", 
+        "long_name": "Flux-Anomaly-Forced Model Intercomparison Project", 
+        "label": "FAFMIP", 
+        "rationale": "Explaining the model spread in climate projections of ocean climate change forced by CO2 increase, especially regarding the geographical patterns and magnitude of sea level change, ocean heat uptake, and thermal expansion.", 
+        "uid": "8fef36e4-d604-4a57-b527-fd5838582d67", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/fafmip?client=esdoc"
+    }, 
+    "experiments": {
+        "faf-water": {
+            "canonical_name": "faf-water", 
+            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+            "governing_mips": [
+                "fafmip"
+            ], 
+            "keywords": "FAFMIP, Tier 1, waterFAF, surface freshwater flux anomaly", 
+            "long_name": "control plus perturbative surface flux of water into ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "For comparison with the FAFMIP surface heat flux anomaly experiment.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "fafmip"
+            ], 
+            "requirements": [
+                "70yrs1850-1919", 
+                "1pctCO2FreshWaterFluxAtDoubling", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "ca5b1747-0099-4ae1-a85e-11fed7c76c3f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-water?client=esdoc"
+        }, 
+        "faf-heat": {
+            "canonical_name": "faf-heat", 
+            "description": "Impose surface heat flux anomalies to the ocean, calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+            "governing_mips": [
+                "fafmip"
+            ], 
+            "keywords": "FAFMIP, Tier 1, heatFAF, surface heat flux anomaly", 
+            "long_name": "control plus perturbative surface flux of heat into ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "Heat flux changes are thought to be the main influence on Atlantic Meridional Overturning Circulation (AMOC) change and a major influence on the pattern of sea level change.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "fafmip"
+            ], 
+            "requirements": [
+                "70yrs1850-1919", 
+                "1pctCO2HeatFluxAtDoubling", 
+                "1pctCO2PassiveTracerAtDoubling", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "4966bb28-934e-40d5-a1bf-91a2827c4aa6", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-heat?client=esdoc"
+        }, 
+        "1pctCO2": {
+            "canonical_name": "1pctCO2", 
+            "description": "1 percent per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK,  Diagnosis Evaluation and Characterization of Klima (Climate), CO2 1 percent per year increase, 1pctCO2, quadrupling, climate sensitivity", 
+            "long_name": "1 percent per year increase in CO2", 
+            "mip_era": "cmip6", 
+            "rationale": "Serves as a consistent and useful benchmark for analysing model transient climate response (TCR). The TCR takes into account the rate of ocean heat uptake which governs the pace of all time-evolving climate change. In Earth System Models (ESMs) that include explicit representation of the carbon cycle this experiment allows the calculation of the transient climate response to cumulative carbon emissions (TCRE) to be calculated.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2to4x-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-1pctCO2to4x-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "1pctCO2-4xext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "c4mip", 
+                "fafmip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "1%yrCO2Increase", 
+                "piForcingExcludingCO2", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "d32e2e12-08cf-4f04-a197-e7723215e047", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/1pctCO2?client=esdoc"
+        }, 
+        "faf-stress": {
+            "canonical_name": "faf-stress", 
+            "description": "Impose a perturbation in surface zonal and meridional momentum flux i.e. wind stress.  The stress perturbation is added to the momentum balance of the ocean water surface. The stress perturbation is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Its dominant feature is the increase in westerly windstress in the Southern Ocean. \nImpose pre-industrial atmospheric conditions.  Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+            "governing_mips": [
+                "fafmip"
+            ], 
+            "keywords": "FAFMIP, Tier 1, stressFAF, surface wind stress anomaly", 
+            "long_name": "control plus perturbative surface flux of momentum into ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "Windstress change appears to have the largest effect on sea level in the CMIP5 scenario experiments.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "fafmip"
+            ], 
+            "requirements": [
+                "70yrs1850-1919", 
+                "1pctCO2WindStressAtDoubling", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "09fcf58d-3420-4f47-85a2-2902839a4f83", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-stress?client=esdoc"
+        }, 
+        "faf-all": {
+            "canonical_name": "faf-all", 
+            "description": "Simultaneously apply anomalous fluxes of windstress, heat and freshwater using the passive-tracer method for heat as in the faf-heat experiment.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.", 
+            "governing_mips": [
+                "fafmip"
+            ], 
+            "keywords": "FAFMIP, Tier 2, surface wind stress anomaly, surface heat flux anomaly, surface freshwater anomaly", 
+            "long_name": "control plus perturbative surface fluxes of momentum, heat and water into ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "This experiment shows the combined effect of all surface flux perturbation on sea level and allows linearity to be tested for comaprison with individual surface flux anomalies.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "fafmip"
+            ], 
+            "requirements": [
+                "70yrs1850-1919", 
+                "1pctCO2WindStressAtDoubling", 
+                "1pctCO2HeatFluxAtDoubling", 
+                "1pctCO2PassiveTracerAtDoubling", 
+                "1pctCO2FreshWaterFluxAtDoubling", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "1c8ecd80-f1af-4d20-8dcb-e19eae335977", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-all?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }, 
+        "faf-passiveheat": {
+            "canonical_name": "faf-passiveheat", 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation, calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.\nImpose pre-industrial atmospheric conditions. Branch from the piControl at the same point as the 1pctCO2 experiment.\nThis experiment does not affect the model evolution,  so the experiment is equivalent to the piControl with an extra diagnostic tracer.", 
+            "governing_mips": [
+                "fafmip"
+            ], 
+            "keywords": "FAFMIP, Tier 2, passiveheat, surface heat flux anomaly, passive tracer", 
+            "long_name": "control plus surface flux of passive heat tracer into ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "Heat flux changes are thought to be the main influence on Atlantic Meridional Overturning Circulation (AMOC) change.  Comparison with faf-heat will allow the effect on the distribution of added heat from changes in ocean heat transport to be assessed because these changes do not occur in the faf-passiveheat experiment.", 
+            "related_experiments": [
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "fafmip"
+            ], 
+            "requirements": [
+                "70yrs1850-1919", 
+                "1pctCO2PassiveTracerAtDoubling", 
+                "PreIndustrialCO2", 
+                "piForcingExcludingCO2", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "10819789-b977-47bd-8c45-2840cc712d31", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-passiveheat?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "1pctCO2WindStressAtDoubling": {
+            "canonical_name": "1pctCO2WindStressAtDoubling", 
+            "description": "Impose zonal and meridional momentum flux (wind stress) anomalies to the ocean surface, created from the CMIP5 diagnostics of surface downward fluxes of eastward (tauu) and northward (tauv) momentum. The surface flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability. The stress perturbation is added to the momentum balance of the ocean water surface, it should not directly perturb any turbulent mixing scheme that depends on the windstress and should not be applied to the sea-ice momentum balance, although presumably the sea-ice velocity will be indirectly affected.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, wind stress, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Wind Stress Anomaly At Doubling", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "691d767e-b90c-4e27-b2d7-499fcb4d500e"
+        }, 
+        "1pctCO2PassiveTracerAtDoubling": {
+            "canonical_name": "1pctCO2PassiveTracerAtDoubling", 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Passive Tracer At Doubling", 
+            "type": "forcing-constraint", 
+            "uid": "3f4dc716-87bc-4952-b452-a37852d2b8f2"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "1pctCO2FreshWaterFluxAtDoubling": {
+            "canonical_name": "1pctCO2FreshWaterFluxAtDoubling", 
+            "description": "Impose surface freshwater flux anomalies to the ocean (including the contribution from runoff change), created from the CMIP5 diagnostic of water flux into sea water (wfo).  The surface freshwater flux is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.   Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, freshwater flux, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Fresh Water Flux Anomaly At Doubling", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "9b96d46c-4da4-4caf-aba0-7a42c7f68c24"
+        }, 
+        "1pctCO2HeatFluxAtDoubling": {
+            "canonical_name": "1pctCO2HeatFluxAtDoubling", 
+            "description": "Impose heat flux anomalies to the ocean surface, created from the CMIP5 diagnostic of surface downward heat flux in sea-water (hfds).  The surface heat-flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.  The method for implementing the heat flux anomaly should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Heat Flux Anomaly At Doubling", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "211331ff-7b78-4eb3-9d12-f845ae2dee9b"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "1%yrCO2Increase": {
+            "canonical_name": "1%yrCO2Increase", 
+            "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1% per year CO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "51dcb9dd-4d4f-49f7-8ddc-cfc5aedb85f8"
+        }, 
+        "150yrs1850-1999": {
+            "canonical_name": "150yrs1850-1999", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint", 
+            "uid": "a32b5c20-1e82-4fe6-b1cf-3ebd145fd9d8"
+        }, 
+        "70yrs1850-1919": {
+            "canonical_name": "70yrs1850-1919", 
+            "description": "Historical, from 1850 to 1920.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1850, 1919", 
+            "label": "1850-1919 70yrs", 
+            "type": "temporal-constraint", 
+            "uid": "b0b9f7a4-c47b-4110-b58d-ce9df272f07f"
+        }, 
+        "piForcingExcludingCO2": {
+            "canonical_name": "piForcingExcludingCO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint", 
+            "uid": "a4591beb-45c4-4e89-841a-47c9fc74703d"
+        }, 
+        "PreIndustrialCO2": {
+            "canonical_name": "PreIndustrialCO2", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "36b8469f-b8e0-4a9a-bae6-6aadb1552d88"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }
+    }, 
+    "data_links": {
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }
+    }
+}

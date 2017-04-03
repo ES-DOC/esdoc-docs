@@ -1,0 +1,569 @@
+{
+    "mip": {
+        "canonical_name": "scenariomip", 
+        "description": "ScenarioMIP simulates climate outcomes based on alternative plausible future scenarios.", 
+        "experiments": [
+            "ssp585", 
+            "ssp370", 
+            "ssp245", 
+            "ssp126", 
+            "ssp460", 
+            "ssp434", 
+            "ssp534-over", 
+            "sspXY"
+        ], 
+        "keywords": "climate, modelling, climate change, future, scenario, high forcing, low forcing, medium forcing, overshoot scenarios, 1.5\u00b0C, Paris COP21 Agreement", 
+        "long_name": "Scenario Model Intercomparison Project", 
+        "label": "ScenarioMIP", 
+        "rationale": "(a) Facilitating integrated research on the impact of plausible future scenarios over physical and human systems, and on mitigation and adaptation options; (b) addressing targeted studies on the effects of particular forcings in collaboration with other MIPs; (c) help quantifying projection uncertainties based on multi-model ensembles and emergent constraints.", 
+        "uid": "946932cc-6e96-4a9d-8c31-c5b09aa988c5", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/scenariomip?client=esdoc"
+    }, 
+    "experiments": {
+        "ssp370": {
+            "canonical_name": "ssp370", 
+            "description": "Gap: Baseline scenario with a medium to high radiative forcing by the end of century. Following approximately RCP7.0 global forcing pathway with SSP3 socioeconomic conditions. Radiative forcing reaches a level of 7.0 W/m2 in 2100.  Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP3, RCP7.0, future, Medium-high forcing, Gap: Baseline", 
+            "long_name": "gap-filling scenario reaching 7.0 based on SSP3", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the medium to high end of plausible future pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baselines.", 
+            "related_experiments": [
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-ssp126Lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowNTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowBC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp70Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "NineMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "1b7a0755-9736-4e80-8f5d-c8a28ba37107", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370?client=esdoc"
+        }, 
+        "ssp245": {
+            "canonical_name": "ssp245", 
+            "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP4.5 global forcing pathway with SSP2 socioeconomic conditions. Radiative forcing reaches a level of 4.5 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP2, RCP4.5, future,  Medium forcing, SSP-based RCP", 
+            "long_name": "update of RCP4.5 based on SSP2", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the medium part of the range of plausible future pathways.", 
+            "related_experiments": [
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "damip", 
+                "dcpp", 
+                "geomip", 
+                "rfmip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp45Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "707142bb-67d6-44c0-966b-92deb1164851", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245?client=esdoc"
+        }, 
+        "ssp434": {
+            "canonical_name": "ssp434", 
+            "description": "Gap: Mitigation scenario with low radiative forcing by the end of the century.  Following approximately RCP3.4 global forcing pathway with SSP4 socioeconomic conditions. Radiative forcing reaches a level of 3.4 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP3.4, future,  Low forcing, Gap: Mitigation", 
+            "long_name": "gap-filling scenario reaching 3.4 based on SSP4", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario fills a gap at the low end of the range of plausible future forcing pathways.  Of interest to mitigation policy, since mitigation costs differ substatially between forcing levels of 4.5 W/m2 and 2.6 W/m2.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp34Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8fa9ed0a-f813-452c-b96e-95d3b4a67bf5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp434?client=esdoc"
+        }, 
+        "sspXY": {
+            "canonical_name": "sspXY", 
+            "description": "SSP-based RCP scenario with very-low forcing by the end of the century.  Forcing will be substantially beolow RCP2.6 in 2100. SSP1-2.0 is a likely candidate for this scenario.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSPX, RCPY, low forcing, probably SSP1, RCP around or below 2.0", 
+            "long_name": "RCPY based on SSPX", 
+            "mip_era": "cmip6", 
+            "rationale": "There is policy interest in scenarios that would inform a possible goal of limiting global mean warming to 1.5\u00b0C above pre-industrial levels based on the Paris COP21 agreement.", 
+            "related_experiments": [
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcpYForcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "63021e70-a9df-4c29-b8af-0a40168a771e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/sspXY?client=esdoc"
+        }, 
+        "ssp534-over": {
+            "canonical_name": "ssp534-over", 
+            "description": "Gap: Mitigated overshoot scenario with medium/low radiative forcing by the end of the 21st century.  The scenario follows SSP5-8.5, an unmitigated baseline scenario, through 2040, and then substantially negative net emissions thereafter.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP5, RCP3.4, RCP8.5, overshoot, future, SSP-based RCP", 
+            "long_name": "RCP3.4 overshoot scenario branching from SSP58.5", 
+            "mip_era": "cmip6", 
+            "rationale": "Explore the climate science and policy implications of a peak and decline in forcing during the 21st century.  This scenario fills a gap in existing climate simulations by investigating the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target.", 
+            "related_experiments": [
+                {
+                    "name": "ssp534-over-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip"
+            ], 
+            "requirements": [
+                "60yrs2040-2099", 
+                "rcp34overForcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "ssp5-85Initialisation2040", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "4372a373-0eed-45e5-b663-dabcac9c5e49", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp534-over?client=esdoc"
+        }, 
+        "ssp460": {
+            "canonical_name": "ssp460", 
+            "description": "SSP-based RCP scenario with medium radiative forcing by the end of the century.  Following approximately RCP6.0 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 6.0 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP6.0, future, Medium forcing, SSP-based RCP", 
+            "long_name": "update of RCP6.0 based on SSP4", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario fills in the range of medium forcing plausible future pathways. The scenario defines the low end of the forcing range for unmitigated SSP baseline scenarios.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "geomip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp60Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "5de5fb58-d596-4345-84f7-e392f5d71541", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp460?client=esdoc"
+        }, 
+        "ssp126": {
+            "canonical_name": "ssp126", 
+            "description": "SSP-based RCP scenario with low radiative forcing by the end of the century.  Following approximately RCP2.6 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 2.6 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP1, RCP2.6, future, Low forcing, SSP-based RCP", 
+            "long_name": "update of RCP2.6 based on SSP1", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the low end of the range of plausible future pathways. The scenario depicts the \"best case\" future from the sustainability perspective.", 
+            "related_experiments": [
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp26Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "afd07a0e-b759-4ee8-abbd-f0bfd6ddd3dd", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp126?client=esdoc"
+        }, 
+        "ssp585": {
+            "canonical_name": "ssp585", 
+            "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP5, RCP8.5, future, High forcing, SSP-based RCP", 
+            "long_name": "update of RCP8.5 based on SSP5", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.", 
+            "related_experiments": [
+                {
+                    "name": "ism-ssp585-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "highres-future", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "G6sulfur", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7SST1-cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6solar", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6SST1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp534-over", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "c4mip", 
+                "geomip", 
+                "ismip6", 
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp85Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "35338d2b-4664-46b1-b304-8966860702f7", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp585?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "rcpYForcing": {
+            "canonical_name": "rcpYForcing", 
+            "description": "Impose RCP Y forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway Y, future, 21st century, SSPX, RCPY", 
+            "label": "RCPY Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "62825565-3d5f-47e1-a549-bbe7308c8979"
+        }, 
+        "rcp34overForcing": {
+            "canonical_name": "rcp34overForcing", 
+            "description": "Impose RCP3.4 overshoot forcing.  Beginning in 2040, reduce forcings from the 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP5, RCP3.4 overshoot", 
+            "label": "RCP34 overshoot Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "4f15c71f-af27-4f6a-97c1-34cbbd77c7d0"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "rcp85Forcing": {
+            "canonical_name": "rcp85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "facc5135-2ae3-4d1c-8744-7d95c25575f4"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "rcp70Forcing": {
+            "canonical_name": "rcp70Forcing", 
+            "description": "Impose RCP7.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
+            "label": "RCP70 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "352736b6-35d1-41e9-bf30-efbb1d5dabf0"
+        }, 
+        "60yrs2040-2099": {
+            "canonical_name": "60yrs2040-2099", 
+            "description": "Scenario, from 2040 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "scenario, 2040-2099", 
+            "label": "2040-2099 60 yrs", 
+            "type": "temporal-constraint", 
+            "uid": "961d3f70-3e62-4591-ac0f-7a2d64273abf"
+        }, 
+        "FutureSolarParticleForcing": {
+            "canonical_name": "FutureSolarParticleForcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "e3ac7cf0-6c67-4092-b9c8-8bc4df2a5e22"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "rcp26Forcing": {
+            "canonical_name": "rcp26Forcing", 
+            "description": "Impose RCP2.6 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6", 
+            "label": "RCP26 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "fa28791e-cc4d-4a09-bf6c-cabda3f29555"
+        }, 
+        "ssp5-85Initialisation2040": {
+            "canonical_name": "ssp5-85Initialisation2040", 
+            "description": "Initialisation is from year 2040 of the SSP5-8.5 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ssp5-8.5, scenario, 2040", 
+            "label": "SSP5-85Initialisation2040", 
+            "type": "ensemble", 
+            "uid": "41f454c1-dc9e-425a-866a-7e564290ce1b"
+        }, 
+        "NineMemberEnsemble": {
+            "canonical_name": "NineMemberEnsemble", 
+            "description": "An ensemble of nine members (if not 9, then as many as possible).", 
+            "isConformanceRequested": false, 
+            "keywords": "nine, 9, ensemble, runs, simulations", 
+            "label": "NineMember", 
+            "type": "ensemble", 
+            "uid": "8036db7b-243a-42c2-8ee8-79c0799257a7"
+        }, 
+        "rcp34Forcing": {
+            "canonical_name": "rcp34Forcing", 
+            "description": "Impose RCP3.4 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP4, RCP3.4", 
+            "label": "RCP34 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "0053f5b2-9556-42c8-be9c-34f9d5e2afac"
+        }, 
+        "rcp60Forcing": {
+            "canonical_name": "rcp60Forcing", 
+            "description": "Impose RCP6.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 6.0, future, 21st century, SSP1, RCP6.0", 
+            "label": "RCP60 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "b6a3819a-ae6c-45d9-99c6-1d9205dd8c40"
+        }, 
+        "rcp45Forcing": {
+            "canonical_name": "rcp45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "a097e811-3419-4160-bc7c-76a1b7614084"
+        }, 
+        "86yrs2015-2100": {
+            "canonical_name": "86yrs2015-2100", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint", 
+            "uid": "1a09bd87-123b-40bf-91cb-777f1d0b93bc"
+        }, 
+        "FutureSolarIrradiance": {
+            "canonical_name": "FutureSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "6f08fddf-293b-4412-8dc7-4c791a514ee3"
+        }
+    }, 
+    "data_links": {
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }
+    }
+}

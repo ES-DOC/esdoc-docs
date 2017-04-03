@@ -1,0 +1,3501 @@
+{
+    "mip": {
+        "canonical_name": "aerchemmip", 
+        "description": "The Aerosol Chemistry Model Intercomparison Project (AerChemMIP) is endorsed by the Coupled-Model Intercomparison Project 6 (CMIP6) and is designed to quantify the climate and air quality impacts of aerosols and chemically-reactive gases. These are specifically near-term climate forcers (NTCFs: methane, tropospheric ozone and aerosols, and their precursors), nitrous oxide and ozone-depleting halocarbons.", 
+        "experiments": [
+            "piControl", 
+            "abrupt-4xCO2", 
+            "historical", 
+            "piClim-control", 
+            "hist-piNTCF", 
+            "hist-piAer", 
+            "hist-1950HC", 
+            "histSST", 
+            "histSST-piNTCF", 
+            "histSST-piAer", 
+            "histSST-piO3", 
+            "histSST-1950HC", 
+            "histSST-piCH4", 
+            "histSST-piN2O", 
+            "ssp370", 
+            "ssp370-lowNTCF", 
+            "ssp370SST", 
+            "ssp370SST-lowNTCF", 
+            "ssp370SST-lowAer", 
+            "ssp370SST-lowBC", 
+            "ssp370SST-lowO3", 
+            "ssp370SST-lowCH4", 
+            "ssp370SST-ssp126Lu", 
+            "piClim-NTCF", 
+            "piClim-aer", 
+            "piClim-BC", 
+            "piClim-O3", 
+            "piClim-CH4", 
+            "piClim-N2O", 
+            "piClim-HC", 
+            "piClim-NOX", 
+            "piClim-VOC", 
+            "piClim-2xdust", 
+            "piClim-2xss", 
+            "piClim-2xDMS", 
+            "piClim-2xfire", 
+            "piClim-2xNOX", 
+            "piClim-2xVOC"
+        ], 
+        "keywords": "chemistry, aerosols, NTCF, ERF, WMGHG, forcings and feedbacks", 
+        "long_name": "Aerosols and Chemistry MIP", 
+        "label": "AerChemMIP", 
+        "rationale": "The aim of AerChemMIP is to answer four scientific questions:\n1.            How have anthropogenic emissions contributed to global radiative forcing and affected regional climate over the historical period?\n2.            How might future policies (on climate, air quality and land use) affect the abundances of NTCFs and their climate impacts?\n3.            How do uncertainties in historical NTCF emissions affect radiative forcing estimates?\n4.            How important are climate feedbacks to natural NTCF emissions, atmospheric composition, and radiative effects?", 
+        "uid": "65662d6c-1de0-4af4-8a77-9f57a54fddf9", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/aerchemmip?client=esdoc"
+    }, 
+    "experiments": {
+        "piClim-VOC": {
+            "canonical_name": "piClim-VOC", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors, present day (2014) emissions of CO/VOC, all other emissions of tropospheric ozone precursors set to pre-industrial levels. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 VOC", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 VOC emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "2014COVOC", 
+                "1850nonCOVOCTropO3Pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "9d41fd6b-641c-45c5-975b-2a3b3b6156a4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-VOC?client=esdoc"
+        }, 
+        "histSST-piO3": {
+            "canonical_name": "histSST-piO3", 
+            "description": "Historical atmosphere only simulation with historical WMGHG, transient historical SSTs.  Tropospheric ozone precursors fixed at 1850 emission levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, Historical perturbation,  historical WMGHG, historical SST, 1850 O3 precursors", 
+            "long_name": "historical SSTs and historical forcing, but with pre-industrial ozone precursor emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "HistoricalAerosol", 
+                "HistoricalAerosolPre", 
+                "1850TropO3pre", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "1a37fef6-5662-44d8-a6df-d8ae3fae41c0", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-piO3?client=esdoc"
+        }, 
+        "hist-piAer": {
+            "canonical_name": "hist-piAer", 
+            "description": "Historical WMGHG and Halocarbon concentrations.  Historical ozone precursor emissions (e.g. NOx).  Aerosols and aerosol precursors fixed at 1850 emission levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, Historical perturbation, 1850 aerosol, no Nox", 
+            "long_name": "historical forcing, but with pre-industrial aerosol emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "How have aerosols contributed to global ERF and affected regional climate over the historical period?", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "HistoricalTropO3pre", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "AOGCM-AerConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "b2641ebe-182c-4163-a2e7-1c2d9598a284", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-piAer?client=esdoc"
+        }, 
+        "histSST-piAer": {
+            "canonical_name": "histSST-piAer", 
+            "description": "Historical atmosphere only simulation with historical WMGHG, transient historical SSTs.  Aerosol emissions (except NOx) fixed at 1850 emission levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, Historical perturbation, historical WMGHG, historical SST, 1850 aerosol", 
+            "long_name": "historical SSTs and historical forcing, but with pre-industrial aerosol emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "HistoricalTropO3pre", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCM-AerConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "4ebf90c2-9d56-4417-bbe2-1d9922d3654f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-piAer?client=esdoc"
+        }, 
+        "histSST-piN2O": {
+            "canonical_name": "histSST-piN2O", 
+            "description": "Historical atmoshere only simulation with historical  forcings but with nitrous oxide (N2O) fixed at 1850 concentration levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, Historical perturbation, historical forcings, 1850 N2O, 1850 Nitrous Oxide", 
+            "long_name": "historical SSTs and historical forcings, but with pre-industrial N2O concentrations", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "HistoricalNTCFEmissions", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-StratChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "3e78ef07-3e7c-470d-843d-d763f55a17aa", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-piN2O?client=esdoc"
+        }, 
+        "piClim-NTCF": {
+            "canonical_name": "piClim-NTCF", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases) and present day (2014) emissions of NTCF (near-term climate forcers). This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, piControl perturbation, 1850 WMGHG, 1850 SST, 2014 NTCF, Near Term Climate Forcers,", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 NTCF emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "2014NTCFEmissions", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "3f706ecc-e039-48c9-ae1b-63c6e529757b", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-NTCF?client=esdoc"
+        }, 
+        "piClim-NOX": {
+            "canonical_name": "piClim-NOX", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors, present day (2014) emissions of NOx, all other emissions of tropospheric ozone precursors set to pre-industrial levels. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 Nox", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 NOx emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "2014NOx", 
+                "1850nonNOxTropO3Pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "53779b1f-8ada-43dc-814f-dbe6aca2f304", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-NOX?client=esdoc"
+        }, 
+        "ssp370SST-lowBC": {
+            "canonical_name": "ssp370SST-lowBC", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced black carbon emissions. SSP3 socioeconomic conditions. Atmosphere only with SST from ScenarioMIP experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 reduced black carbon, atmosphere only", 
+            "long_name": "SSP3-7.0, prescribed SSTs, with low black carbon emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To estimate the ERF of black carbon.", 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "ReducedRCP70BC", 
+                "RCP70O3pre", 
+                "RCP70aernoBC", 
+                "RCP70wmGHG", 
+                "RCP70sls", 
+                "RCP70aerpre", 
+                "RCP70land", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "23a6ea10-1dda-4ecc-a0d5-4f5a9f18ba3b", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowBC?client=esdoc"
+        }, 
+        "hist-piNTCF": {
+            "canonical_name": "hist-piNTCF", 
+            "description": "Impose historical WMGHG and halocarbon concentrations. Near Term Climate Forcers (NTCFs), namely tropospheric aerosols and tropospheric ozone precursors, to be  fixed at 1850 emission levels. These simulations parallel the \"CMIP6 historical\", and differ only by fixing the anthropogenic emissions or concentrations of a specified class of species.   All other forcing agents must evolve as in \"CMIP6 historical\".", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical perturbation, 1850 NTCF, Near Term Climate Forcers, Historical WMGHG, Historical HC,  halocarbons", 
+            "long_name": "historical forcing, but with pre-industrial NTCF emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "How have NTCF contributed to global ERF and affected regional climate over the historical period?", 
+            "related_experiments": [
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-1950HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piNTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "1850NTCFEmissions", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "AOGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "6349157b-f77d-40c0-845c-35ce719e8648", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-piNTCF?client=esdoc"
+        }, 
+        "piClim-2xDMS": {
+            "canonical_name": "piClim-2xDMS", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The oceanic DMS (dimethyl sulphide) aerosol emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 DMS", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled emissions of DMS", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "2x1850DMSAer", 
+                "1850nonDMSAer", 
+                "1850AerosolPre", 
+                "1850TropO3pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "e30efbfb-c593-45c5-93ce-aee32e15dc78", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xDMS?client=esdoc"
+        }, 
+        "histSST": {
+            "canonical_name": "histSST", 
+            "description": "Historical atmosphere only simulation with historical forcings in an AGCM model with interactive aerosols.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical, historical SST", 
+            "long_name": "historical SSTs and historical forcing", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment for AerChemMIP historical perturbation experiments.", 
+            "related_experiments": [
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "histSST-1950HC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "histSST-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "HistoricalNTCFEmissions", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "0bf451f8-d98f-43bc-9c62-07bbee2d5f05", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST?client=esdoc"
+        }, 
+        "piClim-N2O": {
+            "canonical_name": "piClim-N2O", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply present day (2014) concentrations of nitrous oxide (N2O) all other WMGHG (well mixed greenhouse gas) concentrations set to pre-industrial levels.  Apply pre-industrial emissions of NTCF (near term climate forcers). This is a timeslice experiment of 30 years total.  Only models with stratospheric chemistry should run this experiment.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 N2O", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 N2O concentrations (including chemistry)", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "2014N2O", 
+                "1850NTCFEmissions", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-StratChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "57fba0c5-9330-4fbc-8011-e71e32f78faf", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-N2O?client=esdoc"
+        }, 
+        "piClim-BC": {
+            "canonical_name": "piClim-BC", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial tropospheric ozone precursors, present day (2014) emissions of black carbon (BC) and pre-industrial emissions of all other aersols and aerosol precursors.  This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 black carbon", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 black carbon emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "2014BC", 
+                "1850nonBCAerosol", 
+                "1850AerosolPre", 
+                "1850TropO3pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "c628bd38-80e4-45db-8a66-edbbfbc994d5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-BC?client=esdoc"
+        }, 
+        "ssp370SST": {
+            "canonical_name": "ssp370SST", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway. SSP3 socioeconomic conditions.  Atmosphere only with SST from ScenarioMIP experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
+            "long_name": "SSP3-7.0, with  SSTs prescribed from ssp370", 
+            "mip_era": "cmip6", 
+            "rationale": "Control for ERF estimates of individual NTCF.", 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST-lowNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowCH4", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowAer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowBC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowO3", 
+                    "relationship": "is_control_for"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "RCP70O3pre", 
+                "rcp70Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "6594e679-b6ba-4cb6-a0b9-eaa4c17fdab8", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST?client=esdoc"
+        }, 
+        "piClim-HC": {
+            "canonical_name": "piClim-HC", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply present day (2014) concentrations of ozone depleating halocarbons (ODS) all other WMGHG (well mixed greenhouse gas) concentrations set to pre-industrial levels.  Apply pre-industrial emissions of NTCF (near term climate forcers). This is a timeslice experiment of 30 years total. Only models with stratospheric chemistry should run this experiment.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 HC, 2014 ODS", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 halocarbon concentrations (including chemistry)", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "1850NTCFEmissions", 
+                "2014OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-StratChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "9cd7da69-a65d-4c90-953e-02d38a04eef2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-HC?client=esdoc"
+        }, 
+        "ssp370": {
+            "canonical_name": "ssp370", 
+            "description": "Gap: Baseline scenario with a medium to high radiative forcing by the end of century. Following approximately RCP7.0 global forcing pathway with SSP3 socioeconomic conditions. Radiative forcing reaches a level of 7.0 W/m2 in 2100.  Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP3, RCP7.0, future, Medium-high forcing, Gap: Baseline", 
+            "long_name": "gap-filling scenario reaching 7.0 based on SSP3", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the medium to high end of plausible future pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baselines.", 
+            "related_experiments": [
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp370SST-lowAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-ssp126Lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowNTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowBC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST-lowO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp70Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "NineMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "1b7a0755-9736-4e80-8f5d-c8a28ba37107", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370?client=esdoc"
+        }, 
+        "piClim-CH4": {
+            "canonical_name": "piClim-CH4", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply present day (2014) concentrations of methane (CH4) all other WMGHG (well mixed greenhouse gas) concentrations set to pre-industrial levels.  Apply pre-industrial emissions of NTCF (near term climate forcers). This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation,  1850 SST, 1850 WMGHG, 2014 methane", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 methane concentrations (including chemistry)", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "2014CH4", 
+                "1850N2O", 
+                "1850NTCFEmissions", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "a655f42b-b8e9-41bc-bf21-da454a1969be", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-CH4?client=esdoc"
+        }, 
+        "ssp370SST-lowO3": {
+            "canonical_name": "ssp370SST-lowO3", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced tropospheric ozone precursors (not methane). SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 tropospheric ozone precursors, no methane, atmosphere only", 
+            "long_name": "SSP3-7.0, prescribed SSTs, with low ozone precursor emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To estimate the ERF of tropospheric ozone precursors (but not methane).", 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "ReducedRCP70O3prenotCH4", 
+                "RCP70CH4", 
+                "rcp70Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "e8886df8-76ea-4b14-ae60-a7eb6fba8497", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowO3?client=esdoc"
+        }, 
+        "abrupt-4xCO2": {
+            "canonical_name": "abrupt-4xCO2", 
+            "description": "Impose an instantaneous quadrupling of the concentration of atmospheric carbon dioxide, then hold fixed.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), 4xCO2, instantaneous quadrupling, climate sensitivity", 
+            "long_name": "Abrupt quadrupling of the atmospheric concentration of carbon dioxide", 
+            "mip_era": "cmip6", 
+            "rationale": "To evaluate the equilibrium climate sensitivity of the model and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "futureSST-4xCO2-solar", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "a4SSTice-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "150yrs1850-1999", 
+                "Abrupt4XCO2", 
+                "piForcingExcludingCO2solar", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "FiveMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "b67e8d2f-93fc-41d9-91d8-420eac7b0052", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/abrupt-4xCO2?client=esdoc"
+        }, 
+        "ssp370SST-ssp126Lu": {
+            "canonical_name": "ssp370SST-ssp126Lu", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with low land use change from exeperiment ssp126. Atmosphere only with SST from experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
+            "long_name": "SSP3-7.0, prescribed SSTs, with SSP1-2.6 land use", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "RCP70wmGHG", 
+                "RCP70sls", 
+                "RCP70aer", 
+                "RCP70aerpre", 
+                "RCP26land", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "e1371d89-798c-462c-acbe-ea7c3c472e86", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-ssp126Lu?client=esdoc"
+        }, 
+        "ssp370SST-lowNTCF": {
+            "canonical_name": "ssp370SST-lowNTCF", 
+            "description": "placeholder", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, atmosphere only,", 
+            "long_name": "placeholder", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "8ece3924-ccd2-4015-b158-f080ef2e0d4e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowNTCF?client=esdoc"
+        }, 
+        "piClim-control": {
+            "canonical_name": "piClim-control", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases) pre-industrial emissions of NTCF (near-term climate forcers). This is a timeslice experiment of 30 years total.  Provided this experiment is run with the same interactive chemistry and aerosols, this will be the same as the RFMIP piClim-control experiment.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, piControl, pre-industrial control, 1850 SST, 1850 WMGHG, 1850 NTCF, near term climate forcers", 
+            "long_name": "pre-industrial with prescribed climatological SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip", 
+                "rfmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "1850NTCFEmissions", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "707b899a-423d-4543-af7b-93128a24ae32", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-control?client=esdoc"
+        }, 
+        "piClim-2xss": {
+            "canonical_name": "piClim-2xss", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The sea salt aerosol emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 sea salt", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled emissions of sea salt", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "2x1850seaSaltAer", 
+                "1850nonSeaSaltAer", 
+                "1850AerosolPre", 
+                "1850TropO3pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "6f56d04c-2f1a-4620-a052-5c777f4d4c11", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xss?client=esdoc"
+        }, 
+        "ssp370-lowNTCF": {
+            "canonical_name": "ssp370-lowNTCF", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced NTCF emissions. SSP3 socioeconomic conditions.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario,  SSP3, RCP7.0, reduced NTCF,  Near Term Climate Forcers,", 
+            "long_name": "SSP3-7.0, with low NTCF emissions", 
+            "mip_era": "cmip6", 
+            "rationale": null, 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "RCP70wmGHG", 
+                "ReducedRCP70NTCF", 
+                "RCP70land", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "UptoThreeMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "16abe6d4-49d2-4948-be53-a1362579e31b", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370-lowNTCF?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }, 
+        "piClim-O3": {
+            "canonical_name": "piClim-O3", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors and present day (2014) tropospheric ozone precursors. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 O3 precursors", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with 2014 ozone precursor emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To compute the ERF for 1850 and 2014.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "1850NonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "1850N2O", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "2014TropO3Pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "bfe14f6a-e016-47b4-9c90-a4ec7c337612", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-O3?client=esdoc"
+        }, 
+        "histSST-piNTCF": {
+            "canonical_name": "histSST-piNTCF", 
+            "description": "Historical atmosphere only simulation with historical WMGHG, transient historical SSTs.  NTCFs fixed at 1850 emission levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical perturbation, historical WMGHG, historical SST, 1850 NTCF, Near Term Climate Forcers", 
+            "long_name": "historical SSTs and historical forcing, but with pre-industrial NTCF emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "1850NTCFEmissions", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "116869ca-acbe-4082-a256-dc6dfebbd409", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-piNTCF?client=esdoc"
+        }, 
+        "piClim-2xfire": {
+            "canonical_name": "piClim-2xfire", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The fire aerosol emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 fire", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled emissions from fires", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "2x1850fireAer", 
+                "1850nonFireAer", 
+                "1850AerosolPre", 
+                "1850TropO3pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "94ba6329-d08b-4170-82a7-405126aaae01", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xfire?client=esdoc"
+        }, 
+        "piClim-aer": {
+            "canonical_name": "piClim-aer", 
+            "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea suface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Aerosols are set to present day (2014) values, other forcing agents are specified at pre-industrial values.  Run for 30 years.", 
+            "governing_mips": [
+                "rfmip"
+            ], 
+            "keywords": "RFMIP, Tier 1, PD aer O3, present day aerosols and ozone, uncoupled, atmosphere-land", 
+            "long_name": "effective radiative forcing by present day aerosols", 
+            "mip_era": "cmip6", 
+            "rationale": "Quantify present-day effective radiative forcing (ERF) by aerosols and ozone.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip", 
+                "rfmip"
+            ], 
+            "requirements": [
+                "30yrs", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "2014Aerosols", 
+                "2014AerPre", 
+                "preIndForcingExclAer", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "atmosLandConfig"
+            ], 
+            "tier": 1, 
+            "uid": "e3178983-0fdd-4c98-93ba-fb0b7954555f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-aer?client=esdoc"
+        }, 
+        "histSST-piCH4": {
+            "canonical_name": "histSST-piCH4", 
+            "description": "Historical atmoshere only simulation with historical forcings but with methane fixed at 1850 concentration levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical perturbation, 1850 methane, 1850 CH4", 
+            "long_name": "historical SSTs and historical forcing, but with pre-industrial methane concentrations", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "1850Methane", 
+                "HistoricalN2OConc", 
+                "HistoricalNTCFEmissions", 
+                "HistoricalOzone DepleatingHalocarbonConc", 
+                "HistoricalSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "38a97dd5-5b0b-4702-a3b4-9f02bc3ea3e2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-piCH4?client=esdoc"
+        }, 
+        "histSST-1950HC": {
+            "canonical_name": "histSST-1950HC", 
+            "description": "Historical atmoshere only simulation with historical WMGHG, transient historical SSTs. Ozone depleting substances fixed at 1950 emission levels.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical perturbation, historical WMGHG, historical SST, 1950 HC, halocarbons, ozone depleting substances", 
+            "long_name": "historical SSTs and historical forcing, but with1950 halocarbon concentrations", 
+            "mip_era": "cmip6", 
+            "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+            "related_experiments": [
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "65yrs1950-2014", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "HistoricalNTCFEmissions", 
+                "1950OzoneDepleatingHalocarbonConc", 
+                "HistoricalAerChemMIPSST", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "1950HistoricalInitialisation", 
+                "AOGCM-StratChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7c445c93-4376-4e77-b6e6-e8178602629e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-1950HC?client=esdoc"
+        }, 
+        "ssp370SST-lowAer": {
+            "canonical_name": "ssp370SST-lowAer", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced aerosol precursors (not NOx). SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 aerosol precursors, no NOx, atmosphere only", 
+            "long_name": "SSP3-7.0, prescribed SSTs, with low aerosol emissions", 
+            "mip_era": "cmip6", 
+            "rationale": "To estimate the ERF of aerosol precursors (but not NOx).", 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "ReducedRCP70aerprenotNOx", 
+                "RCP70O3pre", 
+                "RCP70NOx", 
+                "RCP70wmGHG", 
+                "RCP70sls", 
+                "RCP70aer", 
+                "RCP70land", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "48780791-821a-49bc-8433-1814d70ce5bd", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowAer?client=esdoc"
+        }, 
+        "ssp370SST-lowCH4": {
+            "canonical_name": "ssp370SST-lowCH4", 
+            "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced  methane emissions. SSP3 socioeconomic conditions. Atmosphere only with SST from experiment SSP3-70.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, scenario, SSP3, RCP7.0, reduced NTCF, RCP7.0 methane, atmosphere only", 
+            "long_name": "SSP3-7.0, prescribed SSTs, with low methane concentrations", 
+            "mip_era": "cmip6", 
+            "rationale": "To estimate the ERF of methane.", 
+            "related_experiments": [
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "ssp370SST", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "41yrs2015-2056", 
+                "SSP3-70SST", 
+                "ReducedRCP70CH4", 
+                "RCP70O3prenoCH4", 
+                "rcp70Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "b480afd9-31fd-400c-9260-eb6b0ace3f8c", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowCH4?client=esdoc"
+        }, 
+        "piClim-2xVOC": {
+            "canonical_name": "piClim-2xVOC", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The biogenic VOC (volatile organic compounds) emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 VOC, 2x 1850 volatile organic compounds", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled emissions of biogenic VOCs", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "2x1850bioVOC", 
+                "1850TropO3PreExcludeBioVOC", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "f322cac8-d990-458a-9d50-9713feac4366", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xVOC?client=esdoc"
+        }, 
+        "historical": {
+            "canonical_name": "historical", 
+            "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6, Historical, Reference", 
+            "long_name": "all-forcing simulation of the recent past", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-historical-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp460", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6", 
+                "ls3mip", 
+                "lumip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "479ff5ed-9c56-4d1e-98c3-f97a0864e7b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical?client=esdoc"
+        }, 
+        "hist-1950HC": {
+            "canonical_name": "hist-1950HC", 
+            "description": "Historical WMGHG concentrations and historical emissions of Near Term Climate Forcers (NTCFs), namely tropospheric aerosols and tropospheric ozone precurors, halocarbons (Ozone Depleting Substances) to be fixed at 1950 concentration levels. These simulations parallel the \"CMIP6 historical\", and differ only by fixing the anthropogenic emissions or concentrations of a specified class of species.   All other forcing agents must evolve as in \"CMIP6 historical\".", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 1, Historical perturbation, 1950 halocarbons, 1950 ODS, historical NTCF, Near Term Climate Forcers", 
+            "long_name": "historical forcing, but with1950s halocarbon concentrations", 
+            "mip_era": "cmip6", 
+            "rationale": "How have ODS emissions contributed to global ERF and affected regional climate over the historical period?", 
+            "related_experiments": [
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "65yrs1950-2014", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "HistoricalN2OConc", 
+                "HistoricalNTCFEmissions", 
+                "1950OzoneDepleatingHalocarbonConc", 
+                "HistoricalLandUse", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "1950HistoricalInitialisation", 
+                "AOGCM-ChemConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "794b6427-3227-4b14-b3b5-406fbde69679", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-1950HC?client=esdoc"
+        }, 
+        "piClim-2xNOX": {
+            "canonical_name": "piClim-2xNOX", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The lightning NOx (oxides of nitrogen) emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 Nox", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled production of NOX due to lightning", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "1850Aerosol", 
+                "1850AerosolPre", 
+                "2x1850lightningNOx", 
+                "1850TropO3PreExcludeLightningNOx", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-ChemConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "a2791eb7-d3b6-4cf3-8da0-1261fabe98d1", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xNOX?client=esdoc"
+        }, 
+        "piClim-2xdust": {
+            "canonical_name": "piClim-2xdust", 
+            "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The dust aerosol emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+            "governing_mips": [
+                "aerchemmip"
+            ], 
+            "keywords": "AerChemMIP, Tier 2, piControl perturbation, 1850 SST, 1850 WMGHG, 2x 1850 dust", 
+            "long_name": "pre-industrial climatolgical SSTs and forcing, but with doubled emissions of dust", 
+            "mip_era": "cmip6", 
+            "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "aerchemmip"
+            ], 
+            "requirements": [
+                "30yrs1850-1851", 
+                "HistoricalNonReactiveWMGHGconcentrations", 
+                "HistoricalMethaneConc", 
+                "1850N2O", 
+                "2x1850dustAer", 
+                "1850-nonDustAer", 
+                "1850AerosolPre", 
+                "1850TropO3pre", 
+                "1850OzoneDepleatingHalocarbonConc", 
+                "PIControlSSTClim", 
+                "PIControlSICClim", 
+                "PreIndustrialLandUse", 
+                "piSolarIrradiance", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCM-AerConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "a5cca357-46d4-4abb-9767-bb421432ed05", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-2xdust?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "2014N2O": {
+            "canonical_name": "2014N2O", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 2014 concentration of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Nitrous Oxide, N2O, concentration", 
+            "label": "2014 N2O Concentration", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "e6c39025-04e9-4ad0-92bb-9481bd55fcd0"
+        }, 
+        "HistoricalOzone DepleatingHalocarbonConc": {
+            "canonical_name": "HistoricalOzone DepleatingHalocarbonConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose historical concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "Historical Ozone Depleating Halocarbon Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "c0f3922d-a908-429d-8fbc-05e12e106afc"
+        }, 
+        "2014OzoneDepleatingHalocarbonConc": {
+            "canonical_name": "2014OzoneDepleatingHalocarbonConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 2014 concentrations of ozone depleting halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, present day, halocarbons, ozone depleting substances, ODS, concentrations, CFCs, HCFCs", 
+            "label": "2014 Ozone Depleating Halocarbon Concentrations", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "6611ae32-4b23-422b-b9d9-e226ab56f7bc"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "1950OzoneDepleatingHalocarbonConc": {
+            "canonical_name": "1950OzoneDepleatingHalocarbonConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 1950 concentrations of Ozone Depleting Halocarbons, namely CFCs and HCFCs.", 
+            "isConformanceRequested": true, 
+            "keywords": "1950, Halocarbons, Ozone Depleting Substances, ODS, HCFC, CFC", 
+            "label": "1950 Ozone Depleating Halocarbon Concentrations", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "fa9c831f-108a-4491-a199-158de3f96dcd"
+        }, 
+        "1850N2O": {
+            "canonical_name": "1850N2O", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
+            "label": "1850 N2O Concentration", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "af1d555b-81a1-4a9c-be16-0e07d80b0df2"
+        }, 
+        "1850-nonDustAer": {
+            "canonical_name": "1850-nonDustAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of non-Dust aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-Dust, Aerosol, emissions", 
+            "label": "1850 non-Dust Aerosol emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "7d23850a-9c4d-4231-adea-813c04287f4e"
+        }, 
+        "2014NOx": {
+            "canonical_name": "2014NOx", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose 2014 emissions of nitrogen oxides (NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, NOx, nitrogen oxides, emissions", 
+            "label": "2014 NOx Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "5483f2e5-2884-4910-826d-1e2bb051e460"
+        }, 
+        "2014BC": {
+            "canonical_name": "2014BC", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 2014 emissions of Black Carbon (BC).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Black Carbon, BC", 
+            "label": "2014 BC Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "de968806-df2e-45ad-ac26-532c0b071764"
+        }, 
+        "HistoricalNTCFEmissions": {
+            "canonical_name": "HistoricalNTCFEmissions", 
+            "description": "Impose transient historical emissions of near term climate forcers (NTCF): namely tropospheric aerosols, and tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, NTCF, near term climate forcers", 
+            "label": "Historical NTCF Emissions", 
+            "type": "forcing-constraint", 
+            "uid": "6c595bbc-4550-429e-be57-6d7f2580d289"
+        }, 
+        "ReducedRCP70BC": {
+            "canonical_name": "ReducedRCP70BC", 
+            "description": "Impose reduced RCP7.0 black carbon emissions. Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 black carbon NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, reduced black carbon", 
+            "label": "RCP70 Reduced Black Carbon", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "7b3931b4-13ae-4404-a707-38c189be8bd0"
+        }, 
+        "AOGCM-AerConfiguration": {
+            "canonical_name": "AOGCM-AerConfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with interactive aerosols.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Aerosols, AOGCM-Aer, Atmosphere-Ocean General Circulation Model, interactive aerosols", 
+            "label": "AOGCM-Aer Configuration", 
+            "type": "model-configuration", 
+            "uid": "3615e411-2d6e-4558-9ad2-cface2ff4c8e"
+        }, 
+        "30yrs": {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint", 
+            "uid": "c0749379-efad-456e-90a7-4bb6d74e557a"
+        }, 
+        "1850Aerosol": {
+            "canonical_name": "1850Aerosol", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of aersols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, aerosol emissions, NTCF", 
+            "label": "1850 Aerosol Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "213ef9a4-5175-4719-a28e-9de216b208b9"
+        }, 
+        "1850NonReactiveWMGHGconcentrations": {
+            "canonical_name": "1850NonReactiveWMGHGconcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "1850 Non-Reactive WMGHG Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "e57bcc29-7fb2-4552-bf85-e7854aea8ce3"
+        }, 
+        "NineMemberEnsemble": {
+            "canonical_name": "NineMemberEnsemble", 
+            "description": "An ensemble of nine members (if not 9, then as many as possible).", 
+            "isConformanceRequested": false, 
+            "keywords": "nine, 9, ensemble, runs, simulations", 
+            "label": "NineMember", 
+            "type": "ensemble", 
+            "uid": "8036db7b-243a-42c2-8ee8-79c0799257a7"
+        }, 
+        "RCP70land": {
+            "canonical_name": "RCP70land", 
+            "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
+            "label": "RCP70 Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "f862b439-6537-4e6f-8a72-074c67d0cd7e"
+        }, 
+        "piForcingExcludingCO2solar": {
+            "canonical_name": "piForcingExcludingCO2solar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "type": "forcing-constraint", 
+            "uid": "63b7deb8-97ae-4d02-a451-b0ec1b0ec776"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "HistoricalNonReactiveWMGHGconcentrations": {
+            "canonical_name": "HistoricalNonReactiveWMGHGconcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose historical non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "Historical Non-Reactive WMGHG Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "00ab713e-c314-4a45-9e4a-214355171ce5"
+        }, 
+        "ThreeMemberEnsemble": {
+            "canonical_name": "ThreeMemberEnsemble", 
+            "description": "An ensemble of three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "three, 3, ensemble, runs, simulations", 
+            "label": "ThreeMember", 
+            "type": "ensemble", 
+            "uid": "c81b195e-4cd5-46c0-9a88-ce83f4be169f"
+        }, 
+        "86yrs2015-2100": {
+            "canonical_name": "86yrs2015-2100", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint", 
+            "uid": "1a09bd87-123b-40bf-91cb-777f1d0b93bc"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }, 
+        "2x1850fireAer": {
+            "canonical_name": "2x1850fireAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 1850 doubled fire emission fluxes. Or double the fire aerosol emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, doubled fire, aerosol, emissions", 
+            "label": "2x 1850 Fire Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "358f0697-7d71-4429-8d39-c4cc9256eb36"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "preIndForcingExclAer": {
+            "canonical_name": "preIndForcingExclAer", 
+            "description": "Pre-Industrial forcing excluding aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding aerosols", 
+            "label": "Pre-Industrial Forcing Excluding Aerosols", 
+            "type": "forcing-constraint", 
+            "uid": "2366d781-7e15-447c-a73d-3c24e493aaf0"
+        }, 
+        "ReducedRCP70aerprenotNOx": {
+            "canonical_name": "ReducedRCP70aerprenotNOx", 
+            "description": "Impose reduced RCP7.0 aerosol precursor emissions (not NOx).  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 aerosol precursor NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced aerosol precursors, not NOx", 
+            "label": "RCP70 Reduced Aerosol Precursors Not NOx", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a6d2b443-056c-40a7-b00f-aaa3c1fb08dc"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "RCP70O3prenoCH4": {
+            "canonical_name": "RCP70O3prenoCH4", 
+            "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors except methane.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, ozone precursors, without methane", 
+            "label": "RCP70 Tropospheric Ozone Precursors No Methane", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "0e4be57f-d023-4b3c-b11c-f3efe68ea3d1"
+        }, 
+        "2x1850dustAer": {
+            "canonical_name": "2x1850dustAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 1850 doubled dust emission fluxes.  Or double the dust aerosol emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, doubled dust, aerosol, emissions", 
+            "label": "2x 1850 Dust Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "6b043001-5468-4e0e-8933-fb6cb9aa5975"
+        }, 
+        "2014Aerosols": {
+            "canonical_name": "2014Aerosols", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose present day (2014) aerosol concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, aerosols", 
+            "label": "2014 Aerosols", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "158930c3-0dde-40f0-b8cb-0202a8713239"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "PreIndustrialLandUse": {
+            "canonical_name": "PreIndustrialLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Constant pre-industrial (1850) land-use forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "aae0d3f5-a6c7-4edc-883d-ca65b29f6f02"
+        }, 
+        "2x1850bioVOC": {
+            "canonical_name": "2x1850bioVOC", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose 1850 doubled biogenic VOC emission fluxes. Or double the VOC emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, douled biogenic VOCs, emissions", 
+            "label": "2x 1850 Biogenic VOC Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "abefffef-f343-4b37-adb1-edd5f6b24841"
+        }, 
+        "2014NTCFEmissions": {
+            "canonical_name": "2014NTCFEmissions", 
+            "description": "Impose 2014 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "present-day, 2014, NTCF, near term climate forcers", 
+            "label": "2014 NTCF Emissions", 
+            "type": "forcing-constraint", 
+            "uid": "4e04a5b3-0fcf-4dba-8a94-168a1013bd30"
+        }, 
+        "rcp70Forcing": {
+            "canonical_name": "rcp70Forcing", 
+            "description": "Impose RCP7.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
+            "label": "RCP70 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "352736b6-35d1-41e9-bf30-efbb1d5dabf0"
+        }, 
+        "2014TropO3Pre": {
+            "canonical_name": "2014TropO3Pre", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose 2014 emissions of tropospheric ozone precursors (NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Tropospheric Ozone Precursors, O3 precursors, emissions", 
+            "label": "2014 Tropospheric Ozone Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "ec912cc6-a08d-4ebd-819e-f3746d3f4463"
+        }, 
+        "41yrs2015-2056": {
+            "canonical_name": "41yrs2015-2056", 
+            "description": "Scenario, from 2015 to the mid 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2055", 
+            "label": "2015-2055 41yrs", 
+            "type": "temporal-constraint", 
+            "uid": "f8e9aaec-e7b3-45bc-aff8-8ff534a4e568"
+        }, 
+        "Abrupt4XCO2": {
+            "canonical_name": "Abrupt4XCO2", 
+            "description": "Impose an instantaneous quadrupling of atmospheric carbon dioxide concentration, then hold fixed.", 
+            "isConformanceRequested": true, 
+            "keywords": "4x, CO2, 4xCO2, instant, instantaneous, quadrupling, ipcc, climate, deck", 
+            "label": "Abrupt 4xCO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "106b3270-f17e-4f0c-b154-1f4868586a1b"
+        }, 
+        "RCP70wmGHG": {
+            "canonical_name": "RCP70wmGHG", 
+            "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, CO2", 
+            "label": "RCP70 Well Mixed GHG", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "7b0c88bb-53d6-4588-aef3-5cf84200ae20"
+        }, 
+        "RCP70CH4": {
+            "canonical_name": "RCP70CH4", 
+            "description": "Impose changing concentrations of RCP7.0 methane.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, methane", 
+            "label": "RCP70Methane", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a626f47a-dc2f-4839-8e8c-ba53dd3456af"
+        }, 
+        "2x1850DMSAer": {
+            "canonical_name": "2x1850DMSAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 1850 doubled oceanic DMS emission fluxes. Or double the oceanic DMS aerosol emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, doubled DMS, aerosol, emissions", 
+            "label": "2x 1850 DMS Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a28fa82a-c38e-4dd8-9631-94aa4cbd5625"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "RCP70sls": {
+            "canonical_name": "RCP70sls", 
+            "description": "Impose changing emissions of RCP7.0 short lived gas species including CH4, NOx, VOCs and CO.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Short-lived Gas", 
+            "label": "RCP70 Short Lived Gas Species", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "82dbd4b5-0e8d-4a49-8c08-00682d6fa226"
+        }, 
+        "RCP70aer": {
+            "canonical_name": "RCP70aer", 
+            "description": "Impose changing emissions of RCP7.0 aerosols including BC and OC.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, aerosol", 
+            "label": "RCP70 Aerosols", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "0cf7b473-90da-4f3d-b80c-537c5540be91"
+        }, 
+        "1850nonCOVOCTropO3Pre": {
+            "canonical_name": "1850nonCOVOCTropO3Pre", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose pre-industrial (1850) emissions of non-CO/VOC (Carbon Monoxide / Volatile Organic Compound) tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-CO/VOC tropospheric ozone precursor, emissions", 
+            "label": "1850 non-CO VOC Tropospheric Ozone Precursor Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "08fd8067-729a-4c36-8512-801326e9ee9d"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "1850nonNOxTropO3Pre": {
+            "canonical_name": "1850nonNOxTropO3Pre", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose pre-industrial (1850) emissions of non-NOx tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-NOx tropospheric ozone precursor, emissions", 
+            "label": "1850 non-NOx Tropospheric Ozone Precursor Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "1badc583-eb57-4b4a-87d2-fc58de273e75"
+        }, 
+        "RCP26land": {
+            "canonical_name": "RCP26land", 
+            "description": "Impose changing RCP2.6 land use including crops, pasture, urban area, vegetation and forest.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 2.6, future, 21st century, SSP1, RCP2.6, Land Use", 
+            "label": "RCP26 Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "b76a31fd-0919-4f4b-b8c2-ca88f61648a4"
+        }, 
+        "1850nonSeaSaltAer": {
+            "canonical_name": "1850nonSeaSaltAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of non-Sea Salt aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-Sea Salt, Aerosol, emissions", 
+            "label": "1850 non-Sea Salt Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "4d59cf86-04d5-4dfb-95d8-ab823b3b5a07"
+        }, 
+        "RCP70NOx": {
+            "canonical_name": "RCP70NOx", 
+            "description": "Impose changing concentrations of RCP7.0 NOx.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, NOx", 
+            "label": "RCP70 NOx", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d29e9406-29df-476b-8374-6f6988e2dbf0"
+        }, 
+        "HistoricalSST": {
+            "canonical_name": "HistoricalSST", 
+            "description": "Historical transient sea surface temperature from the Historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, SST, sea surface temperature", 
+            "label": "Historical SST", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "1b577684-4cfa-41d0-8857-144279f88ef0"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "AGCM-StratChemConfiguration": {
+            "canonical_name": "AGCM-StratChemConfiguration", 
+            "description": "Use an Atmosphere general circulation model that includes stratospheric chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, Stratospheric Chemistry, AGCM-StratChem, Atmosphere General Circulation Model", 
+            "label": "AGCM-StratChem Configuration", 
+            "type": "model-configuration", 
+            "uid": "c4693967-ee23-463e-9ad9-b140bd26831d"
+        }, 
+        "ReducedRCP70CH4": {
+            "canonical_name": "ReducedRCP70CH4", 
+            "description": "Impose reduced RCP7.0 methane (CH4) emissions.  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 methane NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced methane", 
+            "label": "RCP70ReducedMethane", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d71e0e7f-a898-4d89-aea2-fe95e9f7924f"
+        }, 
+        "FiveMemberEnsemble": {
+            "canonical_name": "FiveMemberEnsemble", 
+            "description": "An ensemble of five simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
+            "type": "ensemble", 
+            "uid": "065cb41e-ee17-484f-b7b9-a223c6369e73"
+        }, 
+        "1850nonFireAer": {
+            "canonical_name": "1850nonFireAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of non-fire aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-Fire, Aerosol, emissions", 
+            "label": "1850 non-Fire Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "fc362213-0c99-41c0-bf72-33c48ccfd0df"
+        }, 
+        "1850nonDMSAer": {
+            "canonical_name": "1850nonDMSAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of non-DMS aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-DMS, Aerosol, emissions", 
+            "label": "1850 non-DMS Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "f8ced62c-13ed-4c0d-a91f-2faceabd9e6d"
+        }, 
+        "RCP70aernoBC": {
+            "canonical_name": "RCP70aernoBC", 
+            "description": "Impose changing concentrations of RCP7.0 aerosols  (but no Black Carbon).", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, aerosols, no black carbon", 
+            "label": "RCP70 Aerosols No Black Carbon", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "b0e06541-6387-4330-9a9d-de8b14559530"
+        }, 
+        "SSP3-70SST": {
+            "canonical_name": "SSP3-70SST", 
+            "description": "Sea surface temperature from experiment SSP3-7.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
+            "label": "SSP3-70 SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "24a12dc4-9223-4a1b-90ad-0430bfaa99e1"
+        }, 
+        "1850TropO3PreExcludeBioVOC": {
+            "canonical_name": "1850TropO3PreExcludeBioVOC", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose pre-industrial (1850) emissions of tropospheric ozone precursors excluding biogenic VOCs (Volatile Organic Compounds).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, tropospheric ozone precursors, emissions, exclude Biogenic VOCs", 
+            "label": "1850 Tropospheric Ozone Precursor Emissions excluding Biogenic VOCs", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "3fa2c713-849b-4b48-9272-172a96bcfe36"
+        }, 
+        "150yrs1850-1999": {
+            "canonical_name": "150yrs1850-1999", 
+            "description": "Begin in 1850 and run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 1850-1999", 
+            "label": "1850-1999 150yrs", 
+            "type": "temporal-constraint", 
+            "uid": "a32b5c20-1e82-4fe6-b1cf-3ebd145fd9d8"
+        }, 
+        "AOGCM-StratChemConfiguration": {
+            "canonical_name": "AOGCM-StratChemConfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with a chemistry component that includes stratospheric chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Chemistry, Stratospheric Chemistry, AOGCM-StratChem, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-StratChem Configuration", 
+            "type": "model-configuration", 
+            "uid": "57f6d92e-1661-4475-bc40-0d2ebe59cc6d"
+        }, 
+        "ReducedRCP70NTCF": {
+            "canonical_name": "ReducedRCP70NTCF", 
+            "description": "Impose changing concentrations of reduced RCP7.0 Near Term Climate Forcers (NTCF). Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-7 NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "AerChemMIP, Reduced RCP7.0 NTCF, scenario", 
+            "label": "ReducedRCP70NTCF", 
+            "type": "forcing-constraint", 
+            "uid": "0dff69a4-eb11-45c0-8f63-51f7e6e8a28f"
+        }, 
+        "AGCM-AerConfiguration": {
+            "canonical_name": "AGCM-AerConfiguration", 
+            "description": "Use an Atmosphere general circulation model with interactive aerosols.", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Aerosols, AGCM-Aer, Atmosphere General Circulation Model, interactive aerosols", 
+            "label": "AGCM-Aer Configuration", 
+            "type": "model-configuration", 
+            "uid": "57f1864a-42c7-4d72-845b-d95dafc28e40"
+        }, 
+        "2014COVOC": {
+            "canonical_name": "2014COVOC", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 2014 concentrations of carbon monoxide and volatile organic compounds (CO/VOC).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, CO, carbon monoxide, VOC, volatile organic compounds, emissions", 
+            "label": "2014 CO VOC Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "8a955f04-3347-4950-a0ef-4c346dbdb17a"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "AOGCM-ChemConfiguration": {
+            "canonical_name": "AOGCM-ChemConfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Chemistry, AOGCM-Chem, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-Chem Configuration", 
+            "type": "model-configuration", 
+            "uid": "68170bd5-8270-43b2-97b9-a303be18032e"
+        }, 
+        "2014AerPre": {
+            "canonical_name": "2014AerPre", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose present day (2014) aerosol precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, areosol precursors", 
+            "label": "2014 Aerosol Precursors", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "f68f06f6-dd53-440e-aa06-a9ffd36f8298"
+        }, 
+        "65yrs1950-2014": {
+            "canonical_name": "65yrs1950-2014", 
+            "description": "Historical, Recent past.", 
+            "isConformanceRequested": false, 
+            "keywords": "1950, 2014, Historical, Recent Past", 
+            "label": "1950-2014 65yrs", 
+            "type": "temporal-constraint", 
+            "uid": "9a237fb9-756d-4fe5-bfaf-60ed94f110c9"
+        }, 
+        "HistoricalTropO3pre": {
+            "canonical_name": "HistoricalTropO3pre", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose historical emissions of tropospheric ozone precursors (e.g. NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, tropospheric ozone precursors, NTCF", 
+            "label": "Historical Tropospheric Ozone Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "be317438-679e-45a6-bec5-1291c354144c"
+        }, 
+        "1850TropO3PreExcludeLightningNOx": {
+            "canonical_name": "1850TropO3PreExcludeLightningNOx", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose pre-industrial (1850) emissions of tropospheric ozone precursors excluding lightning NOx  (oxides of nitrogen).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, tropospheric ozone precursors, emissions, exclude Lightning NOx", 
+            "label": "1850 Tropospheric Ozone Precursor Emissions excluding Lightning NOx", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "8a43908d-3f0d-4cc0-9556-a93aff7215e4"
+        }, 
+        "AGCM-ChemConfiguration": {
+            "canonical_name": "AGCM-ChemConfiguration", 
+            "description": "Use an Atmosphere model with chemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
+            "label": "AGCM-Chem Configuration", 
+            "type": "model-configuration", 
+            "uid": "5594d134-f911-4af0-a7c2-acd9c07fae06"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "PIControlSICClim": {
+            "canonical_name": "PIControlSICClim", 
+            "description": "Pre-Industrial monthly averaged climatology of sea ice concentrations (SIC) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SIC, sea ice, sea ice concentration, climatology", 
+            "label": "piControl SIC Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "c18f5e1c-4b19-47a7-a3c6-aa1c2efcde9e"
+        }, 
+        "HistoricalAerChemMIPSST": {
+            "canonical_name": "HistoricalAerChemMIPSST", 
+            "description": "Historical transient sea surface temperature from AerChemMIP experiment hist-piNTCF.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, SST, sea surface temperature", 
+            "label": "Historical AerChemMIP hist-piNTCF SSTs", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "fcf71eb2-4d95-4f42-b141-b18344195698"
+        }, 
+        "1850NTCFEmissions": {
+            "canonical_name": "1850NTCFEmissions", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, Near Term Climate Forcers, NTCF, emissions", 
+            "label": "1850 NTCF Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "967b17cc-0518-4809-aea5-f6bee77643e7"
+        }, 
+        "RCP70aerpre": {
+            "canonical_name": "RCP70aerpre", 
+            "description": "Impose changing emissions of RCP7.0 aerosol precursors including SO2 and NHy.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, NTCF, Aerosol Precursors", 
+            "label": "RCP70 Aerosol Precursors", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "9da52eab-3c30-44b0-b394-79d89a7ef869"
+        }, 
+        "1850OzoneDepleatingHalocarbonConc": {
+            "canonical_name": "1850OzoneDepleatingHalocarbonConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose pre-industrial (1850) concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "8f21fc60-a8b0-4638-a9ef-ba054d556ce0"
+        }, 
+        "FutureSolarIrradiance": {
+            "canonical_name": "FutureSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "6f08fddf-293b-4412-8dc7-4c791a514ee3"
+        }, 
+        "1850TropO3pre": {
+            "canonical_name": "1850TropO3pre", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose pre-industrial (1850) tropospheric ozone precursor emissions (e.g. NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, tropospheric ozone precursors, NTCF", 
+            "label": "1850 Tropospheric Ozone Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "897d0c29-c639-4be1-b782-3266a87ba61c"
+        }, 
+        "1850nonBCAerosol": {
+            "canonical_name": "1850nonBCAerosol", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of non-BC aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, non-BC Aerosol, emissions", 
+            "label": "1850 non-BC Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "76b1867f-ae32-4230-a67a-56d7f19908c8"
+        }, 
+        "2x1850lightningNOx": {
+            "canonical_name": "2x1850lightningNOx", 
+            "data_link": "Historical Emissions for CMIP6 (v1.0)", 
+            "description": "Impose 1850 doubled lightning NOx emission fluxes. Or double the lightning NOx emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, douled lightning NOx, emissions", 
+            "label": "2x 1850 Lightning NOx", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "96ba40b6-8a07-4eab-9092-239907e275c0"
+        }, 
+        "FutureSolarParticleForcing": {
+            "canonical_name": "FutureSolarParticleForcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "e3ac7cf0-6c67-4092-b9c8-8bc4df2a5e22"
+        }, 
+        "piSolarIrradiance": {
+            "canonical_name": "piSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "Pre-Industrial solar forcing. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes pre-industrial solar forcing (1850-1873 mean).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, pre-industrial, pi, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Pre-Industrial Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "ad92af6c-00f4-4a51-b4e0-dac208cdda46"
+        }, 
+        "165yrs1850-2014": {
+            "canonical_name": "165yrs1850-2014", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint", 
+            "uid": "492d33c9-3317-4333-8890-b8f1e6aae1a9"
+        }, 
+        "2x1850seaSaltAer": {
+            "canonical_name": "2x1850seaSaltAer", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose 1850 doubled sea salt emission fluxes. Or double the sea salt aerosol emissions of the 1850 climatological data.", 
+            "isConformanceRequested": true, 
+            "keywords": "1850, doubled sea salt, aerosol, emissions", 
+            "label": "2x 1850 Sea Salt Aerosol Emissions", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "0e293ad0-3174-4e23-8a77-607555149713"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "UptoThreeMemberEnsemble": {
+            "canonical_name": "UptoThreeMemberEnsemble", 
+            "description": "An ensemble of upto three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "upto three, upto 3, ensemble, runs, simulations", 
+            "label": "UptoThree", 
+            "type": "ensemble", 
+            "uid": "a9a7463f-3131-423b-b867-572be3933290"
+        }, 
+        "1950HistoricalInitialisation": {
+            "canonical_name": "1950HistoricalInitialisation", 
+            "description": "Initialisation is branched from the Historical AerChem Simulation in 1950.  To provide continuity between simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, 1950", 
+            "label": "1950HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "c0c75cf6-f770-49ff-8433-9bdf0040fd32"
+        }, 
+        "atmosLandConfig": {
+            "canonical_name": "atmosLandConfig", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
+            "isConformanceRequested": false, 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "Atmosphere-Land Configuration", 
+            "type": "model-configuration", 
+            "uid": "ebffb468-960b-480a-9e37-6b9c7370165d"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "PIControlSSTClim": {
+            "canonical_name": "PIControlSSTClim", 
+            "description": "Pre-Industrial monthly averaged climatology of sea surface temperatures (SST) generated from at least a 30-year segment of the piControl experiment integration.  These should be prescribed according to the AMIP protocols, whereby interpolated daily data are generated preserving the prescribed monthly average fields.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial control, SST, sea surface temperature, climatology", 
+            "label": "piControl SST Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "3f0df666-b345-4d92-a787-7543ad532bdd"
+        }, 
+        "HistoricalN2OConc": {
+            "canonical_name": "HistoricalN2OConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose historical concentrations of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical nitrous oxide, N2O", 
+            "label": "Historical N2O Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "10071777-6f2c-4417-b61a-a8d410777766"
+        }, 
+        "1850Methane": {
+            "canonical_name": "1850Methane", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, methane, concentrations", 
+            "label": "1850 Methane Concentration", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "af0cb517-c47e-4cf6-82dd-515d950f6a33"
+        }, 
+        "2014CH4": {
+            "canonical_name": "2014CH4", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose 2014 concentration of Methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Methane, CH4, concentration", 
+            "label": "2014 Methane Concentration", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "991676cd-eec0-4927-973b-035fba96a418"
+        }, 
+        "30yrs1850-1851": {
+            "canonical_name": "30yrs1850-1851", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
+            "type": "temporal-constraint", 
+            "uid": "58a350d8-d2c2-44cf-a9dc-c74a35a6b721"
+        }, 
+        "RCP70O3pre": {
+            "canonical_name": "RCP70O3pre", 
+            "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, tropospheric ozone precursors", 
+            "label": "RCP70 Tropospheric Ozone Precursors", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "19094b7d-8b7f-4a75-8a6b-29552ac0bd7c"
+        }, 
+        "HistoricalAerosol": {
+            "canonical_name": "HistoricalAerosol", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose historical emissions of aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, emissions", 
+            "label": "Historical Aerosol Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "a8297b3d-f33f-4aa4-af92-c0f085fa94d1"
+        }, 
+        "ReducedRCP70O3prenotCH4": {
+            "canonical_name": "ReducedRCP70O3prenotCH4", 
+            "description": "Impose reduced RCP7.0 tropospheric ozone precursor emissions (not Methane).  Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-70 tropospheric ozone precursor NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, reduced tropospheric ozone precursors, not methane", 
+            "label": "RCP70ReducedTroposphericOzonePrecursorsNotMethane", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "fe2eed98-7c91-4a4c-ab62-0ccf5a3931bf"
+        }, 
+        "HistoricalMethaneConc": {
+            "canonical_name": "HistoricalMethaneConc", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Impose historical concentrations of methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical methane concentrations, CH4", 
+            "label": "Historical Methane Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "5a941036-c28c-41e7-919b-b577249f586e"
+        }, 
+        "HistoricalAerosolPre": {
+            "canonical_name": "HistoricalAerosolPre", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose historical emissions of aerosol precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol precursor, emissions", 
+            "label": "Historical Aerosol Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "c790835f-0b4a-4dd1-a9d8-32dd8190a88b"
+        }, 
+        "1850AerosolPre": {
+            "canonical_name": "1850AerosolPre", 
+            "data_link": "Aerosol forcing fields for CMIP6", 
+            "description": "Impose pre-industrial (1850) emissions of aersol precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, aerosol precursor emissions, NTCF", 
+            "label": "1850 Aerosol Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "e85f6aef-56f9-4e76-85b5-3bd4f0240ead"
+        }
+    }, 
+    "data_links": {
+        "Historical Emissions for CMIP6 (v1.0)": {
+            "protocol": "http", 
+            "description": "Historical Emissions data for CMIP6", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_HistoricalEmissions_InitialDescription_150219.pdf", 
+            "name": "Historical Emissions for CMIP6 (v1.0)"
+        }, 
+        "Aerosol forcing fields for CMIP6": {
+            "protocol": "http", 
+            "description": "Aerosol forcing fields data for CMIP6", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_Aerosols_InitialDescription_150211.pdf", 
+            "name": "Aerosol forcing fields for CMIP6"
+        }, 
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }
+    }
+}

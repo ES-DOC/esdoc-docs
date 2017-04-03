@@ -1,0 +1,878 @@
+{
+    "mip": {
+        "canonical_name": "gmmip", 
+        "description": "GMMIP addresses the contributions of internal variability (IPO-Interdecadal Pacific Oscillation, AMO-Atlantic Multidecadal Oscillation) and external anthropogenic forcing to the historical evolution of global monsoons.", 
+        "experiments": [
+            "historical", 
+            "amip", 
+            "amip-hist", 
+            "hist-resIPO", 
+            "hist-resAMO", 
+            "amip-TIP", 
+            "amip-TIP-nosh", 
+            "amip-hld"
+        ], 
+        "keywords": "monsoon, IOP, Interdecadal Pacific Oscillation, AMO, Atlantic Multidecadal Oscillation", 
+        "long_name": "Global Monsoons Modeling Inter-comparison Project", 
+        "label": "GMMIP", 
+        "rationale": "(a) Improving understanding of physical processes in global monsoons system; (b) better simulating the mean state, interannual variability, and long-term changes of global monsoons.", 
+        "uid": "21d39256-49e5-4297-b16c-88563ed31fa2", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/gmmip?client=esdoc"
+    }, 
+    "experiments": {
+        "hist-resAMO": {
+            "canonical_name": "hist-resAMO", 
+            "description": "Pacemaker 20th century historical run that includes all forcings as used in CMIP6 historical simulation. \nSea surface temperature (SST) is restored to the model climatology plus observational historical anomaly in the AMO domain (0-70\u00b0N, 70\u00b0W-0\u00b0).\nUse the same model resolutions as the CMIP6 historical simulation.\nThe minimum number of integrations is 3, more realisations are encouraged.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 2, HIST-AMO, Atlantic Multidecadal Oscillation", 
+            "long_name": "historical observed SSTs restored in AMO domain", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand the forcing of AMO-related SST on global monsoon changes.", 
+            "related_experiments": [
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "145yrs1870-2014", 
+                "HadISSTinAMO", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "CGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8be0dc26-8837-461c-879f-67039a7f37d2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-resAMO?client=esdoc"
+        }, 
+        "amip-TIP": {
+            "canonical_name": "amip-TIP", 
+            "description": "The topography of the Tibetan Plateau (TIP) and other Asian highlands is modified by setting surface elevations to 500m. Other settings are the same as the standard DECK AMIP simulation. \nMinimum number of integrations is 1.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 3, NTIP, TIP, 500m, Tibetan Plateau, level orography", 
+            "long_name": "AMIP SSTs with Tibetan Plateau elevation capped at 500m", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand the combined thermal and mechanical forcing of the TIP.", 
+            "related_experiments": [
+                {
+                    "name": "amip-TIP-nosh", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "NTIP500", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "MinimumOneMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "1a49af3c-b478-4d52-8019-10d189068902", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-TIP?client=esdoc"
+        }, 
+        "amip-hld": {
+            "canonical_name": "amip-hld", 
+            "description": "The topography of the highlands in Africa, N. America and S. America TP is modified by setting surface elevations to 500m. \nOther settings are the same as the standard DECK AMIP simulation. \nMinimum number of integrations is 1.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 3, NHLD, Non-TIP Highlands, 500m", 
+            "long_name": "AMIP SSTs with highland elevations in Africa, North America and South America capped at 500m", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand the combined thermal and mechanical forcing of other plateaus except the TIP.", 
+            "related_experiments": [
+                {
+                    "name": "amip-TIP", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "Highlands500", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "MinimumOneMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "7399e937-1032-43ef-84be-f6c5749fb9a6", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-hld?client=esdoc"
+        }, 
+        "amip-TIP-nosh": {
+            "canonical_name": "amip-TIP-nosh", 
+            "description": "Surface sensible heat released at the elevation above 500m over the Tibetan Plateau (TIP) is not allowed to heat the atmosphere. \nOther settings are the same as the standard DECK AMIP simulation. \nMinimum number of integrations is 1.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 3, TIP-NSH, TIP, 500m, Tibetan Plateau, zero sensible heat", 
+            "long_name": "AMIP SSTs with Tibetan Plateau elevation capped at 500m and no sensible heat flux above 500m", 
+            "mip_era": "cmip6", 
+            "rationale": "To compare the impact of removing TIP thermal effects, therefore the DTIP-DSH circulation pattern reflects the impacts of mechanical forcing.", 
+            "related_experiments": [
+                {
+                    "name": "amip-TIP", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "TIP500NoSH", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "MinimumOneMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "27577c18-1fea-483c-bf75-03ace1f90e75", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-TIP-nosh?client=esdoc"
+        }, 
+        "hist-resIPO": {
+            "canonical_name": "hist-resIPO", 
+            "description": "Pacemaker 20th century historical run that includes all forcings as used in CMIP6 historical simulation.\nSea surface temperature (SST) is restored to the model climatology plus observational historical anomaly in the tropical lobe of the IPO domain (20\u00b0S-20\u00b0N, 175\u00b0E-75\u00b0W).  \nUse the same model resolutions as the CMIP6 historical simulation.  \nMinimum number of integrations is 3, more realisations are encouraged.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 2, HIST-IPO, Interdecadal pacific oscillation", 
+            "long_name": "historical observed SSTs restored in IPO domain", 
+            "mip_era": "cmip6", 
+            "rationale": "To understand the forcing of IPO-related tropical SST on global monsoon changes.", 
+            "related_experiments": [
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "145yrs1870-2014", 
+                "HadISSTinIPO", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "CGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "75af4543-6153-4dfc-9dac-86169f0cd19f", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-resIPO?client=esdoc"
+        }, 
+        "amip-hist": {
+            "canonical_name": "amip-hist", 
+            "description": "Extended AMIP run that covers 1870-2014. \nAll natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included.\nAGCM resolution as CMIP6 Historical Simulation.\nThe HadISST data will be used.  Minimum number of integrations is 3, more realisations are encouraged.", 
+            "governing_mips": [
+                "gmmip"
+            ], 
+            "keywords": "GMMIP, Tier 1, AMIP20C, extended AMIP", 
+            "long_name": "extended AMIP", 
+            "mip_era": "cmip6", 
+            "rationale": "Understand the role of SST forcing and external forcing.", 
+            "related_experiments": [
+                {
+                    "name": "amip", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "gmmip"
+            ], 
+            "requirements": [
+                "145yrs1870-2014", 
+                "hadISST", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalEmissions", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "ThreeMemberEnsemble", 
+                "PreIndustrialInitialisation", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "d1de3063-c07d-456a-ae1b-7672aef13e88", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-hist?client=esdoc"
+        }, 
+        "historical": {
+            "canonical_name": "historical", 
+            "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6, Historical, Reference", 
+            "long_name": "all-forcing simulation of the recent past", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-historical-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp460", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6", 
+                "ls3mip", 
+                "lumip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "479ff5ed-9c56-4d1e-98c3-f97a0864e7b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical?client=esdoc"
+        }, 
+        "amip": {
+            "canonical_name": "amip", 
+            "description": "An atmosphere only climate simulation using prescribed sea surface temperature and sea ice concentrations but with other conditions as in the Historical simulation.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), Atmosphere,  historical SST", 
+            "long_name": "Atmospheric Model Intercomparison Project", 
+            "mip_era": "cmip6", 
+            "rationale": "AMIP baseline simulation for model evaluation and variability.", 
+            "related_experiments": [
+                {
+                    "name": "amip-a4SST-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-m4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-piForcing", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lwoff", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-p4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hld", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-TIP-nosh", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-future4K", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-lfmip-pdLC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "amip-lfmip-pObs", 
+                    "relationship": "is_constrainer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "cfmip", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6"
+            ], 
+            "requirements": [
+                "36yrs1979-2014", 
+                "amipSST", 
+                "amipSIC", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "f1048bbe-5eef-4dda-88ca-d1053cf9ea18", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "AGCMConfiguration": {
+            "canonical_name": "AGCMConfiguration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "8eb19b91-45fc-4199-911b-0e7338979cd3"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "165yrs1850-2014": {
+            "canonical_name": "165yrs1850-2014", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint", 
+            "uid": "492d33c9-3317-4333-8890-b8f1e6aae1a9"
+        }, 
+        "NTIP500": {
+            "canonical_name": "NTIP500", 
+            "description": "Modify the topography of the Tibetan Plateau (TIP) and other highland regions across Asia by setting surface elevations to 500m.  The topography above 500m is set to 500m in the following regions: 35\u00b0-45\u00b0N, 25\u00b0-50\u00b0E; 30\u00b0-35\u00b0N, 40\u00b0-50\u00b0E; 20\u00b0-75\u00b0N, 50\u00b0-70\u00b0E; 15\u00b0-75\u00b0N, 70\u00b0-180\u00b0E.  The surface properties unchanged.", 
+            "isConformanceRequested": true, 
+            "keywords": "TIP, 500m, Tibetan Plateau, Asia, level orography", 
+            "label": "TIP 500", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "aa60015e-b1e9-448e-82de-35062f25ad6f"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "HadISSTinAMO": {
+            "canonical_name": "HadISSTinAMO", 
+            "data_link": "Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST)", 
+            "description": "Sea surface temperature is restored to the model climatology plus HadISST observed historical anomaly in the AMO domain (0-70\u00b0N, 70\u00b0W-0\u00b0). The weight=1 in the inner box (5\u00b0N-65\u00b0N, 65\u00b0W-5\u00b0W) and linearly reduces to zero in the buffer zone from the inner to the outer box. Technical details for the restoring method for SSTs can be found in the appendix of Zhou et al 2014.", 
+            "isConformanceRequested": true, 
+            "keywords": "HadISST, AMO,  anomalies", 
+            "label": "HadISST in AMO", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "b91cfbec-86e2-4a8d-9e6b-6f78f8e80935"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "amipSST": {
+            "canonical_name": "amipSST", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
+            "label": "AMIP SST", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "d9ca34ea-7add-471e-8c8d-24d57f0a02de"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "CGCMConfiguration": {
+            "canonical_name": "CGCMConfiguration", 
+            "description": "A coupled ocean-atmosphere general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "CGCM, ocean-atmosphere, GCM", 
+            "label": "CGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "aec65a64-d8ed-449c-a0b1-5dc3953678fb"
+        }, 
+        "HistoricalEmissions": {
+            "canonical_name": "HistoricalEmissions", 
+            "description": "Core emissions datasets.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, emissions", 
+            "label": "Historical Emissions", 
+            "type": "forcing-constraint", 
+            "uid": "9afcc46a-076c-4086-ab4f-73b9834afbb3"
+        }, 
+        "PreIndustrialInitialisation": {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble", 
+            "uid": "02bb3aad-3224-4535-9bfe-29d4856cb0ba"
+        }, 
+        "Highlands500": {
+            "canonical_name": "Highlands500", 
+            "description": "Modify the topography of the East African Highlands, Sierra Madre in N. America and Andes in S. America in the model by setting surface elevations to 500m, with the surface properties unchanged. The highland regions are outlined in figure 5 of Zhou et al 2016.", 
+            "isConformanceRequested": true, 
+            "keywords": "Highlands, 500m, level orography", 
+            "label": "Highlands 500", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "b5736a96-f1b9-4d82-8b70-fc9ee7d58a11"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }, 
+        "ThreeMemberEnsemble": {
+            "canonical_name": "ThreeMemberEnsemble", 
+            "description": "An ensemble of three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "three, 3, ensemble, runs, simulations", 
+            "label": "ThreeMember", 
+            "type": "ensemble", 
+            "uid": "c81b195e-4cd5-46c0-9a88-ce83f4be169f"
+        }, 
+        "MinimumOneMemberEnsemble": {
+            "canonical_name": "MinimumOneMemberEnsemble", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble", 
+            "uid": "6502d22c-037f-4e86-aea6-abd8cc53105c"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "amipSIC": {
+            "canonical_name": "amipSIC", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
+            "label": "AMIP SIC", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "4080ff9b-e841-48d4-9079-5b820f99156d"
+        }, 
+        "145yrs1870-2014": {
+            "canonical_name": "145yrs1870-2014", 
+            "description": "Historical temporal constraint, pre-industrial to 2014", 
+            "isConformanceRequested": false, 
+            "keywords": "1870, 2014", 
+            "label": "1870-2014 145yrs", 
+            "type": "temporal-constraint", 
+            "uid": "dbdb18c3-2fb6-4c6e-83a3-f3347a71d450"
+        }, 
+        "TIP500NoSH": {
+            "canonical_name": "TIP500NoSH", 
+            "description": "Modify the surface sensible heat flux of the Tibetan Plateau (TIP).  The sensible heating on topography is removed (by setting the vertical diffusive heating term in the atmospheric thermodynamic equation to zero) where the topography is above 500m in the following regions: 35\u00b0-45\u00b0N, 25\u00b0-50\u00b0E; 30\u00b0-35\u00b0N, 40\u00b0-50\u00b0E; 20\u00b0-45\u00b0N, 50\u00b0-70\u00b0E; 15\u00b0-45\u00b0N, 70\u00b0-110\u00b0E.", 
+            "isConformanceRequested": true, 
+            "keywords": "TIP, 500m, Tibetan Plateau, zero sensible heat", 
+            "label": "TIP 500 No Sensible Heat", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "dfaa9347-3702-4639-80f5-55685ad66894"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "36yrs1979-2014": {
+            "canonical_name": "36yrs1979-2014", 
+            "description": "Historical, Recent past, since satellite observations have been available", 
+            "isConformanceRequested": false, 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
+            "type": "temporal-constraint", 
+            "uid": "82d6be50-30e5-4a3f-b1db-6e10d55c895c"
+        }, 
+        "hadISST": {
+            "canonical_name": "hadISST", 
+            "data_link": "Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST)", 
+            "description": "Impose HadISST sea ice and sea surface temperature data.", 
+            "isConformanceRequested": true, 
+            "keywords": "HadISST, Sea surface temperature, Sea ice, SST, SIC prescribed", 
+            "label": "HadISST", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "3598befc-64b4-400b-b366-5f6f0dd49ec2"
+        }, 
+        "HadISSTinIPO": {
+            "canonical_name": "HadISSTinIPO", 
+            "data_link": "Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST)", 
+            "description": "Sea surface temperatures is restored to the model climatology plus HadISST observed historical anomaly in the tropical lobe of the IPO domain (20\u00b0S-20\u00b0N, 175\u00b0E-75\u00b0W).  The weight=1 in the inner box (15\u00b0S-15\u00b0N, 180\u00b0E-80\u00b0W) and linearly reduces to zero in the buffer zone from the inner to the outer box. Technical details for the restoring method for SSTs can be found in the appendix of Zhou et al 2014.", 
+            "isConformanceRequested": true, 
+            "keywords": "HadISST, IPO, tropical lobe, anomalies", 
+            "label": "HadISST in IPO", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "cd84bbaa-ff32-4042-b8fb-9fa3ca4be505"
+        }
+    }, 
+    "data_links": {
+        "Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST)": {
+            "protocol": "http", 
+            "description": "The Met Office Hadley Centre's sea ice and sea surface temperature (SST) data set, HadISST1, replaces the Global sea Ice and Sea Surface Temperature (GISST) data sets, and is a unique combination of monthly globally-complete fields of SST and sea ice concentration on a 1 degree latitude-longitude grid from 1870 to date.", 
+            "linkage": "http://www.metoffice.gov.uk/hadobs/hadisst/", 
+            "name": "Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST)"
+        }, 
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }, 
+        "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions": {
+            "protocol": "http", 
+            "description": "Specification of the AMIP sea surface temperature and sea ice concentration boundary conditions for CMIP6", 
+            "linkage": "http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/index.php", 
+            "name": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }
+    }
+}

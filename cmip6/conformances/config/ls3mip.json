@@ -1,0 +1,1382 @@
+{
+    "mip": {
+        "canonical_name": "ls3mip", 
+        "description": "LS3MIP is a suite of complementary experiments that make use of offline land surface models, atmosphere only models and Earth system models for simulations of the recent past and projected futures to 2100.", 
+        "experiments": [
+            "historical", 
+            "ssp585", 
+            "ssp434", 
+            "land-hist", 
+            "land-future", 
+            "land-hist-princeton", 
+            "land-hist-cruNcep", 
+            "land-hist-wfdei", 
+            "lfmip-pdLC", 
+            "amip-lfmip-pdLC", 
+            "lfmip-rmLC", 
+            "amip-lfmip-rmLC", 
+            "lfmip-initLC", 
+            "amip-lfmip-pObs"
+        ], 
+        "keywords": "Land surface, snow, soil, moisture", 
+        "long_name": "Land Surface, Snow and Soil Moisture MIP", 
+        "label": "LS3MIP", 
+        "rationale": "Providing a comprehensive assessment of land surface, snow, and soil moisture-climate feedback, and diagnosing systematic biases in the land modules of current ESMs using constrained land-module-only experiments.", 
+        "uid": "ec9243df-26b7-4ed5-ba77-beb65bc13276", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/ls3mip?client=esdoc"
+    }, 
+    "experiments": {
+        "land-hist-princeton": {
+            "canonical_name": "land-hist-princeton", 
+            "description": "Land only simulations using Princeton forcing data and a standard bias correction strategy. As LUMIP land-hist but with princeton forcing dataset. The Princeton Global Forcing data is based on NCEP-NCAR reanalysis data. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical, land surface, Princeton", 
+            "long_name": "Historical land-only with Princeton forcings", 
+            "mip_era": "cmip6", 
+            "rationale": "Land reanalysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "land-hist", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "114yrs1901-2014", 
+                "trendySpinUpPrinceton", 
+                "trendyInterimForcingPrinceton", 
+                "PrincetonHistoricalForcing", 
+                "HistoricalLandUse", 
+                "CO2Historical", 
+                "historicalNDep", 
+                "historicalAerDep", 
+                "HistoricalSolarIrradiance", 
+                "SingleMemberEnsemble", 
+                "LSM-Configuration"
+            ], 
+            "tier": 2, 
+            "uid": "9442d94e-1f35-42a8-9c9e-ce1b0e21745a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-hist-princeton?client=esdoc"
+        }, 
+        "land-hist": {
+            "canonical_name": "land-hist", 
+            "description": "Land surface model simulation.  Use the same land model configuration as used in the coupled CMIP6 historical simulations. Include representation of land cover, land use and land management. All applicable land use features should be active. Forced with historical observed climate. Include all transient forcings that are relevant for the land model such as CO2 concentration, Nitrogen deposition, aerosol deposition, population density. Start year either 1850 or 1700 depending on standard practice for particular model. This experiment is shared with the LS3MIP, note that LS3MIP expects the start year to be 1850.   \nThis experiment can and likely will be a different configuration across models due to different representations of land use for each model.", 
+            "governing_mips": [
+                "lumip"
+            ], 
+            "keywords": "LUMIP, Tier 1, LS3MIP, Tier 1, historical, All Management, AM, All  LULCC, 1850, 1700", 
+            "long_name": "historical land-only", 
+            "mip_era": "cmip6", 
+            "rationale": "Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts. To assess the relative impact of land cover and incremental land management change on fluxes of water, energy, and carbon in combination with other LUMIP land experiments. Comparison with land-hist-altStartYear indicates impact of pre-1850 land use.", 
+            "related_experiments": [
+                {
+                    "name": "land-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-princeton", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-altStartYear", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-altLu1", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-noWoodHarv", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-noPasture", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-crop-noIrrigFert", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-crop-grass", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-cruNcep", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-noShiftcultivate", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-crop-noFert", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-crop-noIrrig", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-cClim", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-altLu2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-noFire", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-wfdei", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-cCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "land-hist-altStartYear", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip-lfmip-pObs", 
+                    "relationship": "is_constrainer_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip", 
+                "lumip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "315yrs1700-2014", 
+                "historicalGSWP3Forcing", 
+                "HistoricalLandUse", 
+                "allHistoricalLandSurfaceForcings", 
+                "trendySpinUpGSWP3", 
+                "trendyInterimForcingGSWP3", 
+                "SingleMemberEnsemble", 
+                "LSM-Configuration", 
+                "allLandManagement"
+            ], 
+            "tier": 1, 
+            "uid": "ac29b48e-4635-4e0d-aa3c-9e4cb02666bf", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-hist?client=esdoc"
+        }, 
+        "land-future": {
+            "canonical_name": "land-future", 
+            "description": "Offline land surface simulations forced with ScenarioMIP SSP5-85 and SSP4-34 with 3 realisations for each forcing scenario.  A trend preserving statistical bias correction method is applied to 3-hopurly surface meteorological variables from the scenario output to generate a set of ensemble forcing data.  Gridded forcings will be provided by LS3MIP. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Scenario, land surface", 
+            "long_name": "Future land-only", 
+            "mip_era": "cmip6", 
+            "rationale": "Climate trend analysis. Climate change impact assessment. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+            "related_experiments": [
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "LMIPSSP5-85Forcing", 
+                "LMIPSSP4-34Forcing", 
+                "LSM-Configuration", 
+                "rcp45rcp26x3"
+            ], 
+            "tier": 2, 
+            "uid": "ba7b9f4b-90bd-4718-86d9-e0c1b32405e1", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-future?client=esdoc"
+        }, 
+        "ssp434": {
+            "canonical_name": "ssp434", 
+            "description": "Gap: Mitigation scenario with low radiative forcing by the end of the century.  Following approximately RCP3.4 global forcing pathway with SSP4 socioeconomic conditions. Radiative forcing reaches a level of 3.4 W/m2 in 2100. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 2, Scenario, SSP, RCP, SSP4, RCP3.4, future,  Low forcing, Gap: Mitigation", 
+            "long_name": "gap-filling scenario reaching 3.4 based on SSP4", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario fills a gap at the low end of the range of plausible future forcing pathways.  Of interest to mitigation policy, since mitigation costs differ substatially between forcing levels of 4.5 W/m2 and 2.6 W/m2.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp34Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "8fa9ed0a-f813-452c-b96e-95d3b4a67bf5", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp434?client=esdoc"
+        }, 
+        "land-hist-cruNcep": {
+            "canonical_name": "land-hist-cruNcep", 
+            "description": "Land only simulations using CRU-NCEP forcing data and a standard bias correction strategy. As LUMIP land-hist but with CRU-NCEP dataset. CRU-NCEP is a forcing dataset in which NCEP reanalysis data are bias corrected using the gridded in situ climate data form the Climate Reserach Unit (CRU). The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical, land surface, CRU-NCEP", 
+            "long_name": "Historical land-only with CRU-NCEP forcings", 
+            "mip_era": "cmip6", 
+            "rationale": "Land reanalysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "land-hist", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "114yrs1901-2014", 
+                "trendySpinUpCRU-NCEP", 
+                "trendyInterimForcingCRU-NCEP", 
+                "CRU-NCEPHistoricalForcing", 
+                "HistoricalLandUse", 
+                "CO2Historical", 
+                "historicalNDep", 
+                "historicalAerDep", 
+                "HistoricalSolarIrradiance", 
+                "SingleMemberEnsemble", 
+                "LSM-Configuration"
+            ], 
+            "tier": 2, 
+            "uid": "2728afe7-0a40-4616-ab65-f07918c79e29", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-hist-cruNcep?client=esdoc"
+        }, 
+        "lfmip-pdLC": {
+            "canonical_name": "lfmip-pdLC", 
+            "description": "Scenario forced experiment with prescribed land surface climatology derived from \"present climate\" conditions (1980-2014).  The experiment is comprised of transient coupled atmosphere-ocean simulations in which a selection of land surface characteristics is prescribed rather than interactively calculated in the model.  The \"climatological\" land surface forcing is calculated as the mean annual cycle in the period 1980-2014 from the historical GCM simulaitons. Additional ensemble members are requested with tier 2 priority.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 1, Tier 2, Historical Scenario, Prescribed Land 1980-2014", 
+            "long_name": "prescribed land surface climatology derived from present climate", 
+            "mip_era": "cmip6", 
+            "rationale": "Diagnose land-climate feedback including ocean response. To diagnose the role of land-atmosphere feedback at climate time scales.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "121yrs1980-2100", 
+                "LFMIP-CAForcing", 
+                "SingleMemberEnsemble", 
+                "FourMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "0c050947-e4f7-4608-8ffc-25f579464930", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lfmip-pdLC?client=esdoc"
+        }, 
+        "amip-lfmip-pObs": {
+            "canonical_name": "amip-lfmip-pObs", 
+            "description": "Simulations with observed SST and land-hist output.  A \"pseudo-observed boundary condition\" experiment that uses AMIP SSTs and land boundary conditions generated by the land-hist experiment.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical, pseudo-observations", 
+            "long_name": "prescribed land from pseudo-observations and AMIP SSTs", 
+            "mip_era": "cmip6", 
+            "rationale": "\"Perfect boundary condition\" simulation. Simulations driven by surface fields that are strongly controlled by observed forcings.", 
+            "related_experiments": [
+                {
+                    "name": "amip", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "land-hist", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "114yrs1901-2014", 
+                "land-histOutput", 
+                "amipSST", 
+                "amipSIC", 
+                "SingleMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "21ec48bc-97be-4ccb-aa23-0f9b3685b235", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-lfmip-pObs?client=esdoc"
+        }, 
+        "land-hist-wfdei": {
+            "canonical_name": "land-hist-wfdei", 
+            "description": "Land only simulations using WFDEI forcing data and a standard bias correction strategy. As LUMIP land-hist but with WFDEI dataset. WFDEI: WATCH Forcing Data methodology applied to ERA-Interim reanalysis data. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical, land surface, WFDEI", 
+            "long_name": "Historical land-only with WFDEI forcings", 
+            "mip_era": "cmip6", 
+            "rationale": "Land reanalysis. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "land-hist", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "114yrs1901-2014", 
+                "trendySpinUpWFDEI", 
+                "trendyInterimForcingWFDEI", 
+                "WFDEIHistoricalForcing", 
+                "HistoricalLandUse", 
+                "CO2Historical", 
+                "historicalNDep", 
+                "historicalAerDep", 
+                "HistoricalSolarIrradiance", 
+                "SingleMemberEnsemble", 
+                "LSM-Configuration"
+            ], 
+            "tier": 2, 
+            "uid": "74155ce4-d9ab-4415-bc75-faacf273470a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-hist-wfdei?client=esdoc"
+        }, 
+        "lfmip-initLC": {
+            "canonical_name": "lfmip-initLC", 
+            "description": "\"pseudo-observed boundary condition\" experiment that uses that uses batch offline land models (in line with the GLACE2 set-up) to initialize historical runs with prescribed reconstructed land surface states, either derived from offline simulations or from various observational data sources.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical, reconstructed land surface, LFMIP-predictability", 
+            "long_name": "Initialised from historical run year 1980 but with land conditions initialised from pseudo-observations", 
+            "mip_era": "cmip6", 
+            "rationale": "Land-related seasonal predictability. Evaluation of the contribution of snow cover melting and its related feedbacks to the underestimations of recent boreal polar warming by climate models.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "land-hist", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "35yrs1980-2014", 
+                "LFMIP-HPForcing", 
+                "TenMemberLandSurfaceInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "38068d30-e403-4e70-8c64-9f291547c4b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lfmip-initLC?client=esdoc"
+        }, 
+        "amip-lfmip-pdLC": {
+            "canonical_name": "amip-lfmip-pdLC", 
+            "description": "Scenario forced experiment with prescribed land surface climatology derived from \"present climate\" conditions (1980-2014) and prescribed SST (sea surface temperatures). SST configuration is taken from the AMIP runs in the DECK.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land, prescribed SST", 
+            "long_name": "prescribed land surface climatology and SST derived from present climate", 
+            "mip_era": "cmip6", 
+            "rationale": "Diagnose land-climate feedback over land. To diagnose the role of land-atmosphere feedback at climate time scales. To isolate the role of the ocean in propagating the damping/reinforcing land surface responses on climate.", 
+            "related_experiments": [
+                {
+                    "name": "amip", 
+                    "relationship": "is_constrained_by"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "121yrs1980-2100", 
+                "LFMIP-CAForcing", 
+                "amipSST", 
+                "amipSIC", 
+                "FiveMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "58708c3a-040e-4916-bc76-4e1a59147cd2", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-lfmip-pdLC?client=esdoc"
+        }, 
+        "historical": {
+            "canonical_name": "historical", 
+            "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6, Historical, Reference", 
+            "long_name": "all-forcing simulation of the recent past", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-historical-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp460", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6", 
+                "ls3mip", 
+                "lumip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "479ff5ed-9c56-4d1e-98c3-f97a0864e7b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical?client=esdoc"
+        }, 
+        "amip-lfmip-rmLC": {
+            "canonical_name": "amip-lfmip-rmLC", 
+            "description": "Scenario forced experiment with prescribed land surface climatology derived from 30 year running mean and prescribed SST (sea surface temperatures).", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land 30yr running mean, prescribed SST", 
+            "long_name": "prescribed  land surface climatology and SST derived from 30 yr running mean", 
+            "mip_era": "cmip6", 
+            "rationale": "Diagnose land-climate feedback over land. For diagnosing shifts in the regions of strong land-atmosphere coupling, and shifts in potential predictability related to land surface states.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "lfmip-rmLC", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "121yrs1980-2100", 
+                "LFMIP-RAForcing", 
+                "FiveMemberEnsemble", 
+                "AGCMConfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "da51d603-b6d0-45e3-bfad-0a6e00138730", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/amip-lfmip-rmLC?client=esdoc"
+        }, 
+        "ssp585": {
+            "canonical_name": "ssp585", 
+            "description": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.", 
+            "governing_mips": [
+                "scenariomip"
+            ], 
+            "keywords": "ScenarioMIP, Tier 1, Scenario, SSP, RCP, SSP5, RCP8.5, future, High forcing, SSP-based RCP", 
+            "long_name": "update of RCP8.5 based on SSP5", 
+            "mip_era": "cmip6", 
+            "rationale": "The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.", 
+            "related_experiments": [
+                {
+                    "name": "ism-ssp585-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585-ssp126Lu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "highres-future", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ssp585-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-ssp585", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "G6sulfur", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7SST1-cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6solar", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G6SST1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp534-over", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G7cirrus", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "scenariomip", 
+                "c4mip", 
+                "geomip", 
+                "ismip6", 
+                "ls3mip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "rcp85Forcing", 
+                "FutureSolarIrradiance", 
+                "FutureSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "HistoricalInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "35338d2b-4664-46b1-b304-8966860702f7", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp585?client=esdoc"
+        }, 
+        "lfmip-rmLC": {
+            "canonical_name": "lfmip-rmLC", 
+            "description": "Scenario forced experiment with prescribed land surface climatology derived from transient 30 year running mean.   Additional ensemble members are requested with tier 2 priority.", 
+            "governing_mips": [
+                "ls3mip"
+            ], 
+            "keywords": "LS3MIP, Tier 1, Tier 2, Historical Scenario, Prescribed land 30yr running mean", 
+            "long_name": "prescribed land surface climatology derived from 30 yr running mean", 
+            "mip_era": "cmip6", 
+            "rationale": "Diagnose land-climate feedback including ocean response. For diagnosing shifts in the regions of strong land-atmosphere coupling, and shifts in potential predictability related to land surface states.", 
+            "related_experiments": [
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "amip-lfmip-rmLC", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "ls3mip"
+            ], 
+            "requirements": [
+                "121yrs1980-2100", 
+                "LFMIP-RAForcing", 
+                "SingleMemberEnsemble", 
+                "FourMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "90eb5274-c9d4-472f-b3da-30b2595193a0", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lfmip-rmLC?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "historicalGSWP3Forcing": {
+            "canonical_name": "historicalGSWP3Forcing", 
+            "data_link": "Global Soil Wetness Project Phase 3 Website", 
+            "description": "Apply Global Soil Wetness Project phase three (GSWP3) forcing data for offline land surface models running the LS3MIP historical simulation land-hist is provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, forcing, GSWP3", 
+            "label": "Historical GSWP3 Meteorological Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "d951e731-e559-4767-b6ad-4a2d2a2ef392"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "allLandManagement": {
+            "canonical_name": "allLandManagement", 
+            "description": "All applicable land management active in the land surface model configuration.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, all land management, Grassland, Fire, Wood Harvest, Pasture, Crop, Irrigation, Fertilisation", 
+            "label": "All Land Management Active", 
+            "type": "model-configuration", 
+            "uid": "be900316-b675-46cc-bb19-d356ef3a996b"
+        }, 
+        "LMIPSSP5-85Forcing": {
+            "canonical_name": "LMIPSSP5-85Forcing", 
+            "description": "SSP5-85 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, scenario, forcing, SSP5-85, RCP8.5", 
+            "label": "LMIPSSP5-85Forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "2d708214-a6dc-49a9-9a84-80d39d68b6eb"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "FutureSolarParticleForcing": {
+            "canonical_name": "FutureSolarParticleForcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "e3ac7cf0-6c67-4092-b9c8-8bc4df2a5e22"
+        }, 
+        "WFDEIHistoricalForcing": {
+            "canonical_name": "WFDEIHistoricalForcing", 
+            "data_link": "The WFDEI meteorological forcing data set: WATCH Forcing Data methodology applied to ERA-Interim reanalysis data", 
+            "description": "Apply WFDEI (WATCH Forcing Data methodology applied to ERA-Interim reanalysis data) forcing to offline land surface models running the LS3MIP land-hist-wfdei historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land surface, WFDEI", 
+            "label": "WFDEI historical forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "e9a3a638-b550-45a7-ae61-48ab4e982db8"
+        }, 
+        "35yrs1980-2014": {
+            "canonical_name": "35yrs1980-2014", 
+            "description": "Historical, from 1980 to 2014.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1980, 2014", 
+            "label": "1980-2014 35yrs", 
+            "type": "temporal-constraint", 
+            "uid": "029110e4-7e24-484b-a9e4-19bf715d4fb8"
+        }, 
+        "TenMemberLandSurfaceInitialisation": {
+            "canonical_name": "TenMemberLandSurfaceInitialisation", 
+            "description": "An ensemble of ten members initialised via a batch of 10 land surface models", 
+            "isConformanceRequested": true, 
+            "keywords": "ten, 10, ensemble, historical, land surface, initialisation", 
+            "label": "TenLandInitialisations", 
+            "type": "ensemble", 
+            "uid": "8b2a1a07-e616-4e77-9bd3-6c31749fce58"
+        }, 
+        "165yrs1850-2014": {
+            "canonical_name": "165yrs1850-2014", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint", 
+            "uid": "492d33c9-3317-4333-8890-b8f1e6aae1a9"
+        }, 
+        "trendySpinUpPrinceton": {
+            "canonical_name": "trendySpinUpPrinceton", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the Princeton global forcing dataset (1901\u20131920). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, Princeton", 
+            "label": "TRENDY spin up for Princeton", 
+            "type": "forcing-constraint", 
+            "uid": "68535038-aa38-46c2-80f8-10463bc7603b"
+        }, 
+        "rcp34Forcing": {
+            "canonical_name": "rcp34Forcing", 
+            "description": "Impose RCP3.4 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4, future, 21st century, SSP4, RCP3.4", 
+            "label": "RCP34 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "0053f5b2-9556-42c8-be9c-34f9d5e2afac"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "rcp45rcp26x3": {
+            "canonical_name": "rcp45rcp26x3", 
+            "description": "A multi-ensemble of six simulations with three realisations for each forcing scenario RCP8.5 and RCP3.4", 
+            "isConformanceRequested": true, 
+            "keywords": "three, 3, realisations, scenarios, RCP8.5, RCP3.4", 
+            "label": "RCP85RCP34x3", 
+            "type": "multi-ensemble", 
+            "uid": "69378127-6880-4ee0-a696-cae89cf64005"
+        }, 
+        "historicalAerDep": {
+            "canonical_name": "historicalAerDep", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Impose time varying (transient) historical aerosol deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol deposition", 
+            "label": "Historical Aerosol Deposition", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "a7802765-2277-4e31-9c3c-9271ce95775b"
+        }, 
+        "trendyInterimForcingCRU-NCEP": {
+            "canonical_name": "trendyInterimForcingCRU-NCEP", 
+            "description": "For the interim period from 1850 to the first year of the CRU-NCEP forcing dataset, the  forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1850 to first forcing year, interim forcing, CRU-NCEP", 
+            "label": "TRENDY Interim Forcing for CRU-NCEP", 
+            "type": "forcing-constraint", 
+            "uid": "4494239f-1619-4f8f-8257-672e6e0fb697"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "amipSST": {
+            "canonical_name": "amipSST", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
+            "label": "AMIP SST", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "d9ca34ea-7add-471e-8c8d-24d57f0a02de"
+        }, 
+        "trendySpinUpCRU-NCEP": {
+            "canonical_name": "trendySpinUpCRU-NCEP", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the CRU-NCEP forcing dataset (1901\u20131920). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, CRU-NCEP", 
+            "label": "TRENDY spin up for CRU-NCEP", 
+            "type": "forcing-constraint", 
+            "uid": "89da4da1-b382-4a97-a4ea-d81713af1e99"
+        }, 
+        "rcp85Forcing": {
+            "canonical_name": "rcp85Forcing", 
+            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
+            "label": "RCP85 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "facc5135-2ae3-4d1c-8744-7d95c25575f4"
+        }, 
+        "114yrs1901-2014": {
+            "canonical_name": "114yrs1901-2014", 
+            "description": "Historical, begin in 1901 and run for 114 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1901-2014", 
+            "label": "1901-2014 114yrs", 
+            "type": "temporal-constraint", 
+            "uid": "d21fb25b-e305-4a39-ab11-ffafc342633d"
+        }, 
+        "AGCMConfiguration": {
+            "canonical_name": "AGCMConfiguration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "8eb19b91-45fc-4199-911b-0e7338979cd3"
+        }, 
+        "historicalNDep": {
+            "canonical_name": "historicalNDep", 
+            "data_link": "IGAC/SPARC Chemistry-Climate Model Initiative (CCMI) Forcing Databases in Support of CMIP6", 
+            "description": "Impose time varying (transient) historical nitrogen (N) deposition.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, Nitrogen deposition", 
+            "label": "Historical Nitrogen deposition", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "68e17410-eb2a-48ad-b25d-7a4fd5a0d5fc"
+        }, 
+        "allHistoricalLandSurfaceForcings": {
+            "canonical_name": "allHistoricalLandSurfaceForcings", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply all transient historical forcings that are relevant for the land surface model. Include transient CO2, Nitrogen deposition, aerosol deposition and population density etc.", 
+            "isConformanceRequested": true, 
+            "keywords": "LUMIP, historical, land surface forcing, all forcings", 
+            "label": "All historical land surface forcings", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "1501820d-8853-4b13-9281-0293531c514b"
+        }, 
+        "LFMIP-HPForcing": {
+            "canonical_name": "LFMIP-HPForcing", 
+            "description": "Reconstructed land surface states, for the period 1980-2014, derived from offline simulations or derived from observational data sources.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, reconstructed land surface, recent past", 
+            "label": "LFMIP-HP Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "ffa36118-1178-41aa-8620-86ca7e8dadfe"
+        }, 
+        "trendyInterimForcingGSWP3": {
+            "canonical_name": "trendyInterimForcingGSWP3", 
+            "description": "For the interim period from 1700 to the first year of the GSWP3 forcing dataset, the forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1700 to first forcing year, interim forcing, GSWP3", 
+            "label": "TRENDY Interim Forcing for GSWP3", 
+            "type": "forcing-constraint", 
+            "uid": "f8a458e9-adb9-412a-b44d-d9f13eee5fd3"
+        }, 
+        "land-histOutput": {
+            "canonical_name": "land-histOutput", 
+            "description": "Forcing is from the output of the land-hist experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land surface, land-hist, output", 
+            "label": "land-hist output", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a14d2029-0446-4cb5-b000-dd9126db2949"
+        }, 
+        "trendyInterimForcingPrinceton": {
+            "canonical_name": "trendyInterimForcingPrinceton", 
+            "description": "For the interim period from 1850 to the first year of the Princeton global forcing dataset, the forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1850 to first forcing year, interim forcing, Princeton", 
+            "label": "TRENDY Interim Forcing for Princeton", 
+            "type": "forcing-constraint", 
+            "uid": "5b755b35-c631-42b8-ada2-65594509d5c5"
+        }, 
+        "FiveMemberEnsemble": {
+            "canonical_name": "FiveMemberEnsemble", 
+            "description": "An ensemble of five simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "five, 5, ensemble, runs, simulations", 
+            "label": "FiveMember", 
+            "type": "ensemble", 
+            "uid": "065cb41e-ee17-484f-b7b9-a223c6369e73"
+        }, 
+        "trendySpinUpWFDEI": {
+            "canonical_name": "trendySpinUpWFDEI", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the WFDEI forcing dataset (1901\u20131920). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, WFDEI", 
+            "label": "TRENDY spin up for WFDEI", 
+            "type": "forcing-constraint", 
+            "uid": "9131690c-f9a9-4920-b969-a2e8714f9009"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "PrincetonHistoricalForcing": {
+            "canonical_name": "PrincetonHistoricalForcing", 
+            "data_link": "Development of a 50-Year High-Resolution Global Dataset of Meteorological Forcings for Land Surface Modeling", 
+            "description": "Apply Princeton Global Forcing to offline land surface models running the LS3MIP land-hist-princeton historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land surface, princeton global forcing", 
+            "label": "Princeton Historical Forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "2b60d66b-1452-47d7-9fa5-73d178cd5857"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "CRU-NCEPHistoricalForcing": {
+            "canonical_name": "CRU-NCEPHistoricalForcing", 
+            "data_link": "A combined dataset for ecosystem modelling", 
+            "description": "Apply CRU-NCEP forcing to offline land surface models running the LS3MIP land-hist-CruNcep historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land surface, CRU-NCEP", 
+            "label": "CRU-NCEP Historical forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "8fff6bdf-2bf2-4925-8017-310294a79098"
+        }, 
+        "121yrs1980-2100": {
+            "canonical_name": "121yrs1980-2100", 
+            "description": "Historical scenario, from 1980 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1980, 2100", 
+            "label": "1980-2100 121yrs", 
+            "type": "temporal-constraint", 
+            "uid": "f24f58b4-1a72-4ab9-aacb-e23c70e3a6d2"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }, 
+        "trendySpinUpGSWP3": {
+            "canonical_name": "trendySpinUpGSWP3", 
+            "description": "Spin up of the land surface model should follow the TRENDY protocol which calls for recycling of the climate mean and variability from two decades of the GSWP3 forcing dataset (1831\u20131850). Land use should be held constant at 1850 as in the DECK 1850 coupled control simulation (piControl). CO2 and all other forcings should be held constant at 1850 levels during spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, spin up, GSWP3", 
+            "label": "TRENDY spin up for GSWP3", 
+            "type": "forcing-constraint", 
+            "uid": "e1d515dd-57cc-470d-a690-cfad3715da76"
+        }, 
+        "LMIPSSP4-34Forcing": {
+            "canonical_name": "LMIPSSP4-34Forcing", 
+            "description": "SSP4-34 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, scenario, forcing, SSP4-34, RCP3.4", 
+            "label": "LMIP SSP4-34 Forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "1a9f8a1c-bd4a-414d-aef4-c09891ef4d35"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "86yrs2015-2100": {
+            "canonical_name": "86yrs2015-2100", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint", 
+            "uid": "1a09bd87-123b-40bf-91cb-777f1d0b93bc"
+        }, 
+        "315yrs1700-2014": {
+            "canonical_name": "315yrs1700-2014", 
+            "description": "Historical, from 1700 to 2014.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1700, 2014", 
+            "label": "1700-2014 315yrs", 
+            "type": "temporal-constraint", 
+            "uid": "0dad0d10-3e3d-4ce8-ae6f-747ef5412a6c"
+        }, 
+        "LSM-Configuration": {
+            "canonical_name": "LSM-Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration", 
+            "uid": "db26b92a-8576-4759-b43a-b7e4428cda54"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "amipSIC": {
+            "canonical_name": "amipSIC", 
+            "data_link": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions", 
+            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
+            "label": "AMIP SIC", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "4080ff9b-e841-48d4-9079-5b820f99156d"
+        }, 
+        "FourMemberEnsemble": {
+            "canonical_name": "FourMemberEnsemble", 
+            "description": "An ensemble of four simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "four, 4, ensemble, runs, simulations", 
+            "label": "FourMember", 
+            "type": "ensemble", 
+            "uid": "a6fb4dbe-450d-4d4d-a7ed-1d31f7976fd3"
+        }, 
+        "LFMIP-CAForcing": {
+            "canonical_name": "LFMIP-CAForcing", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Land surface forcing climatology for present climate (1980-2014).  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, present climate, land surface forcing", 
+            "label": "LFMIP-CAForcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "83b6c18c-9c9f-4a38-91e9-4acb576ae136"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "trendyInterimForcingWFDEI": {
+            "canonical_name": "trendyInterimForcingWFDEI", 
+            "description": "For the interim period from 1850 to the first year of the WFDEI forcing dataset, the forcing data should continue to be recycled but all other forcings (land-use, CO2, etc.) should be as in the CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, land surface, 1850 to first forcing year, interim forcing, WFDEI", 
+            "label": "TRENDY Interim Forcing for WFDEI", 
+            "type": "forcing-constraint", 
+            "uid": "66168d97-4ffb-4112-bbf5-f49606edf43e"
+        }, 
+        "CO2Historical": {
+            "canonical_name": "CO2Historical", 
+            "description": "Impose historical concentrations of atmospheric Carbon Dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "OMIP, OCMIP3, CO2, historical", 
+            "label": "CO2 Historical", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "04912491-ad36-4b40-808a-a82c9f6ab497"
+        }, 
+        "LFMIP-RAForcing": {
+            "canonical_name": "LFMIP-RAForcing", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "30 year running mean land surface forcing.  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, 30 year running mean, land surface forcing", 
+            "label": "LFMIP-RAForcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "1cb5fa22-3221-4a23-8c9c-528097a300a8"
+        }, 
+        "FutureSolarIrradiance": {
+            "canonical_name": "FutureSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "6f08fddf-293b-4412-8dc7-4c791a514ee3"
+        }
+    }, 
+    "data_links": {
+        "A combined dataset for ecosystem modelling": {
+            "protocol": "http", 
+            "description": "CRU-NCEP is a forcing dataset in which NCEP reanalysis data are bias corrected using the gridded in situ climate data from the Climate Reserach Unit (CRU).", 
+            "linkage": "http://esgf.extra.cea.fr/thredds/catalog/store/p529viov/cruncep/catalog.html", 
+            "name": "A combined dataset for ecosystem modelling"
+        }, 
+        "The WFDEI meteorological forcing data set: WATCH Forcing Data methodology applied to ERA-Interim reanalysis data": {
+            "protocol": "http", 
+            "description": "WATCH Forcing Data methodology applied to ERA-Interim reanalysis data.", 
+            "linkage": "http://onlinelibrary.wiley.com/doi/10.1002/2014WR015638/abstract", 
+            "name": "The WFDEI meteorological forcing data set: WATCH Forcing Data methodology applied to ERA-Interim reanalysis data"
+        }, 
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }, 
+        "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions": {
+            "protocol": "http", 
+            "description": "Specification of the AMIP sea surface temperature and sea ice concentration boundary conditions for CMIP6", 
+            "linkage": "http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/index.php", 
+            "name": "AMIP Sea Surface Temperature and Sea Ice Concentration Boundary Conditions"
+        }, 
+        "Global Soil Wetness Project Phase 3 Website": {
+            "protocol": "http", 
+            "description": "The 3rd phase of the Global Soil Wetness Project (GSWP3) provides meteorological forcings for the entire 20th Century and beyond.", 
+            "linkage": "http://hydro.iis.u-tokyo.ac.jp/GSWP3/intro.html", 
+            "name": "Global Soil Wetness Project Phase 3 Website"
+        }, 
+        "IGAC/SPARC Chemistry-Climate Model Initiative (CCMI) Forcing Databases in Support of CMIP6": {
+            "protocol": "http", 
+            "description": "Provides modellers with information and links to the IGAC/SPARC CCMI ozone database and nitrogen-deposition fields from preindustrial time to the future (1850-2100).", 
+            "linkage": "http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/", 
+            "name": "IGAC/SPARC Chemistry-Climate Model Initiative (CCMI) Forcing Databases in Support of CMIP6"
+        }, 
+        "Development of a 50-Year High-Resolution Global Dataset of Meteorological Forcings for Land Surface Modeling": {
+            "protocol": "http", 
+            "description": "A forcing dataset for land surface and other terrestrial models, and for analysing changes in near-surface climate.", 
+            "linkage": "http://journals.ametsoc.org/doi/abs/10.1175/JCLI3790.1", 
+            "name": "Development of a 50-Year High-Resolution Global Dataset of Meteorological Forcings for Land Surface Modeling"
+        }
+    }
+}

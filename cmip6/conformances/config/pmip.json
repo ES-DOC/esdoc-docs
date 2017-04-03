@@ -1,0 +1,845 @@
+{
+    "mip": {
+        "canonical_name": "pmip", 
+        "description": "PMIP is a suite of experiments that give insight into the behaviour of the climate system in the past and how it compares to present-day climate.  PMIP builds on simulations for CMIP5: last millenium (last 1000 years), the mid-Holocene (~6,000 years ago), the Last Glacial Maximum (~21,000 years ago) with two additional warm period simulations: the Last Interglacial (~127,000 years ago) and the mid-Pliocene (~3,200,000 years ago).", 
+        "experiments": [
+            "piControl", 
+            "past1000", 
+            "midHolocene", 
+            "lgm", 
+            "lig127k", 
+            "midPliocene-eoi400"
+        ], 
+        "keywords": "paleoclimate, past climates, model credibility", 
+        "long_name": "Paleoclimate Modeling Intercomparison Project", 
+        "label": "PMIP", 
+        "rationale": "(a) Analysing the response to forcings and major feedback for past climates outside the range of recent variability; (b) assessing the credibility of climate models used for future climate projections.", 
+        "uid": "d52302a0-d2a7-40df-8816-148c5a63473e", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/pmip?client=esdoc"
+    }, 
+    "experiments": {
+        "midHolocene": {
+            "canonical_name": "midHolocene", 
+            "description": "Impose Mid-Holocene (6 kyr ago) boundary conditions for orbital parameters and the atmospheric concentration of well-mixed greenhouse gases. Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, MH, mid Holocene", 
+            "long_name": "mid-Holocene", 
+            "mip_era": "cmip6", 
+            "rationale": "Compare with paleodata the model response to known orbital forcing changes and changes in greenhouse gas concentrations.  Evaluate relationships between changes in mean state and variability.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip"
+            ], 
+            "requirements": [
+                "100yrsAfterSpinUp", 
+                "mid-HoloceneWMGHG", 
+                "midHoloceneAstroParams", 
+                "preIndIceSheet", 
+                "preIndLandSeaMask", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "5ab9737e-a264-4378-a8b2-f0658832b583", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/midHolocene?client=esdoc"
+        }, 
+        "lgm": {
+            "canonical_name": "lgm", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) boundary conditions for ice-sheet and land-sea mask, the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, LGM, last glacial macimum", 
+            "long_name": "last glacial maximum", 
+            "mip_era": "cmip6", 
+            "rationale": "Compare with paleodata the model response to ice-age boundary conditions.  Attempt to provide empirical constraints on global climate sensitivity. To examine the impact of changes in ice sheets, land-sea distribution and greenhouse gases on climate.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip"
+            ], 
+            "requirements": [
+                "100yrsAfterSpinUp", 
+                "LGMWMGHG", 
+                "LGMAstroParams", 
+                "LGMIceSheet", 
+                "LGMlandSeaMask", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "d4fef651-5023-4ef5-b54a-9ca5a27813c7", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lgm?client=esdoc"
+        }, 
+        "past1000": {
+            "canonical_name": "past1000", 
+            "description": "For the period from 850 to 1850 CE (the millennium before the start of the industrial revolution), impose boundary conditions of solar variations, volcanic aerosols, atmospheric concentration of well-mixed greenhouse gases, land use and orbital parameters.  Run for 1000 years after spin-up period. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, past1000, last millenium", 
+            "long_name": "past 1000 years", 
+            "mip_era": "cmip6", 
+            "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to (mainly) natural forcing under climatic background conditions not too different from today.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "10006rs850-1849", 
+                "past1000WMGHG", 
+                "past1000AstroParams", 
+                "preIndIceSheet", 
+                "preIndLandSeaMask", 
+                "past1000LandUse", 
+                "past1000SolarVar", 
+                "past1000VolcAer", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "c3480ce8-bfa3-4cdf-a9d4-e8cc28b5b362", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/past1000?client=esdoc"
+        }, 
+        "midPliocene-eoi400": {
+            "canonical_name": "midPliocene-eoi400", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) boundary conditions for ice sheet and land-sea mask, topography (smaller ice sheets),  the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, PlioExp, Pliiocene warm, 3.2 Ma", 
+            "long_name": "mid-Pliocene warm period", 
+            "mip_era": "cmip6", 
+            "rationale": "How does the Earth System respond in the long term to CO2 forcing analogous to that of the modern?  What is the significance of CO2 induced polar amplification for the stability of the ice sheets, sea-ice and sea-level?", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip"
+            ], 
+            "requirements": [
+                "100yrsAfterSpinUp", 
+                "midPlioCO2", 
+                "midPlioAstroParams", 
+                "midPlioIceSheet", 
+                "midPlioLandSeaMask", 
+                "midPlioTopog", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "25a71feb-68bd-464f-a06f-29ea55cde26e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/midPliocene-eoi400?client=esdoc"
+        }, 
+        "lig127k": {
+            "canonical_name": "lig127k", 
+            "description": "Impose Last Interglacial (127 kyr ago) boundary condtions for the atmospheric concentration of well-mixed greenhouse gases and orbital parameters.  Run for at least 100 years after spin-up. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, LIG, Last interglacial, 127k", 
+            "long_name": "last interglacial (127k)", 
+            "mip_era": "cmip6", 
+            "rationale": "Evalute climate model for warm period, high sea-level stand.  Evaluate impacts of climate on sea ice and ice sheets. Help to determine the interplay of warmer atmospheric and oceanic temperatures, changed precipitation, and changed surface energy balance on ice sheet thermodynamics and dynamics.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip"
+            ], 
+            "requirements": [
+                "100yrsAfterSpinUp", 
+                "LIGWMGHG", 
+                "LIGAstroParams", 
+                "preIndIceSheet", 
+                "preIndLandSeaMask", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "97d57509-4d60-4e38-afb4-c0bb7152404b", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lig127k?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "preIndIceSheet": {
+            "canonical_name": "preIndIceSheet", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "e2b40087-ef5b-4117-9f8b-10a2723ff85d"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "mid-HoloceneWMGHG": {
+            "canonical_name": "mid-HoloceneWMGHG", 
+            "description": "Impose Mid-Holocene (6 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, mid-holocene", 
+            "label": "mid-Holocene WMGHG", 
+            "type": "forcing-constraint", 
+            "uid": "35f111b2-8348-492e-b73a-d154354296ef"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "past1000SolarVar": {
+            "canonical_name": "past1000SolarVar", 
+            "description": "Solar variability in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Solar Variability", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "6d573c15-c44c-44c4-bb42-44b5ed023dda"
+        }, 
+        "midPlioLandSeaMask": {
+            "canonical_name": "midPlioLandSeaMask", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land sea mask, mid-pliocene", 
+            "label": "Mid-Pliocene Land Sea Mask", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "6be0f997-185b-4eb2-9224-8014ab2b0fc1"
+        }, 
+        "LGMIceSheet": {
+            "canonical_name": "LGMIceSheet", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) ice-sheets, larger area than in the piControl.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, ice sheets, LGM, last glacial maximum", 
+            "label": "LGM Ice Sheets", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "eb06c1c1-0eae-4677-a40f-8a92c5733f42"
+        }, 
+        "past1000LandUse": {
+            "canonical_name": "past1000LandUse", 
+            "description": "Land use in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land use, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Land Use", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "bec9906f-e9e8-410d-aaa2-625f50ebf467"
+        }, 
+        "midPlioIceSheet": {
+            "canonical_name": "midPlioIceSheet", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) ice sheets, smaller area than in the piControl.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, ice sheets, mid-pliocene", 
+            "label": "Mid-Plioene Ice Sheets", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "b4e5f665-4039-4469-97b2-56f9e8ec5975"
+        }, 
+        "midHoloceneAstroParams": {
+            "canonical_name": "midHoloceneAstroParams", 
+            "description": "Impose astronomical parameters for the mid-holocene (6 kyr ago).", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, mid-holocene", 
+            "label": "mid-Holocene Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "a89ee40a-0f94-4a8a-9483-99c694dddd7d"
+        }, 
+        "LIGWMGHG": {
+            "canonical_name": "LIGWMGHG", 
+            "description": "Impose Last Interglacial (127 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, last interglacial", 
+            "label": "Last Inter-Glacial WMGHG", 
+            "type": "forcing-constraint", 
+            "uid": "0d3fdc4c-85f9-4544-b784-2a547c0a8230"
+        }, 
+        "midPlioTopog": {
+            "canonical_name": "midPlioTopog", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) topography (smaller ice sheets).", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, topography, mid-pliocene", 
+            "label": "Mid-Pliocene Topography", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "39169c4b-10af-49ef-a1b4-234013c47212"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "midPlioCO2": {
+            "canonical_name": "midPlioCO2", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) atmospheric concentrations of Carbon Dioxide, 400ppm.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, CO2, carbon dioxide, mid-pliocene", 
+            "label": "Mid-Pliocene CO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "4fd7ff06-b4f9-4c3e-936e-19ec26980d13"
+        }, 
+        "LGMWMGHG": {
+            "canonical_name": "LGMWMGHG", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) atmospheric concentrations of well-mixed greenhouse gases.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, last glacial maximum", 
+            "label": "Last Glacial Maximum WMGHG", 
+            "type": "forcing-constraint", 
+            "uid": "163f0311-a7ce-4c90-afdf-58b91736bf26"
+        }, 
+        "LGMAstroParams": {
+            "canonical_name": "LGMAstroParams", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) orbital astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, last glacial maximum", 
+            "label": "LGM Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "ca571313-a8f3-4f84-ad67-2bd2174947f6"
+        }, 
+        "past1000AstroParams": {
+            "canonical_name": "past1000AstroParams", 
+            "description": "Astronomical parameters for the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d9d492b2-6bc6-4f28-854f-09aded7d4b42"
+        }, 
+        "midPlioAstroParams": {
+            "canonical_name": "midPlioAstroParams", 
+            "description": "Impose Mid-Pliocene Warm Period (3.2 Ma ago) astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, mid-pliocene", 
+            "label": "Mid-Pliocene Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "ada68b33-1057-41fa-945f-5cc19f8775ef"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }, 
+        "LGMlandSeaMask": {
+            "canonical_name": "LGMlandSeaMask", 
+            "description": "Impose Last Glacial Maximum (21 kyr ago) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land sea mask, last glacial maximum", 
+            "label": "LGM Land-Sea Mask", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "ae485116-285e-4346-a54c-3eddfef8a6f9"
+        }, 
+        "preIndLandSeaMask": {
+            "canonical_name": "preIndLandSeaMask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "9a1b0489-782d-4cd7-bfcd-9242cde1b6f0"
+        }, 
+        "100yrsAfterSpinUp": {
+            "canonical_name": "100yrsAfterSpinUp", 
+            "description": "Run for at least 100 years after spin-up, for use with paleoclimate experiments.", 
+            "isConformanceRequested": false, 
+            "keywords": "100 years, minimum", 
+            "label": "100yrsAfterSpinUp", 
+            "type": "temporal-constraint", 
+            "uid": "7af98410-3122-4783-b421-d9e38bd31b3b"
+        }, 
+        "10006rs850-1849": {
+            "canonical_name": "10006rs850-1849", 
+            "description": "Last Millenium, run for 1000 years", 
+            "isConformanceRequested": false, 
+            "keywords": "past1000, 850, 1849", 
+            "label": "850-1849 1000yrs", 
+            "type": "temporal-constraint", 
+            "uid": "3436d0a9-c17c-4f21-87df-59cff0031d43"
+        }, 
+        "past1000WMGHG": {
+            "canonical_name": "past1000WMGHG", 
+            "description": "Atmospheric concentrations of well-mixed green house gas concentrations in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, past 1000, last millenium, 850-1850", 
+            "label": "past1000 WMGHG", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "40f60ec1-e9b8-453f-a341-ad908d913ec4"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "LIGAstroParams": {
+            "canonical_name": "LIGAstroParams", 
+            "description": "Impose Last Interglacial (127 kyr ago) orbital astronomical parameters.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, astronomical parameters, orbital parameters, last interglacial", 
+            "label": "LIG Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "9fcaf315-89b8-45fd-8974-b63679134c32"
+        }, 
+        "past1000VolcAer": {
+            "canonical_name": "past1000VolcAer", 
+            "description": "Time varying radiative forcing due to volcanic stratospheric aerosols in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, volcanic aerosols, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Volcanic Aerosols", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "33d70a15-d355-46f0-b33b-e480eacf9c4c"
+        }
+    }, 
+    "data_links": {}
+}

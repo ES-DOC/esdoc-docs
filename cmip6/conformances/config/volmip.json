@@ -1,0 +1,1644 @@
+{
+    "mip": {
+        "canonical_name": "volmip", 
+        "description": "VolMIP will assess to what extent responses of the coupled ocean-atmosphere system to the same applied strong volcanic forcing are robustly simulated across state-of-the-art coupled climate models and identify the causes that limit robust simulated behavior, especially differences in their treatment of physical processes.", 
+        "experiments": [
+            "piControl", 
+            "dcppC-forecast-addPinatubo", 
+            "historical", 
+            "past1000", 
+            "volc-long-eq", 
+            "volc-pinatubo-full", 
+            "volc-pinatubo-surf", 
+            "volc-pinatubo-strat", 
+            "volc-long-hlN", 
+            "volc-cluster-ctrl", 
+            "control-slab", 
+            "volc-pinatubo-slab", 
+            "dcppC-forecast-addPinatubo", 
+            "volc-cluster-mill", 
+            "volc-cluster-21C", 
+            "volc-long-hlS"
+        ], 
+        "keywords": "volcanic forcing, robust responses, response limitations, decadal variability, attribution", 
+        "long_name": "Model Intercomparison Project on the climatic response to Volcanic forcing", 
+        "label": "VolMIP", 
+        "rationale": "(a) VolMIP aims at minimizing differences across models in terms of the applied volcanic forcing; (b) Assessing to what extent responses of the coupled ocean\u2013atmosphere system to strong volcanic forcing are robustly simulated across state-of- the-art coupled climate models; (c) identifying the causes that limit robust simulated behaviour, especially differences in their treatment of physical processes.", 
+        "uid": "b2368e99-26ae-4bf5-915e-504a702b1f4f", 
+        "viewerURL": "https://documentation.es-doc.org/cmip6/mips/volmip?client=esdoc"
+    }, 
+    "experiments": {
+        "volc-cluster-mill": {
+            "canonical_name": "volc-cluster-mill", 
+            "description": "Parallel experiment to volc-cluster-ctrl but with initial conditions taken from last-millennium simulation to account for the effects of a more realistic history of past natural forcing.  Initialisation on 1 January 1790 to avoid interferences due to the decadal drop of solar activity associated with the Dalton Minimum.  The first eruption of the cluster begins in 1809 as in volc-cluster-ctrl. All external forcings, except volcanic forcing, are set as a perpetual repetition of the year 1790 for the full duration of the experiment. At least one, preferably three, ensemble members.  69 years for each ensemble member.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 3, volcano, volcanic forcing, cluster eruption, SO2, past1000", 
+            "long_name": "19th century volcanic cluster initialized from past1000", 
+            "mip_era": "cmip6", 
+            "rationale": "To address the contribution of volcanic forcing to the climate of the early 19th century, the coldest period in the past 500 years.\nTo investigate discrepancies between simulated and reconstructed climates of the early 19th century.\nTo investigate  the effect of history of volcanic forcing on the response to volcanic eruptions.", 
+            "related_experiments": [
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "past1000", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "69yrs1790-1858", 
+                "ClusterSO2", 
+                "1790ForcingExclVolcAer", 
+                "LastMilleniumInitialisation", 
+                "LastMilleniumAddInitialisationEns", 
+                "LastMilleniumAddInitialisationPert", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "83090de9-eed0-4e46-b5d9-a8c046724788", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-cluster-mill?client=esdoc"
+        }, 
+        "volc-pinatubo-surf": {
+            "canonical_name": "volc-pinatubo-surf", 
+            "description": "1991 Pinatubo forcing is expressed with a prescribed pertubation to the shortwave flux to mimic the attenuation of solar radiation by volcanic aerosols and therefore the cooling of the surface. Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 1, Pinatubo, volcano, eruption, volcanic forcing, solar attenuation", 
+            "long_name": "Pinatubo experiment with only short-wave forcing", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the mechanism(s) connecting volcanic forcing and short-term climate anomalies.  To disentangle the dynamical responses to the two primary thermodynamic consequences of aerosol forcing: stratospheric heating and surface cooling.", 
+            "related_experiments": [
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "3yrs", 
+                "PinatuboSolarAttenuation", 
+                "preIndForcingExclVolcAer", 
+                "25piControlInitialisationsJun1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7d45003e-3406-4ca4-a409-4bc3d896d914", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-pinatubo-surf?client=esdoc"
+        }, 
+        "past1000": {
+            "canonical_name": "past1000", 
+            "description": "For the period from 850 to 1850 CE (the millennium before the start of the industrial revolution), impose boundary conditions of solar variations, volcanic aerosols, atmospheric concentration of well-mixed greenhouse gases, land use and orbital parameters.  Run for 1000 years after spin-up period. It is mandatory that the model versions used for the PMIP-CMIP6 experiments are the exactly the same as for the other CMIP6 experiments, in particular the DECK and historical simulations.", 
+            "governing_mips": [
+                "pmip"
+            ], 
+            "keywords": "PMIP, Tier 1, past1000, last millenium", 
+            "long_name": "past 1000 years", 
+            "mip_era": "cmip6", 
+            "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to (mainly) natural forcing under climatic background conditions not too different from today.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "pmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "10006rs850-1849", 
+                "past1000WMGHG", 
+                "past1000AstroParams", 
+                "preIndIceSheet", 
+                "preIndLandSeaMask", 
+                "past1000LandUse", 
+                "past1000SolarVar", 
+                "past1000VolcAer", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "c3480ce8-bfa3-4cdf-a9d4-e8cc28b5b362", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/past1000?client=esdoc"
+        }, 
+        "volc-long-hlS": {
+            "canonical_name": "volc-long-hlS", 
+            "description": "Idealised high-latitude (60S) southern hemisphere eruption corresponding to an initial emission of 28.1 Tg of SO2 (equal to half the total amount injected for volc-long-eq).  The experiment is designed to span very different initial climate states to systematically assess uncertainties in post-eruption behavior that are related to background climate conditions.   If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from year Y-1 of the control.  Run nine ensemble members for at least 20 years, but preferably longer (50 years) to cover the multi-decadal oceanic response. Initialisation date from the piControl start year is 1st April.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 3, high-latitude, Southern Hemisphere, volcano, volcanic forcing, eruption, SO2", 
+            "long_name": "Idealized Southern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the uncertainty in climatic response to strong high-latitude volcanic eruptions (focus on coupled ocean\u2013atmosphere). Outstanding questions about the magnitude of the climatic impact of highlatitude eruptions.", 
+            "related_experiments": [
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "20yrs", 
+                "SHEruptionSO2", 
+                "preIndForcingExclVolcAer", 
+                "9piControlInitialisationsApr1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "e4b84ccf-5644-46c5-b859-31a154c19802", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-long-hlS?client=esdoc"
+        }, 
+        "volc-pinatubo-strat": {
+            "canonical_name": "volc-pinatubo-strat", 
+            "description": "1991 Pinatubo forcing is expressed with a prescribed pertubation to the total (LW+SW) radiative heating rates. Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 1, Pinatubo, volcano, eruption, volcanic forcing, stratospheric heating", 
+            "long_name": "Pinatubo experiment with only long-wave forcing", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the mechanism(s) connecting volcanic forcing and short-term climate anomalies.  To disentangle the dynamical responses to the two primary thermodynamic consequences of aerosol forcing: stratospheric heating and surface cooling.", 
+            "related_experiments": [
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "3yrs", 
+                "PinatuboRadiativeHeating", 
+                "preIndForcingExclVolcAer", 
+                "25piControlInitialisationsJun1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "16ed5711-10e0-4866-b2c5-a1552ab1baae", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-pinatubo-strat?client=esdoc"
+        }, 
+        "control-slab": {
+            "canonical_name": "control-slab", 
+            "description": "Pre-Industrial control simulation with a slab ocean. Maintain the same constant boundary forcing as the pre-industrial control integration.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 3, piControl with slab ocean", 
+            "long_name": "Control with slab ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment for VolMIP volc-pinatubo-slab", 
+            "related_experiments": [
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "30yrs", 
+                "piForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMSlabConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "3902d795-a30f-41a4-a732-19ce0ede87af", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/control-slab?client=esdoc"
+        }, 
+        "volc-long-hlN": {
+            "canonical_name": "volc-long-hlN", 
+            "description": "Idealised high-latitude (60N) northern hemisphere eruption corresponding to an initial emission of 28.1 Tg of SO2 (equal to half the total amount injected for volc-long-eq).  volc-long-hlN is not directly comparable to the 1783\u201384 Laki eruption since it does not try to reproduce the very specific characteristics of Laki. The experiment is designed to span very different initial climate states to systematically assess uncertainties in post-eruption behavior that are related to background climate conditions.  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from year Y-1 of the control.  Run nine ensemble members for at least 20 years, but preferably longer (50 years) to cover the multi-decadal oceanic response. Initialisation date from the piControl start year is 1st April.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 2, high-latitude, Northern Hemisphere, volcano, volcanic forcing, eruption, SO2", 
+            "long_name": "Idealized Northern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the uncertainty in climatic response to strong high-latitude volcanic eruptions, with focus on coupled ocean\u2013atmosphere feedbacks and interannual to decadal responses.  To Address outstanding questions about the magnitude of the climatic impact of highlatitude eruptions.", 
+            "related_experiments": [
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "20yrs", 
+                "NHEruptionSO2", 
+                "preIndForcingExclVolcAer", 
+                "9piControlInitialisationsApr1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "d141c1b3-1e48-4319-8613-3509903569e6", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-long-hlN?client=esdoc"
+        }, 
+        "volc-long-eq": {
+            "canonical_name": "volc-long-eq", 
+            "description": "Idealised equatorial eruption corresponding to an initial emission of 56.2 Tg of SO2. This eruption has a magnitued roughly corresponding to the 1815 Mt Tambora eruption in Indonesia, which was linked to the so-called \"year without a summer\" in 1816.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions.  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from year Y-1 of the control.  Run nine ensemble members for at least 20 years, but preferably longer (50 years) to cover the multi-decadal oceanic response. Initialisation date from the piControl start year is 1st April.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 1, Tambora, year without a summer, volcano, volcanic forcing, eruption", 
+            "long_name": "Idealized equatorial volcanic eruption emitting 56.2 Tg SO2", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the uncertainty in the climate response to strong volcanic eruptions, with focus on coupled ocean-atmosphere feedbacks and interannual to decadal global as well as regional responses.  To investigate the mismatch between reconstructed and simulated climate responses to historical strong volcanic eruptions, with focus on the role of simulated background internal climate variability.", 
+            "related_experiments": [
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "20yrs", 
+                "TamboraSO2", 
+                "preIndForcingExclVolcAer", 
+                "9piControlInitialisationsApr1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "ff97122a-cb47-40f1-9cdc-c476c9ad5c80", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-long-eq?client=esdoc"
+        }, 
+        "volc-cluster-ctrl": {
+            "canonical_name": "volc-cluster-ctrl", 
+            "description": "Early 19th century cluster of strong tropical volcanic eruptions, including the 1809 event of unknown location, and the 1815 Tambora and 1835 Cisug\u00fcina eruptions.  Run three ensemble members for at least 50 years to cover the multi-decadal oceanic response and to assess stationarity of post-cluster climate.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 2, volcano, volcanic forcing, cluster eruption, SO2", 
+            "long_name": "19th century volcanic cluster initialized from PiControl", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate uncertainty in the multi-decadal climate response to strong volcanic eruptions (focus on long-term climatic implications). To investigate the contribution of volcanic forcing to the climate of the early 19th century, the coldest period in the past 500 years.  To investigate discrepancies between simulated and reconstructed climates of the early 19th century.", 
+            "related_experiments": [
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "50yrs1809-1858", 
+                "ClusterSO2", 
+                "preIndForcingExclVolcAer", 
+                "threePIInitialisations", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 2, 
+            "uid": "1d0829d8-fe2f-42af-a827-82872bcdb77e", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-cluster-ctrl?client=esdoc"
+        }, 
+        "historical": {
+            "canonical_name": "historical", 
+            "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, CMIP6, Historical, Reference", 
+            "long_name": "all-forcing simulation of the recent past", 
+            "mip_era": "cmip6", 
+            "rationale": "Spans the period of extensive instrumental temperature measurements from 1850 to the present. Evaluate model performance against present climate and observed climate change.", 
+            "related_experiments": [
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "ism-historical-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-hist", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "histSST-piCH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piN2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "histSST-piO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp585", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-ssp126Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126-ssp370Lu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-21C", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp460", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical-ext", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp434", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-1950HC", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp370-lowNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "ssp126", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "sspXY", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "gmmip", 
+                "highresmip", 
+                "ismip6", 
+                "ls3mip", 
+                "lumip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "165yrs1850-2014", 
+                "HistoricalAerosolForcing", 
+                "HistoricalWMGHGConcentrations", 
+                "HistoricalLandUse", 
+                "HistoricalO3andStratosphericH2OConcentrations", 
+                "HistoricalStratosphericAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "479ff5ed-9c56-4d1e-98c3-f97a0864e7b4", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/historical?client=esdoc"
+        }, 
+        "volc-pinatubo-slab": {
+            "canonical_name": "volc-pinatubo-slab", 
+            "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years. Use a model configuration with a slab ocean.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 3, Pinatubo, volcano, eruption, volcanic forcing, slab ocean", 
+            "long_name": "Pinatubo experiment with full volcanic forcing and slab ocean", 
+            "mip_era": "cmip6", 
+            "rationale": "To clarify the role of coupled atmosphere-ocean processes (most prominently linked to the El Ni\u00f1o-Southern Oscillation) in determining the dynamical response.", 
+            "related_experiments": [
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "3yrs", 
+                "pinatuboAerosol", 
+                "preIndForcingExclVolcAer", 
+                "25piControlInitialisationsJun1st", 
+                "AOGCMSlabConfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "f83b4c1e-1b3b-44e6-a692-2800f41da685", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-pinatubo-slab?client=esdoc"
+        }, 
+        "volc-cluster-21C": {
+            "canonical_name": "volc-cluster-21C", 
+            "description": "Parallel experiment to volc-cluster-ctrl but with initial conditions from the end of the historical simulation instead of from the piControl. The first eruption of the cluster begins in 2015. All external forcings, except volcanic forcing are from the 21st-century SSP2-4.5 scenario experiment of ScenarioMIP. At the end of the volcanic cluster, volcanic forcing input shall be kept constant at the same constant value prescribed for the piControl simulation for consistency with the SSP2-4.5 scenario experiment. At least one, preferably three ensemble members. 85 years for each ensemble member.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 3, volcano, volcanic forcing, cluster eruption, SO2, 21st Century, SSP2-4.5", 
+            "long_name": "volcanic cluster experiment under 21st century SSP2-4.5 scenario", 
+            "mip_era": "cmip6", 
+            "rationale": "To address the contribution of volcanic forcing uncertainty to uncertainty in future climate projections. To investigate the long-term climatic response to volcanic eruptions under warm background climate conditions.", 
+            "related_experiments": [
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initialized_by"
+                }, 
+                {
+                    "name": "ssp245", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "86yrs2015-2100", 
+                "ClusterSO2", 
+                "rcp45Forcing", 
+                "FutureSolarIrradiance", 
+                "HistoricalInitialisation", 
+                "SingleMemberEnsemble", 
+                "TwoMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 3, 
+            "uid": "78161292-81f8-41b5-b91f-0fd191affff1", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-cluster-21C?client=esdoc"
+        }, 
+        "volc-pinatubo-full": {
+            "canonical_name": "volc-pinatubo-full", 
+            "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations.  Maintain the same constant boundary forcing as the pre-industrial control integration, except for the volcanic forcing. Requires special diagnostics of parameterised and resolved wave forcings, radiative and latent heating rates. The experiment will not account for the actual climate conditions when the real event ocurred (e.g., presence and strength of additional forcing factors). Instead, the experiment is designed to span very different initial climate states to systematically assess uncertainties in the post-eruption behavior that are related to background climate conditions. Sampling of an eastern phase of the Quasi-Biennial Oscillation (QBO), as observed after the 1991 Pinatubo eruption is preferred for those models that spontaneously generate such mode of stratospheric variability. Run at least 25 ensemble members for 3 years.", 
+            "governing_mips": [
+                "volmip"
+            ], 
+            "keywords": "VolMIP, Tier 1, Pinatubo, volcano, volcanic forcing, eruption, SO2", 
+            "long_name": "Pinatubo experiment", 
+            "mip_era": "cmip6", 
+            "rationale": "To investigate the uncertainty in the climate response to strong volcanic eruptions with focus on short-term response. To investigate the robustess of volcanic imprint on the Northern Hemisphere winter climate and of associated dynamics.  A large ensemble is required to accurately estimate simulated responses to volcanic forcing which may be comparable to the amplitude of internal interannual variability.", 
+            "related_experiments": [
+                {
+                    "name": "volc-pinatubo-ini", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "dcppC-forecast-addPinatubo", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piControl", 
+                    "relationship": "is_initialized_by"
+                }
+            ], 
+            "related_mips": [
+                "volmip"
+            ], 
+            "requirements": [
+                "3yrs", 
+                "pinatuboAerosol", 
+                "preIndForcingExclVolcAer", 
+                "25piControlInitialisationsJun1st", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "75488836-8d40-48bf-82ab-379749e3e1bd", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/volc-pinatubo-full?client=esdoc"
+        }, 
+        "piControl": {
+            "canonical_name": "piControl", 
+            "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years.", 
+            "governing_mips": [
+                "cmip"
+            ], 
+            "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
+            "long_name": "Pre-Industrial Control", 
+            "mip_era": "cmip6", 
+            "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+            "related_experiments": [
+                {
+                    "name": "ism-piControl-self", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-2xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-4xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "abrupt-0p5xCO2", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "control-slab", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "volc-cluster-mill", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "piControl-withism", 
+                    "relationship": "is_control_for"
+                }, 
+                {
+                    "name": "esm-piControl", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xss", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xDMS", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-pxK", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NTCF", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xfire", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-BC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-N2O", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "ssp245-stratO3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-4xCO2", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-ghg", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xNOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-atl-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-CH4", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-O3", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-rad", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-HC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-NOX", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xdust", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-anthro", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histaer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "dcppC-pac", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-VOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-aer", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-control", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-histnat", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-spAer-histall", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-2xVOC", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piSST", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "piClim-lu", 
+                    "relationship": "is_constrainer_of"
+                }, 
+                {
+                    "name": "hist-all-aer2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlS", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-strat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-all-nat2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "amip-hist", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-stratO3", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-stress", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resAMO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-heat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piNTCF", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-hlN", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-long-eq", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solp4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "dcppA-historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-water", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-volc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "abrupt-solm4p", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-piAer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-passiveheat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-sol", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-slab", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-nat", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-surf", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-spAer-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "faf-all", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "historical", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "G1", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-GHG", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-cluster-ctrl", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2-rad", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-full", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-aer", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-noLu", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-CO2", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "deforest-globe", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "hist-resIPO", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "1pctCO2Ndep-bgc", 
+                    "relationship": "is_initializer_of"
+                }, 
+                {
+                    "name": "piSST-4xCO2-solar", 
+                    "relationship": "is_initializer_of"
+                }
+            ], 
+            "related_mips": [
+                "cmip", 
+                "deck", 
+                "aerchemmip", 
+                "c4mip", 
+                "damip", 
+                "dcpp", 
+                "fafmip", 
+                "geomip", 
+                "highresmip", 
+                "ismip6", 
+                "lumip", 
+                "pmip", 
+                "rfmip", 
+                "volmip"
+            ], 
+            "requirements": [
+                "500yrs1850-2349", 
+                "piForcing", 
+                "piSolarParticleForcing", 
+                "SingleMemberEnsemble", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "7dd72de5-c5b6-412c-9b4c-540f09538d9a", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piControl?client=esdoc"
+        }, 
+        "dcppC-forecast-addPinatubo": {
+            "canonical_name": "dcppC-forecast-addPinatubo", 
+            "description": "Prediction experiment for 2015 with volcano forcing.  Repeat DCPP-A1 2015 forecast (from the dcppA-hindcast experiment) with Pinatubo forcing. Background volcanic aerosol to be the same as that used in the 1991 hindcast. 10 ensemble members. Run each member for at least 5 years, preferably 10 years.", 
+            "governing_mips": [
+                "dcpp"
+            ], 
+            "keywords": "DCPP, Tier 1, VolMIP, Tier 3, Pinatubo, volcano, eruption, volcanic forcing", 
+            "long_name": "2015 forecast with added Pinatubo forcing", 
+            "mip_era": "cmip6", 
+            "rationale": "Volcano effects on decadal prediction. To assess the impact of volcanoes on decadal prediction skill. Investigate the potential effects of volcanic eruption on forecasts of the coming decade. Investigate the sensitivity of volcanic response to the state of the climate system. To address the impact of volcanic forcing on seasonal predictability.  To address the climate implications of a future Pinatubo-like eruption.", 
+            "related_experiments": [
+                {
+                    "name": "dcppC-hindcast-noPinatubo", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "volc-pinatubo-ini", 
+                    "relationship": "is_sibling_of"
+                }, 
+                {
+                    "name": "dcppA-hindcast", 
+                    "relationship": "is_perturbation_from"
+                }
+            ], 
+            "related_mips": [
+                "dcpp", 
+                "volmip"
+            ], 
+            "requirements": [
+                "10yrs2015-2024", 
+                "5yrs2014-2019", 
+                "rcp45Forcing", 
+                "pinatuboAerosol", 
+                "HistoricalSolarIrradiance", 
+                "HistoricalSolarParticleForcing", 
+                "TenMemberEnsemble", 
+                "obsInitialisation", 
+                "AOGCMconfiguration"
+            ], 
+            "tier": 1, 
+            "uid": "6b98a9d0-d1da-499a-9f28-600c62b698ff", 
+            "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/dcppC-forecast-addPinatubo?client=esdoc"
+        }
+    }, 
+    "requirements": {
+        "preIndIceSheet": {
+            "canonical_name": "preIndIceSheet", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "e2b40087-ef5b-4117-9f8b-10a2723ff85d"
+        }, 
+        "AOGCMconfiguration": {
+            "canonical_name": "AOGCMconfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration", 
+            "uid": "94f36844-ecbf-41bd-b6b5-77c114e23a4b"
+        }, 
+        "HistoricalLandUse": {
+            "canonical_name": "HistoricalLandUse", 
+            "data_link": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)", 
+            "description": "Apply the global gridded land-use forcing datasets to link historical land-use data and future projections.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, land use", 
+            "label": "Historical Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "46ce5fc6-e28f-4276-9da5-d6c27425081a"
+        }, 
+        "HistoricalSolarIrradiance": {
+            "canonical_name": "HistoricalSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "45797a69-43d1-4b8e-a143-09a60971790a"
+        }, 
+        "SHEruptionSO2": {
+            "canonical_name": "SHEruptionSO2", 
+            "data_link": "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6", 
+            "description": "Emission of 28.1 Tg of SO2 into the southern hemisphere stratosphere (60S).", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Southern Hemisphere, SO2, volcano", 
+            "label": "SH Eruption SO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "c000e0c6-2e00-4554-add4-42c677f6ffdd"
+        }, 
+        "20yrs": {
+            "canonical_name": "20yrs", 
+            "description": "Run for 20 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "20 years", 
+            "label": "20yrs", 
+            "type": "temporal-constraint", 
+            "uid": "4a0f1d75-1d9a-4888-88a4-bcfef60fb9d6"
+        }, 
+        "piSolarParticleForcing": {
+            "canonical_name": "piSolarParticleForcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "7f72b49c-5c6e-4a7c-93f5-6078225a76fa"
+        }, 
+        "165yrs1850-2014": {
+            "canonical_name": "165yrs1850-2014", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint", 
+            "uid": "492d33c9-3317-4333-8890-b8f1e6aae1a9"
+        }, 
+        "25piControlInitialisationsJun1st": {
+            "canonical_name": "25piControlInitialisationsJun1st", 
+            "description": "An ensemble of at least twenty-five predefined initialisation states which span: warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states, strong/weak/neutral  Atlantic Meridional Overturning Circulation (AMOC) states, the Quasi Biennial Oscillation (QBO), characteristics of the polar vortex and the North Atlantic Oscillation (NAO).  If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from June 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "twenty-five, 25, ensemble, initialisation, VolMIP", 
+            "label": "25 piControl Initialisations from June 1st", 
+            "type": "ensemble", 
+            "uid": "ee1efe22-d885-4881-9e2a-fd3e44ce29b7"
+        }, 
+        "past1000SolarVar": {
+            "canonical_name": "past1000SolarVar", 
+            "description": "Solar variability in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Solar Variability", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "6d573c15-c44c-44c4-bb42-44b5ed023dda"
+        }, 
+        "past1000LandUse": {
+            "canonical_name": "past1000LandUse", 
+            "description": "Land use in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land use, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Land Use", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "bec9906f-e9e8-410d-aaa2-625f50ebf467"
+        }, 
+        "SingleMemberEnsemble": {
+            "canonical_name": "SingleMemberEnsemble", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble", 
+            "uid": "1ef19c06-f6fb-4836-907f-ad4749162091"
+        }, 
+        "1790ForcingExclVolcAer": {
+            "canonical_name": "1790ForcingExclVolcAer", 
+            "description": "1790 forcing from the PMIP past1000 experiment, excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "1790 forcing, excluding volcanic forcing", 
+            "label": "1790 Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint", 
+            "uid": "0aa94691-6a4c-42be-bdc9-ca8532eb6d12"
+        }, 
+        "HistoricalSolarParticleForcing": {
+            "canonical_name": "HistoricalSolarParticleForcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "85aa3b86-1470-4189-b776-d2350c0d54aa"
+        }, 
+        "PinatuboSolarAttenuation": {
+            "canonical_name": "PinatuboSolarAttenuation", 
+            "description": "Prescribed perturbation to the shortwave flux to mimic the attenuation of solar radiation by volcanic areosols associated with the 1991 Mt. Pinatubo eruption in the Philippines.", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Pinatubo, 1991, Solar attenuation, Short Wave radiative flux attentuation", 
+            "label": "Pinatubo Solar Attenuation", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "6dc943b5-3324-4818-aea1-46df7245a39d"
+        }, 
+        "LastMilleniumAddInitialisationPert": {
+            "canonical_name": "LastMilleniumAddInitialisationPert", 
+            "description": "Two additional initialisations, for 1st January 1790 of the PMIP past1000 simulation via the introduction of small perturbations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, last millenium, last 1000", 
+            "label": "Last-Millenium Additional Initialisation Perturbation", 
+            "type": "ensemble", 
+            "uid": "a34b7734-bf5c-4e14-856d-d50eb8a02936"
+        }, 
+        "50yrs1809-1858": {
+            "canonical_name": "50yrs1809-1858", 
+            "description": "Begin in 1809 (early 19th century volcanic eruption of unknown location) and run for a minimum of 50 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "pre-industrial start date, historical, 1809, 50 years", 
+            "label": "1809-1858 50yrs", 
+            "type": "temporal-constraint", 
+            "uid": "83acd6ca-ef0b-40fc-b2fd-2055ece97b48"
+        }, 
+        "HistoricalInitialisation": {
+            "canonical_name": "HistoricalInitialisation", 
+            "description": "Initialisation is from the end of the Historical experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "HistoricalInitialisation", 
+            "type": "ensemble", 
+            "uid": "92be3267-4756-4275-997a-2971c9d8a6e3"
+        }, 
+        "10yrs2015-2024": {
+            "canonical_name": "10yrs2015-2024", 
+            "description": "Scenario. Start date on or before 31st December 2014.  Start dates on or before 15th November recommended to allow for DJF seasonal forecast results. Run for 10 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, decadal, 2015, 2024, 10 years", 
+            "label": "2015-2024 10yrs", 
+            "type": "temporal-constraint", 
+            "uid": "28522995-35f5-42e6-a99a-1a9d37d08662"
+        }, 
+        "LastMilleniumAddInitialisationEns": {
+            "canonical_name": "LastMilleniumAddInitialisationEns", 
+            "description": "Initialisations made from 1st January 1790 of additional PMIP past1000 ensemble members.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, last millenium, last 1000", 
+            "label": "Last-Millenium Additional Initialisation Ensemble", 
+            "type": "ensemble", 
+            "uid": "b4fad89c-422f-4150-b5af-0aa14e43382b"
+        }, 
+        "piForcing": {
+            "canonical_name": "piForcing", 
+            "description": "Pre-Industrail forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "03ff3a6f-25f0-4849-b9a3-693da4a0ab75"
+        }, 
+        "LastMilleniumInitialisation": {
+            "canonical_name": "LastMilleniumInitialisation", 
+            "description": "Initialisations made from 1st January 1790 of a PMIP past1000 simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, last millenium, last 1000", 
+            "label": "Last-Millenium Initialisation", 
+            "type": "ensemble", 
+            "uid": "4ac6115f-66ee-4ed7-a98f-5912f25a6e5f"
+        }, 
+        "preIndForcingExclVolcAer": {
+            "canonical_name": "preIndForcingExclVolcAer", 
+            "description": "Pre-Industrial forcing excluding volcanic aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding volcanic forcing", 
+            "label": "Pre-Industrial Forcing Excluding Volcanic Aerosols", 
+            "type": "forcing-constraint", 
+            "uid": "44d8cb89-0252-45e0-a7c7-8d108e2b6dc8"
+        }, 
+        "AOGCMSlabConfiguration": {
+            "canonical_name": "AOGCMSlabConfiguration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with a slab ocean.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean, Slab ocean", 
+            "label": "AOGCM Slab Configuration", 
+            "type": "model-configuration", 
+            "uid": "6497a981-6d51-4701-803b-d97c90775a42"
+        }, 
+        "NHEruptionSO2": {
+            "canonical_name": "NHEruptionSO2", 
+            "data_link": "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6", 
+            "description": "Emission of 28.1 Tg of SO2 into the northern hemisphere stratosphere (60N).", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Northern Hemisphere, SO2, volcano", 
+            "label": "NH Eruption SO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "663018cd-28e8-4499-bd4c-5bdd78a81e13"
+        }, 
+        "3yrs": {
+            "canonical_name": "3yrs", 
+            "description": "Run for 3 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "3 years", 
+            "label": "3yrs", 
+            "type": "temporal-constraint", 
+            "uid": "dd782cf3-4521-4bcb-8c71-e5caf45eaf27"
+        }, 
+        "TenMemberEnsemble": {
+            "canonical_name": "TenMemberEnsemble", 
+            "description": "An ensemble of at least ten simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "ten, 10, ensemble, runs, simulations", 
+            "label": "TenMember", 
+            "type": "ensemble", 
+            "uid": "7381cc84-e556-4d9a-9ec2-10ebaefc6880"
+        }, 
+        "PinatuboRadiativeHeating": {
+            "canonical_name": "PinatuboRadiativeHeating", 
+            "description": "Prescribed perturbation to the (SW+LW) radiative heating rates to mimic the radiative heating of the stratosphere by volcanic areosols associated with the 1991 Mt. Pinatubo eruption in the Philippines.", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Pinatubo, 1991, radiative heating, stratosphere", 
+            "label": "Pinatubo Radiative Heating", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "0dfb6ce7-de2d-4f2a-92d2-46c01c112b98"
+        }, 
+        "past1000AstroParams": {
+            "canonical_name": "past1000AstroParams", 
+            "description": "Astronomical parameters for the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Astronomical Parameters", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "d9d492b2-6bc6-4f28-854f-09aded7d4b42"
+        }, 
+        "obsInitialisation": {
+            "canonical_name": "obsInitialisation", 
+            "description": "Initialisation based on observations.", 
+            "isConformanceRequested": true, 
+            "keywords": "observation, initialisation", 
+            "label": "ObservedInitialisation", 
+            "type": "ensemble", 
+            "uid": "e8cae059-845f-4393-b57d-ad7062796f7e"
+        }, 
+        "5yrs2014-2019": {
+            "canonical_name": "5yrs2014-2019", 
+            "description": "Scenario. Start date on or before 31st December 2014.  Start dates on or before 15th November recommended to allow for DJF seasonal forecast results. Run for 5 years", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, decadal, 2015, 2019, 5 years", 
+            "label": "2015-2019 5yrs", 
+            "type": "temporal-constraint", 
+            "uid": "582d66e3-0387-4a51-91a7-f760bfe87f1c"
+        }, 
+        "HistoricalO3andStratosphericH2OConcentrations": {
+            "canonical_name": "HistoricalO3andStratosphericH2OConcentrations", 
+            "description": "An ozone concentration database encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "Historical O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint", 
+            "uid": "b19b46f8-6355-40ef-9ca8-9a4e8b630ab1"
+        }, 
+        "86yrs2015-2100": {
+            "canonical_name": "86yrs2015-2100", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint", 
+            "uid": "1a09bd87-123b-40bf-91cb-777f1d0b93bc"
+        }, 
+        "500yrs1850-2349": {
+            "canonical_name": "500yrs1850-2349", 
+            "description": "500 years of simulation beginning in 1850", 
+            "isConformanceRequested": false, 
+            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
+            "label": "1850-2349 500yrs", 
+            "type": "temporal-constraint", 
+            "uid": "698c52b9-b91c-495c-a817-33dc58815dde"
+        }, 
+        "TamboraSO2": {
+            "canonical_name": "TamboraSO2", 
+            "data_link": "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6", 
+            "description": "Emission of 56.2 Tg of SO2 into the equatorial stratosphere roughly corresponding to the 1815 Mt. Tambora eruption in Indonesia, which was linked to the so-called \"year without a summer\" in 1816.", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Tambora, SO2, idealised, eruption", 
+            "label": "Tambora SO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "c5e91b8b-23ba-41ad-bfd0-d52792d495a0"
+        }, 
+        "FutureSolarIrradiance": {
+            "canonical_name": "FutureSolarIrradiance", 
+            "data_link": "SOLARIS-HEPPA Solar Forcing Data for CMIP6", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "6f08fddf-293b-4412-8dc7-4c791a514ee3"
+        }, 
+        "pinatuboAerosol": {
+            "canonical_name": "pinatuboAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Aerosol forcing from the 1991 Pinatubo volcanic eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "DCPP, aerosol, volcano, Pinatubo", 
+            "label": "Pinatubo Aerosol", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "97490811-76e4-4c8b-b94d-56bae4f2abbf"
+        }, 
+        "HistoricalStratosphericAerosol": {
+            "canonical_name": "HistoricalStratosphericAerosol", 
+            "data_link": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "cb2b616a-fe82-4c1a-8ee3-e0390909fe48"
+        }, 
+        "preIndLandSeaMask": {
+            "canonical_name": "preIndLandSeaMask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint", 
+            "uid": "9a1b0489-782d-4cd7-bfcd-9242cde1b6f0"
+        }, 
+        "rcp45Forcing": {
+            "canonical_name": "rcp45Forcing", 
+            "description": "Impose RCP4.5 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5", 
+            "label": "RCP45 Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "a097e811-3419-4160-bc7c-76a1b7614084"
+        }, 
+        "10006rs850-1849": {
+            "canonical_name": "10006rs850-1849", 
+            "description": "Last Millenium, run for 1000 years", 
+            "isConformanceRequested": false, 
+            "keywords": "past1000, 850, 1849", 
+            "label": "850-1849 1000yrs", 
+            "type": "temporal-constraint", 
+            "uid": "3436d0a9-c17c-4f21-87df-59cff0031d43"
+        }, 
+        "past1000WMGHG": {
+            "canonical_name": "past1000WMGHG", 
+            "description": "Atmospheric concentrations of well-mixed green house gas concentrations in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, WMGHG, well-mixed greenhouse gases, past 1000, last millenium, 850-1850", 
+            "label": "past1000 WMGHG", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "40f60ec1-e9b8-453f-a341-ad908d913ec4"
+        }, 
+        "HistoricalWMGHGConcentrations": {
+            "canonical_name": "HistoricalWMGHGConcentrations", 
+            "data_link": "Historical greenhouse gas concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint", 
+            "uid": "b4810817-5b10-4e8a-89bf-696b6f888e99"
+        }, 
+        "TwoMemberEnsemble": {
+            "canonical_name": "TwoMemberEnsemble", 
+            "description": "An ensemble of two simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "two, 2, ensemble, runs, simulations", 
+            "label": "TwoMember", 
+            "type": "ensemble", 
+            "uid": "af963cc5-6967-44bf-89cb-951b43b33eef"
+        }, 
+        "69yrs1790-1858": {
+            "canonical_name": "69yrs1790-1858", 
+            "description": "Begin in 1790 and run for 69 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 1790-1859", 
+            "label": "1790-1858 69yrs", 
+            "type": "temporal-constraint", 
+            "uid": "b729bc02-7c75-4a80-a09d-4822b5f01466"
+        }, 
+        "past1000VolcAer": {
+            "canonical_name": "past1000VolcAer", 
+            "description": "Time varying radiative forcing due to volcanic stratospheric aerosols in the last millenium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, volcanic aerosols, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Volcanic Aerosols", 
+            "scope": "experiment", 
+            "type": "forcing-constraint", 
+            "uid": "33d70a15-d355-46f0-b33b-e480eacf9c4c"
+        }, 
+        "9piControlInitialisationsApr1st": {
+            "canonical_name": "9piControlInitialisationsApr1st", 
+            "description": "Nine initialisation states which span warm/cold/neutral El Ni\u00f1o-Southern Oscilation (ENSO) states and strong/weak/neutral Atlantic Meridional Overturning Circulation (AMOC) states. If, for instance, year Y of the control integration matches the desired conditions for the initial condition sampling, then the corresponding VolMIP simulation should start with restart data from April 1st of year Y-1 of the control.  Restart files from piControl must be accordingly selected and documented in the metadata of each simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "nine, 9, ensemble, initialisation, VolMIP", 
+            "label": "9 piControl Initialisations from April 1st", 
+            "type": "ensemble", 
+            "uid": "ec67520e-48de-4afc-bc82-7432e6810f8a"
+        }, 
+        "threePIInitialisations": {
+            "canonical_name": "threePIInitialisations", 
+            "description": "Three initialisations from the pre-industrial control made at at least 50 year intervals.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial control, three member", 
+            "label": "Three pre-industrial initialisations", 
+            "type": "ensemble", 
+            "uid": "57c8f65b-3ec1-45e4-bede-14b4cc94a655"
+        }, 
+        "30yrs": {
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years", 
+            "label": "30yrs", 
+            "type": "temporal-constraint", 
+            "uid": "c0749379-efad-456e-90a7-4bb6d74e557a"
+        }, 
+        "ClusterSO2": {
+            "canonical_name": "ClusterSO2", 
+            "data_link": "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6", 
+            "description": "Emissions of SO2 into the tropical stratosphere to reproduce the volcanic forcing generated by the early 19th century volcanic cluster.  Include the 1809 eruption of unknown location, 1815 Tambora eruption and 1835 Consig\u00fcina eruption.", 
+            "isConformanceRequested": true, 
+            "keywords": "VolMIP, Cluster, 19thC, SO2, idealised", 
+            "label": "Cluster SO2", 
+            "scope": "mip", 
+            "type": "forcing-constraint", 
+            "uid": "9df40023-a25b-4a91-b80b-ac1d444d15ea"
+        }, 
+        "HistoricalAerosolForcing": {
+            "canonical_name": "HistoricalAerosolForcing", 
+            "description": "Mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol, forcing, CMIP6", 
+            "label": "Historical Aerosol Forcing", 
+            "type": "forcing-constraint", 
+            "uid": "3a2e7bd4-a0dd-4d10-bebd-1eb6b4c6e906"
+        }
+    }, 
+    "data_links": {
+        "Historical greenhouse gas concentrations": {
+            "protocol": "http", 
+            "description": "Here, we provide consolidated data sets of historical atmospheric (volume) mixing ratios of 43 greenhouse gases specifically for the purpose of climate model runs.", 
+            "linkage": "http://www.geosci-model-dev-discuss.net/gmd-2016-169/", 
+            "name": "Historical greenhouse gas concentrations"
+        }, 
+        "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)": {
+            "protocol": "http", 
+            "description": "A new set of global gridded land-use forcing datasets are being developed to link historical land-use data and future projections in a standard format required by climate models.", 
+            "linkage": "https://cmip.ucar.edu/sites/default/files/lumip/LUH2_v1.0h_README.pdf", 
+            "name": "Land Use Harmonisation (LUH2 v1.0h) land use forcing data (850-2100)"
+        }, 
+        "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6": {
+            "protocol": "http", 
+            "description": "The design of the idealised volcanic perturbation experiments in the VolMIP protocol and a description of the common aerosol forcing input datasets to be used.", 
+            "linkage": "http://www.geosci-model-dev.net/9/2701/2016/", 
+            "name": "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6"
+        }, 
+        "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus": {
+            "protocol": "http", 
+            "description": "Stratospheric Aerosol Data Set", 
+            "linkage": "http://www.wcrp-climate.org/images/modelling/WGCM/CMIP/CMIP6Forcings_StratosphericAerosolDataSet_InitialDescription_150131.pdf", 
+            "name": "Stratospheric Aerosol Data Set (SADS Version 2) Prospectus"
+        }, 
+        "SOLARIS-HEPPA Solar Forcing Data for CMIP6": {
+            "protocol": "http", 
+            "description": "An overview of the CMIP6 solar forcing dataset (irradiance as well as particle-related parameters) and guidelines for their usage.", 
+            "linkage": "http://solarisheppa.geomar.de/cmip6", 
+            "name": "SOLARIS-HEPPA Solar Forcing Data for CMIP6"
+        }
+    }
+}
