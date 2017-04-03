@@ -61,11 +61,28 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
-            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2) and solar forcing.", 
             "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
-            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2, excluding solar", 
+            "label": "Pre-Industrial Forcing Excluding CO2 and Solar", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Irradiance Forcing", 
+            "description": "Pre-Industrial solar forcing. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes pre-industrial solar forcing (1850-1873 mean).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, pre-industrial, pi, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Pre-Industrial Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -78,9 +95,9 @@
         }, 
         {
             "canonical_name": "PreIndustrialInitialisation", 
-            "description": "Initialisation is made from year 20 of the pre-industrial control.", 
+            "description": "Initialisation from the pre-industrial control simulation.", 
             "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, pre-industrial, 1870", 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
             "label": "PreIndustrialInitialisation", 
             "type": "ensemble"
         }, 

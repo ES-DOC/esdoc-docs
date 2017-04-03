@@ -1,13 +1,13 @@
 {
     "canonical_name": "hist-GHG", 
-    "description": "Historical greenhouse-gas only simulations resemble the hist-all simulations but instead are forced by well-mixed greenhouse gas changes only. \nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.  This will ensure that ozone is fixed in all these simulations, and simulated responses in models with and without coupled chemistry are comparable.\nReport what sets of emissions and boundary conditions are used.", 
+    "description": "Historical greenhouse-gas only simulations resemble the historical simulations but instead are forced by well-mixed greenhouse gas changes only. \nModels with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes.  This will ensure that ozone is fixed in all these simulations, and simulated responses in models with and without coupled chemistry are comparable.\nReport what sets of emissions and boundary conditions are used.", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 1, histGHG, cmip6historical, greenhouse gas forcing, GHG forcing", 
     "long_name": "historical well-mixed GHG-only runs", 
     "mip_era": "cmip6", 
-    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
+    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attribution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.", 
     "related_experiments": [
         {
             "name": "hist-nat", 
@@ -65,20 +65,20 @@
             "type": "forcing-constraint"
         }, 
         {
+            "canonical_name": "Pre-Industrial Forcing Excluding GHG", 
+            "description": "Pre-Industrial forcing excluding greenhouse gases (GHG). See table 2 pincus et al 20016).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding greenhouse gases, excluding GHG", 
+            "label": "Pre-Industrial Forcing Excluding GHG", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "1850 O3 for Radiation", 
             "description": "Impose repeating 1850 ozone climatology concentrations to radiative code.", 
             "isConformanceRequested": true, 
             "keywords": "1850, O3, concentration, pre-industrial, radiation code only", 
             "label": "1850 O3 for Radiation", 
             "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Pre-Industrial Forcing Excluding GHG", 
-            "description": "Pre-Industrial forcing excluding greenhouse gases (GHG). See table 2 pincus et al 20016).", 
-            "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing, excluding greenhouse gases, excluding GHG", 
-            "label": "Pre-Industrial Forcing Excluding GHG", 
             "type": "forcing-constraint"
         }, 
         {

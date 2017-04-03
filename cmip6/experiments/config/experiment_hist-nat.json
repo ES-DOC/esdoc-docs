@@ -1,13 +1,13 @@
 {
     "canonical_name": "hist-nat", 
-    "description": "Historical natural-only simulations resemble the hist-all simulations but instead are forced with only solar and volcanic forcing from the historical simulations.\nReport what sets of emissions and boundary conditions are used.", 
+    "description": "Historical natural-only simulations resemble the historical simulations but instead are forced with only solar and volcanic forcing from the historical simulations.\nReport what sets of emissions and boundary conditions are used.", 
     "governing_mips": [
         "damip"
     ], 
     "keywords": "DAMIP, Tier 1, histNat, cmip6historical, natural forcing", 
     "long_name": "historical natural-only runs", 
     "mip_era": "cmip6", 
-    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attriution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.\nCMIP6 historical and histNAT will be used for event attribution analyses of recent extreme weather and climate events, and can be used for analyses of impact assessments.", 
+    "rationale": "Combinations of CMIP6 historical, histNat and histGHG will allow the attribution of observed climate changes to contributions from GHG, other anthropogenic factors and natural forcing.\nCMIP6 historical and histNAT will be used for event attribution analyses of recent extreme weather and climate events, and can be used for analyses of impact assessments.", 
     "related_experiments": [
         {
             "name": "hist-GHG", 
@@ -63,14 +63,6 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Historical Solar Forcing", 
-            "description": "Solar forcing of the Earth system consistent with historical observations.", 
-            "isConformanceRequested": true, 
-            "keywords": "Historical, Solar, Forcing, SSI, TSI, Proton Forcing, Electron Forcing", 
-            "label": "Historical Solar Forcing", 
-            "type": "forcing-constraint"
-        }, 
-        {
             "canonical_name": "Historical Stratospheric Aerosol", 
             "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
             "isConformanceRequested": true, 
@@ -80,11 +72,46 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP Natural", 
-            "description": "Impose changing natural forcing for RCP scenarios i.e. solar irradiance change and volcanic activity.", 
+            "canonical_name": "RCP Volcanic", 
+            "description": "Impose changing volcanic forcing for RCP scenarios.", 
             "isConformanceRequested": true, 
-            "keywords": "Representative Concentration Pathway, RCP,  future, 21st century, Natural Forcing", 
-            "label": "RCP Natural", 
+            "keywords": "Representative Concentration Pathway, future, 21st century, volcanic forcing", 
+            "label": "RCP Volcanic", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Particle Forcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
             "type": "forcing-constraint"
         }, 
         {
