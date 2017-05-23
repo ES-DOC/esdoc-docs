@@ -1160,50 +1160,38 @@
                             "properties": [
                                 {
                                     "label": "Provision", 
-                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "description": "How solar forcing is provided", 
                                     "id": "cmip6.toplevel.radiative_forcings.other.solar.provision", 
                                     "cardinality": "1.N", 
                                     "type": "enum", 
                                     "enum": {
-                                        "label": "Forcing Provision", 
-                                        "description": "How a radiative forcing agent is provided", 
+                                        "label": "Solar Forcing Provision", 
+                                        "description": "How solar forcing is provided", 
                                         "isOpen": true, 
                                         "choices": [
                                             {
                                                 "label": "N/A", 
-                                                "description": "Not applicable - forcing agent is not included"
+                                                "description": "Not applicable - solar forcing is not included"
                                             }, 
                                             {
-                                                "label": "M", 
-                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                                "label": "irradiance", 
+                                                "description": "Solar irradiance forcing"
                                             }, 
                                             {
-                                                "label": "Y", 
-                                                "description": "Prescribed concentrations, distributions or time series data"
+                                                "label": "proton", 
+                                                "description": "Proton pathway to solar forcing"
                                             }, 
                                             {
-                                                "label": "E", 
-                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                                "label": "electron", 
+                                                "description": "Electron pathway to solar forcing"
                                             }, 
                                             {
-                                                "label": "ES", 
-                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
-                                            }, 
-                                            {
-                                                "label": "C", 
-                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                                "label": "cosmic ray", 
+                                                "description": "Cosmic ray pathway to solar forcing"
                                             }
                                         ]
                                     }, 
                                     "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Historical Orbital Parameters", 
-                                    "description": "In historical period only, use of realistic time-varying orbital parameters for solar forcing (GISS-E2)", 
-                                    "id": "cmip6.toplevel.radiative_forcings.other.solar.historical_orbital_parameters", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 2
                                 }, 
                                 {
                                     "label": "Additional Information", 
@@ -1211,7 +1199,7 @@
                                     "id": "cmip6.toplevel.radiative_forcings.other.solar.additional_information", 
                                     "cardinality": "0.1", 
                                     "type": "str", 
-                                    "uiOrdinal": 3
+                                    "uiOrdinal": 2
                                 }
                             ]
                         }
