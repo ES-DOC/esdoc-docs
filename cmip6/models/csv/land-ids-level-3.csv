@@ -2,12 +2,13 @@ cmip6-id, cmip6-label, cmip6-type
 cmip6.land.grid.horizontal.description, Land > Grid > Horizontal > Description, property
 cmip6.land.grid.horizontal.matches_atmosphere_grid, Land > Grid > Horizontal > Matches Atmosphere Grid, property
 cmip6.land.grid.vertical.description, Land > Grid > Vertical > Description, property
-cmip6.land.grid.vertical.number_of_levels, Land > Grid > Vertical > Number Of Levels, property
 , , 
-cmip6.land.key_properties.basic_approximations, Land > Key Properties > Basic Approximations, property
+cmip6.land.key_properties.model_name, Land > Key Properties > Model Name, property
+cmip6.land.key_properties.description, Land > Key Properties > Description, property
 cmip6.land.key_properties.land_atmosphere_flux_exchanges, Land > Key Properties > Land Atmosphere Flux Exchanges, property
 cmip6.land.key_properties.atmospheric_coupling, Land > Key Properties > Atmospheric Coupling, property
 cmip6.land.key_properties.land_cover, Land > Key Properties > Land Cover, property
+cmip6.land.key_properties.land_cover_change, Land > Key Properties > Land Cover Change, property
 cmip6.land.key_properties.prognostic_variables, Land > Key Properties > Prognostic Variables, property
 cmip6.land.key_properties.tiling, Land > Key Properties > Tiling, property
 cmip6.land.key_properties.conservation_properties.energy, Land > Key Properties > Conservation Properties > Energy, property
@@ -20,14 +21,21 @@ cmip6.land.key_properties.software_properties.repository, Land > Key Properties 
 cmip6.land.key_properties.software_properties.code_version, Land > Key Properties > Software Properties > Code Version, property
 cmip6.land.key_properties.software_properties.code_languages, Land > Key Properties > Software Properties > Code Languages, property
 , , 
+cmip6.land.soil.heat_water_coupling, Land > Soil > Heat Water Coupling, property
 cmip6.land.soil.soil_map.description, Land > Soil > Soil Map > Description, property
 cmip6.land.soil.soil_map.structure, Land > Soil > Soil Map > Structure, property
 cmip6.land.soil.soil_map.texture, Land > Soil > Soil Map > Texture, property
+cmip6.land.soil.soil_map.organic_matter, Land > Soil > Soil Map > Organic Matter, property
 cmip6.land.soil.soil_map.albedo, Land > Soil > Soil Map > Albedo, property
 cmip6.land.soil.soil_map.water_table, Land > Soil > Soil Map > Water Table, property
 cmip6.land.soil.soil_map.soil_depth, Land > Soil > Soil Map > Soil Depth, property
+cmip6.land.soil.snow_free_albedo.prognostic, Land > Soil > Snow Free Albedo > Prognostic, property
+cmip6.land.soil.snow_free_albedo.functions, Land > Soil > Snow Free Albedo > Functions, property
+cmip6.land.soil.snow_free_albedo.direct_diffuse, Land > Soil > Snow Free Albedo > Direct Diffuse, property
+cmip6.land.soil.snow_free_albedo.number_of_wavelength_bands, Land > Soil > Snow Free Albedo > Number Of Wavelength Bands, property
 cmip6.land.soil.hydrology.description, Land > Soil > Hydrology > Description, property
 cmip6.land.soil.hydrology.tiling, Land > Soil > Hydrology > Tiling, property
+cmip6.land.soil.hydrology.vertical_discretisation, Land > Soil > Hydrology > Vertical Discretisation, property
 cmip6.land.soil.hydrology.number_of_ground_water_layers, Land > Soil > Hydrology > Number Of Ground Water Layers, property
 cmip6.land.soil.hydrology.water_storage_method, Land > Soil > Hydrology > Water Storage Method, property
 cmip6.land.soil.hydrology.freezing.number_of_ground_ice_layers, Land > Soil > Hydrology > Freezing > Number Of Ground Ice Layers, property
@@ -44,7 +52,6 @@ cmip6.land.soil.heat_treatment.processes, Land > Soil > Heat Treatment > Process
 , , 
 cmip6.land.snow.tiling, Land > Snow > Tiling, property
 cmip6.land.snow.number_of_snow_layers, Land > Snow > Number Of Snow Layers, property
-cmip6.land.snow.albedo, Land > Snow > Albedo, property
 cmip6.land.snow.density, Land > Snow > Density, property
 cmip6.land.snow.water_equivalent, Land > Snow > Water Equivalent, property
 cmip6.land.snow.heat_content, Land > Snow > Heat Content, property
@@ -52,47 +59,40 @@ cmip6.land.snow.temperature, Land > Snow > Temperature, property
 cmip6.land.snow.liquid_water_content, Land > Snow > Liquid Water Content, property
 cmip6.land.snow.snow_cover_fractions, Land > Snow > Snow Cover Fractions, property
 cmip6.land.snow.processes, Land > Snow > Processes, property
+cmip6.land.snow.snow_albedo.type, Land > Snow > Snow Albedo > Type, property
+cmip6.land.snow.snow_albedo.functions, Land > Snow > Snow Albedo > Functions, property
 , , 
 cmip6.land.vegetation.description, Land > Vegetation > Description, property
-cmip6.land.vegetation.structure, Land > Vegetation > Structure, property
-cmip6.land.vegetation.texture, Land > Vegetation > Texture, property
-cmip6.land.vegetation.albedo, Land > Vegetation > Albedo, property
-cmip6.land.vegetation.water_table, Land > Vegetation > Water Table, property
-cmip6.land.vegetation.soil_depth, Land > Vegetation > Soil Depth, property
-cmip6.land.vegetation.methods.phenology, Land > Vegetation > Methods > Phenology, property
-cmip6.land.vegetation.methods.phenology_description, Land > Vegetation > Methods > Phenology Description, property
-cmip6.land.vegetation.methods.leaf_area_index, Land > Vegetation > Methods > Leaf Area Index, property
-cmip6.land.vegetation.methods.leaf_area_index_description, Land > Vegetation > Methods > Leaf Area Index Description, property
-cmip6.land.vegetation.methods.biomass, Land > Vegetation > Methods > Biomass, property
-cmip6.land.vegetation.methods.biomass_description, Land > Vegetation > Methods > Biomass Description, property
-cmip6.land.vegetation.methods.biogeography, Land > Vegetation > Methods > Biogeography, property
-cmip6.land.vegetation.methods.biogeography_description, Land > Vegetation > Methods > Biogeography Description, property
-cmip6.land.vegetation.methods.stomatal_resistance, Land > Vegetation > Methods > Stomatal Resistance, property
-cmip6.land.vegetation.methods.stomatal_resistance_description, Land > Vegetation > Methods > Stomatal Resistance Description, property
+cmip6.land.vegetation.dynamic_vegetation, Land > Vegetation > Dynamic Vegetation, property
+cmip6.land.vegetation.tiling, Land > Vegetation > Tiling, property
+cmip6.land.vegetation.vegetation_representation, Land > Vegetation > Vegetation Representation, property
+cmip6.land.vegetation.vegetation_types, Land > Vegetation > Vegetation Types, property
+cmip6.land.vegetation.biome_types, Land > Vegetation > Biome Types, property
+cmip6.land.vegetation.vegetation_time_variation, Land > Vegetation > Vegetation Time Variation, property
+cmip6.land.vegetation.vegetation_map, Land > Vegetation > Vegetation Map, property
+cmip6.land.vegetation.interception, Land > Vegetation > Interception, property
+cmip6.land.vegetation.phenology, Land > Vegetation > Phenology, property
+cmip6.land.vegetation.phenology_description, Land > Vegetation > Phenology Description, property
+cmip6.land.vegetation.leaf_area_index, Land > Vegetation > Leaf Area Index, property
+cmip6.land.vegetation.leaf_area_index_description, Land > Vegetation > Leaf Area Index Description, property
+cmip6.land.vegetation.biomass, Land > Vegetation > Biomass, property
+cmip6.land.vegetation.biomass_description, Land > Vegetation > Biomass Description, property
+cmip6.land.vegetation.biogeography, Land > Vegetation > Biogeography, property
+cmip6.land.vegetation.biogeography_description, Land > Vegetation > Biogeography Description, property
+cmip6.land.vegetation.stomatal_resistance, Land > Vegetation > Stomatal Resistance, property
+cmip6.land.vegetation.stomatal_resistance_description, Land > Vegetation > Stomatal Resistance Description, property
 , , 
 cmip6.land.energy_balance.tiling, Land > Energy Balance > Tiling, property
-cmip6.land.energy_balance.number_of_surface_temperature, Land > Energy Balance > Number Of Surface Temperature, property
-cmip6.land.energy_balance.evaporation_formulation, Land > Energy Balance > Evaporation Formulation, property
+cmip6.land.energy_balance.number_of_surface_temperatures, Land > Energy Balance > Number Of Surface Temperatures, property
+cmip6.land.energy_balance.evaporation, Land > Energy Balance > Evaporation, property
 cmip6.land.energy_balance.processes, Land > Energy Balance > Processes, property
 , , 
-cmip6.land.albedo.tiling, Land > Albedo > Tiling, property
-cmip6.land.albedo.snow_free_albedo.prognostic, Land > Albedo > Snow Free Albedo > Prognostic, property
-cmip6.land.albedo.snow_free_albedo.functions, Land > Albedo > Snow Free Albedo > Functions, property
-cmip6.land.albedo.snow_free_albedo.direct_diffuse, Land > Albedo > Snow Free Albedo > Direct Diffuse, property
-cmip6.land.albedo.snow_free_albedo.number_of_wavelength_bands, Land > Albedo > Snow Free Albedo > Number Of Wavelength Bands, property
-cmip6.land.albedo.snow_albedo.type, Land > Albedo > Snow Albedo > Type, property
-cmip6.land.albedo.snow_albedo.functions, Land > Albedo > Snow Albedo > Functions, property
-cmip6.land.albedo.method.phenology, Land > Albedo > Method > Phenology, property
-cmip6.land.albedo.method.leaf_area_index, Land > Albedo > Method > Leaf Area Index, property
-cmip6.land.albedo.method.biomass, Land > Albedo > Method > Biomass, property
-cmip6.land.albedo.method.biogeography, Land > Albedo > Method > Biogeography, property
-cmip6.land.albedo.method.stomatal_resistance, Land > Albedo > Method > Stomatal Resistance, property
-, , 
+cmip6.land.carbon_cycle.tiling, Land > Carbon Cycle > Tiling, property
+cmip6.land.carbon_cycle.anthropogenic_carbon, Land > Carbon Cycle > Anthropogenic Carbon, property
 cmip6.land.carbon_cycle.vegetation.number_of_carbon_pools, Land > Carbon Cycle > Vegetation > Number Of Carbon Pools, property
 cmip6.land.carbon_cycle.vegetation.carbon_pools, Land > Carbon Cycle > Vegetation > Carbon Pools, property
 cmip6.land.carbon_cycle.vegetation.forest_stand_dynamics, Land > Carbon Cycle > Vegetation > Forest Stand Dynamics, property
 cmip6.land.carbon_cycle.vegetation.photosynthesis.method, Land > Carbon Cycle > Vegetation > Photosynthesis > Method, property
-cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.parametrised, Land > Carbon Cycle > Vegetation > Autotrophic Respiration > Parametrised, property
 cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.maintainance_respiration, Land > Carbon Cycle > Vegetation > Autotrophic Respiration > Maintainance Respiration, property
 cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.growth_respiration, Land > Carbon Cycle > Vegetation > Autotrophic Respiration > Growth Respiration, property
 cmip6.land.carbon_cycle.vegetation.allocation.method, Land > Carbon Cycle > Vegetation > Allocation > Method, property
@@ -113,6 +113,8 @@ cmip6.land.carbon_cycle.permafrost_carbon.Emitted_greenhouse_gases, Land > Carbo
 cmip6.land.carbon_cycle.permafrost_carbon.decomposition, Land > Carbon Cycle > Permafrost Carbon > Decomposition, property
 cmip6.land.carbon_cycle.permafrost_carbon.impact_on_soil_properties, Land > Carbon Cycle > Permafrost Carbon > Impact On Soil Properties, property
 , , 
+cmip6.land.nitrogen_cycle.tiling, Land > Nitrogen Cycle > Tiling, property
+, , 
 cmip6.land.river_routing.tiling, Land > River Routing > Tiling, property
 cmip6.land.river_routing.grid_inherited_from_land_surface, Land > River Routing > Grid Inherited From Land Surface, property
 cmip6.land.river_routing.grid_description, Land > River Routing > Grid Description, property
@@ -120,8 +122,10 @@ cmip6.land.river_routing.number_of_reservoirs, Land > River Routing > Number Of 
 cmip6.land.river_routing.prognostic_variables, Land > River Routing > Prognostic Variables, property
 cmip6.land.river_routing.water_re_evaporation, Land > River Routing > Water Re Evaporation, property
 cmip6.land.river_routing.coupled_to_atmosphere, Land > River Routing > Coupled To Atmosphere, property
+cmip6.land.river_routing.coupled_to_land, Land > River Routing > Coupled To Land, property
 cmip6.land.river_routing.quantities_exchanged_with_atmosphere, Land > River Routing > Quantities Exchanged With Atmosphere, property
 cmip6.land.river_routing.basin_flow_direction_map, Land > River Routing > Basin Flow Direction Map, property
+cmip6.land.river_routing.flooding, Land > River Routing > Flooding, property
 cmip6.land.river_routing.oceanic_discharge.discharge_type, Land > River Routing > Oceanic Discharge > Discharge Type, property
 cmip6.land.river_routing.oceanic_discharge.quantities_transported, Land > River Routing > Oceanic Discharge > Quantities Transported, property
 , , 
