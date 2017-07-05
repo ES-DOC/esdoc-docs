@@ -1,6 +1,6 @@
 {
     "canonical_name": "highresSST-future", 
-    "description": "High forcing (ScenarioMIP SSP5-85) future scenario (2015-2050) atmosphere only simulations at high and standard resolution, with an option to continue to 2100.\nFor optimal comparison between models aerosol concentrations would be preferable and not emissions. \nFuture SST and SIC are determined from a blend of warming rates derived from an ensemble mean of CMIP5 RCP8.5 simulations and interannual variability derived from the historic 1960-2014 period. \nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution.", 
+    "description": "High forcing (ScenarioMIP SSP5-85) future scenario (2015-2050) atmosphere only simulations at high and standard resolution, with an option to continue to 2100.\nFor optimal comparison between models aerosol concentrations are recommended (rather than emissions). \nFuture SST and SIC are determined from a blend of warming rates derived from an ensemble mean of CMIP5 RCP8.5 simulations and interannual variability derived from the historic 1960-2014 period. \nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution.", 
     "governing_mips": [
         "highresmip"
     ], 
@@ -52,11 +52,20 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "RCP85 Forcing", 
-            "description": "Impose RCP8.5 forcing.\nRepresents the high end of the range of plausible future forcing pathways.", 
+            "canonical_name": "RCP85 Forcing Excluding Land Use", 
+            "description": "Impose RCP8.5 forcing excluding land use.\nEmissions driven.", 
             "isConformanceRequested": true, 
-            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5", 
-            "label": "RCP85 Forcing", 
+            "keywords": "Representative Concentration Pathway 8.5, future, 21st century, SSP5, RCP8.5, excluding land use", 
+            "label": "RCP85 Forcing Excluding Land Use", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present Day Land Surface Forcing", 
+            "description": "Land surface properties will be climatological monthly/seasonally varying conditions of leaf area index (LAI), with no dynamic vegetation and a constant land use/land cover consistent with the present-day period, centered around 2000.", 
+            "isConformanceRequested": true, 
+            "keywords": "HighresMIP, present day, land surface properties", 
+            "label": "Present Day Land Surface Forcing", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -65,6 +74,15 @@
             "isConformanceRequested": true, 
             "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
             "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Ozone Concentrations", 
+            "description": "Apply ozone concentrations encompassing both the stratosphere and the troposphere from the ozone concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "Future, ozone, concentration, O3, stratosphere, troposphere", 
+            "label": "Future Ozone Concentrations", 
             "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
@@ -102,6 +120,6 @@
         }
     ], 
     "tier": 3, 
-    "uid": "2be95bce-25a1-4711-911e-b3dd0f0409db", 
+    "uid": "ab949b54-d56e-48e7-9657-44262d51c2fb", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/highresSST-future?client=mohc"
 }

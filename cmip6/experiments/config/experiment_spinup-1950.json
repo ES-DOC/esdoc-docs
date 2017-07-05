@@ -1,0 +1,147 @@
+{
+    "canonical_name": "spinup-1950", 
+    "description": "The HighResMIP equivalent of the pre-industrial spinup with fixed 1950s forcing. The forcing consists of greenhouse gases, including ozone and aerosol loading for a 1950s (~10 year mean) climatology. For optimal comparison between models, use of plume aerosol concentrations is recommended (rather than emissions).  \nInitial ocean conditions are taken from the EN4 (Good et al, 2013) ocean analysis over an average period of 1950-1954.  This spinup is short compared to DECK (30-50 years for example, to be manageable and consistent across resolutions) to produce initial conditions for control-1950 and hist-1950.\nAt least one ensemble member for each resolution used int he coupled simulations (i.e. standard and high), where high is minimum atmosphere 25-50 km at mod-latitudes and ocean resolution of 0.25 degrees, and a minimum of daily coupling between ocean and atmosphere.\nRun for 30-50 years.", 
+    "governing_mips": [
+        "highresmip"
+    ], 
+    "keywords": "HighResMIP, tier 2, coupled, 1950s", 
+    "long_name": "coupled spinup with fixed 1950s forcings from 1950 initial conditions (with ocean at rest) to provide initial condition for contro-1950 and hist-1950", 
+    "mip_era": "cmip6", 
+    "rationale": "Spinup simulations to remove and evaluate initial coupled model drift", 
+    "related_experiments": [
+        {
+            "name": "control-1950", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "hist-1950", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "highresmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "30-50yrs", 
+            "description": "Run for 30 to 50 years", 
+            "isConformanceRequested": false, 
+            "keywords": "30 years to 50 years", 
+            "label": "30-50yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Plume Climatology 1950s", 
+            "description": "1950s (10 year) climatology of aerosol optical properties (fine and coarse mode aerosol optical depth (AOD), single scattering albedo (SSA), asymmetry parameter (ASY)) and cloud activity (anthropogenic increment in drop number, dN/N), which are easy to use and to configure (i.e., scale in amplitude for hypothesis testing).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol plume, climatology, CMIP6, 1950s", 
+            "label": "Historical Aerosol Plume Climatology 1950s", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s WMGHG Concentrations", 
+            "description": "1950s (10 year) climatology of forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentrations for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations. \nDepending on the model setup and emission species (short-lived, ozone, long-lived GHG), the historical simulation is driven by emissions and/or concentrations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, 1950s, climatology", 
+            "label": "1950s WMGHG Concentrations", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s Ozone Concentrations", 
+            "description": "1950s (10 year) climatology of ozone concentration database encompassing both the stratosphere and the troposphere.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, ozone, concentration, O3, stratosphere, troposphere, 1950s, climatology", 
+            "label": "1950s Ozone Concentrations", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present Day Land Surface Forcing", 
+            "description": "Land surface properties will be climatological monthly/seasonally varying conditions of leaf area index (LAI), with no dynamic vegetation and a constant land use/land cover consistent with the present-day period, centered around 2000.", 
+            "isConformanceRequested": true, 
+            "keywords": "HighresMIP, present day, land surface properties", 
+            "label": "Present Day Land Surface Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s Solar Spectral Irradiance", 
+            "description": "1950s (10 year) climatology of Solar Spectral Irradiance (SSI).", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI, 1950s, climatology", 
+            "label": "1950s Solar Spectral Irradiance", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s Stratospheric Aerosol", 
+            "description": "1950s (10 year) climatology of stratospheric aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol, 1950s, climatology", 
+            "label": "1950s Stratospheric Aerosol", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "HighAndStandardResolution", 
+            "description": "At least two simulations, one at high resolution (minimum 25-50 km at mid-latitudes), and one at the standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "high resolution, standard resolution, at least two members", 
+            "label": "HighAndStandardResolution", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "1950s Ocean Initialisation", 
+            "description": "Initial ocean conditions are taken from the EN4 (Good et al, 2013) ocean analysis over an average period of 1950-1954.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, ocean, EN4, 1950s", 
+            "label": "1950s Ocean Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "High Res Atmos", 
+            "description": "25-50km minimum resolution at mid-latitudes", 
+            "isConformanceRequested": false, 
+            "keywords": "High Resolution, 25-50 km,", 
+            "label": "High Res Atmos", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "High Resolution Ocean", 
+            "description": "Ocean resolution 0.25 degrees", 
+            "isConformanceRequested": false, 
+            "keywords": "High resolution ocean, 0.25 degrees", 
+            "label": "High Resolution Ocean", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Standard Model Resolution", 
+            "description": "standard model resolution", 
+            "isConformanceRequested": false, 
+            "keywords": "Standard Model Resolution", 
+            "label": "Standard Model Resolution", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "Daily Coupling", 
+            "description": "Minimum daily coupling between ocean and atmosphere.  Preferably more frequent, 3hr or 1hr.", 
+            "isConformanceRequested": false, 
+            "keywords": "Daily coupling or more", 
+            "label": "Daily Coupling", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "a3bbb972-69bd-4f16-800c-1db57ec818c7", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/spinup-1950?client=mohc"
+}

@@ -35,22 +35,6 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Adaptive Grid", 
-                    "description": "Is an adative grid being used?", 
-                    "id": "cmip6.landice.ice.adaptive_grid", 
-                    "cardinality": "1.1", 
-                    "type": "bool", 
-                    "uiOrdinal": 1
-                }, 
-                {
-                    "label": "Resolution Limit", 
-                    "description": "If an adative grid is being used, what is the limit of the resolution (in metres)", 
-                    "id": "cmip6.landice.ice.resolution_limit", 
-                    "cardinality": "0.1", 
-                    "type": "float", 
-                    "uiOrdinal": 2
-                }, 
-                {
                     "label": "Grounding Line Method", 
                     "description": "Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling", 
                     "id": "cmip6.landice.ice.grounding_line_method", 
@@ -79,7 +63,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 1
                 }, 
                 {
                     "label": "Ice Sheet", 
@@ -87,7 +71,7 @@
                     "id": "cmip6.landice.ice.ice_sheet", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Ice Shelf", 
@@ -95,7 +79,7 @@
                     "id": "cmip6.landice.ice.ice_shelf", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 3
                 }
             ], 
             "subProcesses": [
@@ -230,12 +214,20 @@
                 "uiOrdinal": 2
             }, 
             {
+                "label": "Resolution Limit", 
+                "description": "If an adaptive grid is being used, what is the limit of the resolution (in metres)", 
+                "id": "cmip6.landice.grid.resolution_limit", 
+                "cardinality": "0.1", 
+                "type": "float", 
+                "uiOrdinal": 3
+            }, 
+            {
                 "label": "Projection", 
                 "description": "The projection of the land ice grid (e.g. albers_equal_area)", 
                 "id": "cmip6.landice.grid.projection", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }
         ]
     }, 
@@ -245,6 +237,14 @@
         "id": "cmip6.landice.key_properties", 
         "contact": "David Hassell", 
         "properties": [
+            {
+                "label": "Model Name", 
+                "description": "Name of land surface model code", 
+                "id": "cmip6.landice.key_properties.model_name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
             {
                 "label": "Ice Albedo", 
                 "description": "Specify how ice albedo is modelled", 
@@ -270,7 +270,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Atmospheric Coupling Variables", 
@@ -278,7 +278,7 @@
                 "id": "cmip6.landice.key_properties.atmospheric_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Oceanic Coupling Variables", 
@@ -286,7 +286,7 @@
                 "id": "cmip6.landice.key_properties.oceanic_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -313,7 +313,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }
         ]
     }

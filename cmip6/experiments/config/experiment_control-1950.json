@@ -1,25 +1,21 @@
 {
     "canonical_name": "control-1950", 
-    "description": "The HighResMIP equivalent of the pre-industrial control with fixed 1950s forcing.  The forcing consists of greenhouse gases, including ozone and aerosol loading for a 1950s (~10 year mean) climatology.  For optimal comparison between models, aerosol concentrations would be preferable and not emissions.\nInitial ocean conditions are taken from the EN4 (Good et al, 2013) ocean analysis over an average period of 1950-1954.  A short spin-up with these forcings is required (~50 years) to produce initial conditions.\nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes and ocean resolution of 0.25 degrees, and a minimum of daily coupling between ocean and atmosphere.\nAt least one ensemble member at standard model resolution.  \nRun for 100 years.", 
+    "description": "The HighResMIP equivalent of the pre-industrial control with fixed 1950s forcing.  The forcing consists of greenhouse gases, including ozone and aerosol loading for a 1950s (~10 year mean) climatology.  For optimal comparison between models, aerosol concentrations are recommended (rather than emissions).\nInitial conditions from the spinup-1950 experiment.\nAt least one ensemble member at high resolution, minimum atmosphere 25-50 km at mid-latitudes and ocean resolution of 0.25 degrees, and a minimum of daily coupling between ocean and atmosphere.\nAt least one ensemble member at standard model resolution.  \nRun for 100 years.", 
     "governing_mips": [
         "highresmip"
     ], 
     "keywords": "HighResMIP, Tier 2, coupled, 1950s", 
     "long_name": "coupled control with fixed 1950's forcing (HighResMIP equivalent of pre-industrial control)", 
     "mip_era": "cmip6", 
-    "rationale": "Control simulations to allow the evaluation of model drift.", 
+    "rationale": "Control simulations to allow the evaluation of model drift.  To produce initial condidtions for hist-1950 (at the end of the spin-up period).", 
     "related_experiments": [
         {
-            "name": "highres-future", 
+            "name": "hist-1950", 
             "relationship": "is_sibling_of"
         }, 
         {
-            "name": "hist-1950", 
-            "relationship": "is_initializer_of"
-        }, 
-        {
-            "name": "hist-1950", 
-            "relationship": "is_sibling_of"
+            "name": "spinup-1950", 
+            "relationship": "is_initialized_by"
         }
     ], 
     "related_mips": [
@@ -35,11 +31,12 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "1950s Aerosol Forcing", 
-            "description": "1950s (10 year) climatology of mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "canonical_name": "Historical Aerosol Plume Climatology 1950s", 
+            "description": "1950s (10 year) climatology of aerosol optical properties (fine and coarse mode aerosol optical depth (AOD), single scattering albedo (SSA), asymmetry parameter (ASY)) and cloud activity (anthropogenic increment in drop number, dN/N), which are easy to use and to configure (i.e., scale in amplitude for hypothesis testing).", 
             "isConformanceRequested": true, 
-            "keywords": "1950s, aerosol, forcing, climatology", 
-            "label": "1950s Aerosol Forcing", 
+            "keywords": "historical, aerosol plume, climatology, CMIP6, 1950s", 
+            "label": "Historical Aerosol Plume Climatology 1950s", 
+            "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {
@@ -52,37 +49,21 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1950s Emissions", 
-            "description": "1950s (10 year) climatology of core emissions data.", 
+            "canonical_name": "1950s Ozone Concentrations", 
+            "description": "1950s (10 year) climatology of ozone concentration database encompassing both the stratosphere and the troposphere.", 
             "isConformanceRequested": true, 
-            "keywords": "1950s, emissions, climatology", 
-            "label": "1950s Emissions", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1950s Land Use", 
-            "description": "1950s (10 year) mean global gridded land-use forcing data.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
-            "isConformanceRequested": true, 
-            "keywords": "Historical, land use, 1950s", 
-            "label": "1950s Land Use", 
+            "keywords": "historical, ozone, concentration, O3, stratosphere, troposphere, 1950s, climatology", 
+            "label": "1950s Ozone Concentrations", 
             "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "1950s O3 and Stratospheric H2O Concentrations", 
-            "description": "1950s (10 year) climatology of ozone concentration data encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration data.", 
+            "canonical_name": "Present Day Land Surface Forcing", 
+            "description": "Land surface properties will be climatological monthly/seasonally varying conditions of leaf area index (LAI), with no dynamic vegetation and a constant land use/land cover consistent with the present-day period, centered around 2000.", 
             "isConformanceRequested": true, 
-            "keywords": "1950s, stratospheric, ozone, water vapour, O3, H2O, concentration, climatology", 
-            "label": "1950s O3 and Stratospheric H2O Concentrations", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1950s Stratospheric Aerosol", 
-            "description": "1950s (10 year) climatology of stratospheric aerosols.", 
-            "isConformanceRequested": true, 
-            "keywords": "historical, stratospheric, aerosol, 1950s, climatology", 
-            "label": "1950s Stratospheric Aerosol", 
-            "scope": "experiment", 
+            "keywords": "HighresMIP, present day, land surface properties", 
+            "label": "Present Day Land Surface Forcing", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -91,6 +72,15 @@
             "isConformanceRequested": true, 
             "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI, 1950s, climatology", 
             "label": "1950s Solar Spectral Irradiance", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1950s Stratospheric Aerosol", 
+            "description": "1950s (10 year) climatology of stratospheric aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol, 1950s, climatology", 
+            "label": "1950s Stratospheric Aerosol", 
             "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
@@ -152,6 +142,6 @@
         }
     ], 
     "tier": 2, 
-    "uid": "189d16b7-db68-493d-a7e5-7363c0d7bbe5", 
+    "uid": "a7cd966f-1e3a-4b15-a8e0-527f312315b7", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/control-1950?client=mohc"
 }

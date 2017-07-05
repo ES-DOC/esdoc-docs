@@ -1,6 +1,6 @@
 {
     "canonical_name": "highresSST-present", 
-    "description": "Historical AMIP simulations of the near past (1950-2014). HadISST2 sea surface temperature and sea ice concentrations at daily 1/4 degree resolution to be used (Rayner et al., 2016).\nAt least one ensemble member at high resolution, minimum 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution as used in the DECK and historical simulations.", 
+    "description": "Historical atmosphere-only simulations of the near past (1950-2014). HadISST2.2 sea surface temperature and sea ice concentrations at daily 1/4 degree resolution to be used (Kennedy et al. 2017, in prep).  For optimal comparison between models the use of plume aerosol cocentrations are recommended (rather than emissions).\nAt least one ensemble member at high resolution, minimum 25-50 km at mid-latitudes.\nAt least one ensemble member at standard model resolution as used in the DECK and historical simulations. Initial conditions from either the ERA-20C reanalysis (and then some intial spinup), or a suitably spun-up atmosphere-land initial condition reflecting 1950's conditions.", 
     "governing_mips": [
         "highresmip"
     ], 
@@ -35,11 +35,11 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "High Res HadISST2", 
-            "description": "Force with the high resolution (0.25 degree) daily HadISST data set with sea surface temperature (SST) and sea ice concentration (SIC).", 
+            "canonical_name": "High Res HadISST2.2", 
+            "description": "Force with the high resolution (0.25 degree) daily HadISST2.2  sea surface temperature (SST) and sea ice concentration (SIC) data set.", 
             "isConformanceRequested": true, 
-            "keywords": "HadISST, High Res, 0.25 degree, daily", 
-            "label": "High Res HadISST2", 
+            "keywords": "HadISST2.2, High Res, 0.25 degree, daily", 
+            "label": "High Res HadISST2.2", 
             "scope": "experiment", 
             "type": "forcing-constraint"
         }, 
@@ -50,14 +50,6 @@
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
             "scope": "mip-era", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "Historical Emissions", 
-            "description": "Core emissions datasets.", 
-            "isConformanceRequested": true, 
-            "keywords": "historical, emissions", 
-            "label": "Historical Emissions", 
             "type": "forcing-constraint"
         }, 
         {
@@ -84,6 +76,24 @@
             "isConformanceRequested": true, 
             "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
             "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Ozone Concentrations", 
+            "description": "Apply ozone concentrations encompassing both the stratosphere and the troposphere from the ozone concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, ozone, concentration, O3, stratosphere, troposphere", 
+            "label": "Historical Ozone Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
             "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
@@ -129,6 +139,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "866f67b7-6b96-40fb-8fd4-6f99d4d7f3bf", 
+    "uid": "6a493f69-9d69-405a-8ae4-ea976be4f534", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/highresSST-present?client=mohc"
 }
