@@ -1,0 +1,1301 @@
+{
+    "label": "Aerosol", 
+    "description": "Atmospheric aerosols realm", 
+    "id": "cmip6.aerosol", 
+    "contact": "Charlotte Pascoe, David Hassell", 
+    "processes": [
+        {
+            "label": "Transport", 
+            "description": "Aerosol transport", 
+            "id": "cmip6.aerosol.transport", 
+            "contact": "Charlotte Pascoe, David Hassell", 
+            "properties": [
+                {
+                    "label": "Scheme", 
+                    "description": "Method for aerosol transport modeling", 
+                    "id": "cmip6.aerosol.transport.scheme", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Transport Schemes", 
+                        "description": "Method for aerosol transport modeling", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (eulerian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (semi-lagrangian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (eulerian and semi-lagrangian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (lagrangian)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Mass Conservation Scheme", 
+                    "description": "Method used to ensure mass conservation.", 
+                    "id": "cmip6.aerosol.transport.mass_conservation_scheme", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Mass Conservation Methods", 
+                        "description": "Method used to ensure mass conservation", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Mass adjustment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Concentrations positivity", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Gradients monotonicity", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Convention Scheme", 
+                    "description": "Transport by convention", 
+                    "id": "cmip6.aerosol.transport.convention_scheme", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Convection Types", 
+                        "description": "Transport by convection", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Convective fluxes connected to tracers", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Vertical velocities connected to tracers", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Turbulence", 
+                    "description": "The scheme used for parametrization of the turbulent transport of aerosols", 
+                    "id": "cmip6.aerosol.transport.turbulence", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Method", 
+                            "description": "Method used for turbulence parametrization", 
+                            "id": "cmip6.aerosol.transport.turbulence.method", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Turbulence Methods", 
+                                "description": "Method used for turbulence parametrization", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Uses Atmospheric chemistry turbulence scheme", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Specific turbulence scheme", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Specific Scheme", 
+                            "description": "Description of the scheme used for parametrization of the turbulent transport of aerosols, if not that used by the atmospheric chemistry model", 
+                            "id": "cmip6.aerosol.transport.turbulence.specific_scheme", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Emissions Concentrations", 
+            "description": "Atmospheric aerosol transport", 
+            "id": "cmip6.aerosol.emissions_concentrations", 
+            "contact": "Charlotte Pascoe, David Hassell", 
+            "subProcesses": [
+                {
+                    "label": "Surface Emissions", 
+                    "description": "TO DO", 
+                    "id": "cmip6.aerosol.emissions_concentrations.surface_emissions", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Method", 
+                            "description": "Method used to define aerosol species emitted at the surface (several methods allowed because the different species may not use the same method).", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.method", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Emissions Methods", 
+                                "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Prescribed (climatology)", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Prescribe (spatially uniform)", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Interactive", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Sources", 
+                            "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.sources", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Surface Source Types", 
+                                "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Vegetation", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Bare ground", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Sea surface", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Anthropogenic", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Prescribed Climatology", 
+                            "description": "Specify the climatology type for aerosol emissions prescribed at the surface", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.prescribed_climatology", 
+                            "cardinality": "0.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Prescribed Climatology Type", 
+                                "description": "Specify the climatology type for aerosol emissions", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "Constant", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Interannual", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Annual", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Monthly", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Daily", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Prescribed Climatology Emitted Species", 
+                            "description": "List of aerosol species emitted at the surface and prescribed via a climatology", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.prescribed_climatology_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Prescribed Spatially Uniform Emitted Species", 
+                            "description": "List of aerosol species emitted at the surface and prescribed as spatially uniform", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.prescribed_spatially_uniform_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "Interactive Emitted Species", 
+                            "description": "List of aerosol species emitted at the surface and specified via an interactive method", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.interactive_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 6
+                        }, 
+                        {
+                            "label": "Other Emitted Species", 
+                            "description": "List of aerosol species emitted at the surface and specified via an \"other method\"", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.other_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 7
+                        }, 
+                        {
+                            "label": "Other Method Characteristics", 
+                            "description": "Characteristics of the \"other method\" used for aerosol emissions at the surface", 
+                            "id": "cmip6.aerosol.emissions_concentrations.surface_emissions.other_method_characteristics", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 8
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Atmospheric Emissions", 
+                    "description": "TO DO", 
+                    "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Method", 
+                            "description": "Method used to define the aerosol species emitted in the atmosphere (several methods allowed because the different species may not use the same method).", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.method", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Emissions Methods", 
+                                "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Prescribed (climatology)", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Prescribe (spatially uniform)", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Interactive", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Sources", 
+                            "description": "Sources of aerosol species emitted in the atmosphere that are taken into account in the emissions scheme.", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.sources", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Atmospheric Source Types", 
+                                "description": "Sources of the aerosol species emitted in the atmosphere that are taken into account in the emissions scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Aircraft", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Biomass burning", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Lightning", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Volcanos", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Prescribed Climatology", 
+                            "description": "Specify the climatology type for aerosol emissions prescribed in the atmosphere.", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.prescribed_climatology", 
+                            "cardinality": "0.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Prescribed Climatology Type", 
+                                "description": "Specify the climatology type for aerosol emissions", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "Constant", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Interannual", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Annual", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Monthly", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Daily", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Prescribed Climatology Emitted Species", 
+                            "description": "List of aerosol species emitted in the atmosphere and prescribed via a climatology", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.prescribed_climatology_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Prescribed Spatially Uniform Emitted Species", 
+                            "description": "List of aerosol species emitted in the atmosphere and prescribed as spatially uniform", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.prescribed_spatially_uniform_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "Interactive Emitted Species", 
+                            "description": "List of aerosol species emitted in the atmosphere and specified via an interactive method", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.interactive_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 6
+                        }, 
+                        {
+                            "label": "Other Emitted Species", 
+                            "description": "List of aerosol species emitted in the atmosphere and specified via an \"other method\"", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.other_emitted_species", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 7
+                        }, 
+                        {
+                            "label": "Other Method Characteristics", 
+                            "description": "Characteristics of the \"other method\" used for aerosol emissions in the atmosphere", 
+                            "id": "cmip6.aerosol.emissions_concentrations.atmospheric_emissions.other_method_characteristics", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 8
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Concentrations", 
+                    "description": "TO DO", 
+                    "id": "cmip6.aerosol.emissions_concentrations.concentrations", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Prescribed Lower Boundary", 
+                            "description": "List of species prescribed at the lower boundary.", 
+                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_lower_boundary", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Prescribed Upper Boundary", 
+                            "description": "List of species prescribed at the upper boundary.", 
+                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_upper_boundary", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Model", 
+            "description": "Aerosol model", 
+            "id": "cmip6.aerosol.model", 
+            "contact": "Charlotte Pascoe, David Hassell", 
+            "properties": [
+                {
+                    "label": "Processes", 
+                    "description": "Processes included in the Aerosol model.", 
+                    "id": "cmip6.aerosol.model.processes", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Model Processes", 
+                        "description": "Processes included in the Aerosol model.", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Dry deposition", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sedimentation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Wet deposition (impaction scavenging)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Wet deposition (nucleation scavenging)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Coagulation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Oxidation (gas phase)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Oxidation (in cloud)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Condensation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ageing", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Advection (horizontal)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Advection (vertical)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Heterogeneous chemistry", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Coupling", 
+                    "description": "Other model components coupled to the Aerosol model", 
+                    "id": "cmip6.aerosol.model.coupling", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Coupling", 
+                        "description": "Other model components coupled to the Aerosol model.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Radiation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Land surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Heterogeneous chemistry", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Clouds", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Gas Phase Precursors", 
+                    "description": "List of gas phase aerosol precursors.", 
+                    "id": "cmip6.aerosol.model.gas_phase_precursors", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Gas Phase Precursors", 
+                        "description": "List of gas phase aerosol precursors.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "DMS", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SO2", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ammonia", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Iodene", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Terpene", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Isoprene", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Scheme Type", 
+                    "description": "Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
+                    "id": "cmip6.aerosol.model.scheme_type", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Scheme Types", 
+                        "description": "Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Bulk", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Modal", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Bin", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Bulk Scheme Species", 
+                    "description": "List of species covered by the bulk scheme.", 
+                    "id": "cmip6.aerosol.model.bulk_scheme_species", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Species", 
+                        "description": "List of species.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Sulphate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nitrate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea salt", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Dust", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Organic", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Black carbon / soot", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SOA (secondary organic aerosols)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "POM (particulate organic matter)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Polar stratospheric ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAT (Nitric acid trihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAD (Nitric acid dihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "STS (supercooled ternary solution aerosol particule)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Model Scheme Framework", 
+                    "description": "Aerosols classification framework used in the modal aerosol scheme.", 
+                    "id": "cmip6.aerosol.model.model_scheme_framework", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Scheme Frameworks", 
+                        "description": "Aerosols classification framework", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Single moment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Microphysical", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Model Scheme Species", 
+                    "description": "List of species covered by the modal scheme.", 
+                    "id": "cmip6.aerosol.model.model_scheme_species", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Species", 
+                        "description": "List of species.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Sulphate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nitrate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea salt", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Dust", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Organic", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Black carbon / soot", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SOA (secondary organic aerosols)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "POM (particulate organic matter)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Polar stratospheric ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAT (Nitric acid trihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAD (Nitric acid dihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "STS (supercooled ternary solution aerosol particule)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 7
+                }, 
+                {
+                    "label": "Bin Scheme Framework", 
+                    "description": "Aerosols classification framework used in the bin aerosol scheme.", 
+                    "id": "cmip6.aerosol.model.bin_scheme_framework", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Scheme Frameworks", 
+                        "description": "Aerosols classification framework", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Single moment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Microphysical", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 8
+                }, 
+                {
+                    "label": "Bin Scheme Species", 
+                    "description": "List of species covered by the bin scheme.", 
+                    "id": "cmip6.aerosol.model.bin_scheme_species", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Species", 
+                        "description": "List of species.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Sulphate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nitrate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea salt", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Dust", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Organic", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Black carbon / soot", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SOA (secondary organic aerosols)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "POM (particulate organic matter)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Polar stratospheric ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAT (Nitric acid trihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAD (Nitric acid dihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "STS (supercooled ternary solution aerosol particule)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 9
+                }, 
+                {
+                    "label": "Classification Framework", 
+                    "description": "Aerosols classification framework.", 
+                    "id": "cmip6.aerosol.model.classification_framework", 
+                    "cardinality": "0.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Scheme Frameworks", 
+                        "description": "Aerosols classification framework", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Single moment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Microphysical", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 10
+                }, 
+                {
+                    "label": "Classification Framework Characterisitics", 
+                    "description": "Characteristics of the aerosol scheme used.", 
+                    "id": "cmip6.aerosol.model.classification_framework_characterisitics", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 11
+                }, 
+                {
+                    "label": "Classification Framework Species", 
+                    "description": "List of species covered by the scheme.", 
+                    "id": "cmip6.aerosol.model.classification_framework_species", 
+                    "cardinality": "0.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Species", 
+                        "description": "List of species.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Sulphate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nitrate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea salt", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Dust", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Organic", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Black carbon / soot", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SOA (secondary organic aerosols)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "POM (particulate organic matter)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Polar stratospheric ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAT (Nitric acid trihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAD (Nitric acid dihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "STS (supercooled ternary solution aerosol particule)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 12
+                }
+            ]
+        }
+    ], 
+    "grid": {
+        "label": "Grid", 
+        "description": "Aerosol grid", 
+        "id": "cmip6.aerosol.grid", 
+        "contact": "Charlotte Pascoe, David Hassell"
+    }, 
+    "keyProperties": {
+        "label": "Key Properties", 
+        "description": "Key properties of the aerosol model", 
+        "id": "cmip6.aerosol.key_properties", 
+        "contact": "Charlotte Pascoe, David Hassell", 
+        "properties": [
+            {
+                "label": "Scheme Scope", 
+                "description": "Atmospheric domains covered by the aerosol model", 
+                "id": "cmip6.aerosol.key_properties.scheme_scope", 
+                "cardinality": "1.N", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Scheme Scopes", 
+                    "description": "Atmospheric domains covered by the aerosol model", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "troposhere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "stratosphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "mesosphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "mesosphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "whole atmosphere", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Basic Approximations", 
+                "description": "Basic approximations made in the aerosol model", 
+                "id": "cmip6.aerosol.key_properties.basic_approximations", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 2
+            }, 
+            {
+                "label": "Prognostic Variables Form", 
+                "description": "Prognostic variables in the aerosol model", 
+                "id": "cmip6.aerosol.key_properties.prognostic_variables_form", 
+                "cardinality": "1.N", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Prognostic Vars Types", 
+                    "description": "Form of prognostic variables in the aerosol model.", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "3D mass/volume ratio for aerosols", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "3D number concenttration for aerosols", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 3
+            }, 
+            {
+                "label": "Number Of Tracers", 
+                "description": "Number of tracers in the aerosol model", 
+                "id": "cmip6.aerosol.key_properties.number_of_tracers", 
+                "cardinality": "1.1", 
+                "type": "int", 
+                "uiOrdinal": 4
+            }, 
+            {
+                "label": "Family Approach", 
+                "description": "Are aerosol calculations generalized into families of species?", 
+                "id": "cmip6.aerosol.key_properties.family_approach", 
+                "cardinality": "1.1", 
+                "type": "bool", 
+                "uiOrdinal": 5
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Timestep Framework", 
+                "description": "Physical properties of seawater in ocean", 
+                "id": "cmip6.aerosol.key_properties.timestep_framework", 
+                "contact": "Charlotte Pascoe, David Hassell", 
+                "properties": [
+                    {
+                        "label": "Method", 
+                        "description": "Mathematical method deployed to solve the time evolution of the prognostic variables", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.method", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Timestepping Methods", 
+                            "description": "Mathematical method deployed to solve the time evolution of the prognostic variables.", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Uses atmospheric chemistry time stepping", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific timestepping (operator splitting)", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific timestepping (integrated)", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Split Operator Advection Timestep", 
+                        "description": "Timestep for aerosol advection (in seconds)", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.split_operator_advection_timestep", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Split Operator Physical Timestep", 
+                        "description": "Timestep for aerosol physics (in seconds).", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.split_operator_physical_timestep", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Integrated Timestep", 
+                        "description": "Timestep for the aerosol model (in seconds)", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.integrated_timestep", 
+                        "cardinality": "1.1", 
+                        "type": "int", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Integrated Scheme Type", 
+                        "description": "Specify the type of timestep scheme", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.integrated_scheme_type", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Integrated Scheme Types", 
+                            "description": "Specify the type of timestep scheme", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Explicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Implicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Semi-implicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Semi-analytic", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Impact solver", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Back Euler", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Newton Raphson", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Rosenbrock", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }, 
+            {
+                "label": "Meteorological Forcings", 
+                "description": "", 
+                "id": "cmip6.aerosol.key_properties.meteorological_forcings", 
+                "contact": "Charlotte Pascoe, David Hassell", 
+                "properties": [
+                    {
+                        "label": "Variables 3D", 
+                        "description": "Three dimensionsal forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux", 
+                        "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_3D", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Variables 2D", 
+                        "description": "Two dimensionsal forcing variables, e.g. land-sea mask definition", 
+                        "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_2D", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Frequency", 
+                        "description": "Frequency with which meteological forcings are applied (in seconds).", 
+                        "id": "cmip6.aerosol.key_properties.meteorological_forcings.frequency", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 3
+                    }
+                ]
+            }, 
+            {
+                "label": "Resolution", 
+                "description": "Resolution in the aersosol model grid", 
+                "id": "cmip6.aerosol.key_properties.resolution", 
+                "contact": "Charlotte Pascoe, David Hassell", 
+                "properties": [
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Number Of Horizontal Gridpoints", 
+                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.number_of_horizontal_gridpoints", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on computational grid.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.number_of_vertical_levels", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Is Adaptive Grid", 
+                        "description": "Default is False. Set true if grid resolution changes during execution.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.is_adaptive_grid", 
+                        "cardinality": "0.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }, 
+            {
+                "label": "Tuning Applied", 
+                "description": "Tuning methodology for aerosol model", 
+                "id": "cmip6.aerosol.key_properties.tuning_applied", 
+                "contact": "Charlotte Pascoe, David Hassell", 
+                "properties": [
+                    {
+                        "label": "Description", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "id": "cmip6.aerosol.key_properties.tuning_applied.description", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Global Mean Metrics Used", 
+                        "description": "List set of metrics of the global mean state used in tuning model/component", 
+                        "id": "cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Regional Metrics Used", 
+                        "description": "List of regional metrics of mean state used in tuning model/component", 
+                        "id": "cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Trend Metrics Used", 
+                        "description": "List observed trend metrics used in tuning model/component", 
+                        "id": "cmip6.aerosol.key_properties.tuning_applied.trend_metrics_used", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }
+        ]
+    }
+}
