@@ -1,13 +1,13 @@
 {
     "canonical_name": "piClim-SO2", 
-    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors, present day (2014) emissions of sulfur dioxide (SO2). This is a timeslice experiment of 30 years total.", 
+    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial emissions of aersols and aerosol precursors, present day (2014) emissions of sulfur dioxide (SO2). This is a timeslice experiment of 30 years total.  Pre-Industrial ozone climatology should be used for models that don\u2019t model the ozone interactively.", 
     "governing_mips": [
         "aerchemmip"
     ], 
     "keywords": "AerChemMIP, Tier 3, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 SO2, 2014 Sulfur Dioxide", 
     "long_name": "pre-industrial climatological SSTs and forcing, but with 2014 SO2 emissions", 
     "mip_era": "cmip6", 
-    "rationale": "Calculate the ERF due to emissions of natural NTCFs.", 
+    "rationale": "To compute the ERF for 1850 and 2014.", 
     "related_experiments": [
         {
             "name": "piClim-control", 
@@ -147,6 +147,15 @@
             "type": "forcing-constraint"
         }, 
         {
+            "canonical_name": "Pre-Industrial Ozone Concentrations", 
+            "description": "Constant pre-Industrial tropospheric and stratospheric ozone climatology.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, Ozone, O3, concentrations", 
+            "label": "Pre-Industrial Ozone Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "SingleMember", 
             "description": "One ensemble member", 
             "isConformanceRequested": false, 
@@ -155,11 +164,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AGCM-Chem Configuration", 
-            "description": "Use an Atmosphere model with chemistry", 
+            "canonical_name": "AOGCM-Aer Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with interactive aerosols.", 
             "isConformanceRequested": false, 
-            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
-            "label": "AGCM-Chem Configuration", 
+            "keywords": "AOGCM, Aerosols, AOGCM-Aer, Atmosphere-Ocean General Circulation Model, interactive aerosols", 
+            "label": "AOGCM-Aer Configuration", 
             "type": "model-configuration"
         }
     ], 

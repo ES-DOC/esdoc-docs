@@ -1,0 +1,124 @@
+{
+    "canonical_name": "highresSST-LAI", 
+    "description": "Similar to the HighResMIP highresSST-present experiment but using an common LAI dataset across models.  Historical atmosphere-only simulations of the near past (1979-2014).  HadISST2.2 sea surface temperature and sea ice concentrations at daily 1/4 degree resolution to be used (Kennedy et al. 2017, in prep).  Land surface forcing to use a common 1/4 degree resolution mean LAI3g dataset provided by HighResMIP.\nAt least one ensemble member at high resolution, minimum 25-50 km at mid-latitudes. Initial conditions from the highresSST-present experiment.", 
+    "governing_mips": [
+        "highresmip"
+    ], 
+    "keywords": "HighResMIP, Tier 3", 
+    "long_name": "common LAI dataset within the highresSST-present experiment", 
+    "mip_era": "cmip6", 
+    "rationale": "To investigate the impact of using a common leaf area index (LAI) dataset.  To reduce the potential uncertainties due to inconsistent LAI inputs.", 
+    "related_experiments": [
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "highresSST-present", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "highresmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1979-2014 36yrs", 
+            "description": "Historical, Recent past, since satellite observations have been available", 
+            "isConformanceRequested": false, 
+            "keywords": "1979, 2014, recent past", 
+            "label": "1979-2014 36yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Present Day Land Surface Forcing with LAI3g LAI", 
+            "description": "Land surface properties will use a common of leaf area index dataset (LAI3g) at 1/4 degree resolution provided by HighResMIP. No dynamic vegetation and a constant land use/land cover consistent with the present-day period, centered around 2000.", 
+            "isConformanceRequested": true, 
+            "keywords": "HighresMIP, present day, land surface properties, LAI3g leaf area index", 
+            "label": "Present Day Land Surface Forcing with LAI3g LAI", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "High Res HadISST2.2", 
+            "description": "Force with the high resolution (0.25 degree) daily HadISST2.2  sea surface temperature (SST) and sea ice concentration (SIC) data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "HadISST2.2, High Res, 0.25 degree, daily", 
+            "label": "High Res HadISST2.2", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
+            "label": "Historical WMGHG Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Aerosol Plume Climatology", 
+            "description": "Apply fields of aerosol optical properties (fine and coarse mode aerosol optical depth (AOD), single scattering albedo (SSA), asymmetry parameter (ASY)) and cloud activity (anthropogenic increment in drop number, dN/N), which are easy to use and to configure (i.e., scale in amplitude for hypothesis testing).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, aerosol plume, climatology, CMIP6", 
+            "label": "Historical Aerosol Plume Climatology", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Ozone Concentrations", 
+            "description": "Apply ozone concentrations encompassing both the stratosphere and the troposphere from the ozone concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, ozone, concentration, O3, stratosphere, troposphere", 
+            "label": "Historical Ozone Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Stratospheric Aerosol", 
+            "description": "Apply historical stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, stratospheric, aerosol", 
+            "label": "Historical Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "High Res Atmos", 
+            "description": "25-50km minimum resolution at mid-latitudes", 
+            "isConformanceRequested": false, 
+            "keywords": "High Resolution, 25-50 km,", 
+            "label": "High Res Atmos", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "9012519d-1116-4f20-8ef4-93154515ba39", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/highresSST-LAI?client=mohc"
+}
