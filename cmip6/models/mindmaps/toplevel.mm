@@ -9,28 +9,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-09-01</dd><dt><b>Person</b></dt><dd>Initialised</dd><dt><b>Comment</b></dt><dd>Eric Guilyardi</dd>
+        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-09-01</dd><dt><b>Person</b></dt><dd>Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.2.0"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.2.0</dd><dt><b>Date</b></dt><dd>2016-11-08</dd><dt><b>Person</b></dt><dd>Changed syntax to simplify and remove CIM2 dependencies</dd><dt><b>Comment</b></dt><dd>Eric Guilyardi et al</dd>
+        <dt><b>Version</b></dt><dd>0.2.0</dd><dt><b>Date</b></dt><dd>2016-11-08</dd><dt><b>Person</b></dt><dd>Eric Guilyardi et al</dd><dt><b>Comment</b></dt><dd>Changed syntax to simplify and remove CIM2 dependencies</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.3.0"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.3.0</dd><dt><b>Date</b></dt><dd>2017-01-30</dd><dt><b>Person</b></dt><dd>Added forcings</dd><dt><b>Comment</b></dt><dd>David Hassell, Eric Guilyardi</dd>
+        <dt><b>Version</b></dt><dd>0.3.0</dd><dt><b>Date</b></dt><dd>2017-01-30</dd><dt><b>Person</b></dt><dd>David Hassell, Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Added forcings</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.4.0"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.4.0</dd><dt><b>Date</b></dt><dd>2017-05-02</dd><dt><b>Person</b></dt><dd>Updated solar forcing</dd><dt><b>Comment</b></dt><dd>David Hassell</dd>
+        <dt><b>Version</b></dt><dd>0.4.0</dd><dt><b>Date</b></dt><dd>2017-05-02</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Updated solar forcing</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
@@ -2385,4 +2385,228 @@
         <dt><b>Description</b></dt><dd>Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.radiative_forcings.other.solar.additional_information</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="toplevel"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority1"><node BACKGROUND_COLOR="#FF0000" COLOR="#FFFFFF" STYLE="bubble" TEXT="science.model.name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.flux_correction.details" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.genealogy.year_released" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.genealogy.CMIP5_parent" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.description" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.global_mean_metrics_used" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.regional_metrics_used" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.trend_metrics_used" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.energy_balance" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.tuning_applied.fresh_water_balance" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.conservation.heat.global" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.conservation.fresh_water.global" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.conservation.salt.ocean_seaice_interface" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.conservation.momentum.details" /></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="toplevel_radiative_forcings"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority1"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.CO2.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.CH4.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.N2O.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.tropospheric_O3.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.stratospheric_O3.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.greenhouse_gases.CFC.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.SO4.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.black_carbon.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.organic_carbon.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.nitrate.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.cloud_albedo_effect.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.cloud_lifetime_effect.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.dust.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.tropospheric_volcanic.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.stratospheric_volcanic.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.aerosols.sea_salt.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.other.land_use.provision" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiative_forcings.other.solar.provision" /></node></node></node></node></map>
+</html></richcontent></node></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="toplevel"><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" STYLE="bubble" TEXT="cim.2.science.model.name"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.flux_correction.details"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.genealogy.year_released"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.genealogy.CMIP5_parent"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.description"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.global_mean_metrics_used"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.regional_metrics_used"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.trend_metrics_used"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.energy_balance"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.conservation.heat.global"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.conservation.fresh_water.global"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.conservation.salt.ocean_seaice_interface"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.key_properties.conservation.momentum.details"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="toplevel_radiative_forcings"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.CO2.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.CH4.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.N2O.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.tropospheric_O3.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.stratospheric_O3.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.greenhouse_gases.CFC.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.SO4.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.black_carbon.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.organic_carbon.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.nitrate.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.dust.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.aerosols.sea_salt.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.other.land_use.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.toplevel.radiative_forcings.other.solar.provision"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Priority</b></dt><dd>1</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node></node></map>
