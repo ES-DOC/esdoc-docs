@@ -9,6 +9,16 @@
             "description": "Radiative forcings of the model for historical and scenario (aka Table 12.1 IPCC AR5)", 
             "id": "cmip6.toplevel.radiative_forcings", 
             "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of radiative forcings (GHG and aerosols) implementation in model", 
+                    "id": "cmip6.toplevel.radiative_forcings.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Greenhouse Gases", 
@@ -1214,6 +1224,21 @@
         "id": "cmip6.toplevel.key_properties", 
         "contact": "Eric Guilyardi", 
         "propertySets": [
+            {
+                "label": "Attributes", 
+                "description": "Top level properties of full coupled model", 
+                "id": "cmip6.toplevel.key_properties.attributes", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Top level overview of coupled model", 
+                        "id": "cmip6.toplevel.key_properties.attributes.overview", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
             {
                 "label": "Flux Correction", 
                 "description": "Flux correction properties of the model", 

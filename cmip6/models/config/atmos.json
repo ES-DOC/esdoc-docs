@@ -369,6 +369,10 @@
                                     {
                                         "label": "dry mass", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "tracer mass", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -632,61 +636,6 @@
                         ]
                     }, 
                     "uiOrdinal": 1
-                }, 
-                {
-                    "label": "Greenhouse Gases", 
-                    "description": "Greenhouse gases whose radiative effect is taken into account in the atmosphere model", 
-                    "id": "cmip6.atmos.radiation.greenhouse_gases", 
-                    "cardinality": "1.N", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Ghg Types", 
-                        "description": "Greenhouse gases whose radiative effect is taken into account in the atmospheric model", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "H2O", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "CO2", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "CH4", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "N2O", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "O3", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "CFCs", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "HFCs", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "PFCs", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "SF6", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "NF3", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 2
                 }
             ], 
             "subProcesses": [
@@ -777,15 +726,268 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Cloud Ice", 
+                    "label": "Shortwave GHG", 
+                    "description": "Representation of greenhouse gases in the shortwave radiation scheme", 
+                    "id": "cmip6.atmos.radiation.shortwave_GHG", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Greenhouse Gas Complexity", 
+                            "description": "Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ghg Types", 
+                                "description": "Greenhouse gases whose radiative effect is taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "CO2", 
+                                        "description": "Carbon Dioxide"
+                                    }, 
+                                    {
+                                        "label": "CH4", 
+                                        "description": "Methane"
+                                    }, 
+                                    {
+                                        "label": "N2O", 
+                                        "description": "Nitrous Oxide"
+                                    }, 
+                                    {
+                                        "label": "CFC-11 eq", 
+                                        "description": "Summarize the effect of non CO2, CH4, N2O and CFC-12 gases with an equivalence concentration of CFC-11"
+                                    }, 
+                                    {
+                                        "label": "CFC-12 eq", 
+                                        "description": "Summarize the radiative effect of the Ozone Depleating Substances, ODSs, with a CFC-12 equivalence concentration"
+                                    }, 
+                                    {
+                                        "label": "HFC-134a eq", 
+                                        "description": "Summarize the radiative effect of other fluorinated gases with a HFC-134a equivalence concentration"
+                                    }, 
+                                    {
+                                        "label": "Explicit ODSs", 
+                                        "description": "Explicit representation of Ozone Depleting Substances e.g. CFCs, HCFCs and Halons"
+                                    }, 
+                                    {
+                                        "label": "Explicit other fluorinated gases", 
+                                        "description": "Explicit representation of other fluorinated gases e.g. HFCs and PFCs"
+                                    }, 
+                                    {
+                                        "label": "O3", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "H2O", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "ODS", 
+                            "description": "Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.ODS", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "ODS", 
+                                "description": "Ozone depleting substances, ODS, whose radiative effect is explicitly taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "CFC-12", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-11", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-113", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-114", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-115", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-22", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-141b", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-142b", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "Halon-1211", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "Halon-1301", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "Halon-2402", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "methyl chloroform", 
+                                        "description": "CH3CCl3"
+                                    }, 
+                                    {
+                                        "label": "carbon tetrachloride", 
+                                        "description": "CCl4"
+                                    }, 
+                                    {
+                                        "label": "methyl chloride", 
+                                        "description": "CH3Cl"
+                                    }, 
+                                    {
+                                        "label": "methylene chloride", 
+                                        "description": "CH2Cl2"
+                                    }, 
+                                    {
+                                        "label": "chloroform", 
+                                        "description": "CHCl3"
+                                    }, 
+                                    {
+                                        "label": "methyl bromide", 
+                                        "description": "Ch3Br"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Other Flourinated Gases", 
+                            "description": "Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.other_flourinated_gases", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Other Fluorinated Gases", 
+                                "description": "Other Fluorinated gases whose radiative effect is explicitly taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "HFC-134a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-23", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-32", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-125", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-143a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-152a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-227ea", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-236fa", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-245fa", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-365mfc", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-43-10mee", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "CF4", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C2F6", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C3F8", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C4F10", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C5F12", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C6F14", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C7F16", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C8F18", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "c-C4F8", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "NF3", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "SF6", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "SO2F2", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Shortwave Cloud Ice", 
                     "description": "Shortwave radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmos.radiation.sw_cloud_ice", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -808,7 +1010,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -851,7 +1053,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -886,15 +1088,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Cloud Liquid", 
+                    "label": "Shortwave Cloud Liquid", 
                     "description": "Shortwave radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmos.radiation.sw_cloud_liquid", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -917,7 +1119,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -948,33 +1150,21 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Optical Methods", 
+                                "label": "Optical Methods Droplets", 
                                 "description": "Optical methods used by radiation scheme", 
                                 "isOpen": true, 
                                 "choices": [
-                                    {
-                                        "label": "T-matrix", 
-                                        "description": "For non-spherical particles"
-                                    }, 
                                     {
                                         "label": "geometric optics", 
                                         "description": "For non-spherical particles"
                                     }, 
                                     {
-                                        "label": "finite difference time domain (FDTD)", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
                                         "label": "Mie theory", 
                                         "description": "For spherical particles"
-                                    }, 
-                                    {
-                                        "label": "anomalous diffraction approximation", 
-                                        "description": null
                                     }
                                 ]
                             }, 
@@ -983,15 +1173,50 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Aerosols", 
+                    "label": "Shortwave Cloud Inhomogeneity", 
+                    "description": "Cloud inhomogeneity in the shortwave radiation scheme", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Cloud Inhomogeneity", 
+                            "description": "Method for taking into account horizontal cloud inhomogeneity", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Inhomogeneity Treatment", 
+                                "description": "Cloud scheme inhomogeneity treatment", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Monte Carlo Independent Column Approximation", 
+                                        "description": "McICA"
+                                    }, 
+                                    {
+                                        "label": "Triplecloud", 
+                                        "description": "Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010"
+                                    }, 
+                                    {
+                                        "label": "analytic", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Shortwave Aerosols", 
                     "description": "Shortwave radiative properties of aerosols", 
-                    "id": "cmip6.atmos.radiation.sw_aerosols", 
+                    "id": "cmip6.atmos.radiation.shortwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1014,7 +1239,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1053,7 +1278,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1088,15 +1313,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Gases", 
+                    "label": "Shortwave Gases", 
                     "description": "Shortwave radiative properties of gases", 
-                    "id": "cmip6.atmos.radiation.sw_gases", 
+                    "id": "cmip6.atmos.radiation.shortwave_gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.sw_gases.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1115,41 +1340,6 @@
                                 ]
                             }, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Optical Methods", 
-                            "description": "Optical methods applicable to gases in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_gases.optical_methods", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Optical Methods", 
-                                "description": "Optical methods used by radiation scheme", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "T-matrix", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "geometric optics", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "finite difference time domain (FDTD)", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "Mie theory", 
-                                        "description": "For spherical particles"
-                                    }, 
-                                    {
-                                        "label": "anomalous diffraction approximation", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1240,15 +1430,268 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Cloud Ice", 
+                    "label": "Longwave GHG", 
+                    "description": "Representation of greenhouse gases in the longwave radiation scheme", 
+                    "id": "cmip6.atmos.radiation.longwave_GHG", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Greenhouse Gas Complexity", 
+                            "description": "Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.greenhouse_gas_complexity", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ghg Types", 
+                                "description": "Greenhouse gases whose radiative effect is taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "CO2", 
+                                        "description": "Carbon Dioxide"
+                                    }, 
+                                    {
+                                        "label": "CH4", 
+                                        "description": "Methane"
+                                    }, 
+                                    {
+                                        "label": "N2O", 
+                                        "description": "Nitrous Oxide"
+                                    }, 
+                                    {
+                                        "label": "CFC-11 eq", 
+                                        "description": "Summarize the effect of non CO2, CH4, N2O and CFC-12 gases with an equivalence concentration of CFC-11"
+                                    }, 
+                                    {
+                                        "label": "CFC-12 eq", 
+                                        "description": "Summarize the radiative effect of the Ozone Depleating Substances, ODSs, with a CFC-12 equivalence concentration"
+                                    }, 
+                                    {
+                                        "label": "HFC-134a eq", 
+                                        "description": "Summarize the radiative effect of other fluorinated gases with a HFC-134a equivalence concentration"
+                                    }, 
+                                    {
+                                        "label": "Explicit ODSs", 
+                                        "description": "Explicit representation of Ozone Depleting Substances e.g. CFCs, HCFCs and Halons"
+                                    }, 
+                                    {
+                                        "label": "Explicit other fluorinated gases", 
+                                        "description": "Explicit representation of other fluorinated gases e.g. HFCs and PFCs"
+                                    }, 
+                                    {
+                                        "label": "O3", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "H2O", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "ODS", 
+                            "description": "Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.ODS", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "ODS", 
+                                "description": "Ozone depleting substances, ODS, whose radiative effect is explicitly taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "CFC-12", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-11", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-113", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-114", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "CFC-115", 
+                                        "description": "CFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-22", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-141b", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "HCFC-142b", 
+                                        "description": "HCFC"
+                                    }, 
+                                    {
+                                        "label": "Halon-1211", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "Halon-1301", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "Halon-2402", 
+                                        "description": "halon"
+                                    }, 
+                                    {
+                                        "label": "methyl chloroform", 
+                                        "description": "CH3CCl3"
+                                    }, 
+                                    {
+                                        "label": "carbon tetrachloride", 
+                                        "description": "CCl4"
+                                    }, 
+                                    {
+                                        "label": "methyl chloride", 
+                                        "description": "CH3Cl"
+                                    }, 
+                                    {
+                                        "label": "methylene chloride", 
+                                        "description": "CH2Cl2"
+                                    }, 
+                                    {
+                                        "label": "chloroform", 
+                                        "description": "CHCl3"
+                                    }, 
+                                    {
+                                        "label": "methyl bromide", 
+                                        "description": "Ch3Br"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Other Flourinated Gases", 
+                            "description": "Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.other_flourinated_gases", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Other Fluorinated Gases", 
+                                "description": "Other Fluorinated gases whose radiative effect is explicitly taken into account in the atmosphere model", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "HFC-134a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-23", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-32", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-125", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-143a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-152a", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-227ea", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-236fa", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-245fa", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-365mfc", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "HFC-43-10mee", 
+                                        "description": "HFC"
+                                    }, 
+                                    {
+                                        "label": "CF4", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C2F6", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C3F8", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C4F10", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C5F12", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C6F14", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C7F16", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "C8F18", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "c-C4F8", 
+                                        "description": "PFC"
+                                    }, 
+                                    {
+                                        "label": "NF3", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "SF6", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "SO2F2", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Longwave Cloud Ice", 
                     "description": "Longwave radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmos.radiation.lw_cloud_ice", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1271,7 +1714,7 @@
                         {
                             "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.physical_reprenstation", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1314,7 +1757,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1349,15 +1792,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Cloud Liquid", 
+                    "label": "Longwave Cloud Liquid", 
                     "description": "Longwave radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmos.radiation.lw_cloud_liquid", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1380,7 +1823,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.physical_representation", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1411,33 +1854,21 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Optical Methods", 
+                                "label": "Optical Methods Droplets", 
                                 "description": "Optical methods used by radiation scheme", 
                                 "isOpen": true, 
                                 "choices": [
-                                    {
-                                        "label": "T-matrix", 
-                                        "description": "For non-spherical particles"
-                                    }, 
                                     {
                                         "label": "geometric optics", 
                                         "description": "For non-spherical particles"
                                     }, 
                                     {
-                                        "label": "finite difference time domain (FDTD)", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
                                         "label": "Mie theory", 
                                         "description": "For spherical particles"
-                                    }, 
-                                    {
-                                        "label": "anomalous diffraction approximation", 
-                                        "description": null
                                     }
                                 ]
                             }, 
@@ -1446,15 +1877,50 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Aerosols", 
+                    "label": "Longwave Cloud Inhomogeneity", 
+                    "description": "Cloud inhomogeneity in the longwave radiation scheme", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Cloud Inhomogeneity", 
+                            "description": "Method for taking into account horizontal cloud inhomogeneity", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Inhomogeneity Treatment", 
+                                "description": "Cloud scheme inhomogeneity treatment", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Monte Carlo Independent Column Approximation", 
+                                        "description": "McICA"
+                                    }, 
+                                    {
+                                        "label": "Triplecloud", 
+                                        "description": "Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010"
+                                    }, 
+                                    {
+                                        "label": "analytic", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Longwave Aerosols", 
                     "description": "Longwave radiative properties of aerosols", 
-                    "id": "cmip6.atmos.radiation.lw_aerosols", 
+                    "id": "cmip6.atmos.radiation.longwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1477,7 +1943,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.physical_representation", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1516,7 +1982,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1551,15 +2017,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Gases", 
+                    "label": "Longwave Gases", 
                     "description": "Longwave radiative properties of gases", 
-                    "id": "cmip6.atmos.radiation.lw_gases", 
+                    "id": "cmip6.atmos.radiation.longwave_gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.lw_gases.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1578,41 +2044,6 @@
                                 ]
                             }, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Optical Methods", 
-                            "description": "Optical methods applicable to gases in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_gases.optical_methods", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Optical Methods", 
-                                "description": "Optical methods used by radiation scheme", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "T-matrix", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "geometric optics", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "finite difference time domain (FDTD)", 
-                                        "description": "For non-spherical particles"
-                                    }, 
-                                    {
-                                        "label": "Mie theory", 
-                                        "description": "For spherical particles"
-                                    }, 
-                                    {
-                                        "label": "anomalous diffraction approximation", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -1779,12 +2210,12 @@
                             "type": "enum", 
                             "enum": {
                                 "label": "Deep Convection Scheme Method", 
-                                "description": "Method used for deep convection.", 
+                                "description": "Method used for deep convection closure for determining cloud-base mass flux.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
                                         "label": "CAPE", 
-                                        "description": "Mass flux determined by CAPE"
+                                        "description": "Mass flux determined by CAPE, convectively available potential energy."
                                     }, 
                                     {
                                         "label": "bulk", 
@@ -1793,6 +2224,14 @@
                                     {
                                         "label": "ensemble", 
                                         "description": "Summation over an ensemble of convective clouds with differing characteristics"
+                                    }, 
+                                    {
+                                        "label": "CAPE/WFN based", 
+                                        "description": "CAPE-Cloud Work Function: Based on the quasi-equilibrium of the free troposphere"
+                                    }, 
+                                    {
+                                        "label": "TKE/CIN based", 
+                                        "description": "TKE-Convective Inhibition: Based on the quasi-equilibrium of the boundary layer"
                                     }
                                 ]
                             }, 
@@ -1800,7 +2239,7 @@
                         }, 
                         {
                             "label": "Processes", 
-                            "description": "Physical processes taken into account in the parameterisatioin of deep convection", 
+                            "description": "Physical processes taken into account in the parameterisation of deep convection", 
                             "id": "cmip6.atmos.turbulence_convection.deep_convection.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1840,10 +2279,41 @@
                                     {
                                         "label": "radiative effect of anvils", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "re-evaporation of convective precipitation", 
+                                        "description": null
                                     }
                                 ]
                             }, 
                             "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Microphysics", 
+                            "description": "Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts", 
+                            "id": "cmip6.atmos.turbulence_convection.deep_convection.microphysics", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Convective Microphysics Scheme Type", 
+                                "description": "Convective microphysics parameterization scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "tuning parameter based", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "single moment", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "two moment", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -1892,7 +2362,7 @@
                             "type": "enum", 
                             "enum": {
                                 "label": "Shallow Convection Scheme Method", 
-                                "description": "Method used for shallow convection.", 
+                                "description": "Method used for shallow convection closure for determining cloud-base mass flux..", 
                                 "isOpen": false, 
                                 "choices": [
                                     {
@@ -1937,10 +2407,41 @@
                                     {
                                         "label": "penetrative convection", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "re-evaporation of convective precipitation", 
+                                        "description": null
                                     }
                                 ]
                             }, 
                             "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Microphysics", 
+                            "description": "Microphysics scheme for shallow convection", 
+                            "id": "cmip6.atmos.turbulence_convection.shallow_convection.microphysics", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Convective Microphysics Scheme Type", 
+                                "description": "Convective microphysics parameterization scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "tuning parameter based", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "single moment", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "two moment", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -1948,7 +2449,7 @@
         }, 
         {
             "label": "Microphysics Precipitation", 
-            "description": "Cloud Microphysics and Precipitation", 
+            "description": "Large Scale Cloud Microphysics and Precipitation", 
             "id": "cmip6.atmos.microphysics_precipitation", 
             "contact": "Charlotte Pascoe", 
             "subProcesses": [
@@ -2000,23 +2501,23 @@
                     ]
                 }, 
                 {
-                    "label": "Cloud Microphysics", 
-                    "description": "Properties of the cloud microphysics scheme", 
-                    "id": "cmip6.atmos.microphysics_precipitation.cloud_microphysics", 
+                    "label": "Large Scale Cloud Microphysics", 
+                    "description": "Properties of the large scale cloud microphysics scheme", 
+                    "id": "cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Scheme Name", 
-                            "description": "Commonly used name of the microphysics parameterisation scheme.", 
-                            "id": "cmip6.atmos.microphysics_precipitation.cloud_microphysics.scheme_name", 
+                            "description": "Commonly used name of the microphysics parameterisation scheme used for large scale clouds.", 
+                            "id": "cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
                             "label": "Processes", 
-                            "description": "Cloud microphysics processes", 
-                            "id": "cmip6.atmos.microphysics_precipitation.cloud_microphysics.processes", 
+                            "description": "Large scale cloud microphysics processes", 
+                            "id": "cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -2130,64 +2631,6 @@
                     "uiOrdinal": 3
                 }, 
                 {
-                    "label": "Cloud Overlap Method", 
-                    "description": "Method for taking into account overlapping of cloud layers", 
-                    "id": "cmip6.atmos.cloud_scheme.cloud_overlap_method", 
-                    "cardinality": "1.1", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Cloud Overlap Method", 
-                        "description": "Cloud scheme cloud overlap method", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "random", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "maximum", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "maximum-random", 
-                                "description": "combination of maximum and random overlap between clouds"
-                            }, 
-                            {
-                                "label": "exponential", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 4
-                }, 
-                {
-                    "label": "Cloud Inhomogeneity", 
-                    "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                    "id": "cmip6.atmos.cloud_scheme.cloud_inhomogeneity", 
-                    "cardinality": "1.1", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Inhomogeneity Treatment", 
-                        "description": "Cloud scheme inhomogeneity treatment", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "Monte Carlo Independent Column Approximation", 
-                                "description": "McICA"
-                            }, 
-                            {
-                                "label": "Triplecloud", 
-                                "description": "Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010"
-                            }, 
-                            {
-                                "label": "analytic", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 5
-                }, 
-                {
                     "label": "Processes", 
                     "description": "Processes included in the cloud scheme", 
                     "id": "cmip6.atmos.cloud_scheme.processes", 
@@ -2212,10 +2655,108 @@
                             }
                         ]
                     }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Prognostic Scheme", 
+                    "description": "Is the cloud scheme a prognostic scheme?", 
+                    "id": "cmip6.atmos.cloud_scheme.prognostic_scheme", 
+                    "cardinality": "1.1", 
+                    "type": "bool", 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Diagnostic Scheme", 
+                    "description": "Is the cloud scheme a diagnostic scheme?", 
+                    "id": "cmip6.atmos.cloud_scheme.diagnostic_scheme", 
+                    "cardinality": "1.1", 
+                    "type": "bool", 
                     "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Prognostic Variables", 
+                    "description": "List the prognostic variables used by the cloud scheme, if applicable.", 
+                    "id": "cmip6.atmos.cloud_scheme.prognostic_variables", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Prognostic Vars", 
+                        "description": "Prognostic variables included in the cloud scheme.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "cloud amount", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "liquid", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "rain", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "snow", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 7
                 }
             ], 
             "subProcesses": [
+                {
+                    "label": "Optical Cloud Properties", 
+                    "description": "Optical cloud properties", 
+                    "id": "cmip6.atmos.cloud_scheme.optical_cloud_properties", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Cloud Overlap Method", 
+                            "description": "Method for taking into account overlapping of cloud layers", 
+                            "id": "cmip6.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method", 
+                            "cardinality": "0.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Overlap Method", 
+                                "description": "Cloud scheme cloud overlap method", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "random", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "maximum", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "maximum-random", 
+                                        "description": "combination of maximum and random overlap between clouds"
+                                    }, 
+                                    {
+                                        "label": "exponential", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Cloud Inhomogeneity", 
+                            "description": "Method for taking into account cloud inhomogeneity", 
+                            "id": "cmip6.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
                 {
                     "label": "Sub Grid Scale Water Distribution", 
                     "description": "Sub-grid scale water distribution", 
@@ -2229,8 +2770,8 @@
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Sub Grid Scale Water Distribution Type", 
-                                "description": "Approach used for cloud water content and fractional cloud cover", 
+                                "label": "Sub Grid Scale H2o Distribution Type", 
+                                "description": "Approach used for cloud H2O content and fractional cloud cover", 
                                 "isOpen": false, 
                                 "choices": [
                                     {
@@ -2268,7 +2809,81 @@
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Sub Grid Scale Water Distribution Convection", 
+                                "label": "Sub Grid Scale H2o Distribution Convection", 
+                                "description": "Type(s) of convection that the formation of clouds is coupled with", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "coupled with deep", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "coupled with shallow", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "not coupled with convection", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Sub Grid Scale Ice Distribution", 
+                    "description": "Sub-grid scale ice distribution", 
+                    "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Type", 
+                            "description": "Sub-grid scale ice distribution type", 
+                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Sub Grid Scale H2o Distribution Type", 
+                                "description": "Approach used for cloud H2O content and fractional cloud cover", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "prognostic", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "diagnostic", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Function Name", 
+                            "description": "Sub-grid scale ice distribution function name", 
+                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Function Order", 
+                            "description": "Sub-grid scale ice distribution function type", 
+                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Convection Coupling", 
+                            "description": "Sub-grid scale ice distribution coupling with convection", 
+                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Sub Grid Scale H2o Distribution Convection", 
                                 "description": "Type(s) of convection that the formation of clouds is coupled with", 
                                 "isOpen": false, 
                                 "choices": [
@@ -2293,21 +2908,21 @@
             ]
         }, 
         {
-            "label": "Cloud Simulator", 
-            "description": "Characteristics of the cloud simulator", 
-            "id": "cmip6.atmos.cloud_simulator", 
+            "label": "Observation Simulation", 
+            "description": "Characteristics of observation simulation", 
+            "id": "cmip6.atmos.observation_simulation", 
             "contact": "Charlotte Pascoe", 
             "subProcesses": [
                 {
                     "label": "Isscp Attributes", 
                     "description": "ISSCP Characteristics", 
-                    "id": "cmip6.atmos.cloud_simulator.isscp_attributes", 
+                    "id": "cmip6.atmos.observation_simulation.isscp_attributes", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Top Height", 
-                            "description": "Cloud simulator ISSCP top height", 
-                            "id": "cmip6.atmos.cloud_simulator.isscp_attributes.top_height", 
+                            "label": "Top Height Estimation Method", 
+                            "description": "Cloud simulator ISSCP top height estimation methodUo", 
+                            "id": "cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -2334,7 +2949,7 @@
                         {
                             "label": "Top Height Direction", 
                             "description": "Cloud simulator ISSCP top height direction", 
-                            "id": "cmip6.atmos.cloud_simulator.isscp_attributes.top_height_direction", 
+                            "id": "cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -2359,13 +2974,13 @@
                 {
                     "label": "Cosp Attributes", 
                     "description": "CFMIP Observational Simulator Package attributes", 
-                    "id": "cmip6.atmos.cloud_simulator.cosp_attributes", 
+                    "id": "cmip6.atmos.observation_simulation.cosp_attributes", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Run Configuration", 
                             "description": "Cloud simulator COSP run configuration", 
-                            "id": "cmip6.atmos.cloud_simulator.cosp_attributes.run_configuration", 
+                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.run_configuration", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -2388,15 +3003,15 @@
                         {
                             "label": "Number Of Grid Points", 
                             "description": "Cloud simulator COSP number of grid points", 
-                            "id": "cmip6.atmos.cloud_simulator.cosp_attributes.number_of_grid_points", 
+                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Number Of Columns", 
-                            "description": "Cloud simulator COSP number of cloumns", 
-                            "id": "cmip6.atmos.cloud_simulator.cosp_attributes.number_of_columns", 
+                            "label": "Number Of Sub Columns", 
+                            "description": "Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability", 
+                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 3
@@ -2404,7 +3019,7 @@
                         {
                             "label": "Number Of Levels", 
                             "description": "Cloud simulator COSP number of levels", 
-                            "id": "cmip6.atmos.cloud_simulator.cosp_attributes.number_of_levels", 
+                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 4
@@ -2414,13 +3029,13 @@
                 {
                     "label": "Radar Inputs", 
                     "description": "Characteristics of the cloud radar simulator", 
-                    "id": "cmip6.atmos.cloud_simulator.radar_inputs", 
+                    "id": "cmip6.atmos.observation_simulation.radar_inputs", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Frequency", 
                             "description": "Cloud simulator radar frequency (Hz)", 
-                            "id": "cmip6.atmos.cloud_simulator.radar_inputs.frequency", 
+                            "id": "cmip6.atmos.observation_simulation.radar_inputs.frequency", 
                             "cardinality": "1.1", 
                             "type": "float", 
                             "uiOrdinal": 1
@@ -2428,7 +3043,7 @@
                         {
                             "label": "Type", 
                             "description": "Cloud simulator radar type", 
-                            "id": "cmip6.atmos.cloud_simulator.radar_inputs.type", 
+                            "id": "cmip6.atmos.observation_simulation.radar_inputs.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -2451,7 +3066,7 @@
                         {
                             "label": "Gas Absorption", 
                             "description": "Cloud simulator radar uses gas absorption", 
-                            "id": "cmip6.atmos.cloud_simulator.radar_inputs.gas_absorption", 
+                            "id": "cmip6.atmos.observation_simulation.radar_inputs.gas_absorption", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "uiOrdinal": 3
@@ -2459,7 +3074,7 @@
                         {
                             "label": "Effective Radius", 
                             "description": "Cloud simulator radar uses effective radius", 
-                            "id": "cmip6.atmos.cloud_simulator.radar_inputs.effective_radius", 
+                            "id": "cmip6.atmos.observation_simulation.radar_inputs.effective_radius", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "uiOrdinal": 4
@@ -2469,13 +3084,13 @@
                 {
                     "label": "Lidar Inputs", 
                     "description": "Characteristics of the cloud lidar simulator", 
-                    "id": "cmip6.atmos.cloud_simulator.lidar_inputs", 
+                    "id": "cmip6.atmos.observation_simulation.lidar_inputs", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Ice Types", 
                             "description": "Cloud simulator lidar ice type", 
-                            "id": "cmip6.atmos.cloud_simulator.lidar_inputs.ice_types", 
+                            "id": "cmip6.atmos.observation_simulation.lidar_inputs.ice_types", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -2498,7 +3113,7 @@
                         {
                             "label": "Overlap", 
                             "description": "Cloud simulator lidar overlap", 
-                            "id": "cmip6.atmos.cloud_simulator.lidar_inputs.overlap", 
+                            "id": "cmip6.atmos.observation_simulation.lidar_inputs.overlap", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -2693,6 +3308,10 @@
                                     {
                                         "label": "non-linear theory", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "includes boundary layer ducting", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -2723,6 +3342,10 @@
                                     }, 
                                     {
                                         "label": "linear", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "wave saturation vs Richardson number", 
                                         "description": null
                                     }
                                 ]
@@ -2843,6 +3466,10 @@
                                     }, 
                                     {
                                         "label": "linear", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "wave saturation vs Richardson number", 
                                         "description": null
                                     }
                                 ]
@@ -3145,14 +3772,33 @@
                                 "description": "Horizontal discretisation function order", 
                                 "id": "cmip6.atmos.grid.discretisation.horizontal.scheme_order", 
                                 "cardinality": "1.1", 
-                                "type": "int", 
+                                "type": "enum", 
+                                "enum": {
+                                    "label": "Function Order", 
+                                    "description": "Discretisation function order", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "second", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "third", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "fourth", 
+                                            "description": null
+                                        }
+                                    ]
+                                }, 
                                 "uiOrdinal": 3
                             }, 
                             {
                                 "label": "Horizontal Pole", 
                                 "description": "Horizontal discretisation pole singularity treatment", 
                                 "id": "cmip6.atmos.grid.discretisation.horizontal.horizontal_pole", 
-                                "cardinality": "1.1", 
+                                "cardinality": "0.1", 
                                 "type": "enum", 
                                 "enum": {
                                     "label": "Dynamical Core Discretisation Horizontal Pole", 
@@ -3174,6 +3820,37 @@
                                     ]
                                 }, 
                                 "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Grid Type", 
+                                "description": "Horizontal grid type", 
+                                "id": "cmip6.atmos.grid.discretisation.horizontal.grid_type", 
+                                "cardinality": "1.1", 
+                                "type": "enum", 
+                                "enum": {
+                                    "label": "Grid Type", 
+                                    "description": "Type of horizontal grid", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "Gaussian", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Latitude-Longitude", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Cubed-Sphere", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Icosahedral", 
+                                            "description": null
+                                        }
+                                    ]
+                                }, 
+                                "uiOrdinal": 5
                             }
                         ]
                     }, 
@@ -3204,6 +3881,14 @@
                                         {
                                             "label": "hybrid sigma-pressure", 
                                             "description": "sigma system near terrain and isobaric above"
+                                        }, 
+                                        {
+                                            "label": "hybrid pressure", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "vertically lagrangian", 
+                                            "description": null
                                         }
                                     ]
                                 }, 
@@ -3316,12 +4001,20 @@
                         "uiOrdinal": 2
                     }, 
                     {
+                        "label": "Range Horizontal Resolution", 
+                        "description": "Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg", 
+                        "id": "cmip6.atmos.key_properties.resolution.range_horizontal_resolution", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
                         "label": "Number Of Vertical Levels", 
                         "description": "Number of vertical levels resolved on the computational grid.", 
                         "id": "cmip6.atmos.key_properties.resolution.number_of_vertical_levels", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "High Top", 
@@ -3329,23 +4022,39 @@
                         "id": "cmip6.atmos.key_properties.resolution.high_top", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 4
-                    }, 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }, 
+            {
+                "label": "Timestepping", 
+                "description": "Characteristics of the atmosphere model time stepping", 
+                "id": "cmip6.atmos.key_properties.timestepping", 
+                "contact": "Charlotte Pascoe", 
+                "properties": [
                     {
                         "label": "Timestep Dynamics", 
                         "description": "Timestep for the dynamics, e.g. 30 min.", 
-                        "id": "cmip6.atmos.key_properties.resolution.timestep_dynamics", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_dynamics", 
                         "cardinality": "1.1", 
                         "type": "str", 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Timestep Radiative Transfer", 
-                        "description": "Timestep for the radiative transfer, e.g. 3 hours.", 
-                        "id": "cmip6.atmos.key_properties.resolution.timestep_radiative_transfer", 
+                        "label": "Timestep Shortwave Radiative Transfer", 
+                        "description": "Timestep for the shortwave radiative transfer, e.g. 1.5 hours.", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Timestep Longwave Radiative Transfer", 
+                        "description": "Timestep for the longwave radiative transfer, e.g. 3 hours.", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 3
                     }
                 ]
             }, 

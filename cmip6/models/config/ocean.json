@@ -11,22 +11,22 @@
             "contact": "Eric Guilyardi", 
             "propertySets": [
                 {
-                    "label": "Timestepping Attributes", 
+                    "label": "Attributes", 
                     "description": "Properties of time stepping in ocean", 
-                    "id": "cmip6.ocean.timestepping_framework.timestepping_attributes", 
+                    "id": "cmip6.ocean.timestepping_framework.attributes", 
                     "properties": [
                         {
-                            "label": "Time Step", 
-                            "description": "Ocean time step in seconds", 
-                            "id": "cmip6.ocean.timestepping_framework.timestepping_attributes.time_step", 
+                            "label": "Overview", 
+                            "description": "Overview of time stepping in ocean", 
+                            "id": "cmip6.ocean.timestepping_framework.attributes.overview", 
                             "cardinality": "1.1", 
-                            "type": "int", 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
                             "label": "Diurnal Cycle", 
                             "description": "Diurnal cycle type", 
-                            "id": "cmip6.ocean.timestepping_framework.timestepping_attributes.diurnal_cycle", 
+                            "id": "cmip6.ocean.timestepping_framework.attributes.diurnal_cycle", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -53,14 +53,14 @@
                     ]
                 }, 
                 {
-                    "label": "Timestepping Tracers Scheme", 
+                    "label": "Tracers", 
                     "description": "Properties of tracers time stepping in ocean", 
-                    "id": "cmip6.ocean.timestepping_framework.timestepping_tracers_scheme", 
+                    "id": "cmip6.ocean.timestepping_framework.tracers", 
                     "properties": [
                         {
-                            "label": "Tracers", 
-                            "description": "Time stepping tracer scheme", 
-                            "id": "cmip6.ocean.timestepping_framework.timestepping_tracers_scheme.tracers", 
+                            "label": "Scheme", 
+                            "description": "Tracers time stepping scheme", 
+                            "id": "cmip6.ocean.timestepping_framework.tracers.scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -73,62 +73,20 @@
                                         "description": "Leap-frog scheme with Asselin filter"
                                     }, 
                                     {
-                                        "label": "Leap-frog + Periodic Euler backward solver", 
-                                        "description": "Leap-frog scheme with Periodic Euler backward solver"
+                                        "label": "Leap-frog + Periodic Euler", 
+                                        "description": "Leap-frog scheme with Periodic Euler"
                                     }, 
                                     {
                                         "label": "Predictor-corrector", 
                                         "description": "Predictor-corrector scheme"
                                     }, 
                                     {
-                                        "label": "AM3-LF (ROMS)", 
-                                        "description": "AM3-LF used in ROMS"
+                                        "label": "Runge-Kutta 2", 
+                                        "description": "Runge-Kutta 2 scheme"
                                     }, 
                                     {
-                                        "label": "Forward-backward", 
-                                        "description": "Forward-backward scheme"
-                                    }, 
-                                    {
-                                        "label": "Forward operator", 
-                                        "description": "Forward operator scheme"
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Barotropic Solver Scheme", 
-                    "description": "Barotropic solver in ocean", 
-                    "id": "cmip6.ocean.timestepping_framework.barotropic_solver_scheme", 
-                    "properties": [
-                        {
-                            "label": "Barotropic Solver", 
-                            "description": "Barotropic solver scheme", 
-                            "id": "cmip6.ocean.timestepping_framework.barotropic_solver_scheme.barotropic_solver", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Ocean Timestepping Types", 
-                                "description": "Type of timestepping scheme in ocean", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Leap-frog + Asselin filter", 
-                                        "description": "Leap-frog scheme with Asselin filter"
-                                    }, 
-                                    {
-                                        "label": "Leap-frog + Periodic Euler backward solver", 
-                                        "description": "Leap-frog scheme with Periodic Euler backward solver"
-                                    }, 
-                                    {
-                                        "label": "Predictor-corrector", 
-                                        "description": "Predictor-corrector scheme"
-                                    }, 
-                                    {
-                                        "label": "AM3-LF (ROMS)", 
-                                        "description": "AM3-LF used in ROMS"
+                                        "label": "AM3-LF", 
+                                        "description": "AM3-LF such as used in ROMS"
                                     }, 
                                     {
                                         "label": "Forward-backward", 
@@ -143,14 +101,29 @@
                             "uiOrdinal": 1
                         }, 
                         {
+                            "label": "Time Step", 
+                            "description": "Tracers time step (in seconds)", 
+                            "id": "cmip6.ocean.timestepping_framework.tracers.time_step", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Baroclinic Dynamics", 
+                    "description": "Baroclinic dynamics in ocean", 
+                    "id": "cmip6.ocean.timestepping_framework.baroclinic_dynamics", 
+                    "properties": [
+                        {
                             "label": "Type", 
-                            "description": "Barotropic solver type", 
-                            "id": "cmip6.ocean.timestepping_framework.barotropic_solver_scheme.type", 
+                            "description": "Baroclinic dynamics type", 
+                            "id": "cmip6.ocean.timestepping_framework.baroclinic_dynamics.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Barotropic Solver Types", 
-                                "description": "Type of barotropic solver in ocean", 
+                                "label": "Baroclinic Types", 
+                                "description": "Type of baroclinic dynamics in ocean", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -159,23 +132,16 @@
                                     }, 
                                     {
                                         "label": "Sub cyling", 
-                                        "description": null
+                                        "description": "Sub cycling relative to tracers"
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Barotropic Momentum Scheme", 
-                    "description": "Barotropic momentum solver in ocean", 
-                    "id": "cmip6.ocean.timestepping_framework.barotropic_momentum_scheme", 
-                    "properties": [
+                            "uiOrdinal": 1
+                        }, 
                         {
-                            "label": "Barotropic Momentum", 
-                            "description": "Barotropic momentum scheme", 
-                            "id": "cmip6.ocean.timestepping_framework.barotropic_momentum_scheme.barotropic_momentum", 
+                            "label": "Scheme", 
+                            "description": "Baroclinic dynamics scheme", 
+                            "id": "cmip6.ocean.timestepping_framework.baroclinic_dynamics.scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -188,16 +154,20 @@
                                         "description": "Leap-frog scheme with Asselin filter"
                                     }, 
                                     {
-                                        "label": "Leap-frog + Periodic Euler backward solver", 
-                                        "description": "Leap-frog scheme with Periodic Euler backward solver"
+                                        "label": "Leap-frog + Periodic Euler", 
+                                        "description": "Leap-frog scheme with Periodic Euler"
                                     }, 
                                     {
                                         "label": "Predictor-corrector", 
                                         "description": "Predictor-corrector scheme"
                                     }, 
                                     {
-                                        "label": "AM3-LF (ROMS)", 
-                                        "description": "AM3-LF used in ROMS"
+                                        "label": "Runge-Kutta 2", 
+                                        "description": "Runge-Kutta 2 scheme"
+                                    }, 
+                                    {
+                                        "label": "AM3-LF", 
+                                        "description": "AM3-LF such as used in ROMS"
                                     }, 
                                     {
                                         "label": "Forward-backward", 
@@ -209,6 +179,71 @@
                                     }
                                 ]
                             }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Time Step", 
+                            "description": "Baroclinic time step (in seconds)", 
+                            "id": "cmip6.ocean.timestepping_framework.baroclinic_dynamics.time_step", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Barotropic", 
+                    "description": "Barotropic time stepping in ocean", 
+                    "id": "cmip6.ocean.timestepping_framework.barotropic", 
+                    "properties": [
+                        {
+                            "label": "Splitting", 
+                            "description": "Time splitting method", 
+                            "id": "cmip6.ocean.timestepping_framework.barotropic.splitting", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Barotropic Splitting Methods", 
+                                "description": "Methods for time splitting in ocean", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "None", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "split explicit", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "implicit", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Time Step", 
+                            "description": "Barotropic time step (in seconds)", 
+                            "id": "cmip6.ocean.timestepping_framework.barotropic.time_step", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Vertical Physics", 
+                    "description": "Vertical physics time stepping in ocean", 
+                    "id": "cmip6.ocean.timestepping_framework.vertical_physics", 
+                    "properties": [
+                        {
+                            "label": "Method", 
+                            "description": "Details of vertical time stepping in ocean", 
+                            "id": "cmip6.ocean.timestepping_framework.vertical_physics.method", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }
                     ]
@@ -220,6 +255,16 @@
             "description": "Ocean advection", 
             "id": "cmip6.ocean.advection", 
             "contact": "Eric Guilyardi", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of advection in ocean", 
+                    "id": "cmip6.ocean.advection.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Momentum", 
@@ -450,6 +495,14 @@
             "contact": "Eric Guilyardi", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of lateral physics in ocean", 
+                    "id": "cmip6.ocean.lateral_physics.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Scheme", 
                     "description": "Type of transient eddy representation in ocean", 
                     "id": "cmip6.ocean.lateral_physics.scheme", 
@@ -474,7 +527,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }
             ], 
             "subProcesses": [
@@ -626,10 +679,10 @@
                                 }, 
                                 {
                                     "label": "Coeff Background", 
-                                    "description": "Background value of eddy viscosity coeff in lateral physics momemtum scheme (in m2/s)", 
+                                    "description": "Describe background eddy viscosity coeff in lateral physics momemtum scheme (give values in m2/s)", 
                                     "id": "cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.coeff_background", 
                                     "cardinality": "1.1", 
-                                    "type": "int", 
+                                    "type": "str", 
                                     "uiOrdinal": 4
                                 }, 
                                 {
@@ -810,7 +863,7 @@
                                 }, 
                                 {
                                     "label": "Coeff Background", 
-                                    "description": "Background value of eddy viscosity coeff in lateral physics tracers scheme (in m2/s)", 
+                                    "description": "Describe background eddy viscosity coeff in lateral physics tracers scheme (give values in m2/s)", 
                                     "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.coeff_background", 
                                     "cardinality": "1.1", 
                                     "type": "int", 
@@ -885,6 +938,16 @@
             "description": "Ocean Vertical Physics", 
             "id": "cmip6.ocean.vertical_physics", 
             "contact": "Eric Guilyardi", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of vertical physics in ocean", 
+                    "id": "cmip6.ocean.vertical_physics.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Boundary Layer Mixing", 
@@ -1285,6 +1348,14 @@
                     "id": "cmip6.ocean.uplow_boundaries.free_surface", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of free surface in ocean", 
+                            "id": "cmip6.ocean.uplow_boundaries.free_surface.overview", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme", 
                             "description": "Free surface scheme in ocean", 
                             "id": "cmip6.ocean.uplow_boundaries.free_surface.scheme", 
@@ -1321,7 +1392,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Embeded Seaice", 
@@ -1329,7 +1400,7 @@
                             "id": "cmip6.ocean.uplow_boundaries.free_surface.embeded_seaice", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1338,6 +1409,14 @@
                     "description": "Properties of bottom boundary layer in ocean", 
                     "id": "cmip6.ocean.uplow_boundaries.bottom_boundary_layer", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of bottom boundary layer in ocean", 
+                            "id": "cmip6.ocean.uplow_boundaries.bottom_boundary_layer.overview", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Type Of Bbl", 
                             "description": "Type of bottom boundary layer in ocean", 
@@ -1359,7 +1438,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Lateral Mixing Coef", 
@@ -1367,7 +1446,7 @@
                             "id": "cmip6.ocean.uplow_boundaries.bottom_boundary_layer.lateral_mixing_coef", 
                             "cardinality": "0.1", 
                             "type": "int", 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Sill Overflow", 
@@ -1375,7 +1454,7 @@
                             "id": "cmip6.ocean.uplow_boundaries.bottom_boundary_layer.sill_overflow", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }
@@ -1388,12 +1467,20 @@
             "contact": "Eric Guilyardi", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of boundary forcing in ocean", 
+                    "id": "cmip6.ocean.boundary_forcing.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Surface Pressure", 
                     "description": "Describe how surface pressure is transmitted to ocean (via sea-ice, nothing specific,...)", 
                     "id": "cmip6.ocean.boundary_forcing.surface_pressure", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Momentum Flux Correction", 
@@ -1401,7 +1488,7 @@
                     "id": "cmip6.ocean.boundary_forcing.momentum_flux_correction", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Tracers Flux Correction", 
@@ -1409,7 +1496,7 @@
                     "id": "cmip6.ocean.boundary_forcing.tracers_flux_correction", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Wave Effects", 
@@ -1417,7 +1504,7 @@
                     "id": "cmip6.ocean.boundary_forcing.wave_effects", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "River Runoff Budget", 
@@ -1425,7 +1512,7 @@
                     "id": "cmip6.ocean.boundary_forcing.river_runoff_budget", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Geothermal Heating", 
@@ -1433,7 +1520,7 @@
                     "id": "cmip6.ocean.boundary_forcing.geothermal_heating", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }
             ], 
             "subProcesses": [
@@ -1652,6 +1739,16 @@
         "description": "Ocean grid", 
         "id": "cmip6.ocean.grid", 
         "contact": "Eric Guilyardi", 
+        "properties": [
+            {
+                "label": "Overview", 
+                "description": "Overview of grid in ocean", 
+                "id": "cmip6.ocean.grid.overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }
+        ], 
         "subProcesses": [
             {
                 "label": "Discretisation", 
@@ -1829,12 +1926,20 @@
         "contact": "Eric Guilyardi", 
         "properties": [
             {
+                "label": "Model Overview", 
+                "description": "Overview of ocean model.", 
+                "id": "cmip6.ocean.key_properties.model_overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Model Name", 
                 "description": "Name of ocean model code (NEMO 3.6, MOM 5.0,...)", 
                 "id": "cmip6.ocean.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Model Family", 
@@ -1861,7 +1966,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Basic Approximations", 
@@ -1888,7 +1993,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -1931,7 +2036,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }
         ], 
         "propertySets": [

@@ -11,12 +11,20 @@
             "contact": "Eric Guilyardi", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of tracers in ocean biogeochemistry", 
+                    "id": "cmip6.ocnbgchem.tracers.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Sulfur Cycle Present", 
                     "description": "Is sulfur cycle modeled ?", 
                     "id": "cmip6.ocnbgchem.tracers.sulfur_cycle_present", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Nutrients Present", 
@@ -47,7 +55,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Nitrous Species If N", 
@@ -70,7 +78,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Nitrous Processes If N", 
@@ -93,7 +101,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }
             ], 
             "subProcesses": [
@@ -454,6 +462,68 @@
                             "uiOrdinal": 5
                         }
                     ]
+                }, 
+                {
+                    "label": "Dic Alkalinity", 
+                    "description": "DIC and alkalinity properties in ocean biogeochemistry", 
+                    "id": "cmip6.ocnbgchem.tracers.dic_alkalinity", 
+                    "contact": "Eric Guilyardi", 
+                    "properties": [
+                        {
+                            "label": "Carbon Isotopes", 
+                            "description": "Which carbon isotopes are modelled (C13, C14)?", 
+                            "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Carbon Isotopes List", 
+                                "description": "List of carbon isotopes in ocean biogeochemistry", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "C13", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "C14)", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Abiotic Carbon", 
+                            "description": "Is abiotic carbon modelled ?", 
+                            "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Alkalinity", 
+                            "description": "How is alkalinity modelled ?", 
+                            "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Alkalinity Model Types", 
+                                "description": "Types of alkalinity modelling in ocean biogeochemistry", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "Prognostic", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Diagnostic)", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
                 }
             ]
         }
@@ -465,28 +535,82 @@
         "contact": "Eric Guilyardi", 
         "properties": [
             {
-                "label": "Model Name", 
-                "description": "Name of ocean biogeochemistry model code (PISCES 2.0,...)", 
-                "id": "cmip6.ocnbgchem.key_properties.model_name", 
+                "label": "Model Overview", 
+                "description": "Overview of ocean biogeochemistry model", 
+                "id": "cmip6.ocnbgchem.key_properties.model_overview", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Family", 
-                "description": "Type of ocean biogeochemistry model", 
-                "id": "cmip6.ocnbgchem.key_properties.model_family", 
+                "label": "Model Name", 
+                "description": "Name of ocean biogeochemistry model code (PISCES 2.0,...)", 
+                "id": "cmip6.ocnbgchem.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 2
             }, 
             {
-                "label": "Basic Approximations", 
-                "description": "Basic approximations made in the ocean biogeochemistry", 
-                "id": "cmip6.ocnbgchem.key_properties.basic_approximations", 
+                "label": "Model Type", 
+                "description": "Type of ocean biogeochemistry model", 
+                "id": "cmip6.ocnbgchem.key_properties.model_type", 
+                "cardinality": "1.1", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Model Types", 
+                    "description": "Types of models for ocean biogeochemistry", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "Geochemical", 
+                            "description": "No living compartments"
+                        }, 
+                        {
+                            "label": "NPZD", 
+                            "description": "No plankton types"
+                        }, 
+                        {
+                            "label": "PFT", 
+                            "description": "Several plankton types"
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 3
+            }, 
+            {
+                "label": "Elemental Stoichiometry", 
+                "description": "Describe elemental stoichiometry (fixed, variable, mix of the two)", 
+                "id": "cmip6.ocnbgchem.key_properties.elemental_stoichiometry", 
+                "cardinality": "1.1", 
+                "type": "enum", 
+                "enum": {
+                    "label": "Elemental Stoichiometry Types", 
+                    "description": "Types elemental stoichiometry for ocean biogeochemistry", 
+                    "isOpen": false, 
+                    "choices": [
+                        {
+                            "label": "Fixed", 
+                            "description": "Fixed stoichiometry"
+                        }, 
+                        {
+                            "label": "Variable", 
+                            "description": "Variable stoichiometry"
+                        }, 
+                        {
+                            "label": "Mix of both", 
+                            "description": "Both fixed and mixed stoichiometry"
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 4
+            }, 
+            {
+                "label": "Elemental Stoichiometry Details", 
+                "description": "Describe which elements have fixed/variable stoichiometry", 
+                "id": "cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 3
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -494,7 +618,7 @@
                 "id": "cmip6.ocnbgchem.key_properties.prognostic_variables", 
                 "cardinality": "1.N", 
                 "type": "str", 
-                "uiOrdinal": 4
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Diagnostic Variables", 
@@ -502,7 +626,7 @@
                 "id": "cmip6.ocnbgchem.key_properties.diagnostic_variables", 
                 "cardinality": "1.N", 
                 "type": "str", 
-                "uiOrdinal": 5
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Damping", 
@@ -510,7 +634,7 @@
                 "id": "cmip6.ocnbgchem.key_properties.damping", 
                 "cardinality": "0.1", 
                 "type": "str", 
-                "uiOrdinal": 6
+                "uiOrdinal": 8
             }
         ], 
         "subProcesses": [
@@ -843,20 +967,84 @@
                         "uiOrdinal": 10
                     }, 
                     {
-                        "label": "CO Exchange Present", 
-                        "description": "Is CO gas exchange modeled ?", 
-                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CO_exchange_present", 
+                        "label": "CFC11 Exchange Present", 
+                        "description": "Is CFC11 gas exchange modeled ?", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 11
                     }, 
                     {
-                        "label": "CO Exchange Type", 
-                        "description": "Specify CO gas exchange scheme type", 
-                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CO_exchange_type", 
+                        "label": "CFC11 Exchange Type", 
+                        "description": "Specify CFC11 gas exchange scheme type", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "uiOrdinal": 12
+                    }, 
+                    {
+                        "label": "CFC12 Exchange Present", 
+                        "description": "Is CFC12 gas exchange modeled ?", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 13
+                    }, 
+                    {
+                        "label": "CFC12 Exchange Type", 
+                        "description": "Specify CFC12 gas exchange scheme type", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 14
+                    }, 
+                    {
+                        "label": "SF6 Exchange Present", 
+                        "description": "Is SF6 gas exchange modeled ?", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 15
+                    }, 
+                    {
+                        "label": "SF6 Exchange Type", 
+                        "description": "Specify SF6 gas exchange scheme type", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 16
+                    }, 
+                    {
+                        "label": "13CO2 Exchange Present", 
+                        "description": "Is 13CO2 gas exchange modeled ?", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 17
+                    }, 
+                    {
+                        "label": "13CO2 Exchange Type", 
+                        "description": "Specify 13CO2 gas exchange scheme type", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 18
+                    }, 
+                    {
+                        "label": "14CO2 Exchange Present", 
+                        "description": "Is 14CO2 gas exchange modeled ?", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 19
+                    }, 
+                    {
+                        "label": "14CO2 Exchange Type", 
+                        "description": "Specify 14CO2 gas exchange scheme type", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 20
                     }, 
                     {
                         "label": "Other Gases", 
@@ -864,7 +1052,7 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.other_gases", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 13
+                        "uiOrdinal": 21
                     }
                 ]
             }, 
