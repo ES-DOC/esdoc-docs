@@ -85,13 +85,23 @@
             "subProcesses": [
                 {
                     "label": "Mass Balance", 
-                    "description": "TODO", 
+                    "description": "Description of the surface mass balance treatment", 
                     "id": "cmip6.landice.ice.mass_balance", 
                     "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Surface Mass Balance", 
+                            "description": "Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution", 
+                            "id": "cmip6.landice.ice.mass_balance.surface_mass_balance", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }
+                    ], 
                     "propertySets": [
                         {
                             "label": "Basal", 
-                            "description": "TODO", 
+                            "description": "Description of basal melting", 
                             "id": "cmip6.landice.ice.mass_balance.basal", 
                             "properties": [
                                 {
@@ -114,7 +124,7 @@
                         }, 
                         {
                             "label": "Frontal", 
-                            "description": "TODO", 
+                            "description": "Description of claving/melting from the ice shelf front", 
                             "id": "cmip6.landice.ice.mass_balance.frontal", 
                             "properties": [
                                 {
@@ -179,12 +189,20 @@
                             "uiOrdinal": 2
                         }, 
                         {
+                            "label": "Adaptive Timestep", 
+                            "description": "Is there an adaptive time scheme for the ice scheme?", 
+                            "id": "cmip6.landice.ice.dynamics.adaptive_timestep", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
                             "label": "Timestep", 
-                            "description": "Timestep (in seconds) of the ice scheme", 
+                            "description": "Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.", 
                             "id": "cmip6.landice.ice.dynamics.timestep", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }
@@ -238,12 +256,20 @@
         "contact": "David Hassell", 
         "properties": [
             {
+                "label": "Model Overview", 
+                "description": "Overview of land surface model.", 
+                "id": "cmip6.landice.key_properties.model_overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Model Name", 
                 "description": "Name of land surface model code", 
                 "id": "cmip6.landice.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Ice Albedo", 
@@ -270,7 +296,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Atmospheric Coupling Variables", 
@@ -278,7 +304,7 @@
                 "id": "cmip6.landice.key_properties.atmospheric_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Oceanic Coupling Variables", 
@@ -286,7 +312,7 @@
                 "id": "cmip6.landice.key_properties.oceanic_coupling_variables", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -313,7 +339,40 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 5
+                "uiOrdinal": 6
+            }
+        ], 
+        "propertySets": [
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of land ice code", 
+                "id": "cmip6.landice.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cmip6.landice.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cmip6.landice.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cmip6.landice.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }
+                ]
             }
         ]
     }

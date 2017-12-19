@@ -9,49 +9,44 @@
             "description": "Ocean Timestepping Framework", 
             "id": "cmip6.ocean.timestepping_framework", 
             "contact": "Eric Guilyardi", 
-            "propertySets": [
+            "properties": [
                 {
-                    "label": "Attributes", 
-                    "description": "Properties of time stepping in ocean", 
-                    "id": "cmip6.ocean.timestepping_framework.attributes", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of time stepping in ocean", 
-                            "id": "cmip6.ocean.timestepping_framework.attributes.overview", 
-                            "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Diurnal Cycle", 
-                            "description": "Diurnal cycle type", 
-                            "id": "cmip6.ocean.timestepping_framework.attributes.diurnal_cycle", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Diurnal Cycle Types", 
-                                "description": "Types of diurnal cycle resolution in ocean", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "None", 
-                                        "description": "No diurnal cycle in ocean"
-                                    }, 
-                                    {
-                                        "label": "Via coupling", 
-                                        "description": "Diurnal cycle via coupling frequency"
-                                    }, 
-                                    {
-                                        "label": "Specific treatment", 
-                                        "description": "Specific treament"
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }
-                    ]
+                    "label": "Overview", 
+                    "description": "Overview of time stepping in ocean", 
+                    "id": "cmip6.ocean.timestepping_framework.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
                 }, 
+                {
+                    "label": "Diurnal Cycle", 
+                    "description": "Diurnal cycle type", 
+                    "id": "cmip6.ocean.timestepping_framework.diurnal_cycle", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Diurnal Cycle Types", 
+                        "description": "Types of diurnal cycle resolution in ocean", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "None", 
+                                "description": "No diurnal cycle in ocean"
+                            }, 
+                            {
+                                "label": "Via coupling", 
+                                "description": "Diurnal cycle via coupling frequency"
+                            }, 
+                            {
+                                "label": "Specific treatment", 
+                                "description": "Specific treament"
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }
+            ], 
+            "propertySets": [
                 {
                     "label": "Tracers", 
                     "description": "Properties of tracers time stepping in ocean", 
@@ -2322,33 +2317,41 @@
                         "label": "Canonical Horizontal Resolution", 
                         "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
                         "id": "cmip6.ocean.key_properties.resolution.canonical_horizontal_resolution", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "str", 
                         "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Range Horizontal Resolution", 
+                        "description": "Range of horizontal resolution with spatial details, eg. 50(Equator)-100km or 0.1-0.5 degrees etc.", 
+                        "id": "cmip6.ocean.key_properties.resolution.range_horizontal_resolution", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Number Of Horizontal Gridpoints", 
                         "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
                         "id": "cmip6.ocean.key_properties.resolution.number_of_horizontal_gridpoints", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Number Of Vertical Levels", 
                         "description": "Number of vertical levels resolved on computational grid.", 
                         "id": "cmip6.ocean.key_properties.resolution.number_of_vertical_levels", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Is Adaptive Grid", 
                         "description": "Default is False. Set true if grid resolution changes during execution.", 
                         "id": "cmip6.ocean.key_properties.resolution.is_adaptive_grid", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 6
                     }, 
                     {
                         "label": "Thickness Level 1", 
@@ -2356,7 +2359,7 @@
                         "id": "cmip6.ocean.key_properties.resolution.thickness_level_1", 
                         "cardinality": "1.1", 
                         "type": "float", 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 7
                     }
                 ]
             }, 

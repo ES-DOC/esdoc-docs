@@ -89,7 +89,7 @@
                 }, 
                 {
                     "label": "Redistribution", 
-                    "description": "Which processes can redistribute sea ice?", 
+                    "description": "Which processes can redistribute sea ice (including thickness)?", 
                     "id": "cmip6.seaice.dynamics.redistribution", 
                     "cardinality": "1.N", 
                     "type": "enum", 
@@ -138,7 +138,7 @@
                                 "description": "EVP"
                             }, 
                             {
-                                "label": "Elastic-aniostropic-plastic", 
+                                "label": "Elastic-anisotropic-plastic", 
                                 "description": null
                             }, 
                             {
@@ -286,6 +286,14 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "uiOrdinal": 6
+                        }, 
+                        {
+                            "label": "Precipitation Effects On Salinity", 
+                            "description": "If precipitation (freshwater) that falls on sea ice affects the ocean surface salinity please provide further details.", 
+                            "id": "cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 7
                         }
                     ]
                 }, 
@@ -506,6 +514,45 @@
                                 ]
                             }, 
                             "uiOrdinal": 1
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Ice Floe Size Distribution", 
+                    "description": "Ice floe-size distribution details.", 
+                    "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution", 
+                    "contact": "Ruth Petrie", 
+                    "properties": [
+                        {
+                            "label": "Representation", 
+                            "description": "How is the sea ice floe-size represented?", 
+                            "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.representation", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Ice Floe Size", 
+                                "description": "Ice floe-size representation", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "Explicit", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Parameterised", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Additional Details", 
+                            "description": "Please provide further details on any parameterisation of floe-size.", 
+                            "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -857,7 +904,7 @@
                                         }, 
                                         {
                                             "label": "Two-layers", 
-                                            "description": "Simulation uses two layers."
+                                            "description": "Simulation uses two layers (i.e. one ice and one snow layer)."
                                         }, 
                                         {
                                             "label": "Multi-layers", 
@@ -927,7 +974,7 @@
                     }, 
                     {
                         "label": "Other", 
-                        "description": "If the sea ice model does not use sea ice categories specify any additional details.", 
+                        "description": "If the sea ice model does not use sea ice categories specify any additional details. For example models that paramterise the ice thickness distribution ITD (i.e there is no explicit ITD) but there is assumed distribution and fluxes are computed accordingly.", 
                         "id": "cmip6.seaice.grid.seaice_categories.other", 
                         "cardinality": "0.1", 
                         "type": "str", 
@@ -990,12 +1037,20 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Model Name", 
-                        "description": "Name of seaice model (e.g. CICE 4.2, LIM 2.1, etc.)", 
-                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "label": "Model Overview", 
+                        "description": "Overview of sea ice model.", 
+                        "id": "cmip6.seaice.key_properties.model.model_overview", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Model Name", 
+                        "description": "Name of sea ice model code (e.g. CICE 4.2, LIM 2.1, etc.)", 
+                        "id": "cmip6.seaice.key_properties.model.model_name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
                     }
                 ]
             }, 
@@ -1186,6 +1241,49 @@
                 ]
             }, 
             {
+                "label": "Key Parameter Values", 
+                "description": "Values of key parameters", 
+                "id": "cmip6.seaice.key_properties.key_parameter_values", 
+                "contact": "Ruth Petrie", 
+                "properties": [
+                    {
+                        "label": "Typical Parameters", 
+                        "description": "What values were specificed for the following parameters if used?", 
+                        "id": "cmip6.seaice.key_properties.key_parameter_values.typical_parameters", 
+                        "cardinality": "0.N", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Parameter Values", 
+                            "description": "Specify the values of the following parameters if used", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Ice strength (P*) in units of N m{-2}", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Snow conductivity (ks) in units of W m{-1} K{-1} ", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Minimum thickness of ice created in leads (h0) in units of m", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Additional Parameters", 
+                        "description": "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list", 
+                        "id": "cmip6.seaice.key_properties.key_parameter_values.additional_parameters", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }
+                ]
+            }, 
+            {
                 "label": "Assumptions", 
                 "description": "Assumptions made in the sea ice model", 
                 "id": "cmip6.seaice.key_properties.assumptions", 
@@ -1260,7 +1358,7 @@
                     }, 
                     {
                         "label": "Budget", 
-                        "description": "For each conserved property, specify the output variables which close the related budgets.", 
+                        "description": "For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3", 
                         "id": "cmip6.seaice.key_properties.conservation.budget", 
                         "cardinality": "1.1", 
                         "type": "str", 

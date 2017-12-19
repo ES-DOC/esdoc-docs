@@ -11,12 +11,20 @@
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview description of atmosphere dynamical core", 
+                    "id": "cmip6.atmos.dynamical_core.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Name", 
                     "description": "Commonly used name for the dynamical core of the model.", 
                     "id": "cmip6.atmos.dynamical_core.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Timestepping Type", 
@@ -67,7 +75,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -130,7 +138,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
@@ -646,12 +654,20 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview description of shortwave radiation in the atmosphere", 
+                            "id": "cmip6.atmos.radiation.shortwave_radiation.overview", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the shortwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.shortwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -678,7 +694,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -713,7 +729,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -721,7 +737,7 @@
                             "id": "cmip6.atmos.radiation.shortwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -1350,12 +1366,20 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview description of longwave radiation in the atmosphere", 
+                            "id": "cmip6.atmos.radiation.longwave_radiation.overview", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the longwave radiation scheme.", 
                             "id": "cmip6.atmos.radiation.longwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -1382,7 +1406,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -1417,7 +1441,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -1425,7 +1449,7 @@
                             "id": "cmip6.atmos.radiation.longwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -2054,6 +2078,16 @@
             "description": "Atmosphere Convective Turbulence and Clouds", 
             "id": "cmip6.atmos.turbulence_convection", 
             "contact": "Charlotte Pascoe", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview description of atmosphere convection and turbulence", 
+                    "id": "cmip6.atmos.turbulence_convection.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Boundary Layer Turbulence", 
@@ -2452,6 +2486,16 @@
             "description": "Large Scale Cloud Microphysics and Precipitation", 
             "id": "cmip6.atmos.microphysics_precipitation", 
             "contact": "Charlotte Pascoe", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview description of large scale cloud microphysics and precipitation", 
+                    "id": "cmip6.atmos.microphysics_precipitation.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Large Scale Precipitation", 
@@ -2572,12 +2616,20 @@
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview description of the atmosphere cloud scheme", 
+                    "id": "cmip6.atmos.cloud_scheme.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Name", 
                     "description": "Commonly used name for the cloud scheme", 
                     "id": "cmip6.atmos.cloud_scheme.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Atmos Coupling", 
@@ -2620,7 +2672,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Uses Separate Treatment", 
@@ -2628,7 +2680,7 @@
                     "id": "cmip6.atmos.cloud_scheme.uses_separate_treatment", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Processes", 
@@ -2655,7 +2707,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Prognostic Scheme", 
@@ -2663,7 +2715,7 @@
                     "id": "cmip6.atmos.cloud_scheme.prognostic_scheme", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Diagnostic Scheme", 
@@ -2671,7 +2723,7 @@
                     "id": "cmip6.atmos.cloud_scheme.diagnostic_scheme", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -2706,7 +2758,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }
             ], 
             "subProcesses": [
@@ -2912,6 +2964,16 @@
             "description": "Characteristics of observation simulation", 
             "id": "cmip6.atmos.observation_simulation", 
             "contact": "Charlotte Pascoe", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview description of observation simulator characteristics", 
+                    "id": "cmip6.atmos.observation_simulation.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Isscp Attributes", 
@@ -3144,6 +3206,14 @@
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview description of gravity wave parameterisation in the atmosphere", 
+                    "id": "cmip6.atmos.gravity_waves.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Sponge Layer", 
                     "description": "Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.", 
                     "id": "cmip6.atmos.gravity_waves.sponge_layer", 
@@ -3164,7 +3234,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Background", 
@@ -3187,7 +3257,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Subgrid Scale Orography", 
@@ -3214,7 +3284,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
@@ -3485,6 +3555,16 @@
             "description": "Top of atmosphere solar insolation characteristics", 
             "id": "cmip6.atmos.solar", 
             "contact": "Charlotte Pascoe", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview description of solar insolation of the atmosphere", 
+                    "id": "cmip6.atmos.solar.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Solar Pathways", 
@@ -3661,6 +3741,16 @@
             "description": "Characteristics of the implementation of volcanoes", 
             "id": "cmip6.atmos.volcanos", 
             "contact": "Charlotte Pascoe", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview description of the implementation of volcanic effects in the atmosphere", 
+                    "id": "cmip6.atmos.volcanos.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }
+            ], 
             "subProcesses": [
                 {
                     "label": "Volcanoes Treatment", 
@@ -3707,6 +3797,16 @@
                 "description": "Atmosphere grid discretisation", 
                 "id": "cmip6.atmos.grid.discretisation", 
                 "contact": "Charlotte Pascoe", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview description of grid discretisation in the atmosphere", 
+                        "id": "cmip6.atmos.grid.discretisation.overview", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }
+                ], 
                 "propertySets": [
                     {
                         "label": "Horizontal", 
@@ -3907,12 +4007,20 @@
         "contact": "Charlotte Pascoe", 
         "properties": [
             {
+                "label": "Model Overview", 
+                "description": "Overview of atmosphere model", 
+                "id": "cmip6.atmos.key_properties.model_overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Model Name", 
                 "description": "Name of atmosphere model code (CAM 4.0, ARPEGE 3.2,...)", 
                 "id": "cmip6.atmos.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Model Family", 
@@ -3935,7 +4043,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Basic Approximations", 
@@ -3974,7 +4082,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }
         ], 
         "subProcesses": [

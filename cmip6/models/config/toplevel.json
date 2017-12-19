@@ -1223,22 +1223,25 @@
         "description": "Key properties of the model", 
         "id": "cmip6.toplevel.key_properties", 
         "contact": "Eric Guilyardi", 
-        "propertySets": [
+        "properties": [
             {
-                "label": "Attributes", 
-                "description": "Top level properties of full coupled model", 
-                "id": "cmip6.toplevel.key_properties.attributes", 
-                "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Top level overview of coupled model", 
-                        "id": "cmip6.toplevel.key_properties.attributes.overview", 
-                        "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
-                    }
-                ]
+                "label": "Model Overview", 
+                "description": "Top level overview of coupled model", 
+                "id": "cmip6.toplevel.key_properties.model_overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
             }, 
+            {
+                "label": "Model Name", 
+                "description": "Name of ocean biogeochemistry model code (PISCES 2.0,...)", 
+                "id": "cmip6.toplevel.key_properties.model_name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 2
+            }
+        ], 
+        "propertySets": [
             {
                 "label": "Flux Correction", 
                 "description": "Flux correction properties of the model", 
@@ -1378,6 +1381,65 @@
         ], 
         "subProcesses": [
             {
+                "label": "Coupling", 
+                "description": "", 
+                "id": "cmip6.toplevel.key_properties.coupling", 
+                "contact": "Eric Guilyardi", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of coupling in the model", 
+                        "id": "cmip6.toplevel.key_properties.coupling.overview", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Atmosphere Double Flux", 
+                        "description": "Is the atmosphere passing a double flux to the ocean and sea ice (as opposed to a single one)?", 
+                        "id": "cmip6.toplevel.key_properties.coupling.atmosphere_double_flux", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Atmosphere Fluxes Calculation Grid", 
+                        "description": "Where are the air-sea fluxes calculated", 
+                        "id": "cmip6.toplevel.key_properties.coupling.atmosphere_fluxes_calculation_grid", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Atmosphere Fluxes Calculation Grid", 
+                            "description": "Where are the air-sea fluxes calculated", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Atmosphere grid", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Ocean grid", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific coupler grid", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Atmosphere Relative Winds", 
+                        "description": "Are relative or absolute winds used to compute the flux? I.e. do ocean surface currents enter the wind stress calculation?", 
+                        "id": "cmip6.toplevel.key_properties.coupling.atmosphere_relative_winds", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }, 
+            {
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for model", 
                 "id": "cmip6.toplevel.key_properties.tuning_applied", 
@@ -1385,7 +1447,7 @@
                 "properties": [
                     {
                         "label": "Description", 
-                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics/diagnostics retained. Document the relative weight given to climate performance metrics/diagnostics versus process oriented metrics/diagnostics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
                         "id": "cmip6.toplevel.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "str", 
@@ -1393,7 +1455,7 @@
                     }, 
                     {
                         "label": "Global Mean Metrics Used", 
-                        "description": "List set of metrics of the global mean state used in tuning model", 
+                        "description": "List set of metrics/diagnostics of the global mean state used in tuning model", 
                         "id": "cmip6.toplevel.key_properties.tuning_applied.global_mean_metrics_used", 
                         "cardinality": "0.N", 
                         "type": "str", 
@@ -1401,7 +1463,7 @@
                     }, 
                     {
                         "label": "Regional Metrics Used", 
-                        "description": "List of regional metrics of mean state (e.g THC, AABW, regional means etc) used in tuning model/component", 
+                        "description": "List of regional metrics/diagnostics of mean state (e.g THC, AABW, regional means etc) used in tuning model/component", 
                         "id": "cmip6.toplevel.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.N", 
                         "type": "str", 
@@ -1409,7 +1471,7 @@
                     }, 
                     {
                         "label": "Trend Metrics Used", 
-                        "description": "List observed trend metrics used in tuning model/component (such as 20th century)", 
+                        "description": "List observed trend metrics/diagnostics used in tuning model/component (such as 20th century)", 
                         "id": "cmip6.toplevel.key_properties.tuning_applied.trend_metrics_used", 
                         "cardinality": "0.N", 
                         "type": "str", 

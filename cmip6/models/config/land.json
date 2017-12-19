@@ -11,12 +11,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of soil in the land surface", 
+                    "id": "cmip6.land.soil.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Heat Water Coupling", 
                     "description": "Describe the coupling between heat and water in the soil", 
                     "id": "cmip6.land.soil.heat_water_coupling", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Number Of Soil Layers", 
@@ -24,7 +32,7 @@
                     "id": "cmip6.land.soil.number_of_soil layers", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -32,7 +40,7 @@
                     "id": "cmip6.land.soil.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
@@ -466,12 +474,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of snow in the land surface", 
+                    "id": "cmip6.land.snow.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Tiling", 
                     "description": "Describe the snow tiling, if any.", 
                     "id": "cmip6.land.snow.tiling", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Number Of Snow Layers", 
@@ -479,7 +495,7 @@
                     "id": "cmip6.land.snow.number_of_snow_layers", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Density", 
@@ -502,7 +518,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Water Equivalent", 
@@ -525,7 +541,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Heat Content", 
@@ -548,7 +564,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Temperature", 
@@ -571,7 +587,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Liquid Water Content", 
@@ -594,7 +610,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Snow Cover Fractions", 
@@ -617,7 +633,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 8
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Processes", 
@@ -648,7 +664,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 9
+                    "uiOrdinal": 10
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -656,7 +672,7 @@
                     "id": "cmip6.land.snow.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 10
+                    "uiOrdinal": 11
                 }
             ], 
             "subProcesses": [
@@ -739,9 +755,9 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Description", 
-                    "description": "General description of vegetation scheme", 
-                    "id": "cmip6.land.vegetation.description", 
+                    "label": "Overview", 
+                    "description": "Overview of vegetation in the land surface", 
+                    "id": "cmip6.land.vegetation.overview", 
                     "cardinality": "1.1", 
                     "type": "str", 
                     "uiOrdinal": 1
@@ -1122,12 +1138,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of energy balance in land surface", 
+                    "id": "cmip6.land.energy_balance.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Tiling", 
                     "description": "Describe the energy balance tiling, if any.", 
                     "id": "cmip6.land.energy_balance.tiling", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Number Of Surface Temperatures", 
@@ -1135,7 +1159,7 @@
                     "id": "cmip6.land.energy_balance.number_of_surface_temperatures", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Evaporation", 
@@ -1166,7 +1190,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Processes", 
@@ -1185,7 +1209,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }
             ]
         }, 
@@ -1196,12 +1220,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of carbon cycle in land surface", 
+                    "id": "cmip6.land.carbon_cycle.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Tiling", 
                     "description": "Describe the carbon cycle tiling, if any.", 
                     "id": "cmip6.land.carbon_cycle.tiling", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Time Step", 
@@ -1209,7 +1241,7 @@
                     "id": "cmip6.land.carbon_cycle.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Anthropogenic Carbon", 
@@ -1236,7 +1268,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -1244,7 +1276,7 @@
                     "id": "cmip6.land.carbon_cycle.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }
             ], 
             "subProcesses": [
@@ -1556,12 +1588,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of the nitrogen cycle in the land surface", 
+                    "id": "cmip6.land.nitrogen_cycle.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Tiling", 
                     "description": "Describe the notrogen cycle tiling, if any.", 
                     "id": "cmip6.land.nitrogen_cycle.tiling", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Time Step", 
@@ -1569,7 +1609,7 @@
                     "id": "cmip6.land.nitrogen_cycle.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -1577,7 +1617,7 @@
                     "id": "cmip6.land.nitrogen_cycle.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ]
         }, 
@@ -1588,12 +1628,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of river routing in the land surface", 
+                    "id": "cmip6.land.river_routing.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Tiling", 
                     "description": "Describe the river routing, if any.", 
                     "id": "cmip6.land.river_routing.tiling", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Time Step", 
@@ -1601,7 +1649,7 @@
                     "id": "cmip6.land.river_routing.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Grid Inherited From Land Surface", 
@@ -1609,7 +1657,7 @@
                     "id": "cmip6.land.river_routing.grid_inherited_from_land_surface", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Grid Description", 
@@ -1617,7 +1665,7 @@
                     "id": "cmip6.land.river_routing.grid_description", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Number Of Reservoirs", 
@@ -1625,7 +1673,7 @@
                     "id": "cmip6.land.river_routing.number_of_reservoirs", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Water Re Evaporation", 
@@ -1648,7 +1696,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Coupled To Atmosphere", 
@@ -1656,7 +1704,7 @@
                     "id": "cmip6.land.river_routing.coupled_to_atmosphere", 
                     "cardinality": "0.1", 
                     "type": "bool", 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Coupled To Land", 
@@ -1664,7 +1712,7 @@
                     "id": "cmip6.land.river_routing.coupled_to_land", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 8
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Quantities Exchanged With Atmosphere", 
@@ -1691,7 +1739,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 9
+                    "uiOrdinal": 10
                 }, 
                 {
                     "label": "Basin Flow Direction Map", 
@@ -1714,7 +1762,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 10
+                    "uiOrdinal": 11
                 }, 
                 {
                     "label": "Flooding", 
@@ -1722,7 +1770,7 @@
                     "id": "cmip6.land.river_routing.flooding", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 11
+                    "uiOrdinal": 12
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -1730,7 +1778,7 @@
                     "id": "cmip6.land.river_routing.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 12
+                    "uiOrdinal": 13
                 }
             ], 
             "subProcesses": [
@@ -1967,6 +2015,16 @@
         "description": "Land surface grid", 
         "id": "cmip6.land.grid", 
         "contact": "David Hassell", 
+        "properties": [
+            {
+                "label": "Overview", 
+                "description": "Overview of the grid in the land surface", 
+                "id": "cmip6.land.grid.overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }
+        ], 
         "subProcesses": [
             {
                 "label": "Horizontal", 
@@ -2025,12 +2083,20 @@
         "contact": "David Hassell", 
         "properties": [
             {
+                "label": "Model Overview", 
+                "description": "Overview of land surface model.", 
+                "id": "cmip6.land.key_properties.model_overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Model Name", 
                 "description": "Name of land surface model code (e.g. MOSES2.2)", 
                 "id": "cmip6.land.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Description", 
@@ -2038,7 +2104,7 @@
                 "id": "cmip6.land.key_properties.description", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Land Atmosphere Flux Exchanges", 
@@ -2073,7 +2139,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Atmospheric Coupling Treatment", 
@@ -2081,7 +2147,7 @@
                 "id": "cmip6.land.key_properties.atmospheric_coupling_treatment", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Land Cover", 
@@ -2120,7 +2186,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 5
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Land Cover Change", 
@@ -2128,7 +2194,7 @@
                 "id": "cmip6.land.key_properties.land_cover_change", 
                 "cardinality": "0.1", 
                 "type": "str", 
-                "uiOrdinal": 6
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Tiling", 
@@ -2136,7 +2202,7 @@
                 "id": "cmip6.land.key_properties.tiling", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 7
+                "uiOrdinal": 8
             }
         ], 
         "subProcesses": [

@@ -105,11 +105,15 @@
                                 "isOpen": true, 
                                 "choices": [
                                     {
-                                        "label": "Prescribed (climatology)", 
+                                        "label": "Climatology", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "Prescribed (spatially uniform)", 
+                                        "label": "Spatially uniform mixing ratio", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Spatially uniform concentration", 
                                         "description": null
                                     }, 
                                     {
@@ -203,11 +207,15 @@
                                 "isOpen": true, 
                                 "choices": [
                                     {
-                                        "label": "Prescribed (climatology)", 
+                                        "label": "Climatology", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "Prescribed (spatially uniform)", 
+                                        "label": "Spatially uniform mixing ratio", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "Spatially uniform concentration", 
                                         "description": null
                                     }, 
                                     {
@@ -385,7 +393,7 @@
                 }, 
                 {
                     "label": "Number Of Steady State Species", 
-                    "description": "The number of steady state species in the gas phase chemistry scheme.", 
+                    "description": "The number of gas phase species for which the concentration is updated in the chemical solver assuming photochemical steady state", 
                     "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_steady_state_species", 
                     "cardinality": "1.1", 
                     "type": "int", 
@@ -723,12 +731,20 @@
         "contact": "Charlotte Pascoe, David Hassell", 
         "properties": [
             {
-                "label": "Overview", 
-                "description": "Overview of atmospheric chemistry", 
-                "id": "cmip6.atmoschem.key_properties.overview", 
+                "label": "Model Overview", 
+                "description": "Overview of atmospheric chemistry model.", 
+                "id": "cmip6.atmoschem.key_properties.model_overview", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 1
+            }, 
+            {
+                "label": "Model Name", 
+                "description": "Name of atmospheric chemistry model code", 
+                "id": "cmip6.atmoschem.key_properties.model_name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Chemistry Scheme Scope", 
@@ -763,7 +779,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Basic Approximations", 
@@ -771,7 +787,7 @@
                 "id": "cmip6.atmoschem.key_properties.basic_approximations", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Prognostic Variables Form", 
@@ -790,23 +806,23 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
-            }, 
-            {
-                "label": "Number Of Tracers", 
-                "description": "Number of tracers in the atmospheric chemistry model", 
-                "id": "cmip6.atmoschem.key_properties.number_of_tracers", 
-                "cardinality": "1.1", 
-                "type": "int", 
                 "uiOrdinal": 5
             }, 
             {
+                "label": "Number Of Tracers", 
+                "description": "Number of advected tracers in the atmospheric chemistry model", 
+                "id": "cmip6.atmoschem.key_properties.number_of_tracers", 
+                "cardinality": "1.1", 
+                "type": "int", 
+                "uiOrdinal": 6
+            }, 
+            {
                 "label": "Family Approach", 
-                "description": "atmospheric chemistry calculations generalized into families of species?", 
+                "description": "Atmospheric chemistry calculations (not advection) generalized into families of species?", 
                 "id": "cmip6.atmoschem.key_properties.family_approach", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 6
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Coupling With Chemical Reactivity", 
@@ -814,25 +830,58 @@
                 "id": "cmip6.atmoschem.key_properties.coupling_with_chemical_reactivity", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 7
+                "uiOrdinal": 8
+            }
+        ], 
+        "propertySets": [
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of aerosol code", 
+                "id": "cmip6.atmoschem.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cmip6.atmoschem.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cmip6.atmoschem.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cmip6.atmoschem.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.N", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }
+                ]
             }
         ], 
         "subProcesses": [
             {
                 "label": "Timestep Framework", 
-                "description": "Physical properties of seawater in ocean", 
+                "description": "Timestepping in the atmospheric chemistry model", 
                 "id": "cmip6.atmoschem.key_properties.timestep_framework", 
                 "contact": "Charlotte Pascoe, David Hassell", 
                 "properties": [
                     {
                         "label": "Method", 
-                        "description": "Mathematical method deployed to solve teh evolution of a given variable", 
+                        "description": "Mathematical method deployed to solve the evolution of a given variable", 
                         "id": "cmip6.atmoschem.key_properties.timestep_framework.method", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
                             "label": "Timestepping Methods", 
-                            "description": "Mathematical method deployed to solve teh evolution of a given variable", 
+                            "description": "Mathematical method deployed to solve the evolution of a given variable", 
                             "isOpen": true, 
                             "choices": [
                                 {
@@ -857,19 +906,27 @@
                     }, 
                     {
                         "label": "Split Operator Physical Timestep", 
-                        "description": "Timestep for physics and chemistry (in seconds).", 
+                        "description": "Timestep for physics (in seconds).", 
                         "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_physical_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "uiOrdinal": 3
                     }, 
                     {
-                        "label": "Split Operator Alternate Order", 
-                        "description": "TO DO", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_alternate_order", 
-                        "cardinality": "1.1", 
-                        "type": "bool", 
+                        "label": "Split Operator Chemistry Timestep", 
+                        "description": "Timestep for chemistry (in seconds).", 
+                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_chemistry_timestep", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
                         "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Split Operator Alternate Order", 
+                        "description": "?", 
+                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_alternate_order", 
+                        "cardinality": "0.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Integrated Timestep", 
@@ -877,7 +934,7 @@
                         "id": "cmip6.atmoschem.key_properties.timestep_framework.integrated_timestep", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 6
                     }, 
                     {
                         "label": "Integrated Scheme Type", 
@@ -924,7 +981,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 7
                     }
                 ], 
                 "propertySets": [
@@ -935,7 +992,7 @@
                         "properties": [
                             {
                                 "label": "Turbulence", 
-                                "description": "Call order for turbulence scheme. This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for turbulence scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.turbulence", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
@@ -943,7 +1000,7 @@
                             }, 
                             {
                                 "label": "Convection", 
-                                "description": "Call order for convection scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for convection scheme This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.convection", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
@@ -951,7 +1008,7 @@
                             }, 
                             {
                                 "label": "Precipitation", 
-                                "description": "Call order for precipitation scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for precipitation scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.precipitation", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
@@ -959,7 +1016,7 @@
                             }, 
                             {
                                 "label": "Emissions", 
-                                "description": "Call order for emissions scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for emissions scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.emissions", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
@@ -967,7 +1024,7 @@
                             }, 
                             {
                                 "label": "Deposition", 
-                                "description": "Call order for deposition scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for deposition scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.deposition", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
@@ -975,35 +1032,43 @@
                             }, 
                             {
                                 "label": "Gas Phase Chemistry", 
-                                "description": "Call order for gas phase chemistry scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "description": "Call order for gas phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
                                 "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.gas_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 6
                             }, 
                             {
-                                "label": "Heterogeneous Phase Chemistry", 
-                                "description": "Call order for heterogeneous phase chemistry scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.heterogeneous_phase_chemistry", 
+                                "label": "Tropospheric Heterogeneous Phase Chemistry", 
+                                "description": "Call order for tropospheric heterogeneous phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.tropospheric_heterogeneous_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 7
                             }, 
                             {
-                                "label": "Photo Chemistry", 
-                                "description": "Call order for photo chemistry scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.photo_chemistry", 
+                                "label": "Stratospheric Heterogeneous Phase Chemistry", 
+                                "description": "Call order for stratospheric heterogeneous phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.stratospheric_heterogeneous_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 8
                             }, 
                             {
-                                "label": "Aerosols", 
-                                "description": "Call order for aerosols scheme This should an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.aerosols", 
+                                "label": "Photo Chemistry", 
+                                "description": "Call order for photo chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.photo_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "uiOrdinal": 9
+                            }, 
+                            {
+                                "label": "Aerosols", 
+                                "description": "Call order for aerosols scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
+                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.aerosols", 
+                                "cardinality": "0.1", 
+                                "type": "int", 
+                                "uiOrdinal": 10
                             }
                         ]
                     }
