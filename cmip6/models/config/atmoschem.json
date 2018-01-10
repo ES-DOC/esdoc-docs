@@ -722,6 +722,56 @@
                 "type": "bool", 
                 "uiOrdinal": 2
             }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Resolution", 
+                "description": "Resolution in the atmospheric chemistry grid", 
+                "id": "cmip6.atmoschem.grid.resolution", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
+                        "id": "cmip6.atmoschem.grid.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+                        "id": "cmip6.atmoschem.grid.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Number Of Horizontal Gridpoints", 
+                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "id": "cmip6.atmoschem.grid.resolution.number_of_horizontal_gridpoints", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on computational grid.", 
+                        "id": "cmip6.atmoschem.grid.resolution.number_of_vertical_levels", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Is Adaptive Grid", 
+                        "description": "Default is False. Set true if grid resolution changes during execution.", 
+                        "id": "cmip6.atmoschem.grid.resolution.is_adaptive_grid", 
+                        "cardinality": "0.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }
         ]
     }, 
     "keyProperties": {
@@ -740,7 +790,7 @@
             }, 
             {
                 "label": "Model Name", 
-                "description": "Name of atmospheric chemistry model code", 
+                "description": "Name of atmospheric chemistry model code.", 
                 "id": "cmip6.atmoschem.key_properties.model_name", 
                 "cardinality": "1.1", 
                 "type": "str", 
@@ -1071,54 +1121,6 @@
                                 "uiOrdinal": 10
                             }
                         ]
-                    }
-                ]
-            }, 
-            {
-                "label": "Resolution", 
-                "description": "Resolution in the atmospheric chemistry grid", 
-                "id": "cmip6.atmoschem.key_properties.resolution", 
-                "contact": "Charlotte Pascoe, David Hassell", 
-                "properties": [
-                    {
-                        "label": "Name", 
-                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
-                        "id": "cmip6.atmoschem.key_properties.resolution.name", 
-                        "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
-                    }, 
-                    {
-                        "label": "Canonical Horizontal Resolution", 
-                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
-                        "id": "cmip6.atmoschem.key_properties.resolution.canonical_horizontal_resolution", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 2
-                    }, 
-                    {
-                        "label": "Number Of Horizontal Gridpoints", 
-                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
-                        "id": "cmip6.atmoschem.key_properties.resolution.number_of_horizontal_gridpoints", 
-                        "cardinality": "0.1", 
-                        "type": "int", 
-                        "uiOrdinal": 3
-                    }, 
-                    {
-                        "label": "Number Of Vertical Levels", 
-                        "description": "Number of vertical levels resolved on computational grid.", 
-                        "id": "cmip6.atmoschem.key_properties.resolution.number_of_vertical_levels", 
-                        "cardinality": "0.1", 
-                        "type": "int", 
-                        "uiOrdinal": 4
-                    }, 
-                    {
-                        "label": "Is Adaptive Grid", 
-                        "description": "Default is False. Set true if grid resolution changes during execution.", 
-                        "id": "cmip6.atmoschem.key_properties.resolution.is_adaptive_grid", 
-                        "cardinality": "0.1", 
-                        "type": "bool", 
-                        "uiOrdinal": 5
                     }
                 ]
             }, 

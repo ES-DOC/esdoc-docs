@@ -128,14 +128,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of ocean biogeochemistry model code (PISCES 2.0,...)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.model_name</dd>
+        <dt><b>Description</b></dt><dd>Name of coupled model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.model_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Name of ocean biogeochemistry model code (PISCES 2.0,...)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.model_name</dd>
+        <dt><b>Description</b></dt><dd>Name of coupled model.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.model_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="flux_correction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1654,7 +1654,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud albedo effect forcing</dd>
+        <dt><b>Description</b></dt><dd>Cloud albedo effect forcing (RFaci)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="provision"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1745,7 +1745,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud lifetime effect forcing</dd>
+        <dt><b>Description</b></dt><dd>Cloud lifetime effect forcing (ERFaci)</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="provision"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

@@ -315,63 +315,36 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
-                            "label": "Type", 
-                            "description": "Type of lateral tracer advection scheme in ocean", 
-                            "id": "cmip6.ocean.advection.lateral_tracers.type", 
+                            "label": "Order", 
+                            "description": "Order of lateral tracer advection scheme in ocean", 
+                            "id": "cmip6.ocean.advection.lateral_tracers.order", 
                             "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Adv Tra Scheme Types", 
-                                "description": "Type of tracer advection scheme in ocean", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Centred 2nd order", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Centred 4th order", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Total Variance Dissipation (TVD)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "MUSCL", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "QUICKEST", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Piecewise Parabolic method", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Sweby", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Prather 2nd moment (PSOM)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "3rd order upwind", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
+                            "type": "int", 
                             "uiOrdinal": 1
                         }, 
                         {
                             "label": "Flux Limiter", 
-                            "description": "Monotonic flux limiter for vertical tracer advection scheme in ocean ?", 
+                            "description": "Monotonic flux limiter for lateral tracer advection scheme in ocean ?", 
                             "id": "cmip6.ocean.advection.lateral_tracers.flux_limiter", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Effective Order", 
+                            "description": "Effective order of limited lateral tracer advection scheme in ocean", 
+                            "id": "cmip6.ocean.advection.lateral_tracers.effective_order", 
+                            "cardinality": "1.1", 
+                            "type": "float", 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Name", 
+                            "description": "Descriptive text for lateral tracer advection scheme in ocean (e.g. MUSCL, PPM-H5, PRATHER,...)", 
+                            "id": "cmip6.ocean.advection.lateral_tracers.name", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Passive Tracers", 
@@ -402,7 +375,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Passive Tracers Advection", 
@@ -410,7 +383,7 @@
                             "id": "cmip6.ocean.advection.lateral_tracers.passive_tracers_advection", 
                             "cardinality": "0.1", 
                             "type": "str", 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
@@ -421,54 +394,11 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
-                            "label": "Type", 
-                            "description": "Type of vertical tracer advection scheme in ocean", 
-                            "id": "cmip6.ocean.advection.vertical_tracers.type", 
+                            "label": "Name", 
+                            "description": "Descriptive text for vertical tracer advection scheme in ocean (e.g. MUSCL, PPM-H5, PRATHER,...)", 
+                            "id": "cmip6.ocean.advection.vertical_tracers.name", 
                             "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Adv Tra Scheme Types", 
-                                "description": "Type of tracer advection scheme in ocean", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Centred 2nd order", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Centred 4th order", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Total Variance Dissipation (TVD)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "MUSCL", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "QUICKEST", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Piecewise Parabolic method", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Sweby", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Prather 2nd moment (PSOM)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "3rd order upwind", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -636,7 +566,7 @@
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "enum": {
-                                        "label": "Latphys Eddy Visc Coeff Types", 
+                                        "label": "Latphys Eddy Coeff Types", 
                                         "description": "Type of lateral physics eddy viscosity coeff in ocean", 
                                         "isOpen": true, 
                                         "choices": [
@@ -809,18 +739,18 @@
                             ]
                         }, 
                         {
-                            "label": "Eddy Viscosity Coeff", 
-                            "description": "Properties of eddy viscosity coeff in lateral physics tracers scheme in the ocean", 
-                            "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff", 
+                            "label": "Eddy Diffusity Coeff", 
+                            "description": "Properties of eddy diffusity coeff in lateral physics tracers scheme in the ocean", 
+                            "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff", 
                             "properties": [
                                 {
                                     "label": "Type", 
-                                    "description": "Lateral physics tracers eddy viscosity coeff type in the ocean", 
-                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.type", 
+                                    "description": "Lateral physics tracers eddy diffusity coeff type in the ocean", 
+                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "enum": {
-                                        "label": "Latphys Eddy Visc Coeff Types", 
+                                        "label": "Latphys Eddy Coeff Types", 
                                         "description": "Type of lateral physics eddy viscosity coeff in ocean", 
                                         "isOpen": true, 
                                         "choices": [
@@ -842,32 +772,32 @@
                                 }, 
                                 {
                                     "label": "Constant Coefficient", 
-                                    "description": "If constant, value of eddy viscosity coeff in lateral physics tracers scheme (in m2/s)", 
-                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.constant_coefficient", 
+                                    "description": "If constant, value of eddy diffusity coeff in lateral physics tracers scheme (in m2/s)", 
+                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.constant_coefficient", 
                                     "cardinality": "0.1", 
                                     "type": "int", 
                                     "uiOrdinal": 2
                                 }, 
                                 {
                                     "label": "Variable Coefficient", 
-                                    "description": "If space-varying, describe variations of eddy viscosity coeff in lateral physics tracers scheme", 
-                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.variable_coefficient", 
+                                    "description": "If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme", 
+                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient", 
                                     "cardinality": "0.1", 
                                     "type": "str", 
                                     "uiOrdinal": 3
                                 }, 
                                 {
                                     "label": "Coeff Background", 
-                                    "description": "Describe background eddy viscosity coeff in lateral physics tracers scheme (give values in m2/s)", 
-                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.coeff_background", 
+                                    "description": "Describe background eddy diffusity coeff in lateral physics tracers scheme (give values in m2/s)", 
+                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.coeff_background", 
                                     "cardinality": "1.1", 
                                     "type": "int", 
                                     "uiOrdinal": 4
                                 }, 
                                 {
                                     "label": "Coeff Backscatter", 
-                                    "description": "Is there backscatter in eddy viscosity coeff in lateral physics tracers scheme ?", 
-                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_viscosity_coeff.coeff_backscatter", 
+                                    "description": "Is there backscatter in eddy diffusity coeff in lateral physics tracers scheme ?", 
+                                    "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.coeff_backscatter", 
                                     "cardinality": "1.1", 
                                     "type": "bool", 
                                     "uiOrdinal": 5
@@ -1384,6 +1314,10 @@
                                     {
                                         "label": "Non-linear semi-explicit", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "Fully explicit", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -1804,10 +1738,6 @@
                                             "description": null
                                         }, 
                                         {
-                                            "label": "Hybrid / ALE", 
-                                            "description": null
-                                        }, 
-                                        {
                                             "label": "Hybrid / other", 
                                             "description": null
                                         }, 
@@ -1870,6 +1800,37 @@
                                 "uiOrdinal": 1
                             }, 
                             {
+                                "label": "Staggering", 
+                                "description": "Horizontal grid staggering type", 
+                                "id": "cmip6.ocean.grid.discretisation.horizontal.staggering", 
+                                "cardinality": "0.1", 
+                                "type": "enum", 
+                                "enum": {
+                                    "label": "Horizontal Staggering Types", 
+                                    "description": "Types of horizonal staggering in ocean", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "Arakawa B-grid", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Arakawa C-grid", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Arakawa E-grid", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "N/a", 
+                                            "description": null
+                                        }
+                                    ]
+                                }, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
                                 "label": "Scheme", 
                                 "description": "Horizontal discretisation scheme in ocean", 
                                 "id": "cmip6.ocean.grid.discretisation.horizontal.scheme", 
@@ -1881,15 +1842,7 @@
                                     "isOpen": true, 
                                     "choices": [
                                         {
-                                            "label": "Finite difference / Arakawa B-grid", 
-                                            "description": null
-                                        }, 
-                                        {
-                                            "label": "Finite difference / Arakawa C-grid", 
-                                            "description": null
-                                        }, 
-                                        {
-                                            "label": "Finite difference / Arakawa E-grid", 
+                                            "label": "Finite difference", 
                                             "description": null
                                         }, 
                                         {
@@ -1906,7 +1859,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 2
+                                "uiOrdinal": 3
                             }
                         ]
                     }
@@ -2053,6 +2006,10 @@
                             "choices": [
                                 {
                                     "label": "Linear", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Wright, 1997", 
                                     "description": null
                                 }, 
                                 {

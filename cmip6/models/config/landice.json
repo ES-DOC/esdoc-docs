@@ -11,12 +11,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of glaciers in the land ice scheme", 
+                    "id": "cmip6.landice.glaciers.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Description", 
                     "description": "Describe the treatment of glaciers, if any", 
                     "id": "cmip6.landice.glaciers.description", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Dynamic Areal Extent", 
@@ -24,7 +32,7 @@
                     "id": "cmip6.landice.glaciers.dynamic_areal_extent", 
                     "cardinality": "0.1", 
                     "type": "bool", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }
             ]
         }, 
@@ -34,6 +42,14 @@
             "id": "cmip6.landice.ice", 
             "contact": "David Hassell", 
             "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of the ice sheet and ice shelf in the land ice scheme", 
+                    "id": "cmip6.landice.ice.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
                 {
                     "label": "Grounding Line Method", 
                     "description": "Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling", 
@@ -63,7 +79,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Ice Sheet", 
@@ -71,7 +87,7 @@
                     "id": "cmip6.landice.ice.ice_sheet", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Ice Shelf", 
@@ -79,7 +95,7 @@
                     "id": "cmip6.landice.ice.ice_shelf", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
@@ -216,12 +232,20 @@
         "contact": "David Hassell", 
         "properties": [
             {
+                "label": "Overview", 
+                "description": "Overview of the grid in the land ice scheme", 
+                "id": "cmip6.landice.grid.overview", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "uiOrdinal": 1
+            }, 
+            {
                 "label": "Adaptive Grid", 
                 "description": "Is an adative grid being used?", 
                 "id": "cmip6.landice.grid.adaptive_grid", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 1
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Base Resolution", 
@@ -229,7 +253,7 @@
                 "id": "cmip6.landice.grid.base_resolution", 
                 "cardinality": "1.1", 
                 "type": "float", 
-                "uiOrdinal": 2
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Resolution Limit", 
@@ -237,7 +261,7 @@
                 "id": "cmip6.landice.grid.resolution_limit", 
                 "cardinality": "0.1", 
                 "type": "float", 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Projection", 
@@ -245,7 +269,7 @@
                 "id": "cmip6.landice.grid.projection", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }
         ]
     }, 
@@ -256,9 +280,9 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Model Overview", 
+                "label": "Overview", 
                 "description": "Overview of land surface model.", 
-                "id": "cmip6.landice.key_properties.model_overview", 
+                "id": "cmip6.landice.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 1

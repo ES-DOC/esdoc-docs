@@ -247,14 +247,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any tracer damping used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
+        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any tracer damping used</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
+        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="time_stepping_framework"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>

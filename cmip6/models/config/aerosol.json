@@ -114,15 +114,240 @@
             ]
         }, 
         {
-            "label": "Emissions Concentrations", 
+            "label": "Emissions", 
             "description": "Atmospheric aerosol emissions", 
-            "id": "cmip6.aerosol.emissions_concentrations", 
+            "id": "cmip6.aerosol.emissions", 
             "contact": "David Hassell", 
             "properties": [
                 {
                     "label": "Overview", 
                     "description": "Overview of emissions in atmosperic aerosol model", 
-                    "id": "cmip6.aerosol.emissions_concentrations.overview", 
+                    "id": "cmip6.aerosol.emissions.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Method", 
+                    "description": "Method used to define aerosol species (several methods allowed because the different species may not use the same method).", 
+                    "id": "cmip6.aerosol.emissions.method", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Emissions Methods", 
+                        "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "None", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed (climatology)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed CMIP6", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed above surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interactive", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interactive above surface", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Sources", 
+                    "description": "Sources of the aerosol species are taken into account in the emissions scheme", 
+                    "id": "cmip6.aerosol.emissions.sources", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Surface Source Types", 
+                        "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Vegetation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Volcanos", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Bare ground", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Lightning", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Fires", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Aircraft", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Anthropogenic", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Prescribed Climatology", 
+                    "description": "Specify the climatology type for aerosol emissions", 
+                    "id": "cmip6.aerosol.emissions.prescribed_climatology", 
+                    "cardinality": "0.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Prescribed Climatology Type", 
+                        "description": "Specify the climatology type for aerosol emissions", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Constant", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interannual", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Annual", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Monthly", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Daily", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Prescribed Climatology Emitted Species", 
+                    "description": "List of aerosol species emitted and prescribed via a climatology", 
+                    "id": "cmip6.aerosol.emissions.prescribed_climatology_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Prescribed Spatially Uniform Emitted Species", 
+                    "description": "List of aerosol species emitted  and prescribed as spatially uniform", 
+                    "id": "cmip6.aerosol.emissions.prescribed_spatially_uniform_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Interactive Emitted Species", 
+                    "description": "List of aerosol species emitted and specified via an interactive method", 
+                    "id": "cmip6.aerosol.emissions.interactive_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 7
+                }, 
+                {
+                    "label": "Other Emitted Species", 
+                    "description": "List of aerosol species emitted and specified via an \"other method\"", 
+                    "id": "cmip6.aerosol.emissions.other_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 8
+                }, 
+                {
+                    "label": "Other Method Characteristics", 
+                    "description": "Characteristics of the \"other method\" used for aerosol emissions", 
+                    "id": "cmip6.aerosol.emissions.other_method_characteristics", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 9
+                }
+            ]
+        }, 
+        {
+            "label": "Concentrations", 
+            "description": "Atmospheric aerosol concentrations", 
+            "id": "cmip6.aerosol.concentrations", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of concentrations in atmosperic aerosol model", 
+                    "id": "cmip6.aerosol.concentrations.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Prescribed Lower Boundary", 
+                    "description": "List of species prescribed at the lower boundary.", 
+                    "id": "cmip6.aerosol.concentrations.prescribed_lower_boundary", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Prescribed Upper Boundary", 
+                    "description": "List of species prescribed at the upper boundary.", 
+                    "id": "cmip6.aerosol.concentrations.prescribed_upper_boundary", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Prescribed Fields Mmr", 
+                    "description": "List of species prescribed as mass mixing ratios.", 
+                    "id": "cmip6.aerosol.concentrations.prescribed_fields_mmr", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Prescribed Fields Mmr", 
+                    "description": "List of species prescribed as AOD plus CCNs.", 
+                    "id": "cmip6.aerosol.concentrations.prescribed_fields_mmr", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 5
+                }
+            ]
+        }, 
+        {
+            "label": "Optical Radiative Properties", 
+            "description": "Aerosol optical and radiative properties", 
+            "id": "cmip6.aerosol.optical_radiative_properties", 
+            "contact": "Charlotte Pascoe, David Hassell", 
+            "properties": [
+                {
+                    "label": "Overview", 
+                    "description": "Overview of optical and radiative properties", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.overview", 
                     "cardinality": "1.1", 
                     "type": "str", 
                     "uiOrdinal": 1
@@ -130,211 +355,178 @@
             ], 
             "subProcesses": [
                 {
-                    "label": "Emissions", 
-                    "description": "TO DO", 
-                    "id": "cmip6.aerosol.emissions_concentrations.emissions", 
-                    "contact": "David Hassell", 
+                    "label": "Absorption", 
+                    "description": "Absortion properties in aerosol scheme", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.absorption", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
-                            "label": "Method", 
-                            "description": "Method used to define aerosol species (several methods allowed because the different species may not use the same method).", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.method", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Emissions Methods", 
-                                "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "None", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Prescribed (climatology)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Prescribed CMIP6", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Prescribed above surface", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Interactive", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Interactive above surface", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
+                            "label": "Black Carbon", 
+                            "description": "Absorption mass coefficient of black carbon at 550nm (if non-absorbing enter 0)", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.absorption.black_carbon", 
+                            "cardinality": "0.1", 
+                            "type": "float", 
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Sources", 
-                            "description": "Sources of the aerosol species are taken into account in the emissions scheme", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.sources", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Surface Source Types", 
-                                "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Vegetation", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Volcanos", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Bare ground", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Sea surface", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Lightning", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Fires", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Aircraft", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Anthropogenic", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
+                            "label": "Dust", 
+                            "description": "Absorption mass coefficient of dust at 550nm (if non-absorbing enter 0)", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.absorption.dust", 
+                            "cardinality": "0.1", 
+                            "type": "float", 
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Prescribed Climatology", 
-                            "description": "Specify the climatology type for aerosol emissions", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.prescribed_climatology", 
+                            "label": "Organics", 
+                            "description": "Absorption mass coefficient of organics at 550nm (if non-absorbing enter 0)", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.absorption.organics", 
                             "cardinality": "0.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Prescribed Climatology Type", 
-                                "description": "Specify the climatology type for aerosol emissions", 
-                                "isOpen": false, 
-                                "choices": [
-                                    {
-                                        "label": "Constant", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Interannual", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Annual", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Monthly", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Daily", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
+                            "type": "float", 
                             "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Prescribed Climatology Emitted Species", 
-                            "description": "List of aerosol species emitted and prescribed via a climatology", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.prescribed_climatology_emitted_species", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
-                        }, 
-                        {
-                            "label": "Prescribed Spatially Uniform Emitted Species", 
-                            "description": "List of aerosol species emitted  and prescribed as spatially uniform", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.prescribed_spatially_uniform_emitted_species", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 5
-                        }, 
-                        {
-                            "label": "Interactive Emitted Species", 
-                            "description": "List of aerosol species emitted and specified via an interactive method", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.interactive_emitted_species", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 6
-                        }, 
-                        {
-                            "label": "Other Emitted Species", 
-                            "description": "List of aerosol species emitted and specified via an \"other method\"", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.other_emitted_species", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 7
-                        }, 
-                        {
-                            "label": "Other Method Characteristics", 
-                            "description": "Characteristics of the \"other method\" used for aerosol emissions", 
-                            "id": "cmip6.aerosol.emissions_concentrations.emissions.other_method_characteristics", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 8
                         }
                     ]
                 }, 
                 {
-                    "label": "Concentrations", 
-                    "description": "TO DO", 
-                    "id": "cmip6.aerosol.emissions_concentrations.concentrations", 
-                    "contact": "David Hassell", 
+                    "label": "Mixtures", 
+                    "description": "", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.mixtures", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
-                            "label": "Prescribed Lower Boundary", 
-                            "description": "List of species prescribed at the lower boundary.", 
-                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_lower_boundary", 
+                            "label": "External", 
+                            "description": "Is there external mixing with respect to chemical composition?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.mixtures.external", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Internal", 
+                            "description": "Is there internal mixing with respect to chemical composition?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.mixtures.internal", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Mixing Rule", 
+                            "description": "If there is internal mixing with respect to chemical composition then indicate the mixinrg rule", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.mixtures.mixing_rule", 
                             "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Impact Of H2o", 
+                    "description": "", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Size", 
+                            "description": "Does H2O impact size?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.size", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Internal Mixture", 
+                            "description": "Does H2O impact internal mixture?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.internal_mixture", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Radiative Scheme", 
+                    "description": "Radiative scheme for aerosol", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of radiative scheme", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.overview", 
+                            "cardinality": "1.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Prescribed Upper Boundary", 
-                            "description": "List of species prescribed at the upper boundary.", 
-                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_upper_boundary", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
+                            "label": "Shortwave Bands", 
+                            "description": "Number of shortwave bands", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.shortwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Prescribed Fields Mmr", 
-                            "description": "List of species prescribed as mass mixing ratios.", 
-                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_fields_mmr", 
-                            "cardinality": "0.1", 
+                            "label": "Longwave Bands", 
+                            "description": "Number of longwave bands", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.longwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Cloud Interactions", 
+                    "description": "Aerosol-cloud interactions", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions", 
+                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of aerosol-cloud interactions", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.overview", 
+                            "cardinality": "1.1", 
                             "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Twomey", 
+                            "description": "Is the Twomey effect included?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.twomey", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Twomey Minimum Ccn", 
+                            "description": "If the Twomey effect is included, then what is the minimum CCN number?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.twomey_minimum_ccn", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
                             "uiOrdinal": 3
                         }, 
                         {
-                            "label": "Prescribed Fields Mmr", 
-                            "description": "List of species prescribed as AOD plus CCNs.", 
-                            "id": "cmip6.aerosol.emissions_concentrations.concentrations.prescribed_fields_mmr", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
+                            "label": "Drizzle", 
+                            "description": "Does the scheme affect drizzle?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.drizzle", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
                             "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Cloud Lifetime", 
+                            "description": "Does the scheme affect cloud lifetime?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.cloud_lifetime", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "Longwave Bands", 
+                            "description": "Number of longwave bands", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.longwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 6
                         }
                     ]
                 }
@@ -604,205 +796,6 @@
                         ]
                     }, 
                     "uiOrdinal": 6
-                }
-            ], 
-            "subProcesses": [
-                {
-                    "label": "Optical Radiative Properties", 
-                    "description": "Optical and radiative properties", 
-                    "id": "cmip6.aerosol.model.optical_radiative_properties", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of optical and radiative properties", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.overview", 
-                            "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
-                        }
-                    ], 
-                    "propertySets": [
-                        {
-                            "label": "Absorption", 
-                            "description": "Absortion properties in aerosol scheme", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.absorption", 
-                            "properties": [
-                                {
-                                    "label": "Black Carbon", 
-                                    "description": "Absorption mass coefficient of black carbon at 550nm", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.absorption.black_carbon", 
-                                    "cardinality": "0.1", 
-                                    "type": "float", 
-                                    "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Dust", 
-                                    "description": "Absorption mass coefficient of dust at 550nm", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.absorption.dust", 
-                                    "cardinality": "0.1", 
-                                    "type": "float", 
-                                    "uiOrdinal": 2
-                                }, 
-                                {
-                                    "label": "Organics", 
-                                    "description": "Absorption mass coefficient of organics at 550nm", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.absorption.organics", 
-                                    "cardinality": "0.1", 
-                                    "type": "float", 
-                                    "uiOrdinal": 3
-                                }, 
-                                {
-                                    "label": "Non Absorbing State", 
-                                    "description": "Do organics have non-absorbing state \"Phi\"?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.absorption.non_absorbing_state", 
-                                    "cardinality": "0.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 4
-                                }
-                            ]
-                        }, 
-                        {
-                            "label": "Mixtures", 
-                            "description": "", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.mixtures", 
-                            "properties": [
-                                {
-                                    "label": "External", 
-                                    "description": "Is there external mixing with respect to chemical composition?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.mixtures.external", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Internal", 
-                                    "description": "Is there internal mixing with respect to chemical composition?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.mixtures.internal", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 2
-                                }, 
-                                {
-                                    "label": "Mixing Rule", 
-                                    "description": "If there is internal mixing with respect to chemical composition then indicate the mixinrg rule", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.mixtures.mixing_rule", 
-                                    "cardinality": "0.1", 
-                                    "type": "str", 
-                                    "uiOrdinal": 3
-                                }
-                            ]
-                        }, 
-                        {
-                            "label": "Impact Of H2o", 
-                            "description": "", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.impact_of_h2o", 
-                            "properties": [
-                                {
-                                    "label": "Size", 
-                                    "description": "Does H2O impact size?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.impact_of_h2o.size", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Internal Mixture", 
-                                    "description": "Does H2O impact internal mixture?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.impact_of_h2o.internal_mixture", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 2
-                                }
-                            ]
-                        }, 
-                        {
-                            "label": "Radiative Scheme", 
-                            "description": "Radiative scheme for aerosol", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.radiative_scheme", 
-                            "properties": [
-                                {
-                                    "label": "Overview", 
-                                    "description": "Overview of radiative scheme", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.radiative_scheme.overview", 
-                                    "cardinality": "1.1", 
-                                    "type": "str", 
-                                    "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Shortwave Bands", 
-                                    "description": "Number of shortwave bands", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.radiative_scheme.shortwave_bands", 
-                                    "cardinality": "1.1", 
-                                    "type": "int", 
-                                    "uiOrdinal": 2
-                                }, 
-                                {
-                                    "label": "Longwave Bands", 
-                                    "description": "Number of longwave bands", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.radiative_scheme.longwave_bands", 
-                                    "cardinality": "1.1", 
-                                    "type": "int", 
-                                    "uiOrdinal": 3
-                                }
-                            ]
-                        }, 
-                        {
-                            "label": "Cloud Interactions", 
-                            "description": "Aerosol-cloud interactions", 
-                            "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions", 
-                            "properties": [
-                                {
-                                    "label": "Overview", 
-                                    "description": "Overview of aerosol-cloud interactions", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.overview", 
-                                    "cardinality": "1.1", 
-                                    "type": "str", 
-                                    "uiOrdinal": 1
-                                }, 
-                                {
-                                    "label": "Twomey", 
-                                    "description": "Is the Twomey effect included?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.twomey", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 2
-                                }, 
-                                {
-                                    "label": "Twomey Minimum Ccn", 
-                                    "description": "If the Twomey effect is included, then what is the minimum CCN number?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.twomey_minimum_ccn", 
-                                    "cardinality": "0.1", 
-                                    "type": "int", 
-                                    "uiOrdinal": 3
-                                }, 
-                                {
-                                    "label": "Drizzle", 
-                                    "description": "Does the scheme affect drizzle?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.drizzle", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 4
-                                }, 
-                                {
-                                    "label": "Cloud Lifetime", 
-                                    "description": "Does the scheme affect cloud lifetime?", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.cloud_lifetime", 
-                                    "cardinality": "1.1", 
-                                    "type": "bool", 
-                                    "uiOrdinal": 5
-                                }, 
-                                {
-                                    "label": "Longwave Bands", 
-                                    "description": "Number of longwave bands", 
-                                    "id": "cmip6.aerosol.model.optical_radiative_properties.cloud_interactions.longwave_bands", 
-                                    "cardinality": "1.1", 
-                                    "type": "int", 
-                                    "uiOrdinal": 6
-                                }
-                            ]
-                        }
-                    ]
                 }
             ]
         }

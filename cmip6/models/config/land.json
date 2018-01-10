@@ -1849,12 +1849,20 @@
             "contact": "David Hassell", 
             "properties": [
                 {
+                    "label": "Overview", 
+                    "description": "Overview of lakes in the land surface", 
+                    "id": "cmip6.land.lakes.overview", 
+                    "cardinality": "1.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Coupling With Rivers", 
                     "description": "Are lakes coupled to the river routing model component?", 
                     "id": "cmip6.land.lakes.coupling_with_rivers", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Time Step", 
@@ -1862,7 +1870,7 @@
                     "id": "cmip6.land.lakes.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Quantities Exchanged With Rivers", 
@@ -1889,7 +1897,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Vertical Grid", 
@@ -1897,7 +1905,7 @@
                     "id": "cmip6.land.lakes.vertical_grid", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -1905,7 +1913,7 @@
                     "id": "cmip6.land.lakes.prognostic_variables", 
                     "cardinality": "1.1", 
                     "type": "str", 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }
             ], 
             "subProcesses": [
@@ -2083,9 +2091,9 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Model Overview", 
+                "label": "Overview", 
                 "description": "Overview of land surface model.", 
-                "id": "cmip6.land.key_properties.model_overview", 
+                "id": "cmip6.land.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "uiOrdinal": 1
