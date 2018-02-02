@@ -4005,87 +4005,93 @@
         "description": "Atmosphere key properties", 
         "id": "cmip6.atmos.key_properties", 
         "contact": "Charlotte Pascoe", 
-        "properties": [
-            {
-                "label": "Model Overview", 
-                "description": "Overview of atmosphere model", 
-                "id": "cmip6.atmos.key_properties.model_overview", 
-                "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 1
-            }, 
-            {
-                "label": "Model Name", 
-                "description": "Name of atmosphere model code (CAM 4.0, ARPEGE 3.2,...)", 
-                "id": "cmip6.atmos.key_properties.model_name", 
-                "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 2
-            }, 
-            {
-                "label": "Model Family", 
-                "description": "Type of atmospheric model.", 
-                "id": "cmip6.atmos.key_properties.model_family", 
-                "cardinality": "1.1", 
-                "type": "enum", 
-                "enum": {
-                    "label": "Model Family Type", 
-                    "description": "Type of atmospheric model", 
-                    "isOpen": true, 
-                    "choices": [
-                        {
-                            "label": "AGCM", 
-                            "description": "Atmospheric General Circulation Model"
-                        }, 
-                        {
-                            "label": "ARCM", 
-                            "description": "Atmospheric Regional Climate Model"
-                        }
-                    ]
-                }, 
-                "uiOrdinal": 3
-            }, 
-            {
-                "label": "Basic Approximations", 
-                "description": "Basic approximations made in the atmosphere.", 
-                "id": "cmip6.atmos.key_properties.basic_approximations", 
-                "cardinality": "1.N", 
-                "type": "enum", 
-                "enum": {
-                    "label": "Basic Approximations Attributes", 
-                    "description": "Basic approximations made in the atmosphere", 
-                    "isOpen": true, 
-                    "choices": [
-                        {
-                            "label": "primitive equations", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "non-hydrostatic", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "anelastic", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "Boussinesq", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "hydrostatic", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "quasi-hydrostatic", 
-                            "description": null
-                        }
-                    ]
-                }, 
-                "uiOrdinal": 4
-            }
-        ], 
         "subProcesses": [
+            {
+                "label": "Overview", 
+                "description": "Top level key properties", 
+                "id": "cmip6.atmos.key_properties.overview", 
+                "contact": "Charlotte Pascoe", 
+                "properties": [
+                    {
+                        "label": "Model Overview", 
+                        "description": "Overview of atmosphere model", 
+                        "id": "cmip6.atmos.key_properties.overview.model_overview", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Model Name", 
+                        "description": "Name of atmosphere model code (CAM 4.0, ARPEGE 3.2,...)", 
+                        "id": "cmip6.atmos.key_properties.overview.model_name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Model Family", 
+                        "description": "Type of atmospheric model.", 
+                        "id": "cmip6.atmos.key_properties.overview.model_family", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Model Family Type", 
+                            "description": "Type of atmospheric model", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "AGCM", 
+                                    "description": "Atmospheric General Circulation Model"
+                                }, 
+                                {
+                                    "label": "ARCM", 
+                                    "description": "Atmospheric Regional Climate Model"
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Basic Approximations", 
+                        "description": "Basic approximations made in the atmosphere.", 
+                        "id": "cmip6.atmos.key_properties.overview.basic_approximations", 
+                        "cardinality": "1.N", 
+                        "type": "enum", 
+                        "enum": {
+                            "label": "Basic Approximations Attributes", 
+                            "description": "Basic approximations made in the atmosphere", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "primitive equations", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "non-hydrostatic", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "anelastic", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Boussinesq", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "hydrostatic", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "quasi-hydrostatic", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }, 
             {
                 "label": "Resolution", 
                 "description": "Characteristics of the model resolution", 
