@@ -1,13 +1,13 @@
 {
     "canonical_name": "piClim-aer", 
-    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea suface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Aerosols are set to present day (2014) values, other forcing agents are specified at pre-industrial values.  Run for 30 years.", 
+    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases), pre-industrial tropospheric ozone precursors and present day (2014) emissions of aersols and aerosol precursors.  This is a timeslice experiment of 30 years total.", 
     "governing_mips": [
-        "rfmip"
+        "aerchemmip"
     ], 
-    "keywords": "RFMIP, Tier 1, PD aer O3, present day aerosols and ozone, uncoupled, atmosphere-land", 
-    "long_name": "effective radiative forcing by present day aerosols", 
+    "keywords": "AerChemMIP, Tier 1, piControl perturbation, 1850 SST, 1850 WMGHG, 2014 aerosol", 
+    "long_name": "Pre-industrial timeslice with fixed SSTs, but 2014 aerosol emissions", 
     "mip_era": "cmip6", 
-    "rationale": "Quantify present-day effective radiative forcing (ERF) by aerosols and ozone.", 
+    "rationale": "To compute the ERF for 1850 and 2014.", 
     "related_experiments": [
         {
             "name": "piClim-control", 
@@ -24,12 +24,30 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "30yrs", 
-            "description": "Run for 30 years.", 
+            "canonical_name": "1850-1851 30yrs", 
+            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
             "isConformanceRequested": false, 
-            "keywords": "30 years", 
-            "label": "30yrs", 
+            "keywords": "1850-1851, idealised, 30 years", 
+            "label": "1850-1851 30yrs", 
             "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2014 Aerosol Emissions", 
+            "description": "Impose 2014 emissions of aerosols.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, Aerosol, emissions", 
+            "label": "2014 Aerosol Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2014 Aerosol Precursor Emissions", 
+            "description": "Impose 2014 emissions of aerosol precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "2014, aerosol precursor, emissions", 
+            "label": "2014 Aerosol Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "piControl SST Climatology", 
@@ -50,34 +68,71 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2014 Aerosols", 
-            "description": "Impose present day (2014) aerosol concentrations.", 
+            "canonical_name": "1850 Non-Reactive WMGHG Concentrations", 
+            "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
             "isConformanceRequested": true, 
-            "keywords": "2014, aerosols", 
-            "label": "2014 Aerosols", 
-            "scope": "experiment", 
+            "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "1850 Non-Reactive WMGHG Concentrations", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2014 Aerosol Precursors", 
-            "description": "Impose present day (2014) aerosol precursors.", 
+            "canonical_name": "1850 Methane Concentration", 
+            "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
             "isConformanceRequested": true, 
-            "keywords": "2014, areosol precursors", 
-            "label": "2014 Aerosol Precursors", 
-            "scope": "experiment", 
+            "keywords": "pre-industrial, 1850, methane, concentrations", 
+            "label": "1850 Methane Concentration", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Pre-Industrial Forcing Excluding Aerosols", 
-            "description": "Pre-Industrial forcing excluding aerosols.", 
+            "canonical_name": "1850 N2O Concentration", 
+            "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
             "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing, excluding aerosols", 
-            "label": "Pre-Industrial Forcing Excluding Aerosols", 
+            "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
+            "label": "1850 N2O Concentration", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Tropospheric Ozone Precursor Emissions", 
+            "description": "Impose pre-industrial (1850) tropospheric ozone precursor emissions (e.g. NOx).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, tropospheric ozone precursors, NTCF", 
+            "label": "1850 Tropospheric Ozone Precursor Emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "description": "Impose pre-industrial (1850) concentrations of Ozone depleting Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "1850 Ozone Depleting Halocarbon Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial (1850) land-use forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Irradiance Forcing", 
+            "description": "Pre-Industrial solar forcing. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes pre-industrial solar forcing (1850-1873 mean).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, pre-industrial, pi, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Pre-Industrial Solar Irradiance Forcing", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "Pre-Industrial Solar Particle Forcing", 
-            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
             "isConformanceRequested": true, 
             "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
             "label": "Pre-Industrial Solar Particle Forcing", 
@@ -92,15 +147,15 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "Atmosphere-Land Configuration", 
-            "description": "An atmosphere-land model with interactive vegetation.", 
+            "canonical_name": "AGCM-Aer Configuration", 
+            "description": "Use an Atmosphere general circulation model with interactive aerosols.", 
             "isConformanceRequested": false, 
-            "keywords": "atmosphere-land model configuration", 
-            "label": "Atmosphere-Land Configuration", 
+            "keywords": "AGCM, Aerosols, AGCM-Aer, Atmosphere General Circulation Model, interactive aerosols", 
+            "label": "AGCM-Aer Configuration", 
             "type": "model-configuration"
         }
     ], 
     "tier": 1, 
-    "uid": "b7203bb9-bed3-49bd-8775-611c66366402", 
+    "uid": "bfe14f6a-e016-47b4-9c90-a4ec7c337612", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-aer?client=mohc"
 }

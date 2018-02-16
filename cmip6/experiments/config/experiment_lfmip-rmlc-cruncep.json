@@ -1,0 +1,70 @@
+{
+    "canonical_name": "lfmip-rmLC-cruNcep", 
+    "description": "Scenario forced experiment with prescribed land surface climatology derived from transient 30 year running mean from land-hist-cruNcep.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
+    "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land 30yr running mean, land-hist-cruNcep, CRU NCEP", 
+    "long_name": "prescribed land surface climatology derived from 30 yr running mean from land-hist-cruNcep", 
+    "mip_era": "cmip6", 
+    "rationale": "Diagnose land-climate feedback including ocean response. For diagnosing shifts in the regions of strong land-atmosphere coupling, and shifts in potential predictability related to land surface states.", 
+    "related_experiments": [
+        {
+            "name": "land-hist-cruNcep", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "lfmip-rmLC", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "lfmip-rmLC-cruNcep", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "lfmip-rmLC-wfdei", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1980-2100 121yrs", 
+            "description": "Historical scenario, from 1980 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1980, 2100", 
+            "label": "1980-2100 121yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LFMIP running mean land-hist-cruNcep forcing", 
+            "description": "30 year running mean land surface forcing calculated from the land-hist-cruNcep simulation.  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, 30 year running mean, land surface forcing, land-hist-cruNcep, CRU NCEP", 
+            "label": "LFMIP running mean land-hist-cruNcep forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "2ab7720e-d9a4-4069-ae6d-acc2af8fc3d9", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lfmip-rmLC-cruNcep?client=mohc"
+}

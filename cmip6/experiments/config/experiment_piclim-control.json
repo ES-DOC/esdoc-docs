@@ -1,133 +1,33 @@
 {
     "canonical_name": "piClim-control", 
-    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases) pre-industrial emissions of NTCF (near-term climate forcers). This is a timeslice experiment of 30 years total.  Provided this experiment is run with the same interactive chemistry and aerosols, this will be the same as the RFMIP piClim-control experiment.", 
+    "description": "Preindustrial conditions. An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperatures (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology. Run for 30 years.", 
     "governing_mips": [
-        "aerchemmip"
+        "rfmip"
     ], 
-    "keywords": "AerChemMIP, Tier 1, piControl, pre-industrial control, 1850 SST, 1850 WMGHG, 1850 NTCF, near term climate forcers", 
-    "long_name": "pre-industrial with prescribed climatological SSTs", 
+    "keywords": "RFMIP, Tier 1, pre-industrial control, uncoupled, atmosphere-land", 
+    "long_name": "effective radiative forcing in present-day", 
     "mip_era": "cmip6", 
-    "rationale": "To compute the ERF for 1850 and 2014.", 
+    "rationale": "Baseline for model-specific effective radiative forcing (ERF) calculations.", 
     "related_experiments": [
         {
-            "name": "piClim-2xDMS", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-2xNOx", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-2xVOC", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-2xdust", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-2xfire", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-2xss", 
-            "relationship": "is_control_for"
-        }, 
-        {
             "name": "piClim-4xCO2", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-BC", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-CH4", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-HC", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-N2O", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-NH3", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-NOx", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-NTCF", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-O3", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-OC", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-SO2", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-VOC", 
-            "relationship": "is_control_for"
+            "relationship": "is_sibling_of"
         }, 
         {
             "name": "piClim-aer", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-aer", 
-            "relationship": "is_control_for"
+            "relationship": "is_sibling_of"
         }, 
         {
             "name": "piClim-anthro", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-control", 
             "relationship": "is_sibling_of"
         }, 
         {
             "name": "piClim-ghg", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histaer", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histall", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histghg", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-histnat", 
-            "relationship": "is_control_for"
+            "relationship": "is_sibling_of"
         }, 
         {
             "name": "piClim-lu", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-spAer-aer", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "piClim-spAer-anthro", 
-            "relationship": "is_control_for"
+            "relationship": "is_sibling_of"
         }, 
         {
             "name": "piControl", 
@@ -140,57 +40,12 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1851 30yrs", 
-            "description": "Idealised temporal constraint, repeating 1850 for 30 years", 
+            "canonical_name": "30yrs", 
+            "description": "Run for 30 years.", 
             "isConformanceRequested": false, 
-            "keywords": "1850-1851, idealised, 30 years", 
-            "label": "1850-1851 30yrs", 
+            "keywords": "30 years", 
+            "label": "30yrs", 
             "type": "temporal-constraint"
-        }, 
-        {
-            "canonical_name": "1850 Non-Reactive WMGHG Concentrations", 
-            "description": "Impose pre-industrial (1850) non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
-            "isConformanceRequested": true, 
-            "keywords": "Pre-industrial, 1850, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
-            "label": "1850 Non-Reactive WMGHG Concentrations", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850 Methane Concentration", 
-            "description": "Impose pre-industrial, 1850, concentrations of methane (CH4).", 
-            "isConformanceRequested": true, 
-            "keywords": "pre-industrial, 1850, methane, concentrations", 
-            "label": "1850 Methane Concentration", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850 N2O Concentration", 
-            "description": "Impose 1850 concentration of Nitrous Oxide (N2O).", 
-            "isConformanceRequested": true, 
-            "keywords": "1850, Nitrous Oxide, N2O, concentrations", 
-            "label": "1850 N2O Concentration", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850 NTCF Emissions", 
-            "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
-            "isConformanceRequested": true, 
-            "keywords": "1850, Near Term Climate Forcers, NTCF, emissions", 
-            "label": "1850 NTCF Emissions", 
-            "scope": "experiment", 
-            "type": "forcing-constraint"
-        }, 
-        {
-            "canonical_name": "1850 Ozone Depleting Halocarbon Concentrations", 
-            "description": "Impose pre-industrial (1850) concentrations of Ozone depleating Halocarbons (CFC/HCFC).", 
-            "isConformanceRequested": true, 
-            "keywords": "pre-industrial, 1850, halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
-            "label": "1850 Ozone Depleting Halocarbon Concentrations", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
         }, 
         {
             "canonical_name": "piControl SST Climatology", 
@@ -211,29 +66,28 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Pre-Industrial Land Use", 
-            "description": "Constant pre-industrial (1850) land-use forcing.", 
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration.", 
             "isConformanceRequested": true, 
-            "keywords": "Pre-Industrial, 1850, Land Use", 
-            "label": "Pre-Industrial Land Use", 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
             "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Solar Irradiance Forcing", 
-            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "canonical_name": "RFMIP Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding CO2. See table 1 in Pincus et al 2016.", 
             "isConformanceRequested": true, 
-            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
-            "label": "Historical Solar Irradiance Forcing", 
-            "scope": "mip-era", 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "RFMIP Pre-Industrial Forcing Excluding CO2", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Solar Particle Forcing", 
-            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
             "isConformanceRequested": true, 
-            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
-            "label": "Historical Solar Particle Forcing", 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -245,15 +99,15 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AGCM-Aer Configuration", 
-            "description": "Use an Atmosphere general circulation model with interactive aerosols.", 
+            "canonical_name": "Atmosphere-Land Configuration", 
+            "description": "An atmosphere-land model with interactive vegetation.", 
             "isConformanceRequested": false, 
-            "keywords": "AGCM, Aerosols, AGCM-Aer, Atmosphere General Circulation Model, interactive aerosols", 
-            "label": "AGCM-Aer Configuration", 
+            "keywords": "atmosphere-land model configuration", 
+            "label": "Atmosphere-Land Configuration", 
             "type": "model-configuration"
         }
     ], 
     "tier": 1, 
-    "uid": "707b899a-423d-4543-af7b-93128a24ae32", 
+    "uid": "e4b84ccf-5644-46c5-b859-31a154c19802", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-control?client=mohc"
 }

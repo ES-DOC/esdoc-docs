@@ -1,0 +1,61 @@
+{
+    "canonical_name": "ism-ctrl-std", 
+    "description": "Offline ice sheet control run for the ISMIP6 InitMIP experiments. A stand-alone ice sheet model is initialized using a modelling groups' own initialisation technique.  ism-ctrl-std is an unforced forward experiment where the surface mass balance remains identical to the one used during the initialization procedure. The choice of model input data is unconstrained to allow participants the use of their preferred model setup without modification.", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 1, InitMIP, Control", 
+    "long_name": "offline ice sheet model initMIP control", 
+    "mip_era": "cmip6", 
+    "rationale": "Explores the uncertainty in sea level due to ice sheet initialization. This experiment is designed to evaluate the initialization procedure and characterize model drift.", 
+    "related_experiments": [
+        {
+            "name": "ism-asmb-std", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ism-asmb-std", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "ism-bsmb-std", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "ism-bsmb-std", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1950-2014Init 100yrs", 
+            "description": "Initialise some time between 1950 and 2014 and run for 100 years. The specific year of initialisation is unconstrained to allow the use of different observational data sets that may be tied to certain time periods.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, initialised in recent past, 100 years", 
+            "label": "1950-2014Init 100yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "InitMIP Initialisation conditions", 
+            "description": "Describe the offline ice sheet model setup for initialisation of InitMIP experiments.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, InitMIP, Initialisation", 
+            "label": "InitMIP Initialisation conditions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "38068d30-e403-4e70-8c64-9f291547c4b4", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ism-ctrl-std?client=mohc"
+}

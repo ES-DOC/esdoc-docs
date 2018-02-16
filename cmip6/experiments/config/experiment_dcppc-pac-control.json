@@ -1,6 +1,6 @@
 {
     "canonical_name": "dcppC-pac-control", 
-    "description": "Restore the Pacific sea surface temperature to the model control run climatology.  Outside the restored region the model evolves freely allowing full climate system response. No interannual changes in external forcing. Time period: 10 years. 25 ensemble members. SST signal may also be impoased by altering suface fluxes.", 
+    "description": "Restore the Pacific sea surface temperature to the model control run climatology.  Outside the restored region the model evolves freely allowing full climate system response. No interannual changes in external forcing. Time period: 10 years. 25 ensemble members. SST signal may also be imposed by altering surface fluxes.", 
     "governing_mips": [
         "dcpp"
     ], 
@@ -9,6 +9,14 @@
     "mip_era": "cmip6", 
     "rationale": "Control experiment for Pacific Decadal Variability (AMV) perturbation experiments. To discover how models respond to imposed slowly evolving SST anomalies in the Pacific.  To illuminate model behaviour on decadal time scales and possible mechanistic links to retarded and accelerated global surface temperature variations and regional climate anomalies.", 
     "related_experiments": [
+        {
+            "name": "dcppC-ipv-NexTrop-neg", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "dcppC-ipv-NexTrop-pos", 
+            "relationship": "is_control_for"
+        }, 
         {
             "name": "dcppC-ipv-neg", 
             "relationship": "is_control_for"
@@ -71,7 +79,7 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Solar Particle Forcing", 
-            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
             "isConformanceRequested": true, 
             "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
             "label": "Pre-Industrial Solar Particle Forcing", 
@@ -95,6 +103,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "84607685-77a0-4d4d-b4be-3fdeb14ce874", 
+    "uid": "6b45bed6-aaa3-4cbd-9de0-b5deb304c517", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/dcppC-pac-control?client=mohc"
 }

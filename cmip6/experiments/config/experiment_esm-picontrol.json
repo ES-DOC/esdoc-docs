@@ -1,14 +1,18 @@
 {
     "canonical_name": "esm-piControl", 
-    "description": "A pre-inudsutrial control simulation with non-evolving pre-industrial conditions and atmospheric CO2 calculated. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
+    "description": "A pre-industrial control simulation with non-evolving pre-industrial conditions and atmospheric CO2 calculated. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  The piControl starts after an initial climate spin-up, during which the climate begins to come into balance with the forcing. The recommended minimum length for the piControl is 500 years. To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.", 
     "governing_mips": [
         "cmip"
     ], 
     "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate, ESM, Earth System Model", 
-    "long_name": "Pre-Industrial Control Earth System Model", 
+    "long_name": "pre-industrial control simulation with CO2 concentration calculated", 
     "mip_era": "cmip6", 
     "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.", 
     "related_experiments": [
+        {
+            "name": "esm-piControl-spinup", 
+            "relationship": "is_initialized_by"
+        }, 
         {
             "name": "piControl", 
             "relationship": "is_sibling_of"
@@ -30,7 +34,7 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Forcing", 
-            "description": "Pre-Industrail forcing", 
+            "description": "Pre-Industrial forcing", 
             "isConformanceRequested": true, 
             "keywords": "Pre-industrial forcing", 
             "label": "Pre-Industrial Forcing", 
@@ -38,7 +42,7 @@
         }, 
         {
             "canonical_name": "Pre-Industrial Solar Particle Forcing", 
-            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemstiry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair produciont by galactic gosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
             "isConformanceRequested": true, 
             "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
             "label": "Pre-Industrial Solar Particle Forcing", 

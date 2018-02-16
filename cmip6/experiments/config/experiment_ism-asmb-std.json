@@ -1,0 +1,70 @@
+{
+    "canonical_name": "ism-asmb-std", 
+    "description": "InitMIP surface mass balance (SMB) anomaly experiment. Apply a prescribed SMB anomaly, provided by ISMIP6,  which mimics the expected SMB change from the end of the 20th century to the end of the 21st century. All other model parameters and forcings are the same as those used for initialization.\nNeither SMB anomaly nor bedrock topography should be adjusted in response to ice-sheet geometric changes in this experiment. However, groups are encouraged to submit multiple \"physics\" ensemble members for example by changing the sliding law, stress balance approximation, model resolution, or datasets (such as using different bedrocks).", 
+    "governing_mips": [
+        "ismip6"
+    ], 
+    "keywords": "ISMIP6, Tier 1, InitMIP, SMB, Surface mass balance, Greenland Component, Antarctica Component", 
+    "long_name": "offline ice sheet forced by initMIP synthetic atmospheric experiment", 
+    "mip_era": "cmip6", 
+    "rationale": "To test the model response to a large perturbation in ice sheet surface mass balance.", 
+    "related_experiments": [
+        {
+            "name": "ism-ctrl-std", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ism-ctrl-std", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "ismip6"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1950-2014Init 100yrs", 
+            "description": "Initialise some time between 1950 and 2014 and run for 100 years. The specific year of initialisation is unconstrained to allow the use of different observational data sets that may be tied to certain time periods.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, initialised in recent past, 100 years", 
+            "label": "1950-2014Init 100yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "InitMIP SMB anomaly", 
+            "description": "Apply a prescribed Surface Mass Balance (SMB) anomaly, provided by ISMIP6,  which mimics the expected SMB change from the end of the 20th century to the end of the 21st century.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, ISMIP6-specified input, InitMIP, SMB, surface mass balance", 
+            "label": "InitMIP SMB anomaly", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "InitMIP Initialisation conditions", 
+            "description": "Describe the offline ice sheet model setup for initialisation of InitMIP experiments.", 
+            "isConformanceRequested": true, 
+            "keywords": "ISMIP6, InitMIP, Initialisation", 
+            "label": "InitMIP Initialisation conditions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "InitMIP Ensemble", 
+            "description": "Ensemble members vary for example by changing the sliding law, stress balance approximation, model resolution, or datasets (such as using different bedrocks).", 
+            "isConformanceRequested": true, 
+            "keywords": "InitMIP, perturbations, ensemble", 
+            "label": "InitMIP Ensemble", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ISM Configuration", 
+            "description": "Stand-alone ice sheet model", 
+            "isConformanceRequested": false, 
+            "keywords": "ISM, Ice sheet Model", 
+            "label": "ISM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "800240dc-7a60-4d45-856c-0e7462b6b2d8", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ism-asmb-std?client=mohc"
+}

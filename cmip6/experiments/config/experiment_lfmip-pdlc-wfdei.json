@@ -1,0 +1,70 @@
+{
+    "canonical_name": "lfmip-pdLC-wfdei", 
+    "description": "Scenario forced experiment with prescribed land surface climatology derived from land-hist-wfdei (1980-2014). The experiment is comprised of transient coupled atmosphere-ocean simulations in which a selection of land surface characteristics is prescribed rather than interactively calculated in the model.  The \"climatological\" land surface forcing is calculated as the mean annual cycle in the period 1980-2014 from the land-hist-wfdei simulations.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
+    "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed Land 1980-2014, WFDEI", 
+    "long_name": "prescribed land surface climatology derived from land-hist-wfdei", 
+    "mip_era": "cmip6", 
+    "rationale": "Diagnose land-climate feedback including ocean response. To diagnose the role of land-atmosphere feedback at climate time scales.", 
+    "related_experiments": [
+        {
+            "name": "land-hist-wfdei", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "lfmip-pdLC", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "lfmip-pdLC-cruNcep", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "lfmip-pdLC-princeton", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1980-2100 121yrs", 
+            "description": "Historical scenario, from 1980 to the end of the 21st century", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1980, 2100", 
+            "label": "1980-2100 121yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "LFMIP present day land-hist-wfdei forcing", 
+            "description": "Land surface forcing climatology for present climate (1980-2014) from the land-hist-wfdei simulation.  Note the climatological median of soil water and snow water is to be used instead of climatological means.", 
+            "isConformanceRequested": true, 
+            "keywords": "LFMIP, present climate, land surface forcing, land-hist-wfdei, WFDEI", 
+            "label": "LFMIP present day land-hist-wfdei forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumOne", 
+            "description": "An ensemble of at least one simulation", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 1, at least 1, ensemble, run, simulation", 
+            "label": "MinimumOne", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "fb569174-6e88-4a03-a138-f6717af7f7f9", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/lfmip-pdLC-wfdei?client=mohc"
+}

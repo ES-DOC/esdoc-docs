@@ -1,0 +1,62 @@
+{
+    "canonical_name": "esm-piControl-spinup", 
+    "description": "A pre-industrial control spin-up simulation with non-evolving pre-industrial forcing and atmospheric CO2 calculated. Conditions chosen to be representative of the period prior to the onset of large-scale industrialization, with 1850 being the reference year.  This experiment describes an initial climate spin-up, during which the climate begins to come into balance with the forcing.  To be performed with an Earth System Model (ESM) that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere.  Run until Earth System reaches equilibrium.", 
+    "governing_mips": [
+        "cmip"
+    ], 
+    "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate, ESM, Earth System Model, spin-up", 
+    "long_name": "pre-industrial control simulation with CO2 concentration calculated (spin-up)", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "esm-piControl", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "piControl-spinup", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "cmip", 
+        "deck"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "Pre-Industrial Forcing", 
+            "description": "Pre-Industrial forcing", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing", 
+            "label": "Pre-Industrial Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "ESM Configuration", 
+            "description": "Use a fully coupled Earth system model", 
+            "isConformanceRequested": false, 
+            "keywords": "ESM, Earth System Model", 
+            "label": "ESM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "41696dc8-96d3-4912-bd53-09f59e32e991", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-piControl-spinup?client=mohc"
+}
