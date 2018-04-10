@@ -82,6 +82,13 @@
         <dt><b>Version</b></dt><dd>1.0.2</dd><dt><b>Date</b></dt><dd>2018-04-05</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>changed str to bool for 'profile'</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.3"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.3</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Removed some l-str</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -555,14 +562,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe source of bathymetry in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd>
+        <dt><b>Description</b></dt><dd>Describe source of bathymetry in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe source of bathymetry in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd>
+        <dt><b>Description</b></dt><dd>Describe source of bathymetry in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.key_properties.bathymetry.source</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="nonoceanic_waters"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1507,14 +1514,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Details of vertical time stepping in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd>
+        <dt><b>Description</b></dt><dd>Details of vertical time stepping in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Details of vertical time stepping in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd>
+        <dt><b>Description</b></dt><dd>Details of vertical time stepping in ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.timestepping_framework.vertical_physics.method</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="advection"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -1703,14 +1710,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is advection of passive tracers different than active ? if so, describe.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd>
+        <dt><b>Description</b></dt><dd>Is advection of passive tracers different than active ? if so, describe.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is advection of passive tracers different than active ? if so, describe.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd>
+        <dt><b>Description</b></dt><dd>Is advection of passive tracers different than active ? if so, describe.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.advection.lateral_tracers.passive_tracers_advection</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="vertical_tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -1983,14 +1990,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy viscosity coeff in lateral physics momemtum scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd>
+        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy viscosity coeff in lateral physics momemtum scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy viscosity coeff in lateral physics momemtum scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd>
+        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy viscosity coeff in lateral physics momemtum scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coeff_background"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2235,14 +2242,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd>
+        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd>
+        <dt><b>Description</b></dt><dd>If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coeff_background"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3365,18 +3372,32 @@
         <dt><b>Description</b></dt><dd>Is the ocean sunlight penetration scheme ocean colour dependent ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.ocean_colour</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.ocean_colour</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="extinction_depth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="extinction_depth_description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe and list extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth</dd>
+        <dt><b>Description</b></dt><dd>Describe extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth_description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth_description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe and list extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth</dd>
+        <dt><b>Description</b></dt><dd>Describe extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth_description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth_description</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="extinction_depths"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depths</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depths</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>List extinctions depths for sunlight penetration scheme (if applicable).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depths</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depths</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fresh_water_forcing"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

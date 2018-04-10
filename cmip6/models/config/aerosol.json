@@ -30,7 +30,7 @@
                 }, 
                 {
                     "label": "Scheme", 
-                    "description": "Method for aerosol transport modeling", 
+                    "description": "Method for aerosol transport modelling", 
                     "id": "cmip6.aerosol.transport.scheme", 
                     "cardinality": "1.1", 
                     "type": "enum", 
@@ -41,7 +41,7 @@
                         "isOpen": false, 
                         "choices": [
                             {
-                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "label": "Uses atmospheric chemistry transport scheme", 
                                 "description": null
                             }, 
                             {
@@ -66,18 +66,18 @@
                 }, 
                 {
                     "label": "Mass Conservation Scheme", 
-                    "description": "Method used to ensure mass conservation.", 
+                    "description": "Methods used to ensure mass conservation.", 
                     "id": "cmip6.aerosol.transport.mass_conservation_scheme", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Mass Conservation Methods", 
-                        "description": "Method used to ensure mass conservation", 
+                        "description": "Methods used to ensure mass conservation", 
                         "isOpen": true, 
                         "choices": [
                             {
-                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "label": "Uses atmospheric chemistry transport scheme", 
                                 "description": null
                             }, 
                             {
@@ -109,7 +109,7 @@
                         "isOpen": true, 
                         "choices": [
                             {
-                                "label": "Uses Atmospheric chemistry transport scheme", 
+                                "label": "Uses atmospheric chemistry transport scheme", 
                                 "description": null
                             }, 
                             {
@@ -499,13 +499,13 @@
                 }, 
                 {
                     "label": "Impact Of H2o", 
-                    "description": "", 
+                    "description": "The impact of H2O on aerosols", 
                     "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of  in aerosol model.", 
+                            "description": "Overview of the impact of h2o on aerosols in aerosol model.", 
                             "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -675,7 +675,7 @@
                 }, 
                 {
                     "label": "Overview", 
-                    "description": "Overview of atmosperic aerosol model", 
+                    "description": "Overview of atmospheric aerosol model", 
                     "id": "cmip6.aerosol.model.overview", 
                     "cardinality": "1.1", 
                     "type": "l-str", 
@@ -684,14 +684,14 @@
                 }, 
                 {
                     "label": "Processes", 
-                    "description": "Processes included in the Aerosol model.", 
+                    "description": "Processes included in the aerosol model.", 
                     "id": "cmip6.aerosol.model.processes", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Model Processes", 
-                        "description": "Processes included in the Aerosol model.", 
+                        "description": "Processes included in the aerosol model.", 
                         "isOpen": false, 
                         "choices": [
                             {
@@ -752,14 +752,14 @@
                 }, 
                 {
                     "label": "Coupling", 
-                    "description": "Other model components coupled to the Aerosol model", 
+                    "description": "Other model components coupled to the aerosol model", 
                     "id": "cmip6.aerosol.model.coupling", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Coupling", 
-                        "description": "Other model components coupled to the Aerosol model.", 
+                        "description": "Other model components coupled to the aerosol model.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -796,14 +796,14 @@
                 }, 
                 {
                     "label": "Gas Phase Precursors", 
-                    "description": "List of gas phase aerosol precursors.", 
+                    "description": "Gas phase aerosol precursors.", 
                     "id": "cmip6.aerosol.model.gas_phase_precursors", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Gas Phase Precursors", 
-                        "description": "List of gas phase aerosol precursors.", 
+                        "description": "Gas phase aerosol precursors.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -844,7 +844,7 @@
                 }, 
                 {
                     "label": "Scheme Type", 
-                    "description": "Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
+                    "description": "Type(s) of aerosol scheme used by the aerosol model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
                     "id": "cmip6.aerosol.model.scheme_type", 
                     "cardinality": "1.N", 
                     "type": "enum", 
@@ -872,14 +872,14 @@
                 }, 
                 {
                     "label": "Bulk Scheme Species", 
-                    "description": "List of species covered by the bulk scheme.", 
+                    "description": "Species covered by the bulk scheme.", 
                     "id": "cmip6.aerosol.model.bulk_scheme_species", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Species", 
-                        "description": "List of species.", 
+                        "description": "Aerosol species.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -1002,7 +1002,7 @@
                     }, 
                     {
                         "label": "Canonical Horizontal Resolution", 
-                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+                        "description": "Expression quoted for gross comparisons of resolution, e.g. 50km or 0.1 degrees etc.", 
                         "id": "cmip6.aerosol.grid.resolution.canonical_horizontal_resolution", 
                         "cardinality": "0.1", 
                         "type": "str", 
@@ -1029,9 +1029,9 @@
                     }, 
                     {
                         "label": "Is Adaptive Grid", 
-                        "description": "Default is False. Set true if grid resolution changes during execution.", 
+                        "description": "Set to true if grid resolution changes during execution.", 
                         "id": "cmip6.aerosol.grid.resolution.is_adaptive_grid", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
                         "uiOrdinal": 6
@@ -1110,7 +1110,7 @@
                 "description": "Basic approximations made in the aerosol model", 
                 "id": "cmip6.aerosol.key_properties.basic_approximations", 
                 "cardinality": "1.1", 
-                "type": "l-str", 
+                "type": "str", 
                 "is_cim_property": false, 
                 "uiOrdinal": 5
             }, 
@@ -1131,7 +1131,7 @@
                             "description": null
                         }, 
                         {
-                            "label": "3D number concenttration for aerosols", 
+                            "label": "3D number concentration for aerosols", 
                             "description": null
                         }
                     ]
@@ -1331,7 +1331,7 @@
                     }, 
                     {
                         "label": "Variables 3D", 
-                        "description": "Three dimensionsal forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux", 
+                        "description": "Three dimensional forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux", 
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_3D", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
@@ -1340,7 +1340,7 @@
                     }, 
                     {
                         "label": "Variables 2D", 
-                        "description": "Two dimensionsal forcing variables, e.g. land-sea mask definition", 
+                        "description": "Two dimensional forcing variables, e.g. land-sea mask definition", 
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_2D", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
@@ -1349,7 +1349,7 @@
                     }, 
                     {
                         "label": "Frequency", 
-                        "description": "Frequency with which meteological forcings are applied (in seconds).", 
+                        "description": "Frequency with which meteorological forcings are applied (in seconds).", 
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.frequency", 
                         "cardinality": "0.1", 
                         "type": "int", 
@@ -1360,13 +1360,13 @@
             }, 
             {
                 "label": "Resolution", 
-                "description": "Resolution in the aersosol model grid", 
+                "description": "Resolution in the aerosol model grid", 
                 "id": "cmip6.aerosol.key_properties.resolution", 
                 "contact": "David Hassell", 
                 "properties": [
                     {
                         "label": "Overview", 
-                        "description": "Overview of resolution in the aersosol model grid in aerosol model.", 
+                        "description": "Overview of resolution in the aerosol model grid in aerosol model.", 
                         "id": "cmip6.aerosol.key_properties.resolution.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
@@ -1411,9 +1411,9 @@
                     }, 
                     {
                         "label": "Is Adaptive Grid", 
-                        "description": "Default is False. Set true if grid resolution changes during execution.", 
+                        "description": "Set to true if the grid resolution changes during execution.", 
                         "id": "cmip6.aerosol.key_properties.resolution.is_adaptive_grid", 
-                        "cardinality": "0.1", 
+                        "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
                         "uiOrdinal": 6
@@ -1437,7 +1437,7 @@
                     }, 
                     {
                         "label": "Description", 
-                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
@@ -1446,7 +1446,7 @@
                     }, 
                     {
                         "label": "Global Mean Metrics Used", 
-                        "description": "List set of metrics of the global mean state used in tuning model/component", 
+                        "description": "List of metrics of the global mean state used in tuning model/component", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
@@ -1455,7 +1455,7 @@
                     }, 
                     {
                         "label": "Regional Metrics Used", 
-                        "description": "List of regional metrics of mean state used in tuning model/component", 
+                        "description": "List of metrics of regional mean state used in tuning model/component", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 

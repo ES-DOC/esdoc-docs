@@ -26,6 +26,13 @@
         <dt><b>Version</b></dt><dd>0.3.0</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Replaced some occurences of 'str' with 'cs-str' and 'l-str'</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="0.3.1"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>0.3.1</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Removed some l-str</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -142,14 +149,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the atmospheric chemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the atmospheric chemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the atmospheric chemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the atmospheric chemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables_form"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1724,14 +1731,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any environmental conditions taken into account by the photolysis scheme (e.g. whether pressure- and temperature-sensitive cross-sections and quantum yields in the photolysis calculations are modified to reflect the modelled conditions.)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd>
+        <dt><b>Description</b></dt><dd>Describe any environmental conditions taken into account by the photolysis scheme (e.g. whether pressure- and temperature-sensitive cross-sections and quantum yields in the photolysis calculations are modified to reflect the modelled conditions.)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any environmental conditions taken into account by the photolysis scheme (e.g. whether pressure- and temperature-sensitive cross-sections and quantum yields in the photolysis calculations are modified to reflect the modelled conditions.)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd>
+        <dt><b>Description</b></dt><dd>Describe any environmental conditions taken into account by the photolysis scheme (e.g. whether pressure- and temperature-sensitive cross-sections and quantum yields in the photolysis calculations are modified to reflect the modelled conditions.)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node></node></map>

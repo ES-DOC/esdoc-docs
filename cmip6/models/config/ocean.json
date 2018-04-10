@@ -256,7 +256,7 @@
                             "description": "Details of vertical time stepping in ocean", 
                             "id": "cmip6.ocean.timestepping_framework.vertical_physics.method", 
                             "cardinality": "1.1", 
-                            "type": "l-str", 
+                            "type": "str", 
                             "is_cim_property": false, 
                             "uiOrdinal": 1
                         }
@@ -437,7 +437,7 @@
                             "description": "Is advection of passive tracers different than active ? if so, describe.", 
                             "id": "cmip6.ocean.advection.lateral_tracers.passive_tracers_advection", 
                             "cardinality": "0.1", 
-                            "type": "l-str", 
+                            "type": "str", 
                             "is_cim_property": false, 
                             "uiOrdinal": 7
                         }
@@ -693,7 +693,7 @@
                                     "description": "If space-varying, describe variations of eddy viscosity coeff in lateral physics momemtum scheme", 
                                     "id": "cmip6.ocean.lateral_physics.momentum.eddy_viscosity_coeff.variable_coefficient", 
                                     "cardinality": "0.1", 
-                                    "type": "l-str", 
+                                    "type": "str", 
                                     "is_cim_property": false, 
                                     "uiOrdinal": 3
                                 }, 
@@ -896,7 +896,7 @@
                                     "description": "If space-varying, describe variations of eddy diffusity coeff in lateral physics tracers scheme", 
                                     "id": "cmip6.ocean.lateral_physics.tracers.eddy_diffusity_coeff.variable_coefficient", 
                                     "cardinality": "0.1", 
-                                    "type": "l-str", 
+                                    "type": "str", 
                                     "is_cim_property": false, 
                                     "uiOrdinal": 3
                                 }, 
@@ -1817,13 +1817,22 @@
                                     "uiOrdinal": 2
                                 }, 
                                 {
-                                    "label": "Extinction Depth", 
-                                    "description": "Describe and list extinctions depths for sunlight penetration scheme (if applicable).", 
-                                    "id": "cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth", 
+                                    "label": "Extinction Depth Description", 
+                                    "description": "Describe extinctions depths for sunlight penetration scheme (if applicable).", 
+                                    "id": "cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depth_description", 
                                     "cardinality": "0.1", 
                                     "type": "l-str", 
                                     "is_cim_property": false, 
                                     "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Extinction Depths", 
+                                    "description": "List extinctions depths for sunlight penetration scheme (if applicable).", 
+                                    "id": "cmip6.ocean.boundary_forcing.tracers.sunlight_penetration.extinction_depths", 
+                                    "cardinality": "0.1", 
+                                    "type": "cs-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 4
                                 }
                             ]
                         }, 
@@ -2482,7 +2491,7 @@
                         "description": "Describe source of bathymetry in ocean", 
                         "id": "cmip6.ocean.key_properties.bathymetry.source", 
                         "cardinality": "1.1", 
-                        "type": "l-str", 
+                        "type": "str", 
                         "is_cim_property": false, 
                         "uiOrdinal": 4
                     }

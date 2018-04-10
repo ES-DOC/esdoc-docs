@@ -47,6 +47,13 @@
         <dt><b>Version</b></dt><dd>0.6.0</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Replaced some occurences of 'str' with 'cs-str' and 'l-str'</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.2"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.2</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Removed some l-str</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -247,14 +254,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how model realms are structured into independent software components (coupled via a coupler) and internal software components.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd>
+        <dt><b>Description</b></dt><dd>Describe how model realms are structured into independent software components (coupled via a coupler) and internal software components.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how model realms are structured into independent software components (coupled via a coupler) and internal software components.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd>
+        <dt><b>Description</b></dt><dd>Describe how model realms are structured into independent software components (coupled via a coupler) and internal software components.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.software_properties.components_structure</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coupler"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -471,28 +478,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.energy_balance</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fresh_water_balance"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="conservation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>

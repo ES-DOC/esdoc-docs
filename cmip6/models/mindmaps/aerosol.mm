@@ -33,6 +33,20 @@
         <dt><b>Version</b></dt><dd>1.0.1</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell (NCAS)</dd><dt><b>Comment</b></dt><dd>Replaced some 'occurences of str' with 'cs-str' and 'l-str'</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.2"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.2</dd><dt><b>Date</b></dt><dd>2018-04-10</dd><dt><b>Person</b></dt><dd>David Hassell (NCAS)</dd><dt><b>Comment</b></dt><dd>Changed cardinality of is_adaptive_grid to 1.1, and fixed typos</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.2"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.2</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Removed some l-str</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -142,14 +156,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables_form"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -173,11 +187,11 @@
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>prognostic_vars_types.3D mass/volume ratio for aerosols</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="3D number concenttration for aerosols"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="3D number concentration for aerosols"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>prognostic_vars_types.3D number concenttration for aerosols</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>prognostic_vars_types.3D number concentration for aerosols</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -422,49 +436,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Three dimensionsal forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd>
+        <dt><b>Description</b></dt><dd>Three dimensional forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Three dimensionsal forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd>
+        <dt><b>Description</b></dt><dd>Three dimensional forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_3D</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="variables_2D"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Two dimensionsal forcing variables, e.g. land-sea mask definition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd>
+        <dt><b>Description</b></dt><dd>Two dimensional forcing variables, e.g. land-sea mask definition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Two dimensionsal forcing variables, e.g. land-sea mask definition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd>
+        <dt><b>Description</b></dt><dd>Two dimensional forcing variables, e.g. land-sea mask definition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.variables_2D</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Frequency with which meteological forcings are applied (in seconds).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd>
+        <dt><b>Description</b></dt><dd>Frequency with which meteorological forcings are applied (in seconds).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Frequency with which meteological forcings are applied (in seconds).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd>
+        <dt><b>Description</b></dt><dd>Frequency with which meteorological forcings are applied (in seconds).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.meteorological_forcings.frequency</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="resolution"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Resolution in the aersosol model grid</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution</dd>
+        <dt><b>Description</b></dt><dd>Resolution in the aerosol model grid</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -527,14 +541,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Default is False. Set true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Set to true if the grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Default is False. Set true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Set to true if the grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.resolution.is_adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -548,42 +562,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global_mean_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="regional_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of metrics of regional mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of metrics of regional mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="trend_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -646,14 +660,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 50km or 0.1 degrees etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 50km or 0.1 degrees etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.canonical_horizontal_resolution</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_horizontal_gridpoints"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -688,14 +702,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Default is False. Set true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Set to true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Default is False. Set true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Set to true if grid resolution changes during execution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.grid.resolution.is_adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="transport"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -716,21 +730,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for aerosol transport modeling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_schemes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd>
+        <dt><b>Description</b></dt><dd>Method for aerosol transport modelling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_schemes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for aerosol transport modeling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_schemes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd>
+        <dt><b>Description</b></dt><dd>Method for aerosol transport modelling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_schemes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.scheme</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses Atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>transport_schemes.Uses Atmospheric chemistry transport scheme</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>transport_schemes.Uses atmospheric chemistry transport scheme</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Specific transport scheme (eulerian)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -765,21 +779,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used to ensure mass conservation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:mass_conservation_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Methods used to ensure mass conservation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:mass_conservation_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used to ensure mass conservation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:mass_conservation_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Methods used to ensure mass conservation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:mass_conservation_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.mass_conservation_scheme</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses Atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>mass_conservation_methods.Uses Atmospheric chemistry transport scheme</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>mass_conservation_methods.Uses atmospheric chemistry transport scheme</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Mass adjustment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -817,11 +831,11 @@
         <dt><b>Description</b></dt><dd>Transport by convention</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.transport.convention</dd><dt><b>Type</b></dt><dd>ENUM:convection_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.transport.convention</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses Atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Uses atmospheric chemistry transport scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>convection_types.Uses Atmospheric chemistry transport scheme</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>convection_types.Uses atmospheric chemistry transport scheme</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Convective fluxes connected to tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1283,7 +1297,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd /><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.optical_radiative_properties.impact_of_h2o</dd>
+        <dt><b>Description</b></dt><dd>The impact of H2O on aerosols</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.optical_radiative_properties.impact_of_h2o</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="size"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1486,28 +1500,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmosperic aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of atmospheric aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmosperic aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of atmospheric aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes included in the Aerosol model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.processes</dd><dt><b>Type</b></dt><dd>ENUM:model_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.processes</dd>
+        <dt><b>Description</b></dt><dd>Processes included in the aerosol model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.processes</dd><dt><b>Type</b></dt><dd>ENUM:model_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes included in the Aerosol model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.processes</dd><dt><b>Type</b></dt><dd>ENUM:model_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.processes</dd>
+        <dt><b>Description</b></dt><dd>Processes included in the aerosol model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.processes</dd><dt><b>Type</b></dt><dd>ENUM:model_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.processes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Dry deposition"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1605,14 +1619,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other model components coupled to the Aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.coupling</dd><dt><b>Type</b></dt><dd>ENUM:coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.coupling</dd>
+        <dt><b>Description</b></dt><dd>Other model components coupled to the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.coupling</dd><dt><b>Type</b></dt><dd>ENUM:coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.coupling</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other model components coupled to the Aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.coupling</dd><dt><b>Type</b></dt><dd>ENUM:coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.coupling</dd>
+        <dt><b>Description</b></dt><dd>Other model components coupled to the aerosol model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.coupling</dd><dt><b>Type</b></dt><dd>ENUM:coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.coupling</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1668,14 +1682,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of gas phase aerosol precursors.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd><dt><b>Type</b></dt><dd>ENUM:gas_phase_precursors</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd>
+        <dt><b>Description</b></dt><dd>Gas phase aerosol precursors.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd><dt><b>Type</b></dt><dd>ENUM:gas_phase_precursors</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of gas phase aerosol precursors.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd><dt><b>Type</b></dt><dd>ENUM:gas_phase_precursors</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd>
+        <dt><b>Description</b></dt><dd>Gas phase aerosol precursors.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd><dt><b>Type</b></dt><dd>ENUM:gas_phase_precursors</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.gas_phase_precursors</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="DMS"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1738,14 +1752,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:scheme_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Type(s) of aerosol scheme used by the aerosol model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:scheme_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:scheme_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Type(s) of aerosol scheme used by the aerosol model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:scheme_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1773,14 +1787,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of species covered by the bulk scheme.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd><dt><b>Type</b></dt><dd>ENUM:species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd>
+        <dt><b>Description</b></dt><dd>Species covered by the bulk scheme.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd><dt><b>Type</b></dt><dd>ENUM:species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of species covered by the bulk scheme.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd><dt><b>Type</b></dt><dd>ENUM:species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd>
+        <dt><b>Description</b></dt><dd>Species covered by the bulk scheme.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd><dt><b>Type</b></dt><dd>ENUM:species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.aerosol.model.bulk_scheme_species</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sulphate"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
