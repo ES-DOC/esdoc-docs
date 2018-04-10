@@ -1,6 +1,6 @@
 {
     "label": "Land", 
-    "description": "Land Surface Realm", 
+    "description": "Land Surface", 
     "id": "cmip6.land", 
     "contact": "David Hassell", 
     "processes": [
@@ -11,20 +11,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of soil in the land surface", 
-                    "id": "cmip6.land.soil.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the soil in land model.", 
+                    "id": "cmip6.land.soil.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface soil in land model.", 
+                    "id": "cmip6.land.soil.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Heat Water Coupling", 
                     "description": "Describe the coupling between heat and water in the soil", 
                     "id": "cmip6.land.soil.heat_water_coupling", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Number Of Soil Layers", 
@@ -32,15 +43,17 @@
                     "id": "cmip6.land.soil.number_of_soil layers", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the soil scheme", 
                     "id": "cmip6.land.soil.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 4
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }
             ], 
             "subProcesses": [
@@ -51,52 +64,67 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of key properties of the land surface soil map in land model.", 
+                            "id": "cmip6.land.soil.soil_map.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Description", 
                             "description": "General description of soil map", 
                             "id": "cmip6.land.soil.soil_map.description", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Structure", 
                             "description": "Describe the soil structure map", 
                             "id": "cmip6.land.soil.soil_map.structure", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Texture", 
                             "description": "Describe the soil texture map", 
                             "id": "cmip6.land.soil.soil_map.texture", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Organic Matter", 
                             "description": "Describe the soil organic matter map", 
                             "id": "cmip6.land.soil.soil_map.organic_matter", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Albedo", 
                             "description": "Describe the soil albedo map", 
                             "id": "cmip6.land.soil.soil_map.albedo", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 5
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 6
                         }, 
                         {
                             "label": "Water Table", 
                             "description": "Describe the soil water table map, if any", 
                             "id": "cmip6.land.soil.soil_map.water_table", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 6
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 7
                         }, 
                         {
                             "label": "Continuously Varying Soil Depth", 
@@ -104,15 +132,17 @@
                             "id": "cmip6.land.soil.soil_map.continuously_varying_soil_depth", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 7
+                            "is_cim_property": false, 
+                            "uiOrdinal": 8
                         }, 
                         {
                             "label": "Soil Depth", 
                             "description": "Describe the soil depth map", 
                             "id": "cmip6.land.soil.soil_map.soil_depth", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 8
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 9
                         }
                     ]
                 }, 
@@ -123,12 +153,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.soil.snow_free_albedo.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Prognostic", 
                             "description": "Is snow free albedo prognostic?", 
                             "id": "cmip6.land.soil.snow_free_albedo.prognostic", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Functions", 
@@ -136,6 +176,7 @@
                             "id": "cmip6.land.soil.snow_free_albedo.functions", 
                             "cardinality": "0.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Snow Free Albedo Function Types", 
                                 "description": "Describe the dependancies on snow free albedo calculations", 
@@ -155,7 +196,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Direct Diffuse", 
@@ -163,6 +204,7 @@
                             "id": "cmip6.land.soil.snow_free_albedo.direct_diffuse", 
                             "cardinality": "0.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Direct Diffuse Types", 
                                 "description": "Describe the distinction between direct and diffuse albedo", 
@@ -178,7 +220,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Number Of Wavelength Bands", 
@@ -186,7 +228,8 @@
                             "id": "cmip6.land.soil.snow_free_albedo.number_of_wavelength_bands", 
                             "cardinality": "0.1", 
                             "type": "int", 
-                            "uiOrdinal": 4
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -197,12 +240,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of key properties of the land surface soil hydrology in land model.", 
+                            "id": "cmip6.land.soil.hydrology.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Description", 
                             "description": "General description of the soil hydrological model", 
                             "id": "cmip6.land.soil.hydrology.description", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Time Step", 
@@ -210,23 +263,26 @@
                             "id": "cmip6.land.soil.hydrology.time_step", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Tiling", 
                             "description": "Describe the soil hydrology tiling, if any.", 
                             "id": "cmip6.land.soil.hydrology.tiling", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Vertical Discretisation", 
                             "description": "Describe the typical vertical discretisation", 
                             "id": "cmip6.land.soil.hydrology.vertical_discretisation", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Number Of Ground Water Layers", 
@@ -234,7 +290,8 @@
                             "id": "cmip6.land.soil.hydrology.number_of_ground_water_layers", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 5
+                            "is_cim_property": false, 
+                            "uiOrdinal": 6
                         }, 
                         {
                             "label": "Lateral Connectivity", 
@@ -242,6 +299,7 @@
                             "id": "cmip6.land.soil.hydrology.lateral_connectivity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Lateral Connectivity Types", 
                                 "description": "Describe the lateral connectivity between tiles", 
@@ -257,7 +315,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 7
                         }, 
                         {
                             "label": "Method", 
@@ -265,6 +323,7 @@
                             "id": "cmip6.land.soil.hydrology.method", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Water Storage Method Types", 
                                 "description": "Describe the method by which water is stored in the land surface scheme/model", 
@@ -288,7 +347,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 7
+                            "uiOrdinal": 8
                         }
                     ], 
                     "propertySets": [
@@ -303,6 +362,7 @@
                                     "id": "cmip6.land.soil.hydrology.freezing.number_of_ground_ice_layers", 
                                     "cardinality": "1.1", 
                                     "type": "int", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -310,7 +370,8 @@
                                     "description": "Describe the method of ice storage", 
                                     "id": "cmip6.land.soil.hydrology.freezing.ice_storage_method", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }, 
                                 {
@@ -318,7 +379,8 @@
                                     "description": "Describe the treatment of permafrost, if any, within the land surface scheme", 
                                     "id": "cmip6.land.soil.hydrology.freezing.permafrost", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 3
                                 }
                             ]
@@ -333,7 +395,8 @@
                                     "description": "General describe how drainage is included in the land surface scheme", 
                                     "id": "cmip6.land.soil.hydrology.drainage.description", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -342,6 +405,7 @@
                                     "id": "cmip6.land.soil.hydrology.drainage.types", 
                                     "cardinality": "0.N", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Drainage Types", 
                                         "description": "Different types of runoff represented by the land surface model", 
@@ -386,12 +450,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.soil.heat_treatment.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Description", 
                             "description": "General description of how heat treatment properties are defined", 
                             "id": "cmip6.land.soil.heat_treatment.description", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Time Step", 
@@ -399,23 +473,26 @@
                             "id": "cmip6.land.soil.heat_treatment.time_step", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Tiling", 
                             "description": "Describe the soil heat treatment tiling, if any.", 
                             "id": "cmip6.land.soil.heat_treatment.tiling", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Vertical Discretisation", 
                             "description": "Describe the typical vertical discretisation", 
                             "id": "cmip6.land.soil.heat_treatment.vertical_discretisation", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Heat Storage", 
@@ -423,6 +500,7 @@
                             "id": "cmip6.land.soil.heat_treatment.heat_storage", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Heat Storage Types", 
                                 "description": "Method of heat storage", 
@@ -438,7 +516,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }, 
                         {
                             "label": "Processes", 
@@ -446,6 +524,7 @@
                             "id": "cmip6.land.soil.heat_treatment.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Heat Treatment Process Types", 
                                 "description": "Processes included in the treatment of soil heat", 
@@ -461,7 +540,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 7
                         }
                     ]
                 }
@@ -474,20 +553,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of snow in the land surface", 
-                    "id": "cmip6.land.snow.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the snow in land model.", 
+                    "id": "cmip6.land.snow.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface snow in land model.", 
+                    "id": "cmip6.land.snow.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the snow tiling, if any.", 
                     "id": "cmip6.land.snow.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Number Of Snow Layers", 
@@ -495,7 +585,8 @@
                     "id": "cmip6.land.snow.number_of_snow_layers", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Density", 
@@ -503,6 +594,7 @@
                     "id": "cmip6.land.snow.density", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Density Methods", 
                         "description": "Treatment of snow density", 
@@ -518,7 +610,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Water Equivalent", 
@@ -526,6 +618,7 @@
                     "id": "cmip6.land.snow.water_equivalent", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Water Equivalent Methods", 
                         "description": "Treatment of snow water equivalent", 
@@ -541,7 +634,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Heat Content", 
@@ -549,6 +642,7 @@
                     "id": "cmip6.land.snow.heat_content", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Heat Content Methods", 
                         "description": "Treatment of snow heat content", 
@@ -564,7 +658,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Temperature", 
@@ -572,6 +666,7 @@
                     "id": "cmip6.land.snow.temperature", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Temperature Methods", 
                         "description": "Treatment of snow temperature", 
@@ -587,7 +682,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Liquid Water Content", 
@@ -595,6 +690,7 @@
                     "id": "cmip6.land.snow.liquid_water_content", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Liquid Water Content Methods", 
                         "description": "Treatment of snow liquid water", 
@@ -610,7 +706,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 8
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Snow Cover Fractions", 
@@ -618,6 +714,7 @@
                     "id": "cmip6.land.snow.snow_cover_fractions", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Cover Fraction Types", 
                         "description": "Snow cover fraction types", 
@@ -633,7 +730,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 9
+                    "uiOrdinal": 10
                 }, 
                 {
                     "label": "Processes", 
@@ -641,6 +738,7 @@
                     "id": "cmip6.land.snow.processes", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Snow Processes", 
                         "description": "Snow-related processes", 
@@ -664,15 +762,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 10
+                    "uiOrdinal": 11
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the snow scheme", 
                     "id": "cmip6.land.snow.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 11
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 12
                 }
             ], 
             "subProcesses": [
@@ -683,11 +782,21 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.snow.snow_albedo.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Type", 
                             "description": "Describe the treatment of snow-covered land albedo", 
                             "id": "cmip6.land.snow.snow_albedo.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Snow Albedo Type", 
                                 "description": "Describe the treatment of snow-covered land albedo", 
@@ -707,7 +816,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Functions", 
@@ -715,6 +824,7 @@
                             "id": "cmip6.land.snow.snow_albedo.functions", 
                             "cardinality": "0.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Snow Albedo Function Types", 
                                 "description": "Describe the dependancies on snow albedo calculations", 
@@ -742,7 +852,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }
@@ -755,12 +865,22 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of vegetation in the land surface", 
-                    "id": "cmip6.land.vegetation.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the vegetation in land model.", 
+                    "id": "cmip6.land.vegetation.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface vegetation in land model.", 
+                    "id": "cmip6.land.vegetation.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Time Step", 
@@ -768,7 +888,8 @@
                     "id": "cmip6.land.vegetation.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 2
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Dynamic Vegetation", 
@@ -776,15 +897,17 @@
                     "id": "cmip6.land.vegetation.dynamic_vegetation", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the vegetation tiling, if any.", 
                     "id": "cmip6.land.vegetation.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 4
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Vegetation Representation", 
@@ -792,6 +915,7 @@
                     "id": "cmip6.land.vegetation.vegetation_representation", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Vegetation Representation Types", 
                         "description": "Vegetation classification used", 
@@ -807,7 +931,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Vegetation Types", 
@@ -815,6 +939,7 @@
                     "id": "cmip6.land.vegetation.vegetation_types", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Vegetation Types", 
                         "description": "Vegetation type in the classification", 
@@ -842,7 +967,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Biome Types", 
@@ -850,6 +975,7 @@
                     "id": "cmip6.land.vegetation.biome_types", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Biome Types", 
                         "description": "Biome type in the classification", 
@@ -905,7 +1031,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Vegetation Time Variation", 
@@ -913,6 +1039,7 @@
                     "id": "cmip6.land.vegetation.vegetation_time_variation", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Vegetation Time Variation", 
                         "description": "How the vegetation fraction in each tile are varying with time", 
@@ -932,15 +1059,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 8
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Vegetation Map", 
                     "description": "If vegetation fractions are not dynamically updated , describe the vegetation map used (common name and reference, if possible)", 
                     "id": "cmip6.land.vegetation.vegetation_map", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 9
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 10
                 }, 
                 {
                     "label": "Interception", 
@@ -948,7 +1076,8 @@
                     "id": "cmip6.land.vegetation.interception", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 10
+                    "is_cim_property": false, 
+                    "uiOrdinal": 11
                 }, 
                 {
                     "label": "Phenology", 
@@ -956,6 +1085,7 @@
                     "id": "cmip6.land.vegetation.phenology", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Phenology Methods", 
                         "description": "Treatment of vegetation phenology", 
@@ -971,15 +1101,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 11
+                    "uiOrdinal": 12
                 }, 
                 {
                     "label": "Phenology Description", 
                     "description": "General description of the treatment of vegetation phenology", 
                     "id": "cmip6.land.vegetation.phenology_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 12
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 13
                 }, 
                 {
                     "label": "Leaf Area Index", 
@@ -987,6 +1118,7 @@
                     "id": "cmip6.land.vegetation.leaf_area_index", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Leaf Area Index Methods", 
                         "description": "Treatment of vegetation leaf area index", 
@@ -1006,15 +1138,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 13
+                    "uiOrdinal": 14
                 }, 
                 {
                     "label": "Leaf Area Index Description", 
                     "description": "General description of the treatment of leaf area index", 
                     "id": "cmip6.land.vegetation.leaf_area_index_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 14
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 15
                 }, 
                 {
                     "label": "Biomass", 
@@ -1022,6 +1155,7 @@
                     "id": "cmip6.land.vegetation.biomass", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Biomass Methods", 
                         "description": "Treatment of vegetation biomass", 
@@ -1037,15 +1171,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 15
+                    "uiOrdinal": 16
                 }, 
                 {
                     "label": "Biomass Description", 
                     "description": "General description of the treatment of vegetation biomass", 
                     "id": "cmip6.land.vegetation.biomass_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 16
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 17
                 }, 
                 {
                     "label": "Biogeography", 
@@ -1053,6 +1188,7 @@
                     "id": "cmip6.land.vegetation.biogeography", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Biogeography Methods", 
                         "description": "Treatment of vegetation biogeography", 
@@ -1068,15 +1204,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 17
+                    "uiOrdinal": 18
                 }, 
                 {
                     "label": "Biogeography Description", 
                     "description": "General description of the treatment of vegetation biogeography", 
                     "id": "cmip6.land.vegetation.biogeography_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 18
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 19
                 }, 
                 {
                     "label": "Stomatal Resistance", 
@@ -1084,6 +1221,7 @@
                     "id": "cmip6.land.vegetation.stomatal_resistance", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Stomatal Resistance Methods", 
                         "description": "Dependancies of vegetation stomatal resistance", 
@@ -1111,23 +1249,25 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 19
+                    "uiOrdinal": 20
                 }, 
                 {
                     "label": "Stomatal Resistance Description", 
                     "description": "General description of the treatment of vegetation stomatal resistance", 
                     "id": "cmip6.land.vegetation.stomatal_resistance_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 20
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 21
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the vegetation scheme", 
                     "id": "cmip6.land.vegetation.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 21
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 22
                 }
             ]
         }, 
@@ -1138,20 +1278,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of energy balance in land surface", 
-                    "id": "cmip6.land.energy_balance.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the energy balance in land model.", 
+                    "id": "cmip6.land.energy_balance.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface energy balance in land model.", 
+                    "id": "cmip6.land.energy_balance.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the energy balance tiling, if any.", 
                     "id": "cmip6.land.energy_balance.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Number Of Surface Temperatures", 
@@ -1159,7 +1310,8 @@
                     "id": "cmip6.land.energy_balance.number_of_surface_temperatures", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Evaporation", 
@@ -1167,6 +1319,7 @@
                     "id": "cmip6.land.energy_balance.evaporation", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Evaporation Formulation Types", 
                         "description": "Specify the formulation method for land surface evaporation", 
@@ -1190,7 +1343,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Processes", 
@@ -1198,6 +1351,7 @@
                     "id": "cmip6.land.energy_balance.processes", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Process Types", 
                         "description": "Processes which are included in the energy balance scheme", 
@@ -1209,7 +1363,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }
             ]
         }, 
@@ -1220,20 +1374,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of carbon cycle in land surface", 
-                    "id": "cmip6.land.carbon_cycle.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the carbon cycle in land model.", 
+                    "id": "cmip6.land.carbon_cycle.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface carbon cycle in land model.", 
+                    "id": "cmip6.land.carbon_cycle.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the carbon cycle tiling, if any.", 
                     "id": "cmip6.land.carbon_cycle.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Time Step", 
@@ -1241,7 +1406,8 @@
                     "id": "cmip6.land.carbon_cycle.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Anthropogenic Carbon", 
@@ -1249,6 +1415,7 @@
                     "id": "cmip6.land.carbon_cycle.anthropogenic_carbon", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Anthropogenic Carbon Methods", 
                         "description": "Treatment of the anthropogenic carbn pool", 
@@ -1268,15 +1435,16 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the carbon scheme", 
                     "id": "cmip6.land.carbon_cycle.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 5
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
                 }
             ], 
             "subProcesses": [
@@ -1287,28 +1455,40 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.carbon_cycle.vegetation.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Number Of Carbon Pools", 
                             "description": "Enter the number of carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.vegetation.number_of_carbon_pools", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Carbon Pools", 
                             "description": "List the carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.vegetation.carbon_pools", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Forest Stand Dynamics", 
                             "description": "Describe the treatment of forest stand dyanmics", 
                             "id": "cmip6.land.carbon_cycle.vegetation.forest_stand_dynamics", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ], 
                     "propertySets": [
@@ -1322,7 +1502,8 @@
                                     "description": "Describe the general method used for photosynthesis (e.g. type of photosynthesis, distinction between C3 and C4 grasses, Nitrogen depencence, etc.)", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.photosynthesis.method", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }
                             ]
@@ -1337,7 +1518,8 @@
                                     "description": "Describe the general method used for maintainence respiration", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.maintainance_respiration", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -1345,7 +1527,8 @@
                                     "description": "Describe the general method used for growth respiration", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.growth_respiration", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }
                             ]
@@ -1360,7 +1543,8 @@
                                     "description": "Describe the general principle behind the allocation scheme", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.allocation.method", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -1369,6 +1553,7 @@
                                     "id": "cmip6.land.carbon_cycle.vegetation.allocation.allocation_bins", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Allocation Bin Types", 
                                         "description": "Specify the allocation of vegetation carbon bins", 
@@ -1400,6 +1585,7 @@
                                     "id": "cmip6.land.carbon_cycle.vegetation.allocation.allocation_fractions", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Allocation Fraction Types", 
                                         "description": "Describe how the fractions of allocation are calculated", 
@@ -1437,7 +1623,8 @@
                                     "description": "Describe the general principle behind the phenology scheme", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.phenology.method", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }
                             ]
@@ -1452,7 +1639,8 @@
                                     "description": "Describe the general principle behind the mortality scheme", 
                                     "id": "cmip6.land.carbon_cycle.vegetation.mortality.method", 
                                     "cardinality": "1.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }
                             ]
@@ -1466,36 +1654,49 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.carbon_cycle.litter.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Number Of Carbon Pools", 
                             "description": "Enter the number of carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.litter.number_of_carbon_pools", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Carbon Pools", 
                             "description": "List the carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.litter.carbon_pools", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Decomposition", 
                             "description": "List the decomposition methods used", 
                             "id": "cmip6.land.carbon_cycle.litter.decomposition", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Method", 
-                            "description": "List the general method used", 
+                            "description": "Describe the general method used", 
                             "id": "cmip6.land.carbon_cycle.litter.method", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -1506,36 +1707,49 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.carbon_cycle.soil.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Number Of Carbon Pools", 
                             "description": "Enter the number of carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.soil.number_of_carbon_pools", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Carbon Pools", 
                             "description": "List the carbon pools used", 
                             "id": "cmip6.land.carbon_cycle.soil.carbon_pools", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Decomposition", 
                             "description": "List the decomposition methods used", 
                             "id": "cmip6.land.carbon_cycle.soil.decomposition", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Method", 
-                            "description": "List the general method used", 
+                            "description": "Describe the general method used", 
                             "id": "cmip6.land.carbon_cycle.soil.method", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -1546,36 +1760,49 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.carbon_cycle.permafrost_carbon.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Is Permafrost Included", 
                             "description": "Is permafrost included?", 
                             "id": "cmip6.land.carbon_cycle.permafrost_carbon.is_permafrost_included", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Emitted Greenhouse Gases", 
                             "description": "List the GHGs emitted", 
                             "id": "cmip6.land.carbon_cycle.permafrost_carbon.emitted_greenhouse_gases", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 2
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Decomposition", 
                             "description": "List the decomposition methods used", 
                             "id": "cmip6.land.carbon_cycle.permafrost_carbon.decomposition", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 3
+                            "type": "cs-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Impact On Soil Properties", 
                             "description": "Describe the impact of permafrost on soil properties", 
                             "id": "cmip6.land.carbon_cycle.permafrost_carbon.impact_on_soil_properties", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 4
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -1588,20 +1815,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of the nitrogen cycle in the land surface", 
-                    "id": "cmip6.land.nitrogen_cycle.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the nitrogen cycle in land model.", 
+                    "id": "cmip6.land.nitrogen_cycle.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface nitrogen cycle in land model.", 
+                    "id": "cmip6.land.nitrogen_cycle.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the notrogen cycle tiling, if any.", 
                     "id": "cmip6.land.nitrogen_cycle.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Time Step", 
@@ -1609,15 +1847,17 @@
                     "id": "cmip6.land.nitrogen_cycle.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the nitrogen scheme", 
                     "id": "cmip6.land.nitrogen_cycle.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 4
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }
             ]
         }, 
@@ -1628,20 +1868,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of river routing in the land surface", 
-                    "id": "cmip6.land.river_routing.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the river routing in land model.", 
+                    "id": "cmip6.land.river_routing.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface river routing in land model.", 
+                    "id": "cmip6.land.river_routing.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Tiling", 
                     "description": "Describe the river routing, if any.", 
                     "id": "cmip6.land.river_routing.tiling", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Time Step", 
@@ -1649,7 +1900,8 @@
                     "id": "cmip6.land.river_routing.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Grid Inherited From Land Surface", 
@@ -1657,15 +1909,17 @@
                     "id": "cmip6.land.river_routing.grid_inherited_from_land_surface", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 4
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Grid Description", 
                     "description": "General description of grid, if not inherited from land surface", 
                     "id": "cmip6.land.river_routing.grid_description", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 5
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Number Of Reservoirs", 
@@ -1673,7 +1927,8 @@
                     "id": "cmip6.land.river_routing.number_of_reservoirs", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 6
+                    "is_cim_property": false, 
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Water Re Evaporation", 
@@ -1681,6 +1936,7 @@
                     "id": "cmip6.land.river_routing.water_re_evaporation", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Water Re Evaporation Types", 
                         "description": "TODO", 
@@ -1696,7 +1952,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 7
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Coupled To Atmosphere", 
@@ -1704,15 +1960,17 @@
                     "id": "cmip6.land.river_routing.coupled_to_atmosphere", 
                     "cardinality": "0.1", 
                     "type": "bool", 
-                    "uiOrdinal": 8
+                    "is_cim_property": false, 
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Coupled To Land", 
                     "description": "Describe the coupling between land and rivers", 
                     "id": "cmip6.land.river_routing.coupled_to_land", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 9
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 10
                 }, 
                 {
                     "label": "Quantities Exchanged With Atmosphere", 
@@ -1720,6 +1978,7 @@
                     "id": "cmip6.land.river_routing.quantities_exchanged_with_atmosphere", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Quantities Exchanged With Atmosphere Types", 
                         "description": "Quantities that are exchanged between river routing and the atmosphere model components", 
@@ -1739,7 +1998,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 10
+                    "uiOrdinal": 11
                 }, 
                 {
                     "label": "Basin Flow Direction Map", 
@@ -1747,6 +2006,7 @@
                     "id": "cmip6.land.river_routing.basin_flow_direction_map", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Basin Flow Direction Map Types", 
                         "description": "What type of basin flow direction map is being used?", 
@@ -1762,23 +2022,25 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 11
+                    "uiOrdinal": 12
                 }, 
                 {
                     "label": "Flooding", 
                     "description": "Describe the representation of flooding, if any", 
                     "id": "cmip6.land.river_routing.flooding", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 12
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 13
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the river routing", 
                     "id": "cmip6.land.river_routing.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 13
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 14
                 }
             ], 
             "subProcesses": [
@@ -1789,11 +2051,21 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.river_routing.oceanic_discharge.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Discharge Type", 
                             "description": "Specify how rivers are discharged to the ocean", 
                             "id": "cmip6.land.river_routing.oceanic_discharge.discharge_type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Discharge Types", 
                                 "description": "Specify how rivers are discharged to the ocean", 
@@ -1809,7 +2081,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Quantities Transported", 
@@ -1817,6 +2089,7 @@
                             "id": "cmip6.land.river_routing.oceanic_discharge.quantities_transported", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Quantities Transported Types", 
                                 "description": "Quantities that are exchanged from river-routing to the ocean model component", 
@@ -1836,7 +2109,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }
@@ -1849,12 +2122,22 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of lakes in the land surface", 
-                    "id": "cmip6.land.lakes.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the lakes in land model.", 
+                    "id": "cmip6.land.lakes.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land surface lakes in land model.", 
+                    "id": "cmip6.land.lakes.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Coupling With Rivers", 
@@ -1862,7 +2145,8 @@
                     "id": "cmip6.land.lakes.coupling_with_rivers", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 2
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Time Step", 
@@ -1870,7 +2154,8 @@
                     "id": "cmip6.land.lakes.time_step", 
                     "cardinality": "1.1", 
                     "type": "int", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Quantities Exchanged With Rivers", 
@@ -1878,6 +2163,7 @@
                     "id": "cmip6.land.lakes.quantities_exchanged_with_rivers", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Quantities Exchanged With Rivers Types", 
                         "description": "Quantities that are exchanged between the lakes and rivers", 
@@ -1897,23 +2183,25 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Vertical Grid", 
                     "description": "Describe the vertical grid of lakes", 
                     "id": "cmip6.land.lakes.vertical_grid", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 5
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables of the lake scheme", 
                     "id": "cmip6.land.lakes.prognostic_variables", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 6
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 7
                 }
             ], 
             "subProcesses": [
@@ -1924,12 +2212,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.lakes.method.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Ice Treatment", 
                             "description": "Is lake ice included?", 
                             "id": "cmip6.land.lakes.method.ice_treatment", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Albedo", 
@@ -1937,6 +2235,7 @@
                             "id": "cmip6.land.lakes.method.albedo", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Lake Albedo Types", 
                                 "description": "Describe the treatment of lake albedo", 
@@ -1952,7 +2251,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Dynamics", 
@@ -1960,6 +2259,7 @@
                             "id": "cmip6.land.lakes.method.dynamics", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Lake Dynamics Types", 
                                 "description": "Which dynamics of lakes are treated?", 
@@ -1979,7 +2279,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Dynamic Lake Extent", 
@@ -1987,7 +2287,8 @@
                             "id": "cmip6.land.lakes.method.dynamic_lake_extent", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 4
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Endorheic Basins", 
@@ -1995,7 +2296,8 @@
                             "id": "cmip6.land.lakes.method.endorheic_basins", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 5
+                            "is_cim_property": false, 
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
@@ -2006,12 +2308,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of todo in land model.", 
+                            "id": "cmip6.land.lakes.wetlands.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Description", 
                             "description": "Describe the treatment of wetlands, if any", 
                             "id": "cmip6.land.lakes.wetlands.description", 
                             "cardinality": "0.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -2025,12 +2337,22 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Overview", 
-                "description": "Overview of the grid in the land surface", 
-                "id": "cmip6.land.grid.overview", 
-                "cardinality": "1.1", 
+                "label": "Name", 
+                "description": "Name of grid in land model.", 
+                "id": "cmip6.land.grid.name", 
+                "cardinality": "0.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of grid in land model.", 
+                "id": "cmip6.land.grid.overview", 
+                "cardinality": "0.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
             }
         ], 
         "subProcesses": [
@@ -2041,12 +2363,22 @@
                 "contact": "David Hassell", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of the horizontal grid in the land surface in land model.", 
+                        "id": "cmip6.land.grid.horizontal.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Description", 
                         "description": "Describe the general structure of the horizontal grid (not including any tiling)", 
                         "id": "cmip6.land.grid.horizontal.description", 
                         "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Matches Atmosphere Grid", 
@@ -2054,7 +2386,8 @@
                         "id": "cmip6.land.grid.horizontal.matches_atmosphere_grid", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -2065,12 +2398,22 @@
                 "contact": "David Hassell", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of the vertical grid in the soil in land model.", 
+                        "id": "cmip6.land.grid.vertical.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Description", 
                         "description": "Describe the general structure of the  vertical grid in the soil (not including any tiling)", 
                         "id": "cmip6.land.grid.vertical.description", 
                         "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Total Depth", 
@@ -2078,7 +2421,8 @@
                         "id": "cmip6.land.grid.vertical.total_depth", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }
                 ]
             }
@@ -2091,28 +2435,40 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Model Overview", 
-                "description": "Overview of land surface model.", 
-                "id": "cmip6.land.key_properties.model_overview", 
+                "label": "Name", 
+                "description": "Name of land model code", 
+                "id": "cmip6.land.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Name", 
-                "description": "Name of land surface model code (e.g. MOSES2.2)", 
-                "id": "cmip6.land.key_properties.model_name", 
+                "label": "Keywords", 
+                "description": "Keywords associated with land model code", 
+                "id": "cmip6.land.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of land model.", 
+                "id": "cmip6.land.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Description", 
                 "description": "General description of the processes modelled (e.g. dymanic vegation, prognostic albedo, etc.)", 
                 "id": "cmip6.land.key_properties.description", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 3
+                "type": "l-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Land Atmosphere Flux Exchanges", 
@@ -2120,6 +2476,7 @@
                 "id": "cmip6.land.key_properties.land_atmosphere_flux_exchanges", 
                 "cardinality": "0.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Land Atmosphere Flux Exchanges Types", 
                     "description": "TODO", 
@@ -2147,15 +2504,16 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Atmospheric Coupling Treatment", 
                 "description": "Describe the treatment of land surface coupling with the Atmosphere model component, which may be different for different quantities (e.g. dust: semi-implicit, water vapour: explicit)", 
                 "id": "cmip6.land.key_properties.atmospheric_coupling_treatment", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 5
+                "type": "l-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Land Cover", 
@@ -2163,6 +2521,7 @@
                 "id": "cmip6.land.key_properties.land_cover", 
                 "cardinality": "1.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Land Cover Types", 
                     "description": "Types of land cover defined in the land surface model", 
@@ -2194,23 +2553,25 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 6
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Land Cover Change", 
                 "description": "Describe how land cover change is managed (e.g. the use of net or gross transitions)", 
                 "id": "cmip6.land.key_properties.land_cover_change", 
                 "cardinality": "0.1", 
-                "type": "str", 
-                "uiOrdinal": 7
+                "type": "l-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 8
             }, 
             {
                 "label": "Tiling", 
                 "description": "Describe the general tiling procedure used in the land surface (if any). Include treatment of physiography, land/sea, (dynamic) vegetation coverage and orography/roughness", 
                 "id": "cmip6.land.key_properties.tiling", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 8
+                "type": "l-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 9
             }
         ], 
         "subProcesses": [
@@ -2221,28 +2582,40 @@
                 "contact": "David Hassell", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of todo in land model.", 
+                        "id": "cmip6.land.key_properties.conservation_properties.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Energy", 
                         "description": "Describe if/how energy is conserved globally and to what level (e.g. within X [units]/year)", 
                         "id": "cmip6.land.key_properties.conservation_properties.energy", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Water", 
                         "description": "Describe if/how water is conserved globally and to what level (e.g. within X [units]/year)", 
                         "id": "cmip6.land.key_properties.conservation_properties.water", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 2
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Carbon", 
                         "description": "Describe if/how carbon is conserved globally and to what level (e.g. within X [units]/year)", 
                         "id": "cmip6.land.key_properties.conservation_properties.carbon", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -2253,12 +2626,22 @@
                 "contact": "David Hassell", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of todo in land model.", 
+                        "id": "cmip6.land.key_properties.timestepping_framework.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Timestep Dependent On Atmosphere", 
                         "description": "Is a time step dependent on the frequency of atmosphere coupling?", 
                         "id": "cmip6.land.key_properties.timestepping_framework.timestep_dependent_on_atmosphere", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 1
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Time Step", 
@@ -2266,15 +2649,17 @@
                         "id": "cmip6.land.key_properties.timestepping_framework.time_step", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Timestepping Method", 
                         "description": "General description of time stepping method and associated time step(s)", 
                         "id": "cmip6.land.key_properties.timestepping_framework.timestepping_method", 
                         "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -2285,12 +2670,22 @@
                 "contact": "David Hassell", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of software properties of land surface code in land model.", 
+                        "id": "cmip6.land.key_properties.software_properties.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Repository", 
                         "description": "Location of code for this component.", 
                         "id": "cmip6.land.key_properties.software_properties.repository", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 1
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Code Version", 
@@ -2298,15 +2693,17 @@
                         "id": "cmip6.land.key_properties.software_properties.code_version", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Code Languages", 
                         "description": "Code language(s).", 
                         "id": "cmip6.land.key_properties.software_properties.code_languages", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }

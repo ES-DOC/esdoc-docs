@@ -1,8 +1,8 @@
 {
     "label": "Aerosol", 
-    "description": "Atmospheric aerosols realm", 
+    "description": "Atmospheric aerosols", 
     "id": "cmip6.aerosol", 
-    "contact": "Charlotte Pascoe, David Hassell", 
+    "contact": "David Hassell", 
     "processes": [
         {
             "label": "Transport", 
@@ -11,12 +11,22 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of transport in atmosperic aerosol model", 
-                    "id": "cmip6.aerosol.transport.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the transport in aerosol model.", 
+                    "id": "cmip6.aerosol.transport.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of aerosol transport in aerosol model.", 
+                    "id": "cmip6.aerosol.transport.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Scheme", 
@@ -24,6 +34,7 @@
                     "id": "cmip6.aerosol.transport.scheme", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Transport Schemes", 
                         "description": "Method for aerosol transport modeling", 
@@ -51,7 +62,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Mass Conservation Scheme", 
@@ -59,6 +70,7 @@
                     "id": "cmip6.aerosol.transport.mass_conservation_scheme", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Mass Conservation Methods", 
                         "description": "Method used to ensure mass conservation", 
@@ -82,7 +94,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Convention", 
@@ -90,6 +102,7 @@
                     "id": "cmip6.aerosol.transport.convention", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Convection Types", 
                         "description": "Transport by convection", 
@@ -109,7 +122,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }
             ]
         }, 
@@ -120,12 +133,22 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of emissions in atmosperic aerosol model", 
-                    "id": "cmip6.aerosol.emissions.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the emissions in aerosol model.", 
+                    "id": "cmip6.aerosol.emissions.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of atmospheric aerosol emissions in aerosol model.", 
+                    "id": "cmip6.aerosol.emissions.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Method", 
@@ -133,6 +156,7 @@
                     "id": "cmip6.aerosol.emissions.method", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Emissions Methods", 
                         "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
@@ -164,7 +188,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Sources", 
@@ -172,6 +196,7 @@
                     "id": "cmip6.aerosol.emissions.sources", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Surface Source Types", 
                         "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
@@ -211,7 +236,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Prescribed Climatology", 
@@ -219,6 +244,7 @@
                     "id": "cmip6.aerosol.emissions.prescribed_climatology", 
                     "cardinality": "0.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Prescribed Climatology Type", 
                         "description": "Specify the climatology type for aerosol emissions", 
@@ -246,39 +272,43 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Prescribed Climatology Emitted Species", 
                     "description": "List of aerosol species emitted and prescribed via a climatology", 
                     "id": "cmip6.aerosol.emissions.prescribed_climatology_emitted_species", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 5
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Prescribed Spatially Uniform Emitted Species", 
                     "description": "List of aerosol species emitted  and prescribed as spatially uniform", 
                     "id": "cmip6.aerosol.emissions.prescribed_spatially_uniform_emitted_species", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 6
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Interactive Emitted Species", 
                     "description": "List of aerosol species emitted and specified via an interactive method", 
                     "id": "cmip6.aerosol.emissions.interactive_emitted_species", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 7
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 8
                 }, 
                 {
                     "label": "Other Emitted Species", 
                     "description": "List of aerosol species emitted and specified via an \"other method\"", 
                     "id": "cmip6.aerosol.emissions.other_emitted_species", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 8
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 9
                 }, 
                 {
                     "label": "Other Method Characteristics", 
@@ -286,7 +316,8 @@
                     "id": "cmip6.aerosol.emissions.other_method_characteristics", 
                     "cardinality": "0.1", 
                     "type": "str", 
-                    "uiOrdinal": 9
+                    "is_cim_property": false, 
+                    "uiOrdinal": 10
                 }
             ]
         }, 
@@ -297,44 +328,58 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of concentrations in atmosperic aerosol model", 
-                    "id": "cmip6.aerosol.concentrations.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the concentrations in aerosol model.", 
+                    "id": "cmip6.aerosol.concentrations.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of atmospheric aerosol concentrations in aerosol model.", 
+                    "id": "cmip6.aerosol.concentrations.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Prescribed Lower Boundary", 
                     "description": "List of species prescribed at the lower boundary.", 
                     "id": "cmip6.aerosol.concentrations.prescribed_lower_boundary", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Prescribed Upper Boundary", 
                     "description": "List of species prescribed at the upper boundary.", 
                     "id": "cmip6.aerosol.concentrations.prescribed_upper_boundary", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 3
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Prescribed Fields Mmr", 
                     "description": "List of species prescribed as mass mixing ratios.", 
                     "id": "cmip6.aerosol.concentrations.prescribed_fields_mmr", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 4
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }, 
                 {
-                    "label": "Prescribed Fields Mmr", 
+                    "label": "Prescribed Fields Aod Plus Ccn", 
                     "description": "List of species prescribed as AOD plus CCNs.", 
-                    "id": "cmip6.aerosol.concentrations.prescribed_fields_mmr", 
+                    "id": "cmip6.aerosol.concentrations.prescribed_fields_aod_plus_ccn", 
                     "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 5
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
                 }
             ]
         }, 
@@ -342,15 +387,25 @@
             "label": "Optical Radiative Properties", 
             "description": "Aerosol optical and radiative properties", 
             "id": "cmip6.aerosol.optical_radiative_properties", 
-            "contact": "Charlotte Pascoe, David Hassell", 
+            "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of optical and radiative properties", 
-                    "id": "cmip6.aerosol.optical_radiative_properties.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the optical radiative properties in aerosol model.", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of aerosol optical and radiative properties in aerosol model.", 
+                    "id": "cmip6.aerosol.optical_radiative_properties.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }
             ], 
             "subProcesses": [
@@ -358,15 +413,25 @@
                     "label": "Absorption", 
                     "description": "Absortion properties in aerosol scheme", 
                     "id": "cmip6.aerosol.optical_radiative_properties.absorption", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of absortion properties in aerosol scheme in aerosol model.", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.absorption.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Black Carbon", 
                             "description": "Absorption mass coefficient of black carbon at 550nm (if non-absorbing enter 0)", 
                             "id": "cmip6.aerosol.optical_radiative_properties.absorption.black_carbon", 
                             "cardinality": "0.1", 
                             "type": "float", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Dust", 
@@ -374,7 +439,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.absorption.dust", 
                             "cardinality": "0.1", 
                             "type": "float", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Organics", 
@@ -382,7 +448,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.absorption.organics", 
                             "cardinality": "0.1", 
                             "type": "float", 
-                            "uiOrdinal": 3
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -390,15 +457,25 @@
                     "label": "Mixtures", 
                     "description": "", 
                     "id": "cmip6.aerosol.optical_radiative_properties.mixtures", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of  in aerosol model.", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.mixtures.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "External", 
                             "description": "Is there external mixing with respect to chemical composition?", 
                             "id": "cmip6.aerosol.optical_radiative_properties.mixtures.external", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Internal", 
@@ -406,15 +483,17 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.mixtures.internal", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Mixing Rule", 
-                            "description": "If there is internal mixing with respect to chemical composition then indicate the mixinrg rule", 
+                            "description": "If there is internal mixing with respect to chemical composition then indicate the mixing rule", 
                             "id": "cmip6.aerosol.optical_radiative_properties.mixtures.mixing_rule", 
                             "cardinality": "0.1", 
                             "type": "str", 
-                            "uiOrdinal": 3
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -422,23 +501,43 @@
                     "label": "Impact Of H2o", 
                     "description": "", 
                     "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of  in aerosol model.", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Size", 
                             "description": "Does H2O impact size?", 
                             "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.size", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Internal Mixture", 
-                            "description": "Does H2O impact internal mixture?", 
+                            "description": "Does H2O impact aerosol internal mixture?", 
                             "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.internal_mixture", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "External Mixture", 
+                            "description": "Does H2O impact aerosol external mixture?", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.external_mixture", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -446,15 +545,25 @@
                     "label": "Radiative Scheme", 
                     "description": "Radiative scheme for aerosol", 
                     "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of radiative scheme for aerosol in aerosol model.", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Overview", 
                             "description": "Overview of radiative scheme", 
                             "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.overview", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Shortwave Bands", 
@@ -462,7 +571,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.shortwave_bands", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Longwave Bands", 
@@ -470,7 +580,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.radiative_scheme.longwave_bands", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -478,15 +589,25 @@
                     "label": "Cloud Interactions", 
                     "description": "Aerosol-cloud interactions", 
                     "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions", 
-                    "contact": "Charlotte Pascoe, David Hassell", 
+                    "contact": "David Hassell", 
                     "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of aerosol-cloud interactions in aerosol model.", 
+                            "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Overview", 
                             "description": "Overview of aerosol-cloud interactions", 
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.overview", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Twomey", 
@@ -494,7 +615,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.twomey", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Twomey Minimum Ccn", 
@@ -502,7 +624,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.twomey_minimum_ccn", 
                             "cardinality": "0.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Drizzle", 
@@ -510,7 +633,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.drizzle", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 4
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Cloud Lifetime", 
@@ -518,7 +642,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.cloud_lifetime", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 5
+                            "is_cim_property": false, 
+                            "uiOrdinal": 6
                         }, 
                         {
                             "label": "Longwave Bands", 
@@ -526,7 +651,8 @@
                             "id": "cmip6.aerosol.optical_radiative_properties.cloud_interactions.longwave_bands", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 6
+                            "is_cim_property": false, 
+                            "uiOrdinal": 7
                         }
                     ]
                 }
@@ -536,15 +662,25 @@
             "label": "Model", 
             "description": "Aerosol model", 
             "id": "cmip6.aerosol.model", 
-            "contact": "Charlotte Pascoe, David Hassell", 
+            "contact": "David Hassell", 
             "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the model in aerosol model.", 
+                    "id": "cmip6.aerosol.model.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
                 {
                     "label": "Overview", 
                     "description": "Overview of atmosperic aerosol model", 
                     "id": "cmip6.aerosol.model.overview", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 1
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Processes", 
@@ -552,6 +688,7 @@
                     "id": "cmip6.aerosol.model.processes", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Model Processes", 
                         "description": "Processes included in the Aerosol model.", 
@@ -611,7 +748,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Coupling", 
@@ -619,6 +756,7 @@
                     "id": "cmip6.aerosol.model.coupling", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Coupling", 
                         "description": "Other model components coupled to the Aerosol model.", 
@@ -654,7 +792,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Gas Phase Precursors", 
@@ -662,6 +800,7 @@
                     "id": "cmip6.aerosol.model.gas_phase_precursors", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Gas Phase Precursors", 
                         "description": "List of gas phase aerosol precursors.", 
@@ -701,7 +840,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Scheme Type", 
@@ -709,6 +848,7 @@
                     "id": "cmip6.aerosol.model.scheme_type", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Scheme Types", 
                         "description": "Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
@@ -728,7 +868,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }, 
                 {
                     "label": "Bulk Scheme Species", 
@@ -736,6 +876,7 @@
                     "id": "cmip6.aerosol.model.bulk_scheme_species", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Species", 
                         "description": "List of species.", 
@@ -795,7 +936,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 6
+                    "uiOrdinal": 7
                 }
             ]
         }
@@ -804,29 +945,133 @@
         "label": "Grid", 
         "description": "Aerosol grid", 
         "id": "cmip6.aerosol.grid", 
-        "contact": "Charlotte Pascoe, David Hassell"
+        "contact": "David Hassell", 
+        "properties": [
+            {
+                "label": "Name", 
+                "description": "Name of grid in aerosol model.", 
+                "id": "cmip6.aerosol.grid.name", 
+                "cardinality": "0.1", 
+                "type": "str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of grid in aerosol model.", 
+                "id": "cmip6.aerosol.grid.overview", 
+                "cardinality": "0.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
+            }, 
+            {
+                "label": "Matches Atmosphere Grid", 
+                "description": " Does the atmospheric aerosol grid match the atmosphere grid?", 
+                "id": "cmip6.aerosol.grid.matches_atmosphere_grid", 
+                "cardinality": "1.1", 
+                "type": "bool", 
+                "is_cim_property": false, 
+                "uiOrdinal": 3
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Resolution", 
+                "description": "Resolution in the atmospheric aerosol grid", 
+                "id": "cmip6.aerosol.grid.resolution", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of resolution in the atmospheric aerosol grid in aerosol model.", 
+                        "id": "cmip6.aerosol.grid.resolution.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
+                        "id": "cmip6.aerosol.grid.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+                        "id": "cmip6.aerosol.grid.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Number Of Horizontal Gridpoints", 
+                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "id": "cmip6.aerosol.grid.resolution.number_of_horizontal_gridpoints", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on computational grid.", 
+                        "id": "cmip6.aerosol.grid.resolution.number_of_vertical_levels", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Is Adaptive Grid", 
+                        "description": "Default is False. Set true if grid resolution changes during execution.", 
+                        "id": "cmip6.aerosol.grid.resolution.is_adaptive_grid", 
+                        "cardinality": "0.1", 
+                        "type": "bool", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }
+        ]
     }, 
     "keyProperties": {
         "label": "Key Properties", 
         "description": "Key properties of the aerosol model", 
         "id": "cmip6.aerosol.key_properties", 
-        "contact": "Charlotte Pascoe, David Hassell", 
+        "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Model Overview", 
-                "description": "Overview of aerosol model.", 
-                "id": "cmip6.aerosol.key_properties.model_overview", 
+                "label": "Name", 
+                "description": "Name of aerosol model code", 
+                "id": "cmip6.aerosol.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Name", 
-                "description": "Name of aerosol model code", 
-                "id": "cmip6.aerosol.key_properties.model_name", 
+                "label": "Keywords", 
+                "description": "Keywords associated with aerosol model code", 
+                "id": "cmip6.aerosol.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of aerosol model.", 
+                "id": "cmip6.aerosol.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Scheme Scope", 
@@ -834,21 +1079,18 @@
                 "id": "cmip6.aerosol.key_properties.scheme_scope", 
                 "cardinality": "1.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Scheme Scopes", 
                     "description": "Atmospheric domains covered by the aerosol model", 
                     "isOpen": true, 
                     "choices": [
                         {
-                            "label": "troposhere", 
+                            "label": "troposphere", 
                             "description": null
                         }, 
                         {
                             "label": "stratosphere", 
-                            "description": null
-                        }, 
-                        {
-                            "label": "mesosphere", 
                             "description": null
                         }, 
                         {
@@ -861,15 +1103,16 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Basic Approximations", 
                 "description": "Basic approximations made in the aerosol model", 
                 "id": "cmip6.aerosol.key_properties.basic_approximations", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 4
+                "type": "l-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Prognostic Variables Form", 
@@ -877,6 +1120,7 @@
                 "id": "cmip6.aerosol.key_properties.prognostic_variables_form", 
                 "cardinality": "1.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Prognostic Vars Types", 
                     "description": "Form of prognostic variables in the aerosol model.", 
@@ -892,7 +1136,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 5
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Number Of Tracers", 
@@ -900,7 +1144,8 @@
                 "id": "cmip6.aerosol.key_properties.number_of_tracers", 
                 "cardinality": "1.1", 
                 "type": "int", 
-                "uiOrdinal": 6
+                "is_cim_property": false, 
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Family Approach", 
@@ -908,7 +1153,8 @@
                 "id": "cmip6.aerosol.key_properties.family_approach", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 7
+                "is_cim_property": false, 
+                "uiOrdinal": 8
             }
         ], 
         "propertySets": [
@@ -923,6 +1169,7 @@
                         "id": "cmip6.aerosol.key_properties.software_properties.repository", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -931,14 +1178,16 @@
                         "id": "cmip6.aerosol.key_properties.software_properties.code_version", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
                         "label": "Code Languages", 
                         "description": "Code language(s).", 
                         "id": "cmip6.aerosol.key_properties.software_properties.code_languages", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }
                 ]
@@ -949,14 +1198,24 @@
                 "label": "Timestep Framework", 
                 "description": "Physical properties of seawater in ocean", 
                 "id": "cmip6.aerosol.key_properties.timestep_framework", 
-                "contact": "Charlotte Pascoe, David Hassell", 
+                "contact": "David Hassell", 
                 "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of physical properties of seawater in ocean in aerosol model.", 
+                        "id": "cmip6.aerosol.key_properties.timestep_framework.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
                     {
                         "label": "Method", 
                         "description": "Mathematical method deployed to solve the time evolution of the prognostic variables", 
                         "id": "cmip6.aerosol.key_properties.timestep_framework.method", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Timestepping Methods", 
                             "description": "Mathematical method deployed to solve the time evolution of the prognostic variables.", 
@@ -976,7 +1235,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Split Operator Advection Timestep", 
@@ -984,7 +1243,8 @@
                         "id": "cmip6.aerosol.key_properties.timestep_framework.split_operator_advection_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Split Operator Physical Timestep", 
@@ -992,7 +1252,8 @@
                         "id": "cmip6.aerosol.key_properties.timestep_framework.split_operator_physical_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Integrated Timestep", 
@@ -1000,7 +1261,8 @@
                         "id": "cmip6.aerosol.key_properties.timestep_framework.integrated_timestep", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 4
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Integrated Scheme Type", 
@@ -1008,6 +1270,7 @@
                         "id": "cmip6.aerosol.key_properties.timestep_framework.integrated_scheme_type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Integrated Scheme Types", 
                             "description": "Specify the type of timestep scheme", 
@@ -1047,7 +1310,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 6
                     }
                 ]
             }, 
@@ -1055,23 +1318,34 @@
                 "label": "Meteorological Forcings", 
                 "description": "", 
                 "id": "cmip6.aerosol.key_properties.meteorological_forcings", 
-                "contact": "Charlotte Pascoe, David Hassell", 
+                "contact": "David Hassell", 
                 "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of  in aerosol model.", 
+                        "id": "cmip6.aerosol.key_properties.meteorological_forcings.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
                     {
                         "label": "Variables 3D", 
                         "description": "Three dimensionsal forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux", 
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_3D", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Variables 2D", 
                         "description": "Two dimensionsal forcing variables, e.g. land-sea mask definition", 
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.variables_2D", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 2
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Frequency", 
@@ -1079,7 +1353,8 @@
                         "id": "cmip6.aerosol.key_properties.meteorological_forcings.frequency", 
                         "cardinality": "0.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -1087,15 +1362,25 @@
                 "label": "Resolution", 
                 "description": "Resolution in the aersosol model grid", 
                 "id": "cmip6.aerosol.key_properties.resolution", 
-                "contact": "Charlotte Pascoe, David Hassell", 
+                "contact": "David Hassell", 
                 "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of resolution in the aersosol model grid in aerosol model.", 
+                        "id": "cmip6.aerosol.key_properties.resolution.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
                     {
                         "label": "Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
                         "id": "cmip6.aerosol.key_properties.resolution.name", 
                         "cardinality": "1.1", 
                         "type": "str", 
-                        "uiOrdinal": 1
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Canonical Horizontal Resolution", 
@@ -1103,7 +1388,8 @@
                         "id": "cmip6.aerosol.key_properties.resolution.canonical_horizontal_resolution", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 2
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Number Of Horizontal Gridpoints", 
@@ -1111,7 +1397,8 @@
                         "id": "cmip6.aerosol.key_properties.resolution.number_of_horizontal_gridpoints", 
                         "cardinality": "0.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Number Of Vertical Levels", 
@@ -1119,7 +1406,8 @@
                         "id": "cmip6.aerosol.key_properties.resolution.number_of_vertical_levels", 
                         "cardinality": "0.1", 
                         "type": "int", 
-                        "uiOrdinal": 4
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Is Adaptive Grid", 
@@ -1127,7 +1415,8 @@
                         "id": "cmip6.aerosol.key_properties.resolution.is_adaptive_grid", 
                         "cardinality": "0.1", 
                         "type": "bool", 
-                        "uiOrdinal": 5
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
                     }
                 ]
             }, 
@@ -1135,39 +1424,52 @@
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for aerosol model", 
                 "id": "cmip6.aerosol.key_properties.tuning_applied", 
-                "contact": "Charlotte Pascoe, David Hassell", 
+                "contact": "David Hassell", 
                 "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of tuning methodology for aerosol model in aerosol model.", 
+                        "id": "cmip6.aerosol.key_properties.tuning_applied.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
                     {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
-                        "type": "str", 
-                        "uiOrdinal": 1
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Global Mean Metrics Used", 
                         "description": "List set of metrics of the global mean state used in tuning model/component", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
-                        "uiOrdinal": 2
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Regional Metrics Used", 
                         "description": "List of regional metrics of mean state used in tuning model/component", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.regional_metrics_used", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Trend Metrics Used", 
                         "description": "List observed trend metrics used in tuning model/component", 
                         "id": "cmip6.aerosol.key_properties.tuning_applied.trend_metrics_used", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
-                        "uiOrdinal": 4
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
                     }
                 ]
             }

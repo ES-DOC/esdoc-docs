@@ -1,6 +1,6 @@
 {
     "label": "Landice", 
-    "description": "Land Ice Realm", 
+    "description": "Land Ice", 
     "id": "cmip6.landice", 
     "contact": "David Hassell", 
     "processes": [
@@ -11,20 +11,31 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of glaciers in the land ice scheme", 
-                    "id": "cmip6.landice.glaciers.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the glaciers in landice model.", 
+                    "id": "cmip6.landice.glaciers.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of land ice glaciers in landice model.", 
+                    "id": "cmip6.landice.glaciers.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Description", 
                     "description": "Describe the treatment of glaciers, if any", 
                     "id": "cmip6.landice.glaciers.description", 
                     "cardinality": "1.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Dynamic Areal Extent", 
@@ -32,7 +43,8 @@
                     "id": "cmip6.landice.glaciers.dynamic_areal_extent", 
                     "cardinality": "0.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }
             ]
         }, 
@@ -43,12 +55,22 @@
             "contact": "David Hassell", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of the ice sheet and ice shelf in the land ice scheme", 
-                    "id": "cmip6.landice.ice.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the ice in landice model.", 
+                    "id": "cmip6.landice.ice.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of ice sheet and ice shelf in landice model.", 
+                    "id": "cmip6.landice.ice.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Grounding Line Method", 
@@ -56,6 +78,7 @@
                     "id": "cmip6.landice.ice.grounding_line_method", 
                     "cardinality": "1.1", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Grounding Line Methods", 
                         "description": "Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling", 
@@ -79,7 +102,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Ice Sheet", 
@@ -87,7 +110,8 @@
                     "id": "cmip6.landice.ice.ice_sheet", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 3
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Ice Shelf", 
@@ -95,7 +119,8 @@
                     "id": "cmip6.landice.ice.ice_shelf", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 4
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
                 }
             ], 
             "subProcesses": [
@@ -106,12 +131,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of description of the surface mass balance treatment in landice model.", 
+                            "id": "cmip6.landice.ice.mass_balance.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Surface Mass Balance", 
                             "description": "Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution", 
                             "id": "cmip6.landice.ice.mass_balance.surface_mass_balance", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }
                     ], 
                     "propertySets": [
@@ -125,7 +160,8 @@
                                     "description": "Describe the implementation of basal melting over bedrock", 
                                     "id": "cmip6.landice.ice.mass_balance.basal.bedrock", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -133,7 +169,8 @@
                                     "description": "Describe the implementation of basal melting over the ocean", 
                                     "id": "cmip6.landice.ice.mass_balance.basal.ocean", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }
                             ]
@@ -148,7 +185,8 @@
                                     "description": "Describe the implementation of calving from the front of the ice shelf", 
                                     "id": "cmip6.landice.ice.mass_balance.frontal.calving", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 1
                                 }, 
                                 {
@@ -156,7 +194,8 @@
                                     "description": "Describe the implementation of melting from the front of the ice shelf", 
                                     "id": "cmip6.landice.ice.mass_balance.frontal.melting", 
                                     "cardinality": "0.1", 
-                                    "type": "str", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }
                             ]
@@ -170,12 +209,22 @@
                     "contact": "David Hassell", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of  in landice model.", 
+                            "id": "cmip6.landice.ice.dynamics.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Description", 
                             "description": "General description if ice sheet and ice shelf dynamics", 
                             "id": "cmip6.landice.ice.dynamics.description", 
                             "cardinality": "1.1", 
-                            "type": "str", 
-                            "uiOrdinal": 1
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Approximation", 
@@ -183,6 +232,7 @@
                             "id": "cmip6.landice.ice.dynamics.approximation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Approximation Types", 
                                 "description": "Approximation type used in modelling ice sheet dynamics", 
@@ -202,7 +252,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Adaptive Timestep", 
@@ -210,7 +260,8 @@
                             "id": "cmip6.landice.ice.dynamics.adaptive_timestep", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 3
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Timestep", 
@@ -218,7 +269,8 @@
                             "id": "cmip6.landice.ice.dynamics.timestep", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 4
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -232,12 +284,22 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Overview", 
-                "description": "Overview of the grid in the land ice scheme", 
-                "id": "cmip6.landice.grid.overview", 
-                "cardinality": "1.1", 
+                "label": "Name", 
+                "description": "Name of grid in landice model.", 
+                "id": "cmip6.landice.grid.name", 
+                "cardinality": "0.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of grid in landice model.", 
+                "id": "cmip6.landice.grid.overview", 
+                "cardinality": "0.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
             }, 
             {
                 "label": "Adaptive Grid", 
@@ -245,7 +307,8 @@
                 "id": "cmip6.landice.grid.adaptive_grid", 
                 "cardinality": "1.1", 
                 "type": "bool", 
-                "uiOrdinal": 2
+                "is_cim_property": false, 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Base Resolution", 
@@ -253,7 +316,8 @@
                 "id": "cmip6.landice.grid.base_resolution", 
                 "cardinality": "1.1", 
                 "type": "float", 
-                "uiOrdinal": 3
+                "is_cim_property": false, 
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Resolution Limit", 
@@ -261,7 +325,8 @@
                 "id": "cmip6.landice.grid.resolution_limit", 
                 "cardinality": "0.1", 
                 "type": "float", 
-                "uiOrdinal": 4
+                "is_cim_property": false, 
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Projection", 
@@ -269,7 +334,8 @@
                 "id": "cmip6.landice.grid.projection", 
                 "cardinality": "1.1", 
                 "type": "str", 
-                "uiOrdinal": 5
+                "is_cim_property": false, 
+                "uiOrdinal": 6
             }
         ]
     }, 
@@ -280,20 +346,31 @@
         "contact": "David Hassell", 
         "properties": [
             {
-                "label": "Overview", 
-                "description": "Overview of land surface model.", 
-                "id": "cmip6.landice.key_properties.overview", 
+                "label": "Name", 
+                "description": "Name of landice model code", 
+                "id": "cmip6.landice.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Name", 
-                "description": "Name of land surface model code", 
-                "id": "cmip6.landice.key_properties.model_name", 
+                "label": "Keywords", 
+                "description": "Keywords associated with landice model code", 
+                "id": "cmip6.landice.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of landice model.", 
+                "id": "cmip6.landice.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Ice Albedo", 
@@ -301,6 +378,7 @@
                 "id": "cmip6.landice.key_properties.ice_albedo", 
                 "cardinality": "1.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Ice Albedo Methods", 
                     "description": "Specify how ice albedo is modelled", 
@@ -320,23 +398,25 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Atmospheric Coupling Variables", 
                 "description": "Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)", 
                 "id": "cmip6.landice.key_properties.atmospheric_coupling_variables", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 4
+                "type": "cs-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Oceanic Coupling Variables", 
                 "description": "Which variables are passed between the ocean and ice", 
                 "id": "cmip6.landice.key_properties.oceanic_coupling_variables", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 5
+                "type": "cs-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Prognostic Variables", 
@@ -344,6 +424,7 @@
                 "id": "cmip6.landice.key_properties.prognostic_variables", 
                 "cardinality": "1.N", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Prognostic Variable Types", 
                     "description": "Which variables are prognostically calculated in the ice model", 
@@ -363,7 +444,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 6
+                "uiOrdinal": 7
             }
         ], 
         "propertySets": [
@@ -378,6 +459,7 @@
                         "id": "cmip6.landice.key_properties.software_properties.repository", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 1
                     }, 
                     {
@@ -386,14 +468,16 @@
                         "id": "cmip6.landice.key_properties.software_properties.code_version", 
                         "cardinality": "0.1", 
                         "type": "str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
                         "label": "Code Languages", 
                         "description": "Code language(s).", 
                         "id": "cmip6.landice.key_properties.software_properties.code_languages", 
-                        "cardinality": "0.N", 
-                        "type": "str", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
                         "uiOrdinal": 3
                     }
                 ]

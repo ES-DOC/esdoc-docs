@@ -1,6 +1,6 @@
 {
     "label": "Ocnbgchem", 
-    "description": "Ocean Biogeochemistry Realm", 
+    "description": "Ocean Biogeochemistry", 
     "id": "cmip6.ocnbgchem", 
     "contact": "Eric Guilyardi", 
     "processes": [
@@ -11,12 +11,22 @@
             "contact": "Eric Guilyardi", 
             "properties": [
                 {
-                    "label": "Overview", 
-                    "description": "Overview of tracers in ocean biogeochemistry", 
-                    "id": "cmip6.ocnbgchem.tracers.overview", 
-                    "cardinality": "1.1", 
+                    "label": "Name", 
+                    "description": "Commonly used name for the tracers in ocnbgchem model.", 
+                    "id": "cmip6.ocnbgchem.tracers.name", 
+                    "cardinality": "0.1", 
                     "type": "str", 
+                    "is_cim_property": true, 
                     "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of ocean biogeochemistry tracers in ocnbgchem model.", 
+                    "id": "cmip6.ocnbgchem.tracers.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Sulfur Cycle Present", 
@@ -24,7 +34,8 @@
                     "id": "cmip6.ocnbgchem.tracers.sulfur_cycle_present", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 2
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Nutrients Present", 
@@ -32,6 +43,7 @@
                     "id": "cmip6.ocnbgchem.tracers.nutrients_present", 
                     "cardinality": "1.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Nutrients Species", 
                         "description": "Nutrients species in ocean biogeochemistry", 
@@ -55,7 +67,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Nitrous Species If N", 
@@ -63,6 +75,7 @@
                     "id": "cmip6.ocnbgchem.tracers.nitrous_species_if_N", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Nitrous Species", 
                         "description": "Nitrous species in ocean biogeochemistry", 
@@ -78,7 +91,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Nitrous Processes If N", 
@@ -86,6 +99,7 @@
                     "id": "cmip6.ocnbgchem.tracers.nitrous_processes_if_N", 
                     "cardinality": "0.N", 
                     "type": "enum", 
+                    "is_cim_property": false, 
                     "enum": {
                         "label": "Nitrous Processes", 
                         "description": "Nitrous processes in ocean biogeochemistry", 
@@ -101,7 +115,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 5
+                    "uiOrdinal": 6
                 }
             ], 
             "subProcesses": [
@@ -112,20 +126,31 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
-                            "label": "Upper Trophic Levels Definition", 
-                            "description": "Definition of upper trophic level (e.g. based on size) ?", 
-                            "id": "cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition", 
-                            "cardinality": "1.1", 
+                            "label": "Overview", 
+                            "description": "Overview of ecosystem properties in ocean biogeochemistry in ocnbgchem model.", 
+                            "id": "cmip6.ocnbgchem.tracers.ecosystem.overview", 
+                            "cardinality": "0.1", 
                             "type": "str", 
+                            "is_cim_property": true, 
                             "uiOrdinal": 1
                         }, 
                         {
+                            "label": "Upper Trophic Levels Definition", 
+                            "description": "Describe how upper trophic levels are defined in model (e.g. based on size)", 
+                            "id": "cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
                             "label": "Upper Trophic Levels Treatment", 
-                            "description": "Define how upper trophic level are treated", 
+                            "description": "Describe how upper trophic levels are treated in model", 
                             "id": "cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }
                     ], 
                     "propertySets": [
@@ -140,6 +165,7 @@
                                     "id": "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Phytoplankton Types", 
                                         "description": "Phytoplankton types in ocean biogeochemistry", 
@@ -175,6 +201,7 @@
                                     "id": "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft", 
                                     "cardinality": "0.N", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Phytoplankton Pft List", 
                                         "description": "Phytoplankton functional types list in ocean biogeochemistry", 
@@ -202,6 +229,7 @@
                                     "id": "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes", 
                                     "cardinality": "0.N", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Phytoplankton Size Classes", 
                                         "description": "Phytoplankton size classes in ocean biogeochemistry", 
@@ -236,6 +264,7 @@
                                     "id": "cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Zooplankton Types", 
                                         "description": "Zooplankton types in ocean biogeochemistry", 
@@ -263,6 +292,7 @@
                                     "id": "cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes", 
                                     "cardinality": "0.N", 
                                     "type": "enum", 
+                                    "is_cim_property": false, 
                                     "enum": {
                                         "label": "Zooplankton Size Classes", 
                                         "description": "Zooplankton size classes in ocean biogeochemistry", 
@@ -291,12 +321,22 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of disolved organic matter properties in ocean biogeochemistry in ocnbgchem model.", 
+                            "id": "cmip6.ocnbgchem.tracers.disolved_organic_matter.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Bacteria Present", 
                             "description": "Is there bacteria representation ?", 
                             "id": "cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 1
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Lability", 
@@ -304,6 +344,7 @@
                             "id": "cmip6.ocnbgchem.tracers.disolved_organic_matter.lability", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Lability Treatment", 
                                 "description": "Lability treatment of dissolved organic matter in ocean biogeochemistry", 
@@ -327,7 +368,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -338,11 +379,21 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of particulate carbon properties in ocean biogeochemistry in ocnbgchem model.", 
+                            "id": "cmip6.ocnbgchem.tracers.particules.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Method", 
                             "description": "How is particulate carbon represented in ocean biogeochemistry?", 
                             "id": "cmip6.ocnbgchem.tracers.particules.method", 
-                            "cardinality": "1.1", 
+                            "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Particules Method", 
                                 "description": "Particulate carbon representation in ocean biogeochemistry", 
@@ -366,7 +417,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Types If Prognostic", 
@@ -374,6 +425,7 @@
                             "id": "cmip6.ocnbgchem.tracers.particules.types_if_prognostic", 
                             "cardinality": "0.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Prognostic Particules Types", 
                                 "description": "Prognostic particulate carbon types in ocean biogeochemistry", 
@@ -397,7 +449,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Size If Prognostic", 
@@ -405,6 +457,7 @@
                             "id": "cmip6.ocnbgchem.tracers.particules.size_if_prognostic", 
                             "cardinality": "0.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Prognostic Particules Sizes", 
                                 "description": "Prognostic particulate carbon size in ocean biogeochemistry", 
@@ -424,7 +477,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Size If Discrete", 
@@ -432,7 +485,8 @@
                             "id": "cmip6.ocnbgchem.tracers.particules.size_if_discrete", 
                             "cardinality": "0.1", 
                             "type": "str", 
-                            "uiOrdinal": 4
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Sinking Speed If Prognostic", 
@@ -440,6 +494,7 @@
                             "id": "cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic", 
                             "cardinality": "0.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Prognostic Particules Sinking Speed", 
                                 "description": "Prognostic particulate carbon sinking speed in ocean biogeochemistry", 
@@ -459,7 +514,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
@@ -470,11 +525,21 @@
                     "contact": "Eric Guilyardi", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of dic and alkalinity properties in ocean biogeochemistry in ocnbgchem model.", 
+                            "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Carbon Isotopes", 
                             "description": "Which carbon isotopes are modelled (C13, C14)?", 
                             "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Carbon Isotopes List", 
                                 "description": "List of carbon isotopes in ocean biogeochemistry", 
@@ -490,7 +555,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Abiotic Carbon", 
@@ -498,7 +563,8 @@
                             "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon", 
                             "cardinality": "1.1", 
                             "type": "bool", 
-                            "uiOrdinal": 2
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Alkalinity", 
@@ -506,6 +572,7 @@
                             "id": "cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
+                            "is_cim_property": false, 
                             "enum": {
                                 "label": "Alkalinity Model Types", 
                                 "description": "Types of alkalinity modelling in ocean biogeochemistry", 
@@ -521,7 +588,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }
@@ -535,20 +602,31 @@
         "contact": "Eric Guilyardi", 
         "properties": [
             {
-                "label": "Model Overview", 
-                "description": "Overview of ocean biogeochemistry model", 
-                "id": "cmip6.ocnbgchem.key_properties.model_overview", 
+                "label": "Name", 
+                "description": "Name of ocnbgchem model code", 
+                "id": "cmip6.ocnbgchem.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 1
             }, 
             {
-                "label": "Model Name", 
-                "description": "Name of ocean biogeochemistry model code (PISCES 2.0,...)", 
-                "id": "cmip6.ocnbgchem.key_properties.model_name", 
+                "label": "Keywords", 
+                "description": "Keywords associated with ocnbgchem model code", 
+                "id": "cmip6.ocnbgchem.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "str", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
                 "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of ocnbgchem model.", 
+                "id": "cmip6.ocnbgchem.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Model Type", 
@@ -556,8 +634,9 @@
                 "id": "cmip6.ocnbgchem.key_properties.model_type", 
                 "cardinality": "1.1", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
-                    "label": "Model Types", 
+                    "label": "Model Family", 
                     "description": "Types of models for ocean biogeochemistry", 
                     "isOpen": true, 
                     "choices": [
@@ -575,7 +654,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Elemental Stoichiometry", 
@@ -583,6 +662,7 @@
                 "id": "cmip6.ocnbgchem.key_properties.elemental_stoichiometry", 
                 "cardinality": "1.1", 
                 "type": "enum", 
+                "is_cim_property": false, 
                 "enum": {
                     "label": "Elemental Stoichiometry Types", 
                     "description": "Types elemental stoichiometry for ocean biogeochemistry", 
@@ -602,31 +682,34 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }, 
             {
                 "label": "Elemental Stoichiometry Details", 
                 "description": "Describe which elements have fixed/variable stoichiometry", 
                 "id": "cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 5
+                "type": "cs-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 6
             }, 
             {
                 "label": "Prognostic Variables", 
                 "description": "List of all prognostic tracer variables in the ocean biogeochemistry component", 
                 "id": "cmip6.ocnbgchem.key_properties.prognostic_variables", 
-                "cardinality": "1.N", 
-                "type": "str", 
-                "uiOrdinal": 6
+                "cardinality": "1.1", 
+                "type": "cs-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 7
             }, 
             {
                 "label": "Diagnostic Variables", 
-                "description": "List of all diagnotic tracer variables in the ocean biogeochemistry component", 
+                "description": "List of all diagnotic tracer variables in the ocean biogeochemistry component (derived from prognostic variables", 
                 "id": "cmip6.ocnbgchem.key_properties.diagnostic_variables", 
-                "cardinality": "1.N", 
-                "type": "str", 
-                "uiOrdinal": 7
+                "cardinality": "1.1", 
+                "type": "cs-str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 8
             }, 
             {
                 "label": "Damping", 
@@ -634,7 +717,8 @@
                 "id": "cmip6.ocnbgchem.key_properties.damping", 
                 "cardinality": "0.1", 
                 "type": "str", 
-                "uiOrdinal": 8
+                "is_cim_property": false, 
+                "uiOrdinal": 9
             }
         ], 
         "subProcesses": [
@@ -643,6 +727,17 @@
                 "description": "Time stepping framework for ocean biogeochemistry", 
                 "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework", 
                 "contact": "Eric Guilyardi", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of time stepping framework for ocean biogeochemistry in ocnbgchem model.", 
+                        "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }
+                ], 
                 "propertySets": [
                     {
                         "label": "Passive Tracers Transport", 
@@ -655,6 +750,7 @@
                                 "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Passive Tracers Transport", 
                                     "description": "Types of time stepping framework for passive tracers ocean biogeochemistry", 
@@ -678,6 +774,7 @@
                                 "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 2
                             }
                         ]
@@ -693,6 +790,7 @@
                                 "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
+                                "is_cim_property": false, 
                                 "enum": {
                                     "label": "Passive Tracers Transport", 
                                     "description": "Types of time stepping framework for passive tracers ocean biogeochemistry", 
@@ -716,6 +814,7 @@
                                 "id": "cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
+                                "is_cim_property": false, 
                                 "uiOrdinal": 2
                             }
                         ]
@@ -729,11 +828,21 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of transport scheme in ocean biogeochemistry in ocnbgchem model.", 
+                        "id": "cmip6.ocnbgchem.key_properties.transport_scheme.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Type", 
                         "description": "Type of transport scheme", 
                         "id": "cmip6.ocnbgchem.key_properties.transport_scheme.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Transport Types", 
                             "description": "Types of transport in ocean biogeochemistry", 
@@ -749,7 +858,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Scheme", 
@@ -757,6 +866,7 @@
                         "id": "cmip6.ocnbgchem.key_properties.transport_scheme.scheme", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Transport Scheme", 
                             "description": "Types of transport in ocean biogeochemistry", 
@@ -768,15 +878,16 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Use Different Scheme", 
                         "description": "Decribe transport scheme if different than that of ocean model", 
                         "id": "cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -787,11 +898,21 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of properties of biogeochemistry boundary forcing in ocnbgchem model.", 
+                        "id": "cmip6.ocnbgchem.key_properties.boundary_forcing.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Atmospheric Deposition", 
                         "description": "Describe how atmospheric deposition is modeled", 
                         "id": "cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Sources Atmos Deposition", 
                             "description": "Type of atmospheric deposition in ocean biogeochemistry", 
@@ -811,7 +932,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "River Input", 
@@ -819,6 +940,7 @@
                         "id": "cmip6.ocnbgchem.key_properties.boundary_forcing.river_input", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Sources River Input", 
                             "description": "Type of river input in ocean biogeochemistry", 
@@ -838,23 +960,25 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Sediments From Boundary Conditions", 
                         "description": "List which sediments are speficied from boundary condition", 
                         "id": "cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Sediments From Explicit Model", 
                         "description": "List which sediments are speficied from explicit sediment model", 
                         "id": "cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 4
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
                     }
                 ]
             }, 
@@ -865,12 +989,22 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of properties of gas exchange in ocean biogeochemistry  in ocnbgchem model.", 
+                        "id": "cmip6.ocnbgchem.key_properties.gas_exchange.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "CO2 Exchange Present", 
                         "description": "Is CO2 gas exchange modeled ?", 
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 1
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "CO2 Exchange Type", 
@@ -878,6 +1012,7 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Gas Exchange Types", 
                             "description": "Type of gas exchange in ocean biogeochemistry", 
@@ -889,7 +1024,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "O2 Exchange Present", 
@@ -897,7 +1032,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 3
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "O2 Exchange Type", 
@@ -905,6 +1041,7 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Gas Exchange Types", 
                             "description": "Type of gas exchange in ocean biogeochemistry", 
@@ -916,7 +1053,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "DMS Exchange Present", 
@@ -924,7 +1061,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 5
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
                     }, 
                     {
                         "label": "DMS Exchange Type", 
@@ -932,7 +1070,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 6
+                        "is_cim_property": false, 
+                        "uiOrdinal": 7
                     }, 
                     {
                         "label": "N2 Exchange Present", 
@@ -940,7 +1079,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 7
+                        "is_cim_property": false, 
+                        "uiOrdinal": 8
                     }, 
                     {
                         "label": "N2 Exchange Type", 
@@ -948,7 +1088,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 8
+                        "is_cim_property": false, 
+                        "uiOrdinal": 9
                     }, 
                     {
                         "label": "N2O Exchange Present", 
@@ -956,7 +1097,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 9
+                        "is_cim_property": false, 
+                        "uiOrdinal": 10
                     }, 
                     {
                         "label": "N2O Exchange Type", 
@@ -964,7 +1106,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 10
+                        "is_cim_property": false, 
+                        "uiOrdinal": 11
                     }, 
                     {
                         "label": "CFC11 Exchange Present", 
@@ -972,7 +1115,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 11
+                        "is_cim_property": false, 
+                        "uiOrdinal": 12
                     }, 
                     {
                         "label": "CFC11 Exchange Type", 
@@ -980,7 +1124,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 12
+                        "is_cim_property": false, 
+                        "uiOrdinal": 13
                     }, 
                     {
                         "label": "CFC12 Exchange Present", 
@@ -988,7 +1133,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 13
+                        "is_cim_property": false, 
+                        "uiOrdinal": 14
                     }, 
                     {
                         "label": "CFC12 Exchange Type", 
@@ -996,7 +1142,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 14
+                        "is_cim_property": false, 
+                        "uiOrdinal": 15
                     }, 
                     {
                         "label": "SF6 Exchange Present", 
@@ -1004,7 +1151,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 15
+                        "is_cim_property": false, 
+                        "uiOrdinal": 16
                     }, 
                     {
                         "label": "SF6 Exchange Type", 
@@ -1012,7 +1160,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 16
+                        "is_cim_property": false, 
+                        "uiOrdinal": 17
                     }, 
                     {
                         "label": "13CO2 Exchange Present", 
@@ -1020,7 +1169,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 17
+                        "is_cim_property": false, 
+                        "uiOrdinal": 18
                     }, 
                     {
                         "label": "13CO2 Exchange Type", 
@@ -1028,7 +1178,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 18
+                        "is_cim_property": false, 
+                        "uiOrdinal": 19
                     }, 
                     {
                         "label": "14CO2 Exchange Present", 
@@ -1036,7 +1187,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 19
+                        "is_cim_property": false, 
+                        "uiOrdinal": 20
                     }, 
                     {
                         "label": "14CO2 Exchange Type", 
@@ -1044,7 +1196,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 20
+                        "is_cim_property": false, 
+                        "uiOrdinal": 21
                     }, 
                     {
                         "label": "Other Gases", 
@@ -1052,7 +1205,8 @@
                         "id": "cmip6.ocnbgchem.key_properties.gas_exchange.other_gases", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 21
+                        "is_cim_property": false, 
+                        "uiOrdinal": 22
                     }
                 ]
             }, 
@@ -1063,11 +1217,21 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of properties of carbon chemistry biogeochemistry in ocnbgchem model.", 
+                        "id": "cmip6.ocnbgchem.key_properties.carbon_chemistry.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Type", 
                         "description": "Describe how carbon chemistry is modeled", 
                         "id": "cmip6.ocnbgchem.key_properties.carbon_chemistry.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Carbon Chemistry", 
                             "description": "Type of carbon chemistry in ocean biogeochemistry", 
@@ -1083,14 +1247,15 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }, 
                     {
-                        "label": "PH Scale", 
+                        "label": "Ph Scale", 
                         "description": "If NOT OMIP protocol, describe pH scale.", 
-                        "id": "cmip6.ocnbgchem.key_properties.carbon_chemistry.pH_scale", 
+                        "id": "cmip6.ocnbgchem.key_properties.carbon_chemistry.ph_scale", 
                         "cardinality": "0.1", 
                         "type": "enum", 
+                        "is_cim_property": false, 
                         "enum": {
                             "label": "Ph Scale", 
                             "description": "Type of carbon chemistry pH scale in ocean biogeochemistry", 
@@ -1106,15 +1271,16 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Constants If Not OMIP", 
                         "description": "If NOT OMIP protocol, list carbon chemistry constants.", 
                         "id": "cmip6.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP", 
                         "cardinality": "0.1", 
-                        "type": "str", 
-                        "uiOrdinal": 3
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }
