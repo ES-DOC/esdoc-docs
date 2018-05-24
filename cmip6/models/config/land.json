@@ -148,13 +148,13 @@
                 }, 
                 {
                     "label": "Snow Free Albedo", 
-                    "description": "TODO", 
+                    "description": "Snow free albedo", 
                     "id": "cmip6.land.soil.snow_free_albedo", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of snow free albedo in land model.", 
                             "id": "cmip6.land.soil.snow_free_albedo.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -235,13 +235,13 @@
                 }, 
                 {
                     "label": "Hydrology", 
-                    "description": "Key properties of the land surface soil hydrology", 
+                    "description": "Key properties of the soil hydrology", 
                     "id": "cmip6.land.soil.hydrology", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of key properties of the land surface soil hydrology in land model.", 
+                            "description": "Overview of key properties of the soil hydrology in land model.", 
                             "id": "cmip6.land.soil.hydrology.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -353,7 +353,7 @@
                     "propertySets": [
                         {
                             "label": "Freezing", 
-                            "description": "TODO", 
+                            "description": "Frozen soil treatment", 
                             "id": "cmip6.land.soil.hydrology.freezing", 
                             "properties": [
                                 {
@@ -370,7 +370,7 @@
                                     "description": "Describe the method of ice storage", 
                                     "id": "cmip6.land.soil.hydrology.freezing.ice_storage_method", 
                                     "cardinality": "1.1", 
-                                    "type": "l-str", 
+                                    "type": "str", 
                                     "is_cim_property": false, 
                                     "uiOrdinal": 2
                                 }, 
@@ -387,7 +387,7 @@
                         }, 
                         {
                             "label": "Drainage", 
-                            "description": "TODO", 
+                            "description": "Drainage treatment in the soil", 
                             "id": "cmip6.land.soil.hydrology.drainage", 
                             "properties": [
                                 {
@@ -445,13 +445,13 @@
                 }, 
                 {
                     "label": "Heat Treatment", 
-                    "description": "TODO", 
+                    "description": "Soil heat treatment", 
                     "id": "cmip6.land.soil.heat_treatment", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of soil heat treatment in land model.", 
                             "id": "cmip6.land.soil.heat_treatment.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -777,13 +777,13 @@
             "subProcesses": [
                 {
                     "label": "Snow Albedo", 
-                    "description": "TODO", 
+                    "description": "Snow albedo", 
                     "id": "cmip6.land.snow.snow_albedo", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of snow albedo in land model.", 
                             "id": "cmip6.land.snow.snow_albedo.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -820,7 +820,7 @@
                         }, 
                         {
                             "label": "Functions", 
-                            "description": "If prognostic, ", 
+                            "description": "Describe the function types if prognostic snow albedo", 
                             "id": "cmip6.land.snow.snow_albedo.functions", 
                             "cardinality": "0.N", 
                             "type": "enum", 
@@ -1418,7 +1418,7 @@
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Anthropogenic Carbon Methods", 
-                        "description": "Treatment of the anthropogenic carbn pool", 
+                        "description": "Treatment of the anthropogenic carbon pool", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -1450,13 +1450,13 @@
             "subProcesses": [
                 {
                     "label": "Vegetation", 
-                    "description": "TODO", 
+                    "description": "Vegetation treatment in carbon cycle", 
                     "id": "cmip6.land.carbon_cycle.vegetation", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of vegetation treatment in carbon cycle in land model.", 
                             "id": "cmip6.land.carbon_cycle.vegetation.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -1494,7 +1494,7 @@
                     "propertySets": [
                         {
                             "label": "Photosynthesis", 
-                            "description": "TODO", 
+                            "description": "Photosynthesis treatment in carbon cycle", 
                             "id": "cmip6.land.carbon_cycle.vegetation.photosynthesis", 
                             "properties": [
                                 {
@@ -1510,7 +1510,7 @@
                         }, 
                         {
                             "label": "Autotrophic Respiration", 
-                            "description": "TODO", 
+                            "description": "Autotrophic respiration treatment in carbon cycle", 
                             "id": "cmip6.land.carbon_cycle.vegetation.autotrophic_respiration", 
                             "properties": [
                                 {
@@ -1535,7 +1535,7 @@
                         }, 
                         {
                             "label": "Allocation", 
-                            "description": "TODO", 
+                            "description": "Allocation treatment in carbon cycle", 
                             "id": "cmip6.land.carbon_cycle.vegetation.allocation", 
                             "properties": [
                                 {
@@ -1615,7 +1615,7 @@
                         }, 
                         {
                             "label": "Phenology", 
-                            "description": "TODO", 
+                            "description": "Phenology treatment in carbon cycle", 
                             "id": "cmip6.land.carbon_cycle.vegetation.phenology", 
                             "properties": [
                                 {
@@ -1631,7 +1631,7 @@
                         }, 
                         {
                             "label": "Mortality", 
-                            "description": "TODO", 
+                            "description": "Vegetation mortality treatment in carbon cycle", 
                             "id": "cmip6.land.carbon_cycle.vegetation.mortality", 
                             "properties": [
                                 {
@@ -1649,13 +1649,13 @@
                 }, 
                 {
                     "label": "Litter", 
-                    "description": "TODO", 
+                    "description": "Litter treatment in carbon cycle", 
                     "id": "cmip6.land.carbon_cycle.litter", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of litter treatment in carbon cycle in land model.", 
                             "id": "cmip6.land.carbon_cycle.litter.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -1702,13 +1702,13 @@
                 }, 
                 {
                     "label": "Soil", 
-                    "description": "TODO", 
+                    "description": "Soil treatment in carbon cycle", 
                     "id": "cmip6.land.carbon_cycle.soil", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of soil treatment in carbon cycle in land model.", 
                             "id": "cmip6.land.carbon_cycle.soil.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -1755,13 +1755,13 @@
                 }, 
                 {
                     "label": "Permafrost Carbon", 
-                    "description": "TODO", 
+                    "description": "Permafrost carbon treatment in carbon cycle", 
                     "id": "cmip6.land.carbon_cycle.permafrost_carbon", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of permafrost carbon treatment in carbon cycle in land model.", 
                             "id": "cmip6.land.carbon_cycle.permafrost_carbon.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -2046,13 +2046,13 @@
             "subProcesses": [
                 {
                     "label": "Oceanic Discharge", 
-                    "description": "TODO", 
+                    "description": "Oceanic discharge treatment in river routing", 
                     "id": "cmip6.land.river_routing.oceanic_discharge", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of oceanic discharge treatment in river routing in land model.", 
                             "id": "cmip6.land.river_routing.oceanic_discharge.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -2207,13 +2207,13 @@
             "subProcesses": [
                 {
                     "label": "Method", 
-                    "description": "TODO", 
+                    "description": "Lakes treatment", 
                     "id": "cmip6.land.lakes.method", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of lakes treatment in land model.", 
                             "id": "cmip6.land.lakes.method.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -2303,13 +2303,13 @@
                 }, 
                 {
                     "label": "Wetlands", 
-                    "description": "TODO", 
+                    "description": "Welands treatment", 
                     "id": "cmip6.land.lakes.wetlands", 
                     "contact": "David Hassell", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of todo in land model.", 
+                            "description": "Overview of welands treatment in land model.", 
                             "id": "cmip6.land.lakes.wetlands.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
@@ -2479,7 +2479,7 @@
                 "is_cim_property": false, 
                 "enum": {
                     "label": "Land Atmosphere Flux Exchanges Types", 
-                    "description": "TODO", 
+                    "description": "land atmosphere flux exchanges types", 
                     "isOpen": true, 
                     "choices": [
                         {
@@ -2577,13 +2577,13 @@
         "subProcesses": [
             {
                 "label": "Conservation Properties", 
-                "description": "TODO", 
+                "description": "Convservation", 
                 "id": "cmip6.land.key_properties.conservation_properties", 
                 "contact": "David Hassell", 
                 "properties": [
                     {
                         "label": "Overview", 
-                        "description": "Overview of todo in land model.", 
+                        "description": "Overview of convservation in land model.", 
                         "id": "cmip6.land.key_properties.conservation_properties.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
@@ -2621,13 +2621,13 @@
             }, 
             {
                 "label": "Timestepping Framework", 
-                "description": "TODO", 
+                "description": "Timestepping", 
                 "id": "cmip6.land.key_properties.timestepping_framework", 
                 "contact": "David Hassell", 
                 "properties": [
                     {
                         "label": "Overview", 
-                        "description": "Overview of todo in land model.", 
+                        "description": "Overview of timestepping in land model.", 
                         "id": "cmip6.land.key_properties.timestepping_framework.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 

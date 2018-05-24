@@ -268,7 +268,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.key_properties.conservation_properties</dd>
+        <dt><b>Description</b></dt><dd>Convservation</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.key_properties.conservation_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="energy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -317,7 +317,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.key_properties.timestepping_framework</dd>
+        <dt><b>Description</b></dt><dd>Timestepping</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.key_properties.timestepping_framework</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_dependent_on_atmosphere"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -667,7 +667,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.snow_free_albedo</dd>
+        <dt><b>Description</b></dt><dd>Snow free albedo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.snow_free_albedo</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -765,7 +765,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Key properties of the land surface soil hydrology</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology</dd>
+        <dt><b>Description</b></dt><dd>Key properties of the soil hydrology</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -912,7 +912,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing</dd>
+        <dt><b>Description</b></dt><dd>Frozen soil treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_ground_ice_layers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -933,14 +933,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the method of ice storage</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd>
+        <dt><b>Description</b></dt><dd>Describe the method of ice storage</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the method of ice storage</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd>
+        <dt><b>Description</b></dt><dd>Describe the method of ice storage</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.soil.hydrology.freezing.ice_storage_method</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="permafrost"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -961,7 +961,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.drainage</dd>
+        <dt><b>Description</b></dt><dd>Drainage treatment in the soil</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.hydrology.drainage</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1038,7 +1038,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.heat_treatment</dd>
+        <dt><b>Description</b></dt><dd>Soil heat treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.soil.heat_treatment</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1423,7 +1423,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo</dd>
+        <dt><b>Description</b></dt><dd>Snow albedo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1465,14 +1465,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, </dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd><dt><b>Type</b></dt><dd>ENUM:snow_albedo_function_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd>
+        <dt><b>Description</b></dt><dd>Describe the function types if prognostic snow albedo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd><dt><b>Type</b></dt><dd>ENUM:snow_albedo_function_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, </dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd><dt><b>Type</b></dt><dd>ENUM:snow_albedo_function_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd>
+        <dt><b>Description</b></dt><dd>Describe the function types if prognostic snow albedo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd><dt><b>Type</b></dt><dd>ENUM:snow_albedo_function_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.land.snow.snow_albedo.functions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="vegetation type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2256,7 +2256,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation</dd>
+        <dt><b>Description</b></dt><dd>Vegetation treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_carbon_pools"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2305,7 +2305,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.photosynthesis</dd>
+        <dt><b>Description</b></dt><dd>Photosynthesis treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.photosynthesis</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2326,7 +2326,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.autotrophic_respiration</dd>
+        <dt><b>Description</b></dt><dd>Autotrophic respiration treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.autotrophic_respiration</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="maintainance_respiration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2361,7 +2361,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.allocation</dd>
+        <dt><b>Description</b></dt><dd>Allocation treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.allocation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2466,7 +2466,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.phenology</dd>
+        <dt><b>Description</b></dt><dd>Phenology treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.phenology</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2487,7 +2487,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.mortality</dd>
+        <dt><b>Description</b></dt><dd>Vegetation mortality treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.vegetation.mortality</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2508,7 +2508,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.litter</dd>
+        <dt><b>Description</b></dt><dd>Litter treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.litter</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_carbon_pools"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2571,7 +2571,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.soil</dd>
+        <dt><b>Description</b></dt><dd>Soil treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.soil</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_carbon_pools"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2634,7 +2634,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.permafrost_carbon</dd>
+        <dt><b>Description</b></dt><dd>Permafrost carbon treatment in carbon cycle</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.carbon_cycle.permafrost_carbon</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="is_permafrost_included"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2984,7 +2984,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.river_routing.oceanic_discharge</dd>
+        <dt><b>Description</b></dt><dd>Oceanic discharge treatment in river routing</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.river_routing.oceanic_discharge</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="discharge_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3159,7 +3159,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.lakes.method</dd>
+        <dt><b>Description</b></dt><dd>Lakes treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.lakes.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_treatment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3271,7 +3271,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>TODO</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.lakes.wetlands</dd>
+        <dt><b>Description</b></dt><dd>Welands treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6.land.lakes.wetlands</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
