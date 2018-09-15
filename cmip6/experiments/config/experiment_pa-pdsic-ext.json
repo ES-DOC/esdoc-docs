@@ -1,0 +1,76 @@
+{
+    "canonical_name": "pa-pdSIC-ext", 
+    "description": "Coupled ocean-atmosphere transient experiment.  Coupled model extended simulation constrained with present day sea ice.   Present day sea ice to be the same as used in experiment pdSST-pdSIC (1.1).  It is recommended to constrain sea ice by nudging but with a weak relaxation timescale of 2 months. However, appropriately calibrated long-wave fluxes applied to the sea ice model may also be used.  Radiative forcing to be set to present day (year 2000) levels. Initial conditions for coupled model experiments to be taken from year 2000 of coupled model historical simulations.", 
+    "governing_mips": [
+        "pamip"
+    ], 
+    "keywords": "PAMIP, Tier 3,", 
+    "long_name": "Partially-coupled extended simulation constrained by present day SIC", 
+    "mip_era": "cmip6", 
+    "rationale": "Present day control. Investigate the decadal and longer impacts of Arctic and Antarctic sea ice.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "pamip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "100yrs", 
+            "description": "Run for 100 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "100 years", 
+            "label": "100yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SIC climatology", 
+            "description": "Present day monthly mean cimatology of sea ice concentration, data provided by PAMIP. When used in coupled models it is recommended to constrain sea ice by nudging but with a weak relaxation timescale of 2 months. However, appropriately calibrated long-wave fluxes applied to the sea ice model may also be used.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SIC clim, sea ice concentration climatology, present day", 
+            "label": "PAMIP present day SIC climatology", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SIT", 
+            "description": "Present day monthly mean climatology of sea ice thickness, data provided by PAMIP.  If sea ice thickness cannot be specified then it should be left free to evolve in the coupled model experiments.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SIT, sea ice thickness, climatology, present day", 
+            "label": "PAMIP present day SIT", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present day radiative forcing", 
+            "description": "Present day (2000) radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "present day, 2000, radiative forcing", 
+            "label": "Present day radiative forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2000HistoricalInitialisation", 
+            "description": "Initialisation from the historical simulation in the year 2000.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, 2000", 
+            "label": "2000HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "403c1055-d18e-451a-8f18-18d8dff6069a", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/pa-pdSIC-ext?client=mohc"
+}

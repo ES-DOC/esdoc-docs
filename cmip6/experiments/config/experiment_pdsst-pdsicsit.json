@@ -1,0 +1,85 @@
+{
+    "canonical_name": "pdSST-pdSICSIT", 
+    "description": "Atmosphere-only time slice present day control experiment with sea ice thickness.  Time slice forced by climatological monthly mean sea surface temperature (SST), sea ice concentration (SIC) and sea ice thickness (SIT) for the present day.  Radiative forcing to be set to present day (year 2000) levels. Time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up. Minimum ensemble size is 100 simulations.", 
+    "governing_mips": [
+        "pamip"
+    ], 
+    "keywords": "PAMIP, Tier 3,", 
+    "long_name": "Atmosphere time slice constrained by present day conditions including sea ice thickness", 
+    "mip_era": "cmip6", 
+    "rationale": "Investigate the impacts of sea ice thickness (SIT) changes.", 
+    "related_experiments": [
+        {
+            "name": "amip", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "pamip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2000-2001 14mnths", 
+            "description": "PAMIP time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 2000-2001", 
+            "label": "2000-2001 14mnths", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SST climatology", 
+            "description": "Present day monthly mean cimatology of sea surface temperatue, data provided by PAMIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SST clim, sea surface temperature climatology, present day", 
+            "label": "PAMIP present day SST climatology", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SIC climatology", 
+            "description": "Present day monthly mean cimatology of sea ice concentration, data provided by PAMIP. When used in coupled models it is recommended to constrain sea ice by nudging but with a weak relaxation timescale of 2 months. However, appropriately calibrated long-wave fluxes applied to the sea ice model may also be used.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SIC clim, sea ice concentration climatology, present day", 
+            "label": "PAMIP present day SIC climatology", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SIT", 
+            "description": "Present day monthly mean climatology of sea ice thickness, data provided by PAMIP.  If sea ice thickness cannot be specified then it should be left free to evolve in the coupled model experiments.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SIT, sea ice thickness, climatology, present day", 
+            "label": "PAMIP present day SIT", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present day radiative forcing", 
+            "description": "Present day (2000) radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "present day, 2000, radiative forcing", 
+            "label": "Present day radiative forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "100MemberAMIP", 
+            "description": "An ensemble of one hundred simulations.  Initial conditions should be based on the AMIP simulation for 1st April 2000 if possible, though any suitable start dump may be used, noting that the first two months of the simulations will be ignored. The results are not expected to be particularly sensitive to the way in which ensemble members are generated, and any suitable method may be used but should be documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "One hundred, 100, ensemble, runs, simulations, AMIP", 
+            "label": "100MemberAMIP", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "e178d24c-b4d7-4236-8e54-f7556ca0c773", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/pdSST-pdSICSIT?client=mohc"
+}

@@ -1,0 +1,49 @@
+{
+    "canonical_name": "yr2010CO2", 
+    "description": "Branch from beginning of year 2010 of the historical simulation with CO2 concentration and all other forcing held fixed at 2010 level (part of the CDR-yr2010-pulse experiment to diagnose CO2 emissions).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven). In this experiment CO2 is first prescribed to diagnose emissions; however, the key simulations calculate the CO2 concentration.", 
+    "governing_mips": [
+        "cdrmip"
+    ], 
+    "keywords": "CDRMIP, Tier 3,", 
+    "long_name": "concentration-driven fixed 2010 forcing", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "cdrmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2010-2105 106yrs min", 
+            "description": "Run from 2010 to 2105.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2010-2105 minimum", 
+            "label": "2010-2105 106yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2010-7009 5000yrs max", 
+            "description": "Run from 2010 for a maximum of 5000 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2010-7010 maximum", 
+            "label": "2010-7009 5000yrs max", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, BioGeoChemistry, AOGCM-BGC, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "b24bdc3a-0a4e-427a-acc6-467a9abb604c", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/yr2010CO2?client=mohc"
+}

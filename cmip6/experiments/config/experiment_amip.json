@@ -7,7 +7,7 @@
     "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), Atmosphere,  historical SST", 
     "long_name": "Atmospheric Model Intercomparison Project", 
     "mip_era": "cmip6", 
-    "rationale": "AMIP baseline simulation for model evaluation and variability.", 
+    "rationale": "AMIP baseline simulation for model evaluation and variability. A number of diagnostic atmospheric experiments use the AMIP as a control.", 
     "related_experiments": [
         {
             "name": "amip-4xCO2", 
@@ -24,6 +24,22 @@
         {
             "name": "amip-a4SST-4xCO2", 
             "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-climSIC", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-climSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "amip-climSST", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "amip-climSST", 
+            "relationship": "is_initializer_of"
         }, 
         {
             "name": "amip-future4K", 
@@ -56,6 +72,62 @@
         {
             "name": "amip-piForcing", 
             "relationship": "is_control_for"
+        }, 
+        {
+            "name": "futSST-pdSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "modelSST-futArcSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "modelSST-pdSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-futAntSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-futArcSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-futArcSICSIT", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-futBKSeasSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-futOkhotskSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-pdSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-pdSICSIT", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-piAntSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pdSST-piArcSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "piSST-pdSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "piSST-piSIC", 
+            "relationship": "is_initializer_of"
         }
     ], 
     "related_mips": [
@@ -64,7 +136,8 @@
         "deck", 
         "gmmip", 
         "highresmip", 
-        "ismip6"
+        "ismip6", 
+        "pamip"
     ], 
     "requirements": [
         {
@@ -103,7 +176,7 @@
         }, 
         {
             "canonical_name": "Historical WMGHG Concentrations", 
-            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Time varying global annual mean concentrations for CO2 and other long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 
@@ -154,11 +227,19 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "SingleMember", 
-            "description": "One ensemble member", 
+            "canonical_name": "MinimumThree", 
+            "description": "An ensemble of at least three simulations", 
             "isConformanceRequested": false, 
-            "keywords": "Single, simulation, run, ensemble", 
-            "label": "SingleMember", 
+            "keywords": "minimum 3, at least 3, ensemble, runs, simulations", 
+            "label": "MinimumThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AMIPInitialisation", 
+            "description": "AMIP integrations can be initialised from prior model integrations, or from observations or in other reasonable ways. Depending on the treatment of snow cover, soil water content, the carbon cycle and vegetation, these runs may require a spin-up period of several years. Results from the spin-up period (prior to 1979) should be discarded but the spin-up technique should be documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "AMIP Initialisation", 
+            "label": "AMIPInitialisation", 
             "type": "ensemble"
         }, 
         {

@@ -7,7 +7,7 @@
     "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate,", 
     "long_name": "Pre-Industrial Control", 
     "mip_era": "cmip6", 
-    "rationale": "Control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
+    "rationale": "To study the unforced variability of the climate system. It is the control experiment against which perturbations are compared, it serves as a baseline for experiments that branch from it.  To allow us to determine unforced model variability.  The control experiment should be long enough to extend to the furthest point in time reached by the end of the perturbation experiments,  thus the control should allow us to subtract any residual, unforced drift from all perturbation simulations.", 
     "related_experiments": [
         {
             "name": "1pctCO2", 
@@ -377,6 +377,7 @@
     "related_mips": [
         "aerchemmip", 
         "c4mip", 
+        "cdrmip", 
         "cmip", 
         "damip", 
         "dcpp", 
@@ -392,11 +393,11 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-2349 500yrs", 
-            "description": "500 years of simulation beginning in 1850", 
+            "canonical_name": "500yrs", 
+            "description": "Run for 500 years.", 
             "isConformanceRequested": false, 
-            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
-            "label": "1850-2349 500yrs", 
+            "keywords": "500 years, control, idealised", 
+            "label": "500yrs", 
             "type": "temporal-constraint"
         }, 
         {
@@ -421,6 +422,14 @@
             "isConformanceRequested": false, 
             "keywords": "Single, simulation, run, ensemble", 
             "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "piControlInitialisation", 
+            "description": "The pre-industrial control experiment, piControl, is intitialised from the pre-industrial control spinup piControl-spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl initialisation", 
+            "label": "piControlInitialisation", 
             "type": "ensemble"
         }, 
         {

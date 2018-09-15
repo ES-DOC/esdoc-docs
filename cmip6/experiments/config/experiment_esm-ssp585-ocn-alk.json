@@ -1,0 +1,53 @@
+{
+    "canonical_name": "esm-ssp585-ocn-alk", 
+    "description": "emission driven SSP5-8.5 scenario with 0.14 Pmol/yr alkalinity added to ice free ocean surface waters from 2020 optionally extended from 2100 to 2300 (part of the CDR-ocean-alk experiment).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven).", 
+    "governing_mips": [
+        "cdrmip"
+    ], 
+    "keywords": "CDRMIP, Tier 2,", 
+    "long_name": "emission-driven SSP5-8.5 scenario but with ocean alkalinization from year 2020 onward", 
+    "mip_era": "cmip6", 
+    "rationale": "Evaluate the Earth system response to ocean alkalinization during a high CO2 emission climate change scenario.", 
+    "related_experiments": [
+        {
+            "name": "esm-ssp585", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "esm-ssp585-ocn-alk-stop", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "cdrmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2020-2100 81yrs min", 
+            "description": "Run from 2020 to at least 2100.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2020-2100 minimum", 
+            "label": "2020-2100 81yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2020-7019 5000yrs max", 
+            "description": "Run from 2020 for a maximum of 5000 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 202- 7019 maximum", 
+            "label": "2020-7019 5000yrs max", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, BioGeoChemistry, AOGCM-BGC, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "9f6c69ca-43c2-4f73-ba0f-313a5bf2cb08", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-ssp585-ocn-alk?client=mohc"
+}

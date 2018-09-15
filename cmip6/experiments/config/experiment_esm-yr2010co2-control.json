@@ -1,0 +1,61 @@
+{
+    "canonical_name": "esm-yr2010CO2-control", 
+    "description": "Forced with CO2 emissions diagnosed from historical and yr2010CO2 simulations and all other forcings the same as in that simulation (part of the CDR-yr2010-pulse experiment).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven). In this experiment CO2 is first prescribed to diagnose emissions; however, the key simulations calculate the CO2 concentration.", 
+    "governing_mips": [
+        "cdrmip"
+    ], 
+    "keywords": "CDRMIP, Tier 3,", 
+    "long_name": "historical emissions followed by fixed 2010 emissions (both model-diagnosed)", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "esm-piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "esm-yr2010CO2-CO2pulse", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-yr2010CO2-cdr-pulse", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-yr2010CO2-noemit", 
+            "relationship": "is_initializer_of"
+        }
+    ], 
+    "related_mips": [
+        "cdrmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2115 266yrs min", 
+            "description": "Run from 1850 to 2115 minimum.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, scenario, 1850-2015 minimum", 
+            "label": "1850-2115 266yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1850-7009 5160yrs max", 
+            "description": "Run from 1850 for a mazimum of 5160 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, future, scenario, 1850-7010 maximum", 
+            "label": "1850-7009 5160yrs max", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, BioGeoChemistry, AOGCM-BGC, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "b8ca64fa-10b0-4661-b7da-ed08c4a4c167", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-yr2010CO2-control?client=mohc"
+}

@@ -7,7 +7,7 @@
     "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), pre-industrial, reference, control, climate, ESM, Earth System Model, spin-up", 
     "long_name": "pre-industrial control simulation with CO2 concentration calculated (spin-up)", 
     "mip_era": "cmip6", 
-    "rationale": null, 
+    "rationale": "Spin-up period to allow the climate system to come into balance with forcings.", 
     "related_experiments": [
         {
             "name": "esm-piControl", 
@@ -24,11 +24,19 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "Pre-Industrial Forcing", 
-            "description": "Pre-Industrial forcing", 
+            "canonical_name": "pi spinup period", 
+            "description": "Length (in years) of the spin-up period required to bring the model into equilibrioum prior to the start of the piControl experiment.", 
             "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing", 
-            "label": "Pre-Industrial Forcing", 
+            "keywords": "pre-industrial spinup period", 
+            "label": "pi spinup period", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial ESM Forcing", 
+            "description": "pre-Industrial forcing for Earth System Models that can calculate carbon fluxes", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial forcing, CO2 calculated, ESM, Earth System Model", 
+            "label": "Pre-Industrial ESM Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -45,6 +53,14 @@
             "isConformanceRequested": false, 
             "keywords": "Single, simulation, run, ensemble", 
             "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "piControlSpinupInitialisation", 
+            "description": "Usually a piControl simulation is intitialised from the control run of a different model or from observations. The chosen method should be documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl initialisation, spinup", 
+            "label": "piControlSpinupInitialisation", 
             "type": "ensemble"
         }, 
         {

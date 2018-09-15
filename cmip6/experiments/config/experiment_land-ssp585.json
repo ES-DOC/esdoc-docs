@@ -1,0 +1,59 @@
+{
+    "canonical_name": "land-ssp585", 
+    "description": "Offline land surface simulations forced with ScenarioMIP SSP5-85.  Three realisations required.  A trend preserving statistical bias correction method is applied to 3-hourly surface meteorological variables from the scenario output to generate a set of ensemble forcing data.  Gridded forcings will be provided by LS3MIP. The land model configuration should be identical to that used in the DECK and CMIP6 historical simulations for the parent coupled model.  Spin-up of the land-only simulations should follow the TRENDY protocol.", 
+    "governing_mips": [
+        "ls3mip"
+    ], 
+    "keywords": "LS3MIP, Tier 1, Scenario, land surface, ssp5-85", 
+    "long_name": "Future SSP5-85 land-only", 
+    "mip_era": "cmip6", 
+    "rationale": "Climate trend analysis. Climate change impact assessment. Offline land simulations of land surface states and fluxes allow for the evaluation of trends and variability of snow, soil moisture and land surface fluxes, carbon stores and vegetation states, and climate change impacts.", 
+    "related_experiments": [
+        {
+            "name": "ssp585", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "ls3mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "TRENDY spin up", 
+            "description": "Recycling of the climate mean and variability from two decades of the forcing dataset.  The recycled variables are the forcing variables needed to drive an offline land module. So these are wind speed in two directions at 10m height, atmosphere temperature and humidity at 2m height, incoming shortwave and longwave radiation, incoming rainfall and snowfall, surface pressure.", 
+            "isConformanceRequested": true, 
+            "keywords": "TRENDY, spin-up, recycle climate mean, recycle climate variability", 
+            "label": "TRENDY spin up", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LMIPSSP5-85Forcing", 
+            "description": "SSP5-85 forcing data for offline land surface models running the L3MIP future simulations.  Data provided by the LS3MIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "LMIP, scenario, forcing, SSP5-85, RCP8.5", 
+            "label": "LMIPSSP5-85Forcing", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LSM Configuration", 
+            "description": "Offline land surface model", 
+            "isConformanceRequested": false, 
+            "keywords": "LSM, land surface model", 
+            "label": "LSM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "246c5690-e3ce-4d9c-8dee-69b7e5a5d50c", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/land-ssp585?client=mohc"
+}

@@ -1,6 +1,6 @@
 {
     "canonical_name": "historical", 
-    "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control.", 
+    "description": "Simulation of recent past (1850 to 2014). \nImpose changing conditions (consistent with observations). Should be initialised from a point early enough in the pre-industrial control run to ensure that the end of all the perturbed runs branching from the end of this historical run end before the end of the control. Only one ensemble member is requested but modelling groups are strongly encouraged to submit at least three ensemble members of their CMIP historical simulation.", 
     "governing_mips": [
         "cmip"
     ], 
@@ -110,6 +110,38 @@
             "relationship": "is_control_for"
         }, 
         {
+            "name": "pa-futAntSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-futAntSIC-ext", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-futArcSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-futArcSIC-ext", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-pdSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-pdSIC-ext", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-piAntSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "pa-piArcSIC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
             "name": "piClim-spAer-histaer", 
             "relationship": "is_control_for"
         }, 
@@ -164,11 +196,16 @@
         {
             "name": "volc-cluster-21C", 
             "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "yr2010CO2", 
+            "relationship": "is_initializer_of"
         }
     ], 
     "related_mips": [
         "aerchemmip", 
         "c4mip", 
+        "cdrmip", 
         "cmip", 
         "damip", 
         "dcpp", 
@@ -177,6 +214,7 @@
         "ismip6", 
         "ls3mip", 
         "lumip", 
+        "pamip", 
         "rfmip", 
         "volmip"
     ], 
@@ -199,7 +237,7 @@
         }, 
         {
             "canonical_name": "Historical WMGHG Concentrations", 
-            "description": "Forcing data for concentration-driven historical CMIP6 runs. Here, we provide an outline of a consolidated set of atmospheric concentration time series for the long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "description": "Forcing data for concentration-driven historical CMIP6 runs. Time varying global annual mean concentrations for CO2 and other long-lived greenhouse-gases, including CO2, CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG", 
             "label": "Historical WMGHG Concentrations", 

@@ -1,0 +1,65 @@
+{
+    "canonical_name": "1pctCO2-cdr", 
+    "description": "1 percent per year decrease in CO2 (immediately after reaching 4xCO2 in the 1pctCO2 simulation); then held constant at pre-industrial level for as long as possible (part of the CDR-reversibility experiment). CO2 concentration prescribed.", 
+    "governing_mips": [
+        "cdrmip"
+    ], 
+    "keywords": "CDRMIP, Tier 1,", 
+    "long_name": "1 percent per year decrease in CO2 from 4xCO2", 
+    "mip_era": "cmip6", 
+    "rationale": "Evaluate climate reversibility.", 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "cdrmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "200yrs min", 
+            "description": "Run for a minimum of 200 years", 
+            "isConformanceRequested": false, 
+            "keywords": "200 years, idealised", 
+            "label": "200yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "5000yrs max", 
+            "description": "Run for a maximum of 5000 years (minimum 200 years)", 
+            "isConformanceRequested": false, 
+            "keywords": "5000 years, idealised", 
+            "label": "5000yrs max", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "1pctCO2Initialisation", 
+            "description": "Initialisation from the 1pctCO2 simulation once atmospheric CO2 reaches quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, 1pctCO2", 
+            "label": "1pctCO2Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, BioGeoChemistry, AOGCM-BGC, Atmosphere-Ocean General Circulation Model", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "79073d27-4320-4e37-ba62-2598f55795fe", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/1pctCO2-cdr?client=mohc"
+}

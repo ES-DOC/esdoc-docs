@@ -1,0 +1,85 @@
+{
+    "canonical_name": "pa-futAntSIC", 
+    "description": "Coupled ocean-atmosphere time slice experiment forced by climatological monthly mean sea surface temperature (SST) for the present day and future Antarctic sea ice concentration (SIC). Sea ice concentration to be nudged into coupled model with a relaxation time-scale of 1 day. Radiative forcing to be set to present day (year 2000) levels.  Initial conditions for coupled model experiments to be taken from year 2000 of coupled model CMIP6 historical simulations. Time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up. Minimum ensemble size is 100 simulations.", 
+    "governing_mips": [
+        "pamip"
+    ], 
+    "keywords": "PAMIP, Tier 2,", 
+    "long_name": "Partially-coupled time slice constrained by future Antarctic SIC", 
+    "mip_era": "cmip6", 
+    "rationale": "Investigate response to Antarctic sea ice in a coupled model.", 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "pamip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2000-2001 14mnths", 
+            "description": "PAMIP time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 2000-2001", 
+            "label": "2000-2001 14mnths", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SST for use with future Antarctic SIC", 
+            "description": "Present day monthly mean cimatology of sea surface temperatue for use with future antarctic sea ice. Data provided by PAMIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SST clim, sea surface temperature climatology, present day, future antarctic sea ice", 
+            "label": "PAMIP present day SST for use with future Antarctic SIC", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP future Antarctic SIC", 
+            "description": "Future monthly mean cimatology of antarctic sea ice concentration, data provided by PAMIP. When used in coupled models it is recommended to constrain sea ice by nudging but with a weak relaxation timescale of 2 months. However, appropriately calibrated long-wave fluxes applied to the sea ice model may also be used.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, antarctic SIC clim, antarctic sea ice concentration climatology, future", 
+            "label": "PAMIP future Antarctic SIC", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AMIP  SIT protocol", 
+            "description": "Sea ice thickness should be specified according to the CMIP6 AMIP protocol.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, AMIP, SIT, sea ice thickness", 
+            "label": "AMIP  SIT protocol", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present day radiative forcing", 
+            "description": "Present day (2000) radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "present day, 2000, radiative forcing", 
+            "label": "Present day radiative forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "100MemberCoupled", 
+            "description": "An ensemble of one hundred simulation. Initial conditions should be based on 1st April 2000 from the CMIP6 historical simulation, note that the first two months of the simulations will be ignored. Ideally, different ocean states will be sampled by using different ensemble members of the CMIP6 historical simulation if these are available.", 
+            "isConformanceRequested": true, 
+            "keywords": "One hundred, 100, ensemble, runs, simulations, coupled model", 
+            "label": "100MemberCoupled", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "2255dbef-2ec5-4238-8bbf-7aa31b815ad8", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/pa-futAntSIC?client=mohc"
+}

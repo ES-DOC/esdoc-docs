@@ -10,8 +10,20 @@
     "rationale": "Control experiment against which perturbations are compared, it serves as a base- line for experiments that branch from it.  To allow us to determine unforced model variability.", 
     "related_experiments": [
         {
+            "name": "esm-pi-CO2pulse", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-pi-cdr-pulse", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
             "name": "esm-piControl-spinup", 
             "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "esm-yr2010CO2-control", 
+            "relationship": "is_initializer_of"
         }, 
         {
             "name": "piControl", 
@@ -20,24 +32,25 @@
     ], 
     "related_mips": [
         "c4mip", 
+        "cdrmip", 
         "cmip", 
         "deck"
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-2349 500yrs", 
-            "description": "500 years of simulation beginning in 1850", 
+            "canonical_name": "500yrs", 
+            "description": "Run for 500 years.", 
             "isConformanceRequested": false, 
-            "keywords": "Historical, Idealised, Pre-Industrial Start Date", 
-            "label": "1850-2349 500yrs", 
+            "keywords": "500 years, control, idealised", 
+            "label": "500yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Pre-Industrial Forcing", 
-            "description": "Pre-Industrial forcing", 
+            "canonical_name": "Pre-Industrial ESM Forcing", 
+            "description": "pre-Industrial forcing for Earth System Models that can calculate carbon fluxes", 
             "isConformanceRequested": true, 
-            "keywords": "Pre-industrial forcing", 
-            "label": "Pre-Industrial Forcing", 
+            "keywords": "pre-industrial forcing, CO2 calculated, ESM, Earth System Model", 
+            "label": "Pre-Industrial ESM Forcing", 
             "type": "forcing-constraint"
         }, 
         {
@@ -54,6 +67,14 @@
             "isConformanceRequested": false, 
             "keywords": "Single, simulation, run, ensemble", 
             "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "esmpiControlInit", 
+            "description": "The ESM pre-industrial control experiment, esm-piControl, is intitialised from the ESM pre-industrial control spinup esm-piControl-spinup.", 
+            "isConformanceRequested": true, 
+            "keywords": "esm-piControl initialisation", 
+            "label": "esmpiControlInit", 
             "type": "ensemble"
         }, 
         {

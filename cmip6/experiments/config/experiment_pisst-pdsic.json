@@ -1,0 +1,89 @@
+{
+    "canonical_name": "piSST-pdSIC", 
+    "description": "Atmosphere-only time slice experiment forced by climatological monthly mean sea ice concentration (SIC) for the present day and pre-industrial sea surface temperature (SST).  Radiative forcing to be set to present day (year 2000) levels. Past SST will be computed from the ensemble of CMIP5 simulations by PAMIP. Sea ice thickness should be specified according to the CMIP6 AMIP protocol. Time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up. Minimum ensemble size is 100 simulations.", 
+    "governing_mips": [
+        "pamip"
+    ], 
+    "keywords": "PAMIP, Tier 1,", 
+    "long_name": "Atmosphere time slice with pre-industrial SST and present day SIC", 
+    "mip_era": "cmip6", 
+    "rationale": "Different SST relative to pdSST-pdSIC (PA1.1) to investigate role of sea surface temperature (SST) in polar amplification.", 
+    "related_experiments": [
+        {
+            "name": "amip", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "pdSST-pdSIC", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "pamip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2000-2001 14mnths", 
+            "description": "PAMIP time slice simulations to begin on 1st April and run for 14 months, the first two months are ignored to allow for an initial model spin up.", 
+            "isConformanceRequested": false, 
+            "keywords": "idealised, 2000-2001", 
+            "label": "2000-2001 14mnths", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP pre-industrial SST climatology", 
+            "description": "Pre-industrial monthly mean cimatology of sea surface temperatue, data computed from the ensemble of CMIP5 simulations by PAMIP.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SST clim, sea surface temperature climatology, pre-industrial", 
+            "label": "PAMIP pre-industrial SST climatology", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "PAMIP present day SIC climatology", 
+            "description": "Present day monthly mean cimatology of sea ice concentration, data provided by PAMIP. When used in coupled models it is recommended to constrain sea ice by nudging but with a weak relaxation timescale of 2 months. However, appropriately calibrated long-wave fluxes applied to the sea ice model may also be used.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, SIC clim, sea ice concentration climatology, present day", 
+            "label": "PAMIP present day SIC climatology", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "AMIP  SIT protocol", 
+            "description": "Sea ice thickness should be specified according to the CMIP6 AMIP protocol.", 
+            "isConformanceRequested": true, 
+            "keywords": "PAMIP, AMIP, SIT, sea ice thickness", 
+            "label": "AMIP  SIT protocol", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present day radiative forcing", 
+            "description": "Present day (2000) radiative forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "present day, 2000, radiative forcing", 
+            "label": "Present day radiative forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "100MemberAMIP", 
+            "description": "An ensemble of one hundred simulations.  Initial conditions should be based on the AMIP simulation for 1st April 2000 if possible, though any suitable start dump may be used, noting that the first two months of the simulations will be ignored. The results are not expected to be particularly sensitive to the way in which ensemble members are generated, and any suitable method may be used but should be documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "One hundred, 100, ensemble, runs, simulations, AMIP", 
+            "label": "100MemberAMIP", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "64c291fc-2404-412c-9fea-39411115cdd5", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piSST-pdSIC?client=mohc"
+}

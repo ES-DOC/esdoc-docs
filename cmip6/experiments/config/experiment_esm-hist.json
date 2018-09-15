@@ -14,6 +14,10 @@
             "relationship": "is_initializer_of"
         }, 
         {
+            "name": "esm-ssp534-over", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
             "name": "esm-ssp585", 
             "relationship": "is_initializer_of"
         }, 
@@ -24,6 +28,7 @@
     ], 
     "related_mips": [
         "c4mip", 
+        "cdrmip", 
         "cmip"
     ], 
     "requirements": [
@@ -44,11 +49,21 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Emissions", 
-            "description": "Core emissions datasets.", 
+            "canonical_name": "Calculate Historical CO2 Concentration", 
+            "description": "Historical CO2 concentrations are calculated and anthropogenic sources of CO2 emisions are prescribed. For models that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere. The atmospheric CO2 concentration should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, CO2, ESM, Earth System Model, calculate CO2, CO2 calculated", 
+            "label": "Calculate Historical CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical WMGHG Concentrations Excluding CO2", 
+            "description": "Forcing data for  historical CMIP6 runs. Time varying global annual mean concentrations for the long-lived greenhouse-gases excluding CO2, but including: CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
             "isConformanceRequested": true, 
-            "keywords": "historical, emissions", 
-            "label": "Historical Emissions", 
+            "keywords": "historical, well mixed greenhouse gas, WMGHG, No CO2, Non-CO2 WMGHG", 
+            "label": "Historical WMGHG Concentrations Excluding CO2", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {

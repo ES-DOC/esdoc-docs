@@ -1,6 +1,6 @@
 {
     "canonical_name": "1pctCO2", 
-    "description": "1 percent per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+    "description": "Increase atmospheric CO2 concentration gradually at a rate of 1 percent per year. The concentration of atmospheric carbon dioxide is increased from the global annual mean 1850 value until quadrupling.", 
     "governing_mips": [
         "cmip"
     ], 
@@ -16,6 +16,10 @@
         {
             "name": "1pctCO2-bgc", 
             "relationship": "is_control_for"
+        }, 
+        {
+            "name": "1pctCO2-cdr", 
+            "relationship": "is_initializer_of"
         }, 
         {
             "name": "1pctCO2-rad", 
@@ -60,6 +64,7 @@
     ], 
     "related_mips": [
         "c4mip", 
+        "cdrmip", 
         "cmip", 
         "deck", 
         "fafmip", 
@@ -68,11 +73,11 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1850-1999 150yrs", 
-            "description": "Begin in 1850 and run for 150 years.", 
+            "canonical_name": "150yrs", 
+            "description": "Run for 150 years.", 
             "isConformanceRequested": false, 
-            "keywords": "idealised, 1850-1999", 
-            "label": "1850-1999 150yrs", 
+            "keywords": "150 years, idealised", 
+            "label": "150yrs", 
             "type": "temporal-constraint"
         }, 
         {
@@ -93,6 +98,14 @@
             "type": "forcing-constraint"
         }, 
         {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
             "canonical_name": "SingleMember", 
             "description": "One ensemble member", 
             "isConformanceRequested": false, 
@@ -102,7 +115,7 @@
         }, 
         {
             "canonical_name": "PreIndustrialInitialisation", 
-            "description": "Initialisation from the pre-industrial control simulation.", 
+            "description": "Initialisation from a January in the pre-industrial control simulation.", 
             "isConformanceRequested": true, 
             "keywords": "initial conditions, initialisation, pre-industrial", 
             "label": "PreIndustrialInitialisation", 
@@ -118,6 +131,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "19e29a05-0a8c-417c-9344-0422b2b90bf4", 
+    "uid": "a4aff2ad-6790-4405-8808-413771729c32", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/1pctCO2?client=mohc"
 }
