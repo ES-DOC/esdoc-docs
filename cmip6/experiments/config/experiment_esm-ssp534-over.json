@@ -35,6 +35,56 @@
             "type": "temporal-constraint"
         }, 
         {
+            "canonical_name": "SSP5 RCP34 overshoot emissions", 
+            "description": "Impose RCP3.4 overshoot emissions.  Beginning in 2040, reduce emissions from the 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4-over, future, 21st century, SSP5, RCP3.4 overshoot", 
+            "label": "SSP5 RCP34 overshoot emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP5 RCP34-overshoot Land Use", 
+            "description": "Impose changing RCP3.4 overshoot land use including crops, pasture, urban area, vegetation and forest for SSP5.  Beginning in 2040, reduce forcings from 8.5 W/m2 pathway to 3.4 W/m2 by 2100.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 3.4 overshoot, future, scenario, SSP5, RCP3.4, overshoot, Land Use", 
+            "label": "SSP5 RCP34-overshoot Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ESMHistoricalInitialisation", 
+            "description": "Initialisation is from the end of the esm-hist experiment.  To provide continuity between simulations of the recent past and  future scenario simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, scenario", 
+            "label": "ESMHistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
             "canonical_name": "AOGCM-BGC Configuration", 
             "description": "Use a coupled Atmosphere-Ocean general circulation model with biogeochemistry", 
             "isConformanceRequested": false, 

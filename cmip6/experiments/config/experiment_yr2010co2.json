@@ -1,14 +1,18 @@
 {
     "canonical_name": "yr2010CO2", 
-    "description": "Branch from beginning of year 2010 of the historical simulation with CO2 concentration and all other forcing held fixed at 2010 level (part of the CDR-yr2010-pulse experiment to diagnose CO2 emissions).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven). In this experiment CO2 is first prescribed to diagnose emissions; however, the key simulations calculate the CO2 concentration.", 
+    "description": "Branch from beginning of year 2010 of the historical simulation with CO2 concentration held constant at 389 ppm. All other forcing (anthropogenic, solar and volcanic) held fixed at 2010 levels. Anthropogenic forcing includes aerosols, non-CO2 greenhouse gasses, and land use changes.", 
     "governing_mips": [
         "cdrmip"
     ], 
     "keywords": "CDRMIP, Tier 3,", 
     "long_name": "concentration-driven fixed 2010 forcing", 
     "mip_era": "cmip6", 
-    "rationale": null, 
+    "rationale": "Part of the CDR-yr2010-pulse experiment. In this experiment CO2 is prescribed to diagnose emissions.", 
     "related_experiments": [
+        {
+            "name": "esm-yr2010CO2-control", 
+            "relationship": "is_constrainer_of"
+        }, 
         {
             "name": "historical", 
             "relationship": "is_initialized_by"
@@ -33,6 +37,91 @@
             "keywords": "future, scenario, 2010-7010 maximum", 
             "label": "2010-7009 5000yrs max", 
             "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "2010 CO2 Concentration", 
+            "description": "Global annual mean CO2 concentration held fixed at 389 ppm, this represents 2010 CO2 concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, CO2, carbon dioxide, 389ppm", 
+            "label": "2010 CO2 Concentration", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Non-CO2 Well Mixed GHG", 
+            "description": "Global annual mean 2010 concentrations for non-CO2 long-lived greenhouse-gases, including CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, GHG, greenhouse gas, non-CO2", 
+            "label": "2010 Non-CO2 Well Mixed GHG", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Aerosol Forcing", 
+            "description": "Apply 2010 mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, aerosol, forcing, CMIP6", 
+            "label": "2010 Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Land Use", 
+            "description": "Apply the global gridded land-use forcing datasets for 2010.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, land use", 
+            "label": "2010 Land Use", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Stratospheric Aerosol", 
+            "description": "Apply 2010 stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, stratospheric, aerosol", 
+            "label": "2010 Stratospheric Aerosol", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 O3 and Stratospheric H2O Concentrations", 
+            "description": "2010 ozone concentrations encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "2010 O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Solar Irradiance Forcing", 
+            "description": "2010 solar irradiance. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, 2010, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "2010 Solar Irradiance Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Solar Particle Forcing", 
+            "description": "2010 solar particle forcing. For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, 2010, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "2010 Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010HistoricalInitialisation", 
+            "description": "Initialisation from the historical simulation in the year 2010.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, historical, 2010", 
+            "label": "2010HistoricalInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
         }, 
         {
             "canonical_name": "AOGCM-BGC Configuration", 

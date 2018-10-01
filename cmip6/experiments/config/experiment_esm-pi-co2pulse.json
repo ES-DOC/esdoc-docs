@@ -1,10 +1,10 @@
 {
     "canonical_name": "esm-pi-CO2pulse", 
-    "description": "100 Gt C instantly added (positive pulse) to a pre-industrial atmosphere (part of the CDR-pi-pulse experiment). CO2 concentration calculated (i.e. freely evolving).", 
+    "description": "100 Gt C instantly added (positive pulse) to a pre-industrial atmosphere (part of the CDR-pi-pulse experiment). CO2 concentration calculated (i.e. freely evolving). Additional ensemble members are requested with tier 2 priority.", 
     "governing_mips": [
         "cdrmip"
     ], 
-    "keywords": "CDRMIP, Tier 1,", 
+    "keywords": "CDRMIP, Tier 1, Tier 2", 
     "long_name": "pulse addition of 100 Gt carbon to pre-industrial atmosphere", 
     "mip_era": "cmip6", 
     "rationale": "Evaluate climate and carbon cycle response of an unperturbed system to atmospheric CO2 additionl; comparison with the negative pulse response.", 
@@ -33,6 +33,55 @@
             "keywords": "5000 years, idealised", 
             "label": "5000yrs max", 
             "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Add 100 Gt Carbon", 
+            "description": "Instantaneously add 100 Gt of Carbon to the atmosphere.", 
+            "isConformanceRequested": true, 
+            "keywords": "Remove C, remove carbon, 100Gt", 
+            "label": "Add 100 Gt Carbon", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "esmpiControlEndInit", 
+            "description": "Initialise from the end of the esm-piControl experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "esm-piControl initialisation, initial conditions", 
+            "label": "esmpiControlEndInit", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "TwoMember", 
+            "description": "An ensemble of two simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "two, 2, ensemble, runs, simulations", 
+            "label": "TwoMember", 
+            "type": "ensemble"
         }, 
         {
             "canonical_name": "AOGCM-BGC Configuration", 

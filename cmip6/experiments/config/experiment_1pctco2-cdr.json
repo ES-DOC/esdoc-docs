@@ -1,10 +1,10 @@
 {
     "canonical_name": "1pctCO2-cdr", 
-    "description": "1 percent per year decrease in CO2 (immediately after reaching 4xCO2 in the 1pctCO2 simulation); then held constant at pre-industrial level for as long as possible (part of the CDR-reversibility experiment). CO2 concentration prescribed.", 
+    "description": "1 percent per year decrease in CO2 (immediately after reaching 4xCO2 in the 1pctCO2 simulation); then held constant at pre-industrial level for as long as possible (part of the CDR-reversibility experiment). CO2 concentration prescribed. Additional ensemble members are requested with tier 2 priority.", 
     "governing_mips": [
         "cdrmip"
     ], 
-    "keywords": "CDRMIP, Tier 1,", 
+    "keywords": "CDRMIP, Tier 1, Tier 2", 
     "long_name": "1 percent per year decrease in CO2 from 4xCO2", 
     "mip_era": "cmip6", 
     "rationale": "Evaluate climate reversibility.", 
@@ -35,6 +35,39 @@
             "type": "temporal-constraint"
         }, 
         {
+            "canonical_name": "1% per year CO2 Decrease", 
+            "description": "Impose a 1% per year decrease in the concentration of atmospheric carbon dioxide (CO2)  from 4X pre-industrial CO2 concentration to original pre-industrial CO2 concentration.  Then hold the CO2 concentration fixed at the pre-industrial level for as long as possible.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/y decrease, 1/4 CO2, decrease to quater CO2", 
+            "label": "1% per year CO2 Decrease", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2Initialisationat4X", 
+            "description": "Initialisation from the 1pctCO2 simulation once atmospheric CO2 reaches quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, 1pctCO2 at 4x", 
+            "label": "1pctCO2Initialisationat4X", 
+            "type": "ensemble"
+        }, 
+        {
             "canonical_name": "SingleMember", 
             "description": "One ensemble member", 
             "isConformanceRequested": false, 
@@ -43,11 +76,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "1pctCO2Initialisation", 
-            "description": "Initialisation from the 1pctCO2 simulation once atmospheric CO2 reaches quadrupling.", 
-            "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, 1pctCO2", 
-            "label": "1pctCO2Initialisation", 
+            "canonical_name": "TwoMember", 
+            "description": "An ensemble of two simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "two, 2, ensemble, runs, simulations", 
+            "label": "TwoMember", 
             "type": "ensemble"
         }, 
         {

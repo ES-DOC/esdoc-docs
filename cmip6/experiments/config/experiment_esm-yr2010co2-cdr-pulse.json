@@ -1,13 +1,13 @@
 {
     "canonical_name": "esm-yr2010CO2-cdr-pulse", 
-    "description": "Upon initialization from end of year 2015 of esm-yr2010CO2-control instantaneously remove 100 Gt C (\"negative pulse\"; part of the CDR-yr2010-pulse experiment).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven). In this experiment CO2 is first prescribed to diagnose emissions; however, the key simulations calculate the CO2 concentration.", 
+    "description": "After five years of running with forcing as in the esm-yr2010CO2-control, instantaneously remove 100 Gt C (\"negative pulse\"; part of the CDR-yr2010-pulse experiment).  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven).", 
     "governing_mips": [
         "cdrmip"
     ], 
     "keywords": "CDRMIP, Tier 3,", 
     "long_name": "instantaneous 100 Gt C removal from industrial era atmosphere", 
     "mip_era": "cmip6", 
-    "rationale": "Evaluate climate and carbon cycle response of a perturbed system to atmospheric CO2 removal; comparison with the positive pulse response.", 
+    "rationale": "Evaluate climate and carbon cycle response of a perturbed system to atmospheric CO2 removal, comparison with the positive pulse response.", 
     "related_experiments": [
         {
             "name": "esm-yr2010CO2-control", 
@@ -33,6 +33,91 @@
             "keywords": "future, scenario, 2010-7010 maximum", 
             "label": "2010-7009 5000yrs max", 
             "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "100Gt Carbon removed from 2010 atmosphere", 
+            "description": "CO2 emissions (as used from 2010 onwards in the esm-yr2010CO2-control experiment) held at 2010 levels for 5 years.  At the begining of 2015 100 Gt of Carbon is subtracted instantaneously from the atmosphere within one timestep. \nIf models have CO2 spatially distributed throughout the atmosphere, we suggest removing\nthis amount in a uniform manner. It is crucial that the negative pulse be subtracted from a constant background concentration of \u223c 389 ppm CO2.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, carbon dioxide, emissions, 2010, yr2010CO2, zero", 
+            "label": "100Gt Carbon removed from 2010 atmosphere", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Non-CO2 Well Mixed GHG", 
+            "description": "Global annual mean 2010 concentrations for non-CO2 long-lived greenhouse-gases, including CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, GHG, greenhouse gas, non-CO2", 
+            "label": "2010 Non-CO2 Well Mixed GHG", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Aerosol Forcing", 
+            "description": "Apply 2010 mass mixing ratio fields at 1x1 degree resolution for main aerosol components (sulphate, black carbon, organic carbon, nitrate, sea salt, mineral dust),  along with effective radius per species.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, aerosol, forcing, CMIP6", 
+            "label": "2010 Aerosol Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Land Use", 
+            "description": "Apply the global gridded land-use forcing datasets for 2010.  This new generation of \u201cland use harmonization\u201d (LUH2) builds upon past work from CMIP5, and includes updated inputs, higher spatial resolution, more detailed land-use transitions, and the addition of important agricultural management layers.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, land use", 
+            "label": "2010 Land Use", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Stratospheric Aerosol", 
+            "description": "Apply 2010 stratospheric aerosol concentrations from the stratospheric aerosol data set (SADS Version 2)", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, stratospheric, aerosol", 
+            "label": "2010 Stratospheric Aerosol", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 O3 and Stratospheric H2O Concentrations", 
+            "description": "2010 ozone concentrations encompassing both the stratosphere and the troposphere and a stratospheric water vapour concentration.", 
+            "isConformanceRequested": true, 
+            "keywords": "2010, stratospheric, ozone, water vapour, O3, H2O, concentration", 
+            "label": "2010 O3 and Stratospheric H2O Concentrations", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Solar Irradiance Forcing", 
+            "description": "2010 solar irradiance. The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, 2010, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "2010 Solar Irradiance Forcing", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010 Solar Particle Forcing", 
+            "description": "2010 solar particle forcing. For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, 2010, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "2010 Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "2010esm-yr2010CO2-controlInitialisation", 
+            "description": "Initialisation from the esm-yr2010CO2-control simulation in the year 2010.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, esm-yr2010CO2-control, 2010", 
+            "label": "2010esm-yr2010CO2-controlInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
         }, 
         {
             "canonical_name": "AOGCM-BGC Configuration", 
