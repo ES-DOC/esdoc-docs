@@ -745,22 +745,13 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Overview", 
-                            "description": "Overview description of shortwave radiation in the atmosphere", 
-                            "id": "cmip6.atmos.radiation.shortwave_radiation.overview", 
-                            "cardinality": "1.1", 
-                            "type": "l-str", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the shortwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.shortwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -788,7 +779,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -824,7 +815,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -833,6 +824,30 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "General Interactions", 
+                            "description": "General radiative interactions e.g. with aerosols, cloud ice and cloud water ", 
+                            "id": "cmip6.atmos.radiation.shortwave_radiation.general_interactions", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "is_cim_property": false, 
+                            "enum": {
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "emission/absorption,", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
                             "uiOrdinal": 6
                         }
                     ]
@@ -1118,30 +1133,6 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "General Interactions", 
-                            "description": "General shortwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the shortwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation", 
@@ -1183,7 +1174,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1219,7 +1210,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1237,30 +1228,6 @@
                             "type": "str", 
                             "is_cim_property": true, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "General Interactions", 
-                            "description": "General shortwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Physical Representation", 
@@ -1292,7 +1259,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1316,7 +1283,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1381,30 +1348,6 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "General Interactions", 
-                            "description": "General shortwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.shortwave_aerosols.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the shortwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.shortwave_aerosols.physical_representation", 
@@ -1442,7 +1385,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1478,7 +1421,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1496,30 +1439,6 @@
                             "type": "str", 
                             "is_cim_property": true, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "General Interactions", 
-                            "description": "General shortwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.shortwave_gases.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1539,22 +1458,13 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Overview", 
-                            "description": "Overview description of longwave radiation in the atmosphere", 
-                            "id": "cmip6.atmos.radiation.longwave_radiation.overview", 
-                            "cardinality": "1.1", 
-                            "type": "l-str", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the longwave radiation scheme.", 
                             "id": "cmip6.atmos.radiation.longwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -1582,7 +1492,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -1618,7 +1528,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -1627,6 +1537,30 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "General Interactions", 
+                            "description": "General radiative interactions e.g. with aerosols, cloud ice and cloud water ", 
+                            "id": "cmip6.atmos.radiation.longwave_radiation.general_interactions", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "is_cim_property": false, 
+                            "enum": {
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "emission/absorption,", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
                             "uiOrdinal": 6
                         }
                     ]
@@ -1912,30 +1846,6 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "General Interactions", 
-                            "description": "General longwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the longwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation", 
@@ -1977,7 +1887,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -2013,7 +1923,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -2031,30 +1941,6 @@
                             "type": "str", 
                             "is_cim_property": true, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "General Interactions", 
-                            "description": "General longwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Physical Representation", 
@@ -2086,7 +1972,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -2110,7 +1996,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -2175,30 +2061,6 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "General Interactions", 
-                            "description": "General longwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.longwave_aerosols.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the longwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.longwave_aerosols.physical_representation", 
@@ -2236,7 +2098,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -2272,7 +2134,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -2290,30 +2152,6 @@
                             "type": "str", 
                             "is_cim_property": true, 
                             "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "General Interactions", 
-                            "description": "General longwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.longwave_gases.general_interactions", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Radiative Interactions", 
-                                "description": "General radiative interactions", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "scattering", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission/absorption", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -4365,15 +4203,6 @@
                         "type": "str", 
                         "is_cim_property": true, 
                         "uiOrdinal": 1
-                    }, 
-                    {
-                        "label": "Overview", 
-                        "description": "Overview description of grid discretisation in the atmosphere", 
-                        "id": "cmip6.atmos.grid.discretisation.overview", 
-                        "cardinality": "1.1", 
-                        "type": "l-str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 2
                     }
                 ], 
                 "propertySets": [
