@@ -202,19 +202,10 @@
             "subProcesses": [
                 {
                     "label": "Energy", 
-                    "description": "Processes related to energy in sea ice thermodynamics", 
+                    "description": "Processes related to energy in sea ice thermodynamics.", 
                     "id": "cmip6.seaice.thermodynamics.energy", 
                     "contact": "Ruth Petrie", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of processes related to energy in sea ice thermodynamics in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.energy.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Enthalpy Formulation", 
                             "description": "What is the energy formulation?", 
@@ -245,7 +236,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Thermal Conductivity", 
@@ -269,7 +260,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Heat Diffusion", 
@@ -280,7 +271,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Heat Diffusion Type", 
-                                "description": "Heat diffusion types", 
+                                "description": "Heat diffusion types.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -297,7 +288,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Basal Heat Flux", 
@@ -308,33 +299,33 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Basal Heat Flux Method", 
-                                "description": "Basal ocean heat flux methodology", 
+                                "description": "Basal ocean heat flux methodology.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
                                         "label": "Heat Reservoir", 
-                                        "description": "Brine inclusions treated as a heat reservoir"
+                                        "description": "Brine inclusions treated as a heat reservoir."
                                     }, 
                                     {
                                         "label": "Thermal Fixed Salinity", 
-                                        "description": "Thermal properties depend on S-T (with fixed salinity)"
+                                        "description": "Thermal properties depend on S-T (with fixed salinity)."
                                     }, 
                                     {
                                         "label": "Thermal Varying Salinity", 
-                                        "description": "Thermal properties depend on S-T (with varying salinity"
+                                        "description": "Thermal properties depend on S-T (with varying salinity."
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Fixed Salinity Value", 
-                            "description": "If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.", 
+                            "description": "If you have selected {Thermal properties depend on S-T (with fixed salinity)},\n             supply fixed salinity value for each sea ice layer.", 
                             "id": "cmip6.seaice.thermodynamics.energy.fixed_salinity_value", 
                             "cardinality": "0.1", 
                             "type": "float", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Heat Content Of Precipitation", 
@@ -343,34 +334,25 @@
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 7
+                            "uiOrdinal": 6
                         }, 
                         {
                             "label": "Precipitation Effects On Salinity", 
-                            "description": "If precipitation (freshwater) that falls on sea ice affects the ocean surface salinity please provide further details.", 
+                            "description": "If precipitation (freshwater) that falls on sea ice affects the ocean surface\n             salinity please provide further details.", 
                             "id": "cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 8
+                            "uiOrdinal": 7
                         }
                     ]
                 }, 
                 {
                     "label": "Mass", 
-                    "description": "Processes related to mass in sea ice thermodynamics", 
+                    "description": "Processes related to mass in sea ice thermodynamics.", 
                     "id": "cmip6.seaice.thermodynamics.mass", 
                     "contact": "Ruth Petrie", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of processes related to mass in sea ice thermodynamics in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.mass.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "New Ice Formation", 
                             "description": "Describe the method by which new sea ice is formed in open water.", 
@@ -378,7 +360,7 @@
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Ice Vertical Growth And Melt", 
@@ -387,7 +369,7 @@
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Ice Lateral Melting", 
@@ -411,7 +393,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Ice Surface Sublimation", 
@@ -420,7 +402,7 @@
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Frazil Ice", 
@@ -429,7 +411,7 @@
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -440,22 +422,13 @@
                     "contact": "Ruth Petrie", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of processes related to salt in sea ice thermodynamics. in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.salt.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Has Multiple Sea Ice Salinities", 
-                            "description": "Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?", 
+                            "description": "Does the sea ice model use two different salinities: one for\n            thermodynamic calculations; and one for the salt budget?", 
                             "id": "cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Sea Ice Salinity Thermal Impacts", 
@@ -464,13 +437,13 @@
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ], 
                     "propertySets": [
                         {
                             "label": "Mass Transport", 
-                            "description": "Mass transport of salt", 
+                            "description": "Mass transport of salt.", 
                             "id": "cmip6.seaice.thermodynamics.salt.mass_transport", 
                             "properties": [
                                 {
@@ -482,7 +455,7 @@
                                     "is_cim_property": false, 
                                     "enum": {
                                         "label": "Salinity Method", 
-                                        "description": "Method of describing the value of salinity", 
+                                        "description": "Method of describing the value of salinity.", 
                                         "isOpen": true, 
                                         "choices": [
                                             {
@@ -535,7 +508,7 @@
                                     "is_cim_property": false, 
                                     "enum": {
                                         "label": "Salinity Method", 
-                                        "description": "Method of describing the value of salinity", 
+                                        "description": "Method of describing the value of salinity.", 
                                         "isOpen": true, 
                                         "choices": [
                                             {
@@ -583,15 +556,6 @@
                     "contact": "Ruth Petrie", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of ice thickness distribution details. in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Representation", 
                             "description": "How is the sea ice thickness distribution represented?", 
                             "id": "cmip6.seaice.thermodynamics.ice_thickness_distribution.representation", 
@@ -600,7 +564,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Ice Thickness Representation", 
-                                "description": "Types of sea ice thickness representation", 
+                                "description": "Types of sea ice thickness representation.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -613,7 +577,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -624,15 +588,6 @@
                     "contact": "Ruth Petrie", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of ice floe-size distribution details. in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Representation", 
                             "description": "How is the sea ice floe-size represented?", 
                             "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.representation", 
@@ -641,7 +596,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Ice Floe Size", 
-                                "description": "Ice floe-size representation", 
+                                "description": "Ice floe-size representation.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -654,16 +609,16 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Additional Details", 
-                            "description": "Please provide further details on any parameterisation of floe-size.", 
+                            "description": "Provide further details on any parameterisation of floe-size.", 
                             "id": "cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details", 
                             "cardinality": "0.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -674,22 +629,13 @@
                     "contact": "Ruth Petrie", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics of melt ponds. in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.melt_ponds.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Are Included", 
                             "description": "Are melt ponds included in the sea ice model?", 
                             "id": "cmip6.seaice.thermodynamics.melt_ponds.are_included", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Formulation", 
@@ -700,7 +646,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Melt Pond Formulation", 
-                                "description": "Formulations of melt ponds", 
+                                "description": "Formulations of melt ponds.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -713,7 +659,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Impacts", 
@@ -724,7 +670,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Melt Pond Impacts", 
-                                "description": "Impacts of melt ponds", 
+                                "description": "Impacts of melt ponds.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -741,7 +687,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -752,22 +698,13 @@
                     "contact": "Ruth Petrie", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of thermodynamic processes in snow on sea ice in seaice model.", 
-                            "id": "cmip6.seaice.thermodynamics.snow_processes.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Has Snow Aging", 
                             "description": "Set to True if the sea ice model has a snow aging scheme.", 
                             "id": "cmip6.seaice.thermodynamics.snow_processes.has_snow_aging", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Snow Aging Scheme", 
@@ -776,7 +713,7 @@
                             "cardinality": "0.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Has Snow Ice Formation", 
@@ -785,7 +722,7 @@
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Snow Ice Formation Scheme", 
@@ -794,7 +731,7 @@
                             "cardinality": "0.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Redistribution", 
@@ -803,7 +740,7 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Heat Diffusion", 
@@ -814,7 +751,7 @@
                             "is_cim_property": false, 
                             "enum": {
                                 "label": "Snow Process Types", 
-                                "description": "Types of snow processes", 
+                                "description": "Types of snow processes.", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -827,7 +764,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 7
+                            "uiOrdinal": 6
                         }
                     ]
                 }
@@ -859,14 +796,14 @@
                 }, 
                 {
                     "label": "Surface Albedo", 
-                    "description": "Method used to handle surface albedo.", 
+                    "description": "Method used to handle surface albedo?", 
                     "id": "cmip6.seaice.radiative_processes.surface_albedo", 
                     "cardinality": "1.1", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Seaice Albedo", 
-                        "description": "Surface albedo of sea ice component", 
+                        "description": "Surface albedo of sea ice component.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -875,11 +812,11 @@
                             }, 
                             {
                                 "label": "Parameterized", 
-                                "description": "Sea ice albedo is parameterized"
+                                "description": "Sea ice albedo is parameterized."
                             }, 
                             {
                                 "label": "Multi-band albedo", 
-                                "description": "Albedo value has a spectral dependence"
+                                "description": "Albedo value has a spectral dependence."
                             }
                         ]
                     }, 
@@ -887,14 +824,14 @@
                 }, 
                 {
                     "label": "Ice Radiation Transmission", 
-                    "description": "Method by which solar radiation through sea ice is handled.", 
+                    "description": "Method by which solar radiation through sea ice is handled?", 
                     "id": "cmip6.seaice.radiative_processes.ice_radiation_transmission", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
                     "enum": {
                         "label": "Ice Transmission", 
-                        "description": "Ice radiative transmission", 
+                        "description": "Ice radiative transmission.", 
                         "isOpen": true, 
                         "choices": [
                             {
@@ -907,7 +844,7 @@
                             }, 
                             {
                                 "label": "Ice radiation transmission per category", 
-                                "description": "Radiation transmission through ice is different for each sea ice category"
+                                "description": "Radiation transmission through ice is different for each sea ice category."
                             }
                         ]
                     }, 
@@ -947,17 +884,6 @@
                 "description": "Sea ice discretisation", 
                 "id": "cmip6.seaice.grid.discretisation", 
                 "contact": "Ruth Petrie", 
-                "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Overview of sea ice discretisation in seaice model.", 
-                        "id": "cmip6.seaice.grid.discretisation.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }
-                ], 
                 "propertySets": [
                     {
                         "label": "Horizontal", 
@@ -966,27 +892,27 @@
                         "properties": [
                             {
                                 "label": "Grid", 
-                                "description": "Grid on which sea ice is horizontal discretised?", 
+                                "description": "On which grid is the sea ice horizontal discretisation?", 
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.grid", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
                                 "enum": {
                                     "label": "Horizontal Grid", 
-                                    "description": "Grid which is the sea ice horizontally discretised on?", 
+                                    "description": "Horizontal discretisation grids", 
                                     "isOpen": true, 
                                     "choices": [
                                         {
                                             "label": "Ocean grid", 
-                                            "description": "Sea ice is horizontally discretised on the ocean grid"
+                                            "description": "Sea ice is horizontally discretised on the ocean grid."
                                         }, 
                                         {
                                             "label": "Atmosphere Grid", 
-                                            "description": "Sea ice is horizontally discretised on the atmospheric grid"
+                                            "description": "Sea ice is horizontally discretised on the atmospheric grid."
                                         }, 
                                         {
                                             "label": "Own Grid", 
-                                            "description": "Sea ice is horizontally discretised on its own independent grid"
+                                            "description": "Sea ice is horizontally discretised on its own independent grid."
                                         }
                                     ]
                                 }, 
@@ -994,14 +920,14 @@
                             }, 
                             {
                                 "label": "Grid Type", 
-                                "description": "What is the type of sea ice grid?", 
+                                "description": "What is the structure type of the sea ice grid?", 
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.grid_type", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
                                 "enum": {
                                     "label": "Grid Structure", 
-                                    "description": "Grid structures", 
+                                    "description": "Grid structure types", 
                                     "isOpen": true, 
                                     "choices": [
                                         {
@@ -1022,14 +948,14 @@
                             }, 
                             {
                                 "label": "Scheme", 
-                                "description": "What is the advection scheme?", 
+                                "description": "What is the horizontal discretization (advection) scheme?", 
                                 "id": "cmip6.seaice.grid.discretisation.horizontal.scheme", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
                                 "enum": {
                                     "label": "Numerical Scheme", 
-                                    "description": "Numerical schemes", 
+                                    "description": "Numerical advection schemes", 
                                     "isOpen": true, 
                                     "choices": [
                                         {
@@ -1104,7 +1030,7 @@
                                         }, 
                                         {
                                             "label": "Multi-layers", 
-                                            "description": "Simulation uses more than two layers"
+                                            "description": "Simulation uses more than two layers."
                                         }
                                     ]
                                 }, 
@@ -1134,19 +1060,10 @@
             }, 
             {
                 "label": "Seaice Categories", 
-                "description": "What method is used to represent sea ice categories ?", 
+                "description": "What method is used to represent sea ice categories?", 
                 "id": "cmip6.seaice.grid.seaice_categories", 
                 "contact": "Ruth Petrie", 
                 "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Overview of what method is used to represent sea ice categories ? in seaice model.", 
-                        "id": "cmip6.seaice.grid.seaice_categories.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
                     {
                         "label": "Has Mulitple Categories", 
                         "description": "Set to true if the sea ice model has multiple sea ice categories.", 
@@ -1154,7 +1071,7 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Number Of Categories", 
@@ -1163,7 +1080,7 @@
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Category Limits", 
@@ -1172,25 +1089,25 @@
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
-                        "label": "Ice Thickness Distribution Scheme", 
-                        "description": "Describe the sea ice thickness distribution scheme", 
-                        "id": "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme", 
+                        "label": "Ice Thickness Distribution", 
+                        "description": "Describe the sea ice thickness distribution.", 
+                        "id": "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Other", 
-                        "description": "If the sea ice model does not use sea ice categories specify any additional details. For example models that paramterise the ice thickness distribution ITD (i.e there is no explicit ITD) but there is assumed distribution and fluxes are computed accordingly.", 
+                        "description": "If the sea ice model does not use sea ice categories specify any \n            additional details. For example models that paramterise \n            the ice thickness distribution ITD (i.e there is no explicit ITD) but \n            there is assumed distribution and fluxes are computed accordingly.", 
                         "id": "cmip6.seaice.grid.seaice_categories.other", 
                         "cardinality": "0.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }
                 ]
             }, 
@@ -1201,22 +1118,13 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of snow on sea ice details in seaice model.", 
-                        "id": "cmip6.seaice.grid.snow_on_seaice.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Has Snow On Ice", 
                         "description": "Is snow on ice represented in this model?", 
                         "id": "cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Number Of Snow Levels", 
@@ -1225,16 +1133,16 @@
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Snow Fraction", 
-                        "description": "Describe how the snow fraction on sea ice is determined", 
+                        "description": "Describe how the snow fraction on sea ice is determined.", 
                         "id": "cmip6.seaice.grid.snow_on_seaice.snow_fraction", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Additional Details", 
@@ -1243,7 +1151,7 @@
                         "cardinality": "0.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }
                 ]
             }
@@ -1291,17 +1199,8 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of list of prognostic variable in the sea ice model. in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.variables.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Prognostic", 
-                        "description": "List of prognostic variables in the sea ice component.", 
+                        "description": "Select all prognostic variables in the sea ice component.", 
                         "id": "cmip6.seaice.key_properties.variables.prognostic", 
                         "cardinality": "1.N", 
                         "type": "enum", 
@@ -1357,7 +1256,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }
                 ]
             }, 
@@ -1368,17 +1267,8 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of properties of seawater relevant to sea ice in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.seawater_properties.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Ocean Freezing Point", 
-                        "description": "Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure", 
+                        "description": "What is the equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure?", 
                         "id": "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point", 
                         "cardinality": "1.1", 
                         "type": "enum", 
@@ -1390,7 +1280,7 @@
                             "choices": [
                                 {
                                     "label": "TEOS-10", 
-                                    "description": "Thermodynamic equation of seawater 2010"
+                                    "description": "Thermodynamic equation of seawater 2010."
                                 }, 
                                 {
                                     "label": "Constant", 
@@ -1398,7 +1288,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Ocean Freezing Point Value", 
@@ -1407,7 +1297,7 @@
                         "cardinality": "0.1", 
                         "type": "float", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }
                 ]
             }, 
@@ -1418,22 +1308,13 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of resolution of the sea ice grid in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.resolution.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of this grid e.g. N512L180, T512L70, ORCA025 etc.", 
                         "id": "cmip6.seaice.key_properties.resolution.name", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Canonical Horizontal Resolution", 
@@ -1442,16 +1323,16 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Number Of Horizontal Gridpoints", 
-                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "description": "What are the total number of horizontal (XY) points (or degrees of freedom) on computational grid?", 
                         "id": "cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints", 
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -1462,31 +1343,22 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of tuning applied to sea ice model component in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.tuning_applied.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Description", 
-                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "description": "Provide a general overview description of tuning: explain and motivate \n            the main targets and metrics retained.  Document the relative weight given \n            to climate performance metrics versus process oriented metrics, and on the \n            possible conflicts with parameterization level tuning. In particular describe \n            any struggle with a parameter value that required pushing it to its limits to \n            solve a particular model deficiency.", 
                         "id": "cmip6.seaice.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Target", 
-                        "description": "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.", 
+                        "description": "What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle?", 
                         "id": "cmip6.seaice.key_properties.tuning_applied.target", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Simulations", 
@@ -1495,7 +1367,7 @@
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Metrics Used", 
@@ -1504,16 +1376,16 @@
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Variables", 
-                        "description": "Which variables were changed during the tuning process?", 
+                        "description": "Which (if any) variables were changed during the tuning process?", 
                         "id": "cmip6.seaice.key_properties.tuning_applied.variables", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }
                 ]
             }, 
@@ -1524,22 +1396,13 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of values of key parameters in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.key_parameter_values.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Ice Strength", 
                         "description": "Ice strength (P*) in units of N m{-2}", 
                         "id": "cmip6.seaice.key_properties.key_parameter_values.ice_strength", 
                         "cardinality": "0.1", 
                         "type": "float", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Snow Conductivity", 
@@ -1548,7 +1411,7 @@
                         "cardinality": "0.1", 
                         "type": "float", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Ice Thickness In Leads", 
@@ -1557,16 +1420,16 @@
                         "cardinality": "0.1", 
                         "type": "float", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Additional Parameters", 
-                        "description": "If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc.", 
+                        "description": "If you have any additional paramterised values that you have used (e.g. minimum open water \n         fraction or bare ice albedo), please provide them here as a comma separated list in the form \n         {parameter1}: {value1}, {parameter2}: {value2}, etc.", 
                         "id": "cmip6.seaice.key_properties.key_parameter_values.additional_parameters", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -1577,22 +1440,13 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of assumptions made in the sea ice model in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.assumptions.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Description", 
-                        "description": "General overview description of any *key* assumptions made in this model.", 
+                        "description": "Provide a general overview description of any *key* assumptions made in this model.", 
                         "id": "cmip6.seaice.key_properties.assumptions.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "On Diagnostic Variables", 
@@ -1601,16 +1455,16 @@
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Missing Processes", 
-                        "description": "List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?", 
+                        "description": "List any *key* processes missing in this model configuration? Provide full details \n             where this affects the CMIP6 diagnostic sea ice variables?", 
                         "id": "cmip6.seaice.key_properties.assumptions.missing_processes", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -1621,26 +1475,17 @@
                 "contact": "Ruth Petrie", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of conservation in the sea ice component in seaice model.", 
-                        "id": "cmip6.seaice.key_properties.conservation.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Description", 
                         "description": "Provide a general description of conservation methodology.", 
                         "id": "cmip6.seaice.key_properties.conservation.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Properties", 
-                        "description": "Properties conserved in sea ice by the numerical schemes.", 
+                        "description": "Which properties conserved in sea ice by the numerical schemes?", 
                         "id": "cmip6.seaice.key_properties.conservation.properties", 
                         "cardinality": "1.N", 
                         "type": "enum", 
@@ -1664,16 +1509,16 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Budget", 
-                        "description": "For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3", 
+                        "description": "For each conserved property, specify the output variables which close \n           the related budgets. as a comma separated list. For example: \n           Conserved property, variable1, variable2, variable3", 
                         "id": "cmip6.seaice.key_properties.conservation.budget", 
                         "cardinality": "1.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Was Flux Correction Used", 
@@ -1682,16 +1527,16 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Corrected Conserved Prognostic Variables", 
-                        "description": "List any variables which are conserved by *more* than the numerical scheme alone.", 
+                        "description": "List any variables which are conserved by *more* than the numerical scheme alone \n            (e.g. has correction applied).", 
                         "id": "cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables", 
-                        "cardinality": "1.1", 
+                        "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }
                 ]
             }

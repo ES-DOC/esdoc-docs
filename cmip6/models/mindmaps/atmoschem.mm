@@ -117,11 +117,11 @@
         <dt><b>Description</b></dt><dd>Atmospheric domains covered by the atmospheric chemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmoschem.key_properties.chemistry_scheme_scope</dd><dt><b>Type</b></dt><dd>ENUM:chemistry_scheme_scopes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmoschem.key_properties.chemistry_scheme_scope</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="troposhere"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="troposphere"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>chemistry_scheme_scopes.troposhere</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>chemistry_scheme_scopes.troposphere</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="stratosphere"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

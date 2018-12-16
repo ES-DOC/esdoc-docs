@@ -44,7 +44,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.5</dd><dt><b>Date</b></dt><dd>2016-11-18</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Update based on discussions with Martin Vancopppenolle (IPSL)</dd>
+        <dt><b>Version</b></dt><dd>0.1.5</dd><dt><b>Date</b></dt><dd>2016-11-18</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Update based on discussions with Martin Vancoppenolle (IPSL)</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.1.6"><richcontent TYPE="NOTE"><html>
@@ -87,6 +87,13 @@
   <body>
     <dl>
         <dt><b>Version</b></dt><dd>1.0.2</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Replaced some occurences of 'str' with 'cs-str' and 'l-str'</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.3"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.3</dd><dt><b>Date</b></dt><dd>2018-11-30</dd><dt><b>Person</b></dt><dd>Ruth Petrie</dd><dt><b>Comment</b></dt><dd>Updates based on feedback from Martin Vancoppenolle</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
@@ -163,14 +170,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
+        <dt><b>Description</b></dt><dd>Select all prognostic variables in the sea ice component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of prognostic variables in the sea ice component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
+        <dt><b>Description</b></dt><dd>Select all prognostic variables in the sea ice component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.variables.prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea ice temperature"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -261,21 +268,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
+        <dt><b>Description</b></dt><dd>What is the equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
+        <dt><b>Description</b></dt><dd>What is the equation used to compute the freezing point (in deg C) of seawater, as a function of salinity and pressure?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd><dt><b>Type</b></dt><dd>ENUM:seawater_freezing_point</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="TEOS-10"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Thermodynamic equation of seawater 2010</dd><dt><b>Spec. ID</b></dt><dd>seawater_freezing_point.TEOS-10</dd>
+        <dt><b>Description</b></dt><dd>Thermodynamic equation of seawater 2010.</dd><dt><b>Spec. ID</b></dt><dd>seawater_freezing_point.TEOS-10</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Constant"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -338,14 +345,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
+        <dt><b>Description</b></dt><dd>What are the total number of horizontal (XY) points (or degrees of freedom) on computational grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Total number of horizontal (XY) points (or degrees of freedom) on computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
+        <dt><b>Description</b></dt><dd>What are the total number of horizontal (XY) points (or degrees of freedom) on computational grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -359,28 +366,38 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>Provide a general overview description of tuning: explain and motivate 
+            the main targets and metrics retained.  Document the relative weight given 
+            to climate performance metrics versus process oriented metrics, and on the 
+            possible conflicts with parameterization level tuning. In particular describe 
+            any struggle with a parameter value that required pushing it to its limits to 
+            solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained.  Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>Provide a general overview description of tuning: explain and motivate 
+            the main targets and metrics retained.  Document the relative weight given 
+            to climate performance metrics versus process oriented metrics, and on the 
+            possible conflicts with parameterization level tuning. In particular describe 
+            any struggle with a parameter value that required pushing it to its limits to 
+            solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="target"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
+        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
+        <dt><b>Description</b></dt><dd>What was the aim of tuning, e.g. correct sea ice minima, correct seasonal cycle?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.target</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="simulations"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -415,14 +432,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
+        <dt><b>Description</b></dt><dd>Which (if any) variables were changed during the tuning process?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables were changed during the tuning process?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
+        <dt><b>Description</b></dt><dd>Which (if any) variables were changed during the tuning process?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.tuning_applied.variables</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_parameter_values"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -478,14 +495,18 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
+        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water 
+         fraction or bare ice albedo), please provide them here as a comma separated list in the form 
+         {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water fraction or bare ice albedo), please provide them here as a comma separated list in the form {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
+        <dt><b>Description</b></dt><dd>If you have any additional paramterised values that you have used (e.g. minimum open water 
+         fraction or bare ice albedo), please provide them here as a comma separated list in the form 
+         {parameter1}: {value1}, {parameter2}: {value2}, etc.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.key_parameter_values.additional_parameters</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="assumptions"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -499,14 +520,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
+        <dt><b>Description</b></dt><dd>Provide a general overview description of any *key* assumptions made in this model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of any *key* assumptions made in this model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
+        <dt><b>Description</b></dt><dd>Provide a general overview description of any *key* assumptions made in this model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="on_diagnostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -527,14 +548,16 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
+        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details 
+             where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
+        <dt><b>Description</b></dt><dd>List any *key* processes missing in this model configuration? Provide full details 
+             where this affects the CMIP6 diagnostic sea ice variables?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.assumptions.missing_processes</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="conservation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -562,14 +585,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
+        <dt><b>Description</b></dt><dd>Which properties conserved in sea ice by the numerical schemes?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties conserved in sea ice by the numerical schemes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
+        <dt><b>Description</b></dt><dd>Which properties conserved in sea ice by the numerical schemes?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd><dt><b>Type</b></dt><dd>ENUM:conserved_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Energy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -597,14 +620,18 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
+        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close 
+           the related budgets. as a comma separated list. For example: 
+           Conserved property, variable1, variable2, variable3</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close the related budgets. as a comma separated list. For example: Conserved property, variable1, variable2, variable3</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
+        <dt><b>Description</b></dt><dd>For each conserved property, specify the output variables which close 
+           the related budgets. as a comma separated list. For example: 
+           Conserved property, variable1, variable2, variable3</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.budget</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="was_flux_correction_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -625,14 +652,16 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone 
+            (e.g. has correction applied).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List any variables which are conserved by *more* than the numerical scheme alone 
+            (e.g. has correction applied).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.key_properties.conservation.corrected_conserved_prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -660,49 +689,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Grid on which sea ice is horizontal discretised?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_grid</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd>
+        <dt><b>Description</b></dt><dd>On which grid is the sea ice horizontal discretisation?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_grid</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Grid on which sea ice is horizontal discretised?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_grid</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd>
+        <dt><b>Description</b></dt><dd>On which grid is the sea ice horizontal discretisation?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_grid</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Ocean grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on the ocean grid</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Ocean grid</dd>
+        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on the ocean grid.</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Ocean grid</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Atmosphere Grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on the atmospheric grid</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Atmosphere Grid</dd>
+        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on the atmospheric grid.</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Atmosphere Grid</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Own Grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on its own independent grid</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Own Grid</dd>
+        <dt><b>Description</b></dt><dd>Sea ice is horizontally discretised on its own independent grid.</dd><dt><b>Spec. ID</b></dt><dd>horizontal_grid.Own Grid</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="grid_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What is the type of sea ice grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_structure</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd>
+        <dt><b>Description</b></dt><dd>What is the structure type of the sea ice grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_structure</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What is the type of sea ice grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_structure</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd>
+        <dt><b>Description</b></dt><dd>What is the structure type of the sea ice grid?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_structure</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.grid_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Structured grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -730,14 +759,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What is the advection scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd><dt><b>Type</b></dt><dd>ENUM:numerical_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd>
+        <dt><b>Description</b></dt><dd>What is the horizontal discretization (advection) scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd><dt><b>Type</b></dt><dd>ENUM:numerical_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What is the advection scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd><dt><b>Type</b></dt><dd>ENUM:numerical_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd>
+        <dt><b>Description</b></dt><dd>What is the horizontal discretization (advection) scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd><dt><b>Type</b></dt><dd>ENUM:numerical_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.discretisation.horizontal.scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Finite differences"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -842,7 +871,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Simulation uses more than two layers</dd><dt><b>Spec. ID</b></dt><dd>vertical_layering.Multi-layers</dd>
+        <dt><b>Description</b></dt><dd>Simulation uses more than two layers.</dd><dt><b>Spec. ID</b></dt><dd>vertical_layering.Multi-layers</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_layers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -877,7 +906,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>What method is used to represent sea ice categories ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories</dd>
+        <dt><b>Description</b></dt><dd>What method is used to represent sea ice categories?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="has_mulitple_categories"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -922,32 +951,38 @@
         <dt><b>Description</b></dt><dd>If using sea ice categories specify each of the category limits.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.category_limits</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.category_limits</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_thickness_distribution_scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_thickness_distribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the sea ice thickness distribution scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme</dd>
+        <dt><b>Description</b></dt><dd>Describe the sea ice thickness distribution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the sea ice thickness distribution scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme</dd>
+        <dt><b>Description</b></dt><dd>Describe the sea ice thickness distribution.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.ice_thickness_distribution</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="other"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the sea ice model does not use sea ice categories specify any additional details. For example models that paramterise the ice thickness distribution ITD (i.e there is no explicit ITD) but there is assumed distribution and fluxes are computed accordingly.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd>
+        <dt><b>Description</b></dt><dd>If the sea ice model does not use sea ice categories specify any 
+            additional details. For example models that paramterise 
+            the ice thickness distribution ITD (i.e there is no explicit ITD) but 
+            there is assumed distribution and fluxes are computed accordingly.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the sea ice model does not use sea ice categories specify any additional details. For example models that paramterise the ice thickness distribution ITD (i.e there is no explicit ITD) but there is assumed distribution and fluxes are computed accordingly.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd>
+        <dt><b>Description</b></dt><dd>If the sea ice model does not use sea ice categories specify any 
+            additional details. For example models that paramterise 
+            the ice thickness distribution ITD (i.e there is no explicit ITD) but 
+            there is assumed distribution and fluxes are computed accordingly.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.seaice_categories.other</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="snow_on_seaice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -989,14 +1024,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how the snow fraction on sea ice is determined</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd>
+        <dt><b>Description</b></dt><dd>Describe how the snow fraction on sea ice is determined.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how the snow fraction on sea ice is determined</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd>
+        <dt><b>Description</b></dt><dd>Describe how the snow fraction on sea ice is determined.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.grid.snow_on_seaice.snow_fraction</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1227,7 +1262,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes related to energy in sea ice thermodynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy</dd>
+        <dt><b>Description</b></dt><dd>Processes related to energy in sea ice thermodynamics.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="enthalpy_formulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1353,35 +1388,37 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Brine inclusions treated as a heat reservoir</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Heat Reservoir</dd>
+        <dt><b>Description</b></dt><dd>Brine inclusions treated as a heat reservoir.</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Heat Reservoir</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Thermal Fixed Salinity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Thermal properties depend on S-T (with fixed salinity)</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Thermal Fixed Salinity</dd>
+        <dt><b>Description</b></dt><dd>Thermal properties depend on S-T (with fixed salinity).</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Thermal Fixed Salinity</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Thermal Varying Salinity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Thermal properties depend on S-T (with varying salinity</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Thermal Varying Salinity</dd>
+        <dt><b>Description</b></dt><dd>Thermal properties depend on S-T (with varying salinity.</dd><dt><b>Spec. ID</b></dt><dd>basal_heat_flux_method.Thermal Varying Salinity</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed_salinity_value"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
+        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)},
+             supply fixed salinity value for each sea ice layer.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)}, supply fixed salinity value for each sea ice layer.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
+        <dt><b>Description</b></dt><dd>If you have selected {Thermal properties depend on S-T (with fixed salinity)},
+             supply fixed salinity value for each sea ice layer.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.fixed_salinity_value</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="heat_content_of_precipitation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1402,21 +1439,23 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If precipitation (freshwater) that falls on sea ice affects the ocean surface salinity please provide further details.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd>
+        <dt><b>Description</b></dt><dd>If precipitation (freshwater) that falls on sea ice affects the ocean surface
+             salinity please provide further details.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If precipitation (freshwater) that falls on sea ice affects the ocean surface salinity please provide further details.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd>
+        <dt><b>Description</b></dt><dd>If precipitation (freshwater) that falls on sea ice affects the ocean surface
+             salinity please provide further details.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.energy.precipitation_effects_on_salinity</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="mass"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes related to mass in sea ice thermodynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.mass</dd>
+        <dt><b>Description</b></dt><dd>Processes related to mass in sea ice thermodynamics.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.mass</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="new_ice_formation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1514,14 +1553,16 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
+        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for
+            thermodynamic calculations; and one for the salt budget?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for thermodynamic calculations; and one for the salt budget?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
+        <dt><b>Description</b></dt><dd>Does the sea ice model use two different salinities: one for
+            thermodynamic calculations; and one for the salt budget?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sea_ice_salinity_thermal_impacts"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1542,7 +1583,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Mass transport of salt</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.mass_transport</dd>
+        <dt><b>Description</b></dt><dd>Mass transport of salt.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.salt.mass_transport</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="salinity_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1752,14 +1793,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Please provide further details on any parameterisation of floe-size.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd>
+        <dt><b>Description</b></dt><dd>Provide further details on any parameterisation of floe-size.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Please provide further details on any parameterisation of floe-size.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd>
+        <dt><b>Description</b></dt><dd>Provide further details on any parameterisation of floe-size.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.thermodynamics.ice_floe_size_distribution.additional_details</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="melt_ponds"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -1969,14 +2010,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used to handle surface albedo.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd><dt><b>Type</b></dt><dd>ENUM:seaice_albedo</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd>
+        <dt><b>Description</b></dt><dd>Method used to handle surface albedo?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd><dt><b>Type</b></dt><dd>ENUM:seaice_albedo</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used to handle surface albedo.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd><dt><b>Type</b></dt><dd>ENUM:seaice_albedo</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd>
+        <dt><b>Description</b></dt><dd>Method used to handle surface albedo?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd><dt><b>Type</b></dt><dd>ENUM:seaice_albedo</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.surface_albedo</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Delta-Eddington"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1990,28 +2031,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sea ice albedo is parameterized</dd><dt><b>Spec. ID</b></dt><dd>seaice_albedo.Parameterized</dd>
+        <dt><b>Description</b></dt><dd>Sea ice albedo is parameterized.</dd><dt><b>Spec. ID</b></dt><dd>seaice_albedo.Parameterized</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Multi-band albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Albedo value has a spectral dependence</dd><dt><b>Spec. ID</b></dt><dd>seaice_albedo.Multi-band albedo</dd>
+        <dt><b>Description</b></dt><dd>Albedo value has a spectral dependence.</dd><dt><b>Spec. ID</b></dt><dd>seaice_albedo.Multi-band albedo</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_radiation_transmission"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method by which solar radiation through sea ice is handled.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd><dt><b>Type</b></dt><dd>ENUM:ice_transmission</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd>
+        <dt><b>Description</b></dt><dd>Method by which solar radiation through sea ice is handled?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd><dt><b>Type</b></dt><dd>ENUM:ice_transmission</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method by which solar radiation through sea ice is handled.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd><dt><b>Type</b></dt><dd>ENUM:ice_transmission</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd>
+        <dt><b>Description</b></dt><dd>Method by which solar radiation through sea ice is handled?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd><dt><b>Type</b></dt><dd>ENUM:ice_transmission</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.seaice.radiative_processes.ice_radiation_transmission</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Delta-Eddington"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2032,7 +2073,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Radiation transmission through ice is different for each sea ice category</dd><dt><b>Spec. ID</b></dt><dd>ice_transmission.Ice radiation transmission per category</dd>
+        <dt><b>Description</b></dt><dd>Radiation transmission through ice is different for each sea ice category.</dd><dt><b>Spec. ID</b></dt><dd>ice_transmission.Ice radiation transmission per category</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="seaice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.seaice.key_properties.name"><richcontent TYPE="NOTE"><html>
@@ -2070,7 +2111,7 @@
         <dt><b>Priority</b></dt><dd>1</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.seaice.grid.seaice_categories.ice_thickness_distribution_scheme"><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.seaice.grid.seaice_categories.ice_thickness_distribution"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>

@@ -1,14 +1,18 @@
 {
     "canonical_name": "esm-pi-CO2pulse", 
-    "description": "100 Gt C instantly added (positive pulse) to a pre-industrial atmosphere (part of the CDR-pi-pulse experiment). CO2 concentration calculated (i.e. freely evolving). Additional ensemble members are requested with tier 2 priority.", 
+    "description": "An esm-piControl but with 100 Gt C instantaneously (within 1 timestep) added to the atmosphere.  If models have CO2 spatially distributed throughout the atmosphere the CO2 the addition should happen in a uniform manner. The CO2 concentration is calculated (i.e. freely evolving). After the posative pulse, ESMs should continue the run for at least 100 years, while EMICs (Earth System Models of Intermediate Complexity) and box models are encouraged to continue the run for at least 1000 years (max 5000 years).  Additional ensemble members are requested with tier 2 priority.", 
     "governing_mips": [
         "cdrmip"
     ], 
-    "keywords": "CDRMIP, Tier 1, Tier 2", 
+    "keywords": "CDRMIP, Tier 1, Tier 2, CDR-pi-pulse, negative pulse, CO2", 
     "long_name": "pulse addition of 100 Gt carbon to pre-industrial atmosphere", 
     "mip_era": "cmip6", 
-    "rationale": "Evaluate climate and carbon cycle response of an unperturbed system to atmospheric CO2 additionl; comparison with the negative pulse response.", 
+    "rationale": "Evaluate climate and carbon cycle response of an unperturbed system to atmospheric CO2 addition; comparison with the negative pulse response. Part of the CDR-pi-pulse experiment.", 
     "related_experiments": [
+        {
+            "name": "esm-pi-cdr-pulse", 
+            "relationship": "is_sibling_of"
+        }, 
         {
             "name": "esm-piControl", 
             "relationship": "is_initialized_by"
@@ -36,9 +40,9 @@
         }, 
         {
             "canonical_name": "Add 100 Gt Carbon", 
-            "description": "Instantaneously add 100 Gt of Carbon to the atmosphere.", 
+            "description": "Instantaneously (within 1 time step) add 100 Gt of Carbon to the atmosphere.  If models have CO2 spatially distributed throughout the atmosphere, add the carbon in a uniform manner.", 
             "isConformanceRequested": true, 
-            "keywords": "Remove C, remove carbon, 100Gt", 
+            "keywords": "add C, add carbon, 100Gt", 
             "label": "Add 100 Gt Carbon", 
             "scope": "experiment", 
             "type": "forcing-constraint"

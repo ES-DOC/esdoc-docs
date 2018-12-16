@@ -35,17 +35,6 @@
                     "description": "Greenhouse gas forcing agents", 
                     "id": "cmip6.toplevel.radiative_forcings.greenhouse_gases", 
                     "contact": "David Hassell", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of greenhouse gas forcing agents in toplevel model.", 
-                            "id": "cmip6.toplevel.radiative_forcings.greenhouse_gases.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ], 
                     "propertySets": [
                         {
                             "label": "CO2", 
@@ -422,17 +411,6 @@
                     "description": "Aerosol forcing agents", 
                     "id": "cmip6.toplevel.radiative_forcings.aerosols", 
                     "contact": "David Hassell", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of aerosol forcing agents in toplevel model.", 
-                            "id": "cmip6.toplevel.radiative_forcings.aerosols.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ], 
                     "propertySets": [
                         {
                             "label": "SO4", 
@@ -1172,17 +1150,6 @@
                     "description": "Miscellaneous forcing agents", 
                     "id": "cmip6.toplevel.radiative_forcings.other", 
                     "contact": "David Hassell", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of miscellaneous forcing agents in toplevel model.", 
-                            "id": "cmip6.toplevel.radiative_forcings.other.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ], 
                     "propertySets": [
                         {
                             "label": "Land Use", 
@@ -1505,22 +1472,13 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of  in toplevel model.", 
-                        "id": "cmip6.toplevel.key_properties.coupling.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Atmosphere Double Flux", 
                         "description": "Is the atmosphere passing a double flux to the ocean and sea ice (as opposed to a single one)?", 
                         "id": "cmip6.toplevel.key_properties.coupling.atmosphere_double_flux", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Atmosphere Fluxes Calculation Grid", 
@@ -1548,7 +1506,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Atmosphere Relative Winds", 
@@ -1557,7 +1515,7 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -1568,22 +1526,13 @@
                 "contact": "Eric Guilyardi", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of tuning methodology for model in toplevel model.", 
-                        "id": "cmip6.toplevel.key_properties.tuning_applied.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics/diagnostics retained. Document the relative weight given to climate performance metrics/diagnostics versus process oriented metrics/diagnostics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
                         "id": "cmip6.toplevel.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Global Mean Metrics Used", 
@@ -1592,7 +1541,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Regional Metrics Used", 
@@ -1601,7 +1550,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Trend Metrics Used", 
@@ -1610,7 +1559,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Energy Balance", 
@@ -1619,7 +1568,7 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Fresh Water Balance", 
@@ -1628,7 +1577,7 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 7
+                        "uiOrdinal": 6
                     }
                 ]
             }, 
@@ -1637,17 +1586,6 @@
                 "description": "Global convervation properties of the model", 
                 "id": "cmip6.toplevel.key_properties.conservation", 
                 "contact": "Eric Guilyardi", 
-                "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Overview of global convervation properties of the model in toplevel model.", 
-                        "id": "cmip6.toplevel.key_properties.conservation.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }
-                ], 
                 "propertySets": [
                     {
                         "label": "Heat", 

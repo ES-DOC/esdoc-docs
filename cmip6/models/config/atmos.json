@@ -153,15 +153,6 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of type of boundary layer at the top of the model in atmos model.", 
-                            "id": "cmip6.atmos.dynamical_core.top_boundary.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Top Boundary Condition", 
                             "description": "Top boundary condition", 
                             "id": "cmip6.atmos.dynamical_core.top_boundary.top_boundary_condition", 
@@ -183,7 +174,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Top Heat", 
@@ -192,7 +183,7 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Top Wind", 
@@ -201,7 +192,7 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -211,15 +202,6 @@
                     "id": "cmip6.atmos.dynamical_core.lateral_boundary", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of type of lateral boundary condition (if the model is a regional model) in atmos model.", 
-                            "id": "cmip6.atmos.dynamical_core.lateral_boundary.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Condition", 
                             "description": "Type of lateral boundary condition", 
@@ -242,7 +224,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -253,22 +235,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of horizontal diffusion scheme in atmos model.", 
-                            "id": "cmip6.atmos.dynamical_core.diffusion_horizontal.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Horizontal diffusion scheme name", 
                             "id": "cmip6.atmos.dynamical_core.diffusion_horizontal.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Scheme Method", 
@@ -292,7 +265,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -301,17 +274,6 @@
                     "description": "Dynamical core advection", 
                     "id": "cmip6.atmos.dynamical_core.advection", 
                     "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of dynamical core advection in atmos model.", 
-                            "id": "cmip6.atmos.dynamical_core.advection.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ], 
                     "propertySets": [
                         {
                             "label": "Tracers", 
@@ -736,22 +698,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the shortwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_radiation.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the shortwave radiation scheme", 
                             "id": "cmip6.atmos.radiation.shortwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -779,7 +732,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -815,7 +768,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -824,7 +777,7 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "General Interactions", 
@@ -848,7 +801,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -858,15 +811,6 @@
                     "id": "cmip6.atmos.radiation.shortwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of representation of greenhouse gases in the shortwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_GHG.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model", 
@@ -921,7 +865,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "ODS", 
@@ -1005,7 +949,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Other Flourinated Gases", 
@@ -1113,7 +1057,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1123,15 +1067,6 @@
                     "id": "cmip6.atmos.radiation.shortwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of shortwave radiative properties of ice crystals in clouds in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the shortwave radiation scheme", 
@@ -1174,7 +1109,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1210,7 +1145,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1220,15 +1155,6 @@
                     "id": "cmip6.atmos.radiation.shortwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of shortwave radiative properties of liquid droplets in clouds in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the shortwave radiation scheme", 
@@ -1259,7 +1185,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1283,7 +1209,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1293,15 +1219,6 @@
                     "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of cloud inhomogeneity in the shortwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
@@ -1328,7 +1245,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -1338,15 +1255,6 @@
                     "id": "cmip6.atmos.radiation.shortwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of shortwave radiative properties of aerosols in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_aerosols.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the shortwave radiation scheme", 
@@ -1385,7 +1293,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1421,7 +1329,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1429,18 +1337,7 @@
                     "label": "Shortwave Gases", 
                     "description": "Shortwave radiative properties of gases", 
                     "id": "cmip6.atmos.radiation.shortwave_gases", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of shortwave radiative properties of gases in atmos model.", 
-                            "id": "cmip6.atmos.radiation.shortwave_gases.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ]
+                    "contact": "Charlotte Pascoe"
                 }, 
                 {
                     "label": "Longwave Radiation", 
@@ -1449,22 +1346,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the longwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_radiation.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the longwave radiation scheme.", 
                             "id": "cmip6.atmos.radiation.longwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Spectral Integration", 
@@ -1492,7 +1380,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -1528,7 +1416,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -1537,7 +1425,7 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "General Interactions", 
@@ -1561,7 +1449,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -1571,15 +1459,6 @@
                     "id": "cmip6.atmos.radiation.longwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of representation of greenhouse gases in the longwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_GHG.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model", 
@@ -1634,7 +1513,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "ODS", 
@@ -1718,7 +1597,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Other Flourinated Gases", 
@@ -1826,7 +1705,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -1836,15 +1715,6 @@
                     "id": "cmip6.atmos.radiation.longwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of longwave radiative properties of ice crystals in clouds in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the longwave radiation scheme", 
@@ -1887,7 +1757,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1923,7 +1793,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -1933,15 +1803,6 @@
                     "id": "cmip6.atmos.radiation.longwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of longwave radiative properties of liquid droplets in clouds in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the longwave radiation scheme", 
@@ -1972,7 +1833,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -1996,7 +1857,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -2006,15 +1867,6 @@
                     "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of cloud inhomogeneity in the longwave radiation scheme in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
@@ -2041,7 +1893,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -2051,15 +1903,6 @@
                     "id": "cmip6.atmos.radiation.longwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of longwave radiative properties of aerosols in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_aerosols.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the longwave radiation scheme", 
@@ -2098,7 +1941,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Optical Methods", 
@@ -2134,7 +1977,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -2142,18 +1985,7 @@
                     "label": "Longwave Gases", 
                     "description": "Longwave radiative properties of gases", 
                     "id": "cmip6.atmos.radiation.longwave_gases", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of longwave radiative properties of gases in atmos model.", 
-                            "id": "cmip6.atmos.radiation.longwave_gases.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }
-                    ]
+                    "contact": "Charlotte Pascoe"
                 }
             ]
         }, 
@@ -2190,15 +2022,6 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the boundary layer turbulence scheme in atmos model.", 
-                            "id": "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Boundary layer turbulence scheme name", 
                             "id": "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name", 
@@ -2224,7 +2047,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Scheme Type", 
@@ -2280,7 +2103,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Closure Order", 
@@ -2289,7 +2112,7 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Counter Gradient", 
@@ -2298,7 +2121,7 @@
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -2309,22 +2132,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the deep convection scheme in atmos model.", 
-                            "id": "cmip6.atmos.turbulence_convection.deep_convection.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Deep convection scheme name", 
                             "id": "cmip6.atmos.turbulence_convection.deep_convection.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Scheme Type", 
@@ -2352,7 +2166,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Method", 
@@ -2388,7 +2202,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Processes", 
@@ -2440,7 +2254,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Microphysics", 
@@ -2468,7 +2282,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -2479,22 +2293,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the shallow convection scheme in atmos model.", 
-                            "id": "cmip6.atmos.turbulence_convection.shallow_convection.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Shallow convection scheme name", 
                             "id": "cmip6.atmos.turbulence_convection.shallow_convection.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Scheme Type", 
@@ -2518,7 +2323,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Method", 
@@ -2546,7 +2351,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Processes", 
@@ -2582,7 +2387,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Microphysics", 
@@ -2610,7 +2415,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -2649,22 +2454,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the large scale precipitation scheme in atmos model.", 
-                            "id": "cmip6.atmos.microphysics_precipitation.large_scale_precipitation.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the large scale precipitation parameterisation scheme", 
                             "id": "cmip6.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Hydrometeors", 
@@ -2696,7 +2492,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -2707,22 +2503,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of properties of the large scale cloud microphysics scheme in atmos model.", 
-                            "id": "cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the microphysics parameterisation scheme used for large scale clouds.", 
                             "id": "cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Processes", 
@@ -2770,7 +2557,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -2954,15 +2741,6 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of optical cloud properties in atmos model.", 
-                            "id": "cmip6.atmos.cloud_scheme.optical_cloud_properties.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Cloud Overlap Method", 
                             "description": "Method for taking into account overlapping of cloud layers", 
                             "id": "cmip6.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method", 
@@ -2992,7 +2770,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Cloud Inhomogeneity", 
@@ -3001,7 +2779,7 @@
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -3011,15 +2789,6 @@
                     "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_water_distribution", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of sub-grid scale water distribution in atmos model.", 
-                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_water_distribution.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Type", 
                             "description": "Sub-grid scale water distribution type", 
@@ -3042,7 +2811,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Function Name", 
@@ -3051,7 +2820,7 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Function Order", 
@@ -3060,7 +2829,7 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Convection Coupling", 
@@ -3088,7 +2857,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -3098,15 +2867,6 @@
                     "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of sub-grid scale ice distribution in atmos model.", 
-                            "id": "cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Type", 
                             "description": "Sub-grid scale ice distribution type", 
@@ -3129,7 +2889,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Function Name", 
@@ -3138,7 +2898,7 @@
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Function Order", 
@@ -3147,7 +2907,7 @@
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Convection Coupling", 
@@ -3175,7 +2935,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }
@@ -3214,15 +2974,6 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of isscp characteristics in atmos model.", 
-                            "id": "cmip6.atmos.observation_simulation.isscp_attributes.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Top Height Estimation Method", 
                             "description": "Cloud simulator ISSCP top height estimation methodUo", 
                             "id": "cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method", 
@@ -3248,7 +2999,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Top Height Direction", 
@@ -3272,7 +3023,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
@@ -3282,15 +3033,6 @@
                     "id": "cmip6.atmos.observation_simulation.cosp_attributes", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of cfmip observational simulator package attributes in atmos model.", 
-                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Run Configuration", 
                             "description": "Cloud simulator COSP run configuration", 
@@ -3313,7 +3055,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Number Of Grid Points", 
@@ -3322,7 +3064,7 @@
                             "cardinality": "0.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Number Of Sub Columns", 
@@ -3331,7 +3073,7 @@
                             "cardinality": "0.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Number Of Levels", 
@@ -3340,7 +3082,7 @@
                             "cardinality": "0.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -3351,22 +3093,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics of the cloud radar simulator in atmos model.", 
-                            "id": "cmip6.atmos.observation_simulation.radar_inputs.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Frequency", 
                             "description": "Cloud simulator radar frequency (Hz)", 
                             "id": "cmip6.atmos.observation_simulation.radar_inputs.frequency", 
                             "cardinality": "0.1", 
                             "type": "float", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Type", 
@@ -3390,7 +3123,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Gas Absorption", 
@@ -3399,7 +3132,7 @@
                             "cardinality": "0.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Effective Radius", 
@@ -3408,7 +3141,7 @@
                             "cardinality": "0.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -3418,15 +3151,6 @@
                     "id": "cmip6.atmos.observation_simulation.lidar_inputs", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics of the cloud lidar simulator in atmos model.", 
-                            "id": "cmip6.atmos.observation_simulation.lidar_inputs.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Ice Types", 
                             "description": "Cloud simulator lidar ice type", 
@@ -3449,7 +3173,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Overlap", 
@@ -3473,7 +3197,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -3588,22 +3312,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of gravity waves generated due to the presence of orography in atmos model.", 
-                            "id": "cmip6.atmos.gravity_waves.orographic_gravity_waves.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the orographic gravity wave scheme", 
                             "id": "cmip6.atmos.gravity_waves.orographic_gravity_waves.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Source Mechanisms", 
@@ -3639,7 +3354,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Calculation Method", 
@@ -3663,7 +3378,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Propagation Scheme", 
@@ -3691,7 +3406,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Dissipation Scheme", 
@@ -3727,7 +3442,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -3738,22 +3453,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of gravity waves generated by non-orographic processes. in atmos model.", 
-                            "id": "cmip6.atmos.gravity_waves.non_orographic_gravity_waves.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Name", 
                             "description": "Commonly used name for the non-orographic gravity wave scheme", 
                             "id": "cmip6.atmos.gravity_waves.non_orographic_gravity_waves.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Source Mechanisms", 
@@ -3781,7 +3487,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Calculation Method", 
@@ -3805,7 +3511,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Propagation Scheme", 
@@ -3829,7 +3535,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Dissipation Scheme", 
@@ -3865,7 +3571,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 6
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -3904,15 +3610,6 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of pathways for solar forcing of the atmosphere in atmos model.", 
-                            "id": "cmip6.atmos.natural_forcing.solar_pathways.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Pathways", 
                             "description": "Pathways for the solar forcing of the atmosphere model domain", 
                             "id": "cmip6.atmos.natural_forcing.solar_pathways.pathways", 
@@ -3938,7 +3635,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -3948,15 +3645,6 @@
                     "id": "cmip6.atmos.natural_forcing.solar_constant", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of solar constant and top of atmosphere insolation characteristics in atmos model.", 
-                            "id": "cmip6.atmos.natural_forcing.solar_constant.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Type", 
                             "description": "Time adaptation of the solar constant.", 
@@ -3979,7 +3667,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Fixed Value", 
@@ -3988,7 +3676,7 @@
                             "cardinality": "0.1", 
                             "type": "float", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transient Characteristics", 
@@ -3997,7 +3685,7 @@
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
@@ -4007,15 +3695,6 @@
                     "id": "cmip6.atmos.natural_forcing.orbital_parameters", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.", 
-                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
                         {
                             "label": "Type", 
                             "description": "Type of orbital parameter", 
@@ -4038,7 +3717,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Fixed Reference Date", 
@@ -4047,7 +3726,7 @@
                             "cardinality": "0.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transient Method", 
@@ -4056,7 +3735,7 @@
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Computation Method", 
@@ -4080,7 +3759,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -4091,22 +3770,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of impact of solar insolation on stratospheric ozone in atmos model.", 
-                            "id": "cmip6.atmos.natural_forcing.insolation_ozone.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Solar Ozone Impact", 
                             "description": "Does top of atmosphere insolation impact on stratospheric ozone?", 
                             "id": "cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }
                     ]
                 }, 
@@ -4117,22 +3787,13 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics and treatment of volcanic forcing in the atmosphere in atmos model.", 
-                            "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
                             "label": "Volcanoes Characteristics", 
                             "description": "Description of how the volcanic forcing is taken into account in the atmosphere.", 
                             "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 1
                         }, 
                         {
                             "label": "Volcanoes Implementation", 
@@ -4156,7 +3817,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 2
                         }
                     ]
                 }
@@ -4194,17 +3855,6 @@
                 "description": "Atmosphere grid discretisation", 
                 "id": "cmip6.atmos.grid.discretisation", 
                 "contact": "Charlotte Pascoe", 
-                "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Overview of atmosphere grid discretisation in atmos model.", 
-                        "id": "cmip6.atmos.grid.discretisation.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }
-                ], 
                 "propertySets": [
                     {
                         "label": "Horizontal", 
@@ -4510,22 +4160,13 @@
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of characteristics of the model resolution in atmos model.", 
-                        "id": "cmip6.atmos.key_properties.resolution.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Horizontal Resolution Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.", 
                         "id": "cmip6.atmos.key_properties.resolution.horizontal_resolution_name", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Canonical Horizontal Resolution", 
@@ -4534,7 +4175,7 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Range Horizontal Resolution", 
@@ -4543,7 +4184,7 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Number Of Vertical Levels", 
@@ -4552,7 +4193,7 @@
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "High Top", 
@@ -4561,7 +4202,7 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }
                 ]
             }, 
@@ -4572,22 +4213,13 @@
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of characteristics of the atmosphere model time stepping in atmos model.", 
-                        "id": "cmip6.atmos.key_properties.timestepping.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Timestep Dynamics", 
                         "description": "Timestep for the dynamics in seconds", 
                         "id": "cmip6.atmos.key_properties.timestepping.timestep_dynamics", 
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Timestep Shortwave Radiative Transfer", 
@@ -4596,7 +4228,7 @@
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Timestep Longwave Radiative Transfer", 
@@ -4605,7 +4237,7 @@
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -4615,15 +4247,6 @@
                 "id": "cmip6.atmos.key_properties.orography", 
                 "contact": "Charlotte Pascoe", 
                 "properties": [
-                    {
-                        "label": "Overview", 
-                        "description": "Overview of characteristics of the model orography in atmos model.", 
-                        "id": "cmip6.atmos.key_properties.orography.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
                     {
                         "label": "Type", 
                         "description": "Type of orographic representation.", 
@@ -4646,7 +4269,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Modified", 
@@ -4678,7 +4301,7 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Time-varying", 
@@ -4687,7 +4310,7 @@
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }
                 ]
             }, 
@@ -4698,22 +4321,13 @@
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Overview", 
-                        "description": "Overview of tuning methodology for atmospheric component in atmos model.", 
-                        "id": "cmip6.atmos.key_properties.tuning_applied.overview", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": true, 
-                        "uiOrdinal": 1
-                    }, 
-                    {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
                         "id": "cmip6.atmos.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Global Mean Metrics Used", 
@@ -4722,7 +4336,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Regional Metrics Used", 
@@ -4731,7 +4345,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Trend Metrics Used", 
@@ -4740,7 +4354,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }
                 ]
             }

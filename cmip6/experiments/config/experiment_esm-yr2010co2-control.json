@@ -1,10 +1,10 @@
 {
     "canonical_name": "esm-yr2010CO2-control", 
-    "description": "Forced with CO2 emissions diagnosed from historical and yr2010CO2 simulations and all other forcings the same as in the historical and yr2010CO2 simulations.  All anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven).", 
+    "description": "A diagnosed emissions control experiment forced with CO2 emissions diagnosed from historical and yr2010CO2 simulations. All other forcings are the same as in the historical and yr2010CO2 simulations.  Include all anthropogenic, solar, and volcanic forcing. Anthropogenic forcing includes aerosol emissions, non-CO2 greenhouse gas emissions, and land use changes.  CO2 concentration calculated (i.e. emission driven). Run from 1850 to approx 2115 for ESMs and longer (up to 5000 years) for EMICs (Earth System Models of Intermediate Complexity) and box models.", 
     "governing_mips": [
         "cdrmip"
     ], 
-    "keywords": "CDRMIP, Tier 3,", 
+    "keywords": "CDRMIP, Tier 3, CDR-yr2010-pulse", 
     "long_name": "historical emissions followed by fixed 2010 emissions (both model-diagnosed)", 
     "mip_era": "cmip6", 
     "rationale": "Control simulation for the CDR-yr2010-pulse experiment.", 
@@ -15,11 +15,23 @@
         }, 
         {
             "name": "esm-yr2010CO2-CO2pulse", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "esm-yr2010CO2-CO2pulse", 
             "relationship": "is_initializer_of"
         }, 
         {
             "name": "esm-yr2010CO2-cdr-pulse", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "esm-yr2010CO2-cdr-pulse", 
             "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-yr2010CO2-noemit", 
+            "relationship": "is_control_for"
         }, 
         {
             "name": "esm-yr2010CO2-noemit", 
