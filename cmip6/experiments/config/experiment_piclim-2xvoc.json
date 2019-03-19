@@ -1,6 +1,6 @@
 {
     "canonical_name": "piClim-2xVOC", 
-    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The biogenic VOC (volatile organic compounds) emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total.", 
+    "description": "Fixed SST ERF simulation. Use pre-industrial climatological average SST and sea-ice distributions. Apply pre-industrial concentrations of WMGHG (well mixed greenhouse gases). The biogenic VOC (volatile organic compounds) emission fluxes in the interactive parameterisation are double their pre-industrial value.  All other NTCF (near term climate forcers) are set to pre-industrial levels. For models that do not interactively parameterise particular emissions, the fluxes from the 1850 climatological dataset should be doubled. This is a timeslice experiment of 30 years total. The model should have the capacity for interactive tropospheric chemistry.", 
     "governing_mips": [
         "aerchemmip"
     ], 
@@ -155,11 +155,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AGCM-Chem Configuration", 
-            "description": "Use an Atmosphere model with chemistry", 
+            "canonical_name": "AGCM-Aer-Chem Configuration", 
+            "description": "Use an Atmosphere model with interactive aerosols and chemistry", 
             "isConformanceRequested": false, 
-            "keywords": "AGCM, Chemistry, AGCM-Chem, Atmosphere Model", 
-            "label": "AGCM-Chem Configuration", 
+            "keywords": "AGCM, Chemistry, Aerosols, AGCM-Aer-Chem, Atmosphere Model", 
+            "label": "AGCM-Aer-Chem Configuration", 
             "type": "model-configuration"
         }
     ], 

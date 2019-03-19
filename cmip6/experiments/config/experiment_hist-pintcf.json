@@ -1,6 +1,6 @@
 {
     "canonical_name": "hist-piNTCF", 
-    "description": "Impose historical WMGHG and halocarbon concentrations. Near Term Climate Forcers (NTCFs), namely tropospheric aerosols and tropospheric ozone precursors, to be  fixed at 1850 emission levels. These simulations parallel the \"CMIP6 historical\", and differ only by fixing the anthropogenic emissions or concentrations of a specified class of species.   All other forcing agents must evolve as in \"CMIP6 historical\".", 
+    "description": "Impose historical WMGHG and halocarbon concentrations. Near Term Climate Forcers (NTCFs: methane, tropospheric ozone and aerosols, and their precursors), to be fixed at 1850 emission levels. These simulations parallel the \"CMIP6 historical\", and differ only by fixing the anthropogenic emissions or concentrations of a specified class of species.   All other forcing agents must evolve as in \"CMIP6 historical\".", 
     "governing_mips": [
         "aerchemmip"
     ], 
@@ -56,7 +56,7 @@
         }, 
         {
             "canonical_name": "1850 NTCF Emissions", 
-            "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
+            "description": "Impose 1850 emissions of Near Term Climate Forcers (NTCF: tropospheric ozone and aerosols, and their precursors).", 
             "isConformanceRequested": true, 
             "keywords": "1850, Near Term Climate Forcers, NTCF, emissions", 
             "label": "1850 NTCF Emissions", 
@@ -73,20 +73,20 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "Historical Methane Concentrations", 
-            "description": "Impose historical concentrations of methane (CH4).", 
-            "isConformanceRequested": true, 
-            "keywords": "historical methane concentrations, CH4", 
-            "label": "Historical Methane Concentrations", 
-            "scope": "mip", 
-            "type": "forcing-constraint"
-        }, 
-        {
             "canonical_name": "Historical N2O Concentrations", 
             "description": "Impose historical concentrations of Nitrous Oxide (N2O).", 
             "isConformanceRequested": true, 
             "keywords": "historical nitrous oxide, N2O", 
             "label": "Historical N2O Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Methane Concentrations", 
+            "description": "Impose historical concentrations of methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical methane concentrations, CH4", 
+            "label": "Historical Methane Concentrations", 
             "scope": "mip", 
             "type": "forcing-constraint"
         }, 
@@ -134,11 +134,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM-Chem Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model with chemistry", 
+            "canonical_name": "AOGCM-Aer Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with interactive aerosols. The model should at least calculate tropospheric aerosols driven by emission fluxes.", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, Chemistry, AOGCM-Chem, Atmosphere-Ocean General Circulation Model", 
-            "label": "AOGCM-Chem Configuration", 
+            "keywords": "AOGCM, Aerosols, AOGCM-Aer, Atmosphere-Ocean General Circulation Model, interactive aerosols", 
+            "label": "AOGCM-Aer Configuration", 
             "type": "model-configuration"
         }
     ], 

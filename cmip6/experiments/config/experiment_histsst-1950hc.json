@@ -1,13 +1,13 @@
 {
     "canonical_name": "histSST-1950HC", 
-    "description": "Historical atmosphere only simulation with historical WMGHG, transient historical SSTs. Ozone depleting substances fixed at 1950 emission levels.", 
+    "description": "Historical atmosphere only simulation with historical WMGHG, transient historical SSTs. Ozone depleting substances fixed at 1950 emission levels. The model should have the capacity to simulate stratospheric chemsitry.", 
     "governing_mips": [
         "aerchemmip"
     ], 
     "keywords": "AerChemMIP, Tier 1, Historical perturbation, historical WMGHG, historical SST, 1950 HC, halocarbons, ozone depleting substances", 
     "long_name": "historical SSTs and historical forcing, but with1950 halocarbon concentrations", 
     "mip_era": "cmip6", 
-    "rationale": "Estimate ERFs through specified transient historical SST simulations.", 
+    "rationale": "Estimate Effective Radiative Forcings (ERFs) through specified transient historical SST simulations.", 
     "related_experiments": [
         {
             "name": "hist-1950HC", 
@@ -85,7 +85,7 @@
         }, 
         {
             "canonical_name": "Historical NTCF Emissions", 
-            "description": "Impose transient historical emissions of near term climate forcers (NTCF): namely tropospheric aerosols, and tropospheric ozone precursors.", 
+            "description": "Impose transient historical emissions of near term climate forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, NTCF, near term climate forcers", 
             "label": "Historical NTCF Emissions", 
@@ -134,11 +134,11 @@
             "type": "ensemble"
         }, 
         {
-            "canonical_name": "AOGCM-StratChem Configuration", 
-            "description": "Use a coupled Atmosphere-Ocean general circulation model with a chemistry component that includes stratospheric chemistry", 
+            "canonical_name": "AGCM-Aer-Chem Configuration", 
+            "description": "Use an Atmosphere model with interactive aerosols and chemistry", 
             "isConformanceRequested": false, 
-            "keywords": "AOGCM, Chemistry, Stratospheric Chemistry, AOGCM-StratChem, Atmosphere-Ocean General Circulation Model", 
-            "label": "AOGCM-StratChem Configuration", 
+            "keywords": "AGCM, Chemistry, Aerosols, AGCM-Aer-Chem, Atmosphere Model", 
+            "label": "AGCM-Aer-Chem Configuration", 
             "type": "model-configuration"
         }
     ], 
