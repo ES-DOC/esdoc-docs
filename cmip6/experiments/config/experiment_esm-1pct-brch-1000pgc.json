@@ -1,0 +1,98 @@
+{
+    "canonical_name": "esm-1pct-brch-1000PgC", 
+    "description": "Abrupt-zero emissions experiment. Branch off  from the 1pctCO2 experiment with interactive CO2 (emissions-driven configuration) but with CO2 emissions set to zero. The branch off point is when the cumulative carbon emissions reach 1000 PgC.  Simulate the subsequent reduction in CO2 and change in climate for at least 100 years.  Earth System Models of Intermediate Complexity (EMICs) are requested to run longer simulations, up to 1000 years.  Note some Earth System Models (ESMs) may need to re-run an emissions-driven version of 1pctCO2 to branch-off from.", 
+    "governing_mips": [
+        "c4mip"
+    ], 
+    "keywords": "C4MIP, Tier 2, ZEC-MIP, Abrupt-zero emissions, 1000 PgC, 2 degrees", 
+    "long_name": "zero emissions simulation branched from 1% run after 1000 PgC cumulative emission", 
+    "mip_era": "cmip6", 
+    "rationale": "The Zero Emissions Commitment (ZEC) is a key component of calculating the remaining carbon budget to stay within climate targets. The aim of the experiment is to quantify ZEC at 1000 PgC. This experiment explores the state dependence of ZEC at approximately 2 degrees above pre-industrial.", 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "esm-1pctCO2", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "esm-bell-1000PgC", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "100yrs min", 
+            "description": "Run for a minimum of 100 years", 
+            "isConformanceRequested": false, 
+            "keywords": "100 years, minimum", 
+            "label": "100yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Zero CO2 emissions", 
+            "description": "Carbon dioxide (CO2) emissions are set to zero.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, carbon dioxide, emissions, zero", 
+            "label": "Zero CO2 emissions", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "1000PgC-Initialisation", 
+            "description": "Initialise from the 1pctCO2 or esm-1pctCO2 simulation when cumulative carbon concentrations reach 1000 PgC.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, 1pctCO2 at 1000 PgC", 
+            "label": "1000PgC-Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a fully coupled Earth System Model which explicitly models the movement of Carbon through the Earth system.  Atmosphere-Ocean general circulation model with biogeochemistry.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-BGC, Atmosphere-Ocean General Circulation Model with BioGeoChemistry, Earth System Model, ESM", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "EMIC Configuration", 
+            "description": "An Earth system model of intermediate complexity.", 
+            "isConformanceRequested": false, 
+            "keywords": "EMIC, Intermediate Complexity, Earth System Model", 
+            "label": "EMIC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "b1f4350d-4f3a-4953-8c39-9f11b70d0dfa", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-1pct-brch-1000PgC?client=mohc"
+}

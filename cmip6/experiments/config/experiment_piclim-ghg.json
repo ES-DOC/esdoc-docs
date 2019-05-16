@@ -1,13 +1,13 @@
 {
     "canonical_name": "piClim-ghg", 
-    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Greenhouse gases set to present day (2014) values, other forcing agents are specified at pre-industrial values.  Run for 30 years.", 
+    "description": "An uncoupled (atmosphere and land) experiment with interactive vegetation in which sea surface temperature (SST) and sea ice concentrations (SIC) are fixed at model-specific pre-industrial control climatology.  Non-ozone greenhouse gases set to present day (2014) values, other forcing agents are specified at pre-industrial values.  Run for 30 years.", 
     "governing_mips": [
         "rfmip"
     ], 
-    "keywords": "RFMIP, Tier 1, PD GHG, present day greenhouse gas, uncoupled, atmosphere-land", 
+    "keywords": "RFMIP, Tier 1, PD GHG, present day greenhouse gas, pre-industrial ozone, uncoupled, atmosphere-land", 
     "long_name": "effective radiative forcing by present day greenhouse gases", 
     "mip_era": "cmip6", 
-    "rationale": "Quantify present-day effective radiative forcing (ERF) by greenhouse gases.", 
+    "rationale": "Quantify present-day effective radiative forcing (ERF) by non-ozone greenhouse gases.", 
     "related_experiments": [
         {
             "name": "piClim-control", 
@@ -49,12 +49,21 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "2014 GHG", 
-            "description": "Impose present-day (2014) concentrations of greenhouse gases.", 
+            "canonical_name": "Pre-industrial GHG Concentrations excluding O3", 
+            "description": "Impose Pre-industrial (1850) concentrations of greenhouse gases excluding ozone (O3).", 
             "isConformanceRequested": true, 
-            "keywords": "2014, ghg, concentrations, greenhouse gas", 
-            "label": "2014 GHG", 
-            "scope": "mip-group", 
+            "keywords": "pre-industrial, 1850, GHG concentrations,  excluding Ozone, no O3", 
+            "label": "Pre-industrial GHG Concentrations excluding O3", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ozone Concentrations", 
+            "description": "Constant pre-industrial tropospheric and stratospheric ozone climatology.\nModels without interactive ozone chemistry should specify the pre-industrial ozone fields from a  data set produced from a pre-industrial control simulation that uses 1850 emissions and a mean solar forcing averaged over solar cycles 8-10, representative of the mean mid-19th century solar forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, Ozone, O3, concentrations", 
+            "label": "Pre-Industrial Ozone Concentrations", 
+            "scope": "mip-era", 
             "type": "forcing-constraint"
         }, 
         {
@@ -91,6 +100,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "3902d795-a30f-41a4-a732-19ce0ede87af", 
+    "uid": "b98b86f8-756b-4576-99ab-2a5b39fc1374", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/piClim-ghg?client=mohc"
 }

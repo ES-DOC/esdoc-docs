@@ -1,0 +1,94 @@
+{
+    "canonical_name": "esm-bell-1000PgC", 
+    "description": "Bell-shape zero emissions experiment. Run in emissions-driven configuration with CO2-only forcing, all non-CO2 forcing is fixed at pre-industrial levels. Use a bell-shaped CO2 emissions profile designed to give cumulative emissions of 1000 PgC after 100 years.  Then hold CO2 emissions at zero and simulate the subsequent reduction in CO2 and change in climate for at least 100 years (1000 years for EMICs).  The time series of global CO2 for the bell-shape emission profiles will be provided by ZECMIP via the C4MIP and CDRMIP websites.  A model decision is required on the spatial pattern of CO2 emissions, ZECMIP suggest globally uniform at surface.", 
+    "governing_mips": [
+        "c4mip"
+    ], 
+    "keywords": "C4MIP, Tier 3, ZEC-MIP, Bell-shape zero emissions", 
+    "long_name": "emissions driven 1000 PgC bell-curve", 
+    "mip_era": "cmip6", 
+    "rationale": "The Zero Emissions Commitment (ZEC) is a key component of calculating the remaining carbon budget to stay within climate targets. This experiment explores the rate dependence of ZEC at approximately 2 degrees by following a pathway with a smooth transition to zero emissions.", 
+    "related_experiments": [
+        {
+            "name": "esm-1pct-brch-1000PgC", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "esm-piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "200yrs min", 
+            "description": "Run for a minimum of 200 years", 
+            "isConformanceRequested": false, 
+            "keywords": "200 years, idealised", 
+            "label": "200yrs min", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "CO2 bell 1000 PgC", 
+            "description": "Use a bell-shaped CO2 emissions profile designed to give cumulative emissions of 1000 PgC after 100 years, then hold CO2 emissions at zero. The time series of global CO2 for the bell-shape emission profiles will be provided by ZECMIP via the C4MIP and CDRMIP websites.  A model decision is required on the spatial pattern of CO2 emissions, ZECMIP suggest globally uniform at surface.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, carbon dioxide, emissions, bell-shaped, 1000 PgC", 
+            "label": "CO2 bell 1000 PgC", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "esm-piControl Initialisation", 
+            "description": "Initialisation from the esm-piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, ESM, Earty System Model", 
+            "label": "esm-piControl Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "EMIC Configuration", 
+            "description": "An Earth system model of intermediate complexity.", 
+            "isConformanceRequested": false, 
+            "keywords": "EMIC, Intermediate Complexity, Earth System Model", 
+            "label": "EMIC Configuration", 
+            "type": "model-configuration"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a fully coupled Earth System Model which explicitly models the movement of Carbon through the Earth system.  Atmosphere-Ocean general circulation model with biogeochemistry.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-BGC, Atmosphere-Ocean General Circulation Model with BioGeoChemistry, Earth System Model, ESM", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "14a73a4f-b84c-4625-85f3-3f74fc47a1ef", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-bell-1000PgC?client=mohc"
+}

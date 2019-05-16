@@ -1,0 +1,94 @@
+{
+    "canonical_name": "esm-1pctCO2", 
+    "description": "The emissions-driven version of 1pctCO2 is an alternative branching experiment for ZEC-1pctCO2-750, ZEC-1pctCO2-1000 and ZEC-1pctCO2-2000. Compatible 1pctCO2 emissions  should be calculated year-by-year and used from pi-Control to approximately replicate the 1% profile up to the desired cumulative emission (750 PgC, 1000 PgC, 2000 PgC).", 
+    "governing_mips": [
+        "c4mip"
+    ], 
+    "keywords": "C4MIP, Tier 3, ZEC-MIP, 1pctCO2", 
+    "long_name": "emissions driven 1% run", 
+    "mip_era": "cmip6", 
+    "rationale": "Some ESMs may not have the capability to switch from concentration-driven to emissions-driven configuration, or model groups may not have confidence that they can do so without a shock to the model system. In this case ESMs may need to re-run an emissions-driven version of 1pctCO2 to get to the step-off point. This is a model-by-model decision.", 
+    "related_experiments": [
+        {
+            "name": "esm-1pct-brch-1000PgC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-1pct-brch-2000PgC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-1pct-brch-750PgC", 
+            "relationship": "is_initializer_of"
+        }, 
+        {
+            "name": "esm-piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "c4mip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "150yrs", 
+            "description": "Run for 150 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "150 years, idealised", 
+            "label": "150yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1% per year CO2 Increase", 
+            "description": "Impose a 1% per year increase in the concentration of atmospheric carbon dioxide until quadrupling.", 
+            "isConformanceRequested": true, 
+            "keywords": "CO2, 1%/yr, quadrupling, 4XCO2, 4X, ipcc, climate", 
+            "label": "1% per year CO2 Increase", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "esm-piControl Initialisation", 
+            "description": "Initialisation from the esm-piControl simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial, ESM, Earty System Model", 
+            "label": "esm-piControl Initialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a fully coupled Earth System Model which explicitly models the movement of Carbon through the Earth system.  Atmosphere-Ocean general circulation model with biogeochemistry.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-BGC, Atmosphere-Ocean General Circulation Model with BioGeoChemistry, Earth System Model, ESM", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "47d22889-6f34-4eab-b257-bb29f5ff0572", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-1pctCO2?client=mohc"
+}
