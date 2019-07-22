@@ -1,11 +1,11 @@
 {
     "canonical_name": "amip-lfmip-pdLC", 
-    "description": "Scenario forced experiment with prescribed land surface climatology derived from \"present climate\" conditions (1980-2014) and prescribed SST (sea surface temperatures). SST configuration is taken from the AMIP runs in the DECK.", 
+    "description": "Scenario forced experiment with prescribed land surface climatology derived from modern conditions from the first historical ensemble member (1980-2014). SST and sea-ice from the first ensemble members of the historical and ssp585 experiments.", 
     "governing_mips": [
         "ls3mip"
     ], 
     "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land, prescribed SST", 
-    "long_name": "prescribed land surface climatology and SST derived from present climate", 
+    "long_name": "prescribed modern land surface climatology from historical, prescribed SST and sea-ice from historical plus scenario runs", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose land-climate feedback over land. To diagnose the role of land-atmosphere feedback at climate time scales. To isolate the role of the ocean in propagating the damping/reinforcing land surface responses on climate.", 
     "related_experiments": [
@@ -40,21 +40,39 @@
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "AMIP SST", 
-            "description": "Apply AMIP sea surface temperature boundary conditions derived from observational data.", 
+            "canonical_name": "LS3MIP historical SST", 
+            "description": "Sea surface temperature (SST) from the first ensemble member of the historical experiment.", 
             "isConformanceRequested": true, 
-            "keywords": "AMIP, Sea surface temperature, AMIP, climate, modelling, SST, prescribed", 
-            "label": "AMIP SST", 
-            "scope": "mip-era", 
+            "keywords": "LS3MIP, historical SST", 
+            "label": "LS3MIP historical SST", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
-            "canonical_name": "AMIP SIC", 
-            "description": "Apply AMIP sea ice boundary conditions derived from observational data.", 
+            "canonical_name": "LS3MIP historical Sea-Ice", 
+            "description": "Sea-ice from the first ensemble member of the historical experiment.", 
             "isConformanceRequested": true, 
-            "keywords": "AMIP, Sea Ice, climate, modelling, AMIP, ipcc, seaIce, prescribed", 
-            "label": "AMIP SIC", 
-            "scope": "mip-era", 
+            "keywords": "LS3MIP, historical Sea-Ice", 
+            "label": "LS3MIP historical Sea-Ice", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LS3MIP ssp585 SST", 
+            "description": "Sea surface temperature (SST) from the first ensemble member of the ssp585 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "LS3MIP, ssp585 SST", 
+            "label": "LS3MIP ssp585 SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "LS3MIP ssp585 Sea-Ice", 
+            "description": "Sea-ice from the first ensemble member of the ssp585 experiment.", 
+            "isConformanceRequested": true, 
+            "keywords": "LS3MIP, ssp585 Sea-Ice", 
+            "label": "LS3MIP ssp585 Sea-Ice", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {

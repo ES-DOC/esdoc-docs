@@ -1,6 +1,6 @@
 {
     "canonical_name": "omip1", 
-    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Run for a minimum of five repeating cycles of the CORE-II forcing. Groups that are unable to run with biogeochemistry can participate in the physical/chemical portion.", 
+    "description": "Global ocean - sea-ice - coupled experiment forced with the CORE-II (Coordinated Ocean - ice Reference Experiments) inter-annually varying atmospheric and river data sets for years 1948-2009.  Initial ocean tracer fields are based on observations. Simulation length for at least 5 cycles of the 62-year forcing is required.\nThe 5-cycle length is recommended to facilitate intercomparison within the experiment \nby using a common simulation length, but a longer simulation length is also accepted.\nFor each simulation, set the beginning of the simulation (e.g., 1700 and 1638 for \nthe 5-cycle and 6-cycle simulation, respectively) as the \u2018base time\u2019 of the time axis.\nSimulations with different simulation lengths by a single model are treated as members \nof an ensemble. Thus, different 'realization' indexes (e.g., r1, r2, r3, ...) should be used\nin a global attribute named 'variant_index' (e.g., r1i1p1f1). It is requested that information relevant to understanding the differences in members of an ensemble of simulations is reported in a global attribute named 'variant_info'. This information should also be recorded in the ES-DOC documentation of each experiment performed by a model and be made available via the 'further_info_url'.\nAll Priority=1 OMIP diagnostics are requested for all cycles of the 62-year forcing \nto quantify drift. All OMIP diagnostics (Priority=1,2,3) are requested for the last cycle.", 
     "governing_mips": [
         "omip"
     ], 
@@ -31,16 +31,24 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1948-2009 310yrs", 
-            "description": "Historical, five repetitions from 1948-2009", 
+            "canonical_name": "310yrs", 
+            "description": "Historical, five repetitions of the 62 year CORE-II (1948-2009) with simulations beginning in 1700.", 
             "isConformanceRequested": false, 
-            "keywords": "historical, 1948-2009, x5", 
-            "label": "1948-2009 310yrs", 
+            "keywords": "historical, 310 years, 1948 to 2009 x5, begin 1700", 
+            "label": "310yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "372yrs", 
+            "description": "Historical,six repetitions of the 62 year CORE-II (1948-2009) with simulations beginning in 1638.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 372 years, 1948 to 2009 x6, begin 1638", 
+            "label": "372yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "CORE2 Air-Sea Fluxes", 
-            "description": "Five repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
+            "description": "Five/six repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
             "label": "CORE2 Air-Sea Fluxes", 

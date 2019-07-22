@@ -7,7 +7,7 @@
     "keywords": "CMIP, Tier 1, DECK, Diagnosis Evaluation and Characterization of Klima (Climate), 4xCO2, instantaneous quadrupling, climate sensitivity", 
     "long_name": "Abrupt quadrupling of the atmospheric concentration of carbon dioxide", 
     "mip_era": "cmip6", 
-    "rationale": "To evaluate the equilibrium climate sensitivity of the model and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.", 
+    "rationale": "To evaluate the effective climate sensitivity of the model (EfCS) and to diagnose the strength of various feedbacks.  To characterise the radiative forcing that arises from an increase in atmospheric CO2 as well as changes that arise indirectly due to the warming.  One can use the effective climate sensitivity to estimate the equilibrium climate sensitivity (EqCS).", 
     "related_experiments": [
         {
             "name": "a4SST", 
@@ -28,6 +28,10 @@
         {
             "name": "futureSST-4xCO2-solar", 
             "relationship": "is_constrainer_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
         }, 
         {
             "name": "piControl", 

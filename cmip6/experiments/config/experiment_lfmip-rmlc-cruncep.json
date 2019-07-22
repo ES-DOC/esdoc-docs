@@ -5,10 +5,14 @@
         "ls3mip"
     ], 
     "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed land 30yr running mean, land-hist-cruNcep, CRU NCEP", 
-    "long_name": "prescribed land surface climatology derived from 30 yr running mean from land-hist-cruNcep", 
+    "long_name": "prescribed land conditions (from running mean climatology) derived land-hist-cruNcep and initialized from \"historical\" run year 1980", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose land-climate feedback including ocean response. For diagnosing shifts in the regions of strong land-atmosphere coupling, and shifts in potential predictability related to land surface states.", 
     "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
         {
             "name": "land-hist-cruNcep", 
             "relationship": "is_constrained_by"

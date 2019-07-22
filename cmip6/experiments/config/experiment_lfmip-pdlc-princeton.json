@@ -5,10 +5,14 @@
         "ls3mip"
     ], 
     "keywords": "LS3MIP, Tier 2, Historical Scenario, Prescribed Land 1980-2014,Princeton", 
-    "long_name": "prescribed land surface climatology derived from land-hist-princeton", 
+    "long_name": "prescribed land conditions (from current climate climatology) derived from land-hist-princeton and initialized from \"historical\" run year 1980", 
     "mip_era": "cmip6", 
     "rationale": "Diagnose land-climate feedback including ocean response. To diagnose the role of land-atmosphere feedback at climate time scales.", 
     "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
         {
             "name": "land-hist-princeton", 
             "relationship": "is_constrained_by"

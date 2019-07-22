@@ -5,7 +5,7 @@
         "gmmip"
     ], 
     "keywords": "GMMIP, Tier 2, HIST-AMO, Atlantic Multidecadal Oscillation", 
-    "long_name": "historical observed SSTs restored in AMO domain", 
+    "long_name": "initialized from \"historical\" run year 1870 and SSTs in the AMO domain (0deg-70degN, 70degW-0deg) restored to AMIP SSTs with historical forcings", 
     "mip_era": "cmip6", 
     "rationale": "To understand the forcing of AMO-related SST on global monsoon changes.", 
     "related_experiments": [
@@ -15,11 +15,11 @@
         }, 
         {
             "name": "historical", 
-            "relationship": "is_perturbation_from"
+            "relationship": "is_initialized_by"
         }, 
         {
-            "name": "piControl", 
-            "relationship": "is_initialized_by"
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
         }
     ], 
     "related_mips": [
@@ -117,14 +117,6 @@
             "isConformanceRequested": false, 
             "keywords": "three, 3, ensemble, runs, simulations", 
             "label": "ThreeMember", 
-            "type": "ensemble"
-        }, 
-        {
-            "canonical_name": "PreIndustrialInitialisation", 
-            "description": "Initialisation from a January in the pre-industrial control simulation.", 
-            "isConformanceRequested": true, 
-            "keywords": "initial conditions, initialisation, pre-industrial", 
-            "label": "PreIndustrialInitialisation", 
             "type": "ensemble"
         }, 
         {

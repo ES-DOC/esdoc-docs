@@ -1,13 +1,13 @@
 {
     "canonical_name": "omip2", 
-    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  This experiment will use atmospheric state and runoff data based on the JRA-55 reanalysis inter-annually varying atmospheric and river data sets for years 1958-2016 (Kobayashi et al., 2015).   Initial ocean tracer fields are based on observations.", 
+    "description": "Global ocean - sea-ice - coupled experiment forced with the JRA55-do inter-annually varying atmospheric and river data sets for years 1958-2018. Initial ocean tracer fields are based on observations. Simulation length for at least 6 cycles of the 61-year forcing is required.  The 6-cycle length is recommended to facilitate intercomparison within the experiment by using a common simulation length, but a longer simulation length is also accepted. In each simulation, set the beginning of the simulation (e.g., 1653 for the 6-cycle simulation) as the \u2018base time\u2019 of the time axis.\nSimulations with different simulation lengths by a single model are treated as members\nof an ensemble. Thus, different 'realization' indexes (e.g., r1, r2, r3, ...) should be used\nin a global attribute named 'variant_index' (e.g., r1i1p1f1). \nIt is requested that information relevant to understanding the differences in members of \nan ensemble of simulations is reported in a global attribute named 'variant_info'.  This information should also be recorded in the ES-DOC documentation of each experiment performed by a model and be made available via the 'further_info_url'.\nAll Priority=1 OMIP diagnostics are requested for the all cycles of the 61-year forcing\nto quantify drift. All OMIP diagnostics (Priority=1,2,3) are requested for the last cycle.", 
     "governing_mips": [
         "omip"
     ], 
     "keywords": "OMIP, Tier 3, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
     "long_name": "OMIP experiment forced by JRA-55 atmospheric data set and initialized with observed physical and biogeochemical ocean data", 
     "mip_era": "cmip6", 
-    "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. JRA-55 has a finer spatial resolution than CORE-II.", 
+    "rationale": "Improve our understanding of of ocean/sea-ice/inert-chemcal/biogeochemical components used in coupled climate and earth system models.  JRA55-do has a finer spatial resolution than CORE-II.", 
     "related_experiments": [
         {
             "name": "historical", 
@@ -31,19 +31,19 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1958-2016 295yrs", 
-            "description": "Historical, five repetitions from 1958-2016", 
+            "canonical_name": "366yrs", 
+            "description": "Historical, six repetitions of the 61 year JRA-55 (1958-2018) with simulations beginning in 1653.", 
             "isConformanceRequested": false, 
-            "keywords": "historical, 1958-2016, x5", 
-            "label": "1958-2016 295yrs", 
+            "keywords": "historical, 366 years, 1958-2018 x6, begin 1653", 
+            "label": "366yrs", 
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "JRA-55 Air-Sea Fluxes", 
-            "description": "Five repetitions of the JRA-55 air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 59-year period from 1958-2016.", 
+            "canonical_name": "JRA55-do Air-Sea Fluxes", 
+            "description": "Five/six repetitions of the JRA55-do air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 61-year period from 1958-2018.", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
-            "label": "JRA-55 Air-Sea Fluxes", 
+            "label": "JRA55-do Air-Sea Fluxes", 
             "type": "forcing-constraint"
         }, 
         {

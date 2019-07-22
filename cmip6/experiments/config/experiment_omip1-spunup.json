@@ -1,13 +1,13 @@
 {
     "canonical_name": "omip1-spunup", 
-    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment.  Rather than using observed climatologies to initialise the biogeochemistry as in omipv1, this simulation will be initialised with model tracer fields that have been spun up for at least 2000 years, ideally for 5000 years.  The omipv1-spunup simulations (and spin-ups) will include radiocarbon (abiotic DIC and DI14C). Atmospheric forcing follows CORE-II, inert chemical tracers follow OCMIP2, and biogeochemical tracers follow OCMIP3. Only for modelling groups that have biogeochemistry and are able to afford a millennial-scale spin-up.", 
+    "description": "Global ocean/sea-ice/inert-chemical/biogeochemical experiment like omip1 except that it is not initialized with observed climatologies; rather it is initialized with results from at least a 2000-year spin up of the coupled physical-biogeochemical models.   \nThe spin up simulations may be made with the classic online or offline approach, or with tracer-acceleration techniques or fast solvers. If an online approach is used, at the end of the 5th cycle of CORE-II forcing, the model's physical fields should be reinitialized to the values at the start of the 3rd cycle in order to avoid long-term drift in those fields and to assure that they will not diverge greatly from physical fields in the omip1 simulation..   \nThe spin up also includes radiocarbon to evaluate deep-ocean circulation.", 
     "governing_mips": [
         "omip"
     ], 
     "keywords": "OMIP, Tier 2, Historical 62-year timeslice, Global ocean\u2013sea-ice modelling, Ocean model comparisons, Atmospheric forcing, Atlantic meridional overturning circulation", 
     "long_name": "OMIP experiment forced by Large & Yeager (CORE-2, NCEP) atmospheric data set and initialized from at least a 2000-year spin up of the coupled physical-biogeochemical model", 
     "mip_era": "cmip6", 
-    "rationale": "Improve our understanding of of ocean/sea-ice/chemcal/biogeochemical components used in coupled climate and earth system models. Radiocarbon is included to evaluate the deep-ocean circulation.", 
+    "rationale": "Improve our understanding of of ocean/sea-ice/inert-chemcal/biogeochemical components used in coupled climate and earth system models. Radiocarbon is included to evaluate the deep-ocean circulation.", 
     "related_experiments": [
         {
             "name": "historical", 
@@ -27,16 +27,24 @@
     ], 
     "requirements": [
         {
-            "canonical_name": "1948-2009 310yrs", 
-            "description": "Historical, five repetitions from 1948-2009", 
+            "canonical_name": "310yrs", 
+            "description": "Historical, five repetitions of the 62 year CORE-II (1948-2009) with simulations beginning in 1700.", 
             "isConformanceRequested": false, 
-            "keywords": "historical, 1948-2009, x5", 
-            "label": "1948-2009 310yrs", 
+            "keywords": "historical, 310 years, 1948 to 2009 x5, begin 1700", 
+            "label": "310yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "372yrs", 
+            "description": "Historical,six repetitions of the 62 year CORE-II (1948-2009) with simulations beginning in 1638.", 
+            "isConformanceRequested": false, 
+            "keywords": "historical, 372 years, 1948 to 2009 x6, begin 1638", 
+            "label": "372yrs", 
             "type": "temporal-constraint"
         }, 
         {
             "canonical_name": "CORE2 Air-Sea Fluxes", 
-            "description": "Five repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
+            "description": "Five/six repetitions of the CORE-II air\u2013sea fluxes of momentum, heat, freshwater and their components which cover the 62-year period from 1948-2009.", 
             "isConformanceRequested": true, 
             "keywords": "OMIP, ocean, air-sea fluxes, heat, momentum, freshwater", 
             "label": "CORE2 Air-Sea Fluxes", 
