@@ -10,14 +10,6 @@
     "rationale": "Control experiment for AerChemMIP historical perturbation experiments.", 
     "related_experiments": [
         {
-            "name": "hist-piAer", 
-            "relationship": "is_control_for"
-        }, 
-        {
-            "name": "hist-piNTCF", 
-            "relationship": "is_constrained_by"
-        }, 
-        {
             "name": "histSST-1950HC", 
             "relationship": "is_control_for"
         }, 
@@ -43,7 +35,7 @@
         }, 
         {
             "name": "historical", 
-            "relationship": "is_sibling_of"
+            "relationship": "is_constrained_by"
         }, 
         {
             "name": "piControl", 
@@ -63,11 +55,20 @@
             "type": "temporal-constraint"
         }, 
         {
-            "canonical_name": "Historical AerChemMIP hist-piNTCF SSTs", 
-            "description": "Historical transient sea surface temperature from AerChemMIP experiment hist-piNTCF.", 
+            "canonical_name": "Historical SST", 
+            "description": "Time-evolving monthly sea surface temperature (SST) taken from a coupled historical simulation.", 
             "isConformanceRequested": true, 
             "keywords": "Historical, SST, sea surface temperature", 
-            "label": "Historical AerChemMIP hist-piNTCF SSTs", 
+            "label": "Historical SST", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Sea Ice", 
+            "description": "Time-evolving monthly sea ice distribution taken from a coupled historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical,  sea-ice", 
+            "label": "Historical Sea Ice", 
             "scope": "mip", 
             "type": "forcing-constraint"
         }, 
