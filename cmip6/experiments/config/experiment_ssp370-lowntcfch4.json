@@ -1,0 +1,107 @@
+{
+    "canonical_name": "ssp370-lowNTCFCH4", 
+    "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced Near Term Climate Forcer (NTCF) emissions and SSP3 socioeconomic conditions. Methane concentraitons also follow the \"low\" scenario.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 3, scenario,  SSP3, RCP7.0, reduced NTCF, reduced CH4,  reduced Near Term Climate Forcers, reduced methane", 
+    "long_name": "SSP3-7.0, with low NTCF emissions and low CH4 concentrations", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp370", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "ssp370-lowNTCF", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Reduced RCP70 Methane CH4", 
+            "description": "Impose changing concentrations of reduced RCP7.0 methane (CH4). Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-7 CH4 emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Reduced Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, methane, CH4", 
+            "label": "Reduced RCP70 Methane CH4", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Reduced RCP70 NTCF", 
+            "description": "Impose changing concentrations of reduced RCP7.0 Near Term Climate Forcers (NTCF). Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-7 NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "AerChemMIP, Reduced RCP7.0 NTCF, scenario", 
+            "label": "Reduced RCP70 NTCF", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Well Mixed GHG no CH4", 
+            "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases. Do not include methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, except CH4", 
+            "label": "RCP70 Well Mixed GHG no CH4", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3 RCP70 Land Use", 
+            "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest for SSP3.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
+            "label": "SSP3 RCP70 Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "UptoThree", 
+            "description": "An ensemble of up to three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "up to three, up to 3, ensemble, runs, simulations", 
+            "label": "UptoThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-Aer Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model with interactive aerosols. The model should at least calculate tropospheric aerosols driven by emission fluxes.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Aerosols, AOGCM-Aer, Atmosphere-Ocean General Circulation Model, interactive aerosols", 
+            "label": "AOGCM-Aer Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "d3c3b1f9-6782-4a4b-8fd7-c710983b5bd7", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370-lowNTCFCH4?client=mohc"
+}

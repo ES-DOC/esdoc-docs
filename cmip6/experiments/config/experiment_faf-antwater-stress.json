@@ -1,0 +1,112 @@
+{
+    "canonical_name": "faf-antwater-stress", 
+    "description": "1xCO2 experiment, parallel to piControl, forced over the ocean with the momentum flux perturbation field of faf-stress and a surface freshwater flux of 0.1 Sv (100000\u2009m3\u2009s\u22121) in total to be applied uniformly around the coast of Antarctica in whatever way is most suitable in the model. \nThe faf-stress momentum flux imposes a perturbation in surface zonal and meridional momentum flux i.e. wind stress.  The stress perturbation is added to the momentum balance of the ocean water surface. The stress perturbation is calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Its dominant feature is the increase in westerly windstress in the Southern Ocean. \nImpose pre-industrial atmospheric conditions. \nBranch from the piControl at the same point as the 1pctCO2 experiment.", 
+    "governing_mips": [
+        "fafmip"
+    ], 
+    "keywords": "FAFMIP, Tier 2, surface wind stress anomaly, surface freshwater anomaly, Antarctica", 
+    "long_name": "control plus perturbative surface fluxes of momentum and freshwater into ocean, the latter around the coast of Antarctica only", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "faf-stress", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "fafmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "70yrs", 
+            "description": "Run for 70 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "70 years", 
+            "label": "70yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2 Wind Stress Anomaly At Doubling", 
+            "description": "Impose zonal and meridional momentum flux (wind stress) anomalies to the ocean surface, created from the CMIP5 diagnostics of surface downward fluxes of eastward (tauu) and northward (tauv) momentum. The surface flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability. The stress perturbation is added to the momentum balance of the ocean water surface, it should not directly perturb any turbulent mixing scheme that depends on the windstress and should not be applied to the sea-ice momentum balance, although presumably the sea-ice velocity will be indirectly affected.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, wind stress, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Wind Stress Anomaly At Doubling", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Antarctic Coast Fresh Water Flux", 
+            "description": "A surface freshwater flux of 0.1 Sv (100000\u2009m3\u2009s\u22121) in total to be applied uniformly around the coast of Antarctica in whatever way is most suitable in the model.", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, freshwater flux, Antarctica", 
+            "label": "Antarctic Coast Fresh Water Flux", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration. The CO2 concentration should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from a January in the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "8be0dc26-8837-461c-879f-67039a7f37d2", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-antwater-stress?client=mohc"
+}

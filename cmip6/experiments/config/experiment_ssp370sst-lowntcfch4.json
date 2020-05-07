@@ -1,0 +1,120 @@
+{
+    "canonical_name": "ssp370SST-lowNTCFCH4", 
+    "description": "SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced NTCF emissions and SSP3 socioeconomic conditions. Methane concentrations also follow the \"low\" scenario.  Atmosphere only with SST from ScenarioMIP experiment SSP3-70.", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 3, scenario, SSP3, RCP7.0, atmosphere only, reduced NTCF, reduced CH4, reduced Near Term Climate Forcers, reduced methane", 
+    "long_name": "SSP3-7.0, prescribed SSTs, with low NTCF emissions and low CH4 concentrations", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp370", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "ssp370SST", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "ssp370SST-lowNTCF", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3-70 SST", 
+            "description": "Sea surface temperature from experiment SSP3-7.", 
+            "isConformanceRequested": true, 
+            "keywords": "SSP3-7, SSP3, RCP7.0, SST, sea surface temperature", 
+            "label": "SSP3-70 SST", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Reduced RCP70 Methane CH4", 
+            "description": "Impose changing concentrations of reduced RCP7.0 methane (CH4). Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-7 CH4 emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "Reduced Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, methane, CH4", 
+            "label": "Reduced RCP70 Methane CH4", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Reduced RCP70 NTCF", 
+            "description": "Impose changing concentrations of reduced RCP7.0 Near Term Climate Forcers (NTCF). Beginning in 2014 with air quality policies (or maximum feasible reductions) applied to the SSP3-7 NTCF emissions.", 
+            "isConformanceRequested": true, 
+            "keywords": "AerChemMIP, Reduced RCP7.0 NTCF, scenario", 
+            "label": "Reduced RCP70 NTCF", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Well Mixed GHG no CH4", 
+            "description": "Impose changing concentrations of RCP7.0 long-lived gases, including CO2, N2O and halogenated gases. Do not include methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Well-mixed Greenhouse Gas, except CH4", 
+            "label": "RCP70 Well Mixed GHG no CH4", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP3 RCP70 Land Use", 
+            "description": "Impose changing RCP7.0 land use including crops, pasture, urban area, vegetation and forest for SSP3.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0, Land Use", 
+            "label": "SSP3 RCP70 Land Use", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM-Aer Configuration", 
+            "description": "Use an Atmosphere general circulation model with interactive aerosols. The model should at least calculate tropospheric aerosols driven by emission fluxes.", 
+            "isConformanceRequested": false, 
+            "keywords": "AGCM, Aerosols, AGCM-Aer, Atmosphere General Circulation Model, interactive aerosols", 
+            "label": "AGCM-Aer Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "f74196fa-19b0-4b29-b62f-51ce21cdb45e", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370SST-lowNTCFCH4?client=mohc"
+}

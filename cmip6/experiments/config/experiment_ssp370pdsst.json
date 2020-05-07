@@ -1,0 +1,99 @@
+{
+    "canonical_name": "ssp370pdSST", 
+    "description": "Experimental set up as ssp370SST except sea surface temperatures (SST) and sea ice concentrations (SICONC) are from a 2005-2014 climatology. Diagnostics are as ssp370SST", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 2", 
+    "long_name": "SSP3-7.0, with SSTs prescribed as present day", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [], 
+    "requirements": [
+        {
+            "canonical_name": "2015-2100 86yrs", 
+            "description": "Scenario, from 2015 to the end of the 21st century.", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2015, 2100", 
+            "label": "2015-2100 86yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Present Day 2005-2014 SST Climatology", 
+            "description": "Present day sea surface temperature (SST) calculated from a 2005-2014 climatology of the model's own CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "AerChemMIP", 
+            "label": "Present Day 2005-2014 SST Climatology", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Present Day 2005-2014 SIC Climatology", 
+            "description": "Present day sea ice concentration (SIC) calculated from a 2005-2014 climatology of the model's own CMIP6 historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "AerChemMIP", 
+            "label": "Present Day 2005-2014 SIC Climatology", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Tropospheric Ozone Precursors", 
+            "description": "Impose changing concentrations of RCP7.0 tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway, 7.0, future, 21st century, SSP3, RCP7.0, tropospheric ozone precursors", 
+            "label": "RCP70 Tropospheric Ozone Precursors", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "RCP70 Forcing", 
+            "description": "Impose RCP7.0 forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 7.0, future, 21st century, SSP3, RCP7.0", 
+            "label": "RCP70 Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "ed91cf97-2c9e-416c-8793-0d33af6de303", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp370pdSST?client=mohc"
+}

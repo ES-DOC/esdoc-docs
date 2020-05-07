@@ -1,0 +1,107 @@
+{
+    "canonical_name": "faf-heat-NA50pct", 
+    "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by the same method and with the same surface net heat flux perturbation field as in faf-heat, except that within part of the North Atlantic ocean the perturbation is multiplied by 0.5.\nThe faf-heat protocol imposes surface net heat flux anomalies over the ocean, calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling. faf-heat requires a passive tracer. The faf-heat protocol imposes pre-industrial atmospheric conditions. faf-heat branches from the piControl at the same point as the 1pctCO2 experiment.", 
+    "governing_mips": [
+        "fafmip"
+    ], 
+    "keywords": "FAFMIP, Tier 1", 
+    "long_name": "control plus perturbative surface flux of heat into ocean", 
+    "mip_era": "cmip6", 
+    "rationale": "Heat flux changes are thought to be the main influence on Atlantic Meridional Overturning Circulation (AMOC) change and a major influence on the pattern of sea level change.", 
+    "related_experiments": [
+        {
+            "name": "1pctCO2", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "faf-heat", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "fafmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "70yrs", 
+            "description": "Run for 70 years.", 
+            "isConformanceRequested": false, 
+            "keywords": "70 years", 
+            "label": "70yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "NA50pct 1pctCO2 Heat Flux Anomaly At Doubling", 
+            "description": "Impose heat flux anomalies to the ocean surface, created from the CMIP5 diagnostic of surface downward heat flux in sea-water (hfds).  The surface heat-flux anomalies are calculated from the ensemble mean of the CMIP5 1pctCO2 simulations at the time of CO2 doubling except that within part of the North Atlantic ocean the perturbation is multiplied by 0.5.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  Note that the fluxes themselves are not replaced because this would typically cause a very large climate drift and possible instability.  The method for implementing the heat flux anomaly should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, NA50pct, 1pctCO2, heat flux, 2xCO2, at CO2 doubling", 
+            "label": "NA50pct 1pctCO2 Heat Flux Anomaly At Doubling", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "1pctCO2 Passive Tracer At Doubling", 
+            "description": "Add a surface flux of passive tracer at the same rate as the surface heat flux perturbation in the faf-heat experiment.  The passive tracer flux will be added to the top layer of a passive temperature tracer.  Surface flux anomalies (a function of longitude, latitude and time of year) are to remain constant throughout the experiment.  The method for implementing the passive tracer should follow that used by Bouttes and Gregory (2014).", 
+            "isConformanceRequested": true, 
+            "keywords": "FAFMIP, 1pctCO2, heat flux, passive tracer, 2xCO2, at CO2 doubling", 
+            "label": "1pctCO2 Passive Tracer At Doubling", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration. The CO2 concentration should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding CO2", 
+            "description": "Pre-Industrial forcing excluding carbon dioxide (CO2).", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding carbon dioxide, excluding co2", 
+            "label": "Pre-Industrial Forcing Excluding CO2", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Solar Particle Forcing", 
+            "description": "Pre-Industrial solar particle forcing (1850-1873 mean). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Pre-Industrial, pi, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Pre-Industrial Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "PreIndustrialInitialisation", 
+            "description": "Initialisation from a January in the pre-industrial control simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial conditions, initialisation, pre-industrial", 
+            "label": "PreIndustrialInitialisation", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "27577c18-1fea-483c-bf75-03ace1f90e75", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/faf-heat-NA50pct?client=mohc"
+}

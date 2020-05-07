@@ -1,0 +1,148 @@
+{
+    "canonical_name": "histSST-noLu", 
+    "description": "An uncoupled (atmosphere and land) experiment in which sea surface temperatures (SST) and sea ice concentrations (SICONC) are taken from historical (as in existing histSST experiment). All forcing agents to follow historical except LULCC. LULCC set to 1850 (exactly following hist-noLu prescription)", 
+    "governing_mips": [
+        "aerchemmip"
+    ], 
+    "keywords": "AerChemMIP, Tier 1", 
+    "long_name": "historical SSTs and historical forcing, but with pre-industrial LULCC", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2014 165yrs", 
+            "description": "Historical, pre-Industrial to present", 
+            "isConformanceRequested": false, 
+            "keywords": "1850, 2014, Historical, Recent Past, pre-industrial to present, IPCC", 
+            "label": "1850-2014 165yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial (1850) land-use forcing. Land use should not change in the control run and should be fixed according to reconstructed agricultural maps from 1850.  Due to the diversity of model approaches in Earth System Models for land carbon, some groups might deviate from this specification, this must be clearly documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Cover", 
+            "description": "Constant pre-industrial (1850) land-cover forcing.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Cover", 
+            "label": "Pre-Industrial Land Cover", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical SST", 
+            "description": "Time-evolving monthly sea surface temperature (SST) taken from a coupled historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, SST, sea surface temperature", 
+            "label": "Historical SST", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Sea Ice", 
+            "description": "Time-evolving monthly sea ice distribution taken from a coupled historical simulation.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical,  sea-ice", 
+            "label": "Historical Sea Ice", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Non-Reactive WMGHG Concentrations", 
+            "description": "Impose historical non-chemically reactive Well Mixed Greenhouse Gas (WMGHG) concentrations.  No methane, nitrous oxide or halocarbons.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, Well Mixed Greenhouse Gas, WMGHG, non-chemically reactive", 
+            "label": "Historical Non-Reactive WMGHG Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Methane Concentrations", 
+            "description": "Impose historical concentrations of methane (CH4).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical methane concentrations, CH4", 
+            "label": "Historical Methane Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical N2O Concentrations", 
+            "description": "Impose historical concentrations of Nitrous Oxide (N2O).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical nitrous oxide, N2O", 
+            "label": "Historical N2O Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical NTCF Emissions", 
+            "description": "Impose transient historical emissions of near term climate forcers (NTCF): namely tropospheric aerosols and tropospheric ozone precursors.", 
+            "isConformanceRequested": true, 
+            "keywords": "Historical, NTCF, near term climate forcers", 
+            "label": "Historical NTCF Emissions", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Ozone Depleting Halocarbon Concentrations", 
+            "description": "Impose historical concentrations of Ozone depleting Halocarbons (CFC/HCFC).", 
+            "isConformanceRequested": true, 
+            "keywords": "historical halocarbons, ODS, ozone depleting substances, CFCs, HCFCs", 
+            "label": "Historical Ozone Depleting Halocarbon Concentrations", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which consists of historical reconstructions (1850-2014).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Historical, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Historical Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Solar Particle Forcing", 
+            "description": "Historical solar particle forcing (1850-2014). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Historical, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Historical Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AGCM Configuration", 
+            "description": "An Atmosphere only general circulation model configuration.", 
+            "isConformanceRequested": false, 
+            "keywords": "Atmosphere only, atmosphere model, AGCM", 
+            "label": "AGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 1, 
+    "uid": "3c6b7796-6d2c-475e-aafb-30bb583cf7f6", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/histSST-noLu?client=mohc"
+}
