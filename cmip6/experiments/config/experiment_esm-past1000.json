@@ -1,0 +1,121 @@
+{
+    "canonical_name": "esm-past1000", 
+    "description": "Parallel experiment to past1000, but for model set-ups with interactive carbon cycle. Main forcings: trace gases, volcanoes, solar variability, land-use.", 
+    "governing_mips": [
+        "pmip"
+    ], 
+    "keywords": "PMIP, Tier 3, last millennium, carbon cycle", 
+    "long_name": "last millennium experimentwith interactive caron cycle", 
+    "mip_era": "cmip6", 
+    "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to (mainly) natural forcing under climatic background conditions not too different from today.", 
+    "related_experiments": [
+        {
+            "name": "past1000", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "850-1849 1000yrs", 
+            "description": "Last Millennium, run for 1000 years", 
+            "isConformanceRequested": false, 
+            "keywords": "past1000, 850, 1849", 
+            "label": "850-1849 1000yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Calculate Past1000 CO2 Concentration", 
+            "description": "Past 1000 years of CO2 concentrations are calculated and anthropogenic sources of CO2 emisions are prescribed. For models that can calculate atmospheric CO2 concentration and account for the fluxes of CO2 between the atmosphere, the ocean, and biosphere. The atmospheric CO2 concentration should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": false, 
+            "keywords": "Past1000, CO2, ESM, Earth System Model, calculate CO2, CO2 calculated", 
+            "label": "Calculate Past1000 CO2 Concentration", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Past1000 WMGHG Concentrations Excluding CO2", 
+            "description": "Forcing data for past1000 runs. Time varying global annual mean concentrations for the long-lived greenhouse-gases excluding CO2, but including: CH4, N2O, HFCs, PFCs, SF6, several ODS, and NF3 to serve as input for the CMIP6 Historical simulations.", 
+            "isConformanceRequested": true, 
+            "keywords": "Past1000, well mixed greenhouse gas, WMGHG, No CO2, Non-CO2 WMGHG", 
+            "label": "Past1000 WMGHG Concentrations Excluding CO2", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Astronomical Parameters", 
+            "description": "Astronomical parameters for the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Astronomical Parameters", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ice sheets", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land-Sea mask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Land Use", 
+            "description": "Land use in the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, land use, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Land Use", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Solar Variability", 
+            "description": "Solar variability (TSI and SSI) in the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Solar Variability", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Volcanic Aerosols", 
+            "description": "Time varying radiative forcing due to volcanic stratospheric aerosols in the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, volcanic aerosols, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Volcanic Aerosols", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM-BGC Configuration", 
+            "description": "Use a fully coupled Earth System Model which explicitly models the movement of Carbon through the Earth system.  Atmosphere-Ocean general circulation model with biogeochemistry.", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM-BGC, Atmosphere-Ocean General Circulation Model with BioGeoChemistry, Earth System Model, ESM", 
+            "label": "AOGCM-BGC Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "f2993f1b-16ff-4d28-9dce-4bbbf8b47532", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/esm-past1000?client=mohc"
+}

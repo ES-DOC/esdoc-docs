@@ -1,0 +1,2155 @@
+{
+    "label": "Toplevel", 
+    "description": "Model top level", 
+    "id": "cordexp.toplevel", 
+    "contact": "Guillaume Levavasseur (IPSL)", 
+    "processes": [
+        {
+            "label": "Radiative Forcings", 
+            "description": "Radiative forcings of the model for historical and scenario (aka Table 12.1 IPCC AR5)", 
+            "id": "cordexp.toplevel.radiative_forcings", 
+            "contact": "Guillaume Levavasseur (IPSL)", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the radiative forcings in toplevel model.", 
+                    "id": "cordexp.toplevel.radiative_forcings.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of radiative forcings of the model for historical and scenario (aka table 12.1 ipcc ar5) in toplevel model.", 
+                    "id": "cordexp.toplevel.radiative_forcings.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Greenhouse Gases", 
+                    "description": "Greenhouse gas forcing agents", 
+                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of greenhouse gas forcing agents in toplevel model.", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ], 
+                    "propertySets": [
+                        {
+                            "label": "CO2", 
+                            "description": "Carbon dioxide forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CO2", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CO2.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CO2.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "CH4", 
+                            "description": "Methane forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CH4", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CH4.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CH4.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "N2O", 
+                            "description": "Nitrous oxide forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.N2O", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.N2O.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.N2O.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Tropospheric O3", 
+                            "description": "Troposheric ozone forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.tropospheric_O3", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.tropospheric_O3.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.tropospheric_O3.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Stratospheric O3", 
+                            "description": "Stratospheric ozone forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.stratospheric_O3", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.stratospheric_O3.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.stratospheric_O3.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "CFC", 
+                            "description": "Ozone-depleting and non-ozone-depleting fluorinated gases forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CFC", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CFC.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Equivalence Concentration", 
+                                    "description": "Details of any equivalence concentrations used", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CFC.equivalence_concentration", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Cfc Equivalence Concentration", 
+                                        "description": "", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicabale (CFCs not included or emissions and concentrations determined by the model state)"
+                                            }, 
+                                            {
+                                                "label": "Option 1", 
+                                                "description": "CFCs, including CFC-12, are provided as actual concentrations"
+                                            }, 
+                                            {
+                                                "label": "Option 2", 
+                                                "description": "CFC-12 is provided as actual concentrations and any other gases are provided as an equivalence concentration of CFC-11"
+                                            }, 
+                                            {
+                                                "label": "Option 3", 
+                                                "description": "Ozone depleting gases, including CFC-12, are provided as an equivalence concentration of CFC-12 and all other fluorinated gases are provided as an equivalence concentration of HFC-134a"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases.CFC.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Aerosols", 
+                    "description": "Aerosol forcing agents", 
+                    "id": "cordexp.toplevel.radiative_forcings.aerosols", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of aerosol forcing agents in toplevel model.", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ], 
+                    "propertySets": [
+                        {
+                            "label": "SO4", 
+                            "description": "SO4 aerosol forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.SO4", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.SO4.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.SO4.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Black Carbon", 
+                            "description": "Black carbon aerosol forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.black_carbon", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.black_carbon.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.black_carbon.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Organic Carbon", 
+                            "description": "Organic carbon aerosol forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.organic_carbon", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.organic_carbon.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.organic_carbon.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Nitrate", 
+                            "description": "Nitrate forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.nitrate", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.nitrate.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.nitrate.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Cloud Albedo Effect", 
+                            "description": "Cloud albedo effect forcing (RFaci)", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_albedo_effect", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Aerosol Effect On Ice Clouds", 
+                                    "description": "Radiative effects of aerosols on ice clouds are represented?", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.aerosol_effect_on_ice_clouds", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Cloud Lifetime Effect", 
+                            "description": "Cloud lifetime effect forcing (ERFaci)", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Aerosol Effect On Ice Clouds", 
+                                    "description": "Radiative effects of aerosols on ice clouds are represented?", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.aerosol_effect_on_ice_clouds", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "RFaci From Sulfate Only", 
+                                    "description": "Radiative forcing from aerosol cloud interactions from sulfate aerosol only?", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.RFaci_from_sulfate_only", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Dust", 
+                            "description": "Dust forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.dust", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.dust.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.dust.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Tropospheric Volcanic", 
+                            "description": "Tropospheric volcanic forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.tropospheric_volcanic", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Historical Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in historical simulations", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.historical_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Future Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in future simulations", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.future_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Stratospheric Volcanic", 
+                            "description": "Stratospheric volcanic forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.stratospheric_volcanic", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Historical Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in historical simulations", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.historical_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Future Explosive Volcanic Aerosol Implementation", 
+                                    "description": "How explosive volcanic aerosol is implemented in future simulations", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.future_explosive_volcanic_aerosol_implementation", 
+                                    "cardinality": "1.1", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Explosive Volcanic Aerosol Implementation", 
+                                        "description": "Model implementation of explosive volcanic aerosols", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "Type A", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to zero (or near-zero) background."
+                                            }, 
+                                            {
+                                                "label": "Type B", 
+                                                "description": "Explosive volcanic aerosol returns rapidly to constant (average volcano)"
+                                            }, 
+                                            {
+                                                "label": "Type C", 
+                                                "description": "Explosive volcanic aerosol returns slowly (over several decades) to constant (average volcano) background."
+                                            }, 
+                                            {
+                                                "label": "Type D", 
+                                                "description": "Explosive volcanic aerosol set to zero"
+                                            }, 
+                                            {
+                                                "label": "Type E", 
+                                                "description": "Explosive volcanic aerosol set to constant (average volcano) background"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 3
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 4
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Sea Salt", 
+                            "description": "Sea salt forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.aerosols.sea_salt", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.sea_salt.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.aerosols.sea_salt.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Other", 
+                    "description": "Miscellaneous forcing agents", 
+                    "id": "cordexp.toplevel.radiative_forcings.other", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of miscellaneous forcing agents in toplevel model.", 
+                            "id": "cordexp.toplevel.radiative_forcings.other.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ], 
+                    "propertySets": [
+                        {
+                            "label": "Land Use", 
+                            "description": "Land use forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.other.land_use", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How this forcing agent is provided (e.g. via concentrations, emission precursors, prognostically derived, etc.)", 
+                                    "id": "cordexp.toplevel.radiative_forcings.other.land_use.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Forcing Provision", 
+                                        "description": "How a radiative forcing agent is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - forcing agent is not included"
+                                            }, 
+                                            {
+                                                "label": "M", 
+                                                "description": "Emissions and concentrations determined by the model state rather than externally prescribed"
+                                            }, 
+                                            {
+                                                "label": "Y", 
+                                                "description": "Prescribed concentrations, distributions or time series data"
+                                            }, 
+                                            {
+                                                "label": "E", 
+                                                "description": "Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+                                            }, 
+                                            {
+                                                "label": "ES", 
+                                                "description": "Surface emissions (and 3-D concentrations away from the surface) derived via the model from the prescribed surface concentration"
+                                            }, 
+                                            {
+                                                "label": "C", 
+                                                "description": "Fixed prescribed climatology of concentrations with no year-to-year variability"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Crop Change Only", 
+                                    "description": "Land use change represented via crop change only?", 
+                                    "id": "cordexp.toplevel.radiative_forcings.other.land_use.crop_change_only", 
+                                    "cardinality": "1.1", 
+                                    "type": "bool", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.other.land_use.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 3
+                                }
+                            ]
+                        }, 
+                        {
+                            "label": "Solar", 
+                            "description": "Solar forcing", 
+                            "id": "cordexp.toplevel.radiative_forcings.other.solar", 
+                            "properties": [
+                                {
+                                    "label": "Provision", 
+                                    "description": "How solar forcing is provided", 
+                                    "id": "cordexp.toplevel.radiative_forcings.other.solar.provision", 
+                                    "cardinality": "1.N", 
+                                    "type": "enum", 
+                                    "is_cim_property": false, 
+                                    "enum": {
+                                        "label": "Solar Forcing Provision", 
+                                        "description": "How solar forcing is provided", 
+                                        "isOpen": true, 
+                                        "choices": [
+                                            {
+                                                "label": "N/A", 
+                                                "description": "Not applicable - solar forcing is not included"
+                                            }, 
+                                            {
+                                                "label": "irradiance", 
+                                                "description": "Solar irradiance forcing"
+                                            }, 
+                                            {
+                                                "label": "proton", 
+                                                "description": "Proton pathway to solar forcing"
+                                            }, 
+                                            {
+                                                "label": "electron", 
+                                                "description": "Electron pathway to solar forcing"
+                                            }, 
+                                            {
+                                                "label": "cosmic ray", 
+                                                "description": "Cosmic ray pathway to solar forcing"
+                                            }
+                                        ]
+                                    }, 
+                                    "uiOrdinal": 1
+                                }, 
+                                {
+                                    "label": "Additional Information", 
+                                    "description": "Additional information relating to the provision and implementation of this forcing agent (e.g. citations, use of non-standard datasets, explaining how multiple provisions are used, etc.).", 
+                                    "id": "cordexp.toplevel.radiative_forcings.other.solar.additional_information", 
+                                    "cardinality": "0.1", 
+                                    "type": "l-str", 
+                                    "is_cim_property": false, 
+                                    "uiOrdinal": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ], 
+    "keyProperties": {
+        "label": "Key Properties", 
+        "description": "Key properties of the regional model", 
+        "id": "cordexp.toplevel.key_properties", 
+        "contact": "Guillaume Levavasseur (IPSL)", 
+        "properties": [
+            {
+                "label": "Name", 
+                "description": "Name of coupled model", 
+                "id": "cordexp.toplevel.key_properties.name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Keywords", 
+                "description": "Keywords associated with coupled model", 
+                "id": "cordexp.toplevel.key_properties.keywords", 
+                "cardinality": "1.1", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Top level overview of coupled model", 
+                "id": "cordexp.toplevel.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
+            }
+        ], 
+        "propertySets": [
+            {
+                "label": "Model Type", 
+                "description": "Type of Regional Climate Model", 
+                "id": "cordexp.toplevel.key_properties.model_type", 
+                "properties": [
+                    {
+                        "label": "Model Family", 
+                        "description": "Type of Regional Climate Model", 
+                        "id": "cordexp.toplevel.key_properties.model_type.model_family", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Model Family Type", 
+                            "description": "Type of regional model", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Regional Atmospheric Climate Model", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Regional Ocean Atmosphere Coupled Climate Model", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Other", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Details", 
+                        "description": "Provide additional details on type of the Regional Climate Model", 
+                        "id": "cordexp.toplevel.key_properties.model_type.details", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }
+                ]
+            }, 
+            {
+                "label": "Genealogy", 
+                "description": "Genealogy and history of the model", 
+                "id": "cordexp.toplevel.key_properties.genealogy", 
+                "properties": [
+                    {
+                        "label": "Year Released", 
+                        "description": "Year the model was released", 
+                        "id": "cordexp.toplevel.key_properties.genealogy.year_released", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Previous Name", 
+                        "description": "Previously known as", 
+                        "id": "cordexp.toplevel.key_properties.genealogy.previous_name", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Difference To Previous", 
+                        "description": "Briefly summarize the differences between this model and its previous version, if applicable", 
+                        "id": "cordexp.toplevel.key_properties.genealogy.difference_to_previous", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }
+                ]
+            }, 
+            {
+                "label": "Cordex Domain", 
+                "description": "CORDEX domain", 
+                "id": "cordexp.toplevel.key_properties.cordex_domain", 
+                "properties": [
+                    {
+                        "label": "Domain", 
+                        "description": "CORDEX domain", 
+                        "id": "cordexp.toplevel.key_properties.cordex_domain.domain", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Cordex Domain", 
+                            "description": "Select the CORDEX domain", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "EUR-11", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Model Calendar", 
+                "description": "Model calendar", 
+                "id": "cordexp.toplevel.key_properties.model_calendar", 
+                "properties": [
+                    {
+                        "label": "Calendar", 
+                        "description": "What calender is uded by the model", 
+                        "id": "cordexp.toplevel.key_properties.model_calendar.calendar", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Calendar Used", 
+                            "description": "What calendar is used by the model", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "GCM-based", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Standard", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Spinup", 
+                "description": "Spin-up", 
+                "id": "cordexp.toplevel.key_properties.spinup", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe details if any spin-up is used", 
+                        "id": "cordexp.toplevel.key_properties.spinup.details", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Nudging", 
+                "description": "Nudging", 
+                "id": "cordexp.toplevel.key_properties.nudging", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe details if spectral nudging is used (variables, levels, etc.)", 
+                        "id": "cordexp.toplevel.key_properties.nudging.details", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of the model", 
+                "id": "cordexp.toplevel.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "cordexp.toplevel.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "cordexp.toplevel.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "cordexp.toplevel.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Components Structure", 
+                        "description": "Describe how model realms are structured into independent software components (coupled via a coupler) and internal software components.", 
+                        "id": "cordexp.toplevel.key_properties.software_properties.components_structure", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Coupler", 
+                        "description": "Overarching coupling framework for the model.", 
+                        "id": "cordexp.toplevel.key_properties.software_properties.coupler", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Coupler Framework", 
+                            "description": "Coupling software framework.", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "OASIS", 
+                                    "description": "The OASIS coupler - prior to OASIS-MCT"
+                                }, 
+                                {
+                                    "label": "OASIS3-MCT", 
+                                    "description": "The MCT variant of the OASIS coupler"
+                                }, 
+                                {
+                                    "label": "ESMF", 
+                                    "description": "Vanilla Earth System Modelling Framework"
+                                }, 
+                                {
+                                    "label": "NUOPC", 
+                                    "description": "National Unified Operational Prediction Capability variant of ESMF"
+                                }, 
+                                {
+                                    "label": "Bespoke", 
+                                    "description": "Customised coupler developed for this model"
+                                }, 
+                                {
+                                    "label": "Unknown", 
+                                    "description": "It is not known what/if-a coupler is used"
+                                }, 
+                                {
+                                    "label": "None", 
+                                    "description": "No coupler is used"
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }, 
+            {
+                "label": "Flux Correction", 
+                "description": "Flux correction properties of the model", 
+                "id": "cordexp.toplevel.key_properties.flux_correction", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe if/how flux corrections are applied in the model", 
+                        "id": "cordexp.toplevel.key_properties.flux_correction.details", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Reference", 
+                "description": "Latest reference", 
+                "id": "cordexp.toplevel.key_properties.reference", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Provide the latest reference describing the model", 
+                        "id": "cordexp.toplevel.key_properties.reference.details", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Coupling", 
+                "description": "", 
+                "id": "cordexp.toplevel.key_properties.coupling", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of  in toplevel model.", 
+                        "id": "cordexp.toplevel.key_properties.coupling.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Atmosphere Double Flux", 
+                        "description": "Is the atmosphere passing a double flux to the ocean and sea ice (as opposed to a single one)?", 
+                        "id": "cordexp.toplevel.key_properties.coupling.atmosphere_double_flux", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Atmosphere Fluxes Calculation Grid", 
+                        "description": "Where are the air-sea fluxes calculated", 
+                        "id": "cordexp.toplevel.key_properties.coupling.atmosphere_fluxes_calculation_grid", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Atmosphere Fluxes Calculation Grid", 
+                            "description": "Where are the air-sea fluxes calculated", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Atmosphere grid", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Ocean grid", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific coupler grid", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Atmosphere Relative Winds", 
+                        "description": "Are relative or absolute winds used to compute the flux? I.e. do ocean surface currents enter the wind stress calculation?", 
+                        "id": "cordexp.toplevel.key_properties.coupling.atmosphere_relative_winds", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }, 
+            {
+                "label": "Tuning Applied", 
+                "description": "Tuning methodology for model", 
+                "id": "cordexp.toplevel.key_properties.tuning_applied", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of tuning methodology for model in toplevel model.", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Description", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics/diagnostics retained. Document the relative weight given to climate performance metrics/diagnostics versus process oriented metrics/diagnostics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.description", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Regional Metrics Used", 
+                        "description": "List of regional metrics/diagnostics of mean state (e.g THC, AABW, regional means etc) used in tuning model/component", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.regional_metrics_used", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Trend Metrics Used", 
+                        "description": "List observed trend metrics/diagnostics used in tuning model/component (such as 20th century)", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.trend_metrics_used", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Energy Balance", 
+                        "description": "Describe how energy balance was obtained in the full system: in the various components independently or at the components coupling stage?", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.energy_balance", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Fresh Water Balance", 
+                        "description": "Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?", 
+                        "id": "cordexp.toplevel.key_properties.tuning_applied.fresh_water_balance", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }, 
+            {
+                "label": "Gcm Forcing", 
+                "description": "GCM forcing", 
+                "id": "cordexp.toplevel.key_properties.gcm_forcing", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of gcm forcing in toplevel model.", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }
+                ], 
+                "propertySets": [
+                    {
+                        "label": "Atmos Lbc Eval", 
+                        "description": "Atmospheric Lateral Boundary Conditions for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval", 
+                        "properties": [
+                            {
+                                "label": "Atmos Lbc Eval Variables", 
+                                "description": "What atmospheric variables are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Atmos Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Atmos Lbc Eval Top", 
+                                "description": "Top boundary conditions", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Atmos Lbc Scn", 
+                        "description": "Atmospheric Lateral Boundary Conditions for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn", 
+                        "properties": [
+                            {
+                                "label": "Atmos Lbc Scn Variables", 
+                                "description": "What atmospheric variables are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Atmos Lbc Scn Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Atmos Lbc Scn Top", 
+                                "description": "Top boundary conditions", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ocean Lbc Eval", 
+                        "description": "Lower Boundary Conditions for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval", 
+                        "properties": [
+                            {
+                                "label": "Sst Lbc Eval Variable", 
+                                "description": "What sea surface temperature is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Sst Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Sic Lbc Eval Variable", 
+                                "description": "What sea-ice concentration is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Sic Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Lower Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 5
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ocean Lbc Scn", 
+                        "description": "Lower Boundary Conditions for the historical and scenario experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn", 
+                        "properties": [
+                            {
+                                "label": "Sst Lbc Scn Frequency", 
+                                "description": "At what frequency is sea surface temperature taken", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Sic Lbc Scn Frequency", 
+                                "description": "At what frequency is sea-ice concentration taken", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Lower Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Aerosol Eval", 
+                        "description": "Aerosol datasets and parameters used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval", 
+                        "properties": [
+                            {
+                                "label": "Aerosol Eval Dataset", 
+                                "description": "What aerosol datasets and parameters are used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Aerosol Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of aerosol for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Aerosol Scn", 
+                        "description": "Aerosol datasets and parameters are used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn", 
+                        "properties": [
+                            {
+                                "label": "Aerosol Scn Dataset", 
+                                "description": "What aerosol datasets and parameters are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Aerosol Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of aerosol for the historical and scenario experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ozone Eval", 
+                        "description": "Ozone datasets used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval", 
+                        "properties": [
+                            {
+                                "label": "Ozone Eval Dataset", 
+                                "description": "What ozone dataset is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Ozone Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of ozone for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ozone Scn", 
+                        "description": "Ozone datasets used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn", 
+                        "properties": [
+                            {
+                                "label": "Ozone Scn Dataset", 
+                                "description": "What ozone dataset is used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Ozone Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of ozone for the historical and scenario experiments", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Land Cover Eval", 
+                        "description": "Land cover datasets used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval", 
+                        "properties": [
+                            {
+                                "label": "Land Cover Eval Dataset", 
+                                "description": "What land cover dataset is used in the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Land Cover Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of land cover for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Land Cover Scn", 
+                        "description": "Land cover datasets used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn", 
+                        "properties": [
+                            {
+                                "label": "Land Cover Scn Dataset", 
+                                "description": "What land cover dataset is used in the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Land Cover Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of land cover for tthe historical and scenario experiments", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

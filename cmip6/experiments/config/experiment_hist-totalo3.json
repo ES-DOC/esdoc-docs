@@ -1,0 +1,83 @@
+{
+    "canonical_name": "hist-totalO3", 
+    "description": "Historical total ozone-only. In models with coupled chemistry, the chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D ozone concentrations from the CMIP6 historical simulations should be prescribed through the depth of the atmosphere. In models without coupled chemistry the same ozone prescribed in the CMIP6 historical simulations should be prescribed", 
+    "governing_mips": [
+        "damip"
+    ], 
+    "keywords": "DAMIP, Tier 3", 
+    "long_name": "historical total ozone-only run", 
+    "mip_era": "cmip6", 
+    "rationale": null, 
+    "related_experiments": [
+        {
+            "name": "historical", 
+            "relationship": "is_constrained_by"
+        }, 
+        {
+            "name": "historical", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "piControl", 
+            "relationship": "is_initialized_by"
+        }
+    ], 
+    "related_mips": [
+        "damip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "1850-2020 171yrs", 
+            "description": "Historical, pre-industrial to present and near future", 
+            "isConformanceRequested": false, 
+            "keywords": "1850-2020, Historical, RCP45", 
+            "label": "1850-2020 171yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Historical Ozone Concentrations", 
+            "description": "Apply ozone concentrations encompassing both the stratosphere and the troposphere from the ozone concentration database.", 
+            "isConformanceRequested": true, 
+            "keywords": "historical, ozone, concentration, O3, stratosphere, troposphere", 
+            "label": "Historical Ozone Concentrations", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "CMIP6 historical total Ozone", 
+            "description": "Impose simulated ensemble mean monthly mean 3D ozone concentrations from the CMIP6 historical experiment throughout the depth of the atmosphere.", 
+            "isConformanceRequested": true, 
+            "keywords": "CMIP6 historical, ozone, concentration, O3, total", 
+            "label": "CMIP6 historical total Ozone", 
+            "scope": "experiment", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Forcing Excluding Ozone", 
+            "description": "Pre-Industrial forcing excluding ozone.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-industrial forcing, excluding ozone", 
+            "label": "Pre-Industrial Forcing Excluding Ozone", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "MinimumThree", 
+            "description": "An ensemble of at least three simulations", 
+            "isConformanceRequested": false, 
+            "keywords": "minimum 3, at least 3, ensemble, runs, simulations", 
+            "label": "MinimumThree", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "75f9c2b3-f2f7-4454-a567-16076086259d", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/hist-totalO3?client=mohc"
+}

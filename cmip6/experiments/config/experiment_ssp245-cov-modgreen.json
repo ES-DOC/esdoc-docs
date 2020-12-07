@@ -1,0 +1,105 @@
+{
+    "canonical_name": "ssp245-cov-modgreen", 
+    "description": "Future scenario based on ssp245, but following a path of reduced emissions due to a moderate-green stimulus economic recovery from the Covid-19 pandemic restrictions. Concentration-driven. Branch from ssp245 at 1 Jan 2020 and run for 30 years with 10 ensemble members if possible.", 
+    "governing_mips": [
+        "damip"
+    ], 
+    "keywords": "DAMIP, Tier3, COVID-19, CovidMIP", 
+    "long_name": "2-year Covid-19 emissions blip followed by moderate-green stimulus recovery, based upon ssp245", 
+    "mip_era": "cmip6", 
+    "rationale": "The impact of Covid-19 lockdown/restrictions on emissions reductions and their impact on climate. How do different recovery scenarios look over the coming years-decades?", 
+    "related_experiments": [
+        {
+            "name": "ssp245", 
+            "relationship": "is_initialized_by"
+        }, 
+        {
+            "name": "ssp245", 
+            "relationship": "is_perturbation_from"
+        }, 
+        {
+            "name": "ssp245-cov-fossil", 
+            "relationship": "is_sibling_of"
+        }, 
+        {
+            "name": "ssp245-cov-strgreen", 
+            "relationship": "is_sibling_of"
+        }
+    ], 
+    "related_mips": [
+        "damip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "2020-2050 31yrs", 
+            "description": "Run for 31 years from 2020 to 2050", 
+            "isConformanceRequested": false, 
+            "keywords": "future, scenario, 2020-2050", 
+            "label": "2020-2050 31yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "ssp245-cov-modgreen Well Mixed GHG", 
+            "description": "Monthly concentrations of ssp245-cov-modgreen well mixed greenhouse gases (WMGHG): CO2, CH4 and N2O.", 
+            "isConformanceRequested": true, 
+            "keywords": "DAMIP, Covid19, WMGHG, ssp245-cov-modgreen", 
+            "label": "ssp245-cov-modgreen Well Mixed GHG", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "ssp245-cov-modgreen Short Lived Species", 
+            "description": "ssp245-cov-modgreen short lived species: BC, CO, OC, SO2, NH3, NOx, NMVOCs", 
+            "isConformanceRequested": true, 
+            "keywords": "DAMIP, Covid19, SLS, ssp245-cov-modgreen", 
+            "label": "ssp245-cov-modgreen Short Lived Species", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SSP2 RCP45 Land Use", 
+            "description": "Impose changing RCP4.5 land use including crops, pasture, urban area, vegetation and forest for SSP2.", 
+            "isConformanceRequested": true, 
+            "keywords": "Representative Concentration Pathway 4.5, future, 21st century, SSP2, RCP4.5, Land Use", 
+            "label": "SSP2 RCP45 Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Irradiance Forcing", 
+            "description": "The standard solar forcing dataset recommended for usage is the solar reference scenario dataset which includes future solar forcing (2015-2299).  Includes total solar irradiance, F10.7 cm solar radio flux, and spectral solar irradiance for 10-100000 nm range.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar Forcing, Future, Solar, Spectral Irradiance, SSI, TSI", 
+            "label": "Future Solar Irradiance Forcing", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Future Solar Particle Forcing", 
+            "description": "Future solar particle forcing (2015-2299). For models with interactive stratospheric chemistry.  Proton forcing: HOx and NOx production by solar protons. Electron forcing:  Kp- or Ap-index to describe ionisation from electron precipitation in the lower thermosphere and upper mesosphere. Cosmic ray forcing:  ion-pair production by galactic cosmic rays.  CMIP6 models that do not have interactive chemistry should  prescribe the CMIP6 recommended ozone forcing data set.", 
+            "isConformanceRequested": true, 
+            "keywords": "Solar forcing, Future, Particle forcing, proton forcing, electron forcing, cosmic ray ionisation", 
+            "label": "Future Solar Particle Forcing", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "10MemberSug-IC", 
+            "description": "Ensemble beneficial, suggest 10 members, use initial condition (not PPE) ensemble technique. Model-by-model choice how to arrive at perturbed initial conditions.", 
+            "isConformanceRequested": true, 
+            "keywords": "initial condition ensemble", 
+            "label": "10MemberSug-IC", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 3, 
+    "uid": "d1de3063-c07d-456a-ae1b-7672aef13e88", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/ssp245-cov-modgreen?client=mohc"
+}

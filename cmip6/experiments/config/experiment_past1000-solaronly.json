@@ -1,0 +1,121 @@
+{
+    "canonical_name": "past1000-solaronly", 
+    "description": "The past1000-solaronly experiment is a parallel experiment to the past1000 experiment. Instead of the complete forcing set, only solar TSI (Total Solar Irradiance) and solar SSI (Solar Spectral Irradiane) forcing is considered.", 
+    "governing_mips": [
+        "pmip"
+    ], 
+    "keywords": "PMIP, Tier 2, last millennium, solar only, past1000-solaronly", 
+    "long_name": "last millennium experiment using only solar forcing", 
+    "mip_era": "cmip6", 
+    "rationale": "Determine what fraction of the variability is attributable to solar forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to solar forcing under climatic background conditions not too different from today.", 
+    "related_experiments": [
+        {
+            "name": "past1000", 
+            "relationship": "is_perturbation_from"
+        }
+    ], 
+    "related_mips": [
+        "pmip"
+    ], 
+    "requirements": [
+        {
+            "canonical_name": "850-1849 1000yrs", 
+            "description": "Last Millennium, run for 1000 years", 
+            "isConformanceRequested": false, 
+            "keywords": "past1000, 850, 1849", 
+            "label": "850-1849 1000yrs", 
+            "type": "temporal-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial CO2 Concentration", 
+            "description": "Constant pre-industrial Carbon Dioxide (CO2) concentration. The CO2 concentration should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, CO2, Concentration, 1850", 
+            "label": "Pre-Industrial CO2 Concentration", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial WMGHG Concentrations excluding CO2", 
+            "description": "Constant pre-industrial atmospheric concentrations of long-lived greenhouse-gases, including CH4 and N2O but not including CO2. These should be representative of Earth around the year 1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, Well Mixed Greenhouse Gas, WMGHG, No CO2", 
+            "label": "Pre-Industrial WMGHG Concentrations excluding CO2", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Astronomical Parameters", 
+            "description": "Astronomical parameters for the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Astronomical Parameters", 
+            "scope": "mip", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Ice sheets", 
+            "description": "Impose pre-industrial (1850) ice sheets.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, ice sheets", 
+            "label": "Pre-Industrial Ice sheets", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land-Sea mask", 
+            "description": "Impose pre-industrial (1850) land-sea mask.", 
+            "isConformanceRequested": true, 
+            "keywords": "piControl, pre-industrial, land-sea mask", 
+            "label": "Pre-Industrial Land-Sea mask", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Land Use", 
+            "description": "Constant pre-industrial (1850) land-use forcing. Land use should not change in the control run and should be fixed according to reconstructed agricultural maps from 1850.  Due to the diversity of model approaches in Earth System Models for land carbon, some groups might deviate from this specification, this must be clearly documented.", 
+            "isConformanceRequested": true, 
+            "keywords": "Pre-Industrial, 1850, Land Use", 
+            "label": "Pre-Industrial Land Use", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "past1000 Solar Variability", 
+            "description": "Solar variability (TSI and SSI) in the last millennium 850-1850.", 
+            "isConformanceRequested": true, 
+            "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
+            "label": "past1000 Solar Variability", 
+            "scope": "mip-group", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "Pre-Industrial Stratospheric Aerosol", 
+            "description": "Constant background stratospheric aerosol for piControl. A background volcanic aerosol should be specified that results in radiative forcing matching, as closely as possible, that experienced, on average, during the historical simulation (i.e. 1850-2014 mean).", 
+            "isConformanceRequested": true, 
+            "keywords": "pre-industrial, 1850, stratospheric, aerosol, background volcanic aerosol", 
+            "label": "Pre-Industrial Stratospheric Aerosol", 
+            "scope": "mip-era", 
+            "type": "forcing-constraint"
+        }, 
+        {
+            "canonical_name": "SingleMember", 
+            "description": "One ensemble member", 
+            "isConformanceRequested": false, 
+            "keywords": "Single, simulation, run, ensemble", 
+            "label": "SingleMember", 
+            "type": "ensemble"
+        }, 
+        {
+            "canonical_name": "AOGCM Configuration", 
+            "description": "Use a coupled Atmosphere-Ocean general circulation model", 
+            "isConformanceRequested": false, 
+            "keywords": "AOGCM, Atmosphere-Ocean General circulation model", 
+            "label": "AOGCM Configuration", 
+            "type": "model-configuration"
+        }
+    ], 
+    "tier": 2, 
+    "uid": "40aca620-92d2-4db7-a74c-dc00904ad9c2", 
+    "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/past1000-solaronly?client=mohc"
+}

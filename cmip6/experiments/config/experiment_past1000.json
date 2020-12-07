@@ -10,6 +10,18 @@
     "rationale": "Evaluate the ability of models to capture observed variability on multi-decadal and longer time-scales.  Determine what fraction of the variability is attributable to \"external\" forcing and what fraction reflects purely internal variability.  Provide a longer-term perspective for detection and attribution studies. Investigate the response to (mainly) natural forcing under climatic background conditions not too different from today.", 
     "related_experiments": [
         {
+            "name": "esm-past1000", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "past1000-solaronly", 
+            "relationship": "is_control_for"
+        }, 
+        {
+            "name": "past1000-volconly", 
+            "relationship": "is_control_for"
+        }, 
+        {
             "name": "piControl", 
             "relationship": "is_sibling_of"
         }, 
@@ -46,7 +58,7 @@
             "isConformanceRequested": true, 
             "keywords": "PMIP, orbital parameters, astronomical parameters, past 1000, last millenium, 850-1850", 
             "label": "past1000 Astronomical Parameters", 
-            "scope": "experiment", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -78,7 +90,7 @@
         }, 
         {
             "canonical_name": "past1000 Solar Variability", 
-            "description": "Solar variability in the last millennium 850-1850.", 
+            "description": "Solar variability (TSI and SSI) in the last millennium 850-1850.", 
             "isConformanceRequested": true, 
             "keywords": "PMIP, solar variability, past 1000, last millenium, 850-1850", 
             "label": "past1000 Solar Variability", 
@@ -91,7 +103,7 @@
             "isConformanceRequested": true, 
             "keywords": "PMIP, volcanic aerosols, past 1000, last millenium, 850-1850", 
             "label": "past1000 Volcanic Aerosols", 
-            "scope": "experiment", 
+            "scope": "mip", 
             "type": "forcing-constraint"
         }, 
         {
@@ -112,6 +124,6 @@
         }
     ], 
     "tier": 1, 
-    "uid": "249206e4-2722-4d97-bebf-9deec054cec2", 
+    "uid": "42323338-1873-4eb4-8bb9-a164a3b83378", 
     "viewerURL": "https://documentation.es-doc.org/cmip6/experiments/past1000?client=mohc"
 }
