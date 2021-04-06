@@ -2,7 +2,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe, Robert Pincus (NOAA)</dd><dt><b>Contributors</b></dt><dd />
+        <dt><b>Description</b></dt><dd>Atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe, Robert Pincus (NOAA)</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
@@ -68,25 +68,25 @@
         <dt><b>Description</b></dt><dd>A sub-process simulated within a realm process.</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="DETAILS INHERITED FROM CIM"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="grid"><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keyprops"><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="process"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="realm"><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="canonical_name" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#66cc00" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="subprocess"><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="citations" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="keywords" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="overview" /><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" STYLE="bubble" TEXT="responsible_parties" /></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ffff66" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="key_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere key properties</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere key properties</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_family"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of atmospheric model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.model_family</dd>
+        <dt><b>Description</b></dt><dd>Type of atmospheric model.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.model_family</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of atmospheric model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.model_family</dd>
+        <dt><b>Description</b></dt><dd>Type of atmospheric model.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.model_family</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="AGCM"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -107,14 +107,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>ENUM:basic_approximations_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>ENUM:basic_approximations_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Basic approximations made in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>ENUM:basic_approximations_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.basic_approximations</dd>
+        <dt><b>Description</b></dt><dd>Basic approximations made in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.basic_approximations</dd><dt><b>Type</b></dt><dd>ENUM:basic_approximations_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.basic_approximations</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="primitive equations"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -163,147 +163,119 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the model resolution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the model resolution</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_resolution_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.canonical_horizontal_resolution</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="range_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd>
+        <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.canonical_horizontal_resolution</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_vertical_levels"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Number of vertical levels resolved on the computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.number_of_vertical_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.number_of_vertical_levels</dd>
+        <dt><b>Description</b></dt><dd>Number of vertical levels resolved on the computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.number_of_vertical_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.number_of_vertical_levels</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Number of vertical levels resolved on the computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.number_of_vertical_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.number_of_vertical_levels</dd>
+        <dt><b>Description</b></dt><dd>Number of vertical levels resolved on the computational grid.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.number_of_vertical_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.number_of_vertical_levels</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="high_top"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.high_top</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.high_top</dd>
+        <dt><b>Description</b></dt><dd>Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.high_top</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.high_top</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.high_top</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.high_top</dd>
+        <dt><b>Description</b></dt><dd>Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.resolution.high_top</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.resolution.high_top</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="timestepping"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere model time stepping</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere model time stepping</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_dynamics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_dynamics</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_dynamics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_dynamics</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_dynamics</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_shortwave_radiative_transfer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_longwave_radiative_transfer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="orography"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the model orography</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the model orography</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed: present day"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -324,14 +296,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.modified</dd>
+        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.modified</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.modified</dd>
+        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.modified</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="related to ice sheets"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -366,112 +338,203 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.time-varying</dd>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.time-varying</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.orography.time-varying</dd>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.orography.time-varying</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tuning methodology for atmospheric component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied</dd>
+        <dt><b>Description</b></dt><dd>Tuning methodology for atmospheric component</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global_mean_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="regional_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="trend_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.trend_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.trend_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.trend_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.key_properties.tuning_applied.trend_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere grid</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere grid</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="discretisation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere grid discretisation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere grid discretisation</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere discretisation in the horizontal</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere discretisation in the horizontal</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_system"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Name of horizontal coordinate system/projection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_coordinate_system</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Name of horizontal coordinate system/projection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_coordinate_system</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Rotated Polar"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Rotated Polar</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Lambert Conformal Conic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Lambert Conformal Conic</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Others"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Others</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_system_details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system_details</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system_details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system_details</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.coordinate_system_details</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Resolution (in deg or km)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Resolution (in deg or km)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="full_domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of full domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.full_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.full_domain</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of full domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.full_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.full_domain</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="relaxation_zone"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.relaxation_zone</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.relaxation_zone</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.relaxation_zone</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.relaxation_zone</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="inner_domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of inner domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.inner_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.inner_domain</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of inner domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.inner_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.inner_domain</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_type</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="spectral"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -492,14 +555,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="finite elements"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -534,14 +597,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation function order</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_order</dd><dt><b>Type</b></dt><dd>ENUM:function_order</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_order</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation function order</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_order</dd><dt><b>Type</b></dt><dd>ENUM:function_order</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_order</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation function order</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_order</dd><dt><b>Type</b></dt><dd>ENUM:function_order</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.scheme_order</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation function order</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_order</dd><dt><b>Type</b></dt><dd>ENUM:function_order</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.scheme_order</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="second"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -569,14 +632,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation pole singularity treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_pole</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_pole</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_pole</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation pole singularity treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_pole</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_pole</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_pole</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal discretisation pole singularity treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_pole</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_pole</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_pole</dd>
+        <dt><b>Description</b></dt><dd>Horizontal discretisation pole singularity treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_pole</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_horizontal_pole</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.horizontal_pole</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="filter"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -604,14 +667,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal grid type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.grid_type</dd>
+        <dt><b>Description</b></dt><dd>Horizontal grid type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.grid_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal grid type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.grid_type</dd>
+        <dt><b>Description</b></dt><dd>Horizontal grid type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.grid_type</dd><dt><b>Type</b></dt><dd>ENUM:grid_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.horizontal.grid_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Gaussian"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -646,21 +709,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere discretisation in the vertical</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.vertical</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere discretisation in the vertical</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.vertical</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.vertical.coordinate_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.vertical.coordinate_type</dd>
+        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.vertical.coordinate_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.vertical.coordinate_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.vertical.coordinate_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.vertical.coordinate_type</dd>
+        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.grid.discretisation.vertical.coordinate_type</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.grid.discretisation.vertical.coordinate_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="isobaric"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -702,28 +765,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the dynamical core</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the dynamical core</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the dynamical core</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the dynamical core</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestepping_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestepping framework type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.timestepping_type</dd><dt><b>Type</b></dt><dd>ENUM:timestepping_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.timestepping_type</dd>
+        <dt><b>Description</b></dt><dd>Timestepping framework type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.timestepping_type</dd><dt><b>Type</b></dt><dd>ENUM:timestepping_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.timestepping_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestepping framework type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.timestepping_type</dd><dt><b>Type</b></dt><dd>ENUM:timestepping_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.timestepping_type</dd>
+        <dt><b>Description</b></dt><dd>Timestepping framework type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.timestepping_type</dd><dt><b>Type</b></dt><dd>ENUM:timestepping_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.timestepping_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Adams-Bashforth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -793,14 +856,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of the model prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of the model prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of the model prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of the model prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variables</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface pressure"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -891,21 +954,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of boundary layer at the top of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary</dd>
+        <dt><b>Description</b></dt><dd>Type of boundary layer at the top of the model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_boundary_condition"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_boundary_condition</dd><dt><b>Type</b></dt><dd>ENUM:top_boundary_condition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_boundary_condition</dd>
+        <dt><b>Description</b></dt><dd>Top boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_boundary_condition</dd><dt><b>Type</b></dt><dd>ENUM:top_boundary_condition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_boundary_condition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_boundary_condition</dd><dt><b>Type</b></dt><dd>ENUM:top_boundary_condition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_boundary_condition</dd>
+        <dt><b>Description</b></dt><dd>Top boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_boundary_condition</dd><dt><b>Type</b></dt><dd>ENUM:top_boundary_condition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_boundary_condition</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sponge layer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -926,49 +989,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary heat treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_heat</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_heat</dd>
+        <dt><b>Description</b></dt><dd>Top boundary heat treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_heat</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_heat</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary heat treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_heat</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_heat</dd>
+        <dt><b>Description</b></dt><dd>Top boundary heat treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_heat</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_heat</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_wind"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary wind treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_wind</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_wind</dd>
+        <dt><b>Description</b></dt><dd>Top boundary wind treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_wind</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_wind</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top boundary wind treatment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_wind</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.top_boundary.top_wind</dd>
+        <dt><b>Description</b></dt><dd>Top boundary wind treatment</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_wind</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.top_boundary.top_wind</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lateral_boundary"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of lateral boundary condition (if the model is a regional model)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.lateral_boundary</dd>
+        <dt><b>Description</b></dt><dd>Type of lateral boundary condition (if the model is a regional model)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.lateral_boundary</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="condition"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of lateral boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.lateral_boundary.condition</dd><dt><b>Type</b></dt><dd>ENUM:lateral_boundary</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.lateral_boundary.condition</dd>
+        <dt><b>Description</b></dt><dd>Type of lateral boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.lateral_boundary.condition</dd><dt><b>Type</b></dt><dd>ENUM:lateral_boundary</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.lateral_boundary.condition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of lateral boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.lateral_boundary.condition</dd><dt><b>Type</b></dt><dd>ENUM:lateral_boundary</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.lateral_boundary.condition</dd>
+        <dt><b>Description</b></dt><dd>Type of lateral boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.lateral_boundary.condition</dd><dt><b>Type</b></dt><dd>ENUM:lateral_boundary</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.lateral_boundary.condition</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sponge layer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -989,35 +1052,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:diffusion_horizontal_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:diffusion_horizontal_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:diffusion_horizontal_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:diffusion_horizontal_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.diffusion_horizontal.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="iterated Laplacian"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1038,28 +1101,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Dynamical core advection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection</dd>
+        <dt><b>Description</b></dt><dd>Dynamical core advection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Heun"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1101,14 +1164,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.scheme_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Eulerian"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1199,14 +1262,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conserved_quantities</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conserved_quantities</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conserved_quantities</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conserved_quantities</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="dry mass"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1227,14 +1290,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conservation_method</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conservation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.tracers.conservation_method</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.tracers.conservation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="conservation fixer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1255,21 +1318,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="VanLeer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1297,14 +1360,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_characteristics</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="2nd order"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1346,14 +1409,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme staggering type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_staggering_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme staggering type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_staggering_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme staggering type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_staggering_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme staggering type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_staggering_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.scheme_staggering_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Arakawa B-grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1388,14 +1451,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conserved_quantities</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conserved_quantities</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conserved_quantities</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme conserved quantities</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conserved_quantities</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conserved_quantities</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conserved_quantities</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Angular momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1444,14 +1507,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conservation_method</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conservation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.dynamical_core.advection.momentum.conservation_method</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection scheme conservation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conservation_method</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_conservation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.dynamical_core.advection.momentum.conservation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="conservation fixer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1465,28 +1528,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere radiation process</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere radiation process</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere radiation process</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the atmosphere radiation process</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosols"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Aerosols whose radiative effect is taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.aerosols</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.aerosols</dd>
+        <dt><b>Description</b></dt><dd>Aerosols whose radiative effect is taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.aerosols</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.aerosols</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Aerosols whose radiative effect is taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.aerosols</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.aerosols</dd>
+        <dt><b>Description</b></dt><dd>Aerosols whose radiative effect is taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.aerosols</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.aerosols</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sulphate"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1584,35 +1647,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation</dd>
+        <dt><b>Description</b></dt><dd>Properties of the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="spectral_integration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_integration</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_integration</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_integration</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_integration</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="wide-band model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1640,14 +1703,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.transport_calculation</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.transport_calculation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.transport_calculation</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.transport_calculation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="two-stream"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1689,28 +1752,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="general_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_radiation.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_radiation.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="emission/absorption,"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1731,21 +1794,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Representation of greenhouse gases in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG</dd>
+        <dt><b>Description</b></dt><dd>Representation of greenhouse gases in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="greenhouse_gas_complexity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1822,14 +1885,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1955,14 +2018,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2130,21 +2193,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiative properties of ice crystals in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiative properties of ice crystals in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bi-modal size distribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2200,14 +2263,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2249,21 +2312,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiative properties of liquid droplets in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiative properties of liquid droplets in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud droplet number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2298,14 +2361,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="geometric optics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2326,21 +2389,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud inhomogeneity in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Cloud inhomogeneity in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Monte Carlo Independent Column Approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2368,21 +2431,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiative properties of aerosols</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiative properties of aerosols</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2431,14 +2494,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.shortwave_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.shortwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2480,42 +2543,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shortwave radiative properties of gases</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.shortwave_gases</dd>
+        <dt><b>Description</b></dt><dd>Shortwave radiative properties of gases</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.shortwave_gases</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_radiation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation</dd>
+        <dt><b>Description</b></dt><dd>Properties of the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the longwave radiation scheme.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the longwave radiation scheme.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the longwave radiation scheme.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the longwave radiation scheme.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="spectral_integration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_integration</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_integration</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_integration</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation scheme spectral integration</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_integration</dd><dt><b>Type</b></dt><dd>ENUM:spectral_integration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_integration</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="wide-band model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2543,14 +2606,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.transport_calculation</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.transport_calculation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.transport_calculation</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation transport calculation methods</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.transport_calculation</dd><dt><b>Type</b></dt><dd>ENUM:transport_calculation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.transport_calculation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="two-stream"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2592,28 +2655,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_intervals</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.spectral_intervals</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="general_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_radiation.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General radiative interactions e.g. with aerosols, cloud ice and cloud water </dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.general_interactions</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_radiation.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="emission/absorption,"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2634,21 +2697,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Representation of greenhouse gases in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG</dd>
+        <dt><b>Description</b></dt><dd>Representation of greenhouse gases in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="greenhouse_gas_complexity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2725,14 +2788,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.ODS</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2858,14 +2921,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.other_flourinated_gases</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3033,21 +3096,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiative properties of ice crystals in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiative properties of ice crystals in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_reprenstation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bi-modal size distribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3103,14 +3166,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3152,21 +3215,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiative properties of liquid droplets in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiative properties of liquid droplets in clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud droplet number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3201,14 +3264,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="geometric optics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3229,21 +3292,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud inhomogeneity in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Cloud inhomogeneity in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Monte Carlo Independent Column Approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3271,21 +3334,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiative properties of aerosols</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiative properties of aerosols</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="physical_representation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.physical_representation</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3334,14 +3397,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.radiation.longwave_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.optical_methods</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.radiation.longwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3383,42 +3446,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Longwave radiative properties of gases</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.radiation.longwave_gases</dd>
+        <dt><b>Description</b></dt><dd>Longwave radiative properties of gases</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.radiation.longwave_gases</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="turbulence_convection"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere Convective Turbulence and Clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere Convective Turbulence and Clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere Convective Turbulence and Clouds</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere Convective Turbulence and Clouds</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="boundary_layer_turbulence"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the boundary layer turbulence scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence</dd>
+        <dt><b>Description</b></dt><dd>Properties of the boundary layer turbulence scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Mellor-Yamada"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3446,14 +3509,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="TKE prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3530,63 +3593,63 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme closure order</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme closure order</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme closure order</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme closure order</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.closure_order</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="counter_gradient"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Uses boundary layer turbulence scheme counter gradient</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd>
+        <dt><b>Description</b></dt><dd>Uses boundary layer turbulence scheme counter gradient</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Uses boundary layer turbulence scheme counter gradient</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd>
+        <dt><b>Description</b></dt><dd>Uses boundary layer turbulence scheme counter gradient</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="deep_convection"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the deep convection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection</dd>
+        <dt><b>Description</b></dt><dd>Properties of the deep convection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="mass-flux"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3614,14 +3677,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CAPE"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3663,14 +3726,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of deep convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.processes</dd>
+        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of deep convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of deep convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.processes</dd>
+        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of deep convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:deep_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.processes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="vertical momentum transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3740,14 +3803,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.microphysics</dd>
+        <dt><b>Description</b></dt><dd>Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.microphysics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.deep_convection.microphysics</dd>
+        <dt><b>Description</b></dt><dd>Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.deep_convection.microphysics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tuning parameter based"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3775,35 +3838,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the shallow convection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection</dd>
+        <dt><b>Description</b></dt><dd>Properties of the shallow convection scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>shallow convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>shallow convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>shallow convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>shallow convection scheme type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="mass-flux"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3824,14 +3887,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>shallow convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>shallow convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>shallow convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.scheme_method</dd>
+        <dt><b>Description</b></dt><dd>shallow convection scheme method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_method</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.scheme_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="same as deep (unified)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3859,14 +3922,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.processes</dd>
+        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.processes</dd>
+        <dt><b>Description</b></dt><dd>Physical processes taken into account in the parameterisation of shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.processes</dd><dt><b>Type</b></dt><dd>ENUM:shallow_convection_scheme_processes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.processes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="convective momentum transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3908,14 +3971,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Microphysics scheme for shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.microphysics</dd>
+        <dt><b>Description</b></dt><dd>Microphysics scheme for shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.microphysics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Microphysics scheme for shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.turbulence_convection.shallow_convection.microphysics</dd>
+        <dt><b>Description</b></dt><dd>Microphysics scheme for shallow convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.microphysics</dd><dt><b>Type</b></dt><dd>ENUM:convective_microphysics_scheme_type</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.turbulence_convection.shallow_convection.microphysics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="tuning parameter based"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3943,49 +4006,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Large Scale Cloud Microphysics and Precipitation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation</dd>
+        <dt><b>Description</b></dt><dd>Large Scale Cloud Microphysics and Precipitation</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Large Scale Cloud Microphysics and Precipitation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation</dd>
+        <dt><b>Description</b></dt><dd>Large Scale Cloud Microphysics and Precipitation</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="large_scale_precipitation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation</dd>
+        <dt><b>Description</b></dt><dd>Properties of the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="hydrometeors"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Precipitating hydrometeors taken into account in the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd><dt><b>Type</b></dt><dd>ENUM:hydrometeor_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd>
+        <dt><b>Description</b></dt><dd>Precipitating hydrometeors taken into account in the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd><dt><b>Type</b></dt><dd>ENUM:hydrometeor_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Precipitating hydrometeors taken into account in the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd><dt><b>Type</b></dt><dd>ENUM:hydrometeor_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd>
+        <dt><b>Description</b></dt><dd>Precipitating hydrometeors taken into account in the large scale precipitation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd><dt><b>Type</b></dt><dd>ENUM:hydrometeor_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="liquid rain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4020,35 +4083,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of the large scale cloud microphysics scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics</dd>
+        <dt><b>Description</b></dt><dd>Properties of the large scale cloud microphysics scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme used for large scale clouds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme used for large scale clouds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme used for large scale clouds.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme used for large scale clouds.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Large scale cloud microphysics processes</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd>
+        <dt><b>Description</b></dt><dd>Large scale cloud microphysics processes</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Large scale cloud microphysics processes</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd>
+        <dt><b>Description</b></dt><dd>Large scale cloud microphysics processes</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="mixed phase"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4111,28 +4174,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.scheme_type</dd>
+        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4153,28 +4216,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes included in the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.processes</dd>
+        <dt><b>Description</b></dt><dd>Processes included in the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.processes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Processes included in the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.processes</dd>
+        <dt><b>Description</b></dt><dd>Processes included in the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.processes</dd><dt><b>Type</b></dt><dd>ENUM:processes_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.processes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="entrainment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4202,14 +4265,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List the prognostic variables used by the cloud scheme, if applicable.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_vars</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List the prognostic variables used by the cloud scheme, if applicable.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_vars</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List the prognostic variables used by the cloud scheme, if applicable.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_vars</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List the prognostic variables used by the cloud scheme, if applicable.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_vars</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud amount"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4265,14 +4328,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.atmos_coupling</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.atmos_coupling</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.atmos_coupling</dd>
+        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.atmos_coupling</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4321,21 +4384,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical cloud properties</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties</dd>
+        <dt><b>Description</b></dt><dd>Optical cloud properties</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud_overlap_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account overlapping of cloud layers</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd><dt><b>Type</b></dt><dd>ENUM:cloud_overlap_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account overlapping of cloud layers</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd><dt><b>Type</b></dt><dd>ENUM:cloud_overlap_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account overlapping of cloud layers</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd><dt><b>Type</b></dt><dd>ENUM:cloud_overlap_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account overlapping of cloud layers</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd><dt><b>Type</b></dt><dd>ENUM:cloud_overlap_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="random"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4370,35 +4433,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sub_grid_scale_water_distribution"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4419,42 +4482,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="function_order"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="convection_coupling"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale water distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coupled with deep"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4482,21 +4545,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4517,42 +4580,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function name</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="function_order"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution function type</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="convection_coupling"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd>
+        <dt><b>Description</b></dt><dd>Sub-grid scale ice distribution coupling with convection</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd><dt><b>Type</b></dt><dd>ENUM:sub_grid_scale_h2o_distribution_convection</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coupled with deep"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4576,333 +4639,32 @@
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>sub_grid_scale_h2o_distribution_convection.not coupled with convection</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="observation_simulation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of observation simulation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of observation simulation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="isscp_attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>ISSCP Characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_height_estimation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="no adjustment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.no adjustment</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="IR brightness"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.IR brightness</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="visible optical depth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.visible optical depth</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_height_direction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lowest altitude level"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height_direction.lowest altitude level</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="highest altitude level"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height_direction.highest altitude level</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="cosp_attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CFMIP Observational Simulator Package attributes</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="run_configuration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Inline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cosp_run_configuration.Inline</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Offline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cosp_run_configuration.Offline</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_grid_points"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_sub_columns"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_levels"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud radar simulator</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_radar_type.surface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="space borne"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_radar_type.space borne</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_absorption"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="effective_radius"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lidar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud lidar simulator</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_types"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice spheres"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_ice_type.ice spheres</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice non-spherical"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_ice_type.ice non-spherical</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overlap"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="max"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_overlap.max</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="random"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_overlap.random</dd>
-    </dl>
-  </body>
 </html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="gravity_waves"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves</dd>
+        <dt><b>Description</b></dt><dd>Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sponge_layer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.sponge_layer</dd><dt><b>Type</b></dt><dd>ENUM:sponge_layer_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.sponge_layer</dd>
+        <dt><b>Description</b></dt><dd>Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.sponge_layer</dd><dt><b>Type</b></dt><dd>ENUM:sponge_layer_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.sponge_layer</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.sponge_layer</dd><dt><b>Type</b></dt><dd>ENUM:sponge_layer_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.sponge_layer</dd>
+        <dt><b>Description</b></dt><dd>Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.sponge_layer</dd><dt><b>Type</b></dt><dd>ENUM:sponge_layer_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.sponge_layer</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Rayleigh friction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4923,14 +4685,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Background wave distribution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.background</dd><dt><b>Type</b></dt><dd>ENUM:background_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.background</dd>
+        <dt><b>Description</b></dt><dd>Background wave distribution</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.background</dd><dt><b>Type</b></dt><dd>ENUM:background_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.background</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Background wave distribution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.background</dd><dt><b>Type</b></dt><dd>ENUM:background_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.background</dd>
+        <dt><b>Description</b></dt><dd>Background wave distribution</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.background</dd><dt><b>Type</b></dt><dd>ENUM:background_attributes</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.background</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="continuous spectrum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4951,14 +4713,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Subgrid scale orography effects taken into account.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.subgrid_scale_orography</dd><dt><b>Type</b></dt><dd>ENUM:subgrid_scale_orography_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.subgrid_scale_orography</dd>
+        <dt><b>Description</b></dt><dd>Subgrid scale orography effects taken into account.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.subgrid_scale_orography</dd><dt><b>Type</b></dt><dd>ENUM:subgrid_scale_orography_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.subgrid_scale_orography</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Subgrid scale orography effects taken into account.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.subgrid_scale_orography</dd><dt><b>Type</b></dt><dd>ENUM:subgrid_scale_orography_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.subgrid_scale_orography</dd>
+        <dt><b>Description</b></dt><dd>Subgrid scale orography effects taken into account.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.subgrid_scale_orography</dd><dt><b>Type</b></dt><dd>ENUM:subgrid_scale_orography_attributes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.subgrid_scale_orography</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="effect on drag"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4986,35 +4748,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Gravity waves generated due to the presence of orography</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves</dd>
+        <dt><b>Description</b></dt><dd>Gravity waves generated due to the presence of orography</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="linear mountain waves"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5056,14 +4818,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.calculation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="non-linear calculation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5084,14 +4846,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="linear theory"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5119,14 +4881,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="total wave"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5168,35 +4930,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Gravity waves generated by non-orographic processes.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves</dd>
+        <dt><b>Description</b></dt><dd>Gravity waves generated by non-orographic processes.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave source mechanisms</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_source_mechanisms</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="convection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5224,14 +4986,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave calculation method</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_calculation_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="spatially dependent"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5252,14 +5014,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave propogation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_propagation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="linear theory"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5280,14 +5042,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Non-orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd>
+        <dt><b>Description</b></dt><dd>Non-orographic gravity wave dissipation scheme</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd><dt><b>Type</b></dt><dd>ENUM:non_orographic_gravity_wave_dissipation_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="total wave"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5329,35 +5091,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing</dd>
+        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing</dd>
+        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="solar_pathways"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for solar forcing of the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for solar forcing of the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_pathways</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="pathways"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_pathways.pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_pathways.pathways</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_pathways.pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_pathways.pathways</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="SW radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5385,21 +5147,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Solar constant and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant</dd>
+        <dt><b>Description</b></dt><dd>Solar constant and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.type</dd>
+        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.type</dd>
+        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5420,49 +5182,49 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.fixed_value</dd>
+        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.fixed_value</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.fixed_value</dd>
+        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.fixed_value</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transient_characteristics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="orbital_parameters"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orbital parameters and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters</dd>
+        <dt><b>Description</b></dt><dd>Orbital parameters and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5483,42 +5245,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
+        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
+        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transient_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.transient_method</dd>
+        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.transient_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.transient_method</dd>
+        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.transient_method</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="computation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.computation_method</dd>
+        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.computation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.orbital_parameters.computation_method</dd>
+        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.orbital_parameters.computation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Berger 1978"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5539,56 +5301,56 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Impact of solar insolation on stratospheric ozone</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.insolation_ozone</dd>
+        <dt><b>Description</b></dt><dd>Impact of solar insolation on stratospheric ozone</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.insolation_ozone</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="solar_ozone_impact"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
+        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
+        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="volcanoes_treatment"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics and treatment of volcanic forcing in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment</dd>
+        <dt><b>Description</b></dt><dd>Characteristics and treatment of volcanic forcing in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="volcanoes_characteristics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of how the volcanic forcing is taken into account in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Description of how the volcanic forcing is taken into account in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of how the volcanic forcing is taken into account in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Description of how the volcanic forcing is taken into account in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="volcanoes_implementation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
+        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
+        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="high frequency solar constant anomaly"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

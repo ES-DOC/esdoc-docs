@@ -1,19 +1,19 @@
 {
     "label": "Atmos", 
     "description": "Atmosphere", 
-    "id": "cordexp.atmos", 
+    "id": "cordex.atmos", 
     "contact": "Charlotte Pascoe", 
     "processes": [
         {
             "label": "Dynamical Core", 
             "description": "Characteristics of the dynamical core", 
-            "id": "cordexp.atmos.dynamical_core", 
+            "id": "cordex.atmos.dynamical_core", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the dynamical core in atmos model.", 
-                    "id": "cordexp.atmos.dynamical_core.name", 
+                    "id": "cordex.atmos.dynamical_core.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -22,7 +22,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of characteristics of the dynamical core in atmos model.", 
-                    "id": "cordexp.atmos.dynamical_core.overview", 
+                    "id": "cordex.atmos.dynamical_core.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -31,7 +31,7 @@
                 {
                     "label": "Timestepping Type", 
                     "description": "Timestepping framework type", 
-                    "id": "cordexp.atmos.dynamical_core.timestepping_type", 
+                    "id": "cordex.atmos.dynamical_core.timestepping_type", 
                     "cardinality": "1.1", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -83,7 +83,7 @@
                 {
                     "label": "Prognostic Variables", 
                     "description": "List of the model prognostic variables", 
-                    "id": "cordexp.atmos.dynamical_core.prognostic_variables", 
+                    "id": "cordex.atmos.dynamical_core.prognostic_variables", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -149,13 +149,22 @@
                 {
                     "label": "Top Boundary", 
                     "description": "Type of boundary layer at the top of the model", 
-                    "id": "cordexp.atmos.dynamical_core.top_boundary", 
+                    "id": "cordex.atmos.dynamical_core.top_boundary", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of type of boundary layer at the top of the model in atmos model.", 
+                            "id": "cordex.atmos.dynamical_core.top_boundary.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Top Boundary Condition", 
                             "description": "Top boundary condition", 
-                            "id": "cordexp.atmos.dynamical_core.top_boundary.top_boundary_condition", 
+                            "id": "cordex.atmos.dynamical_core.top_boundary.top_boundary_condition", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -174,38 +183,47 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Top Heat", 
                             "description": "Top boundary heat treatment", 
-                            "id": "cordexp.atmos.dynamical_core.top_boundary.top_heat", 
-                            "cardinality": "1.1", 
-                            "type": "str", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Top Wind", 
-                            "description": "Top boundary wind treatment", 
-                            "id": "cordexp.atmos.dynamical_core.top_boundary.top_wind", 
+                            "id": "cordex.atmos.dynamical_core.top_boundary.top_heat", 
                             "cardinality": "1.1", 
                             "type": "str", 
                             "is_cim_property": false, 
                             "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Top Wind", 
+                            "description": "Top boundary wind treatment", 
+                            "id": "cordex.atmos.dynamical_core.top_boundary.top_wind", 
+                            "cardinality": "1.1", 
+                            "type": "str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
                 {
                     "label": "Lateral Boundary", 
                     "description": "Type of lateral boundary condition (if the model is a regional model)", 
-                    "id": "cordexp.atmos.dynamical_core.lateral_boundary", 
+                    "id": "cordex.atmos.dynamical_core.lateral_boundary", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of type of lateral boundary condition (if the model is a regional model) in atmos model.", 
+                            "id": "cordex.atmos.dynamical_core.lateral_boundary.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Condition", 
                             "description": "Type of lateral boundary condition", 
-                            "id": "cordexp.atmos.dynamical_core.lateral_boundary.condition", 
+                            "id": "cordex.atmos.dynamical_core.lateral_boundary.condition", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -224,29 +242,38 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
                 {
                     "label": "Diffusion Horizontal", 
                     "description": "Horizontal diffusion scheme", 
-                    "id": "cordexp.atmos.dynamical_core.diffusion_horizontal", 
+                    "id": "cordex.atmos.dynamical_core.diffusion_horizontal", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of horizontal diffusion scheme in atmos model.", 
+                            "id": "cordex.atmos.dynamical_core.diffusion_horizontal.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Horizontal diffusion scheme name", 
-                            "id": "cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_name", 
+                            "id": "cordex.atmos.dynamical_core.diffusion_horizontal.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Method", 
                             "description": "Horizontal diffusion scheme method", 
-                            "id": "cordexp.atmos.dynamical_core.diffusion_horizontal.scheme_method", 
+                            "id": "cordex.atmos.dynamical_core.diffusion_horizontal.scheme_method", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -265,25 +292,36 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Advection", 
                     "description": "Dynamical core advection", 
-                    "id": "cordexp.atmos.dynamical_core.advection", 
+                    "id": "cordex.atmos.dynamical_core.advection", 
                     "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of dynamical core advection in atmos model.", 
+                            "id": "cordex.atmos.dynamical_core.advection.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ], 
                     "propertySets": [
                         {
                             "label": "Tracers", 
                             "description": "Tracer advection scheme", 
-                            "id": "cordexp.atmos.dynamical_core.advection.tracers", 
+                            "id": "cordex.atmos.dynamical_core.advection.tracers", 
                             "properties": [
                                 {
                                     "label": "Scheme Name", 
                                     "description": "Tracer advection scheme name", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.tracers.scheme_name", 
+                                    "id": "cordex.atmos.dynamical_core.advection.tracers.scheme_name", 
                                     "cardinality": "0.1", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -319,7 +357,7 @@
                                 {
                                     "label": "Scheme Characteristics", 
                                     "description": "Tracer advection scheme characteristics", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.tracers.scheme_characteristics", 
+                                    "id": "cordex.atmos.dynamical_core.advection.tracers.scheme_characteristics", 
                                     "cardinality": "1.N", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -383,7 +421,7 @@
                                 {
                                     "label": "Conserved Quantities", 
                                     "description": "Tracer advection scheme conserved quantities", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.tracers.conserved_quantities", 
+                                    "id": "cordex.atmos.dynamical_core.advection.tracers.conserved_quantities", 
                                     "cardinality": "1.N", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -407,7 +445,7 @@
                                 {
                                     "label": "Conservation Method", 
                                     "description": "Tracer advection scheme conservation method", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.tracers.conservation_method", 
+                                    "id": "cordex.atmos.dynamical_core.advection.tracers.conservation_method", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -433,12 +471,12 @@
                         {
                             "label": "Momentum", 
                             "description": "Momentum advection scheme", 
-                            "id": "cordexp.atmos.dynamical_core.advection.momentum", 
+                            "id": "cordex.atmos.dynamical_core.advection.momentum", 
                             "properties": [
                                 {
                                     "label": "Scheme Name", 
                                     "description": "Momentum advection schemes name", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.momentum.scheme_name", 
+                                    "id": "cordex.atmos.dynamical_core.advection.momentum.scheme_name", 
                                     "cardinality": "0.1", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -466,7 +504,7 @@
                                 {
                                     "label": "Scheme Characteristics", 
                                     "description": "Momentum advection scheme characteristics", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.momentum.scheme_characteristics", 
+                                    "id": "cordex.atmos.dynamical_core.advection.momentum.scheme_characteristics", 
                                     "cardinality": "1.N", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -502,7 +540,7 @@
                                 {
                                     "label": "Scheme Staggering Type", 
                                     "description": "Momentum advection scheme staggering type", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.momentum.scheme_staggering_type", 
+                                    "id": "cordex.atmos.dynamical_core.advection.momentum.scheme_staggering_type", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -534,7 +572,7 @@
                                 {
                                     "label": "Conserved Quantities", 
                                     "description": "Momentum advection scheme conserved quantities", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.momentum.conserved_quantities", 
+                                    "id": "cordex.atmos.dynamical_core.advection.momentum.conserved_quantities", 
                                     "cardinality": "1.N", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -574,7 +612,7 @@
                                 {
                                     "label": "Conservation Method", 
                                     "description": "Momentum advection scheme conservation method", 
-                                    "id": "cordexp.atmos.dynamical_core.advection.momentum.conservation_method", 
+                                    "id": "cordex.atmos.dynamical_core.advection.momentum.conservation_method", 
                                     "cardinality": "1.1", 
                                     "type": "enum", 
                                     "is_cim_property": false, 
@@ -600,13 +638,13 @@
         {
             "label": "Radiation", 
             "description": "Characteristics of the atmosphere radiation process", 
-            "id": "cordexp.atmos.radiation", 
+            "id": "cordex.atmos.radiation", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the radiation in atmos model.", 
-                    "id": "cordexp.atmos.radiation.name", 
+                    "id": "cordex.atmos.radiation.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -615,7 +653,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of characteristics of the atmosphere radiation process in atmos model.", 
-                    "id": "cordexp.atmos.radiation.overview", 
+                    "id": "cordex.atmos.radiation.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -624,7 +662,7 @@
                 {
                     "label": "Aerosols", 
                     "description": "Aerosols whose radiative effect is taken into account in the atmosphere model", 
-                    "id": "cordexp.atmos.radiation.aerosols", 
+                    "id": "cordex.atmos.radiation.aerosols", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -694,22 +732,31 @@
                 {
                     "label": "Shortwave Radiation", 
                     "description": "Properties of the shortwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.shortwave_radiation", 
+                    "id": "cordex.atmos.radiation.shortwave_radiation", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the shortwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_radiation.name", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
                             "description": "Shortwave radiation scheme spectral integration", 
-                            "id": "cordexp.atmos.radiation.shortwave_radiation.spectral_integration", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.spectral_integration", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -732,12 +779,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
                             "description": "Shortwave radiation transport calculation methods", 
-                            "id": "cordexp.atmos.radiation.shortwave_radiation.transport_calculation", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.transport_calculation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -768,21 +815,21 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
                             "description": "Shortwave radiation scheme number of spectral intervals", 
-                            "id": "cordexp.atmos.radiation.shortwave_radiation.spectral_intervals", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "General Interactions", 
                             "description": "General radiative interactions e.g. with aerosols, cloud ice and cloud water ", 
-                            "id": "cordexp.atmos.radiation.shortwave_radiation.general_interactions", 
+                            "id": "cordex.atmos.radiation.shortwave_radiation.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -801,20 +848,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave GHG", 
                     "description": "Representation of greenhouse gases in the shortwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.shortwave_GHG", 
+                    "id": "cordex.atmos.radiation.shortwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of representation of greenhouse gases in the shortwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_GHG.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity", 
+                            "id": "cordex.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -865,12 +921,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.shortwave_GHG.ODS", 
+                            "id": "cordex.atmos.radiation.shortwave_GHG.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -949,12 +1005,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.shortwave_GHG.other_flourinated_gases", 
+                            "id": "cordex.atmos.radiation.shortwave_GHG.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1057,20 +1113,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave Cloud Ice", 
                     "description": "Shortwave radiative properties of ice crystals in clouds", 
-                    "id": "cordexp.atmos.radiation.shortwave_cloud_ice", 
+                    "id": "cordex.atmos.radiation.shortwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of shortwave radiative properties of ice crystals in clouds in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_ice.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_cloud_ice.physical_representation", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_ice.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1109,12 +1174,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_cloud_ice.optical_methods", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1145,20 +1210,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave Cloud Liquid", 
                     "description": "Shortwave radiative properties of liquid droplets in clouds", 
-                    "id": "cordexp.atmos.radiation.shortwave_cloud_liquid", 
+                    "id": "cordex.atmos.radiation.shortwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of shortwave radiative properties of liquid droplets in clouds in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_liquid.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_cloud_liquid.physical_representation", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1185,12 +1259,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_cloud_liquid.optical_methods", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1209,20 +1283,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave Cloud Inhomogeneity", 
                     "description": "Cloud inhomogeneity in the shortwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.shortwave_cloud_inhomogeneity", 
+                    "id": "cordex.atmos.radiation.shortwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of cloud inhomogeneity in the shortwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_inhomogeneity.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                            "id": "cordexp.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "id": "cordex.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1245,20 +1328,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave Aerosols", 
                     "description": "Shortwave radiative properties of aerosols", 
-                    "id": "cordexp.atmos.radiation.shortwave_aerosols", 
+                    "id": "cordex.atmos.radiation.shortwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of shortwave radiative properties of aerosols in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_aerosols.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_aerosols.physical_representation", 
+                            "id": "cordex.atmos.radiation.shortwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1293,12 +1385,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the shortwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.shortwave_aerosols.optical_methods", 
+                            "id": "cordex.atmos.radiation.shortwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1329,35 +1421,55 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Shortwave Gases", 
                     "description": "Shortwave radiative properties of gases", 
-                    "id": "cordexp.atmos.radiation.shortwave_gases", 
-                    "contact": "Charlotte Pascoe"
+                    "id": "cordex.atmos.radiation.shortwave_gases", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of shortwave radiative properties of gases in atmos model.", 
+                            "id": "cordex.atmos.radiation.shortwave_gases.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ]
                 }, 
                 {
                     "label": "Longwave Radiation", 
                     "description": "Properties of the longwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.longwave_radiation", 
+                    "id": "cordex.atmos.radiation.longwave_radiation", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the longwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the longwave radiation scheme.", 
-                            "id": "cordexp.atmos.radiation.longwave_radiation.name", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Spectral Integration", 
                             "description": "Longwave radiation scheme spectral integration", 
-                            "id": "cordexp.atmos.radiation.longwave_radiation.spectral_integration", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.spectral_integration", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1380,12 +1492,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transport Calculation", 
                             "description": "Longwave radiation transport calculation methods", 
-                            "id": "cordexp.atmos.radiation.longwave_radiation.transport_calculation", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.transport_calculation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1416,21 +1528,21 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Spectral Intervals", 
                             "description": "Longwave radiation scheme number of spectral intervals", 
-                            "id": "cordexp.atmos.radiation.longwave_radiation.spectral_intervals", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "General Interactions", 
                             "description": "General radiative interactions e.g. with aerosols, cloud ice and cloud water ", 
-                            "id": "cordexp.atmos.radiation.longwave_radiation.general_interactions", 
+                            "id": "cordex.atmos.radiation.longwave_radiation.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1449,20 +1561,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave GHG", 
                     "description": "Representation of greenhouse gases in the longwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.longwave_GHG", 
+                    "id": "cordex.atmos.radiation.longwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of representation of greenhouse gases in the longwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_GHG.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.longwave_GHG.greenhouse_gas_complexity", 
+                            "id": "cordex.atmos.radiation.longwave_GHG.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1513,12 +1634,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.longwave_GHG.ODS", 
+                            "id": "cordex.atmos.radiation.longwave_GHG.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1597,12 +1718,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cordexp.atmos.radiation.longwave_GHG.other_flourinated_gases", 
+                            "id": "cordex.atmos.radiation.longwave_GHG.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1705,20 +1826,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave Cloud Ice", 
                     "description": "Longwave radiative properties of ice crystals in clouds", 
-                    "id": "cordexp.atmos.radiation.longwave_cloud_ice", 
+                    "id": "cordex.atmos.radiation.longwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of longwave radiative properties of ice crystals in clouds in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_ice.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_cloud_ice.physical_reprenstation", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_ice.physical_reprenstation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1757,12 +1887,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_cloud_ice.optical_methods", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1793,20 +1923,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave Cloud Liquid", 
                     "description": "Longwave radiative properties of liquid droplets in clouds", 
-                    "id": "cordexp.atmos.radiation.longwave_cloud_liquid", 
+                    "id": "cordex.atmos.radiation.longwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of longwave radiative properties of liquid droplets in clouds in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_liquid.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_cloud_liquid.physical_representation", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1833,12 +1972,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_cloud_liquid.optical_methods", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1857,20 +1996,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave Cloud Inhomogeneity", 
                     "description": "Cloud inhomogeneity in the longwave radiation scheme", 
-                    "id": "cordexp.atmos.radiation.longwave_cloud_inhomogeneity", 
+                    "id": "cordex.atmos.radiation.longwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of cloud inhomogeneity in the longwave radiation scheme in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_inhomogeneity.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                            "id": "cordexp.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "id": "cordex.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1893,20 +2041,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave Aerosols", 
                     "description": "Longwave radiative properties of aerosols", 
-                    "id": "cordexp.atmos.radiation.longwave_aerosols", 
+                    "id": "cordex.atmos.radiation.longwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of longwave radiative properties of aerosols in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_aerosols.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_aerosols.physical_representation", 
+                            "id": "cordex.atmos.radiation.longwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1941,12 +2098,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the longwave radiation scheme", 
-                            "id": "cordexp.atmos.radiation.longwave_aerosols.optical_methods", 
+                            "id": "cordex.atmos.radiation.longwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -1977,28 +2134,39 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Longwave Gases", 
                     "description": "Longwave radiative properties of gases", 
-                    "id": "cordexp.atmos.radiation.longwave_gases", 
-                    "contact": "Charlotte Pascoe"
+                    "id": "cordex.atmos.radiation.longwave_gases", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of longwave radiative properties of gases in atmos model.", 
+                            "id": "cordex.atmos.radiation.longwave_gases.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }
+                    ]
                 }
             ]
         }, 
         {
             "label": "Turbulence Convection", 
             "description": "Atmosphere Convective Turbulence and Clouds", 
-            "id": "cordexp.atmos.turbulence_convection", 
+            "id": "cordex.atmos.turbulence_convection", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the turbulence convection in atmos model.", 
-                    "id": "cordexp.atmos.turbulence_convection.name", 
+                    "id": "cordex.atmos.turbulence_convection.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -2007,7 +2175,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmosphere convective turbulence and clouds in atmos model.", 
-                    "id": "cordexp.atmos.turbulence_convection.overview", 
+                    "id": "cordex.atmos.turbulence_convection.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -2018,13 +2186,22 @@
                 {
                     "label": "Boundary Layer Turbulence", 
                     "description": "Properties of the boundary layer turbulence scheme", 
-                    "id": "cordexp.atmos.turbulence_convection.boundary_layer_turbulence", 
+                    "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the boundary layer turbulence scheme in atmos model.", 
+                            "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Boundary layer turbulence scheme name", 
-                            "id": "cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name", 
+                            "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2047,12 +2224,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Type", 
                             "description": "Boundary layer turbulence scheme type", 
-                            "id": "cordexp.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type", 
+                            "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2103,47 +2280,56 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Closure Order", 
                             "description": "Boundary layer turbulence scheme closure order", 
-                            "id": "cordexp.atmos.turbulence_convection.boundary_layer_turbulence.closure_order", 
+                            "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence.closure_order", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Counter Gradient", 
                             "description": "Uses boundary layer turbulence scheme counter gradient", 
-                            "id": "cordexp.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient", 
+                            "id": "cordex.atmos.turbulence_convection.boundary_layer_turbulence.counter_gradient", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
                 {
                     "label": "Deep Convection", 
                     "description": "Properties of the deep convection scheme", 
-                    "id": "cordexp.atmos.turbulence_convection.deep_convection", 
+                    "id": "cordex.atmos.turbulence_convection.deep_convection", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the deep convection scheme in atmos model.", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Deep convection scheme name", 
-                            "id": "cordexp.atmos.turbulence_convection.deep_convection.scheme_name", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Type", 
                             "description": "Deep convection scheme type", 
-                            "id": "cordexp.atmos.turbulence_convection.deep_convection.scheme_type", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.scheme_type", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2166,12 +2352,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Scheme Method", 
                             "description": "Deep convection scheme method", 
-                            "id": "cordexp.atmos.turbulence_convection.deep_convection.scheme_method", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.scheme_method", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2202,12 +2388,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Processes", 
                             "description": "Physical processes taken into account in the parameterisation of deep convection", 
-                            "id": "cordexp.atmos.turbulence_convection.deep_convection.processes", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2254,12 +2440,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Microphysics", 
                             "description": "Microphysics scheme for deep convection. Microphysical processes directly control the amount of detrainment of cloud hydrometeor and water vapor from updrafts", 
-                            "id": "cordexp.atmos.turbulence_convection.deep_convection.microphysics", 
+                            "id": "cordex.atmos.turbulence_convection.deep_convection.microphysics", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2282,29 +2468,38 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
                 {
                     "label": "Shallow Convection", 
                     "description": "Properties of the shallow convection scheme", 
-                    "id": "cordexp.atmos.turbulence_convection.shallow_convection", 
+                    "id": "cordex.atmos.turbulence_convection.shallow_convection", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the shallow convection scheme in atmos model.", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Shallow convection scheme name", 
-                            "id": "cordexp.atmos.turbulence_convection.shallow_convection.scheme_name", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Scheme Type", 
                             "description": "shallow convection scheme type", 
-                            "id": "cordexp.atmos.turbulence_convection.shallow_convection.scheme_type", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.scheme_type", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2323,12 +2518,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Scheme Method", 
                             "description": "shallow convection scheme method", 
-                            "id": "cordexp.atmos.turbulence_convection.shallow_convection.scheme_method", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.scheme_method", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2351,12 +2546,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Processes", 
                             "description": "Physical processes taken into account in the parameterisation of shallow convection", 
-                            "id": "cordexp.atmos.turbulence_convection.shallow_convection.processes", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2387,12 +2582,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Microphysics", 
                             "description": "Microphysics scheme for shallow convection", 
-                            "id": "cordexp.atmos.turbulence_convection.shallow_convection.microphysics", 
+                            "id": "cordex.atmos.turbulence_convection.shallow_convection.microphysics", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2415,7 +2610,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }
@@ -2424,13 +2619,13 @@
         {
             "label": "Microphysics Precipitation", 
             "description": "Large Scale Cloud Microphysics and Precipitation", 
-            "id": "cordexp.atmos.microphysics_precipitation", 
+            "id": "cordex.atmos.microphysics_precipitation", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the microphysics precipitation in atmos model.", 
-                    "id": "cordexp.atmos.microphysics_precipitation.name", 
+                    "id": "cordex.atmos.microphysics_precipitation.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -2439,7 +2634,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of large scale cloud microphysics and precipitation in atmos model.", 
-                    "id": "cordexp.atmos.microphysics_precipitation.overview", 
+                    "id": "cordex.atmos.microphysics_precipitation.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -2450,22 +2645,31 @@
                 {
                     "label": "Large Scale Precipitation", 
                     "description": "Properties of the large scale precipitation scheme", 
-                    "id": "cordexp.atmos.microphysics_precipitation.large_scale_precipitation", 
+                    "id": "cordex.atmos.microphysics_precipitation.large_scale_precipitation", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the large scale precipitation scheme in atmos model.", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_precipitation.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the large scale precipitation parameterisation scheme", 
-                            "id": "cordexp.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_precipitation.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Hydrometeors", 
                             "description": "Precipitating hydrometeors taken into account in the large scale precipitation scheme", 
-                            "id": "cordexp.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_precipitation.hydrometeors", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2492,29 +2696,38 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Large Scale Cloud Microphysics", 
                     "description": "Properties of the large scale cloud microphysics scheme", 
-                    "id": "cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics", 
+                    "id": "cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of properties of the large scale cloud microphysics scheme in atmos model.", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the microphysics parameterisation scheme used for large scale clouds.", 
-                            "id": "cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.scheme_name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Processes", 
                             "description": "Large scale cloud microphysics processes", 
-                            "id": "cordexp.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes", 
+                            "id": "cordex.atmos.microphysics_precipitation.large_scale_cloud_microphysics.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2557,7 +2770,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }
@@ -2566,13 +2779,13 @@
         {
             "label": "Cloud Scheme", 
             "description": "Characteristics of the cloud scheme", 
-            "id": "cordexp.atmos.cloud_scheme", 
+            "id": "cordex.atmos.cloud_scheme", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the cloud scheme in atmos model.", 
-                    "id": "cordexp.atmos.cloud_scheme.name", 
+                    "id": "cordex.atmos.cloud_scheme.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -2581,7 +2794,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of characteristics of the cloud scheme in atmos model.", 
-                    "id": "cordexp.atmos.cloud_scheme.overview", 
+                    "id": "cordex.atmos.cloud_scheme.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -2590,7 +2803,7 @@
                 {
                     "label": "Scheme Type", 
                     "description": "Describes the type(s) of cloud scheme: prognostic, diagnostic, other.", 
-                    "id": "cordexp.atmos.cloud_scheme.scheme_type", 
+                    "id": "cordex.atmos.cloud_scheme.scheme_type", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -2614,7 +2827,7 @@
                 {
                     "label": "Uses Separate Treatment", 
                     "description": "Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)", 
-                    "id": "cordexp.atmos.cloud_scheme.uses_separate_treatment", 
+                    "id": "cordex.atmos.cloud_scheme.uses_separate_treatment", 
                     "cardinality": "1.1", 
                     "type": "str", 
                     "is_cim_property": false, 
@@ -2623,7 +2836,7 @@
                 {
                     "label": "Processes", 
                     "description": "Processes included in the cloud scheme", 
-                    "id": "cordexp.atmos.cloud_scheme.processes", 
+                    "id": "cordex.atmos.cloud_scheme.processes", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -2651,7 +2864,7 @@
                 {
                     "label": "Prognostic Variables", 
                     "description": "List the prognostic variables used by the cloud scheme, if applicable.", 
-                    "id": "cordexp.atmos.cloud_scheme.prognostic_variables", 
+                    "id": "cordex.atmos.cloud_scheme.prognostic_variables", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -2695,7 +2908,7 @@
                 {
                     "label": "Atmos Coupling", 
                     "description": "Atmosphere components that are linked to the cloud scheme", 
-                    "id": "cordexp.atmos.cloud_scheme.atmos_coupling", 
+                    "id": "cordex.atmos.cloud_scheme.atmos_coupling", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -2737,13 +2950,22 @@
                 {
                     "label": "Optical Cloud Properties", 
                     "description": "Optical cloud properties", 
-                    "id": "cordexp.atmos.cloud_scheme.optical_cloud_properties", 
+                    "id": "cordex.atmos.cloud_scheme.optical_cloud_properties", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of optical cloud properties in atmos model.", 
+                            "id": "cordex.atmos.cloud_scheme.optical_cloud_properties.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Cloud Overlap Method", 
                             "description": "Method for taking into account overlapping of cloud layers", 
-                            "id": "cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method", 
+                            "id": "cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_overlap_method", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2770,29 +2992,38 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account cloud inhomogeneity", 
-                            "id": "cordexp.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity", 
+                            "id": "cordex.atmos.cloud_scheme.optical_cloud_properties.cloud_inhomogeneity", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }, 
                 {
                     "label": "Sub Grid Scale Water Distribution", 
                     "description": "Sub-grid scale water distribution", 
-                    "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution", 
+                    "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of sub-grid scale water distribution in atmos model.", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Type", 
                             "description": "Sub-grid scale water distribution type", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.type", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2811,30 +3042,30 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Function Name", 
                             "description": "Sub-grid scale water distribution function name", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_name", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Function Order", 
-                            "description": "Sub-grid scale water distribution function type", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
                             "is_cim_property": false, 
                             "uiOrdinal": 3
                         }, 
                         {
+                            "label": "Function Order", 
+                            "description": "Sub-grid scale water distribution function type", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.function_order", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }, 
+                        {
                             "label": "Convection Coupling", 
                             "description": "Sub-grid scale water distribution coupling with convection", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_water_distribution.convection_coupling", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2857,20 +3088,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
                 {
                     "label": "Sub Grid Scale Ice Distribution", 
                     "description": "Sub-grid scale ice distribution", 
-                    "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution", 
+                    "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of sub-grid scale ice distribution in atmos model.", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Type", 
                             "description": "Sub-grid scale ice distribution type", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2889,30 +3129,30 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Function Name", 
                             "description": "Sub-grid scale ice distribution function name", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_name", 
                             "cardinality": "1.1", 
                             "type": "str", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Function Order", 
-                            "description": "Sub-grid scale ice distribution function type", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
                             "is_cim_property": false, 
                             "uiOrdinal": 3
                         }, 
                         {
+                            "label": "Function Order", 
+                            "description": "Sub-grid scale ice distribution function type", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.function_order", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }, 
+                        {
                             "label": "Convection Coupling", 
                             "description": "Sub-grid scale ice distribution coupling with convection", 
-                            "id": "cordexp.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling", 
+                            "id": "cordex.atmos.cloud_scheme.sub_grid_scale_ice_distribution.convection_coupling", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -2935,269 +3175,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }
-            ]
-        }, 
-        {
-            "label": "Observation Simulation", 
-            "description": "Characteristics of observation simulation", 
-            "id": "cordexp.atmos.observation_simulation", 
-            "contact": "Charlotte Pascoe", 
-            "properties": [
-                {
-                    "label": "Name", 
-                    "description": "Commonly used name for the observation simulation in atmos model.", 
-                    "id": "cordexp.atmos.observation_simulation.name", 
-                    "cardinality": "0.1", 
-                    "type": "str", 
-                    "is_cim_property": true, 
-                    "uiOrdinal": 1
-                }, 
-                {
-                    "label": "Overview", 
-                    "description": "Overview of characteristics of observation simulation in atmos model.", 
-                    "id": "cordexp.atmos.observation_simulation.overview", 
-                    "cardinality": "0.1", 
-                    "type": "l-str", 
-                    "is_cim_property": true, 
-                    "uiOrdinal": 2
-                }
-            ], 
-            "subProcesses": [
-                {
-                    "label": "Isscp Attributes", 
-                    "description": "ISSCP Characteristics", 
-                    "id": "cordexp.atmos.observation_simulation.isscp_attributes", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Top Height Estimation Method", 
-                            "description": "Cloud simulator ISSCP top height estimation methodUo", 
-                            "id": "cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Isscp Top Height", 
-                                "description": "Cloud top height management", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "no adjustment", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "IR brightness", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "visible optical depth", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Top Height Direction", 
-                            "description": "Cloud simulator ISSCP top height direction", 
-                            "id": "cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Isscp Top Height Direction", 
-                                "description": "Direction for finding the radiance determined cloud-top pressure. Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "lowest altitude level", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "highest altitude level", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Cosp Attributes", 
-                    "description": "CFMIP Observational Simulator Package attributes", 
-                    "id": "cordexp.atmos.observation_simulation.cosp_attributes", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Run Configuration", 
-                            "description": "Cloud simulator COSP run configuration", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.run_configuration", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Cosp Run Configuration", 
-                                "description": "Method used to run the CFMIP Observational Simulator Package", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Inline", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Offline", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Number Of Grid Points", 
-                            "description": "Cloud simulator COSP number of grid points", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Number Of Sub Columns", 
-                            "description": "Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Number Of Levels", 
-                            "description": "Cloud simulator COSP number of levels", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Radar Inputs", 
-                    "description": "Characteristics of the cloud radar simulator", 
-                    "id": "cordexp.atmos.observation_simulation.radar_inputs", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Frequency", 
-                            "description": "Cloud simulator radar frequency (Hz)", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.frequency", 
-                            "cardinality": "0.1", 
-                            "type": "float", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Type", 
-                            "description": "Cloud simulator radar type", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.type", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Radar Type", 
-                                "description": "Type of radar", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "surface", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "space borne", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Gas Absorption", 
-                            "description": "Cloud simulator radar uses gas absorption", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.gas_absorption", 
-                            "cardinality": "0.1", 
-                            "type": "bool", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Effective Radius", 
-                            "description": "Cloud simulator radar uses effective radius", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.effective_radius", 
-                            "cardinality": "0.1", 
-                            "type": "bool", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 4
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Lidar Inputs", 
-                    "description": "Characteristics of the cloud lidar simulator", 
-                    "id": "cordexp.atmos.observation_simulation.lidar_inputs", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Ice Types", 
-                            "description": "Cloud simulator lidar ice type", 
-                            "id": "cordexp.atmos.observation_simulation.lidar_inputs.ice_types", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Lidar Ice Type", 
-                                "description": "Ice particle shape in lidar calculations", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "ice spheres", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "ice non-spherical", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Overlap", 
-                            "description": "Cloud simulator lidar overlap", 
-                            "id": "cordexp.atmos.observation_simulation.lidar_inputs.overlap", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Lidar Overlap", 
-                                "description": "lidar overlap type", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "max", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "random", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 5
                         }
                     ]
                 }
@@ -3206,13 +3184,13 @@
         {
             "label": "Gravity Waves", 
             "description": "Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources", 
-            "id": "cordexp.atmos.gravity_waves", 
+            "id": "cordex.atmos.gravity_waves", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the gravity waves in atmos model.", 
-                    "id": "cordexp.atmos.gravity_waves.name", 
+                    "id": "cordex.atmos.gravity_waves.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -3221,7 +3199,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.", 
-                    "id": "cordexp.atmos.gravity_waves.overview", 
+                    "id": "cordex.atmos.gravity_waves.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -3230,7 +3208,7 @@
                 {
                     "label": "Sponge Layer", 
                     "description": "Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.", 
-                    "id": "cordexp.atmos.gravity_waves.sponge_layer", 
+                    "id": "cordex.atmos.gravity_waves.sponge_layer", 
                     "cardinality": "1.1", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -3254,7 +3232,7 @@
                 {
                     "label": "Background", 
                     "description": "Background wave distribution", 
-                    "id": "cordexp.atmos.gravity_waves.background", 
+                    "id": "cordex.atmos.gravity_waves.background", 
                     "cardinality": "1.1", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -3278,7 +3256,7 @@
                 {
                     "label": "Subgrid Scale Orography", 
                     "description": "Subgrid scale orography effects taken into account.", 
-                    "id": "cordexp.atmos.gravity_waves.subgrid_scale_orography", 
+                    "id": "cordex.atmos.gravity_waves.subgrid_scale_orography", 
                     "cardinality": "1.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -3308,22 +3286,31 @@
                 {
                     "label": "Orographic Gravity Waves", 
                     "description": "Gravity waves generated due to the presence of orography", 
-                    "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves", 
+                    "id": "cordex.atmos.gravity_waves.orographic_gravity_waves", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of gravity waves generated due to the presence of orography in atmos model.", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the orographic gravity wave scheme", 
-                            "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves.name", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Source Mechanisms", 
                             "description": "Orographic gravity wave source mechanisms", 
-                            "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3354,12 +3341,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Calculation Method", 
                             "description": "Orographic gravity wave calculation method", 
-                            "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves.calculation_method", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.calculation_method", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3378,12 +3365,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Propagation Scheme", 
                             "description": "Orographic gravity wave propogation scheme", 
-                            "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3406,12 +3393,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Dissipation Scheme", 
                             "description": "Orographic gravity wave dissipation scheme", 
-                            "id": "cordexp.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme", 
+                            "id": "cordex.atmos.gravity_waves.orographic_gravity_waves.dissipation_scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3442,29 +3429,38 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }, 
                 {
                     "label": "Non Orographic Gravity Waves", 
                     "description": "Gravity waves generated by non-orographic processes.", 
-                    "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves", 
+                    "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of gravity waves generated by non-orographic processes. in atmos model.", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Name", 
                             "description": "Commonly used name for the non-orographic gravity wave scheme", 
-                            "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves.name", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.name", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Source Mechanisms", 
                             "description": "Non-orographic gravity wave source mechanisms", 
-                            "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3487,12 +3483,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Calculation Method", 
                             "description": "Non-orographic gravity wave calculation method", 
-                            "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.calculation_method", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3511,12 +3507,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Propagation Scheme", 
                             "description": "Non-orographic gravity wave propogation scheme", 
-                            "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3535,12 +3531,12 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }, 
                         {
                             "label": "Dissipation Scheme", 
                             "description": "Non-orographic gravity wave dissipation scheme", 
-                            "id": "cordexp.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme", 
+                            "id": "cordex.atmos.gravity_waves.non_orographic_gravity_waves.dissipation_scheme", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3571,7 +3567,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 5
+                            "uiOrdinal": 6
                         }
                     ]
                 }
@@ -3580,13 +3576,13 @@
         {
             "label": "Natural Forcing", 
             "description": "Natural forcing: solar and volcanic.", 
-            "id": "cordexp.atmos.natural_forcing", 
+            "id": "cordex.atmos.natural_forcing", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the natural forcing in atmos model.", 
-                    "id": "cordexp.atmos.natural_forcing.name", 
+                    "id": "cordex.atmos.natural_forcing.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -3595,7 +3591,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of natural forcing: solar and volcanic. in atmos model.", 
-                    "id": "cordexp.atmos.natural_forcing.overview", 
+                    "id": "cordex.atmos.natural_forcing.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -3606,13 +3602,22 @@
                 {
                     "label": "Solar Pathways", 
                     "description": "Pathways for solar forcing of the atmosphere", 
-                    "id": "cordexp.atmos.natural_forcing.solar_pathways", 
+                    "id": "cordex.atmos.natural_forcing.solar_pathways", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of pathways for solar forcing of the atmosphere in atmos model.", 
+                            "id": "cordex.atmos.natural_forcing.solar_pathways.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Pathways", 
                             "description": "Pathways for the solar forcing of the atmosphere model domain", 
-                            "id": "cordexp.atmos.natural_forcing.solar_pathways.pathways", 
+                            "id": "cordex.atmos.natural_forcing.solar_pathways.pathways", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3635,20 +3640,29 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
                 {
                     "label": "Solar Constant", 
                     "description": "Solar constant and top of atmosphere insolation characteristics", 
-                    "id": "cordexp.atmos.natural_forcing.solar_constant", 
+                    "id": "cordex.atmos.natural_forcing.solar_constant", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of solar constant and top of atmosphere insolation characteristics in atmos model.", 
+                            "id": "cordex.atmos.natural_forcing.solar_constant.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Type", 
                             "description": "Time adaptation of the solar constant.", 
-                            "id": "cordexp.atmos.natural_forcing.solar_constant.type", 
+                            "id": "cordex.atmos.natural_forcing.solar_constant.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3667,38 +3681,47 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Fixed Value", 
                             "description": "If the solar constant is fixed, enter the value of the solar constant (W m-2).", 
-                            "id": "cordexp.atmos.natural_forcing.solar_constant.fixed_value", 
+                            "id": "cordex.atmos.natural_forcing.solar_constant.fixed_value", 
                             "cardinality": "0.1", 
                             "type": "float", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transient Characteristics", 
                             "description": "Solar constant transient characteristics (W m-2)", 
-                            "id": "cordexp.atmos.natural_forcing.solar_constant.transient_characteristics", 
+                            "id": "cordex.atmos.natural_forcing.solar_constant.transient_characteristics", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
                 {
                     "label": "Orbital Parameters", 
                     "description": "Orbital parameters and top of atmosphere insolation characteristics", 
-                    "id": "cordexp.atmos.natural_forcing.orbital_parameters", 
+                    "id": "cordex.atmos.natural_forcing.orbital_parameters", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.", 
+                            "id": "cordex.atmos.natural_forcing.orbital_parameters.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Type", 
                             "description": "Type of orbital parameter", 
-                            "id": "cordexp.atmos.natural_forcing.orbital_parameters.type", 
+                            "id": "cordex.atmos.natural_forcing.orbital_parameters.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3717,30 +3740,30 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Fixed Reference Date", 
                             "description": "Reference date for fixed orbital parameters (yyyy)", 
-                            "id": "cordexp.atmos.natural_forcing.orbital_parameters.fixed_reference_date", 
+                            "id": "cordex.atmos.natural_forcing.orbital_parameters.fixed_reference_date", 
                             "cardinality": "0.1", 
                             "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Transient Method", 
-                            "description": "Description of transient orbital parameters", 
-                            "id": "cordexp.atmos.natural_forcing.orbital_parameters.transient_method", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
                             "is_cim_property": false, 
                             "uiOrdinal": 3
                         }, 
                         {
+                            "label": "Transient Method", 
+                            "description": "Description of transient orbital parameters", 
+                            "id": "cordex.atmos.natural_forcing.orbital_parameters.transient_method", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }, 
+                        {
                             "label": "Computation Method", 
                             "description": "Method used for computing orbital parameters.", 
-                            "id": "cordexp.atmos.natural_forcing.orbital_parameters.computation_method", 
+                            "id": "cordex.atmos.natural_forcing.orbital_parameters.computation_method", 
                             "cardinality": "0.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3759,46 +3782,64 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
                 {
                     "label": "Insolation Ozone", 
                     "description": "Impact of solar insolation on stratospheric ozone", 
-                    "id": "cordexp.atmos.natural_forcing.insolation_ozone", 
+                    "id": "cordex.atmos.natural_forcing.insolation_ozone", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of impact of solar insolation on stratospheric ozone in atmos model.", 
+                            "id": "cordex.atmos.natural_forcing.insolation_ozone.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Solar Ozone Impact", 
                             "description": "Does top of atmosphere insolation impact on stratospheric ozone?", 
-                            "id": "cordexp.atmos.natural_forcing.insolation_ozone.solar_ozone_impact", 
+                            "id": "cordex.atmos.natural_forcing.insolation_ozone.solar_ozone_impact", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }
                     ]
                 }, 
                 {
                     "label": "Volcanoes Treatment", 
                     "description": "Characteristics and treatment of volcanic forcing in the atmosphere", 
-                    "id": "cordexp.atmos.natural_forcing.volcanoes_treatment", 
+                    "id": "cordex.atmos.natural_forcing.volcanoes_treatment", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Overview", 
+                            "description": "Overview of characteristics and treatment of volcanic forcing in the atmosphere in atmos model.", 
+                            "id": "cordex.atmos.natural_forcing.volcanoes_treatment.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Volcanoes Characteristics", 
                             "description": "Description of how the volcanic forcing is taken into account in the atmosphere.", 
-                            "id": "cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
+                            "id": "cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
                             "cardinality": "1.1", 
                             "type": "l-str", 
                             "is_cim_property": false, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Volcanoes Implementation", 
                             "description": "How volcanic effects are modeled in the atmosphere.", 
-                            "id": "cordexp.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation", 
+                            "id": "cordex.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -3817,7 +3858,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }
@@ -3827,13 +3868,13 @@
     "grid": {
         "label": "Grid", 
         "description": "Atmosphere grid", 
-        "id": "cordexp.atmos.grid", 
+        "id": "cordex.atmos.grid", 
         "contact": "Charlotte Pascoe", 
         "properties": [
             {
                 "label": "Name", 
                 "description": "Name of grid in atmos model.", 
-                "id": "cordexp.atmos.grid.name", 
+                "id": "cordex.atmos.grid.name", 
                 "cardinality": "0.1", 
                 "type": "str", 
                 "is_cim_property": true, 
@@ -3842,7 +3883,7 @@
             {
                 "label": "Overview", 
                 "description": "Overview of grid in atmos model.", 
-                "id": "cordexp.atmos.grid.overview", 
+                "id": "cordex.atmos.grid.overview", 
                 "cardinality": "0.1", 
                 "type": "l-str", 
                 "is_cim_property": true, 
@@ -3853,18 +3894,102 @@
             {
                 "label": "Discretisation", 
                 "description": "Atmosphere grid discretisation", 
-                "id": "cordexp.atmos.grid.discretisation", 
+                "id": "cordex.atmos.grid.discretisation", 
                 "contact": "Charlotte Pascoe", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of atmosphere grid discretisation in atmos model.", 
+                        "id": "cordex.atmos.grid.discretisation.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }
+                ], 
                 "propertySets": [
                     {
                         "label": "Horizontal", 
                         "description": "Atmosphere discretisation in the horizontal", 
-                        "id": "cordexp.atmos.grid.discretisation.horizontal", 
+                        "id": "cordex.atmos.grid.discretisation.horizontal", 
                         "properties": [
+                            {
+                                "label": "Coordinate System", 
+                                "description": "Name of horizontal coordinate system/projection", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.coordinate_system", 
+                                "cardinality": "1.1", 
+                                "type": "enum", 
+                                "is_cim_property": false, 
+                                "enum": {
+                                    "label": "Horizontal Coordinate System", 
+                                    "description": "Type of horizontal projection", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "Rotated Polar", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Lambert Conformal Conic", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Others", 
+                                            "description": null
+                                        }
+                                    ]
+                                }, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Coordinate System Details", 
+                                "description": "Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.coordinate_system_details", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Horizontal Resolution", 
+                                "description": "Resolution (in deg or km)", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.horizontal_resolution", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Full Domain", 
+                                "description": "Size of full domain (Nlon x Nlat)", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.full_domain", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Relaxation Zone", 
+                                "description": "Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.relaxation_zone", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 5
+                            }, 
+                            {
+                                "label": "Inner Domain", 
+                                "description": "Size of inner domain (Nlon x Nlat)", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.inner_domain", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 6
+                            }, 
                             {
                                 "label": "Scheme Type", 
                                 "description": "Horizontal discretisation type", 
-                                "id": "cordexp.atmos.grid.discretisation.horizontal.scheme_type", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.scheme_type", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -3883,12 +4008,12 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 1
+                                "uiOrdinal": 7
                             }, 
                             {
                                 "label": "Scheme Method", 
                                 "description": "Horizontal discretisation method", 
-                                "id": "cordexp.atmos.grid.discretisation.horizontal.scheme_method", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.scheme_method", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -3915,12 +4040,12 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 2
+                                "uiOrdinal": 8
                             }, 
                             {
                                 "label": "Scheme Order", 
                                 "description": "Horizontal discretisation function order", 
-                                "id": "cordexp.atmos.grid.discretisation.horizontal.scheme_order", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.scheme_order", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -3943,12 +4068,12 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 3
+                                "uiOrdinal": 9
                             }, 
                             {
                                 "label": "Horizontal Pole", 
                                 "description": "Horizontal discretisation pole singularity treatment", 
-                                "id": "cordexp.atmos.grid.discretisation.horizontal.horizontal_pole", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.horizontal_pole", 
                                 "cardinality": "0.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -3971,12 +4096,12 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 4
+                                "uiOrdinal": 10
                             }, 
                             {
                                 "label": "Grid Type", 
                                 "description": "Horizontal grid type", 
-                                "id": "cordexp.atmos.grid.discretisation.horizontal.grid_type", 
+                                "id": "cordex.atmos.grid.discretisation.horizontal.grid_type", 
                                 "cardinality": "1.1", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -4003,19 +4128,19 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 5
+                                "uiOrdinal": 11
                             }
                         ]
                     }, 
                     {
                         "label": "Vertical", 
                         "description": "Atmosphere discretisation in the vertical", 
-                        "id": "cordexp.atmos.grid.discretisation.vertical", 
+                        "id": "cordex.atmos.grid.discretisation.vertical", 
                         "properties": [
                             {
                                 "label": "Coordinate Type", 
                                 "description": "Type of vertical coordinate system", 
-                                "id": "cordexp.atmos.grid.discretisation.vertical.coordinate_type", 
+                                "id": "cordex.atmos.grid.discretisation.vertical.coordinate_type", 
                                 "cardinality": "1.N", 
                                 "type": "enum", 
                                 "is_cim_property": false, 
@@ -4057,13 +4182,13 @@
     "keyProperties": {
         "label": "Key Properties", 
         "description": "Atmosphere key properties", 
-        "id": "cordexp.atmos.key_properties", 
+        "id": "cordex.atmos.key_properties", 
         "contact": "Charlotte Pascoe", 
         "properties": [
             {
                 "label": "Name", 
                 "description": "Name of atmos model code", 
-                "id": "cordexp.atmos.key_properties.name", 
+                "id": "cordex.atmos.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "is_cim_property": true, 
@@ -4072,7 +4197,7 @@
             {
                 "label": "Keywords", 
                 "description": "Keywords associated with atmos model code", 
-                "id": "cordexp.atmos.key_properties.keywords", 
+                "id": "cordex.atmos.key_properties.keywords", 
                 "cardinality": "1.1", 
                 "type": "cs-str", 
                 "is_cim_property": true, 
@@ -4081,7 +4206,7 @@
             {
                 "label": "Overview", 
                 "description": "Overview of atmos model.", 
-                "id": "cordexp.atmos.key_properties.overview", 
+                "id": "cordex.atmos.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "l-str", 
                 "is_cim_property": true, 
@@ -4090,7 +4215,7 @@
             {
                 "label": "Model Family", 
                 "description": "Type of atmospheric model.", 
-                "id": "cordexp.atmos.key_properties.model_family", 
+                "id": "cordex.atmos.key_properties.model_family", 
                 "cardinality": "1.1", 
                 "type": "enum", 
                 "is_cim_property": false, 
@@ -4114,7 +4239,7 @@
             {
                 "label": "Basic Approximations", 
                 "description": "Basic approximations made in the atmosphere.", 
-                "id": "cordexp.atmos.key_properties.basic_approximations", 
+                "id": "cordex.atmos.key_properties.basic_approximations", 
                 "cardinality": "1.N", 
                 "type": "enum", 
                 "is_cim_property": false, 
@@ -4156,101 +4281,110 @@
             {
                 "label": "Resolution", 
                 "description": "Characteristics of the model resolution", 
-                "id": "cordexp.atmos.key_properties.resolution", 
+                "id": "cordex.atmos.key_properties.resolution", 
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Horizontal Resolution Name", 
-                        "description": "This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.", 
-                        "id": "cordexp.atmos.key_properties.resolution.horizontal_resolution_name", 
-                        "cardinality": "1.1", 
+                        "label": "Overview", 
+                        "description": "Overview of characteristics of the model resolution in atmos model.", 
+                        "id": "cordex.atmos.key_properties.resolution.overview", 
+                        "cardinality": "0.1", 
                         "type": "str", 
-                        "is_cim_property": false, 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
                         "label": "Canonical Horizontal Resolution", 
                         "description": "Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.", 
-                        "id": "cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution", 
+                        "id": "cordex.atmos.key_properties.resolution.canonical_horizontal_resolution", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Range Horizontal Resolution", 
-                        "description": "Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg", 
-                        "id": "cordexp.atmos.key_properties.resolution.range_horizontal_resolution", 
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on the computational grid.", 
+                        "id": "cordex.atmos.key_properties.resolution.number_of_vertical_levels", 
                         "cardinality": "1.1", 
-                        "type": "str", 
+                        "type": "int", 
                         "is_cim_property": false, 
                         "uiOrdinal": 3
                     }, 
                     {
-                        "label": "Number Of Vertical Levels", 
-                        "description": "Number of vertical levels resolved on the computational grid.", 
-                        "id": "cordexp.atmos.key_properties.resolution.number_of_vertical_levels", 
-                        "cardinality": "1.1", 
-                        "type": "int", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 4
-                    }, 
-                    {
                         "label": "High Top", 
                         "description": "Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.", 
-                        "id": "cordexp.atmos.key_properties.resolution.high_top", 
+                        "id": "cordex.atmos.key_properties.resolution.high_top", 
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
             {
                 "label": "Timestepping", 
                 "description": "Characteristics of the atmosphere model time stepping", 
-                "id": "cordexp.atmos.key_properties.timestepping", 
+                "id": "cordex.atmos.key_properties.timestepping", 
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Timestep Dynamics", 
-                        "description": "Timestep for the dynamics in seconds", 
-                        "id": "cordexp.atmos.key_properties.timestepping.timestep_dynamics", 
-                        "cardinality": "1.1", 
-                        "type": "int", 
-                        "is_cim_property": false, 
+                        "label": "Overview", 
+                        "description": "Overview of characteristics of the atmosphere model time stepping in atmos model.", 
+                        "id": "cordex.atmos.key_properties.timestepping.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Timestep Shortwave Radiative Transfer", 
-                        "description": "Timestep for the shortwave radiative transfer in seconds.", 
-                        "id": "cordexp.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer", 
-                        "cardinality": "0.1", 
+                        "label": "Timestep Dynamics", 
+                        "description": "Timestep for the dynamics in seconds", 
+                        "id": "cordex.atmos.key_properties.timestepping.timestep_dynamics", 
+                        "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Timestep Longwave Radiative Transfer", 
-                        "description": "Timestep for the longwave radiative transfer in seconds.", 
-                        "id": "cordexp.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer", 
+                        "label": "Timestep Shortwave Radiative Transfer", 
+                        "description": "Timestep for the shortwave radiative transfer in seconds.", 
+                        "id": "cordex.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
                         "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Timestep Longwave Radiative Transfer", 
+                        "description": "Timestep for the longwave radiative transfer in seconds.", 
+                        "id": "cordex.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
             {
                 "label": "Orography", 
                 "description": "Characteristics of the model orography", 
-                "id": "cordexp.atmos.key_properties.orography", 
+                "id": "cordex.atmos.key_properties.orography", 
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
+                        "label": "Overview", 
+                        "description": "Overview of characteristics of the model orography in atmos model.", 
+                        "id": "cordex.atmos.key_properties.orography.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
                         "label": "Type", 
                         "description": "Type of orographic representation.", 
-                        "id": "cordexp.atmos.key_properties.orography.type", 
+                        "id": "cordex.atmos.key_properties.orography.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "is_cim_property": false, 
@@ -4269,12 +4403,12 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Modified", 
                         "description": "If the orography type is modified describe the adaptation.", 
-                        "id": "cordexp.atmos.key_properties.orography.modified", 
+                        "id": "cordex.atmos.key_properties.orography.modified", 
                         "cardinality": "0.N", 
                         "type": "enum", 
                         "is_cim_property": false, 
@@ -4301,47 +4435,47 @@
                                 }
                             ]
                         }, 
-                        "uiOrdinal": 2
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Time-varying", 
                         "description": "Describe any time varying orographic change", 
-                        "id": "cordexp.atmos.key_properties.orography.time-varying", 
+                        "id": "cordex.atmos.key_properties.orography.time-varying", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
             {
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for atmospheric component", 
-                "id": "cordexp.atmos.key_properties.tuning_applied", 
+                "id": "cordex.atmos.key_properties.tuning_applied", 
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Description", 
-                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
-                        "id": "cordexp.atmos.key_properties.tuning_applied.description", 
-                        "cardinality": "1.1", 
-                        "type": "l-str", 
-                        "is_cim_property": false, 
+                        "label": "Overview", 
+                        "description": "Overview of tuning methodology for atmospheric component in atmos model.", 
+                        "id": "cordex.atmos.key_properties.tuning_applied.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Global Mean Metrics Used", 
-                        "description": "List set of metrics of the global mean state used in tuning model/component", 
-                        "id": "cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used", 
-                        "cardinality": "0.1", 
-                        "type": "cs-str", 
+                        "label": "Description", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "id": "cordex.atmos.key_properties.tuning_applied.description", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
                         "is_cim_property": false, 
                         "uiOrdinal": 2
                     }, 
                     {
                         "label": "Regional Metrics Used", 
                         "description": "List of regional metrics of mean state used in tuning model/component", 
-                        "id": "cordexp.atmos.key_properties.tuning_applied.regional_metrics_used", 
+                        "id": "cordex.atmos.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
@@ -4350,7 +4484,7 @@
                     {
                         "label": "Trend Metrics Used", 
                         "description": "List observed trend metrics used in tuning model/component", 
-                        "id": "cordexp.atmos.key_properties.tuning_applied.trend_metrics_used", 
+                        "id": "cordex.atmos.key_properties.tuning_applied.trend_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
