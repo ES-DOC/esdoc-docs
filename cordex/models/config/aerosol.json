@@ -1,0 +1,1478 @@
+{
+    "label": "Aerosol", 
+    "description": "Atmospheric aerosols", 
+    "id": "aerosol.aerosol", 
+    "contact": "David Hassell", 
+    "processes": [
+        {
+            "label": "Transport", 
+            "description": "Aerosol transport", 
+            "id": "aerosol.aerosol.transport", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the transport in aerosol model.", 
+                    "id": "aerosol.aerosol.transport.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of aerosol transport in aerosol model.", 
+                    "id": "aerosol.aerosol.transport.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Scheme", 
+                    "description": "Method for aerosol transport modelling", 
+                    "id": "aerosol.aerosol.transport.scheme", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Transport Schemes", 
+                        "description": "Method for aerosol transport modeling", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Uses atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (eulerian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (semi-lagrangian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (eulerian and semi-lagrangian)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Specific transport scheme (lagrangian)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Mass Conservation Scheme", 
+                    "description": "Methods used to ensure mass conservation.", 
+                    "id": "aerosol.aerosol.transport.mass_conservation_scheme", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Mass Conservation Methods", 
+                        "description": "Methods used to ensure mass conservation", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Uses atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Mass adjustment", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Concentrations positivity", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Gradients monotonicity", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Convention", 
+                    "description": "Transport by convention", 
+                    "id": "aerosol.aerosol.transport.convention", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Convection Types", 
+                        "description": "Transport by convection", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Uses atmospheric chemistry transport scheme", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Convective fluxes connected to tracers", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Vertical velocities connected to tracers", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 5
+                }
+            ]
+        }, 
+        {
+            "label": "Emissions", 
+            "description": "Atmospheric aerosol emissions", 
+            "id": "aerosol.aerosol.emissions", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the emissions in aerosol model.", 
+                    "id": "aerosol.aerosol.emissions.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of atmospheric aerosol emissions in aerosol model.", 
+                    "id": "aerosol.aerosol.emissions.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Method", 
+                    "description": "Method used to define aerosol species (several methods allowed because the different species may not use the same method).", 
+                    "id": "aerosol.aerosol.emissions.method", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Emissions Methods", 
+                        "description": "Method used to define aerosol species emitted (several methods allowed because the different species may not use the same method).", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "None", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed (climatology)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed CORDEX", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Prescribed above surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interactive", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interactive above surface", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Sources", 
+                    "description": "Sources of the aerosol species are taken into account in the emissions scheme", 
+                    "id": "aerosol.aerosol.emissions.sources", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Surface Source Types", 
+                        "description": "Sources of the aerosol species emitted at the surface that are taken into account in the emissions scheme", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Vegetation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Volcanos", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Bare ground", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Lightning", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Fires", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Aircraft", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Anthropogenic", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Prescribed Climatology", 
+                    "description": "Specify the climatology type for aerosol emissions", 
+                    "id": "aerosol.aerosol.emissions.prescribed_climatology", 
+                    "cardinality": "0.1", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Prescribed Climatology Type", 
+                        "description": "Specify the climatology type for aerosol emissions", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Constant", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Interannual", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Annual", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Monthly", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Daily", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Prescribed Climatology Emitted Species", 
+                    "description": "List of aerosol species emitted and prescribed via a climatology", 
+                    "id": "aerosol.aerosol.emissions.prescribed_climatology_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Prescribed Spatially Uniform Emitted Species", 
+                    "description": "List of aerosol species emitted  and prescribed as spatially uniform", 
+                    "id": "aerosol.aerosol.emissions.prescribed_spatially_uniform_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 7
+                }, 
+                {
+                    "label": "Interactive Emitted Species", 
+                    "description": "List of aerosol species emitted and specified via an interactive method", 
+                    "id": "aerosol.aerosol.emissions.interactive_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 8
+                }, 
+                {
+                    "label": "Other Emitted Species", 
+                    "description": "List of aerosol species emitted and specified via an \"other method\"", 
+                    "id": "aerosol.aerosol.emissions.other_emitted_species", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 9
+                }, 
+                {
+                    "label": "Other Method Characteristics", 
+                    "description": "Characteristics of the \"other method\" used for aerosol emissions", 
+                    "id": "aerosol.aerosol.emissions.other_method_characteristics", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 10
+                }
+            ]
+        }, 
+        {
+            "label": "Concentrations", 
+            "description": "Atmospheric aerosol concentrations", 
+            "id": "aerosol.aerosol.concentrations", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the concentrations in aerosol model.", 
+                    "id": "aerosol.aerosol.concentrations.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of atmospheric aerosol concentrations in aerosol model.", 
+                    "id": "aerosol.aerosol.concentrations.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Prescribed Lower Boundary", 
+                    "description": "List of species prescribed at the lower boundary.", 
+                    "id": "aerosol.aerosol.concentrations.prescribed_lower_boundary", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Prescribed Upper Boundary", 
+                    "description": "List of species prescribed at the upper boundary.", 
+                    "id": "aerosol.aerosol.concentrations.prescribed_upper_boundary", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Prescribed Fields Mmr", 
+                    "description": "List of species prescribed as mass mixing ratios.", 
+                    "id": "aerosol.aerosol.concentrations.prescribed_fields_mmr", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Prescribed Fields Aod Plus Ccn", 
+                    "description": "List of species prescribed as AOD plus CCNs.", 
+                    "id": "aerosol.aerosol.concentrations.prescribed_fields_aod_plus_ccn", 
+                    "cardinality": "0.1", 
+                    "type": "cs-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 6
+                }
+            ]
+        }, 
+        {
+            "label": "Optical Radiative Properties", 
+            "description": "Aerosol optical and radiative properties", 
+            "id": "aerosol.aerosol.optical_radiative_properties", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the optical radiative properties in aerosol model.", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of aerosol optical and radiative properties in aerosol model.", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.overview", 
+                    "cardinality": "0.1", 
+                    "type": "l-str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 2
+                }
+            ], 
+            "subProcesses": [
+                {
+                    "label": "Absorption", 
+                    "description": "Absortion properties in aerosol scheme", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.absorption", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of absortion properties in aerosol scheme in aerosol model.", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.absorption.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Black Carbon", 
+                            "description": "Absorption mass coefficient of black carbon at 550nm (if non-absorbing enter 0)", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.absorption.black_carbon", 
+                            "cardinality": "0.1", 
+                            "type": "float", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Dust", 
+                            "description": "Absorption mass coefficient of dust at 550nm (if non-absorbing enter 0)", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.absorption.dust", 
+                            "cardinality": "0.1", 
+                            "type": "float", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Organics", 
+                            "description": "Absorption mass coefficient of organics at 550nm (if non-absorbing enter 0)", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.absorption.organics", 
+                            "cardinality": "0.1", 
+                            "type": "float", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Mixtures", 
+                    "description": "", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.mixtures", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of  in aerosol model.", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.mixtures.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "External", 
+                            "description": "Is there external mixing with respect to chemical composition?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.mixtures.external", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Internal", 
+                            "description": "Is there internal mixing with respect to chemical composition?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.mixtures.internal", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Mixing Rule", 
+                            "description": "If there is internal mixing with respect to chemical composition then indicate the mixing rule", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.mixtures.mixing_rule", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Impact Of H2o", 
+                    "description": "The impact of H2O on aerosols", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.impact_of_h2o", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of the impact of h2o on aerosols in aerosol model.", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.impact_of_h2o.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Size", 
+                            "description": "Does H2O impact size?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.impact_of_h2o.size", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Internal Mixture", 
+                            "description": "Does H2O impact aerosol internal mixture?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.impact_of_h2o.internal_mixture", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "External Mixture", 
+                            "description": "Does H2O impact aerosol external mixture?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.impact_of_h2o.external_mixture", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Radiative Scheme", 
+                    "description": "Radiative scheme for aerosol", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.radiative_scheme", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of radiative scheme for aerosol in aerosol model.", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.radiative_scheme.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of radiative scheme", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.radiative_scheme.overview", 
+                            "cardinality": "1.1", 
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Shortwave Bands", 
+                            "description": "Number of shortwave bands", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.radiative_scheme.shortwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Longwave Bands", 
+                            "description": "Number of longwave bands", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.radiative_scheme.longwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Cloud Interactions", 
+                    "description": "Aerosol-cloud interactions", 
+                    "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions", 
+                    "contact": "David Hassell", 
+                    "properties": [
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of aerosol-cloud interactions in aerosol model.", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.overview", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "is_cim_property": true, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Overview", 
+                            "description": "Overview of aerosol-cloud interactions", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.overview", 
+                            "cardinality": "1.1", 
+                            "type": "l-str", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Twomey", 
+                            "description": "Is the Twomey effect included?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.twomey", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Twomey Minimum Ccn", 
+                            "description": "If the Twomey effect is included, then what is the minimum CCN number?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.twomey_minimum_ccn", 
+                            "cardinality": "0.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 4
+                        }, 
+                        {
+                            "label": "Drizzle", 
+                            "description": "Does the scheme affect drizzle?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.drizzle", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 5
+                        }, 
+                        {
+                            "label": "Cloud Lifetime", 
+                            "description": "Does the scheme affect cloud lifetime?", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.cloud_lifetime", 
+                            "cardinality": "1.1", 
+                            "type": "bool", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 6
+                        }, 
+                        {
+                            "label": "Longwave Bands", 
+                            "description": "Number of longwave bands", 
+                            "id": "aerosol.aerosol.optical_radiative_properties.cloud_interactions.longwave_bands", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "is_cim_property": false, 
+                            "uiOrdinal": 7
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "label": "Model", 
+            "description": "Aerosol model", 
+            "id": "aerosol.aerosol.model", 
+            "contact": "David Hassell", 
+            "properties": [
+                {
+                    "label": "Name", 
+                    "description": "Commonly used name for the model in aerosol model.", 
+                    "id": "aerosol.aerosol.model.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "is_cim_property": true, 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Overview", 
+                    "description": "Overview of atmospheric aerosol model", 
+                    "id": "aerosol.aerosol.model.overview", 
+                    "cardinality": "1.1", 
+                    "type": "l-str", 
+                    "is_cim_property": false, 
+                    "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Processes", 
+                    "description": "Processes included in the aerosol model.", 
+                    "id": "aerosol.aerosol.model.processes", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Model Processes", 
+                        "description": "Processes included in the aerosol model.", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "Dry deposition", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sedimentation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Wet deposition (impaction scavenging)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Wet deposition (nucleation scavenging)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Coagulation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Oxidation (gas phase)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Oxidation (in cloud)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Condensation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ageing", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Advection (horizontal)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Advection (vertical)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Heterogeneous chemistry", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nucleation", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
+                }, 
+                {
+                    "label": "Coupling", 
+                    "description": "Other model components coupled to the aerosol model", 
+                    "id": "aerosol.aerosol.model.coupling", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Coupling", 
+                        "description": "Other model components coupled to the aerosol model.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Radiation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Land surface", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Heterogeneous chemistry", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Clouds", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ocean", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Cryosphere", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Gas phase chemistry", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 4
+                }, 
+                {
+                    "label": "Gas Phase Precursors", 
+                    "description": "Gas phase aerosol precursors.", 
+                    "id": "aerosol.aerosol.model.gas_phase_precursors", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Gas Phase Precursors", 
+                        "description": "Gas phase aerosol precursors.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "DMS", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SO2", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ammonia", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Iodine", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Terpene", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Isoprene", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "VOC", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NOx", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 5
+                }, 
+                {
+                    "label": "Scheme Type", 
+                    "description": "Type(s) of aerosol scheme used by the aerosol model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
+                    "id": "aerosol.aerosol.model.scheme_type", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Scheme Types", 
+                        "description": "Type(s) of aerosol scheme used by the aerosols model (potentially multiple: some species may be covered by one type of aerosol scheme and other species covered by another type).", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Bulk", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Modal", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Bin", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Bulk Scheme Species", 
+                    "description": "Species covered by the bulk scheme.", 
+                    "id": "aerosol.aerosol.model.bulk_scheme_species", 
+                    "cardinality": "1.N", 
+                    "type": "enum", 
+                    "is_cim_property": false, 
+                    "enum": {
+                        "label": "Species", 
+                        "description": "Aerosol species.", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Sulphate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Nitrate", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Sea salt", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Dust", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Organic", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Black carbon / soot", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "SOA (secondary organic aerosols)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "POM (particulate organic matter)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "Polar stratospheric ice", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAT (Nitric acid trihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "NAD (Nitric acid dihydrate)", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "STS (supercooled ternary solution aerosol particule)", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 7
+                }
+            ]
+        }
+    ], 
+    "grid": {
+        "label": "Grid", 
+        "description": "Aerosol grid", 
+        "id": "aerosol.aerosol.grid", 
+        "contact": "David Hassell", 
+        "properties": [
+            {
+                "label": "Name", 
+                "description": "Name of grid in aerosol model.", 
+                "id": "aerosol.aerosol.grid.name", 
+                "cardinality": "0.1", 
+                "type": "str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of grid in aerosol model.", 
+                "id": "aerosol.aerosol.grid.overview", 
+                "cardinality": "0.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
+            }, 
+            {
+                "label": "Matches Atmosphere Grid", 
+                "description": " Does the atmospheric aerosol grid match the atmosphere grid?", 
+                "id": "aerosol.aerosol.grid.matches_atmosphere_grid", 
+                "cardinality": "1.1", 
+                "type": "bool", 
+                "is_cim_property": false, 
+                "uiOrdinal": 3
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Resolution", 
+                "description": "Resolution in the atmospheric aerosol grid", 
+                "id": "aerosol.aerosol.grid.resolution", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of resolution in the atmospheric aerosol grid in aerosol model.", 
+                        "id": "aerosol.aerosol.grid.resolution.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
+                        "id": "aerosol.aerosol.grid.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, e.g. 50km or 0.1 degrees etc.", 
+                        "id": "aerosol.aerosol.grid.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Number Of Horizontal Gridpoints", 
+                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "id": "aerosol.aerosol.grid.resolution.number_of_horizontal_gridpoints", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on computational grid.", 
+                        "id": "aerosol.aerosol.grid.resolution.number_of_vertical_levels", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Is Adaptive Grid", 
+                        "description": "Set to true if grid resolution changes during execution.", 
+                        "id": "aerosol.aerosol.grid.resolution.is_adaptive_grid", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }
+        ]
+    }, 
+    "keyProperties": {
+        "label": "Key Properties", 
+        "description": "Key properties of the aerosol model", 
+        "id": "aerosol.aerosol.key_properties", 
+        "contact": "David Hassell", 
+        "properties": [
+            {
+                "label": "Name", 
+                "description": "Name of aerosol model code", 
+                "id": "aerosol.aerosol.key_properties.name", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 1
+            }, 
+            {
+                "label": "Keywords", 
+                "description": "Keywords associated with aerosol model code", 
+                "id": "aerosol.aerosol.key_properties.keywords", 
+                "cardinality": "1.1", 
+                "type": "cs-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 2
+            }, 
+            {
+                "label": "Overview", 
+                "description": "Overview of aerosol model.", 
+                "id": "aerosol.aerosol.key_properties.overview", 
+                "cardinality": "1.1", 
+                "type": "l-str", 
+                "is_cim_property": true, 
+                "uiOrdinal": 3
+            }, 
+            {
+                "label": "Scheme Scope", 
+                "description": "Atmospheric domains covered by the aerosol model", 
+                "id": "aerosol.aerosol.key_properties.scheme_scope", 
+                "cardinality": "1.N", 
+                "type": "enum", 
+                "is_cim_property": false, 
+                "enum": {
+                    "label": "Scheme Scopes", 
+                    "description": "Atmospheric domains covered by the aerosol model", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "troposphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "stratosphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "mesosphere", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "whole atmosphere", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 4
+            }, 
+            {
+                "label": "Basic Approximations", 
+                "description": "Basic approximations made in the aerosol model", 
+                "id": "aerosol.aerosol.key_properties.basic_approximations", 
+                "cardinality": "1.1", 
+                "type": "str", 
+                "is_cim_property": false, 
+                "uiOrdinal": 5
+            }, 
+            {
+                "label": "Prognostic Variables Form", 
+                "description": "Prognostic variables in the aerosol model", 
+                "id": "aerosol.aerosol.key_properties.prognostic_variables_form", 
+                "cardinality": "1.N", 
+                "type": "enum", 
+                "is_cim_property": false, 
+                "enum": {
+                    "label": "Prognostic Vars Types", 
+                    "description": "Form of prognostic variables in the aerosol model.", 
+                    "isOpen": true, 
+                    "choices": [
+                        {
+                            "label": "3D mass/volume ratio for aerosols", 
+                            "description": null
+                        }, 
+                        {
+                            "label": "3D number concentration for aerosols", 
+                            "description": null
+                        }
+                    ]
+                }, 
+                "uiOrdinal": 6
+            }, 
+            {
+                "label": "Number Of Tracers", 
+                "description": "Number of tracers in the aerosol model", 
+                "id": "aerosol.aerosol.key_properties.number_of_tracers", 
+                "cardinality": "1.1", 
+                "type": "int", 
+                "is_cim_property": false, 
+                "uiOrdinal": 7
+            }, 
+            {
+                "label": "Family Approach", 
+                "description": "Are aerosol calculations generalized into families of species?", 
+                "id": "aerosol.aerosol.key_properties.family_approach", 
+                "cardinality": "1.1", 
+                "type": "bool", 
+                "is_cim_property": false, 
+                "uiOrdinal": 8
+            }
+        ], 
+        "propertySets": [
+            {
+                "label": "Software Properties", 
+                "description": "Software properties of aerosol code", 
+                "id": "aerosol.aerosol.key_properties.software_properties", 
+                "properties": [
+                    {
+                        "label": "Repository", 
+                        "description": "Location of code for this component.", 
+                        "id": "aerosol.aerosol.key_properties.software_properties.repository", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Code Version", 
+                        "description": "Code version identifier.", 
+                        "id": "aerosol.aerosol.key_properties.software_properties.code_version", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Code Languages", 
+                        "description": "Code language(s).", 
+                        "id": "aerosol.aerosol.key_properties.software_properties.code_languages", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }
+                ]
+            }
+        ], 
+        "subProcesses": [
+            {
+                "label": "Timestep Framework", 
+                "description": "Physical properties of seawater in ocean", 
+                "id": "aerosol.aerosol.key_properties.timestep_framework", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of physical properties of seawater in ocean in aerosol model.", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Method", 
+                        "description": "Mathematical method deployed to solve the time evolution of the prognostic variables", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.method", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Timestepping Methods", 
+                            "description": "Mathematical method deployed to solve the time evolution of the prognostic variables.", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Uses atmospheric chemistry time stepping", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific timestepping (operator splitting)", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Specific timestepping (integrated)", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Split Operator Advection Timestep", 
+                        "description": "Timestep for aerosol advection (in seconds)", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.split_operator_advection_timestep", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Split Operator Physical Timestep", 
+                        "description": "Timestep for aerosol physics (in seconds).", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.split_operator_physical_timestep", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Integrated Timestep", 
+                        "description": "Timestep for the aerosol model (in seconds)", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.integrated_timestep", 
+                        "cardinality": "1.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Integrated Scheme Type", 
+                        "description": "Specify the type of timestep scheme", 
+                        "id": "aerosol.aerosol.key_properties.timestep_framework.integrated_scheme_type", 
+                        "cardinality": "1.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Integrated Scheme Types", 
+                            "description": "Specify the type of timestep scheme", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Explicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Implicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Semi-implicit", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Semi-analytic", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Impact solver", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Back Euler", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Newton Raphson", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Rosenbrock", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }, 
+            {
+                "label": "Meteorological Forcings", 
+                "description": "", 
+                "id": "aerosol.aerosol.key_properties.meteorological_forcings", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of  in aerosol model.", 
+                        "id": "aerosol.aerosol.key_properties.meteorological_forcings.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Variables 3D", 
+                        "description": "Three dimensional forcing variables, e.g. U, V, W, T, Q, P, conventive mass flux", 
+                        "id": "aerosol.aerosol.key_properties.meteorological_forcings.variables_3D", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Variables 2D", 
+                        "description": "Two dimensional forcing variables, e.g. land-sea mask definition", 
+                        "id": "aerosol.aerosol.key_properties.meteorological_forcings.variables_2D", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Frequency", 
+                        "description": "Frequency with which meteorological forcings are applied (in seconds).", 
+                        "id": "aerosol.aerosol.key_properties.meteorological_forcings.frequency", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }
+                ]
+            }, 
+            {
+                "label": "Resolution", 
+                "description": "Resolution in the aerosol model grid", 
+                "id": "aerosol.aerosol.key_properties.resolution", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of resolution in the aerosol model grid in aerosol model.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Number Of Horizontal Gridpoints", 
+                        "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.number_of_horizontal_gridpoints", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on computational grid.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.number_of_vertical_levels", 
+                        "cardinality": "0.1", 
+                        "type": "int", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Is Adaptive Grid", 
+                        "description": "Set to true if the grid resolution changes during execution.", 
+                        "id": "aerosol.aerosol.key_properties.resolution.is_adaptive_grid", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }, 
+            {
+                "label": "Tuning Applied", 
+                "description": "Tuning methodology for aerosol model", 
+                "id": "aerosol.aerosol.key_properties.tuning_applied", 
+                "contact": "David Hassell", 
+                "properties": [
+                    {
+                        "label": "Overview", 
+                        "description": "Overview of tuning methodology for aerosol model in aerosol model.", 
+                        "id": "aerosol.aerosol.key_properties.tuning_applied.overview", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "is_cim_property": true, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Description", 
+                        "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. Document the relative weight given to climate performance metrics versus process oriented metrics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
+                        "id": "aerosol.aerosol.key_properties.tuning_applied.description", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Global Mean Metrics Used", 
+                        "description": "List of metrics of the global mean state used in tuning model/component", 
+                        "id": "aerosol.aerosol.key_properties.tuning_applied.global_mean_metrics_used", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Regional Metrics Used", 
+                        "description": "List of metrics of regional mean state used in tuning model/component", 
+                        "id": "aerosol.aerosol.key_properties.tuning_applied.regional_metrics_used", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Trend Metrics Used", 
+                        "description": "List observed trend metrics used in tuning model/component", 
+                        "id": "aerosol.aerosol.key_properties.tuning_applied.trend_metrics_used", 
+                        "cardinality": "0.1", 
+                        "type": "cs-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 5
+                    }
+                ]
+            }
+        ]
+    }
+}
