@@ -2,7 +2,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land Ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
+        <dt><b>Description</b></dt><dd>Land Ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice</dd><dt><b>Contact</b></dt><dd>David Hassell</dd><dt><b>Authors</b></dt><dd>David Hassell</dd><dt><b>Contributors</b></dt><dd>Sophie Nowicki, Steve George</dd>
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
@@ -121,21 +121,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice key properties</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties</dd>
+        <dt><b>Description</b></dt><dd>Land ice key properties</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_albedo"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify how ice albedo is modelled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.ice_albedo</dd><dt><b>Type</b></dt><dd>ENUM:ice_albedo_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.ice_albedo</dd>
+        <dt><b>Description</b></dt><dd>Specify how ice albedo is modelled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.ice_albedo</dd><dt><b>Type</b></dt><dd>ENUM:ice_albedo_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.ice_albedo</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify how ice albedo is modelled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.ice_albedo</dd><dt><b>Type</b></dt><dd>ENUM:ice_albedo_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.ice_albedo</dd>
+        <dt><b>Description</b></dt><dd>Specify how ice albedo is modelled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.ice_albedo</dd><dt><b>Type</b></dt><dd>ENUM:ice_albedo_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.ice_albedo</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prescribed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -163,42 +163,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.atmospheric_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.atmospheric_coupling_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.atmospheric_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.atmospheric_coupling_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.atmospheric_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.atmospheric_coupling_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are passed between the atmosphere and ice (e.g. orography, ice mass)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.atmospheric_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.atmospheric_coupling_variables</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="oceanic_coupling_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are passed between the ocean and ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.oceanic_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.oceanic_coupling_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are passed between the ocean and ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.oceanic_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.oceanic_coupling_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are passed between the ocean and ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.oceanic_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.oceanic_coupling_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are passed between the ocean and ice</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.oceanic_coupling_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.oceanic_coupling_variables</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are prognostically calculated in the ice model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variable_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are prognostically calculated in the ice model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variable_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which variables are prognostically calculated in the ice model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variable_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>Which variables are prognostically calculated in the ice model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_variable_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice velocity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -226,203 +226,203 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Software properties of land ice code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties</dd>
+        <dt><b>Description</b></dt><dd>Software properties of land ice code</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="repository"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Location of code for this component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.repository</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.repository</dd>
+        <dt><b>Description</b></dt><dd>Location of code for this component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.repository</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.repository</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Location of code for this component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.repository</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.repository</dd>
+        <dt><b>Description</b></dt><dd>Location of code for this component.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.repository</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.repository</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="code_version"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Code version identifier.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_version</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_version</dd>
+        <dt><b>Description</b></dt><dd>Code version identifier.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_version</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_version</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Code version identifier.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_version</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_version</dd>
+        <dt><b>Description</b></dt><dd>Code version identifier.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_version</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_version</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="code_languages"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Code language(s).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_languages</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_languages</dd>
+        <dt><b>Description</b></dt><dd>Code language(s).</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_languages</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_languages</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Code language(s).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_languages</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.software_properties.code_languages</dd>
+        <dt><b>Description</b></dt><dd>Code language(s).</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_languages</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.software_properties.code_languages</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tuning methodology for land ice component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.tuning_applied</dd>
+        <dt><b>Description</b></dt><dd>Tuning methodology for land ice component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.tuning_applied</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning (if any): explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning (if any): explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning (if any): explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning (if any): explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice grid</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid</dd>
+        <dt><b>Description</b></dt><dd>Land ice grid</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="adaptive_grid"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.adaptive_grid</dd>
+        <dt><b>Description</b></dt><dd>Is an adative grid being used?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.adaptive_grid</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.adaptive_grid</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="base_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.base_resolution</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.base_resolution</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.base_resolution</dd>
+        <dt><b>Description</b></dt><dd>The base resolution (in metres), before any adaption</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.base_resolution</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.base_resolution</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="resolution_limit"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
+        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.resolution_limit</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.resolution_limit</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.resolution_limit</dd>
+        <dt><b>Description</b></dt><dd>If an adaptive grid is being used, what is the limit of the resolution (in metres)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.resolution_limit</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.resolution_limit</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="projection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.projection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
+        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.projection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.projection</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.grid.projection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.grid.projection</dd>
+        <dt><b>Description</b></dt><dd>The projection of the land ice grid (e.g. albers_equal_area)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.grid.projection</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.grid.projection</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="glaciers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers</dd>
+        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers</dd>
+        <dt><b>Description</b></dt><dd>Land ice glaciers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the treatment of glaciers, if any</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.description</dd>
+        <dt><b>Description</b></dt><dd>Describe the treatment of glaciers, if any</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the treatment of glaciers, if any</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.description</dd>
+        <dt><b>Description</b></dt><dd>Describe the treatment of glaciers, if any</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="dynamic_areal_extent"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the model include a dynamic glacial extent?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers.dynamic_areal_extent</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.dynamic_areal_extent</dd>
+        <dt><b>Description</b></dt><dd>Does the model include a dynamic glacial extent?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.dynamic_areal_extent</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.dynamic_areal_extent</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does the model include a dynamic glacial extent?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.glaciers.dynamic_areal_extent</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.glaciers.dynamic_areal_extent</dd>
+        <dt><b>Description</b></dt><dd>Does the model include a dynamic glacial extent?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.dynamic_areal_extent</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.glaciers.dynamic_areal_extent</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="ice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice</dd>
+        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice</dd>
+        <dt><b>Description</b></dt><dd>Ice sheet and ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="grounding_line_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.grounding_line_method</dd><dt><b>Type</b></dt><dd>ENUM:grounding_line_methods</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.grounding_line_method</dd>
+        <dt><b>Description</b></dt><dd>Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.grounding_line_method</dd><dt><b>Type</b></dt><dd>ENUM:grounding_line_methods</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.grounding_line_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.grounding_line_method</dd><dt><b>Type</b></dt><dd>ENUM:grounding_line_methods</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.grounding_line_method</dd>
+        <dt><b>Description</b></dt><dd>Specify the technique used for modelling the grounding line in the ice sheet-ice shelf coupling</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.grounding_line_method</dd><dt><b>Type</b></dt><dd>ENUM:grounding_line_methods</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.grounding_line_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="grounding line prescribed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -457,154 +457,154 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are ice sheets simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.ice_sheet</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.ice_sheet</dd>
+        <dt><b>Description</b></dt><dd>Are ice sheets simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_sheet</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_sheet</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are ice sheets simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.ice_sheet</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.ice_sheet</dd>
+        <dt><b>Description</b></dt><dd>Are ice sheets simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_sheet</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_sheet</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_shelf"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are ice shelves simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.ice_shelf</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.ice_shelf</dd>
+        <dt><b>Description</b></dt><dd>Are ice shelves simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_shelf</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_shelf</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Are ice shelves simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.ice_shelf</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.ice_shelf</dd>
+        <dt><b>Description</b></dt><dd>Are ice shelves simulated?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_shelf</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.ice_shelf</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="mass_balance"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of the surface mass balance treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance</dd>
+        <dt><b>Description</b></dt><dd>Description of the surface mass balance treatment</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface_mass_balance"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.surface_mass_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.surface_mass_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.surface_mass_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.surface_mass_balance</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.surface_mass_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.surface_mass_balance</dd>
+        <dt><b>Description</b></dt><dd>Describe how and where the surface mass balance (SMB) is calulated. Include the temporal coupling frequeny from the atmosphere, whether or not a seperate  SMB model is used, and if so details of this model, such as its resolution</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.surface_mass_balance</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.surface_mass_balance</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="basal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of basal melting</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal</dd>
+        <dt><b>Description</b></dt><dd>Description of basal melting</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bedrock"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over bedrock</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.bedrock</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.bedrock</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over bedrock</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.bedrock</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.bedrock</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over bedrock</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.bedrock</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.bedrock</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over bedrock</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.bedrock</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.bedrock</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over the ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.ocean</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.ocean</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over the ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.ocean</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.ocean</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over the ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.ocean</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.basal.ocean</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of basal melting over the ocean</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.ocean</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.basal.ocean</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="frontal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of claving/melting from the ice shelf front</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal</dd>
+        <dt><b>Description</b></dt><dd>Description of claving/melting from the ice shelf front</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="calving"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of calving from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.calving</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of calving from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.calving</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of calving from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.calving</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of calving from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.calving</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="melting"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of melting from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.melting</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.melting</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of melting from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.melting</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.melting</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe the implementation of melting from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.melting</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.mass_balance.frontal.melting</dd>
+        <dt><b>Description</b></dt><dd>Describe the implementation of melting from the front of the ice shelf</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.melting</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.mass_balance.frontal.melting</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="dynamics"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd /><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics</dd>
+        <dt><b>Description</b></dt><dd /><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General description of ice sheet and ice shelf dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.description</dd>
+        <dt><b>Description</b></dt><dd>General description of ice sheet and ice shelf dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General description of ice sheet and ice shelf dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.description</dd>
+        <dt><b>Description</b></dt><dd>General description of ice sheet and ice shelf dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Approximation type used in modelling ice dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.approximation</dd><dt><b>Type</b></dt><dd>ENUM:approximation_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.approximation</dd>
+        <dt><b>Description</b></dt><dd>Approximation type used in modelling ice dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.approximation</dd><dt><b>Type</b></dt><dd>ENUM:approximation_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.approximation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Approximation type used in modelling ice dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.approximation</dd><dt><b>Type</b></dt><dd>ENUM:approximation_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.approximation</dd>
+        <dt><b>Description</b></dt><dd>Approximation type used in modelling ice dynamics</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.approximation</dd><dt><b>Type</b></dt><dd>ENUM:approximation_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.approximation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="SIA"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -632,28 +632,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there an adaptive time scheme for the ice scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.adaptive_timestep</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.adaptive_timestep</dd>
+        <dt><b>Description</b></dt><dd>Is there an adaptive time scheme for the ice scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.adaptive_timestep</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.adaptive_timestep</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there an adaptive time scheme for the ice scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.adaptive_timestep</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.adaptive_timestep</dd>
+        <dt><b>Description</b></dt><dd>Is there an adaptive time scheme for the ice scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.adaptive_timestep</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.adaptive_timestep</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd>
+        <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.timestep</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.landice.ice.dynamics.timestep</dd>
+        <dt><b>Description</b></dt><dd>Timestep (in seconds) of the ice scheme. If the timestep is adaptive, then state a representative timestep.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.timestep</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-landice.landice.ice.dynamics.timestep</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="landice"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cmip6.landice.key_properties.name"><richcontent TYPE="NOTE"><html>

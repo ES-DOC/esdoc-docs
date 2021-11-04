@@ -1,19 +1,19 @@
 {
     "label": "Atmoschem", 
     "description": "Atmospheric chemistry", 
-    "id": "cmip6.atmoschem", 
+    "id": "cmip6-specializations-atmoschem.atmoschem", 
     "contact": "Charlotte Pascoe, David Hassell", 
     "processes": [
         {
             "label": "Transport", 
             "description": "Atmospheric chemistry transport", 
-            "id": "cmip6.atmoschem.transport", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.transport", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the transport in atmoschem model.", 
-                    "id": "cmip6.atmoschem.transport.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.transport.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -22,7 +22,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric chemistry transport in atmoschem model.", 
-                    "id": "cmip6.atmoschem.transport.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.transport.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -31,7 +31,7 @@
                 {
                     "label": "Use Atmospheric Transport", 
                     "description": "Is transport handled by the atmosphere, rather than within atmospheric cehmistry?", 
-                    "id": "cmip6.atmoschem.transport.use_atmospheric_transport", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.transport.use_atmospheric_transport", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -40,7 +40,7 @@
                 {
                     "label": "Transport Details", 
                     "description": "If transport is handled within the atmospheric chemistry scheme, describe it.", 
-                    "id": "cmip6.atmoschem.transport.transport_details", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.transport.transport_details", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": false, 
@@ -51,13 +51,13 @@
         {
             "label": "Emissions Concentrations", 
             "description": "Atmospheric chemistry emissions", 
-            "id": "cmip6.atmoschem.emissions_concentrations", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the emissions concentrations in atmoschem model.", 
-                    "id": "cmip6.atmoschem.emissions_concentrations.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -66,7 +66,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric chemistry emissions in atmoschem model.", 
-                    "id": "cmip6.atmoschem.emissions_concentrations.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -77,13 +77,13 @@
                 {
                     "label": "Surface Emissions", 
                     "description": "", 
-                    "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions", 
                     "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
                             "label": "Sources", 
                             "description": "Sources of the chemical species emitted at the surface that are taken into account in the emissions scheme", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.sources", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.sources", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -119,7 +119,7 @@
                         {
                             "label": "Method", 
                             "description": "Methods used to define chemical species emitted directly into model layers above the surface (several methods allowed because the different species may not use the same method).", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.method", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.method", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -151,7 +151,7 @@
                         {
                             "label": "Prescribed Climatology Emitted Species", 
                             "description": "List of chemical species emitted at the surface and prescribed via a climatology, and the nature of the climatology (E.g. CO (monthly), C2H6 (constant))", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.prescribed_climatology_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.prescribed_climatology_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -160,7 +160,7 @@
                         {
                             "label": "Prescribed Spatially Uniform Emitted Species", 
                             "description": "List of chemical species emitted at the surface and prescribed as spatially uniform", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.prescribed_spatially_uniform_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.prescribed_spatially_uniform_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -169,7 +169,7 @@
                         {
                             "label": "Interactive Emitted Species", 
                             "description": "List of chemical species emitted at the surface and specified via an interactive method", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.interactive_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.interactive_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -178,7 +178,7 @@
                         {
                             "label": "Other Emitted Species", 
                             "description": "List of chemical species emitted at the surface and specified via any other method", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.surface_emissions.other_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.surface_emissions.other_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -189,13 +189,13 @@
                 {
                     "label": "Atmospheric Emissions", 
                     "description": "TO DO", 
-                    "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions", 
                     "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
                             "label": "Sources", 
                             "description": "Sources of chemical species emitted in the atmosphere that are taken into account in the emissions scheme.", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.sources", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.sources", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -227,7 +227,7 @@
                         {
                             "label": "Method", 
                             "description": "Methods used to define the chemical species emitted in the atmosphere (several methods allowed because the different species may not use the same method).", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.method", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.method", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -259,7 +259,7 @@
                         {
                             "label": "Prescribed Climatology Emitted Species", 
                             "description": "List of chemical species emitted in the atmosphere and prescribed via a climatology (E.g. CO (monthly), C2H6 (constant))", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.prescribed_climatology_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.prescribed_climatology_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -268,7 +268,7 @@
                         {
                             "label": "Prescribed Spatially Uniform Emitted Species", 
                             "description": "List of chemical species emitted in the atmosphere and prescribed as spatially uniform", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.prescribed_spatially_uniform_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.prescribed_spatially_uniform_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -277,7 +277,7 @@
                         {
                             "label": "Interactive Emitted Species", 
                             "description": "List of chemical species emitted in the atmosphere and specified via an interactive method", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.interactive_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.interactive_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -286,7 +286,7 @@
                         {
                             "label": "Other Emitted Species", 
                             "description": "List of chemical species emitted in the atmosphere and specified via an \"other method\"", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.atmospheric_emissions.other_emitted_species", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.atmospheric_emissions.other_emitted_species", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -297,13 +297,13 @@
                 {
                     "label": "Concentrations", 
                     "description": "TO DO", 
-                    "id": "cmip6.atmoschem.emissions_concentrations.concentrations", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.concentrations", 
                     "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
                             "label": "Prescribed Lower Boundary", 
                             "description": "List of species prescribed at the lower boundary.", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.concentrations.prescribed_lower_boundary", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.concentrations.prescribed_lower_boundary", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -312,7 +312,7 @@
                         {
                             "label": "Prescribed Upper Boundary", 
                             "description": "List of species prescribed at the upper boundary.", 
-                            "id": "cmip6.atmoschem.emissions_concentrations.concentrations.prescribed_upper_boundary", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.emissions_concentrations.concentrations.prescribed_upper_boundary", 
                             "cardinality": "0.1", 
                             "type": "cs-str", 
                             "is_cim_property": false, 
@@ -325,13 +325,13 @@
         {
             "label": "Gas Phase Chemistry", 
             "description": "Atmospheric gas phase chemistry transport", 
-            "id": "cmip6.atmoschem.gas_phase_chemistry", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the gas phase chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -340,7 +340,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric gas phase chemistry transport in atmoschem model.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -349,7 +349,7 @@
                 {
                     "label": "Species", 
                     "description": "Species included in the gas phase chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.species", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -401,7 +401,7 @@
                 {
                     "label": "Number Of Bimolecular Reactions", 
                     "description": "The number of bi-molecular reactions in the gas phase chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_bimolecular_reactions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_bimolecular_reactions", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -410,7 +410,7 @@
                 {
                     "label": "Number Of Termolecular Reactions", 
                     "description": "The number of ter-molecular reactions in the gas phase chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_termolecular_reactions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_termolecular_reactions", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -419,7 +419,7 @@
                 {
                     "label": "Number Of Tropospheric Heterogenous Reactions", 
                     "description": "The number of reactions in the tropospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_tropospheric_heterogenous_reactions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_tropospheric_heterogenous_reactions", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -428,7 +428,7 @@
                 {
                     "label": "Number Of Stratospheric Heterogenous Reactions", 
                     "description": "The number of reactions in the stratospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_stratospheric_heterogenous_reactions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_stratospheric_heterogenous_reactions", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -437,7 +437,7 @@
                 {
                     "label": "Number Of Advected Species", 
                     "description": "The number of advected species in the gas phase chemistry scheme.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_advected_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_advected_species", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -446,7 +446,7 @@
                 {
                     "label": "Number Of Steady State Species", 
                     "description": "The number of gas phase species for which the concentration is updated in the chemical solver assuming photochemical steady state", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.number_of_steady_state_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.number_of_steady_state_species", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -455,7 +455,7 @@
                 {
                     "label": "Interactive Dry Deposition", 
                     "description": "Is dry deposition interactive (as opposed to prescribed)? Dry deposition describes the dry processes by which gaseous species deposit themselves on solid surfaces thus decreasing their concentration in the air.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.interactive_dry_deposition", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.interactive_dry_deposition", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -464,7 +464,7 @@
                 {
                     "label": "Wet Deposition", 
                     "description": "Is wet deposition included? Wet deposition describes the moist processes by which gaseous species deposit themselves on solid surfaces thus decreasing their concentration in the air.", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.wet_deposition", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.wet_deposition", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -473,7 +473,7 @@
                 {
                     "label": "Wet Oxidation", 
                     "description": "Is wet oxidation included? Oxidation describes the loss of electrons or an increase in oxidation state by a molecule", 
-                    "id": "cmip6.atmoschem.gas_phase_chemistry.wet_oxidation", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.gas_phase_chemistry.wet_oxidation", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -484,13 +484,13 @@
         {
             "label": "Stratospheric Heterogeneous Chemistry", 
             "description": "Atmospheric chemistry startospheric heterogeneous chemistry", 
-            "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the stratospheric heterogeneous chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -499,7 +499,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric chemistry startospheric heterogeneous chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -508,7 +508,7 @@
                 {
                     "label": "Gas Phase Species", 
                     "description": "Gas phase species included in the stratospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.gas_phase_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.gas_phase_species", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -536,7 +536,7 @@
                 {
                     "label": "Aerosol Species", 
                     "description": "Aerosol species included in the stratospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.aerosol_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.aerosol_species", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -572,7 +572,7 @@
                 {
                     "label": "Number Of Steady State Species", 
                     "description": "The number of steady state species in the stratospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.number_of_steady_state_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.number_of_steady_state_species", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -581,7 +581,7 @@
                 {
                     "label": "Sedimentation", 
                     "description": "Is sedimentation is included in the stratospheric heterogeneous chemistry scheme or not?", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.sedimentation", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.sedimentation", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -590,7 +590,7 @@
                 {
                     "label": "Coagulation", 
                     "description": "Is coagulation is included in the stratospheric heterogeneous chemistry scheme or not?", 
-                    "id": "cmip6.atmoschem.stratospheric_heterogeneous_chemistry.coagulation", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.stratospheric_heterogeneous_chemistry.coagulation", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -601,13 +601,13 @@
         {
             "label": "Tropospheric Heterogeneous Chemistry", 
             "description": "Atmospheric chemistry tropospheric heterogeneous chemistry", 
-            "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the tropospheric heterogeneous chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -616,7 +616,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric chemistry tropospheric heterogeneous chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -625,7 +625,7 @@
                 {
                     "label": "Gas Phase Species", 
                     "description": "List of gas phase species included in the tropospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.gas_phase_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.gas_phase_species", 
                     "cardinality": "0.1", 
                     "type": "cs-str", 
                     "is_cim_property": false, 
@@ -634,7 +634,7 @@
                 {
                     "label": "Aerosol Species", 
                     "description": "Aerosol species included in the tropospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.aerosol_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.aerosol_species", 
                     "cardinality": "0.N", 
                     "type": "enum", 
                     "is_cim_property": false, 
@@ -690,7 +690,7 @@
                 {
                     "label": "Number Of Steady State Species", 
                     "description": "The number of steady state species in the tropospheric heterogeneous chemistry scheme.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.number_of_steady_state_species", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.number_of_steady_state_species", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -699,7 +699,7 @@
                 {
                     "label": "Interactive Dry Deposition", 
                     "description": "Is dry deposition interactive (as opposed to prescribed)? Dry deposition describes the dry processes by which gaseous species deposit themselves on solid surfaces thus decreasing their concentration in the air.", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.interactive_dry_deposition", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.interactive_dry_deposition", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -708,7 +708,7 @@
                 {
                     "label": "Coagulation", 
                     "description": "Is coagulation is included in the tropospheric heterogeneous chemistry scheme or not?", 
-                    "id": "cmip6.atmoschem.tropospheric_heterogeneous_chemistry.coagulation", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.tropospheric_heterogeneous_chemistry.coagulation", 
                     "cardinality": "1.1", 
                     "type": "bool", 
                     "is_cim_property": false, 
@@ -719,13 +719,13 @@
         {
             "label": "Photo Chemistry", 
             "description": "Atmospheric chemistry photo chemistry", 
-            "id": "cmip6.atmoschem.photo_chemistry", 
+            "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry", 
             "contact": "Charlotte Pascoe, David Hassell", 
             "properties": [
                 {
                     "label": "Name", 
                     "description": "Commonly used name for the photo chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.photo_chemistry.name", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "is_cim_property": true, 
@@ -734,7 +734,7 @@
                 {
                     "label": "Overview", 
                     "description": "Overview of atmospheric chemistry photo chemistry in atmoschem model.", 
-                    "id": "cmip6.atmoschem.photo_chemistry.overview", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.overview", 
                     "cardinality": "0.1", 
                     "type": "l-str", 
                     "is_cim_property": true, 
@@ -743,7 +743,7 @@
                 {
                     "label": "Number Of Reactions", 
                     "description": "The number of reactions in the photo-chemistry scheme.", 
-                    "id": "cmip6.atmoschem.photo_chemistry.number_of_reactions", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.number_of_reactions", 
                     "cardinality": "1.1", 
                     "type": "int", 
                     "is_cim_property": false, 
@@ -754,13 +754,13 @@
                 {
                     "label": "Photolysis", 
                     "description": "Photolysis scheme", 
-                    "id": "cmip6.atmoschem.photo_chemistry.photolysis", 
+                    "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.photolysis", 
                     "contact": "Charlotte Pascoe, David Hassell", 
                     "properties": [
                         {
                             "label": "Method", 
                             "description": "Photolysis scheme", 
-                            "id": "cmip6.atmoschem.photo_chemistry.photolysis.method", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.photolysis.method", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "is_cim_property": false, 
@@ -788,7 +788,7 @@
                         {
                             "label": "Environmental Conditions", 
                             "description": "Describe any environmental conditions taken into account by the photolysis scheme (e.g. whether pressure- and temperature-sensitive cross-sections and quantum yields in the photolysis calculations are modified to reflect the modelled conditions.)", 
-                            "id": "cmip6.atmoschem.photo_chemistry.photolysis.environmental_conditions", 
+                            "id": "cmip6-specializations-atmoschem.atmoschem.photo_chemistry.photolysis.environmental_conditions", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "is_cim_property": false, 
@@ -802,13 +802,13 @@
     "grid": {
         "label": "Grid", 
         "description": "Atmospheric chemistry grid", 
-        "id": "cmip6.atmoschem.grid", 
+        "id": "cmip6-specializations-atmoschem.atmoschem.grid", 
         "contact": "Charlotte Pascoe, David Hassell", 
         "properties": [
             {
                 "label": "Name", 
                 "description": "Name of grid in atmoschem model.", 
-                "id": "cmip6.atmoschem.grid.name", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.grid.name", 
                 "cardinality": "0.1", 
                 "type": "str", 
                 "is_cim_property": true, 
@@ -817,7 +817,7 @@
             {
                 "label": "Overview", 
                 "description": "Overview of grid in atmoschem model.", 
-                "id": "cmip6.atmoschem.grid.overview", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.grid.overview", 
                 "cardinality": "0.1", 
                 "type": "l-str", 
                 "is_cim_property": true, 
@@ -826,7 +826,7 @@
             {
                 "label": "Matches Atmosphere Grid", 
                 "description": "Does the atmospheric chemistry grid match the atmosphere grid?", 
-                "id": "cmip6.atmoschem.grid.matches_atmosphere_grid", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.grid.matches_atmosphere_grid", 
                 "cardinality": "1.1", 
                 "type": "bool", 
                 "is_cim_property": false, 
@@ -837,13 +837,13 @@
             {
                 "label": "Resolution", 
                 "description": "Resolution in the atmospheric chemistry grid", 
-                "id": "cmip6.atmoschem.grid.resolution", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution", 
                 "contact": "Charlotte Pascoe, David Hassell", 
                 "properties": [
                     {
                         "label": "Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of this grid, e.g. ORCA025, N512L180, T512L70 etc.", 
-                        "id": "cmip6.atmoschem.grid.resolution.name", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution.name", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
@@ -852,7 +852,7 @@
                     {
                         "label": "Canonical Horizontal Resolution", 
                         "description": "Expression quoted for gross comparisons of resolution, eg. 50km or 0.1 degrees etc.", 
-                        "id": "cmip6.atmoschem.grid.resolution.canonical_horizontal_resolution", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution.canonical_horizontal_resolution", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
@@ -861,7 +861,7 @@
                     {
                         "label": "Number Of Horizontal Gridpoints", 
                         "description": "Total number of horizontal (XY) points (or degrees of freedom) on computational grid.", 
-                        "id": "cmip6.atmoschem.grid.resolution.number_of_horizontal_gridpoints", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution.number_of_horizontal_gridpoints", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -870,7 +870,7 @@
                     {
                         "label": "Number Of Vertical Levels", 
                         "description": "Number of vertical levels resolved on computational grid.", 
-                        "id": "cmip6.atmoschem.grid.resolution.number_of_vertical_levels", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution.number_of_vertical_levels", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -879,7 +879,7 @@
                     {
                         "label": "Is Adaptive Grid", 
                         "description": "Default is False. Set true if grid resolution changes during execution.", 
-                        "id": "cmip6.atmoschem.grid.resolution.is_adaptive_grid", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.grid.resolution.is_adaptive_grid", 
                         "cardinality": "0.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
@@ -892,13 +892,13 @@
     "keyProperties": {
         "label": "Key Properties", 
         "description": "Key properties of the atmospheric chemistry", 
-        "id": "cmip6.atmoschem.key_properties", 
+        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties", 
         "contact": "Charlotte Pascoe, David Hassell", 
         "properties": [
             {
                 "label": "Name", 
                 "description": "Name of atmoschem model code", 
-                "id": "cmip6.atmoschem.key_properties.name", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.name", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "is_cim_property": true, 
@@ -907,7 +907,7 @@
             {
                 "label": "Keywords", 
                 "description": "Keywords associated with atmoschem model code", 
-                "id": "cmip6.atmoschem.key_properties.keywords", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.keywords", 
                 "cardinality": "1.1", 
                 "type": "cs-str", 
                 "is_cim_property": true, 
@@ -916,7 +916,7 @@
             {
                 "label": "Overview", 
                 "description": "Overview of atmoschem model.", 
-                "id": "cmip6.atmoschem.key_properties.overview", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.overview", 
                 "cardinality": "1.1", 
                 "type": "l-str", 
                 "is_cim_property": true, 
@@ -925,7 +925,7 @@
             {
                 "label": "Chemistry Scheme Scope", 
                 "description": "Atmospheric domains covered by the atmospheric chemistry model", 
-                "id": "cmip6.atmoschem.key_properties.chemistry_scheme_scope", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.chemistry_scheme_scope", 
                 "cardinality": "1.N", 
                 "type": "enum", 
                 "is_cim_property": false, 
@@ -961,7 +961,7 @@
             {
                 "label": "Basic Approximations", 
                 "description": "Basic approximations made in the atmospheric chemistry model", 
-                "id": "cmip6.atmoschem.key_properties.basic_approximations", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.basic_approximations", 
                 "cardinality": "1.1", 
                 "type": "str", 
                 "is_cim_property": false, 
@@ -970,7 +970,7 @@
             {
                 "label": "Prognostic Variables Form", 
                 "description": "Form of prognostic variables in the atmospheric chemistry component.", 
-                "id": "cmip6.atmoschem.key_properties.prognostic_variables_form", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.prognostic_variables_form", 
                 "cardinality": "1.N", 
                 "type": "enum", 
                 "is_cim_property": false, 
@@ -990,7 +990,7 @@
             {
                 "label": "Number Of Tracers", 
                 "description": "Number of advected tracers in the atmospheric chemistry model", 
-                "id": "cmip6.atmoschem.key_properties.number_of_tracers", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.number_of_tracers", 
                 "cardinality": "1.1", 
                 "type": "int", 
                 "is_cim_property": false, 
@@ -999,7 +999,7 @@
             {
                 "label": "Family Approach", 
                 "description": "Atmospheric chemistry calculations (not advection) generalized into families of species?", 
-                "id": "cmip6.atmoschem.key_properties.family_approach", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.family_approach", 
                 "cardinality": "1.1", 
                 "type": "bool", 
                 "is_cim_property": false, 
@@ -1008,7 +1008,7 @@
             {
                 "label": "Coupling With Chemical Reactivity", 
                 "description": "Atmospheric chemistry transport scheme turbulence is couple with chemical reactivity?", 
-                "id": "cmip6.atmoschem.key_properties.coupling_with_chemical_reactivity", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.coupling_with_chemical_reactivity", 
                 "cardinality": "1.1", 
                 "type": "bool", 
                 "is_cim_property": false, 
@@ -1019,12 +1019,12 @@
             {
                 "label": "Software Properties", 
                 "description": "Software properties of aerosol code", 
-                "id": "cmip6.atmoschem.key_properties.software_properties", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.software_properties", 
                 "properties": [
                     {
                         "label": "Repository", 
                         "description": "Location of code for this component.", 
-                        "id": "cmip6.atmoschem.key_properties.software_properties.repository", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.software_properties.repository", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
@@ -1033,7 +1033,7 @@
                     {
                         "label": "Code Version", 
                         "description": "Code version identifier.", 
-                        "id": "cmip6.atmoschem.key_properties.software_properties.code_version", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.software_properties.code_version", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
@@ -1042,7 +1042,7 @@
                     {
                         "label": "Code Languages", 
                         "description": "Code language(s).", 
-                        "id": "cmip6.atmoschem.key_properties.software_properties.code_languages", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.software_properties.code_languages", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
@@ -1055,13 +1055,13 @@
             {
                 "label": "Timestep Framework", 
                 "description": "Timestepping in the atmospheric chemistry model", 
-                "id": "cmip6.atmoschem.key_properties.timestep_framework", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework", 
                 "contact": "Charlotte Pascoe, David Hassell", 
                 "properties": [
                     {
                         "label": "Method", 
                         "description": "Mathematical method deployed to solve the evolution of a given variable", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.method", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.method", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "is_cim_property": false, 
@@ -1085,7 +1085,7 @@
                     {
                         "label": "Split Operator Advection Timestep", 
                         "description": "Timestep for chemical species advection (in seconds)", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_advection_timestep", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_advection_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -1094,7 +1094,7 @@
                     {
                         "label": "Split Operator Physical Timestep", 
                         "description": "Timestep for physics (in seconds).", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_physical_timestep", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_physical_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -1103,7 +1103,7 @@
                     {
                         "label": "Split Operator Chemistry Timestep", 
                         "description": "Timestep for chemistry (in seconds).", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_chemistry_timestep", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_chemistry_timestep", 
                         "cardinality": "0.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -1112,7 +1112,7 @@
                     {
                         "label": "Split Operator Alternate Order", 
                         "description": "?", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_alternate_order", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_alternate_order", 
                         "cardinality": "0.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
@@ -1121,7 +1121,7 @@
                     {
                         "label": "Integrated Timestep", 
                         "description": "Timestep for the atmospheric chemistry model (in seconds)", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.integrated_timestep", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.integrated_timestep", 
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
@@ -1130,7 +1130,7 @@
                     {
                         "label": "Integrated Scheme Type", 
                         "description": "Specify the type of timestep scheme", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.integrated_scheme_type", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.integrated_scheme_type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "is_cim_property": false, 
@@ -1180,12 +1180,12 @@
                     {
                         "label": "Split Operator Order", 
                         "description": "", 
-                        "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order", 
                         "properties": [
                             {
                                 "label": "Turbulence", 
                                 "description": "Call order for turbulence scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.turbulence", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.turbulence", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1194,7 +1194,7 @@
                             {
                                 "label": "Convection", 
                                 "description": "Call order for convection scheme This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.convection", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.convection", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1203,7 +1203,7 @@
                             {
                                 "label": "Precipitation", 
                                 "description": "Call order for precipitation scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.precipitation", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.precipitation", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1212,7 +1212,7 @@
                             {
                                 "label": "Emissions", 
                                 "description": "Call order for emissions scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.emissions", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.emissions", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1221,7 +1221,7 @@
                             {
                                 "label": "Deposition", 
                                 "description": "Call order for deposition scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.deposition", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.deposition", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1230,7 +1230,7 @@
                             {
                                 "label": "Gas Phase Chemistry", 
                                 "description": "Call order for gas phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.gas_phase_chemistry", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.gas_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1239,7 +1239,7 @@
                             {
                                 "label": "Tropospheric Heterogeneous Phase Chemistry", 
                                 "description": "Call order for tropospheric heterogeneous phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.tropospheric_heterogeneous_phase_chemistry", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.tropospheric_heterogeneous_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1248,7 +1248,7 @@
                             {
                                 "label": "Stratospheric Heterogeneous Phase Chemistry", 
                                 "description": "Call order for stratospheric heterogeneous phase chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.stratospheric_heterogeneous_phase_chemistry", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.stratospheric_heterogeneous_phase_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1257,7 +1257,7 @@
                             {
                                 "label": "Photo Chemistry", 
                                 "description": "Call order for photo chemistry scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.photo_chemistry", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.photo_chemistry", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1266,7 +1266,7 @@
                             {
                                 "label": "Aerosols", 
                                 "description": "Call order for aerosols scheme. This should be an integer greater than zero, and may be the same value as for another process if they are calculated at the same time.", 
-                                "id": "cmip6.atmoschem.key_properties.timestep_framework.split_operator_order.aerosols", 
+                                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.timestep_framework.split_operator_order.aerosols", 
                                 "cardinality": "0.1", 
                                 "type": "int", 
                                 "is_cim_property": false, 
@@ -1279,13 +1279,13 @@
             {
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for atmospheric chemistry component", 
-                "id": "cmip6.atmoschem.key_properties.tuning_applied", 
+                "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.tuning_applied", 
                 "contact": "Charlotte Pascoe, David Hassell", 
                 "properties": [
                     {
                         "label": "Description", 
                         "description": "General overview description of tuning: explain and motivate the main targets and metrics retained. &Document the relative weight given to climate performance metrics versus process oriented metrics, &and on the possible conflicts with parameterization level tuning. In particular describe any struggle &with a parameter value that required pushing it to its limits to solve a particular model deficiency.", 
-                        "id": "cmip6.atmoschem.key_properties.tuning_applied.description", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.tuning_applied.description", 
                         "cardinality": "1.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
@@ -1294,7 +1294,7 @@
                     {
                         "label": "Global Mean Metrics Used", 
                         "description": "List set of metrics of the global mean state used in tuning model/component", 
-                        "id": "cmip6.atmoschem.key_properties.tuning_applied.global_mean_metrics_used", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.tuning_applied.global_mean_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
@@ -1303,7 +1303,7 @@
                     {
                         "label": "Regional Metrics Used", 
                         "description": "List of regional metrics of mean state used in tuning model/component", 
-                        "id": "cmip6.atmoschem.key_properties.tuning_applied.regional_metrics_used", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
@@ -1312,7 +1312,7 @@
                     {
                         "label": "Trend Metrics Used", 
                         "description": "List observed trend metrics used in tuning model/component", 
-                        "id": "cmip6.atmoschem.key_properties.tuning_applied.trend_metrics_used", 
+                        "id": "cmip6-specializations-atmoschem.atmoschem.key_properties.tuning_applied.trend_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 

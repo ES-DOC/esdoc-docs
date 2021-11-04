@@ -2,7 +2,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ocean Biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem</dd><dt><b>Contact</b></dt><dd>Eric Guilyardi</dd><dt><b>Authors</b></dt><dd>Eric Guilyardi</dd><dt><b>Contributors</b></dt><dd>CMIP5 version + Olivier Aumont (LOCEAN/IPSL), Laurent Bopp (LSCE/IPSL)</dd>
+        <dt><b>Description</b></dt><dd>Ocean Biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem</dd><dt><b>Contact</b></dt><dd>Eric Guilyardi</dd><dt><b>Authors</b></dt><dd>Eric Guilyardi</dd><dt><b>Contributors</b></dt><dd>CMIP5 version + Olivier Aumont (LOCEAN/IPSL), Laurent Bopp (LSCE/IPSL)</dd>
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
@@ -135,21 +135,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ocean Biogeochemistry key properties</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties</dd>
+        <dt><b>Description</b></dt><dd>Ocean Biogeochemistry key properties</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.model_type</dd><dt><b>Type</b></dt><dd>ENUM:model_family</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.model_type</dd>
+        <dt><b>Description</b></dt><dd>Type of ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.model_type</dd><dt><b>Type</b></dt><dd>ENUM:model_family</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.model_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.model_type</dd><dt><b>Type</b></dt><dd>ENUM:model_family</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.model_type</dd>
+        <dt><b>Description</b></dt><dd>Type of ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.model_type</dd><dt><b>Type</b></dt><dd>ENUM:model_family</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.model_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Geochemical"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -177,14 +177,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe elemental stoichiometry (fixed, variable, mix of the two)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry</dd><dt><b>Type</b></dt><dd>ENUM:elemental_stoichiometry_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry</dd>
+        <dt><b>Description</b></dt><dd>Describe elemental stoichiometry (fixed, variable, mix of the two)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry</dd><dt><b>Type</b></dt><dd>ENUM:elemental_stoichiometry_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe elemental stoichiometry (fixed, variable, mix of the two)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry</dd><dt><b>Type</b></dt><dd>ENUM:elemental_stoichiometry_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry</dd>
+        <dt><b>Description</b></dt><dd>Describe elemental stoichiometry (fixed, variable, mix of the two)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry</dd><dt><b>Type</b></dt><dd>ENUM:elemental_stoichiometry_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Fixed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -212,84 +212,84 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe which elements have fixed/variable stoichiometry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details</dd>
+        <dt><b>Description</b></dt><dd>Describe which elements have fixed/variable stoichiometry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry_details</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry_details</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe which elements have fixed/variable stoichiometry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details</dd>
+        <dt><b>Description</b></dt><dd>Describe which elements have fixed/variable stoichiometry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry_details</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.elemental_stoichiometry_details</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of all prognostic tracer variables in the ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of all prognostic tracer variables in the ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of all prognostic tracer variables in the ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.prognostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of all prognostic tracer variables in the ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.prognostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.prognostic_variables</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="diagnostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of all diagnotic tracer variables in the ocean biogeochemistry component (derived from prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.diagnostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.diagnostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of all diagnotic tracer variables in the ocean biogeochemistry component (derived from prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.diagnostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.diagnostic_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of all diagnotic tracer variables in the ocean biogeochemistry component (derived from prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.diagnostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.diagnostic_variables</dd>
+        <dt><b>Description</b></dt><dd>List of all diagnotic tracer variables in the ocean biogeochemistry component (derived from prognostic variables</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.diagnostic_variables</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.diagnostic_variables</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="damping"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
+        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.damping</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.damping</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.damping</dd>
+        <dt><b>Description</b></dt><dd>Describe any tracer damping used (such as artificial correction or relaxation to climatology,...)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.damping</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.damping</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="time_stepping_framework"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="passive_tracers_transport"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping method for passive tracers transport in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport</dd>
+        <dt><b>Description</b></dt><dd>Time stepping method for passive tracers transport in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for passive tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="use ocean model transport time step"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -310,35 +310,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for passive tracers (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="biology_sources_sinks"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
+        <dt><b>Description</b></dt><dd>Time stepping framework for biology sources and sinks</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd><dt><b>Type</b></dt><dd>ENUM:passive_tracers_transport</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="use ocean model transport time step"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -359,35 +359,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
+        <dt><b>Description</b></dt><dd>Time step for biology sources and sinks (if different from ocean)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.timestep_if_not_from_ocean</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="transport_scheme"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Transport scheme in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme</dd>
+        <dt><b>Description</b></dt><dd>Transport scheme in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.type</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.type</dd>
+        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.type</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.type</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.type</dd>
+        <dt><b>Description</b></dt><dd>Type of transport scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.type</dd><dt><b>Type</b></dt><dd>ENUM:transport_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Offline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -408,14 +408,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.scheme</dd>
+        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.scheme</dd>
+        <dt><b>Description</b></dt><dd>Transport scheme used</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.scheme</dd><dt><b>Type</b></dt><dd>ENUM:transport_scheme</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.scheme</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Use that of ocean model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -429,35 +429,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd>
+        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd>
+        <dt><b>Description</b></dt><dd>Decribe transport scheme if different than that of ocean model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.transport_scheme.use_different_scheme</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="boundary_forcing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of biogeochemistry boundary forcing</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing</dd>
+        <dt><b>Description</b></dt><dd>Properties of biogeochemistry boundary forcing</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmospheric_deposition"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd>
+        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd>
+        <dt><b>Description</b></dt><dd>Describe how atmospheric deposition is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd><dt><b>Type</b></dt><dd>ENUM:sources_atmos_deposition</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="from file (climatology)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -485,14 +485,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.river_input</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.river_input</dd>
+        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.river_input</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.river_input</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.river_input</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.river_input</dd>
+        <dt><b>Description</b></dt><dd>Describe how river input is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.river_input</dd><dt><b>Type</b></dt><dd>ENUM:sources_river_input</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.river_input</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="from file (climatology)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -520,63 +520,63 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from boundary condition</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sediments_from_explicit_model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
+        <dt><b>Description</b></dt><dd>List which sediments are speficied from explicit sediment model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="gas_exchange"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of gas exchange in ocean biogeochemistry </dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange</dd>
+        <dt><b>Description</b></dt><dd>Properties of gas exchange in ocean biogeochemistry </dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe CO2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -590,28 +590,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is O2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="O2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Describe O2 gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd><dt><b>Type</b></dt><dd>ENUM:gas_exchange_types</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.O2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -625,259 +625,259 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is DMS gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="DMS_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify DMS gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.DMS_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2O_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is N2O gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="N2O_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify N2O gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.N2O_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC11_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CFC11 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CFC11 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CFC11 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CFC11 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC11_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CFC11 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CFC11 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CFC11 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CFC11 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC12_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CFC12 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CFC12 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is CFC12 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is CFC12 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC12_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CFC12 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CFC12 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify CFC12 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify CFC12 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="SF6_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is SF6 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is SF6 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is SF6 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is SF6 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="SF6_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify SF6 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify SF6 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify SF6 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify SF6 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.SF6_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="13CO2_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is 13CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is 13CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is 13CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is 13CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="13CO2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify 13CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify 13CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify 13CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify 13CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="14CO2_exchange_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is 14CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is 14CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is 14CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd>
+        <dt><b>Description</b></dt><dd>Is 14CO2 gas exchange modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="14CO2_exchange_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify 14CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify 14CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify 14CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd>
+        <dt><b>Description</b></dt><dd>Specify 14CO2 gas exchange scheme type</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="other_gases"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.other_gases</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.other_gases</dd>
+        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.other_gases</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.other_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.other_gases</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.gas_exchange.other_gases</dd>
+        <dt><b>Description</b></dt><dd>Specify any other gas exchange</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.other_gases</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.gas_exchange.other_gases</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="carbon_chemistry"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Properties of carbon chemistry biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry</dd>
+        <dt><b>Description</b></dt><dd>Properties of carbon chemistry biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.type</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.type</dd>
+        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.type</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.type</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.type</dd>
+        <dt><b>Description</b></dt><dd>Describe how carbon chemistry is modeled</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.type</dd><dt><b>Type</b></dt><dd>ENUM:carbon_chemistry</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OMIP protocol"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -898,14 +898,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, describe pH scale.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd><dt><b>Type</b></dt><dd>ENUM:ph_scale</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.ph_scale</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Sea water"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -926,119 +926,119 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
+        <dt><b>Description</b></dt><dd>If NOT OMIP protocol, list carbon chemistry constants.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.carbon_chemistry.constants_if_not_OMIP</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tuning_applied"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tuning methodology for ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied</dd>
+        <dt><b>Description</b></dt><dd>Tuning methodology for ocean biogeochemistry component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="description"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.description</dd>
+        <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global_mean_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.global_mean_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="regional_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List of regional metrics of mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.regional_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="trend_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd>
+        <dt><b>Description</b></dt><dd>List observed trend metrics used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.key_properties.tuning_applied.trend_metrics_used</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="tracers"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ocean biogeochemistry tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers</dd>
+        <dt><b>Description</b></dt><dd>Ocean biogeochemistry tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ocean biogeochemistry tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers</dd>
+        <dt><b>Description</b></dt><dd>Ocean biogeochemistry tracers</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sulfur_cycle_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is sulfur cycle modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.sulfur_cycle_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.sulfur_cycle_present</dd>
+        <dt><b>Description</b></dt><dd>Is sulfur cycle modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.sulfur_cycle_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.sulfur_cycle_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is sulfur cycle modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.sulfur_cycle_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.sulfur_cycle_present</dd>
+        <dt><b>Description</b></dt><dd>Is sulfur cycle modeled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.sulfur_cycle_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.sulfur_cycle_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="nutrients_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List nutrient species present in ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nutrients_present</dd><dt><b>Type</b></dt><dd>ENUM:nutrients_species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nutrients_present</dd>
+        <dt><b>Description</b></dt><dd>List nutrient species present in ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nutrients_present</dd><dt><b>Type</b></dt><dd>ENUM:nutrients_species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nutrients_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>List nutrient species present in ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nutrients_present</dd><dt><b>Type</b></dt><dd>ENUM:nutrients_species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nutrients_present</dd>
+        <dt><b>Description</b></dt><dd>List nutrient species present in ocean biogeochemistry model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nutrients_present</dd><dt><b>Type</b></dt><dd>ENUM:nutrients_species</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nutrients_present</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Nitrogen (N)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1073,14 +1073,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous species.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_species_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_species</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_species_if_N</dd>
+        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous species.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_species_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_species</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_species_if_N</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous species.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_species_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_species</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_species_if_N</dd>
+        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous species.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_species_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_species</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_species_if_N</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Nitrates (NO3)"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1101,14 +1101,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous processes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_processes_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_processes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_processes_if_N</dd>
+        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous processes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_processes_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_processes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_processes_if_N</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous processes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_processes_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_processes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.nitrous_processes_if_N</dd>
+        <dt><b>Description</b></dt><dd>If nitrogen present, list nitrous processes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_processes_if_N</dd><dt><b>Type</b></dt><dd>ENUM:nitrous_processes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.nitrous_processes_if_N</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Dentrification"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1129,56 +1129,56 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ecosystem properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem</dd>
+        <dt><b>Description</b></dt><dd>Ecosystem properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="upper_trophic_levels_definition"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are defined in model (e.g. based on size)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd>
+        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are defined in model (e.g. based on size)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are defined in model (e.g. based on size)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd>
+        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are defined in model (e.g. based on size)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="upper_trophic_levels_treatment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are treated in model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd>
+        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are treated in model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are treated in model</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd>
+        <dt><b>Description</b></dt><dd>Describe how upper trophic levels are treated in model</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="phytoplankton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Phytoplankton properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton</dd>
+        <dt><b>Description</b></dt><dd>Phytoplankton properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of phytoplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of phytoplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of phytoplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of phytoplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1220,14 +1220,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Phytoplankton functional types (PFT) (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_pft_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd>
+        <dt><b>Description</b></dt><dd>Phytoplankton functional types (PFT) (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_pft_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Phytoplankton functional types (PFT) (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_pft_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd>
+        <dt><b>Description</b></dt><dd>Phytoplankton functional types (PFT) (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_pft_list</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.pft</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Diatoms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1255,14 +1255,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Phytoplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd>
+        <dt><b>Description</b></dt><dd>Phytoplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Phytoplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd>
+        <dt><b>Description</b></dt><dd>Phytoplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:phytoplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Microphytoplankton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1290,21 +1290,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Zooplankton properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton</dd>
+        <dt><b>Description</b></dt><dd>Zooplankton properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of zooplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of zooplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of zooplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type</dd>
+        <dt><b>Description</b></dt><dd>Type of zooplankton</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.type</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1332,14 +1332,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Zooplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd>
+        <dt><b>Description</b></dt><dd>Zooplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Zooplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd>
+        <dt><b>Description</b></dt><dd>Zooplankton size classes (if applicable)</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd><dt><b>Type</b></dt><dd>ENUM:zooplankton_size_classes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.ecosystem.zooplankton.size_classes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Microzooplankton"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1360,35 +1360,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Disolved organic matter properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter</dd>
+        <dt><b>Description</b></dt><dd>Disolved organic matter properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bacteria_present"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd>
+        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd>
+        <dt><b>Description</b></dt><dd>Is there bacteria representation ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.bacteria_present</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lability"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.lability</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.lability</dd>
+        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.lability</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.lability</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.lability</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.disolved_organic_matter.lability</dd>
+        <dt><b>Description</b></dt><dd>Describe treatment of lability in dissolved organic matter</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.lability</dd><dt><b>Type</b></dt><dd>ENUM:lability_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.disolved_organic_matter.lability</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="None"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1423,21 +1423,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Particulate carbon properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules</dd>
+        <dt><b>Description</b></dt><dd>Particulate carbon properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.method</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.method</dd>
+        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.method</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.method</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.method</dd>
+        <dt><b>Description</b></dt><dd>How is particulate carbon represented in ocean biogeochemistry?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.method</dd><dt><b>Type</b></dt><dd>ENUM:particules_method</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Diagnostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1472,14 +1472,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.types_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.types_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.types_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.types_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.types_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.types_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, type(s) of particulate matter taken into account</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.types_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_types</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.types_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="POC"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1514,14 +1514,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, describe if a particule size spectrum is used to represent distribution of particules in water volume</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sizes</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="No size spectrum used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1549,28 +1549,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_discrete</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_discrete</dd>
+        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_discrete</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_discrete</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_discrete</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.size_if_discrete</dd>
+        <dt><b>Description</b></dt><dd>If prognostic and discrete size, describe which size classes are used</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_discrete</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.size_if_discrete</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sinking_speed_if_prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd>
+        <dt><b>Description</b></dt><dd>If prognostic, method for calculation of sinking speed of particules</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd><dt><b>Type</b></dt><dd>ENUM:prognostic_particules_sinking_speed</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.particules.sinking_speed_if_prognostic</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Constant"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1598,21 +1598,21 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>DIC and alkalinity properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity</dd>
+        <dt><b>Description</b></dt><dd>DIC and alkalinity properties in ocean biogeochemistry</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="carbon_isotopes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which carbon isotopes are modelled (C13, C14)?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd><dt><b>Type</b></dt><dd>ENUM:carbon_isotopes_list</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd>
+        <dt><b>Description</b></dt><dd>Which carbon isotopes are modelled (C13, C14)?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd><dt><b>Type</b></dt><dd>ENUM:carbon_isotopes_list</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Which carbon isotopes are modelled (C13, C14)?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd><dt><b>Type</b></dt><dd>ENUM:carbon_isotopes_list</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd>
+        <dt><b>Description</b></dt><dd>Which carbon isotopes are modelled (C13, C14)?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd><dt><b>Type</b></dt><dd>ENUM:carbon_isotopes_list</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.carbon_isotopes</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="C13"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1633,28 +1633,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is abiotic carbon modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd>
+        <dt><b>Description</b></dt><dd>Is abiotic carbon modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Is abiotic carbon modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd>
+        <dt><b>Description</b></dt><dd>Is abiotic carbon modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.abiotic_carbon</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="alkalinity"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is alkalinity modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd><dt><b>Type</b></dt><dd>ENUM:alkalinity_model_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd>
+        <dt><b>Description</b></dt><dd>How is alkalinity modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd><dt><b>Type</b></dt><dd>ENUM:alkalinity_model_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How is alkalinity modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd><dt><b>Type</b></dt><dd>ENUM:alkalinity_model_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd>
+        <dt><b>Description</b></dt><dd>How is alkalinity modelled ?</dd><dt><b>Spec. ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd><dt><b>Type</b></dt><dd>ENUM:alkalinity_model_types</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6-specializations-ocnbgchem.ocnbgchem.tracers.dic_alkalinity.alkalinity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
